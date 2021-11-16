@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_initblock_constr_03.cj
+ * -@TestCaseName: class_initblock_constr_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试class的init block中定义未初始化的成员a、b、c，实例化时调用对应的全参构造器
+ * -#step1: class Data的init block中定义未初始化的成员a、b、c，实例化类时调用对应的全参构造器
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Cangjie_ConditionalCompile_When_10018.cj
+ * -@TestCaseName: when_10018.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-42
+ * -@RequirementName: Cangjie support ConditionalCompile.
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Cangjie ConditionalCompile use macro @when.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_func_12.cj
+ * -@TestCaseName: record_func_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record操作符函数体中，使用var定义的label
+ * -#step1: 在record体中声明两个var label，并在init函数中初始化
+ * -#step2: record中定义一个操作函数'-'，通过入参调用var定义的label
+ * -#step3: 实例化record，调用操作符函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

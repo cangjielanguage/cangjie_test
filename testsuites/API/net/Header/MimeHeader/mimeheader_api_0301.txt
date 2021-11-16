@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: mimeheader_api_0301.cj
+ * -@TestCaseName: mimeheader_api_0301.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-07
+ * -@RequirementName: 提供 class MimeHeader
+ * -@Condition: no
+ * -@Brief: open func clone(): MimeHeader,克隆多次
+ * -#step1: open func clone(): MimeHeader,克隆多次 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Header
+ * -@SpecDetail: open func clone(): MimeHeader
+ */

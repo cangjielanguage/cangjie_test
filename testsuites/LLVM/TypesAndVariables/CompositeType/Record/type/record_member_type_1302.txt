@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_member_type_1302.cj
+ * -@TestCaseName: record_member_type_1302.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record体中label的数据类型为泛型record<T>，record<T>中含泛型函数
+ * -#step1: 定义一个泛型record Test1<T>，内部定义一个泛型函数area<V>
+ * -#step2: 定义record Test2，在record体中定义一个数据类型为Test1的label
+ * -#step3: 将类型变元为Test1<Int32>的泛型函数赋值给label，实例化record调用label
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

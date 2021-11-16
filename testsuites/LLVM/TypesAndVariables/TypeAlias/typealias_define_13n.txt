@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: typealias_define_13n.cj
+ * -@TestCaseName: typealias_define_13n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: 类型别名定义时原类型取值非法不可见，编译报错
+ * -#step1: 类型别名定义时，原类型取值非法不可见
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

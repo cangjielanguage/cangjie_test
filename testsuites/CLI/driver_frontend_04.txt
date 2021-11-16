@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: driver_frontend_04.cj
+ * -@TestCaseName: driver_frontend_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项–frontend后面无源文件
+ * -#step1: 执行cjc –frontend -c
+ * -#step2: 检查执行结果
+ * -@Expect: 报错，找不到源文件
+ * -@Priority: High
+ */

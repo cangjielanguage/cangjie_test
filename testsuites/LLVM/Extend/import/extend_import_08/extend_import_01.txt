@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: trait_import_07/pkg.cj
+ * -@TestCaseName: trait_import_07/pkg.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-07
+ * -@RequirementName: 模块化编译中支持Trait
+ * -@Condition: no
+ * -@Brief: 扩展多个接口，所有接口都导出，扩展导出
+ * -#step1: 扩展多个接口，所有接口都导出，扩展导出
+ * -#step3: 检查编译和执行结果
+ * -@Expect: 编译成功执行成功
+ * -@Priority: High
+ */

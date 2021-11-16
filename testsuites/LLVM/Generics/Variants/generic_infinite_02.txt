@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: generic_infinite_02.cj
+ * -@TestCaseName: generic_infinite_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-02
+ * -@RequirementName: 泛型实例化
+ * -@Condition: no
+ * -@Brief: class A<T>{ func foo(x:A<B<T>>)} ,实例化时无限递归
+ * -#step1: class A<T>{ func foo(x:A<B<T>>)} ,实例化时无限递归
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 泛型/泛型实例化
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

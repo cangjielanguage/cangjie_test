@@ -1,0 +1,32 @@
+2021-10-23 06:04:39 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/DFX/fuzz_record_04.cj_cangjie2llvmgc_test_cfg.log
+2021-10-23 06:04:39 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_record_04_cj_cangjie2llvmgc_test_cfg_1634968651
+2021-10-23 06:04:39 DEBUG execute cmd ===>>>: cjc -ulimit-error fuzz_record_04.cj -o fuzz_record_04.out 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// fuzz_record_04.cj
+2021-10-23 06:04:39 DEBUG return code: 1
+2021-10-23 06:04:39 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_record_04_cj_cangjie2llvmgc_test_cfg_1634968651/fuzz_record_04.cj:9:1: [31merror[0m: illegal record member in record block
++		    9 | return 1;}  // EXPECTED: regex illegal class member in class block
++		      | [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_record_04_cj_cangjie2llvmgc_test_cfg_1634968651/fuzz_record_04.cj:11:1: [31merror[0m: illegal object in toplevel, toplevel must consist of declaration or definition
++		   11 | return 1;func run(): Int64 {    // EXPECTED: regex illegal class member in class block
++		      | [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_record_04_cj_cangjie2llvmgc_test_cfg_1634968651/fuzz_record_04.cj:11:10: [31merror[0m: expected newline or ';' between toplevels
++		   11 | return 1;func run(): Int64 {    // EXPECTED: regex illegal class member in class block
++		      |          [32m^[0m
++		3 errors generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex-not, pattern: core dump , result: True, matched at output line: 0"
++	b"It's a assert, flag: regex-not, pattern: stack trace , result: True, matched at output line: 1"
++	b'flag: regex, pattern: \\:9\\:.*\\:.*illegal class member in class block , result: False, matched at output line: 1'
++	Match End!, Compare Failed
++	b'flag: regex, pattern: \\:11\\:.*\\:.*illegal class member in class block , result: False, matched at output line: 0'
++	Match End!, Compare Failed
+
+2021-10-23 06:04:39 DEBUG stderr : 
+
+2021-10-23 06:04:39 DEBUG Run time: 0.43, remain time: 3e+02
+2021-10-23 06:04:39 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/DFX/fuzz_record_04.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: string_type_generic_01.cj
+ * -@TestCaseName: string_type_generic_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试array的元素类型为String
+ * -#step1: 定义一个数组array1并通过下标改变元素的值
+ * -#step2: 使用格式ElementType[](size,expr)方式，定义一个数组array2并通过下标获取元素的值
+ * -#step3: 定义一个二维数组array3，并通过下标取得元素的值
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

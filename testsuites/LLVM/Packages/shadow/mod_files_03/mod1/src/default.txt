@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 源文件根目录下的包不会做包名与文件路径的一致性检查，但所有源文件指定的包名必须一致。
+ * -#step1: 源文件根目录下的包不会做包名与文件路径的一致性检查，但所有源文件指定的包名必须一致。
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 源文件根目录下的包不会做包名与文件路径的一致性检查，但所有源文件指定的包名必须一致。
+ */

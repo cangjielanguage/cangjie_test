@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: trait_own_02.cj
+ * -@TestCaseName: trait_own_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: 提供泛型trait
+ * -@Condition: no
+ * -@Brief: 泛型成员函数的类型变元限定于本身所在类
+ * -#step1: 定义泛型类Day，内部定义泛型func foo<V>,V限定于自身类
+ * -#step2: 实例化泛型父类，传入子类类型变元
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功，返回0
+ * -@Priority: High
+ */

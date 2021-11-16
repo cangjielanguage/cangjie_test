@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkg_plus_02.cj
+ * -@TestCaseName: pkg_plus_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 导入自身包成员
+ * -#step1: 导入自身包成员
+ * -#step2: 检查编译和执行结果
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

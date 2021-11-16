@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: import_plus_samename_04.cj
+ * -@TestCaseName: import_plus_samename_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Trait的定义和实现
+ * -@Condition: no
+ * -@Brief: 同package，不同文件中，TraitFunc和普通函数重名，导入该包，执行成功
+ * -#step1: 同package，不同文件中，TraitFunc和普通函数重名
+ * -#step2: 导入该包，检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Test_Class_cover_006
+ * -@TestCaseName: Test_Class_cover_006.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-02_R2
+ * -@RequirementName: Language implementation update
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 子作用域的静态变量和父作用域的静态变量同名
+ * -@Expect: 编译报错，子父类成员不允许遮盖
+ * -@Priority: level0
+ */

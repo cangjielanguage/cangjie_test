@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_type_15.cj
+ * -@TestCaseName: enum_generic_type_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: append的类型为泛型enum<T>类型，constructor无参
+ * -#step1: 实现trait时append的类型为泛型enum<T>类型，调用trait中函数，传入无参constructor
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

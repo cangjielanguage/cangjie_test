@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_func_25.cj
+ * -@TestCaseName: static_func_25.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: class <T>中定义泛型静态成员函数func<V>的入参T,V，返回值为V
+ * -#step1: 类Data<T>中定义静态成员函数coo<V>，其入参类型为T,V，返回值类型为V
+ * -#step2: Data<Int32>调用静态函数coo<String>并传入int32、String类型
+ * -@Expect: 执行成功,返回期望结果
+ * -@Priority: High
+ */

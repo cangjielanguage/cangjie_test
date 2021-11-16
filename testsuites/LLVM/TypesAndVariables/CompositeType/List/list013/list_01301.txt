@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: list_01301.cj
+ * -@TestCaseName: list_01301.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: list元素中使用表达式
+ * -#step1: list元素中使用表达式
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

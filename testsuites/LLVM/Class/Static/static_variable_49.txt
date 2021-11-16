@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_variable_49.cj
+ * -@TestCaseName: static_variable_49.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: 类中定义的静态成员变量，类外通过类名调用
+ * -#step1: 类中定义静态成员变量a
+ * -#step2: 类外通过类名调用类中的静态变量
+ * -@Expect: 执行成功,返回期望结果
+ * -@Priority: High
+ */

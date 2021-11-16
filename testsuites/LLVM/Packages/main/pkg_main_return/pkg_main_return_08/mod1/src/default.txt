@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkg_main_return_08.cj
+ * -@TestCaseName: pkg_main_return_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 程序入口main函数的入参和返回值
+ * -@Condition: no
+ * -@Brief: 入参空，返回值类型空，返回语句UInt8类型
+ * -#step1: 入参空，返回值类型空，返回语句UInt8类型
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecDetail: 作为程序入口的main 函数可以没有参数或参数类型为List<String>，返回值类型为Unit 或整数类型
+ */

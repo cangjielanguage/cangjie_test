@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: test_isatty_002
+ * -@TestCaseName: test_isatty_002
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-06
+ * -@RequirementName: 提供tty设备相关函数
+ * -@Conditon: no
+ * -@Brief: 验证isatty()的功能
+ * -#step1: 通过仓颉的isatty()判断是否为控制终端，fd无效
+ * -#step2: 获取结果
+ * -#step3: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

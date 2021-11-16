@@ -1,0 +1,30 @@
+2021-11-08 01:52:14 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_014/java_ffi_01455/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:52:14 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_014/java_ffi_01455/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335524
+2021-11-08 01:52:14 DEBUG execute cmd ===>>>: cjc -ulimit-error  InteropTest.cj -c -o define.o
+2021-11-08 01:52:16 DEBUG return code: 0
+2021-11-08 01:52:16 DEBUG stdout : 
+
+2021-11-08 01:52:16 DEBUG stderr : 
+
+2021-11-08 01:52:16 DEBUG Run time: 1.7, remain time: 3e+02
+2021-11-08 01:52:16 DEBUG execute cmd ===>>>: cjc -ulimit-error define.o java_ffi_main.cj
+2021-11-08 01:52:18 DEBUG return code: 1
+2021-11-08 01:52:18 DEBUG stdout : 
+
+2021-11-08 01:52:18 DEBUG stderr : 
+@	define.o: In function `test_global_init':
+@	test:(.text+0x34): undefined reference to `ast/ast_global_init'
+@	define.o: In function `macroCall_a_InteropTest_test_real':
+@	test:(.text+0x17e): undefined reference to `_ZN10ast$FS$ast29UnsafePointerCastToUint8ArrayER_ZN12core$FS$core8CPointerIhEl'
+@	test:(.text+0x1a5): undefined reference to `ast$FS$ast::Tokens::init(unsigned char [1])'
+@	test:(.text+0x1cd): undefined reference to `_ZN10ast$FS$ast29UnsafePointerCastToUint8ArrayER_ZN12core$FS$core8CPointerIhEl'
+@	test:(.text+0x1f4): undefined reference to `ast$FS$ast::Tokens::init(unsigned char [1])'
+@	test:(.text+0x294): undefined reference to `ast$FS$ast::UnsafePointerCastFromUint8Array(unsigned char [1])'
+@	test:(.text+0x341): undefined reference to `ast$FS$ast::UnsafePointerCastFromUint8Array(unsigned char [1])'
+@	define.o: In function `$testlambda.0':
+@	test:(.text+0x436): undefined reference to `ast$FS$ast::Tokens::toBytes()'
+@	[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
+
+2021-11-08 01:52:18 DEBUG Run time: 1.5, remain time: 3e+02
+2021-11-08 01:52:18 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_014/java_ffi_01455/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log

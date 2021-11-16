@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: assign_0001.cj
+ * -@TestCaseName: assign_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-26
+ * -@RequirementName: 
+ * -@Condition: no
+ * -@Brief: variable is not supported ininterface
+ * -#step1: variable is not supported ininterface
+ * -@Expect: complile error 
+ * -@Priority: High
+ */

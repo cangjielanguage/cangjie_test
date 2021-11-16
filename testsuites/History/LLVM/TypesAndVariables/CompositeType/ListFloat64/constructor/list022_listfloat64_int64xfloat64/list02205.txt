@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: list02205.cj
+ * -@TestCaseName: list02205.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-13
+ * -@RequirementName: List实现--codegen
+ * -@Condition: no
+ * -@Brief:Constructor Test - Creat a list by ListFloat64(number,10) with a not initialized & Int64 number
+ * -#step1:Compile testfile
+ * -#step2:Run & check return value
+ * -@Expect:Return 0
+ * -@Priority: High
+ */

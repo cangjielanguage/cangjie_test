@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: package_oneself_01.cj
+ * -@TestCaseName: package_oneself_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 支持使用形如 curPackageName.xxx 的 fully qualified name 访问当前包的 内容。
+ * -#step1: import 导入包pkg，利用包名.xxx访问包中的内容
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter:
+ * -@SpecDetail: 支持使用形如 curPackageName.xxx 的 fully qualified name 访问当前包的 内容。
+ */

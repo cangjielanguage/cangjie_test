@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_6302.cj
+ * -@TestCaseName: func_para_defval_6302.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试可选参数所在类成员函数为匿名函数(lamda)
+ * -#step1: 定义类class Data，类中定义含可选参数的匿名函数
+ * -#step2: 实例化类Data，调用匿名函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

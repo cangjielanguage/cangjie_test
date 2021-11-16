@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: TimeSpan_1_Staticmem_001_fail01
+ * -@TestCaseName: TimeSpan_1_Staticmem_001_fail01.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: TimeSpan
+ * -@Condition: charc, clang, maple test framework and python3.
+ * -@Brief: 静态成员MaxValue()赋值
+ * -@Expect: 预期报错
+ * -@Priority: level1
+ */
+    

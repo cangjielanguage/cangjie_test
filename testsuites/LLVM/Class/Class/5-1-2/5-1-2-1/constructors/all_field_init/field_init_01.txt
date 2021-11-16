@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/all_field_init/all_field_init_0014_n.cj
+*- @TestCaseName: 通过条件控制构造函数中类初始化
+*- @TestCaseType: 功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon: 无
+*- @Brief:通过条件控制，使变量没有全部初始化，编译器报错
+* -#定义类Data，成员变量全部没有初始化
+* -#定义构造函数，在其中通过if，是部分成员变量没有初始化
+*- @Expect: 编译报错
+*- @Priority: level1 
+*/

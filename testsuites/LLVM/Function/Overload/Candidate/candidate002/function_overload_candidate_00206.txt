@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Candidate_00206
+ * -@TestCaseName: function_overload_candidate_00206.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define this package, this interface, this class.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

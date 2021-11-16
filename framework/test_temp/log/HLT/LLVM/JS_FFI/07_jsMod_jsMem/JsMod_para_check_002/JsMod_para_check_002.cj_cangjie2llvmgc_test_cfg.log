@@ -1,0 +1,18 @@
+2021-11-08 01:49:01 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMod_para_check_002/JsMod_para_check_002.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:49:01 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMod_para_check_002/JsMod_para_check_002_cj_cangjie2llvmgc_test_cfg_1636335523
+2021-11-08 01:49:01 DEBUG execute cmd ===>>>: cjc -ulimit-error JsMod_para_check_002.cj -o JsMod_para_check_002..out
+2021-11-08 01:49:02 DEBUG return code: 1
+2021-11-08 01:49:02 DEBUG stdout : 
+
+2021-11-08 01:49:02 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMod_para_check_002/JsMod_para_check_002_cj_cangjie2llvmgc_test_cfg_1636335523/JsMod_para_check_002.cj:6:21: [31merror[0m: native function can only have CType args.
+@	    6 | foreign func moment(arg:String) : String
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMod_para_check_002/JsMod_para_check_002_cj_cangjie2llvmgc_test_cfg_1636335523/JsMod_para_check_002.cj:6:35: [31merror[0m: native function can only have CType return.
+@	    6 | foreign func moment(arg:String) : String
+@	      |                                   [32m^[0m
+@	2 errors generated
+
+2021-11-08 01:49:02 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 01:49:02 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMod_para_check_002/JsMod_para_check_002.cj_cangjie2llvmgc_test_cfg.log

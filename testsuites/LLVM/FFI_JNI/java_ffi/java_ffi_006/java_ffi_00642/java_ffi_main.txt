@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: java_ffi_00642
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-23
+ * -@RequirementName: Java互操作泛型接口互操作
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 泛型函数 类型参数个数 1 类型参数种类 引用类型 包含通配符作为类型参数 <? extends T>
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

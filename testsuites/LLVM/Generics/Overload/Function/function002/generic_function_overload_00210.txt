@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Overload_Function_00210
+ * -@TestCaseName: generic_function_overload_00210.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2105-09
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define same name generic and normal function.
+ * -@Expect: See case.
+ * -@Priority: level0
+ */

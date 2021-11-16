@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: where_def_class_01.cj
+ * -@TestCaseName: where_def_class_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-03
+ * -@RequirementName: 泛型where约束检查
+ * -@Condition: no
+ * -@Brief: 泛型class定义时有where限定
+ * -#step1: 泛型class定义时有where限定
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 泛型/泛型约束
+ * -@SpecDetail: 
+ */

@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Math_02_Inf03
+* -@TestCaseName: Math_02_Inf03.cj 
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: Math
+* -@Condition: cj, clang, maple test framework and python3.
+* -@Brief: Inf16入参为浮点数
+* -@Expect: 预期报错
+* -@Priority: level 0
+*/

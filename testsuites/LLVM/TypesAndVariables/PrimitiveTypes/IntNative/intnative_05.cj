@@ -1,0 +1,25 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+func main(): IntNative {
+   let d: IntNative = 31 + 96
+   let d2: IntNative = 0b11111 + 0b1100000
+   let d3: IntNative = 0b11111 * 0b1100000
+    if (d!=127) {
+        return 1
+    }
+    if (d3!=2976) {
+        return 1
+    }
+    let k: UIntNative = 63 + 192
+    let k2: UIntNative = 0b111111 + 0b11000000
+    let k3: UIntNative = 0b111111 * 0b11000000
+    if (k!=255) {
+        return 1
+    }
+    if (k3!=12096) {
+        return 1
+    }
+
+    return 0
+}

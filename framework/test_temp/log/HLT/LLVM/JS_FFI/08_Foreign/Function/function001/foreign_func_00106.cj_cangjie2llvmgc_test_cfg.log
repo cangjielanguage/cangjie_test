@@ -1,0 +1,18 @@
+2021-11-08 02:10:09 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Function/function001/foreign_func_00106.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:10:09 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function001/foreign_func_00106_cj_cangjie2llvmgc_test_cfg_1636335534
+2021-11-08 02:10:09 DEBUG execute cmd ===>>>: cjc -frontend -c -typecheck -ulimit-error foreign_func_00106.cj
+2021-11-08 02:10:10 DEBUG return code: 1
+2021-11-08 02:10:10 DEBUG stdout : 
+
+2021-11-08 02:10:10 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function001/foreign_func_00106_cj_cangjie2llvmgc_test_cfg_1636335534/foreign_func_00106.cj:3:1: [31merror[0m: modifiers 'external' and 'foreign' are conflict in function declaration
+@	    3 | external foreign func foo():Unit 
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function001/foreign_func_00106_cj_cangjie2llvmgc_test_cfg_1636335534/foreign_func_00106.cj:6:1: [31merror[0m: modifiers 'external' and 'foreign' are conflict in function declaration
+@	    6 | external func bar():Unit 
+@	      | [32m^[0m
+@	2 errors generated
+
+2021-11-08 02:10:10 DEBUG Run time: 0.62, remain time: 3e+02
+2021-11-08 02:10:10 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Function/function001/foreign_func_00106.cj_cangjie2llvmgc_test_cfg.log

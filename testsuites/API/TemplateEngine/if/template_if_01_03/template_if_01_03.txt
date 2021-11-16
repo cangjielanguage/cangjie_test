@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_if_01_03.cj
+ * -@TestCaseName: template_if_01_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: if-stmt-同一条件下包含多个执行语句
+ * -#step1: if-stmt-同一条件下包含多个执行语句
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: #if..#endif完整
+ */

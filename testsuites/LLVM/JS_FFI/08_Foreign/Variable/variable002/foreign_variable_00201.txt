@@ -1,0 +1,22 @@
+ /*
+ * -@TestCaseID: Foreign_Variable_00201
+ * -@TestCaseName: foreign_variable_00201.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2031-01
+ * -@RequirementName: Foreign Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Foreign variable support Int8 type.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: foreign 变量
+ * -@SpecDetail: 1、`foreign` 修饰符支持修饰顶级类、接口、函数以及变量（ `var` 和 `let` ）2、`foreign let` 不要求必须初始化之后使用。
+ * -@SpecDetail: 3、`foreign` 块语句并不引入新的作用域，它与 `foreign` 单个语句的作用完全相同
+ * -@SpecDetail: 4、仅支持部分变量类型，支持修饰的变量类型见本节开始位置的类型映射表格。5、仓颉侧Int8映射js侧的number
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符--4
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 变量--4
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 变量--5
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ */
+

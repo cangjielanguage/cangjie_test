@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_FunctionInvocation_00723
+ * -@TestCaseName: func00723.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2007
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define function with initial value, only give non-initial paramter to call function is legal.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

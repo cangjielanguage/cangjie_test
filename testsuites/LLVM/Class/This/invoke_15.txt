@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: invoke_15.cj
+ * -@TestCaseName: invoke_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-24
+ * -@RequirementName: This类型正确使用
+ * -@Condition: no
+ * -@Brief: 在main中调用class类Data中的实例成员函数（返回类型为当前类的类型，返回表达式为函数（与其构成重载并返回this））
+ * -#step1: 在抽象class类中 定义两个同名的实例成员函数（重载），其中函数1返回类型为Data 返回this，函数2返回类型This 返回为调用函数1
+ * -#step2: 在main中通过step1的类的实例化调用函数2并通过is判断类型
+ * -@Expect: 编译成功，执行成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.4 This类型 
+ * -@SpecDetail: This 类型是当前类型的子类型，This 可以自动 cast 成当前类型，但反之不行
+ * -@catalog: # 类和接口## 类### This 类型--4
+ */

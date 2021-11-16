@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Bitwise_Logical_Conditional_Operators_00309
+ * -@TestCaseName: bitwise00309.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: unknown
+ * -@RequirementName: unknown
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: & operator operation object: octal num and decimal num
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,21 @@
+2021-11-08 01:56:00 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_20/arg_ret_type_20.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:56:00 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_20/arg_ret_type_20_cj_cangjie2llvmgc_test_cfg_1636335526
+2021-11-08 01:56:00 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_20.cj -o arg_ret_type_20..out
+2021-11-08 01:56:01 DEBUG return code: 1
+2021-11-08 01:56:01 DEBUG stdout : 
+
+2021-11-08 01:56:01 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_20/arg_ret_type_20_cj_cangjie2llvmgc_test_cfg_1636335526/arg_ret_type_20.cj:13:11: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   13 |   var b = isMoment(a)
+@	      |           [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_20/arg_ret_type_20_cj_cangjie2llvmgc_test_cfg_1636335526/arg_ret_type_20.cj:14:23: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   14 |   if(b(2.0) == 8.0 && isMoment(b)(2.0) == 8.0){
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_20/arg_ret_type_20_cj_cangjie2llvmgc_test_cfg_1636335526/arg_ret_type_20.cj:14:23: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   14 |   if(b(2.0) == 8.0 && isMoment(b)(2.0) == 8.0){
+@	      |                       [32m^[0m
+@	3 errors generated
+
+2021-11-08 01:56:01 DEBUG Run time: 0.62, remain time: 3e+02
+2021-11-08 01:56:01 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_20/arg_ret_type_20.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,13 @@
+2021-11-08 02:00:56 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_01/func_body_js_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:00:56 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_01/func_body_js_01_cj_cangjie2llvmgc_test_cfg_1636335528
+2021-11-08 02:00:56 DEBUG execute cmd ===>>>: cjc -ulimit-error func_body_js_01.cj -o func_body_js_01..out
+2021-11-08 02:00:57 DEBUG return code: 1
+2021-11-08 02:00:57 DEBUG stdout : 
+
+2021-11-08 02:00:57 DEBUG stderr : 
+@	./func_body_js_01.-43f995a9.o:(.data+0x0): undefined reference to `funcBody01'
+@	[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
+
+2021-11-08 02:00:57 DEBUG Run time: 0.65, remain time: 3e+02
+2021-11-08 02:00:57 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_01/func_body_js_01.cj_cangjie2llvmgc_test_cfg.log

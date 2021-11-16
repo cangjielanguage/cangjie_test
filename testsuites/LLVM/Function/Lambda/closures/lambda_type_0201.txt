@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: lambda_type_0201.cj
+ * -@TestCaseName: lambda_type_0201.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1016-04
+ * -@RequirementName: lambda 尾闭包
+ * -@Condition: no
+ * -@Brief: 函数入参明确为函数类型，传入lambda表达式
+ * -#step1: 函数入参明确为函数类型，传入lambda表达式
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/闭包/
+ * -@SpecDetail: 若上下文明确指定了 lambda 表达式的返回类型，则其返回类型为上下文指定的类型
+ */

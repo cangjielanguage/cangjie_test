@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: error_report_01.cj
+ * -@TestCaseName: error_report_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1039-01
+ * -@RequirementName: 编译告警
+ * -@Condition: no
+ * -@Brief: 大量冗余报错
+ * -@step1: 由于之前的变量定义错误，导致大量冗余报错
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

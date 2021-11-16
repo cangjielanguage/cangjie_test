@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_variable_09n.cj
+ * -@TestCaseName: class_generic_variable_09n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>声明static的泛型变量未初始化，编译报错
+ * -#step1: 定义一个泛型父类class Base<T>，定义一个泛型类Data<T>继承Base<Int32>
+ * -#step2: Data<T>中声明一个static变量f类型为T
+ * -#step3: 实例化泛型class Data<T>
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

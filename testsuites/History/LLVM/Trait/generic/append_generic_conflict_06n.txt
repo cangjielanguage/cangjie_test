@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: append_generic_conflict_06n.cj
+ * -@TestCaseName: append_generic_conflict_06n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2026-04
+ * -@RequirementName: Append泛型
+ * -@Condition: no
+ * -@Brief: 定义append<X1,X2,X3>  Student<X1,X2,X3> with TR和append<V2,V3> Student<Int32,V2,V3> with TR，编译报错
+ * -#step1: 定义append<X1,X2,X3>  Student<X1,X2,X3> with TR和append<V2,V3> Student<Int32,V2,V3> with TR
+ * -#step2: 检查编译执行结果
+ * -@Expect: 调用时有两个匹配的函数，执行报错
+ * -@Priority: High
+ */

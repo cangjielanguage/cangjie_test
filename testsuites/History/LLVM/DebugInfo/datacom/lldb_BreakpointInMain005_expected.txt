@@ -1,0 +1,6 @@
+lldb,lldb 015_debug_basetype,015_debug_basetype
+b,b 5,015_debug_basetype.cj:5
+b,b 6,015_debug_basetype.cj:6
+r,r,-> 5
+b,b 4,015_debug_basetype.cj:4
+c,c,-> 6

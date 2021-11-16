@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: matchpattern_tuple_05.cj
+ * -@TestCaseName: matchpattern_tuple_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: tuple pattern中，literalConstant为unit字面量，进行常量模式的匹配
+ * -#step1: tuple pattern中，literalConstant为unit字面量，进行常量模式的匹配
+ * -@Expect: 编译执行成功，返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.19
+ * -@SpecChapter: 表达式/模式匹配表达式/序列模式
+ * -@SpecDetail: tuple pattern 中的子 pattern 个数需要和 selector 的维度相同，并且如果 子 pattern 是 constant pattern 或 enum pattern 时，其类型要和 selector 对应维度的类型相同。
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### Tuple 模式--1
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_totitlecase_01.cj
+ * -@TestCaseName: char_totitlecase_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试不同形式字符的toTitleCase，返回大写字符
+ * -#step1: 定义不同形式字符的变量，调用该变量的toTitleCase方法
+ * -#step2: 26个英文字符返回大写，其他返回本身
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

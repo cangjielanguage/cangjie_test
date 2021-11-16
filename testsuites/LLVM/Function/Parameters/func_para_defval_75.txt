@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: func_para_defval_75.cj
+ * -@TestCaseName: func_para_defval_75.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试可选参数所在接口成员函数为default函数/默认函数
+ * -#step1: 定义一个接口interface Base，其中声明两个default函数Poo，Roo，一个默认函数Qoo，并且所有函数入参均为可选参数
+ * -#step2: 定义子类class Data继承Base，重写default函数Poo、重写默认函数Qoo
+ * -#step3: 实例化Data，调用重写后的默认函数Qoo，重写后的default函数Poo以及继承自接口的default函数Roo，省略可选参数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

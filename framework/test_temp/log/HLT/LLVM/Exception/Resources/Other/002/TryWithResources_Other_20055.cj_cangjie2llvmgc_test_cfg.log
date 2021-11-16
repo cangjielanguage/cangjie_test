@@ -1,0 +1,28 @@
+2021-11-08 02:44:06 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20055.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:44:06 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20055_cj_cangjie2llvmgc_test_cfg_1636338480
+2021-11-08 02:44:06 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_20055.cj -o TryWithResources_Other_20055.out
+2021-11-08 02:44:07 DEBUG return code: 1
+2021-11-08 02:44:07 DEBUG stdout : 
+
+2021-11-08 02:44:07 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20055_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20055.cj:12:40: [31merror[0m: invalid dollar expression in quote
+@	   12 |     var a = quote($(try(a : A = A()){1}))
+@	      |                                        [32m^[0m
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20055_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20055.cj:12:13: [31merror[0m: undeclared identifier 'toTokens'
+@	   12 |     var a = quote($(try(a : A = A()){1}))
+@	      |             [32m^[0m
+@	 [31merror[0m: undeclared identifier 'Tokens'
+@	 [31merror[0m: undeclared identifier 'Tokens'
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20055_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20055.cj:12:13: [31merror[0m: undeclared identifier 'toTokens'
+@	   12 |     var a = quote($(try(a : A = A()){1}))
+@	      |             [32m^[0m
+@	 [31merror[0m: invalid binary operator '+' on type 'Invalid' and 'Invalid'
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20055_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20055.cj:13:5: [31merror[0m: undeclared identifier 'dump'
+@	   13 |     a.dump()
+@	      |     [32m^[0m
+@	7 errors and 1 warning generated
+
+2021-11-08 02:44:07 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 02:44:07 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20055.cj_cangjie2llvmgc_test_cfg.log

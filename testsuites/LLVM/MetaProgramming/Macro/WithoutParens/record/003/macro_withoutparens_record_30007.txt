@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_WithoutParens_Record_30007
+ * -@TestCaseName: macro_withoutparens_record_30007.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support Macro Call Without Parens.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define and call macro without parens.
+ * -@Expect: Compile failed.
+ * -@Priority: level0
+ */

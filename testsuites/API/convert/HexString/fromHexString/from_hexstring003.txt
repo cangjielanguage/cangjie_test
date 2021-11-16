@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: from_hexstring003.cj
+ * -@TestCaseName: from_hexstring003.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-03
+ * -@RequirementName: 提供Hex和String互相转换的函数
+ * -@Condition: no
+ * -@Brief: 空的入参
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

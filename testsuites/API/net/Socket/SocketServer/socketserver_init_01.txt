@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketserver_init_01.cj
+ * -@TestCaseName: socketserver_init_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketServer
+ * -@Condition: no
+ * -@Brief: Socketserver-参数正常（net ,port均在范围内（包括边界值））
+ * -#step1: Socketserver-参数正常（net ,port均在范围内（包括边界值））
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: Socketserver-init(net: SocketNet, port: UInt16)
+ */

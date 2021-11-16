@@ -1,0 +1,7 @@
+lldb,lldb 019_debug_expressions,019_debug_expressions
+b,b 21,019_debug_expressions.cj:21
+b,b 22,019_debug_expressions.cj:22
+r,r,-> 21
+c,c,-> 22
+n,n,-> 25
+cj_plocals,cj_plocals,weiq = -120

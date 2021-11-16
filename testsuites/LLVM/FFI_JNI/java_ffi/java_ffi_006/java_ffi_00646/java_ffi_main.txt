@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: java_ffi_00646
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-23
+ * -@RequirementName: Java互操作泛型接口互操作
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 泛型函数 类型参数个数 1 泛型函数参数发生遮盖 java侧导入泛型函数 class均从java侧导入
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,8 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 152,024_debug_variable.cj:152
+r,r,-> 152
+cj_set,cj_set a = 20,20
+cj_plocals,cj_plocals,a = 20
+finish,finish,-> 122
+n,n,-> 124
+cj_plocals,cj_plocals,f_func003 = 70

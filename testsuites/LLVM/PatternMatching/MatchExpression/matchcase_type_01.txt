@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: matchcase_type_01.cj
+ * -@TestCaseName: matchcase_type_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: 每条case 中 => 之后的表达式需要拥有除 Object 和 Any 外的最小公共父类型
+ * -#step1: 每条case 中 => 之后的表达式需要拥有除 Object 和 Any 外的最小公共父类型
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.19
+ * -@SpecChapter: 表达式/模式匹配表达式/
+ * -@SpecDetail: 对于包含多条 matchCase 的 match 表达式，在上下文没有明确的类型要求时，每条case 中 => 之后的表达式需要拥有除 Object 和 Any 外的最小公共父类型，并且此最小公共父类型也是 match 表达式的类型
+ * -@catalog:# 表达式## 模式匹配表达式--14
+ */

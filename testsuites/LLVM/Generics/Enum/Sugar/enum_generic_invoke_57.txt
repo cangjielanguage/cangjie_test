@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_57.chr
+ * -@TestCaseName: enum_generic_invoke_57.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>中类型变元T为record
+ * -#step1: 定义一个泛型record DataRec，内部定义一个T类型的变量并在init中初始化变量
+ * -#step2: 定义一个enum Data<T>，内部定义一个入参为T的构造函数
+ * -#step3: 调用enum <T>中的构造函数，类型变元为DataRec，传入dataRec
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

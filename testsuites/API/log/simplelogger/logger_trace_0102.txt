@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: logger_trace_0102.cj
+ * -@TestCaseName: logger_trace_0102.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1099-02
+ * -@RequirementName: 提供 class SimpleLogger
+ * -@Condition: no
+ * -@Brief:   Logger类的trace()参数正确：无参构造，调用该函数，正确打印日志
+ * -#step1:   Logger类的trace()参数正确：无参构造，调用该函数，正确打印日志
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: io/日志
+ * -@SpecDetail: public func trace(msg: String): Unit  打印不同级别的日志
+ */

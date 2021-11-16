@@ -1,0 +1,12 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-1/class_define_0010_n.cj
+*- @TestCaseName:非法类的定义，编译器报错
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:缺少左大括号，编译器报错
+* -#缺少左大括号，其他都合法
+*- @Expect:编译报错
+*- @Priority:level1 
+*/

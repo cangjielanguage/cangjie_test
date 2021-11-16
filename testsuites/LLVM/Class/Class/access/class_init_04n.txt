@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_init_04n.cj
+ * -@TestCaseName: class_init_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 成员变量初始化检查
+ * -@Condition: no
+ * -@Brief: class构造函数没有显示调用其他构造函数且未初始化全部成员变量，编译报错
+ * -#step1: class中定义两个未赋初始值的成员变量a,b
+ * -#step2: 定义两个重载构造函数，其中一个未全部初始化变量
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

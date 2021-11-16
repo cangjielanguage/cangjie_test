@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: typealias_scope_06.cj
+ * -@TestCaseName: typealias_scope_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: 类型别名定义在Top-level，在class内部调用
+ * -#step1: 在Top-level定义int32的类型别名为int，并在class内部调用int
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

@@ -1,0 +1,15 @@
+2021-11-08 01:40:46 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/generic_import_ext_int_1201/src/default.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:40:46 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/Generic/generic_import_ext_int_1201/src/default_cj_cangjie2llvmgc_test_cfg_1636335518
+2021-11-08 01:40:46 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./p1/*.cj -o a.o
+2021-11-08 01:40:46 DEBUG return code: 1
+2021-11-08 01:40:46 DEBUG stdout : 
+
+2021-11-08 01:40:46 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/Generic/generic_import_ext_int_1201/src/default_cj_cangjie2llvmgc_test_cfg_1636335518/p1/a.cj:3:15: [31merror[0m: external declaration uses internal types.
+@	    3 | external func foo<T> (a:T): T where T <: Aoo {
+@	      |               [32m^[0m
+@	1 error generated
+
+2021-11-08 01:40:46 DEBUG Run time: 0.38, remain time: 3e+02
+2021-11-08 01:40:46 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/generic_import_ext_int_1201/src/default.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: noselector00102.cj
+ * -@TestCaseName: noselector00102.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: 对于不带selector 的match 表达式，关键字match 之后没有expression，并且{} 中的每条case 中，关键字case 和=> 之间只能为一个Bool 类型的表达式（或者通配符_，表示永远为true
+ * -#step1: 对于不带selector 的match 表达式，关键字match 之后没有expression，并且{} 中的每条case 中，关键字case 和=> 之间只能为一个Bool 类型的表达式（或者通配符_，表示永远为true
+ * -@Expect: 编译执行成功，返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.19
+ * -@SpecChapter: 表达式/模式匹配表达式/
+ * -@SpecDetail: 不带 selector 的 match 表达
+ * -@catalog:# 表达式## 模式匹配表达式--4
+ */

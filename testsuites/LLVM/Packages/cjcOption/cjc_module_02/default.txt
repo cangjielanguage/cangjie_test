@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: cjc_module_02.cj
+ * -@TestCaseName: cjc_module_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: cjc –m/-module 一个目录
+ * -@Condition: no
+ * -@Brief: 使用cjc编译有空src的module
+ * -#step1: 使用cjc编译有空src的module
+ * -@Expect: 编译成功
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Static_00305
+ * -@TestCaseName: static00305.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2003-03
+ * -@RequirementName: Static
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Static modify can not exist with default.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

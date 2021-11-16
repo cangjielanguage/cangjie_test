@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: test_loadFromTZData_003
+ * -@TestCaseName: test_loadFromTZData_003
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1092-01
+ * -@RequirementName: 按照设计实现Location类的接口，支持时区的初始化、获取、调整等功能
+ * -@Conditon: no
+ * -@Brief: 验证Location的loadFromTZData方法的功能
+ * -#step1: 通过loadFromTZData方法获取Location实例
+ * -#step2: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

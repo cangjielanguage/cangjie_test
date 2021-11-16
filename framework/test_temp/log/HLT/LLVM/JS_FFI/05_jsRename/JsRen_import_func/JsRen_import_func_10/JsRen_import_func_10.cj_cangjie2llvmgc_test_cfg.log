@@ -1,0 +1,15 @@
+2021-11-08 01:54:56 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_10/JsRen_import_func_10.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:54:56 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_10/JsRen_import_func_10_cj_cangjie2llvmgc_test_cfg_1636335526
+2021-11-08 01:54:56 DEBUG execute cmd ===>>>: cjc -ulimit-error JsRen_import_func_10.cj -o JsRen_import_func_10..out
+2021-11-08 01:54:56 DEBUG return code: 1
+2021-11-08 01:54:56 DEBUG stdout : 
+
+2021-11-08 01:54:56 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_10/JsRen_import_func_10_cj_cangjie2llvmgc_test_cfg_1636335526/JsRen_import_func_10.cj:20:10: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   20 |   return B.isMoment(2.001)
+@	      |          [32m^[0m
+@	1 error generated
+
+2021-11-08 01:54:56 DEBUG Run time: 0.35, remain time: 3e+02
+2021-11-08 01:54:56 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_10/JsRen_import_func_10.cj_cangjie2llvmgc_test_cfg.log

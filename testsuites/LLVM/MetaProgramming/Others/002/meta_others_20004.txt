@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Others_20004
+ * -@TestCaseName: meta_others_20004.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define same name macro and import in one pkg.
+ * -@Expect: Compile success.
+ * -@Priority: level0
+ */
+ 

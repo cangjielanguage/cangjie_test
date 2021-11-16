@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: cookie_api_0204.cj
+ * -@TestCaseName: cookie_api_0204.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Cookie
+ * -@Condition: no
+ * -@Brief: Cookie带参构造器,填name,value,path,name为非空字符串
+ * -#step1: Cookie带参构造器,填name,value,path,name为非空字符串 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Cookie
+ * -@SpecDetail: Cookie带参构造器
+ */

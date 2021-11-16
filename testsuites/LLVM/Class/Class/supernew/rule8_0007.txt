@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: rule8_0007.cj
+ * -@TestCaseName: rule8_0007.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-08
+ * -@RequirementName: 造函数之间循环依赖
+ * -@Condition: no
+ * -@Brief: 子类入参的默认参数调用该类
+ * -#step1: 在父类定义无参init构造函数
+ * -#step2: 3个继承于step1的子类各有一个构造函数，子类Test主构造函数默认参数等于Test(),子类Test1 init构造函数默认参数等于Test1(),子类Test2 init构造函数默认参数等于this()
+ * -@Expect: 编译错误 
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.2.1 构造函数
+ * -@SpecDetail: 禁止构造函数之间循环依赖，否则将编译报错。
+ * -@catalog: # 类和接口## 类### 类的成员#### 构造函数##### `init` 构造函数--26
+ */

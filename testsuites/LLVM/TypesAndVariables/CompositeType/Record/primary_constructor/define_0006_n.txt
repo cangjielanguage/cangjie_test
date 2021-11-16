@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: define_0006_n.cj 
+ * -@TestCaseName: define_0006_n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Record 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 定义主构造函数的时候指定了返回类型 record
+ * -#step1: 定义主构造函数的时候指定了返回类型 record
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

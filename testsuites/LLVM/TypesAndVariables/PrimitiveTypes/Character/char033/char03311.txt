@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_TypesAndVariables_PrimitiveTypes_Character_03311
+ * -@TestCaseName: char03311.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: Character
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Char type do not support '&'.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

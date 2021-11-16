@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: pkgs008001.cj
+ * -@TestCaseName: pkgs008001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:The package name NOT be according to the path,compile error
+ * -#step1:Compile testfile and check result
+ * -@Expect:Compile fail and report an error
+ * -@Priority: High
+ */

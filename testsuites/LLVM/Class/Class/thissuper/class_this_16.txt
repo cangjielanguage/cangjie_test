@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_this_16.cj
+ * -@TestCaseName: class_this_16.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载
+ * -@Condition: no
+ * -@Brief: 测试在类成员函数中使用this调用其他类成员函数
+ * -#step1: 定义普通类Test，泛型类Data<T>,内部均定义一个成员函数func foo
+ * -#step2: 泛型类/普通类的类成员函数中使用this调用继承自父类成员变量
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

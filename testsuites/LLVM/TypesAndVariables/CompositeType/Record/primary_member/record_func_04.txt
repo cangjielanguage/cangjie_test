@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_func_04.cj
+ * -@TestCaseName: record_func_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record func中使用泛型label
+ * -#step1: 在泛型record体中声明两个泛型label，并在init函数中赋值
+ * -#step2: 定义一个func area其中调用泛型label
+ * -#step3: 实例化record传入类型变元为int32
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

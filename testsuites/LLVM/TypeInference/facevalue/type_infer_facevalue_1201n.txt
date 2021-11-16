@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_1201n.cj
+ * -@TestCaseName: type_infer_facevalue_1201n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 整型字面值判等时前后类型不一致，编译报错
+ * -#step1: 整型字面值判等时前后类型不一致
+ * -#step2: 编译检查报错信息
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

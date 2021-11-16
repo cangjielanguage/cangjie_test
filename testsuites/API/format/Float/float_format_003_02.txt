@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: float_format_003_02.cj
+ * -@TestCaseName: float_format_003_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1088-01
+ * -@RequirementName: Format 库的功能为仓颉提供类似 C 语言中的 printf 函数功能。支持对不同类型生成格式化字符串
+ * -@Condition: no
+ * -@Brief: float.format方法入参flags含'#'
+ * -@Expect: 运行时抛出异常
+ * -@Priority: level0
+ */

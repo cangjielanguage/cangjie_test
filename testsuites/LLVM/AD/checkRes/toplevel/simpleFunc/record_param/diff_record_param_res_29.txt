@@ -1,0 +1,24 @@
+/*
+ * -@TestCaseID: diff_record_param_res_29.cj
+ * -@TestCaseName: diff_record_param_res_29.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-07
+ * -@RequirementName: 自动微分与数值微分的正确性交叉验证
+ * -@Condition: no
+ * -@Brief: 入参为record类型的数值校验
+ * -#step1: 定义可微record A, 成员参数为temp1(Float32), temp2(B)
+ * -#step2: 定义主构函数为temp1, temp2赋值
+ * -#step2: A中定义成员函数mul, 入参为x(Float32), 返回值为 x * this.temp1
+ * -#step1: 定义可微record B, 成员参数为temp(Float32)
+ * -#step2: 定义主构函数为temp1, temp2赋值
+ * -#step3: 定义可微函数foo, 入参为x(A)
+ * -#step4: 在foo内定义可微变量count, res, 令count = x.temp2.temp, res = 1.0
+ * -#step5: 在foo内使用while循环, 判断条件为count < 5.0
+ * -#step6: 在while内使用if表达式, 判断条件为 count < 3.0, true则res = x.mul(res), count = count + 1.0
+ * -#step7: false则res = 2.0 * x.mul(res), count = count + 1.0
+ * -#step8: 返回res
+ * -@Expect: 编译成功，结果正确
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ */

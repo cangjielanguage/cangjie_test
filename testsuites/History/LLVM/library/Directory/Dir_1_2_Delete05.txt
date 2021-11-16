@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Dir_1_2_delete05
+ * -@TestCaseName: Dir_1_2_delete05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: Directory 相对路径下创建子目录与子文件，分别调用delete(false)和delete(true)删除
+ * -@Expect: 正确执行
+ * -@Priority: level 1
+ */
+    

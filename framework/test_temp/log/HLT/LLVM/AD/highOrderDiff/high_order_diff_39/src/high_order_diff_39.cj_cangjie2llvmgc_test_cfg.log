@@ -1,0 +1,20 @@
+2021-11-08 02:40:25 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/highOrderDiff/high_order_diff_39/src/high_order_diff_39.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:40:25 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/highOrderDiff/high_order_diff_39/src/high_order_diff_39_cj_cangjie2llvmgc_test_cfg_1636338479
+2021-11-08 02:40:25 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error -c src/pkg/pkg.cj -o pkg.o
+2021-11-08 02:40:25 DEBUG return code: 0
+2021-11-08 02:40:25 DEBUG stdout : 
+
+2021-11-08 02:40:25 DEBUG stderr : 
+
+2021-11-08 02:40:25 DEBUG Run time: 0.55, remain time: 3e+02
+2021-11-08 02:40:25 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error high_order_diff_39.cj pkg.o -o high_order_diff_39.out
+2021-11-08 02:40:25 DEBUG return code: 139
+2021-11-08 02:40:25 DEBUG stdout : 
+
+2021-11-08 02:40:25 DEBUG stderr : 
+@	[31merror[0m: Unresolved Reference: foo_Float64_adj_(Float64*(Float64->(EnvironmentTangent*Float64)))_adj!
+@	Segmentation fault (core dumped)
+
+2021-11-08 02:40:25 DEBUG Run time: 0.36, remain time: 3e+02
+2021-11-08 02:40:25 ERROR Failed, return code 139 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/highOrderDiff/high_order_diff_39/src/high_order_diff_39.cj_cangjie2llvmgc_test_cfg.log

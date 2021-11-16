@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/member-func/internal/internal_005_n/internal_005_n.cj
+*- @TestCaseName:类修饰符internal与函数修饰符的组合
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:通过实例使用同一个包的internal class内的protected函数，编译器报错
+* -#pakg1.cj:package pkg1，定义类internal  class Data ，定义protected函数get
+* -#internal_005_n.cj: package pkg1，创建Data的实例，调用get函数
+*- @Expect:调用get函数，编译器报错
+*- @Priority:level1 
+*/

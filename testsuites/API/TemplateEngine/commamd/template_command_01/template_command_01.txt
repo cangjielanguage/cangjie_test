@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_command_01.cj
+ * -@TestCaseName: template_command_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: command-生成文件：默认import io.*
+ * -#step1: command-生成文件：默认import io.*
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: command校验
+ */

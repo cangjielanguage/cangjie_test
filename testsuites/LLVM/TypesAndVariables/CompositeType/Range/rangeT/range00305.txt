@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Range_rangeT00301
+ * -@TestCaseName: rangeT00301.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 指定类型Range<T>声明主构造函数的let成员变量形参。
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

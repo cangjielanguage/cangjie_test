@@ -1,0 +1,21 @@
+ /*
+ * -@TestCaseID: func_define_01
+ * -@TestCaseName: func_define_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsModule调用js中入参和返回值均为function的函数
+ * -#step1: js侧的类内的static函数,入参为function,返回值为function,函数体为普通表达式,直接导出类A
+ * -#step2: 仓颉侧@JsModule修饰top-level类，内含static函数,入参为function,返回值为function
+ * -#step3: step2中的函数在main中调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsModule
+ * -@SpecDetail: 1、函数的参数和返回值类型仅支持部分类型 2、仓颉侧function映射Js侧function，
+ * -@SpecDetail: 3、当 `JavaScript` 包直接导出函数或变量时，可以通过 `@JsModule` 注解来表示
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsModule--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--5
+ */

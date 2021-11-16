@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_initblock_expression_32n.cj
+ * -@TestCaseName: record_initblock_expression_32n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试record的init block中已初始化的变量定义在未初始化变量前，编译报错
+ * -#step1: record的init block中先定义已初始化的变量abc，然后定义未初始化的变量xyz
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

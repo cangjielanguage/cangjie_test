@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_init_type_10.cj
+ * -@TestCaseName: hashset_init_type_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: HashSet<T> (elements: Collection<T>)构造器入参的类型：入参类型：函数类型(T)->xx及其字面值,函数类型(T)->xx是枚举定义
+ * -#step1: HashSet<T> (elements: Collection<T>)构造器入参的类型：入参类型：函数类型(T)->xx及其字面值,函数类型(T)->xx是枚举定义 
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: HashSet<T> (elements: Collection<T>)
+ */

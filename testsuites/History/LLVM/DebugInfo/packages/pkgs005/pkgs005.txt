@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: pkgs005.cj
+ * -@TestCaseName: pkgs005.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID:
+ * -@RequirementName: 重导出
+    双文件夹内各单文件、pkg3调pkg2,pkg2调pkg1,所以pkg3可以直接调pkg1的声明
+ * -@Condition: no
+ * -@Brief:import external变量并访问
+ * -#step1:import external变量并访问
+ * -#step2:检查编译执行结果
+ * -@Expect:执行正确
+ * -@Priority: High
+ */

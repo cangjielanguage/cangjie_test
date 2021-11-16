@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_import_04n.cj
+ * -@TestCaseName: record_generic_import_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 泛型record无修饰符被import,编译报错
+ * -#step1: 定义无修饰符修饰的泛型record
+ * -#step2: import该泛型record并实例化
+ * -@Expect: 无external修饰，默认为internal的,编译报错
+ * -@Priority: High
+ */

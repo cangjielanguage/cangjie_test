@@ -1,0 +1,13 @@
+2021-11-08 01:45:39 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_04/arg_ret_type_04.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:45:39 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_04/arg_ret_type_04_cj_cangjie2llvmgc_test_cfg_1636335521
+2021-11-08 01:45:39 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_04.cj -o arg_ret_type_04..out
+2021-11-08 01:45:40 DEBUG return code: 1
+2021-11-08 01:45:40 DEBUG stdout : 
+
+2021-11-08 01:45:40 DEBUG stderr : 
+@	./arg_ret_type_04.-d9864f00.o:(.data+0x0): undefined reference to `argRetType04'
+@	[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
+
+2021-11-08 01:45:40 DEBUG Run time: 0.65, remain time: 3e+02
+2021-11-08 01:45:40 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_04/arg_ret_type_04.cj_cangjie2llvmgc_test_cfg.log

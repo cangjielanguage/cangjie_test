@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: assign_0001.cj
+ * -@TestCaseName: assign_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-26
+ * -@RequirementName: 
+ * -@Condition: no
+ * -@Brief: assign protected member function of class to a let variable in top-level
+ * -#step1: assign protected member function of class to a let variable in top-level
+  * -@Expect: complile error 
+ * -@Priority: High
+ */

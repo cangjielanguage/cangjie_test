@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_label_40n.cj
+ * -@TestCaseName: record_label_40n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record中泛型label赋值给另外一个泛型label，编译报错
+ * -#step1: 定义一个泛型record，定义泛型label width，定义一个泛型label b
+ * -#step2: 将a 赋值给 b，编译检查报错信息
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

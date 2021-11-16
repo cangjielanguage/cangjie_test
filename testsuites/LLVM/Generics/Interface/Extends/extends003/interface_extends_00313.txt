@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Extends_00313
+ * -@TestCaseName: interface_extends_00313.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Extends as a cycle.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

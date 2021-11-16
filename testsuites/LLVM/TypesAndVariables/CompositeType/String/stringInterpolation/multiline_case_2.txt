@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: multiline_case_2
+* -@TestCaseName: multiline_case_2.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1006-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证插值字符串多行字符串，变量有覆盖
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

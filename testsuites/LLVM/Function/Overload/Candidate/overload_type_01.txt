@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: overload_type_01.cj
+ * -@TestCaseName: overload_type_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 对于候选集函数，仅根据入参类型无法选取合适的函数
+ * -#step1: 调用函数时根据入参类型，无法选取合适的函数，编译报错
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 10.1 函数重载
+ * -@SpecDetail: 对于可见函数集中的函数进行类型检查，只有通过函数调用类型检查的函数才能进入候选集
+ */

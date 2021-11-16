@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: tuple_12.cj
+ * -@TestCaseName: tuple_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: 函数返回值的tuple元组解构
+ * -#step1: 函数中return tuple类型，调用函数获取返回值，将元素解构为对应的变量
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

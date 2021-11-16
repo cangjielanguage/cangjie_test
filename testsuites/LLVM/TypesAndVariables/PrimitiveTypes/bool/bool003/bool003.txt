@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_bool_003
+ * -@TestCaseName: bool003.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: bool
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  boot value can not assign to other type
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

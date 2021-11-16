@@ -1,0 +1,42 @@
+2021-11-08 02:40:05 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/net/Socket/Socket/socket_api_close_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:40:05 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/net/Socket/Socket/socket_api_close_02_cj_cangjie2llvmgc_test_cfg_1636338478
+2021-11-08 02:40:05 DEBUG execute cmd ===>>>: cjc -backend llvm  socket_api_close_02.cj -o socket_api_close_02.out
+2021-11-08 02:40:06 DEBUG return code: 0
+2021-11-08 02:40:06 DEBUG stdout : 
+
+2021-11-08 02:40:06 DEBUG stderr : 
+
+2021-11-08 02:40:06 DEBUG Run time: 1.4, remain time: 3e+02
+2021-11-08 02:40:06 DEBUG execute cmd ===>>>:   socket_api_close_02.out  |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// socket_api_close_02.cj
+2021-11-08 02:40:06 DEBUG return code: 1
+2021-11-08 02:40:06 DEBUG stdout : 
++	compare.py input:
++		
++		-------------------------------------------------
++		[Log-Err] File=tcpsock.c, Line=89, Error=0x62
++		bind failed, fd: 4, ip: 127.0.0.1, port: 20202, addrlen: 16
++		
++		-------------------------------------------------
++		[Log-Err] File=sock.c, Line=229, Error=0x62
++		create_bind failed, net: tcp, addr: ipv4:127.0.0.1:20202
++		An exception has already occurred:
++		SocketException: Failed to bind socket: Native function error 98: Address already in use.
++			 at std/net.Function_std/net::bindSocket(Enum_std/net::SocketNet, Class_std/net::SocketAddress)(stdlib/net/SocketServer.cj:299)
++			 at std/net.Function_std/net::(SocketServer::)init(Enum_std/net::SocketNet, UInt16)(stdlib/net/SocketServer.cj:39)
++			 at default.Function_default::main()(/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/net/Socket/Socket/socket_api_close_02_cj_cangjie2llvmgc_test_cfg_1636338478/socket_api_close_02.cj:11)
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: re-connect error 1 , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan, pattern: re-connect error 2 , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan, pattern: success , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-11-08 02:40:06 DEBUG stderr : 
+
+2021-11-08 02:40:06 DEBUG Run time: 0.094, remain time: 3e+02
+2021-11-08 02:40:06 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/net/Socket/Socket/socket_api_close_02.cj_cangjie2llvmgc_test_cfg.log

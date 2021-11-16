@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_initblock_def_36n.cj
+ * -@TestCaseName: class_initblock_def_36n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试构造函数init中定义init block，编译报错
+ * -#step1: 构造函数init中定义正确的init block
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

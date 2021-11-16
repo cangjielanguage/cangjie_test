@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: extends_override_13n.cj
+ * -@TestCaseName: extends_override_13n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief:子类用override重写父类无函数体的抽象函数,编译报错
+ * -#step1:创建父类Base，有函数foo默认（public）无{}
+ * -#step2:创建子类Data继承Base，重写函数foo
+ * -#step3:检查编译信息
+ * -@Expect:编译报错
+ * -@Priority: High
+ */

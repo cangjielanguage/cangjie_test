@@ -1,0 +1,8 @@
+// EXEC-PIPE-1: %compiler %cmp_opt %f -o %output 2>&1 | compare %f
+// ASSERT: regex-not core dumped
+// ASSERT: regex-not stack trace
+func main(): Int64 {
+   var myAwray1 : inz32[] = @{}
+    var myArray2 : Array<Array<Int32>> = @{@{}}
+    return 0
+}

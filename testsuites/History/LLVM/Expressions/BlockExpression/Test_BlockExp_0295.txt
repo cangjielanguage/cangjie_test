@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Test_BlockExp_0296.cj
+ * -@TestCaseName: Test_BlockExp_0296.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-09_R2
+ * -@RequirementName: block变更为块表达式
+ * -@Condition: no
+ * -@Brief: if表达式每个分支的block回值类型拥有共同父类：C3, C2
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

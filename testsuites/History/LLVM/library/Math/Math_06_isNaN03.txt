@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Math_06_isNaN03
+* -@TestCaseName: Math_06_isNaN03.cj 
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: Math
+* -@Condition: cj, clang, maple test framework and python3.
+* -@Brief: NaN16 op FloatNum isNaN16
+* -@Expect: 正确执行
+* -@Priority: level 0
+*/

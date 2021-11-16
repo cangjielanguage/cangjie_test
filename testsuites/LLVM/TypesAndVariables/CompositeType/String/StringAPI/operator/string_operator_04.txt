@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_operator_04.cj
+ * -@TestCaseName: string_operator_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的操作符[]方法，索引内取值
+ * -#step1: 定义不同形式的string，调用该变量的[]方法
+ * -#step2: 索引内取值,检查是否能获取索引处的值
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

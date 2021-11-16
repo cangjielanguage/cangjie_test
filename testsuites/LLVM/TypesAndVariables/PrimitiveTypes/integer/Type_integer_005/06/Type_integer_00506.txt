@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Type_integer_00506.cj
+ * -@TestCaseName: Type_integer_00506.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基础类型
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 整数类型 Int32，关键自定义错误。
+ * #1.整数类型 int_32
+ * -@Expect: Compile/execute failed with error print "undeclared type name 'int_32'".
+ * -@Priority: level1
+ */

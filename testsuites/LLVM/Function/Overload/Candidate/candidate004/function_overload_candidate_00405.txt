@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Candidate_00405
+ * -@TestCaseName: function_overload_candidate_00405.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: When literal is two parameter`s child type, but parameter have relation, can decide.
+ * -@Expect: Compile success, return 1.
+ * -@Priority: level0
+ */

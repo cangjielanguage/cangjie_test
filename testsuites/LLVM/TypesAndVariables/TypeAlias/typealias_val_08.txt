@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: typealias_val_08.cj
+ * -@TestCaseName: typealias_val_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: function参数使用泛型的类型别名
+ * -#step1: 定义类型别名B<T>,原类型取值为自定义类Base<T>
+ * -#step2: 定义函数func的入参为类型别名B<int>
+ * -#step3: 检查编译结果
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

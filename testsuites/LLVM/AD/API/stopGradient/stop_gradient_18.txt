@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: stop_gradient_18.cj
+ * -@TestCaseName: stop_gradient_18.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-23
+ * -@RequirementName: 支持stopGradient接口
+ * -@Condition: no
+ * -@Brief: stopGradient的类型变元为class类型
+ * -@step1: stopGradient的类型变元为class类型
+ * -@Expect: 输出正确编译报错信息
+ * -@catelog:
+ * -@Priority: level0
+ */

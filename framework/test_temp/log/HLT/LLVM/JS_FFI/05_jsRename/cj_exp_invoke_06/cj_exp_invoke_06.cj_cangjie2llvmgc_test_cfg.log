@@ -1,0 +1,18 @@
+2021-11-08 01:57:02 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/cj_exp_invoke_06/cj_exp_invoke_06.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:57:02 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/cj_exp_invoke_06/cj_exp_invoke_06_cj_cangjie2llvmgc_test_cfg_1636335527
+2021-11-08 01:57:02 DEBUG execute cmd ===>>>: cjc -ulimit-error cj_exp_invoke_06.cj -o cj_exp_invoke_06..out
+2021-11-08 01:57:03 DEBUG return code: 1
+2021-11-08 01:57:03 DEBUG stdout : 
+
+2021-11-08 01:57:03 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/cj_exp_invoke_06/cj_exp_invoke_06_cj_cangjie2llvmgc_test_cfg_1636335527/cj_exp_invoke_06.cj:7:28: [31merror[0m: native function can only have CType args.
+@	    7 | foreign func cjExpInvoke06(arg: List<Int64>) : List<Int64>
+@	      |                            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/cj_exp_invoke_06/cj_exp_invoke_06_cj_cangjie2llvmgc_test_cfg_1636335527/cj_exp_invoke_06.cj:7:48: [31merror[0m: native function can only have CType return.
+@	    7 | foreign func cjExpInvoke06(arg: List<Int64>) : List<Int64>
+@	      |                                                [32m^[0m
+@	2 errors generated
+
+2021-11-08 01:57:03 DEBUG Run time: 0.56, remain time: 3e+02
+2021-11-08 01:57:03 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/cj_exp_invoke_06/cj_exp_invoke_06.cj_cangjie2llvmgc_test_cfg.log

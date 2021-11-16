@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_2101n.cj
+ * -@TestCaseName: type_infer_facevalue_2101n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 错误的if-else表达式定义，if condtion: {},编译报错
+ * -#step1: 错误的if-else表达式定义，if condtion: {}
+ * -#step2: 编译检查报错信息
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

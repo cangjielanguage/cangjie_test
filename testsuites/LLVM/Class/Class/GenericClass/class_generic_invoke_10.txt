@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_invoke_10.cj
+ * -@TestCaseName: class_generic_invoke_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>在lambda表达式中被调用
+ * -#step1: 定义一个泛型class Data<T>
+ * -#step2: 定义一个lambda表达式，表达式中实例化Data<T>,传入变元int32
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

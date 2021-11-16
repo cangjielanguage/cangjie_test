@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Math_13_pow_002
+* -@TestCaseName: Math_13_pow_002.cj 
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: Math
+* -@Condition: cj, clang, maple test framework and python3.
+* -@Brief: pow入参类型为整型字面值
+* -@Expect: 正确执行
+* -@Priority: level 0
+*/

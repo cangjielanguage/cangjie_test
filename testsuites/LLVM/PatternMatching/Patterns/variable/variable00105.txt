@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_00105
+ * -@TestCaseName: variable00105.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use literal as pattern will treated as constant pattern.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 类型模式--1
+ */

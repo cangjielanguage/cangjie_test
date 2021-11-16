@@ -1,0 +1,13 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+
+func main(): Int64 {
+    let a =  3-2-1
+
+    if (a!=0) {
+        return 1
+    }
+
+    return 0
+}

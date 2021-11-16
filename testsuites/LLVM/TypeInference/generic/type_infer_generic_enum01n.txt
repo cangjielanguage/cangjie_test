@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: type_infer_generic_enum01n.cj
+ * -@TestCaseName: type_infer_generic_enum01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-03
+ * -@RequirementName: 提供对泛型参数的类型推导
+ * -@Condition: no
+ * -@Brief: 变量赋值,(泛型enum中对类型变元的使用是T),使用处与该变量类型不匹配，编译报错
+ * -#step1: 构造泛型enum，对类型变元的使用是T,使用处与该变量类型不匹配
+ * -#step2: 检查编译执行结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

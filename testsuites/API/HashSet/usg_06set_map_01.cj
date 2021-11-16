@@ -1,0 +1,8 @@
+// EXEC: %compiler %stdx_cmp_opt %f -o %output
+// EXEC: %stdx_run %stdx_run_opt %output %stdx_run_args
+
+from std import collection.*
+func main(): Int64 {
+	var map = HashMap<Int64,String>()
+	return 0
+}

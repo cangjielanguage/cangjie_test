@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: string_matcher_07.cj
+ * -@TestCaseName: string_matcher_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Matcher-String非法正则语法
+ * -#step1: Matcher-String非法正则语法
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: Matcher-String非法正则语法
+ */

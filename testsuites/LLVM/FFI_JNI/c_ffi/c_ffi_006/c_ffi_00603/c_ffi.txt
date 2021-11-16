@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: c_ffi_00603
+ * -@TestCaseName: c_ffi.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1086-07
+ * -@RequirementName: String类型映射
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: CString构造函数创建 字符串作为函数返回值 函数入参个数2
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

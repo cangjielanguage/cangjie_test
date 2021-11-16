@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkg_issue_01.cj
+ * -@TestCaseName: pkg_issue_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:在func中使用未声明的变量
+ * -#step1:在func中使用未声明的变量
+ * -#step2:编译检查编译报错信息
+ * -@Expect:编译报错提示有未定义的变量
+ * -@Priority: High
+ */

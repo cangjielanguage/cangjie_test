@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_member_access_01.cj
+ * -@TestCaseName: class_member_access_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 类的访问控制检查
+ * -@Condition: no
+ * -@Brief: class的访问控制检查
+ * -#step1: 同一个文件中定义分别定义external和internal修饰的class
+ * -#step2: 文件中分别调用external和internal修饰的class
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Buffer_api_operator_01.cj
+ * -@TestCaseName: Buffer_api_operator_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-01
+ * -@RequirementName: 提供 class Buffer
+ * -@Condition: no
+ * -@Brief:  operator func [](index: Int64): T获取指定index的元素
+ * -#step1:  operator func [](index: Int64): T获取指定index的元素
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/Buffer
+ * -@SpecDetail: operator func [](index: Int64): T
+ */

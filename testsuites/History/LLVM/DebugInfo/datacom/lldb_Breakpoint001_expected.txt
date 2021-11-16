@@ -1,0 +1,5 @@
+lldb,lldb 015_debug_basetype,015_debug_basetype
+b,b 4,015_debug_basetype.cj:4
+target,target create 022_debug_launch,022_debug_launch
+b,b 5,022_debug_launch.cj:5
+r,r,-> 5

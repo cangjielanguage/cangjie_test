@@ -1,0 +1,16 @@
+/*
+* -@TestCaseID: list014_sliceoperator_05
+* -@TestCaseName: list014_sliceoperator_05
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-Lang-1011-04
+* -@RequirementName: lang.List库
+* -@Condition: no
+* -@Brief: slice 3..-1:-1 for a 4-size List<Int64>
+* -#step1: 
+* -@Expect: Compile success, return 0.
+* -@Priority: level0
+* -@SpecVersion: spec 0.22.3
+* -@SpecChapter: List
+* -@SpecDetail: 
+* -@catalog: 
+*/

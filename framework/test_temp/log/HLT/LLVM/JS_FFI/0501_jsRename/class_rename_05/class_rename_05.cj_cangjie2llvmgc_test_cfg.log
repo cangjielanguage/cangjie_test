@@ -1,0 +1,33 @@
+2021-11-08 01:54:33 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:54:33 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525
+2021-11-08 01:54:33 DEBUG execute cmd ===>>>: cjc -ulimit-error class_rename_05.cj -o class_rename_05..out
+2021-11-08 01:54:34 DEBUG return code: 1
+2021-11-08 01:54:34 DEBUG stdout : 
+
+2021-11-08 01:54:34 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525/class_rename_05.cj:6:1: [31merror[0m: unexpected class declaration
+@	    6 | foreign class B {
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525/class_rename_05.cj:11:23: [31merror[0m: native function can only have CType args.
+@	   11 | foreign func isMoment(a: B, b: B): Bool
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525/class_rename_05.cj:11:29: [31merror[0m: native function can only have CType args.
+@	   11 | foreign func isMoment(a: B, b: B): Bool
+@	      |                             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525/class_rename_05.cj:14:22: [31merror[0m: native function can only have CType return.
+@	   14 | foreign func getB(): B
+@	      |                      [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525/class_rename_05.cj:17:16: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   17 | 	  if(isMoment(getB(), getB())) {
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525/class_rename_05.cj:17:24: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   17 | 	  if(isMoment(getB(), getB())) {
+@	      |                        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05_cj_cangjie2llvmgc_test_cfg_1636335525/class_rename_05.cj:17:7: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   17 | 	  if(isMoment(getB(), getB())) {
+@	      |       [32m^[0m
+@	7 errors generated
+
+2021-11-08 01:54:34 DEBUG Run time: 0.38, remain time: 3e+02
+2021-11-08 01:54:34 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_05/class_rename_05.cj_cangjie2llvmgc_test_cfg.log

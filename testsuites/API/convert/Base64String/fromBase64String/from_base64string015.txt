@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: from_base64string015.cj
+ * -@TestCaseName: from_base64string015.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-02
+ * -@RequirementName: 提供Base64和String互相转换的函数
+ * -@Condition: no
+ * -@Brief: 入参字符串开头或者中间含'='号,转换失败
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ */

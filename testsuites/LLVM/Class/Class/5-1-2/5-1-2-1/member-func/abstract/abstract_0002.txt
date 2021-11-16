@@ -1,0 +1,14 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/member-func/abstract/abstract_0002.cj
+*- @TestCaseName:抽象函数的测试
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon: 无
+*- @Brief:抽象类中定义的普通函数，可以被正常使用
+* -#定义抽象基类Base，定义get函数
+* -#定义继承自Base的类Data
+* -#创建Data的实例，调用get函数
+*- @Expect:absstract类的public函数可以被正确调用
+*- @Priority:level1 
+*/

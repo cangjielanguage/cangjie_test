@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: intnative_type_0101.cj
+ * -@TestCaseName: intnative_type_0101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1002-05
+ * -@RequirementName: IntNative和UIntNative
+ * -@Condition: no
+ * -@Brief: 定义为IntNative变量，赋值给Int64的变量
+ * -#step1: 定义为IntNative变量，赋值给Int64的变量
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 值类型
+ * -@SpecDetail: 
+ */

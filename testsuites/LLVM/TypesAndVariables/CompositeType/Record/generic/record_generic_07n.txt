@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_generic_07n.cj
+ * -@TestCaseName: record_generic_07n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record成员函数func中，赋给泛型label非T类型的值
+ * -#step1: 定义一个类型变元为T的泛型record，成员函数func中赋给泛型label非T类型的值
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

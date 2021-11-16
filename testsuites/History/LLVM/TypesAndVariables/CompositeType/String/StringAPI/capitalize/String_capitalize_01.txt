@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: String_capitalize_01.cj
+ * -@TestCaseName: String_capitalize_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试capitalize的字符串参数正常
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

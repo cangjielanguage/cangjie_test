@@ -1,0 +1,18 @@
+/*
+ * -@TestCaseID: capture_func_varlet_08.cj
+ * -@TestCaseName: capture_func_varlet_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: 变量的var/let属性和捕获变量的函数是否作为一级公民使用
+ * -@Condition: no
+ * -@Brief: 函数返回值为该函数名(捕获let变量)
+ * -#step1: 定义var变量a,类型为Int32
+ * -#step2: 定义函数foo,参数为空，返回值为a
+ * -#step3: 定义函数test,参数类型为空,返回值为foo
+ * -#step4: 调用test,传入foo
+ * -@Expect: 运行成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 闭包
+ * -@SpecDetail: 仅捕获了let声明的局部变量的函数或lambda可以作为一等公民使用，即可以赋值给变量，可以作为实参或返回值使用。
+ */

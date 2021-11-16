@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00503
+ * -@TestCaseName: array00503.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.对于定义初始化的数组访问长度内的值。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

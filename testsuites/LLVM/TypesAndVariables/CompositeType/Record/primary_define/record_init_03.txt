@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_init_03.cj
+ * -@TestCaseName: record_init_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 成员变量初始化检查
+ * -@Condition: no
+ * -@Brief: 泛型record的构造函数
+ * -#step1: 定义一个泛型record，构造函数中初始化变量
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

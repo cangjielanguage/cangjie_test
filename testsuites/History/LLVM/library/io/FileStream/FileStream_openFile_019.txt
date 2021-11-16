@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_019.cj
+ * -@TestCaseName: FileStream_openFile_019.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: Insert:已有文件中插入字符串；Insert:未创建文件中插入字符串
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

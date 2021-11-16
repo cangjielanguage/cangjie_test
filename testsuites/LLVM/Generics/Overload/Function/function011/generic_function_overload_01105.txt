@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Overload_Function_01105
+ * -@TestCaseName: generic_function_overload_01105.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-09
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Call same name generic function use most match rule.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

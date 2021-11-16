@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs028.cj
+ * -@TestCaseName: pkgs028.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:Import record,run success
+ * -#step1:Compile testfile
+ * -#step2:Run & check return value
+ * -@Expect:Return 0
+ * -@Priority: High
+ */

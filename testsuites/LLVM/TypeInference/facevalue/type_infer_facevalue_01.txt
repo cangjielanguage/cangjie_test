@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_01.cj
+ * -@TestCaseName: type_infer_facevalue_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 函数返回值是数组，连式调用size，即foo<Array<Int64>>().size
+ * -#step1: 函数返回值是数组，连式调用size，即foo<Array<Int64>>().size
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

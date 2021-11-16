@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_00106
+ * -@TestCaseName: constant00106.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define multi literal constant in one pattern.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 常量模式--1
+ */

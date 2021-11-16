@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_value_0703.cj
+ * -@TestCaseName: string_value_0703.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的字面量，多行字符串，合规的多行字符串且分行，"""独立一行
+ * -#step1: 定义一个以"""修饰的多行字符串且分行，"""独立一行
+ * -#step2: 打印结该字符串，ASSERT捕获打印信息
+ * -@Expect: 执行成功，打印期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,2 @@
+2021-11-08 02:07:39 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/Filesystem/os_fchmod_n_04.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:07:39 ERROR Run task exit unexpected : DEPENDENCE keyword error, file: a/b NotFound, Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/Filesystem/os_fchmod_n_04.cj_cangjie2llvmgc_test_cfg.log

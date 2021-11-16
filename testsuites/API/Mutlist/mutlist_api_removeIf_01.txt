@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Buffer_api_removeIf_01.cj
+ * -@TestCaseName: Buffer_api_removeIf_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-01
+ * -@RequirementName: 提供 class Buffer
+ * -@Condition: no
+ * -@Brief:  removeIf(predicate: (T)-> Bool): Unit，含有符合条件的元素，被成功删除
+ * -#step1:  removeIf(predicate: (T)-> Bool): Unit，含有符合条件的元素，被成功删除
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/Buffer
+ * -@SpecDetail: removeIf(predicate: (T)-> Bool): Unit
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: arithmetic_operator_03n.cj
+ * -@TestCaseName: arithmetic_operator_03n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 算术操作符
+ * -@Condition: no
+ * -@Brief: 测试错误的幂运算表达式，编译报错
+ * -#step1: 定义错误的幂运算表达式
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

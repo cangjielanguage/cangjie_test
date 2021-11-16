@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_05n.cj
+ * -@TestCaseName: func_para_defval_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试func函数的可选参数后跟非可选参数，编译报错
+ * -#step1: 声明一个函数func Foo，可选参数之后定义一个非可选参数
+ * -#step2: 调用函数Foo()，不传入任何实参
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

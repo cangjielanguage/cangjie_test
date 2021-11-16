@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_init_11.cj
+ * -@TestCaseName: class_init_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 成员变量初始化检查
+ * -@Condition: no
+ * -@Brief: class构造函数中实例化其他类
+ * -#step1: class构造函数中实例化其他类
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,2 @@
+2021-11-08 01:58:13 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMem_para_check_001/JsMem_para_check_001.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:58:13 ERROR Run task exit unexpected : DEPENDENCE keyword error, file: momentMember.js NotFound, Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMem_para_check_001/JsMem_para_check_001.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: test_envVars_002
+ * -@TestCaseName: test_envVars_002
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-08
+ * -@RequirementName: 添加获取环境变量和返回参数的API
+ * -@Conditon: no
+ * -@Brief: 验证envVars()的功能
+ * -#step1: 通过envVars()获取命令行参数
+ * -#step2: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

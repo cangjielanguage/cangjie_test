@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Instant_00127
+ * -@TestCaseName: interface_instant_00127.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Normal interface extends Multi generic interface with instantiation.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

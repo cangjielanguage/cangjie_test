@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_backend_01.cj
+ * -@TestCaseName: driver_backend_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项为-backend llvm且有源文件
+ * -#step1: cjc -backend llvm xxx源文件
+ * -@Expect: 执行成功,生成llvm后端文件
+ * -@Priority: High
+ */

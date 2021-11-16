@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_invoke_08.cj
+ * -@TestCaseName: class_generic_invoke_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>在func中以成员变量被调用
+ * -#step1: 定义一个泛型class Data<T>，在顶层定义一个func f并实例化Data<T>，传入变元int32
+ * -#step2: 调用func f，访问Data<T>中的变量
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

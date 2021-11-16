@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: high_order_diff_38.cj
+ * -@TestCaseName: high_order_diff_38.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-22
+ * -@RequirementName: 高阶微分测试需求
+ * -@Condition: no
+ * -@Brief: 自定义高阶微分函数的adjoint伴随函数
+ * -@step1: 自定义高阶微分函数的adjoint伴随函数
+ * -@step2: 验证一阶导数
+ * -@Expect: 执行成功,返回0
+ * -@catelog:
+ * -@Priority: level0
+ */

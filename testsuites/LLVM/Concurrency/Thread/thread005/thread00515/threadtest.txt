@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: thread00515
+ * -@TestCaseName: threadtest.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-11
+ * -@RequirementName: BindOSThread / UnbindOSThread
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: BindOSThread LWT状态转换 getResult(timeout <= 0)
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

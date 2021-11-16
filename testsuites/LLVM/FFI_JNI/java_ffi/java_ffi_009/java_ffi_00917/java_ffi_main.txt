@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_00917
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-14
+ * -@RequirementName: Java可空类型处理
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 可空类型 java侧方法的返回值 将其存储到 Option 类型变量中
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+ 

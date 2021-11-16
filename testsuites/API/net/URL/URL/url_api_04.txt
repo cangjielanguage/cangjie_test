@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: url_api_04.cj
+ * -@TestCaseName: url_api_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class URL
+ * -@Condition: no
+ * -@Brief: func parseRequestURI(rawurl: String): Result<URL>,[scheme:][//[userinfo@]host][/]path[?query][#fragment]格式的字符串
+ * -#step1: func parseRequestURI(rawurl: String): Result<URL>
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/URL
+ * -@SpecDetail: Static func parseRequestURI(rawurl: String): Result<URL>
+ */

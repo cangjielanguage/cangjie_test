@@ -1,0 +1,39 @@
+2021-11-08 01:58:16 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:58:16 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527
+2021-11-08 01:58:16 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_18.cj -o arg_ret_type_18..out
+2021-11-08 01:58:17 DEBUG return code: 1
+2021-11-08 01:58:17 DEBUG stdout : 
+
+2021-11-08 01:58:17 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:9:15: [31merror[0m: expected ',' to separate or ')' to close
+@	    9 |   if(isMoment(#{4: "a"}) == #{4: "a"}){
+@	      |               [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:9:29: [31merror[0m: expected expression here
+@	    9 |   if(isMoment(#{4: "a"}) == #{4: "a"}){
+@	      |                             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:9:29: [31merror[0m: missing ')' in if expression
+@	    9 |   if(isMoment(#{4: "a"}) == #{4: "a"}){
+@	      |                             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:9:29: [33mnote[0m: to match this '('
+@	    9 |   if(isMoment(#{4: "a"}) == #{4: "a"}){
+@	      |                             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:9:38: [31merror[0m: Unmatched ')' found
+@	    9 |   if(isMoment(#{4: "a"}) == #{4: "a"}){
+@	      |                                      [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:6:28: [31merror[0m: undeclared type name 'Map'
+@	    6 | foreign func isMoment(arg: Map<Int64, String>) : Map<Int64, String>
+@	      |                            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:6:50: [31merror[0m: undeclared type name 'Map'
+@	    6 | foreign func isMoment(arg: Map<Int64, String>) : Map<Int64, String>
+@	      |                                                  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:9:6: [31merror[0m: no matching function declaration for function call 'isMoment'
+@	    9 |   if(isMoment(#{4: "a"}) == #{4: "a"}){
+@	      |      [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18_cj_cangjie2llvmgc_test_cfg_1636335527/arg_ret_type_18.cj:9:6: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
+@	    9 |   if(isMoment(#{4: "a"}) == #{4: "a"}){
+@	      |      [32m^[0m
+@	8 errors generated
+
+2021-11-08 01:58:17 DEBUG Run time: 0.61, remain time: 3e+02
+2021-11-08 01:58:17 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_18/arg_ret_type_18.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,21 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <callSuffix> case (use valueArgument):
+Origin BNF is 
+    :  LPAREN NL* (valueArgument (NL* COMMA NL* valueArgument)* NL*)? RPAREN
+    | lambdaExpression
+    
+Test   BNF is 
+    :  LPAREN NL* (<<TARGET=valueArgument->pattern>> (NL* COMMA NL* valueArgument)* NL*)? RPAREN
+    | lambdaExpression
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

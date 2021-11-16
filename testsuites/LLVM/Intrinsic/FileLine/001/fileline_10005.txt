@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: fileline_10005.cj
+ * -@TestCaseName: fileline_10005.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-43
+ * -@RequirementName: support sourceFile and sourceLine.
+ * -@Condition: no
+ * -@Brief: call sourceFile and sourceLine.
+ * -@Expect: compile success, return 0
+ * -@Priority: High
+ */

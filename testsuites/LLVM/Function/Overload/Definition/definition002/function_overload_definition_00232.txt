@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Definition_00232
+ * -@TestCaseName: function_overload_definition_00232.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define open function in father class, define same name different static function in child class.
+ * -@Expect: Compile error, return 0.
+ * -@Priority: level0
+ */

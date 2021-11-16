@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 导入泛型函数，带泛型约束T<:A,A是external但是没有导入，编译报错
+ * -#step1: 导入泛型函数，带泛型约束T<:A,A是external但是没有导入，编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 泛型
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

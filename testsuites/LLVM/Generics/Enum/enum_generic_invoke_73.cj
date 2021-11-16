@@ -1,0 +1,16 @@
+// EXEC: %compiler %cmp_opt %n.cj -o %output
+// EXEC: %run %run_opt %output %run_args
+
+enum Time<T>{
+    Day(T) | Hour(T)
+}
+
+func run(): Int64 {
+    var time = Day<Int32>(4)
+    var time2 = Hour<Int32>(4)
+    return 0
+}
+
+func main(): Int64 {
+    return run()
+}

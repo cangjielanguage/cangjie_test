@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: define_0016_n.cj 
+ * -@TestCaseName: define_0016_n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Class 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: more than one primary construntor in one Class
+ * -#step1: define more than one primary constructor in one Class
+ * -@Expect: 编译报错 
+ * -@Priority: High
+ */

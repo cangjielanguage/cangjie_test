@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: HttpStatusCode_let_32.cj
+ * -@TestCaseName: HttpStatusCode_let_32.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-09
+ * -@RequirementName: 提供 class HttpStatusCode
+ * -@Condition: no
+ * -@Brief:  let StatusConflict = 409
+ * -#step1:  let StatusConflict = 409 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/HttpStatusCode
+ * -@SpecDetail: HttpStatusCode
+ */

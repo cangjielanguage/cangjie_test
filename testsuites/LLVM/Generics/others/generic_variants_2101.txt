@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_variants_2101.cj
+ * -@TestCaseName: generic_variants_2101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-17
+ * -@RequirementName: 泛型类使用限制检查
+ * -@Condition: no
+ * -@Brief: extend A<T> where T<:Int64，实例化时使用Int32，编译报错
+ * -#step1: extend A<T> where T<:Int64，实例化时使用Int32，编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ */

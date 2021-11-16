@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_List_00607
+ * -@TestCaseName: list_00607.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-02
+ * -@RequirementName: List
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use list`s API.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

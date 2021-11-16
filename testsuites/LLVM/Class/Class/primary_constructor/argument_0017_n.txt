@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: argument_0017_n.cj 
+ * -@TestCaseName: argument_0017_n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Class 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 主构造函数中，成员变量形参有初始值，值为类的非静态成员变量
+ * -#step1: 主构造函数中，成员变量形参有初始值，值为类的非静态成员变量
+ * -@Expect: 编译报错 
+ * -@Priority: High
+ */

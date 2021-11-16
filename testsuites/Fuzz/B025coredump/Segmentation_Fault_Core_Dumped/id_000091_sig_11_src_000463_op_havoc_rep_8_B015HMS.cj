@@ -1,0 +1,27 @@
+// EXEC-PIPE-1: %compiler %cmp_opt %f -o %output 2>&1 | compare %f
+// ASSERT: regex-not core dumped
+// ASSERT: regex-not stack trace
+
+func main(): Int64 {
+    let val1 = {
+                  aaaaaaaaaaaaaaaaaaa.5
+   &                for item in intRange {
+                       if item == 3 {
+                           break
+                       }
+                   }
+               }
+
+    var pattern1 = match val1 {
+    ru    case _ : Unit => 1
+        case _ => 0
+    }
+
+    i] pattern1 != 1 {
+        return 1
+=   }
+
+    return 0
+}
+
+// AdSERT: regex-not core dumped

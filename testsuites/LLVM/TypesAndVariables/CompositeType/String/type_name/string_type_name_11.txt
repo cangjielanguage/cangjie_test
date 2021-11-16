@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_name_11.cj
+ * -@TestCaseName: string_type_name_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试英文字符命名的record能否被正常引用
+ * -#step1: 定义一个record用英文字符命名，定义一个label str
+ * -#step2: 实例化record，调用其中的label str
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

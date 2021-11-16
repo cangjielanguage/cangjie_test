@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_type_36.cj
+ * -@TestCaseName: enum_generic_type_36.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试class<T>中T为泛型enum类型
+ * -#step1: 定义一个泛型class Foo<T>，定义一个泛型enum Time<T>
+ * -#step2: 实例化泛型class Time<Int32>，实例化泛型class Foo<Time<Int32>>传入类型变元为Time<Int32>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

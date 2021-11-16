@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: type_infer_generic_func0201n.cj
+ * -@TestCaseName: type_infer_generic_func0201n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-03
+ * -@RequirementName: 提供对泛型参数的类型推导
+ * -@Condition: no
+ * -@Brief: 泛型函数中对类型变元的使用是T，调用时参数给不匹配的类型，编译报错
+ * -#step1: 泛型函数中对类型变元的使用是T。调用时参数给不匹配的类型
+ * -#step2: 检查编译执行结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

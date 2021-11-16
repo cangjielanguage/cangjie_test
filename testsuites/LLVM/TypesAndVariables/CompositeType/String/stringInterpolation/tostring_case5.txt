@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: tostring_case5
+* -@TestCaseName: tostring_case5.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1006-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证自定义类型，自定义类型中的变量
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_constraints_class_static_3102.cj
+ * -@TestCaseName: generic_constraints_class_static_3102.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-07
+ * -@RequirementName: 类型变元支持.访问静态成员
+ * -@Condition: no
+ * -@Brief: 泛型类的泛型约束，调用约束接口的泛型静态方法
+ * -#step1: 泛型类的泛型约束，调用约束接口的泛型静态方法
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter: 
+ * -@SpecDetail: 
+ */

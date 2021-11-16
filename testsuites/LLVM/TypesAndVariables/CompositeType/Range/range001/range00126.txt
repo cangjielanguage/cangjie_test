@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Range_00126
+ * -@TestCaseName: range00126.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Range成员为float16。
+ * -@Expect: 编译报错.
+ * -@Priority: level0
+ */

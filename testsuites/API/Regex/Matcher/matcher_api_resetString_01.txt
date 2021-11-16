@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_resetString_01.cj
+ * -@TestCaseName: matcher_api_resetString_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-重置字符串,重置成功
+ * -#step1: Mathcher-重置字符串,重置成功
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: func resetString(input: String): Matcher设置新的输入字符串，覆盖原匹配对象
+ */

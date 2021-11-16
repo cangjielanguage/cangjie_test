@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketserver_init_02_01.cj
+ * -@TestCaseName: socketserver_init_02_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketServer
+ * -@Condition: no
+ * -@Brief: Socketserver-参数不在范围内：net
+ * -#step1: Socketserver-参数不在范围内：net
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: Socketserver-init(net: SocketNet, address: String, port: UInt16)
+ */

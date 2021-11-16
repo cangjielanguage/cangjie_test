@@ -1,0 +1,24 @@
+2021-11-08 02:40:23 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20044.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:40:23 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20044_cj_cangjie2llvmgc_test_cfg_1636338479
+2021-11-08 02:40:23 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_20044.cj -o TryWithResources_Other_20044.out
+2021-11-08 02:40:23 DEBUG return code: 1
+2021-11-08 02:40:23 DEBUG stdout : 
+
+2021-11-08 02:40:23 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20044_cj_cangjie2llvmgc_test_cfg_1636338479/TryWithResources_Other_20044.cj:14:5: [31merror[0m: expected block begin with '{'
+@	   14 |     do(try(a : A = A()){true}){
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20044_cj_cangjie2llvmgc_test_cfg_1636338479/TryWithResources_Other_20044.cj:14:7: [31merror[0m: expected while condition in the end of do while expression
+@	   14 |     do(try(a : A = A()){true}){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20044_cj_cangjie2llvmgc_test_cfg_1636338479/TryWithResources_Other_20044.cj:14:5: [31merror[0m: no matching function for operator '()' function call
+@	   14 |     do(try(a : A = A()){true}){
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20044_cj_cangjie2llvmgc_test_cfg_1636338479/TryWithResources_Other_20044.cj:14:5: [31merror[0m: calling object is not a function or constructors
+@	   14 |     do(try(a : A = A()){true}){
+@	      |     [32m^[0m
+@	4 errors generated
+
+2021-11-08 02:40:23 DEBUG Run time: 0.4, remain time: 3e+02
+2021-11-08 02:40:23 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20044.cj_cangjie2llvmgc_test_cfg.log

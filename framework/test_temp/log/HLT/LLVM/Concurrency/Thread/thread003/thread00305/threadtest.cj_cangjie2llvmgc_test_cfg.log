@@ -1,0 +1,18 @@
+2021-11-08 02:35:06 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread003/thread00305/threadtest.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:35:06 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Concurrency/Thread/thread003/thread00305/threadtest_cj_cangjie2llvmgc_test_cfg_1636338475
+2021-11-08 02:35:06 DEBUG execute cmd ===>>>: cjc -ulimit-error -ld-options=" -L./ -lcangjie-sync" threadtest.cj -o threadtest.out
+2021-11-08 02:35:07 DEBUG return code: 0
+2021-11-08 02:35:07 DEBUG stdout : 
+
+2021-11-08 02:35:07 DEBUG stderr : 
+
+2021-11-08 02:35:07 DEBUG Run time: 0.69, remain time: 3e+02
+2021-11-08 02:35:07 DEBUG execute cmd ===>>>: export CANGJIE_MAX_CONCURRENCY=1 && export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  threadtest.out  2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// threadtest.cj
+2021-11-08 02:40:06 DEBUG return code: 3
+2021-11-08 02:40:06 DEBUG stdout : 
+
+2021-11-08 02:40:06 DEBUG stderr : 
+@	TimeOut
+2021-11-08 02:40:06 DEBUG Run time: 3e+02, remain time: -0.051
+2021-11-08 02:40:06 ERROR Failed, return code 3 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread003/thread00305/threadtest.cj_cangjie2llvmgc_test_cfg.log

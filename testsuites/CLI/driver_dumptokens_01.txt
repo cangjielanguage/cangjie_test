@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: driver_dumptokens_01.cj
+ * -@TestCaseName: driver_dumptokens_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-frontend -dump-tokens后跟源文件
+ * -#step1: 执行cjc -frontend -dump-tokens xxx源文件
+ * -#step2: 检查执行结果
+ * -@Expect: 执行成功，打印tokens信息
+ * -@Priority: High
+ */

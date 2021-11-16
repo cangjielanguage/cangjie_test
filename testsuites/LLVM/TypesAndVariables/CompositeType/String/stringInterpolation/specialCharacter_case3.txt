@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: multiline_case_3
+* -@TestCaseName: multiline_case_3.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1006-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证特殊字符，中文符号
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

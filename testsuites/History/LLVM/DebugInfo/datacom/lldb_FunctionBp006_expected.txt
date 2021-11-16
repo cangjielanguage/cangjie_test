@@ -1,0 +1,6 @@
+lldb,lldb 014_debug_func_bp,014_debug_func_bp
+b,b funcbp001,014_debug_func_bp.cj:58
+b,b funcbp002,014_debug_func_bp.cj:64
+disable,breakpoint disable 1,1 breakpoints disabled
+list,breakpoint list,disabled
+r,r,-> 64

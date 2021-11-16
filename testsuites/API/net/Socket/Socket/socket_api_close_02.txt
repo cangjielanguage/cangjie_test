@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socket_api_close_02.cj
+ * -@TestCaseName: socket_api_close_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class Socket
+ * -@Condition: no
+ * -@Brief: socket-重复关闭
+ * -#step1: socket-重复关闭
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: socket-public func close(): Unit
+ */

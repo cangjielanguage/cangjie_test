@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_Expressions_StatementExpressions_ConditionalExpressions_IfExpression_00104
+ * -@TestCaseName: if00104.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use 'IF' instead of 'if'.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 条件表达式--3
+ */

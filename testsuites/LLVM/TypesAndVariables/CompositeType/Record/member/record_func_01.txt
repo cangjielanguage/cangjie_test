@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_func_01.cj
+ * -@TestCaseName: record_func_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record func体中使用let定义的label
+ * -#step1: 在record体中声明一个let label，并且赋值
+ * -#step2: func体中使用let定义的labell
+ * -@Expect: 执行成功,返回期望结果
+ * -@Priority: High
+ */

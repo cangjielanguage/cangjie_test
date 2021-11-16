@@ -1,0 +1,12 @@
+2021-11-08 02:34:22 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/interface/invoke_instance_func_25.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:34:22 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Extend/interface/invoke_instance_func_25_cj_cangjie2llvmgc_test_cfg_1636338475
+2021-11-08 02:34:22 DEBUG execute cmd ===>>>: cjc -ulimit-error invoke_instance_func_25.cj -o invoke_instance_func_25.out
+2021-11-08 02:34:22 DEBUG return code: 139
+2021-11-08 02:34:22 DEBUG stdout : 
+
+2021-11-08 02:34:22 DEBUG stderr : 
+@	Segmentation fault (core dumped)
+
+2021-11-08 02:34:22 DEBUG Run time: 0.41, remain time: 3e+02
+2021-11-08 02:34:22 ERROR Failed, return code 139 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/interface/invoke_instance_func_25.cj_cangjie2llvmgc_test_cfg.log

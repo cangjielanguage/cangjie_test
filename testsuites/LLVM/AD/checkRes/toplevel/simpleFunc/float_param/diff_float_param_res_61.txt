@@ -1,0 +1,23 @@
+/*
+ * -@TestCaseID: diff_float_param_res_61.cj
+ * -@TestCaseName: diff_float_param_res_61.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-07
+ * -@RequirementName: 自动微分与数值微分的正确性交叉验证
+ * -@Condition: no
+ * -@Brief: 入参为float类型的数值校验
+ * -#step1: 定义可微函数foo, 入参为x(Float64), y(Float64), z: String, 使用[except:[z]], 赋值y默认参数1.0
+ * -#step2: 定义可微参数temp, 令temp = x
+ * -#step3: 定义可微函数sub, 入参为x(Float64), y(Float64), 返回 2.0 * x - y
+ * -#step4: 定义sub的伴随函数，入参为x(Float64), y(Float64), 返回 (32.0,{temp: Float64=>(temp, temp)})
+ * -#step5: 定义可微函数add, 入参为x(Float64), y(Float64), 返回 2.0 * x + y
+ * -#step6: 定义add的伴随函数，入参为x(Float64), y(Float64), 返回 (32.0,{temp: Float64=>(temp, temp)})
+ * -#step7: 在foo内使用while表达式, 判断条件为temp < 30.0
+ * -#step8: while内使用if表达式, 判断条件为 temp < 0.0, true则temp = sub(x, y), false则temp = add(x, y)
+ * -#step9: 返回temp
+ * -#step10: 使用grad, valWithGrad, adjointOf求值时使用默认参数值
+ * -@Expet: 编译失败
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ */

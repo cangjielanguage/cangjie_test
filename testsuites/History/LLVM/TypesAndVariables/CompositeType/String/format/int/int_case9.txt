@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: int_case9
+* -@TestCaseName: int_case9.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-2027-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证format()；整数,c.format("020")
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

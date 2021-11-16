@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_def_01.cj
+ * -@TestCaseName: enum_generic_def_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试完整正确的泛型enum定义<T>
+ * -#step1: 定义一个有类型变元的enum <T>，内部定义一个入参为类型变元的构造函数
+ * -#step2: match匹配enum中的构造函数，传入类型变元int64
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

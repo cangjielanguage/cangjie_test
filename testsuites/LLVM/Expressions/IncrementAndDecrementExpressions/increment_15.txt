@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: increment_15.cj
+ * -@TestCaseName: increment_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: 不同进制的数值类型++
+ * -#step1: 定义不同进制表示的整型字面量变量
+ * -#step2: 变量++
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

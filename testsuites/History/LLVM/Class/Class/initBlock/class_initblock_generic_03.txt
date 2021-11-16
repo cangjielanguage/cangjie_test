@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_initblock_generic_03.cj
+ * -@TestCaseName: class_initblock_generic_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: initblock中调用泛型静态函数
+ * -#step1: 定义一个泛型类Data<T>,内部定义泛型静态函数；initblock中调用泛型静态函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

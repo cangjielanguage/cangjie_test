@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_func_46n.cj
+ * -@TestCaseName: static_func_46n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: 类的静态成员函数中使用block外的非静态成员函数，编译报错
+ * -#step1: 类Data中定义成员函数foo
+ * -#step2: 定义静态成员函数coo，静态函数中使用block的非静态成员函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

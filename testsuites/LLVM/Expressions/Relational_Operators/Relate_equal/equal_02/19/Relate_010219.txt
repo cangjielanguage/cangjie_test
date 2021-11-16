@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Relate_010214.cj
+ * -@TestCaseName: Relate_010214.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. ==(相等操作符)左右操作数分别为变量且赋值为特殊字符，两个操作数相等返回0；
+ *  #2.
+ * -@Expect: no coredump and print: escape unicode must be 1 to 8 hexadecimal digits.
+ * -@Priority: level0
+ */

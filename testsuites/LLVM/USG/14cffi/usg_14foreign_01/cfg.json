@@ -1,0 +1,11 @@
+{
+  "package": {
+    "ffi/c": "cangjieCFFI_path"
+  },
+  "foreign_module": {
+    "libusg_14foreign_01.so": {
+      "path": "./",
+      "export": ["rand"]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+2021-11-08 02:29:07 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:29:07 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50_cj_cangjie2llvmgc_test_cfg_1636338472
+2021-11-08 02:29:07 DEBUG execute cmd ===>>>: cjc -ulimit-error typealias_define_50.cj -o typealias_define_50.out
+2021-11-08 02:29:08 DEBUG return code: 1
+2021-11-08 02:29:08 DEBUG stdout : 
+
+2021-11-08 02:29:08 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50_cj_cangjie2llvmgc_test_cfg_1636338472/typealias_define_50.cj:21:1: [33mwarning[0m: type arg(s) Generics-T are not used
+@	   21 | type CD<T> = ClassData
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50_cj_cangjie2llvmgc_test_cfg_1636338472/typealias_define_50.cj:28:23: [31merror[0m: type argument's number does not match type parameter's number
+@	   28 |     var res3: Int32 = CD<Int32>.get_a()
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50_cj_cangjie2llvmgc_test_cfg_1636338472/typealias_define_50.cj:28:23: [31merror[0m: undeclared identifier 'get_a'
+@	   28 |     var res3: Int32 = CD<Int32>.get_a()
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50_cj_cangjie2llvmgc_test_cfg_1636338472/typealias_define_50.cj:28:23: [31merror[0m: type argument's number does not match type parameter's number
+@	   28 |     var res3: Int32 = CD<Int32>.get_a()
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50_cj_cangjie2llvmgc_test_cfg_1636338472/typealias_define_50.cj:28:23: [31merror[0m: undeclared identifier 'get_a'
+@	   28 |     var res3: Int32 = CD<Int32>.get_a()
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50_cj_cangjie2llvmgc_test_cfg_1636338472/typealias_define_50.cj:28:15: [31merror[0m: initializer's type is incompatible with variable declaration 'res3' 
+@	   28 |     var res3: Int32 = CD<Int32>.get_a()
+@	      |               [32m^[0m
+@	5 errors and 1 warning generated
+
+2021-11-08 02:29:08 DEBUG Run time: 0.38, remain time: 3e+02
+2021-11-08 02:29:08 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/TypeAlias/typealias_define_50.cj_cangjie2llvmgc_test_cfg.log

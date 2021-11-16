@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Buffer_equal_01.cj
+ * -@TestCaseName: Buffer_equal_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-01
+ * -@RequirementName: 提供 class Buffer
+ * -@Condition: no
+ * -@Brief:  Buffer<T> (elements: Iterable<T>),添加元素的类型：List<Type> 实例值相等，且相同位置（ index ）的元素全部相等
+ * -#step1:  Buffer<T> (elements: Iterable<T>),添加元素的类型：List<Type> 实例值相等，且相同位置（ index ）的元素全部相等
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/Buffer
+ * -@SpecDetail: Buffer<T>(elements: Iterable<T>)
+ */

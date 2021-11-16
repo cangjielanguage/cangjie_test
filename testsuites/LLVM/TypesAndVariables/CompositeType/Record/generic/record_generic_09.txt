@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_09.cj
+ * -@TestCaseName: record_generic_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record <T1, T2, T3>，变元仅用于record label
+ * -#step1: 定义有多个类型变元的record，内部定义多个label声明为类型变元
+ * -#step2: 实例化record，传入类元为<Int64, float64, Int32>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

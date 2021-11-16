@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: string_api_operator_0202.cj
+ * -@TestCaseName: string_api_operator_0202.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-9
+ * -@RequirementName: String 标准库新增API
+ * -@Condition: no
+ * -@Brief: 测试String的api：operator func [](index: Range<Int64>) : String其中range部分index越界
+ * -#step1: 测试String的api：operator func [](index: Range<Int64>) : String其中range部分index越界
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: core_lib.md
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

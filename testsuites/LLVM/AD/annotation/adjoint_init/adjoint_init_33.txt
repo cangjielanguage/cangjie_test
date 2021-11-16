@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: adjoint_init_33.cj
+ * -@TestCaseName: adjoint_init_33.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-14
+ * -@RequirementName: AD支持自定义可微类型的可微init的adjoint函数
+ * -@Condition: no
+ * -@Brief: record中定义多个重载的可微函数，定义多个重载的伴随函数
+ * -@step1: record中定义多个重载的可微函数，定义多个重载的伴随函数
+ * -@Expect: 编译正确，执行成功
+ * -@catelog: # 自动微分## 可微函数### 非顶层可微函数#### Record构造函数和成员方法--2
+ * -@Priority: level0
+ */

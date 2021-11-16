@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_name_05.cj
+ * -@TestCaseName: string_type_name_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试英文字符命名的包名能否被正常导入
+ * -#step1: 在包(pkgs)中定义一个external修饰的String变量命名为string
+ * -#step2: 导入pkgs.string，打印结果，ASSERT对比打印信息
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

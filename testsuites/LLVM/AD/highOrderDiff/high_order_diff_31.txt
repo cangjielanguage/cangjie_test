@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: high_order_diff_31.cj
+ * -@TestCaseName: high_order_diff_31.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-22
+ * -@RequirementName: 高阶微分测试需求
+ * -@Condition: no
+ * -@Brief: 高阶微分中定义自增减表达式
+ * -@step1: 高阶微分中定义自增减表达式
+ * -@Expect: 编译报错
+ * -@catelog:
+ * -@Priority: level0
+ */

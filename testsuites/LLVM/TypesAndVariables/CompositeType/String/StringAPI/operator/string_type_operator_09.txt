@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_operator_09.cj.
+ * -@TestCaseName: string_type_operator_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String支持的操作符，条件操作符 a1=b ? a : b
+ * -#step1: 定义两个字符串a、b
+ * -#step2: 判断条件操作符运算的结果
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

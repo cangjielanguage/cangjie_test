@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: string_bigstring_06.cj
+ * -@TestCaseName: string_bigstring_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试超长字符串replace(old:char,new:old)方法
+ * -#step1: 测试超长字符串replace(old:char,new:old)方法
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: java_ffi_00601n
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-22
+ * -@RequirementName: Java互操作泛型类互操作
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 仓颉调用java 泛型 导入java侧泛型类 类型参数个数 1 类型参数种类 引用类型 创建泛型类实例 Int8
+ * -@Expect: Compile fail.
+ * -@Priority: level0
+ */

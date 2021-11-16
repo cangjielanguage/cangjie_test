@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_initblock_constr_44.cj
+ * -@TestCaseName: record_initblock_constr_44.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: record中自定义默认形参的构造函数1、两个入参数的构造函数2，调用顺序为构造函数2->1->initblock生成的构造器, 实例化时调用构造器
+ * -#step1: 定义一个record Data，record中定义一个init block；
+ * -#step2: 自定义默认形参的构造函数1、两个参数的构造函数2，调用关系为构造函数2->构造函数1->调用部分参数的init block生成的构造器
+ * -#step3: 实例化record，传入实参。一次调用自定义构造器2->1->init block构造器
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

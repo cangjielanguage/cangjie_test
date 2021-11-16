@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_118n.cj
+ * -@TestCaseName: func_para_defval_118n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试可选入参右值为自身函数调用，编译报错
+ * -#step1: 定义func Foo，其中含两个可选参数A=x,B的默认值为自身函数Foo的调用
+ * -#step2: 调用函数传入实参
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

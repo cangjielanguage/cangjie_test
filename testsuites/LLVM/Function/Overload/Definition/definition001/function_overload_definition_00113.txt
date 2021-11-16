@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Definition_00113
+ * -@TestCaseName: function_overload_definition_00113.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Init variable with function which has multi-define whith same name and different parameter.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

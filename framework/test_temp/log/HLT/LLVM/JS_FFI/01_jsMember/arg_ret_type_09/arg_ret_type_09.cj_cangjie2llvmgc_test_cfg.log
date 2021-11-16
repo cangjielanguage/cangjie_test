@@ -1,0 +1,13 @@
+2021-11-08 02:10:05 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_09/arg_ret_type_09.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:10:05 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_09/arg_ret_type_09_cj_cangjie2llvmgc_test_cfg_1636335534
+2021-11-08 02:10:05 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_09.cj -o arg_ret_type_09..out
+2021-11-08 02:10:06 DEBUG return code: 1
+2021-11-08 02:10:06 DEBUG stdout : 
+
+2021-11-08 02:10:06 DEBUG stderr : 
+@	./arg_ret_type_09.-92689786.o:(.data+0x0): undefined reference to `isMoment'
+@	[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
+
+2021-11-08 02:10:06 DEBUG Run time: 1.0, remain time: 3e+02
+2021-11-08 02:10:06 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/arg_ret_type_09/arg_ret_type_09.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,19 @@
+2021-11-08 02:56:11 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LSP/ictu/DTS2021081319320/src/class_member_type_13.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:56:11 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LSP/ictu/DTS2021081319320/src/class_member_type_13_cj_cangjie2llvmgc_test_cfg_1636338487
+2021-11-08 02:56:11 DEBUG execute cmd ===>>>: $CANGJIE_HOME/tools/bin/ictu -m tests/HLT/LSP/ictu/DTS2021081319320 -a open_file -p default -f class_member_type_13.cj 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// class_member_type_13.cj
+2021-11-08 02:56:11 DEBUG return code: 1
+2021-11-08 02:56:11 DEBUG stdout : 
++	compare.py input:
++		/bin/sh: 1: /home/zhujunhua/workspace/cangjie/B027/tools/bin/ictu: not found
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex, pattern: OPEN_FILE Action on file: class_member_type_13.cj in package 'default' causes '0' errors , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-11-08 02:56:11 DEBUG stderr : 
+
+2021-11-08 02:56:11 DEBUG Run time: 0.17, remain time: 3e+02
+2021-11-08 02:56:11 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LSP/ictu/DTS2021081319320/src/class_member_type_13.cj_cangjie2llvmgc_test_cfg.log

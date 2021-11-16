@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_comb_06.cj
+ * -@TestCaseName: driver_comb_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: 依次组合全局选项-help和前端选项-dump-tokens，且-frontend不在首位
+ * -#step1: cjc -help -frontend -dump-tokens  xx源文件
+ * -@Expect: 报错，提示-frontend不在首位
+ * -@Priority: High
+ */

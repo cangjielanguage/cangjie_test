@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_API_Expr_Parse_token002032
+ * -@TestCaseName: token002032.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-20
+ * -@RequirementName: Libast support parser expr.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Libast support parser expr.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

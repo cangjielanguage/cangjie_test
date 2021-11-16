@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_type_var_10.cj
+ * -@TestCaseName: char_type_var_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型作为record的label使用
+ * -#step1: 定义一个record，record中定义一个类型为char的label
+ * -#step2: 访问record中的label
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

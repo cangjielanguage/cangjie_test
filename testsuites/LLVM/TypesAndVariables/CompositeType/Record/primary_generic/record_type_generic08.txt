@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_type_generic08.cj
+ * -@TestCaseName: record_type_generic08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record<T>的类型变元为reocrd
+ * -#step1: 定义一个record Data1,定义一个泛型record Data2
+ * -#step2: 实例化Data1，实例化泛型record Data2传入类型变元为Data1
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

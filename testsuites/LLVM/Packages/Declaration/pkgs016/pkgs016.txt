@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs016
+ * -@TestCaseName: pkgs016
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:Use correct keyword of from module import xxx as alias,run success
+ * -#step1:Compile testfile
+ * -#step2:Run & check return value
+ * -@Expect:Return 0
+ * -@Priority: High
+ */

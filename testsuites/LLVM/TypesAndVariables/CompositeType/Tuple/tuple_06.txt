@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: tuple_06.cj
+ * -@TestCaseName: tuple_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: tuple元组的链式调用
+ * -#step1: 在tuple元组中定义新的tuple元组
+ * -#step2: 调用内部元组的元素
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: option_type_modify_02.cj
+ * -@TestCaseName: option_type_modify_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试Option类型变量的修饰符，import导入external修饰的Option
+ * -#step1: 在pkgs中定义一个external修饰的Option变量命名为opt
+ * -#step2: 导入pkgs.opt
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

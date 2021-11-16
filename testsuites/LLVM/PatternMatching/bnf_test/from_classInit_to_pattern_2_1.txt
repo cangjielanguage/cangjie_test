@@ -1,0 +1,19 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <classInit> case (use functionParameters):
+Origin BNF is 
+    :  (classNonStaticMemberModifier NL*)? INIT NL* functionParameters NL* block
+    
+Test   BNF is 
+    :  (classNonStaticMemberModifier NL*)? INIT NL* <<TARGET=functionParameters->pattern>> NL* block
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: trait_generic_06.cj
+ * -@TestCaseName: trait_generic_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: 提供泛型trait
+ * -@Condition: no
+ * -@Brief: 泛型trait定义时约束类型变元为自身，append时泛型trait的类型变元为append的泛型本身，且append的泛型类型变元有约束
+ * -#step1: 定义泛型trait Num<V>约束类型变元为自身，定义泛型record Student<K>
+ * -#step2: append泛型Student时trait Num<Student<U>>的类型变元实例化为Student<U>自身，且约束U的上界为Num<U>
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功，返回0
+ * -@Priority: High
+ */

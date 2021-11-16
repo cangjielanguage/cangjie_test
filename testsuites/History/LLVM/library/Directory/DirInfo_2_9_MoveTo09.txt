@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DirInfo_2_9_moveTo09
+ * -@TestCaseName: DirInfo_2_9_moveTo09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: moveTo(des), 构造函数src,des分别为绝对路径，绝对路径
+ * -@Expect: 正确执行
+ * -@Priority: level 1
+ */
+    

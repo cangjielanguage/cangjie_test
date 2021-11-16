@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: extends_00307.cj
+ * -@TestCaseName: extends_00307.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-27
+ * -@RequirementName: 类继承时，分隔&后面不跟接口
+ * -@Condition: no
+ * -@Brief: class类B1继承于类A，类A后面跟着& 后面不跟接口
+ * -#step1: class类B1继承于类A，类A后面跟着& 后面不跟接口
+ * -@Expect: 编译错误
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.1.3 实现接口 
+ * -@SpecDetail: 多个接口之间用 & 分隔。
+ * -@catalog: # 类和接口## 接口### 接口继承--1
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: capture_func_local_06.cj
+ * -@TestCaseName: capture_func_local_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-07
+ * -@RequirementName: 变量捕获
+ * -@Condition: no
+ * -@Brief: 变量声明在func函数体中，该函数的嵌套函数中捕获var变量，嵌套函数作为一级公民，将报错
+ * -#step1: 变量声明在func函数体中，该函数的嵌套函数中捕获var变量，嵌套函数作为一级公民，将报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 函数/闭包
+ * -@SpecDetail: 
+ */

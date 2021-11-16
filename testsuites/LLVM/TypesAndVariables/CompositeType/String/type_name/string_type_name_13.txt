@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_name_13.cj
+ * -@TestCaseName: string_type_name_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试以英文字符命名的trait能否被正常引用
+ * -#step1: 定义一个英文字符命名的trait，trait内部重载操作符函数 '+'，append String实现trait中的func +
+ * -#step2: 定义两个字符串类型str1、str2，利用重载操作符 '+' 执行
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

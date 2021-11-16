@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: if_type_01.cj
+ * -@TestCaseName: if_type_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Condition: no
+ * -@Brief: 对于没有 `else` 分支的 `if` 表达式，它的类型为 `Unit`，它的值等于 `()`。因为 `if expr1 {expr2}` 是 `if expr1 {expr2; ()} else {()}` 的语法糖。
+ * -#step1: 对于没有 `else` 分支的 `if` 表达式，它的类型为 `Unit`，它的值等于 `()`。因为 `if expr1 {expr2}` 是 `if expr1 {expr2; ()} else {()}` 的语法糖。
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.5
+ * -@SpecChapter:
+ * -@SpecDetail:
+ * -@catalog:# 表达式## 条件表达式--8
+ * -@catalog:# 表达式## 条件表达式--9
+ */

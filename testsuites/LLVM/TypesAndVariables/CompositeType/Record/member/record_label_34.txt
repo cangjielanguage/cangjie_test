@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_label_34n.cj
+ * -@TestCaseName: record_label_34n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中定义一个成员函数赋值给一个label,只定义不调用
+ * -#step1: 在record体中定义一个成员函数
+ * -#step2: 将此成员函数赋值给一个label，只定义不调用
+ * -@Expect: 编译正确
+ * -@Priority: High
+ */

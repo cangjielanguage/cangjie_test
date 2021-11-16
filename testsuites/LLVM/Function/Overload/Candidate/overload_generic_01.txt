@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: overload_generic_01.cj
+ * -@TestCaseName: overload_generic_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 定义两个泛型函数之间构成重载
+ * -#step1: 定义两个泛型函数之间构成重载
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 10.1 函数重载
+ * -@SpecDetail: 在仓颉编程语言中，支持泛型函数之间的重载，也支持泛型函数与非泛型函数之间的重载
+ */

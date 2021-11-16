@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: option_type_modify_07n.cj
+ * -@TestCaseName: option_type_modify_07n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试同package（不同源码文件）中类B访问类A中protected修饰的Option变量，编译报错
+ * -#step1: 源文件中pkgs中，声明包pkgs，定义类A，A中定义Option类型变量opt并用public修饰符修饰
+ * -#step2: 源文件中，导入pkgs.A，定义类B，str变量match类A中的opt
+ * -#step3: 访问B类中的str
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

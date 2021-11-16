@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: option_def_01.cj
+ * -@TestCaseName: option_def_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试Option<T>调用.Some<T>()赋值
+ * -#step1: 声明一个Option<Int32>类型的变量，并调用.Some<Int32>()赋值
+ * -#step2: match匹配Option<Int32>的构造函数
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

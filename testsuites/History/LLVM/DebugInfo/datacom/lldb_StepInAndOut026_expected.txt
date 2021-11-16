@@ -1,0 +1,7 @@
+lldb,lldb 018_debug_parentheses,018_debug_parentheses
+b,b 4,018_debug_parentheses.cj:4
+r,r,-> 4
+s,s,-> 5
+cj_plocals,cj_plocals,kuonum = 5
+rerun,r,-> 4
+finish,finish,stopped

@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_define_01.cj
+ * -@TestCaseName: Array_define_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  Array<Int8>类型的数组定义在top-level，并在main中调用数组中的值
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

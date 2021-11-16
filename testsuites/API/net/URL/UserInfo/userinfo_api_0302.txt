@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: userinfo_api_0302.cj
+ * -@TestCaseName: userinfo_api_0302.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class UserInfo
+ * -@Condition: no
+ * -@Brief: func password(): Option<String>,构造器UserInfo (username: String)
+ * -#step1: func password(): Option<String>,构造器UserInfo (username: String) 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/UserInfo
+ * -@SpecDetail: func password(): Option<String>
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_OperatorOverloading_Append_00903
+ * -@TestCaseName: append_00903.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Multi type generic record operator overloading,+(a:A<X,Y>,b:A<Y,X>).
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

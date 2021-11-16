@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: increment_09.chr
+ * -@TestCaseName: increment_09.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: 对权限访问受限的成员变量自增减，编译报错
+ * -#step1: 包pkga中定义internal修饰的父类Base，external修饰的子类Data
+ * -#step2: 子类成员变量m调用父类Base的成员变量初始化
+ * -#step3: 主文件中导入包pkga,实例化Data，调用Data().m++
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

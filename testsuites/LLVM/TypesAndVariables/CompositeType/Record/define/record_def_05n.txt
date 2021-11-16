@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_def_05n.cj
+ * -@TestCaseName: record_def_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record类型名字为关键字
+ * -#step1: 定义一个record名字为关键字class
+ * -#step2: 编译检查编译报错信息
+ * -@Expect: record类型名字为class错误，编译器报错
+ * -@Priority: High
+ */

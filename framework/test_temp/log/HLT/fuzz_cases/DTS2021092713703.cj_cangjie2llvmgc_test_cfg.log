@@ -1,0 +1,24 @@
+2021-10-26 02:24:13 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/fuzz_cases/DTS2021092713703.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:24:13 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/fuzz_cases/DTS2021092713703_cj_cangjie2llvmgc_test_cfg_1635213985
+2021-10-26 02:24:13 DEBUG execute cmd ===>>>: cjc -ulimit-error DTS2021092713703.cj -o DTS2021092713703.out
+2021-10-26 02:24:14 DEBUG return code: 1
+2021-10-26 02:24:14 DEBUG stdout : 
+
+2021-10-26 02:24:14 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/fuzz_cases/DTS2021092713703_cj_cangjie2llvmgc_test_cfg_1635213985/DTS2021092713703.cj:341:9: [31merror[0m: variable 'var551 used by var544' is used before initialization
+@	  341 |         var551
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/fuzz_cases/DTS2021092713703_cj_cangjie2llvmgc_test_cfg_1635213985/DTS2021092713703.cj:977:9: [31merror[0m: variable 'var2102 used by var2443' is used before initialization
+@	  977 |         var2102
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/fuzz_cases/DTS2021092713703_cj_cangjie2llvmgc_test_cfg_1635213985/DTS2021092713703.cj:1053:21: [31merror[0m: variable 'var2602 used by var3044' is used before initialization
+@	 1053 |         } else if ((var2602 is Result<((Int16*UInt8*(Bool*List<Unit>*Float32)*Range<Int32>*UInt8*Char)*Float32*(Int16*UInt8*(Bool*List<Unit>*Float32)*Range<Int32>*UInt8*Char)*Range<Int64>*List<Bool>*Range<Int64>)>)) { // block id: 2613
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/fuzz_cases/DTS2021092713703_cj_cangjie2llvmgc_test_cfg_1635213985/DTS2021092713703.cj:28:10: [31merror[0m: variable 'var544' is used before initialization
+@	   28 | internal let var544 : Class313 = Class313(((UInt16(Int16(70)) is Char), [(), (), (), (), (), (), (), (), (), ()], Float32(-93.0)))
+@	      |          [32m^[0m
+@	4 errors generated
+
+2021-10-26 02:24:14 DEBUG Run time: 1.1, remain time: 3e+02
+2021-10-26 02:24:14 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/fuzz_cases/DTS2021092713703.cj_cangjie2llvmgc_test_cfg.log

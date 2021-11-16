@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_body_02.cj 
+ * -@TestCaseName: func_body_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Record 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 主构造函数正确调用另一个init
+ * -#step1: 主构造函数正确调用另一个init
+ * -#step2: 调用主构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

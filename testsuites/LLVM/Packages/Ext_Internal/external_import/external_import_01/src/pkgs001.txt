@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: external_import_01.cj
+ * -@TestCaseName: external_import_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 导出后使用
+ * -@Condition: no
+ * -@Brief: 调用者与被调用者均使用external使用，调用者导出，被调用者被导入
+ * -#step1: 文件1中调用者与被调用者均使用external使用
+ * -#step2: 文件2中调用者导出，被调用者被导入
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

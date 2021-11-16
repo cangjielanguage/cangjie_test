@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_var_07.cj
+ * -@TestCaseName: string_type_var_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型作为interface的成员变量使用
+ * -#step1: 定义一个接口，接口中定义一个String类型的成员变量
+ * -#step2: 访问接口中的成员变量，打印结果，ASSERT对比打印信息
+ * -@Expect: 执行成功，打印期望结果
+ * -@Priority: High
+ */

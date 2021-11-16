@@ -1,0 +1,18 @@
+ /*
+ * -@TestCaseID: Foreign_Block_00108
+ * -@TestCaseName: foreign_block_00108.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2031-01
+ * -@RequirementName: Foreign Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define function inside foreign block with different param.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: foreign 修饰符
+ * -@SpecDetail: 1、`foreign` 修饰符支持修饰顶级类、接口、函数以及变量（ `var` 和 `let` ） 2、foreign函数，不允许有实现（函数体），重载
+ * -@SpecDetail: 3、`foreign` 修饰符支持修饰块和单个声明，定义从左到右依次为 `foreign` 关键字、外部语言字面量值、外部模块体或其他单个顶级声明
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--4
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符--2
+ */

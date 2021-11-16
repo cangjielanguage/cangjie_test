@@ -1,0 +1,23 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+trait X{}
+
+trait Y{}
+
+func test<T>() where T <: X&T{}
+
+record R<T> where T <: X&T{}
+
+enum E<T> where T <: X&T{e}
+
+class C<T> where T <: X&T{}
+
+interface I<T> where T <: X&T{}
+
+append<T> R<T> with X where T<:X&T{} 
+
+
+func main():Int64{
+    return 0
+}

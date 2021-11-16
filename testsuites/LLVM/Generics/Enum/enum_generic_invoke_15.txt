@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_15.cj
+ * -@TestCaseName: enum_generic_invoke_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>在match中被调用
+ * -#step1: 定义一个enum TimeUnit<T>，定义另一个enum类型Date
+ * -#step2: 在match表达式中调用另一个泛型enum传入变元int32
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

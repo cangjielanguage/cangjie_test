@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: ipmask_use_01.cj
+ * -@TestCaseName: ipmask_use_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class IPMask
+ * -@Condition: no
+ * -@Brief: IPMask-使用场景func mask(mask: IPMask): SocketAddressWithMask
+ * -#step1: IPMask-使用场景func mask(mask: IPMask): SocketAddressWithMask
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: IPMask-SocketAddress
+ */

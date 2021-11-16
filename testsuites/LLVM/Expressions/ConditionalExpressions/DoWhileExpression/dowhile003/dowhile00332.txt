@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Char_Expressions_StatementExpressions_ConditionalExpressions_DoWhileExpression_00332
+ * -@TestCaseName: dowhile00332.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define class inside do while expression.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--1
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--1
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--2
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--2
+ */

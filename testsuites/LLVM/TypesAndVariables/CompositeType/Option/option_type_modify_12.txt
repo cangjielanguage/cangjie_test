@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: option_type_modify_12.cj
+ * -@TestCaseName: option_type_modify_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试Option类型变量的修饰符，默认修饰符
+ * -#step1: 定义一个Option类型的变量并赋值
+ * -#step2: match匹配Option变量
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

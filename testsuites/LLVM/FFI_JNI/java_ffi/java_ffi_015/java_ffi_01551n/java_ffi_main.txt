@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_01551n
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-43
+ * -@RequirementName: java接口中静态嵌套类
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 导入java接口，接口包含嵌套类 普通类 内部直接类型名访问 使用场景 返回值
+ * -@Expect: Compile fail.
+ * -@Priority: level0
+ */
+ 

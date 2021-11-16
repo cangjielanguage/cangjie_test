@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: pkgs003.cj
+ * -@TestCaseName: pkgs003.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID:
+ * -@RequirementName: 遮盖，函数重载决议
+    双文件夹内各单文件、函数、
+    import pkgs1.*, pkgs2.*
+ * -@Condition: no
+ * -@Brief:import external变量并访问
+ * -#step1:import external变量并访问
+ * -#step2:检查编译执行结果
+ * -@Expect:执行正确
+ * -@Priority: High
+ */

@@ -1,0 +1,20 @@
+ /*
+ * -@TestCaseID: arg_ret_type_09
+ * -@TestCaseName: arg_ret_type_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsModule调用js中入参和返回值均为UInt8的函数
+ * -#step1: js侧的全局函数,入参为Number,返回值为Number,函数体为普通表达,直接作为函数导出
+ * -#step2: 仓颉侧@JsModule修饰top-level的函数,入参为UInt8,返回值为UInt8
+ * -#step3: step2中的函数在main中调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsModule
+ * -@SpecDetail: 1、函数的参数和返回值类型仅支持部分类型 2、仓颉侧UInt8映射Js侧number 3、当 `JavaScript` 包直接导出函数或变量时，可以通过 `@JsModule` 注解来表示
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsModule--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--5
+ */

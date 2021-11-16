@@ -1,0 +1,15 @@
+2021-11-08 02:46:57 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/Record/type/record_member_type_1205.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:46:57 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/Record/type/record_member_type_1205_cj_cangjie2llvmgc_test_cfg_1636338482
+2021-11-08 02:46:57 DEBUG execute cmd ===>>>: cjc -ulimit-error record_member_type_1205.cj -o record_member_type_1205.out
+2021-11-08 02:46:57 DEBUG return code: 1
+2021-11-08 02:46:57 DEBUG stdout : 
+
+2021-11-08 02:46:57 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/Record/type/record_member_type_1205_cj_cangjie2llvmgc_test_cfg_1636338482/record_member_type_1205.cj:9:5: [31merror[0m: non-static generic member function 'area' is not supported
+@	    9 |     func area<V>(height: V): V {
+@	      |     [32m^[0m
+@	1 error generated
+
+2021-11-08 02:46:57 DEBUG Run time: 0.6, remain time: 3e+02
+2021-11-08 02:46:57 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/Record/type/record_member_type_1205.cj_cangjie2llvmgc_test_cfg.log

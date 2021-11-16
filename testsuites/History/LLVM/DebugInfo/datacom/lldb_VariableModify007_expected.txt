@@ -1,0 +1,7 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 11,024_debug_variable.cj:11
+r,r,-> 11
+cj_set,cj_set var_int16 = "aaa",error
+n,n,-> 14
+cj_plocals,cj_plocals,var_int16 = 1
+cj_plocals,cj_plocals,f_int16 = 11

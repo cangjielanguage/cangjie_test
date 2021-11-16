@@ -1,0 +1,23 @@
+2021-10-26 02:27:49 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/format/Float/float_format_020.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:27:49 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/format/Float/float_format_020_cj_cangjie2llvmgc_test_cfg_1635213988
+2021-10-26 02:27:49 DEBUG execute cmd ===>>>: cjc -backend llvm float_format_020.cj -o float_format_020.out
+2021-10-26 02:27:51 DEBUG return code: 0
+2021-10-26 02:27:51 DEBUG stdout : 
+
+2021-10-26 02:27:51 DEBUG stderr : 
+
+2021-10-26 02:27:51 DEBUG Run time: 1.5, remain time: 3e+02
+2021-10-26 02:27:51 DEBUG execute cmd ===>>>:   float_format_020.out 
+2021-10-26 02:27:51 DEBUG return code: 1
+2021-10-26 02:27:51 DEBUG stdout : 
++	An exception has already occurred:
++	Exception RuntimeException IllegalArgumentException error: wrong format string '#E' for 'float' type
++	
++		 at format/format.Function_format/format::(Float64::)format(Record_core/core::String)(stdlib/format/Formatter.cj:211)
++		 at default.Function_default::main()(/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/format/Float/float_format_020_cj_cangjie2llvmgc_test_cfg_1635213988/float_format_020.cj:24)
+
+2021-10-26 02:27:51 DEBUG stderr : 
+
+2021-10-26 02:27:51 DEBUG Run time: 0.11, remain time: 3e+02
+2021-10-26 02:27:51 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/format/Float/float_format_020.cj_cangjie2llvmgc_test_cfg.log

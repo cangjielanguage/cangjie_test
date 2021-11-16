@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: utf16View_api_01.cj
+ * -@TestCaseName: utf16View_api_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-9
+ * -@RequirementName: String 标准库新增API
+ * -@Condition: no
+ * -@Brief: 测试Utf16View的api：init、size、isEmpty、next、iterator
+ * -#step1: 测试Utf16View的api：init、size、isEmpty、next、iterator
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: core_lib.md
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

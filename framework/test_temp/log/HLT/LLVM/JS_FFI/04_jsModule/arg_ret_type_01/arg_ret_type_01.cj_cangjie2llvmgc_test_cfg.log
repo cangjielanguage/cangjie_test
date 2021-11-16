@@ -1,0 +1,18 @@
+2021-11-08 01:49:13 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_01/arg_ret_type_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:49:13 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_01/arg_ret_type_01_cj_cangjie2llvmgc_test_cfg_1636335523
+2021-11-08 01:49:13 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_01.cj -o arg_ret_type_01..out
+2021-11-08 01:49:14 DEBUG return code: 1
+2021-11-08 01:49:14 DEBUG stdout : 
+
+2021-11-08 01:49:14 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_01/arg_ret_type_01_cj_cangjie2llvmgc_test_cfg_1636335523/arg_ret_type_01.cj:7:21: [31merror[0m: native function can only have CType args.
+@	    7 | foreign func moment(arg:String) : String
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_01/arg_ret_type_01_cj_cangjie2llvmgc_test_cfg_1636335523/arg_ret_type_01.cj:7:35: [31merror[0m: native function can only have CType return.
+@	    7 | foreign func moment(arg:String) : String
+@	      |                                   [32m^[0m
+@	2 errors generated
+
+2021-11-08 01:49:14 DEBUG Run time: 0.59, remain time: 3e+02
+2021-11-08 01:49:14 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_01/arg_ret_type_01.cj_cangjie2llvmgc_test_cfg.log

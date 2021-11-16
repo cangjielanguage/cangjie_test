@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_MatchExpression_00245
+ * -@TestCaseName: match00245.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Match support list as selector.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@catalog:# 表达式## 模式匹配表达式--4
+ */

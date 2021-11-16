@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: enum_generic_constraint_19.cj
+ * -@TestCaseName: enum_generic_constraint_19.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T1,T2,T3,T4>的约束T1<:V1,T2<:V2,T3<:V3,T4<:V4
+ * -#step1: T1为V1的子类，T2为V2<T>的子类，T3是被append特性V3，T4是被append特性V4<T>
+ * -#step2: 分别定义一个普通父类Foo1，子类Bar1；泛型父类Foo2，子类Bar2；定义一个int32类型的trait Add，定义一个int64类型的trait Reduce<T>
+ * -#step3: 定义一个约束条件为T1<:Foo1,T2<:Foo2<T>,T3<:Add,T4<:Reduce<T>的泛型enum <T1,T2,T3,T4>
+ * -#step4: 调用enum中的构造函数，传入类元为<Bar1,Bar2,Int32,Int64>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

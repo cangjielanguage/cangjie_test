@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: trait_own_01.cj
+ * -@TestCaseName: trait_own_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: 提供泛型trait
+ * -@Condition: no
+ * -@Brief: 泛型类的类型变元限定于本身类
+ * -#step1: 定义泛型类并且约束类型变元为自身，定义该泛型类的子类
+ * -#step2: 实例化泛型父类，传入子类类型变元
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功，返回0
+ * -@Priority: High
+ */

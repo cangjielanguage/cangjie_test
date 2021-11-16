@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: driver_output_06.cj
+ * -@TestCaseName: driver_output_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项–o后指定路径a下生成文件b.o，有源文件
+ * -#step1: 执行cjc xxx文件 -o a/b.out
+ * -#step2: 执行命令后,在指定路径a下生成指定文件名的可执行文件b.out
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

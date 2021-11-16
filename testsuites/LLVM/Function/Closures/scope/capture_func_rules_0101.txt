@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: capture_func_rules_0101.cj
+ * -@TestCaseName: capture_func_rules_0101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-07
+ * -@RequirementName: 变量捕获
+ * -@Condition: no
+ * -@Brief: top赋值表达式右值表达式lambda中，top函数1捕获var,lambda中调用函数1，lambda能作为一等公民
+ * -#step1: top赋值表达式右值表达式lambda中，top函数1捕获var,lambda中调用函数1，lambda能作为一等公民
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 函数/闭包
+ * -@SpecDetail: 需要注意的是，捕获具有传递性，如果一个函数 f 调用了捕获 var 变量的函数 g ，那么函数 f 同 样捕获了 var 变量，此时， f 也不能作为一等公民使用。
+ */

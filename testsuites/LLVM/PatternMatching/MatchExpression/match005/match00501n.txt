@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: match00501n.cj
+ * -@TestCaseName: match00501n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: match Expr中使用return
+ * -#step1: match Expr中使用return
+ * -@Expect: 执行成功，返回0
+ * -@Priority: High
+ * -@catalog: # 仓颉语法 {.appendix-start}## 语法### 表达式语法--1
+ */

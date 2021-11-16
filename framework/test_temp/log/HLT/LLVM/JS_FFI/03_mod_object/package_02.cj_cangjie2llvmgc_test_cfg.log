@@ -1,0 +1,15 @@
+2021-11-08 02:03:32 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/03_mod_object/package_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:03:32 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/package_02_cj_cangjie2llvmgc_test_cfg_1636335530
+2021-11-08 02:03:32 DEBUG execute cmd ===>>>: cjc -ulimit-error -module package_02
+2021-11-08 02:03:32 DEBUG return code: 1
+2021-11-08 02:03:32 DEBUG stdout : 
+
+2021-11-08 02:03:32 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/package_02_cj_cangjie2llvmgc_test_cfg_1636335530/package_02/src/Mod_Group_01.cj:4:23: [31merror[0m: native function can only have CType args.
+@	    4 | foreign func isMoment(obj:Complex) : UInt32
+@	      |                       [32m^[0m
+@	1 error generated
+
+2021-11-08 02:03:32 DEBUG Run time: 0.37, remain time: 3e+02
+2021-11-08 02:03:32 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/03_mod_object/package_02.cj_cangjie2llvmgc_test_cfg.log

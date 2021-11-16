@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_def_31.cj
+ * -@TestCaseName: class_generic_def_31.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class，定义类型变元但未在内部使用
+ * -#step1: 定义一个类型变元为T的泛型class，class内部不使用类型变元
+ * -#step2: 实例化class Data，类型变元为int32
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

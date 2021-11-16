@@ -1,0 +1,17 @@
+2021-11-08 02:00:32 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_15/arg_ret_type_15.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:00:32 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_15/arg_ret_type_15_cj_cangjie2llvmgc_test_cfg_1636335528
+2021-11-08 02:00:32 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_15.cj -o arg_ret_type_15..out
+2021-11-08 02:00:33 DEBUG return code: 1
+2021-11-08 02:00:33 DEBUG stdout : 
++	Incorrect number of arguments passed to called function!
++	  %0 = call %Unit.Type @isMoment(%Unit.Type* @Unit.Val), !dbg !9
+
+2021-11-08 02:00:33 DEBUG stderr : 
+@	Incorrect number of arguments passed to called function!
+@	  %0 = call %Unit.Type @isMoment(%Unit.Type* @Unit.Val), !dbg !9
+@	[31merror[0m: [CodeGen Error]: Generate module error.
+@	[31merror[0m: [CodeGen Error]: Generate module error.
+
+2021-11-08 02:00:33 DEBUG Run time: 0.72, remain time: 3e+02
+2021-11-08 02:00:33 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_15/arg_ret_type_15.cj_cangjie2llvmgc_test_cfg.log

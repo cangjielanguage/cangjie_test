@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DateTime_2_staticmem_003
+ * -@TestCaseName: DateTime_2_staticmem_003
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: DateTime
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: ��֤��̬��Ա����MinValue()��
+ * -@Expect: ��ȷ��ӡ
+ * -@Priority: level0
+ */
+

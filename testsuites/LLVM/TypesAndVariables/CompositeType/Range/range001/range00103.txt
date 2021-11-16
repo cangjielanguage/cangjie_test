@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Range_00103
+ * -@TestCaseName: range00103.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 定义Range时不指定"Range"只给出字面值。
+ * -@Expect: 编译成功，return 0.
+ * -@Priority: level0
+ */

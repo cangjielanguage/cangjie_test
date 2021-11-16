@@ -1,0 +1,44 @@
+2021-11-08 02:03:49 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:03:49 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n_cj_cangjie2llvmgc_test_cfg_1636335530
+2021-11-08 02:03:49 DEBUG execute cmd ===>>>: cjc -ulimit-error float_literal_04n.cj -o float_literal_04n.out 2>&1 | /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// float_literal_04n.cj
+2021-11-08 02:03:49 DEBUG return code: 1
+2021-11-08 02:03:49 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n_cj_cangjie2llvmgc_test_cfg_1636335530/float_literal_04n.cj:7:17: [31merror[0m: expected identifier before '--'
++		    7 |     var lit02 = --1.8e308    // EXPECTED: regex expected identifier before '--'
++		      |                 [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n_cj_cangjie2llvmgc_test_cfg_1636335530/float_literal_04n.cj:7:80: [31merror[0m: expected expression here
++		    7 |     var lit02 = --1.8e308    // EXPECTED: regex expected identifier before '--'
++		      |                                                                                [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n_cj_cangjie2llvmgc_test_cfg_1636335530/float_literal_04n.cj:12:9: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Float'
++		   12 |     if (lit02 !=-1.8e308) {   // EXPECTED: regex the number '-1.8e308' exceeds the value range of type 'Float'
++		      |         [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n_cj_cangjie2llvmgc_test_cfg_1636335530/float_literal_04n.cj:12:9: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Float'
++		   12 |     if (lit02 !=-1.8e308) {   // EXPECTED: regex the number '-1.8e308' exceeds the value range of type 'Float'
++		      |         [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n_cj_cangjie2llvmgc_test_cfg_1636335530/float_literal_04n.cj:12:9: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
++		   12 |     if (lit02 !=-1.8e308) {   // EXPECTED: regex the number '-1.8e308' exceeds the value range of type 'Float'
++		      |         [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n_cj_cangjie2llvmgc_test_cfg_1636335530/float_literal_04n.cj:7:80: [31merror[0m: invalid expression initialization
++		    7 |     var lit02 = --1.8e308    // EXPECTED: regex expected identifier before '--'
++		      |                                                                                [32m^[0m
++		6 errors generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex-not, pattern: core dump , result: True, matched at output line: 0"
++	b"It's a assert, flag: regex-not, pattern: stack trace , result: True, matched at output line: 1"
++	b"flag: regex, pattern: \\:6\\:.*\\:.*the number '2.10e-308' exceeds the value range of type 'Float' , result: False, matched at output line: 1"
++	Match End!, Compare Failed
++	b"flag: regex, pattern: \\:7\\:.*\\:.*expected identifier before '--' , result: True, matched at output line: 0"
++	b"flag: regex, pattern: \\:9\\:.*\\:.*the number '2.2e-308' exceeds the value range of type 'Float' , result: False, matched at output line: 1"
++	Match End!, Compare Failed
++	b"flag: regex, pattern: \\:12\\:.*\\:.*the number '-1.8e308' exceeds the value range of type 'Float' , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-11-08 02:03:49 DEBUG stderr : 
+
+2021-11-08 02:03:49 DEBUG Run time: 0.37, remain time: 3e+02
+2021-11-08 02:03:49 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/OverFlow/float_literal_04n.cj_cangjie2llvmgc_test_cfg.log

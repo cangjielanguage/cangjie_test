@@ -1,0 +1,23 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <interfaceMemberDeclaration> case (use functionDefinition):
+Origin BNF is 
+    :  (functionDefinition
+         | operatorFunctionDefinition
+         | associatedTypeDeclaration) end*
+         
+Test   BNF is 
+    :  (<<TARGET=functionDefinition->pattern>>
+         | operatorFunctionDefinition
+         | associatedTypeDeclaration) end*
+          
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

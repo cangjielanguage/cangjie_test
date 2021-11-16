@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: lambda_closures_local_02.cj
+ * -@TestCaseName: lambda_closures_local_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1016-04
+ * -@RequirementName: lambda 尾闭包
+ * -@Condition: no
+ * -@Brief: 捕获 let 声明的局部变量：在闭包中不能修改这些变量的值
+ * -#step1: 捕获 let 声明的局部变量：在闭包中不能修改这些变量的值
+ * -@Expect: 编译给出正确报错信息
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/闭包/
+ * -@SpecDetail: 捕获 let 声明的局部变量：在闭包中不能修改这些变量的值。如果捕获的变量是引用类型，可修改其可变实例成员变量的值
+ */

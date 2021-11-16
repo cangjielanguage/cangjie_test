@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: FFI_C_00410
+ * -@TestCaseName: c_ffi_00410.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 使用UnsafePtr强转数组类型。
+ * #1.定义的unsafePointerCast的size入参非int64类型。
+ * -@Expect: 尚不支持检测，结果无法预期.
+ * -@Priority: level0
+ */

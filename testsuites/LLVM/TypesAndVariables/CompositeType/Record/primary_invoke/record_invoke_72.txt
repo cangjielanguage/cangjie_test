@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_invoke_72.cj
+ * -@TestCaseName: record_invoke_72.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试调用record中未定义的label，编译报错
+ * -#step1: 定义一个record Data，内部定义label width
+ * -#step2: 实例化record Data，调用label length
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

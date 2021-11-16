@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Range_00213
+ * -@TestCaseName: range00213.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 1...2:2作为数组下标时,只会截取index=1的元素。
+ * -@Expect: 编译成功,return 0.
+ * -@Priority: level0
+ */

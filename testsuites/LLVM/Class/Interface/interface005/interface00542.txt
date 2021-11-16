@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00542
+ * -@TestCaseName: interface00542.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Try to call overrided default function.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

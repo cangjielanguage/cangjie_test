@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_0101.cj
+ * -@TestCaseName: type_infer_facevalue_0101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 函数返回值为数组字面值，函数执行后链式调用数组的size属性
+ * -#step1: 定义一个函数返回值为数组字面值
+ * -#step2: 执行函数链式调用数组的size属性
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

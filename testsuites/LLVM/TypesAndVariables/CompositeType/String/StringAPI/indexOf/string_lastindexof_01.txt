@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_lastindexof_01.cj
+ * -@TestCaseName: string_lastindexof_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的lastIndexOf(c :char):int64方法，入参char不在字符串中，返回-1
+ * -#step1: 定义一个string变量，调用该变量的lastIndexOf方法
+ * -#step2: 入参char不在字符串中，检查运行结果
+ * -@Expect: 方法返回-1，执行成功
+ * -@Priority: High
+ */

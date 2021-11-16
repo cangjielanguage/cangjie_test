@@ -1,0 +1,22 @@
+2021-11-08 02:06:44 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/generic_import_ext_int_21/src/default.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:06:44 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/Generic/generic_import_ext_int_21/src/default_cj_cangjie2llvmgc_test_cfg_1636335532
+2021-11-08 02:06:44 DEBUG execute cmd ===>>>: clang -shared -fPIC p1/native.c -o libnative.so
+2021-11-08 02:06:44 DEBUG return code: 0
+2021-11-08 02:06:44 DEBUG stdout : 
+
+2021-11-08 02:06:44 DEBUG stderr : 
+
+2021-11-08 02:06:44 DEBUG Run time: 0.1, remain time: 3e+02
+2021-11-08 02:06:44 DEBUG execute cmd ===>>>: cjc -ulimit-error  p1/a.cj -backend-options='-shared -fPIC' -o liba.so
+2021-11-08 02:06:44 DEBUG return code: 1
+2021-11-08 02:06:44 DEBUG stdout : 
+
+2021-11-08 02:06:44 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/Generic/generic_import_ext_int_21/src/default_cj_cangjie2llvmgc_test_cfg_1636335532/p1/a.cj:26:5: [31merror[0m: external declaration uses internal types.
+@	   26 |     var a : B<T> = B<T>()
+@	      |     [32m^[0m
+@	1 error generated
+
+2021-11-08 02:06:44 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:06:44 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/generic_import_ext_int_21/src/default.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,67 @@
+2021-10-26 02:29:08 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/net/Server/listenAndServe/server_listen_00001.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:29:08 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/net/Server/listenAndServe/server_listen_00001_cj_cangjie2llvmgc_test_cfg_1635213988
+2021-10-26 02:29:08 DEBUG execute cmd ===>>>: cjc -ulimit-error -backend-options="-L $CANGJIE_HOME/lib -lcangjie-net" server_listen_00001.cj -o server_listen_00001.out
+2021-10-26 02:29:10 DEBUG return code: 0
+2021-10-26 02:29:10 DEBUG stdout : 
+
+2021-10-26 02:29:10 DEBUG stderr : 
+@	[33mwarning[0m: '-backend-options' will be deprecated in the future, use 'cjc -h' to see alternative options.
+
+2021-10-26 02:29:10 DEBUG Run time: 2.3, remain time: 3e+02
+2021-10-26 02:29:10 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  server_listen_00001.out  
+2021-10-26 02:29:11 DEBUG return code: 0
+2021-10-26 02:29:11 DEBUG stdout : 
++	
++	-------------------------------------------------
++	[Log-Err] File=tcpsock.c, Line=89, Error=0x62
++	bind failed, fd: 5, ip: 0.0.0.0, port: 11001, addrlen: 16
++	
++	-------------------------------------------------
++	[Log-Err] File=sock.c, Line=229, Error=0x62
++	create_bind failed, net: tcp, addr: ipv4:0.0.0.0:11001
++	a!
++	
++	-------------------------------------------------
++	[Log-Err] File=sock.c, Line=261, Error=0x10100004
++	accept failed, sock: 0x40000004
++	
++	-------------------------------------------------
++	[Log-Err] File=schdfd.c, Line=105, Error=0x10100005
++	schdfd_decref must used after schdfd_incref
+
+2021-10-26 02:29:11 DEBUG stderr : 
+
+2021-10-26 02:29:11 DEBUG Run time: 0.26, remain time: 3e+02
+2021-10-26 02:29:11 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// server_listen_00001.cj
+2021-10-26 02:29:11 DEBUG return code: 1
+2021-10-26 02:29:11 DEBUG stdout : 
++	compare.py input:
++		
++		-------------------------------------------------
++		[Log-Err] File=tcpsock.c, Line=89, Error=0x62
++		bind failed, fd: 5, ip: 0.0.0.0, port: 11001, addrlen: 16
++		
++		-------------------------------------------------
++		[Log-Err] File=sock.c, Line=229, Error=0x62
++		create_bind failed, net: tcp, addr: ipv4:0.0.0.0:11001
++		a!
++		
++		-------------------------------------------------
++		[Log-Err] File=sock.c, Line=261, Error=0x10100004
++		accept failed, sock: 0x40000004
++		
++		-------------------------------------------------
++		[Log-Err] File=schdfd.c, Line=105, Error=0x10100005
++		schdfd_decref must used after schdfd_incref
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: already in use , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-10-26 02:29:11 DEBUG stderr : 
+
+2021-10-26 02:29:11 DEBUG Run time: 0.24, remain time: 3e+02
+2021-10-26 02:29:11 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/net/Server/listenAndServe/server_listen_00001.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,13 @@
+2021-11-08 02:03:29 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_08/JsRen_import_func_08.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:03:29 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_08/JsRen_import_func_08_cj_cangjie2llvmgc_test_cfg_1636335530
+2021-11-08 02:03:29 DEBUG execute cmd ===>>>: cjc -ulimit-error JsRen_import_func_08.cj -o JsRen_import_func_08..out
+2021-11-08 02:03:30 DEBUG return code: 1
+2021-11-08 02:03:30 DEBUG stdout : 
+
+2021-11-08 02:03:30 DEBUG stderr : 
+@	./JsRen_import_func_08.-f2fa3969.o:(.data+0x0): undefined reference to `func08'
+@	[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
+
+2021-11-08 02:03:30 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 02:03:30 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_08/JsRen_import_func_08.cj_cangjie2llvmgc_test_cfg.log

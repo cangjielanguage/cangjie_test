@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_List_00106
+ * -@TestCaseName: list_00106.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-02
+ * -@RequirementName: List
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Init List with type UInt32.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

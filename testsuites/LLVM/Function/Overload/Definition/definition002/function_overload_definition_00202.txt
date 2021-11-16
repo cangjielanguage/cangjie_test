@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Definition_00202
+ * -@TestCaseName: function_overload_definition_00202.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define public function in father class, define same name different private function in child class.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_TypeConversion_PrimitiveTypeConversion_00708
+ * -@TestCaseName: conversion00708.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-07
+ * -@RequirementName: 支持类型转换
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.尝试用“[]”进行类型转换，预期编译报错
+ * -@Expect: Compile fail
+ * -@Priority: level0
+ */

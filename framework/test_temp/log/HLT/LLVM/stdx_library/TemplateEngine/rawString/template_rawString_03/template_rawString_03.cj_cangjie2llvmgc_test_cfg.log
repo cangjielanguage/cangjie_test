@@ -1,0 +1,21 @@
+2021-10-26 02:30:07 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/TemplateEngine/rawString/template_rawString_03/template_rawString_03.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:30:07 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/TemplateEngine/rawString/template_rawString_03/template_rawString_03_cj_cangjie2llvmgc_test_cfg_1635213988
+2021-10-26 02:30:07 DEBUG execute cmd ===>>>: $CANGJIE_HOME/tools/bin/engine template_rawString_03/Mb.tpl
+2021-10-26 02:30:07 DEBUG return code: 1
+2021-10-26 02:30:07 DEBUG stdout : 
++	An exception has already occurred:
++	Exception RuntimeException IllegalArgumentException error:The dire '' is invalid
++	.
++		 at engine/engine.Function_engine/engine::(TemplateLexter::)scanDire()(stdlib/engine/TemplateLexer.cj:95)
++		 at .Lambda_engine/engine::lambda.226(stdlib/engine/TemplateLexer.cj:78)
++		 at engine/engine.Function_engine/engine::(TemplateLexter::)scanner()(stdlib/engine/TemplateLexer.cj:534)
++		 at engine/engine.Function_engine/engine::(TemplateParser::)init(Record_core/core::String)(stdlib/engine/TemplateParser.cj:22)
++		 at engine/engine.Function_engine/engine::handleTemplate(Array_char[], Record_core/core::String)(stdlib/engine/TemplateEngine.cj:7)
++		 at engine/engine.Function_engine/engine::readTemplate(Record_core/core::String)(stdlib/engine/TemplateEngine.cj:100)
++		 at engine/engine.Function_engine/engine::main()(stdlib/engine/TemplateEngine.cj:54)
+
+2021-10-26 02:30:07 DEBUG stderr : 
+
+2021-10-26 02:30:07 DEBUG Run time: 0.07, remain time: 3e+02
+2021-10-26 02:30:07 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/TemplateEngine/rawString/template_rawString_03/template_rawString_03.cj_cangjie2llvmgc_test_cfg.log

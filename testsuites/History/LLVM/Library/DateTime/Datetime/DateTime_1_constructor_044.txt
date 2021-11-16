@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DateTime_1_constructor_044
+ * -@TestCaseName: DateTime_1_constructor_044
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: DateTime
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: ��֤���캯��:DateTime(Int32 year, Int32 month, Int32 day, Int32 hour, Int32 minute, Int32 second)second���ڱ߽�ֵ
+ * -@Expect: ��ȷ��ӡ
+ * -@Priority: level0
+ */
+

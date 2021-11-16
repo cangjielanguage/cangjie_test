@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_sortby_12.cj
+ * -@TestCaseName: Array_sortby_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  在Array<Int32>类型的乱序数组上调用sortby函数,sortby函数的入参函数(match表达式) 入参类型enum 返回值为Bool
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

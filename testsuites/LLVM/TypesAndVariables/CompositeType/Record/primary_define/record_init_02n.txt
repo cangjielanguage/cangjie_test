@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_init_02n.cj
+ * -@TestCaseName: record_init_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 成员变量初始化检查
+ * -@Condition: no
+ * -@Brief: 实例化record时调用私有构造函数，编译报错
+ * -#step1: 实例化时调用private修饰的构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

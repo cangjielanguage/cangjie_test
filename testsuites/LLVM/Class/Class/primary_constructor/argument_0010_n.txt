@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: argument_0010_n.cj 
+ * -@TestCaseName: argument_0010_n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Class 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 主构造函数中，成员变量形参后面有普通形参
+ * -#step1: 主构造函数中，成员变量形参后面有普通形参
+ * -@Expect: 编译报错 
+ * -@Priority: High
+ */

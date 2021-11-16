@@ -1,0 +1,7 @@
+lldb,lldb 022_debug_launch,022_debug_launch
+b,b 4,022_debug_launch.cj:4
+b,b 5,022_debug_launch.cj:5
+b,b 6,022_debug_launch.cj:6
+blist,breakpoint list,022_debug_launch.cj:4
+blist,breakpoint list,022_debug_launch.cj:5
+blist,breakpoint list,022_debug_launch.cj:6

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Test_BlockExp_0281.cj
+ * -@TestCaseName: Test_BlockExp_0281.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-09_R2
+ * -@RequirementName: block变更为块表达式
+ * -@Condition: no
+ * -@Brief: Lambda表达式定义时返回值为int64,实际返回值为unit(即赋值)
+ * -@Expect: 编译报错(实际返回值类型不一致)
+ * -@Priority: High
+ */

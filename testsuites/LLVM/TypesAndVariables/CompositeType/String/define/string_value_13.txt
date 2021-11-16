@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_value_13.cj
+ * -@TestCaseName: string_value_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的字面量，单行字符串含有反斜杠字符\
+ * -#step1: 定义一个含有反斜杠字符的单行字符串
+ * -#step2: 打印该字符串，ASSERT捕获打印信息
+ * -@Expect: 执行成功，\\转义为单个反斜杠字符成功，打印期望结果
+ * -@Priority: High
+ */

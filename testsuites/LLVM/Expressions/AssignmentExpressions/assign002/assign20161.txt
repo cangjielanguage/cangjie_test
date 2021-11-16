@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_20161
+ * -@TestCaseName: assign20161.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: AssignmentExpressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Different type float16 and Int8 for assignment.
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

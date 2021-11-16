@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_region_01.cj
+ * -@TestCaseName: matcher_api_region_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-新生成的Matcher对象，解构后，拿到初始位置start=0，结束位置end=字符串length-1
+ * -#step1: Mathcher-新生成的Matcher对象，解构后，拿到初始位置start=0，结束位置end=字符串length-1
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: func region(): Position返回当前检索范围的开始位置和结束位置（前闭后开）
+ */

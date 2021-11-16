@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: File_1_5_Move03_err
+ * -@TestCaseName: File_1_5_Move03_err.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: 支持Path的数据描述输入校验
+ * -@Condition: 1. cjc, clang, maple test framework and python3.
+ * -@Brief: 根目录不同的当前路径文件移动到绝对路径下
+ * -@Expect: 预期报错
+ * -@Priority: level 0
+ */
+    

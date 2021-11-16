@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: append_generic_conflict_0402.cj
+ * -@TestCaseName: append_generic_conflict_0402.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2026-04
+ * -@RequirementName: Append泛型
+ * -@Condition: no
+ * -@Brief: 定义append<X1,X2,X3>  Student<X1,X2,X3> with TR和append<Y1,Y2,Y3>  Student< Y2,Y3,Y1> with TR，重叠，执行正确
+ * -#step1: 定义append<X1,X2,X3>  Student<X1,X2,X3> with TR和append<Y1,Y2,Y3>  Student< Y2,Y3,Y1> with TR
+ * -#step2: 检查编译执行结果
+ * -@Expect: 执行成功，返回0 
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_def_03.cj
+ * -@TestCaseName: string_def_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的定义形式，未定义类型直接赋值
+ * -#step1: 定义一个变量，将String类型的字面量赋值给该变量
+ * -#step2: 打印结果，ASSERT捕获打印信息
+ * -@Expect: 执行成功，捕获打印期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: operator_overloading_01007.cj
+ * -@TestCaseName: operator_overloading_01007.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: append单个重载操作符的泛型TR
+ * -#step1: 定义泛型TR
+ * -#step2: append泛型TR到int32类型
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

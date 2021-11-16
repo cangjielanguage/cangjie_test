@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_sortDescending_04.cj
+ * -@TestCaseName: Array_sortDescending_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  在自定义class类A（主构造函数） 类型的数组（内含3个元素，子类B在两个A类中间）上调用sortDescending函数
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: request_type_0101.cj
+ * -@TestCaseName: request_type_0101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Request
+ * -@Condition: no
+ * -@Brief: POST 请求：url的内容,url 为非空不正常字符串
+ * -#step1: POST 请求：url的内容,url 为非空不正常字符串 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Request
+ * -@SpecDetail: Request
+ */

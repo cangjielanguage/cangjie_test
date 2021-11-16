@@ -1,0 +1,17 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC-PIPE-1: %run %run_opt %output %run_args 2>&1 | compare %f
+// ASSERT: regex -
+// ASSERT: scan exception_try_70012.cj:10
+class A <: Exception{}
+
+
+class B{
+    operator func -():Unit{
+        throw A()
+    }
+}
+
+func main(){
+    -B()
+    return 0
+}

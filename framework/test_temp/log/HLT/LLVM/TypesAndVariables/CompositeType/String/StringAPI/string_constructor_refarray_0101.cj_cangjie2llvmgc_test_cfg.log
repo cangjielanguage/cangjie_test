@@ -1,0 +1,29 @@
+2021-10-26 02:06:38 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:06:38 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101_cj_cangjie2llvmgc_test_cfg_1635213977
+2021-10-26 02:06:38 DEBUG execute cmd ===>>>: cjc -ulimit-error  string_constructor_refarray_0101.cj  -o string_constructor_refarray_0101.out
+2021-10-26 02:06:38 DEBUG return code: 1
+2021-10-26 02:06:38 DEBUG stdout : 
+
+2021-10-26 02:06:38 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101_cj_cangjie2llvmgc_test_cfg_1635213977/string_constructor_refarray_0101.cj:7:23: [31merror[0m: argument is mismatched with parameter type 'Array<Char>'
+@	    7 |     var str1 = String(arr1,start:0,length:3)
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101_cj_cangjie2llvmgc_test_cfg_1635213977/string_constructor_refarray_0101.cj:7:16: [31merror[0m: no matching constructor for call 'String'
+@	    7 |     var str1 = String(arr1,start:0,length:3)
+@	      |                [32m^[0m
+@	core/core/String.cj:365:5: [33mnote[0m: found possible candidate
+@	core/core/String.cj:381:5: [33mnote[0m: found possible candidate
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101_cj_cangjie2llvmgc_test_cfg_1635213977/string_constructor_refarray_0101.cj:9:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Record-String'
+@	    9 |     if ( str1 != "abc" ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101_cj_cangjie2llvmgc_test_cfg_1635213977/string_constructor_refarray_0101.cj:9:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Record-String'
+@	    9 |     if ( str1 != "abc" ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101_cj_cangjie2llvmgc_test_cfg_1635213977/string_constructor_refarray_0101.cj:9:10: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
+@	    9 |     if ( str1 != "abc" ){
+@	      |          [32m^[0m
+@	5 errors generated
+
+2021-10-26 02:06:38 DEBUG Run time: 0.36, remain time: 3e+02
+2021-10-26 02:06:38 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_constructor_refarray_0101.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_type_var_03.cj
+ * -@TestCaseName: record_type_var_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试class的成员变量为record类型
+ * -#step1: 定义一个record
+ * -#step2: 定义一个class，成员变量为record类型
+ * -@Expect: 执行成功，record作为class的成员变量被调用，返回期望结果
+ * -@Priority: High
+ */

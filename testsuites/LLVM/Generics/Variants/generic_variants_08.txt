@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_variants_08.cj
+ * -@TestCaseName: generic_variants_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-17
+ * -@RequirementName: 泛型类使用限制检查
+ * -@Condition: no
+ * -@Brief: 泛型限定于另一个泛型变元，实例化时符合要求
+ * -#step1: 泛型限定于另一个泛型变元，实例化时符合要求
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 泛型/类型形参与类型变元
+ * -@SpecDetail: 
+ */

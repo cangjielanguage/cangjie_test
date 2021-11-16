@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: extends_10205.cj
+ * -@TestCaseName: extends_10205.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-27
+ * -@RequirementName: 一个接口继承多接口时分隔符的错误写法
+ * -@Condition: no
+ * -@Brief: 接口B5继承于接口A和接口I，A和I用,分隔
+ * -#step1: 接口B5继承于接口A和接口I，A和I用,分隔
+ * -@Expect: 编译错误
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.2.3 接口继承
+ * -@SpecDetail: 接口允许继承一个或多个接口，多个接口之间用 & 分隔
+ * -@catalog: # 类和接口## 接口### 接口继承--1
+ */

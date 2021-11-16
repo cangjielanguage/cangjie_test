@@ -1,0 +1,14 @@
+// DEPENDENCE: define.cj
+// EXEC: echo "define=./define.cjo" >> define.conf
+// EXEC: %compiler %cmp_opt define.cj %enable_macro %pic_opt
+// EXEC: %run_macro %compiler %cmp_opt %macro_lib_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+import macro define.*
+
+@M @M
+var a = 0
+
+func main(){
+    return 0
+}

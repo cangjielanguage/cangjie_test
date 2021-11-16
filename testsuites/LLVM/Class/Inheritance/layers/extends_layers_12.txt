@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: extends_layers_12.cj
+ * -@TestCaseName: extends_layers_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 继承5层
+ * -#step1: 定义Base1基类，定义变量test1
+ * -#step2: 定义Base2基类，定义变量test2，访问test1，赋值给test2
+ * -#step3: 定义Base3基类，定义变量test3，访问test2，赋值给test3
+ * -#step4: 定义Base4基类，定义变量test4，访问test3，赋值给test4
+ * -#step5: 定义Data，继承Base4，访问test1,test2,test3,test4，累加赋值给变量
+ * -#step6: 实例化Data，访问Data中的变量结果
+ * -@Expect: Data中变量值正确
+ * -@Priority: High
+ */

@@ -1,0 +1,18 @@
+2021-11-08 01:54:57 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/06_variable_import/JsMod_import_variable/JsMod_import_var_10/JsMod_import_var_10.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:54:57 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsMod_import_variable/JsMod_import_var_10/JsMod_import_var_10_cj_cangjie2llvmgc_test_cfg_1636335526
+2021-11-08 01:54:57 DEBUG execute cmd ===>>>: cjc -ulimit-error JsMod_import_var_10.cj -o JsMod_import_var_10..out
+2021-11-08 01:54:58 DEBUG return code: 0
+2021-11-08 01:54:58 DEBUG stdout : 
+
+2021-11-08 01:54:58 DEBUG stderr : 
+
+2021-11-08 01:54:58 DEBUG Run time: 0.64, remain time: 3e+02
+2021-11-08 01:54:58 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  JsMod_import_var_10..out
+2021-11-08 01:54:58 DEBUG return code: 1
+2021-11-08 01:54:58 DEBUG stdout : 
+
+2021-11-08 01:54:58 DEBUG stderr : 
+
+2021-11-08 01:54:58 DEBUG Run time: 0.048, remain time: 3e+02
+2021-11-08 01:54:58 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/06_variable_import/JsMod_import_variable/JsMod_import_var_10/JsMod_import_var_10.cj_cangjie2llvmgc_test_cfg.log

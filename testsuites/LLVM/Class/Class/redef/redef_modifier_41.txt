@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: redef_modifier_41.cj
+ * -@TestCaseName: redef_modifier_41.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: redef修饰父类静态函数
+ * -@Condition: no
+ * -@Brief: redef修饰类，编译报错
+ * -#step1: redef修饰类Boo
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 类成员函数的修饰符
+ * -@SpecDetail: 当一个静态函数重定义继承自父类型的静态函数时，必须用 redef 进行修饰
+ */

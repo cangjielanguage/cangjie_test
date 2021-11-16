@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: external_internal_class_47.cj
+ * -@TestCaseName: external_internal_class_47.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 本包内，external声明类A，external声明类Aoo，Aoo作为类A成员函数foo的入参类型和返回值,foo用private修饰
+ * -#step1: 本包内，external声明类A，external声明类Aoo，Aoo作为类A成员函数foo的入参类型和返回值,foo用private修饰
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

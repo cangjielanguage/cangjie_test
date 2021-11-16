@@ -1,0 +1,12 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/member-func/func/class_func_093.cj
+*- @TestCaseName:类修饰符与函数修饰符的组合
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:static函数中使用静态成员函数，执行成功
+* -#定义类Data，静态变量a，static函数get，get函数访问静态成员函数
+*- @Expect:执行成功
+*- @Priority:level1 
+*/

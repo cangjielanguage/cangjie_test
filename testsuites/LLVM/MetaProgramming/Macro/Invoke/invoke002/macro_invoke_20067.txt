@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_20067
+ * -@TestCaseName: macro_invoke_20067.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test call macro`s input append.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

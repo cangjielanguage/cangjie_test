@@ -1,0 +1,44 @@
+2021-11-08 02:37:28 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Throwable/005/throwable_50041.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:37:28 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Throwable/005/throwable_50041_cj_cangjie2llvmgc_test_cfg_1636338477
+2021-11-08 02:37:28 DEBUG execute cmd ===>>>: cjc -ulimit-error throwable_50041.cj -o throwable_50041.out
+2021-11-08 02:37:29 DEBUG return code: 0
+2021-11-08 02:37:29 DEBUG stdout : 
+
+2021-11-08 02:37:29 DEBUG stderr : 
+
+2021-11-08 02:37:29 DEBUG Run time: 0.64, remain time: 3e+02
+2021-11-08 02:37:29 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  throwable_50041.out  2>&1 
+2021-11-08 02:37:29 DEBUG return code: 1
+2021-11-08 02:37:29 DEBUG stdout : 
++	An exception has already occurred:
++	
++		 at default.Function_default::(A::)init()(/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Throwable/005/throwable_50041_cj_cangjie2llvmgc_test_cfg_1636338477/throwable_50041.cj:6)
++		 at default.Function_default::(C::)test()(/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Throwable/005/throwable_50041_cj_cangjie2llvmgc_test_cfg_1636338477/throwable_50041.cj:11)
++		 at .Float64(:12)
+
+2021-11-08 02:37:29 DEBUG stderr : 
+
+2021-11-08 02:37:29 DEBUG Run time: 0.048, remain time: 3e+02
+2021-11-08 02:37:29 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// throwable_50041.cj
+2021-11-08 02:37:29 DEBUG return code: 1
+2021-11-08 02:37:29 DEBUG stdout : 
++	compare.py input:
++		An exception has already occurred:
++		
++			 at default.Function_default::(A::)init()(/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Throwable/005/throwable_50041_cj_cangjie2llvmgc_test_cfg_1636338477/throwable_50041.cj:6)
++			 at default.Function_default::(C::)test()(/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Throwable/005/throwable_50041_cj_cangjie2llvmgc_test_cfg_1636338477/throwable_50041.cj:11)
++			 at .Float64(:12)
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex, pattern: default.*C.*test , result: True, matched at output line: 0"
++	b"It's a assert, flag: scan, pattern: throwable_50041.cj:10 , result: False, matched at output line: 4"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan, pattern: throwable_50041.cj:11 , result: True, matched at output line: 0"
+
+2021-11-08 02:37:29 DEBUG stderr : 
+
+2021-11-08 02:37:29 DEBUG Run time: 0.1, remain time: 3e+02
+2021-11-08 02:37:29 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Throwable/005/throwable_50041.cj_cangjie2llvmgc_test_cfg.log

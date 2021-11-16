@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_circle_05.cj
+ * -@TestCaseName: class_generic_circle_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型类中含泛型函数，返回值为自身泛型类
+ * -#step1: 定义一个泛型class Data<T>，内部定义一个泛型函数foo<V>，返回值为Data<V>自身
+ * -#step2: 实例化泛型类Data<Int32> data，调用函数foo；返回自身Data<Int32>实例
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

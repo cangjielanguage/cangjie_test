@@ -1,0 +1,25 @@
+ /*
+ * -@TestCaseID: JsRen_import_var_19
+ * -@TestCaseName: JsRen_import_var_19.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过JsMember和JsRename调用js中var定义的number类型的变量
+ * -#step1: js侧var定义全局变量，变量类型number,作为成员导出
+ * -#step2: 仓颉侧@JsMember和JsRename修饰var变量，变量类型为为enum
+ * -#step3: step2中的变量在main中调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsRename
+ * -@SpecDetail: 1、仓颉侧enum映射Js侧number 2、当 `JavaScript` 中的函数或变量作为包成员导出时可通过 `@JsMember` 注解来表示
+ * -@SpecDetail: 3、通过 `foreign` 修饰符以及一系列注解（`@JsModule`，`@JsMember`，`@JsRename`）来书写绑定。
+ * -@SpecDetail: 4、`enum` 类型仅当所有的 `constructor` 都只有一个类型参数时支持直接作为具体的类型参数进行映射
+ * -@SpecDetail: 5、当声明的函数或变量名称与仓颉语法冲突时（仓颉不支持的字符或关键字冲突等等）或者其他需要重命名的情况（省略 NameSpace 定义等）可以通过 `@JsRename` 注解来修改名称
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsRename--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsMember--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript--5
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--3
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_17.cj
+ * -@TestCaseName: enum_generic_invoke_17.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>在在子类中被调用
+ * -#step1: 定义一个泛型enum Time<T>，定义一个父类Base，子类Foo并调用泛型enum传入变元int32，match匹配enum中的构造函数
+ * -#step2: 实例化类Foo，访问Foo中match的变量
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

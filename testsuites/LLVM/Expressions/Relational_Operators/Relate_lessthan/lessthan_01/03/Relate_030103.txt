@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Relate_030103.cj
+ * -@TestCaseName: Relate_030103.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. <(小于操作符)紧接着左操作数，与右操作数之间有空格，且左操作数小于右操作数时返回0；
+ *  #2.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_initblock_constr_12n.cj
+ * -@TestCaseName: record_initblock_constr_12n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试init block中定义成员a、b、c仅初始化b、c，实例化时指定形参b、c，编译报错
+ * -#step1: 定义一个recordData，record中init block中定义成员a、b、c，仅赋予变量b、c初始值
+ * -#step2: 调用部分参数的构造器且指定形参b、c，实例化record
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Relate_010204.cj
+ * -@TestCaseName: Relate_010204.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. ==(相等操作符)左右操作数分别为变量且赋值为10和10.0，两个操作数相等返回1；
+ *  #2.
+ * -@Expect: Compile/execute pass, return 1, 报错提示：type check of binary expression fails.
+ * -@Priority: level0
+ */

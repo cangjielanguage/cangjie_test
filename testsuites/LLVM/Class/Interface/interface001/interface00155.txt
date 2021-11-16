@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00155
+ * -@TestCaseName: interface00155.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use keyword as interface name.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

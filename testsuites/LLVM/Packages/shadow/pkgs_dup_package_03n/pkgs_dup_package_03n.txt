@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_dup_import_03.cj
+ * -@TestCaseName: pkgs_dup_import_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 包pkgs中含pkgs变量，导入后以pkgs使用该变量
+ * -#step1: 包pkgs中含pkgs变量，即包名和变量名相同
+ * -#step2: 导入后以pkgs使用该变量
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

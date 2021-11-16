@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: String_isBlank_1.cj
+ * -@TestCaseName: String_isBlank_1.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: isBlank字符串正常
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+lldb,lldb pkgs005,pkgs005
+b,b 12,pkgs005.cj:12
+b,b 13,pkgs005.cj:13
+r,r,-> 12
+s,s,-> 9
+finish,finish,-> 12
+n,n,-> 13
+s,s,-> 10
+finish,finish,-> 13
+n,n,-> 14
+cj_plocals,cj_plocals,res1 = 20
+cj_plocals,cj_plocals,res2 = 40

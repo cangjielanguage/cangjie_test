@@ -1,0 +1,7 @@
+lldb,lldb pkgs001,pkgs001
+b,b 30,pkgs001.cj:30
+b,b pkg1.cj:9,pkg1.cj:9
+r,r,-> 30
+c,c,-> 9
+cj_pglobals,cj_pglobals,varpkg1_001 = 127
+cj_plocals,cj_plocals,a = 10

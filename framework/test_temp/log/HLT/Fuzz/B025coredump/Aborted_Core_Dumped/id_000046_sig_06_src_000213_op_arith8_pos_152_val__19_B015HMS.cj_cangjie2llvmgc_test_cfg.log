@@ -1,0 +1,11 @@
+2021-11-08 01:49:26 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/Fuzz/B025coredump/Aborted_Core_Dumped/id_000046_sig_06_src_000213_op_arith8_pos_152_val__19_B015HMS.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:49:26 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/Fuzz/B025coredump/Aborted_Core_Dumped/id_000046_sig_06_src_000213_op_arith8_pos_152_val__19_B015HMS_cj_cangjie2llvmgc_test_cfg_1636335523
+2021-11-08 01:49:26 DEBUG execute cmd ===>>>: cjc -ulimit-error id_000046_sig_06_src_000213_op_arith8_pos_152_val__19_B015HMS.cj -o id_000046_sig_06_src_000213_op_arith8_pos_152_val__19_B015HMS.out 2>&1 
+2021-11-08 01:49:27 DEBUG return code: 0
+2021-11-08 01:49:27 DEBUG stdout : 
+
+2021-11-08 01:49:27 DEBUG stderr : 
+
+2021-11-08 01:49:27 DEBUG Run time: 0.85, remain time: 3e+02
+2021-11-08 01:49:27 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/Fuzz/B025coredump/Aborted_Core_Dumped/id_000046_sig_06_src_000213_op_arith8_pos_152_val__19_B015HMS.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: adjoint_init_21.cj
+ * -@TestCaseName: adjoint_init_21.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-14
+ * -@RequirementName: AD支持自定义可微类型的可微init的adjoint函数
+ * -@Condition: no
+ * -@Brief: class中的init可微，编译报错
+ * -@step1: class中的init可微，编译报错
+ * -@Expect: 编译报错
+ * -@catelog: # 自动微分## 可微函数### 非顶层可微函数#### Class成员方法--1
+ * -@Priority: level0
+ */

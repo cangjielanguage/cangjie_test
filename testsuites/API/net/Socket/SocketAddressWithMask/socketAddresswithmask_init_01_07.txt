@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketAddresswithmask_init_01_07.cj
+ * -@TestCaseName: socketAddresswithmask_init_01_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketAddressWithMask
+ * -@Condition: no
+ * -@Brief: SocketAddressWithMask-Kind(ipv6)和address长度是4
+ * -#step1: SocketAddressWithMask-Kind(ipv6)和address长度是4
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: SocketAddressWithMask-init(kind: SocketAddressKind, address: Array<UInt8>, port: UInt16, mask: IPMask)
+ */

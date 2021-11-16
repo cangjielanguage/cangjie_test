@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_var_15.cj
+ * -@TestCaseName: string_type_var_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型作为trait体中成员函数返回值使用
+ * -#step1: 定义一个trait，返回值为String类型的成员函数test；append String实现trait中的func test
+ * -#step2: 定义一个字符串，传入函数test中。成员函数调用成功
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

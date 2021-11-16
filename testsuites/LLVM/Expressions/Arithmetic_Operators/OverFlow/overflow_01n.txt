@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: overflow_01n.cj
+ * -@TestCaseName: overflow_01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: List/range/tuple中的元素/元素引用的溢出检查
+ * -#step1: 定义一个List列表，List中元素超出边界值，索引取值也超出边界值
+ * -#step2: 定义一个Range，range中start\stop\step均超出边界值
+ * -#step3: 定义一个tuple，tuple中元素超出边界值，索引取值也超出边界值
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

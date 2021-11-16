@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 根据作用域级别中的规则，import 进来的名字作用域级别比当前包顶层作用域级别低。需要注意的是，使用import as 重命名的新名字的作用域级别和当前包顶层作用域级别一致，重命名后的函数依然可以参与函数重载
+ * -#step1: 根据作用域级别中的规则，import 进来的名字作用域级别比当前包顶层作用域级别低。需要注意的是，使用import as 重命名的新名字的作用域级别和当前包顶层作用域级别一致，重命名后的函数依然可以参与函数重载
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 根据作用域级别中的规则，import 进来的名字作用域级别比当前包顶层作用域级别低。需要注意的是，使用import as 重命名的新名字的作用域级别和当前包顶层作用域级别一致，重命名后的函数依然可以参与函数重载。
+ */

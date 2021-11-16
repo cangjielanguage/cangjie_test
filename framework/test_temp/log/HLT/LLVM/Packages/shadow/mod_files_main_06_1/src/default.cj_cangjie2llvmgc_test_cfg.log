@@ -1,0 +1,49 @@
+2021-11-08 02:29:36 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/shadow/mod_files_main_06_1/src/default.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:29:36 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/shadow/mod_files_main_06_1/src/default_cj_cangjie2llvmgc_test_cfg_1636338472
+2021-11-08 02:29:36 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./mod1/src/p1/*.cj -module-name mod1 -o mod1/a.o  && ls mod1
+2021-11-08 02:29:36 DEBUG return code: 0
+2021-11-08 02:29:36 DEBUG stdout : 
++	a.o
++	p1.cjo
++	src
+
+2021-11-08 02:29:36 DEBUG stderr : 
+
+2021-11-08 02:29:36 DEBUG Run time: 0.52, remain time: 3e+02
+2021-11-08 02:29:36 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./mod1/src/*.cj mod1/a.o -module-name mod1 -o mod1/default.o  && ls mod1
+2021-11-08 02:29:37 DEBUG return code: 0
+2021-11-08 02:29:37 DEBUG stdout : 
++	a.o
++	default.cjo
++	default.o
++	p1.cjo
++	src
+
+2021-11-08 02:29:37 DEBUG stderr : 
+
+2021-11-08 02:29:37 DEBUG Run time: 0.55, remain time: 3e+02
+2021-11-08 02:29:37 DEBUG execute cmd ===>>>: cjc -verbose -ulimit-error mod1/a.o mod1/default.o default.cj -o default.out
+2021-11-08 02:29:38 DEBUG return code: 1
+2021-11-08 02:29:38 DEBUG stdout : 
++	Cangjie Compiler: 0.23.1 (5631a64ab 2021-11-05)
++	"cjc" -frontend -verbose -ulimit-error mod1/a.o mod1/default.o default.cj -output default.bc 
++	[32minfo[0m: selected gcc lib path: /usr/lib/gcc/x86_64-linux-gnu/8
++	LD_LIBRARY_PATH=/home/zhujunhua/workspace/cangjie/B027/bin/llvm/bin/../lib:$LD_LIBRARY_PATH "/home/zhujunhua/workspace/cangjie/B027/bin/llvm/bin/opt" "default.bc" -O0 --cangjie-pipeline -o "./default-9cd02b81.opt.bc" 
++	LD_LIBRARY_PATH=/home/zhujunhua/workspace/cangjie/B027/bin/llvm/bin/../lib:$LD_LIBRARY_PATH "/home/zhujunhua/workspace/cangjie/B027/bin/llvm/bin/llc" "./default-9cd02b81.opt.bc" -O0 -disable-debug-info-print --relocation-model=pic --frame-pointer=all --filetype=obj -o "./default-9cd02b81.o" 
++	"/usr/bin/ld"  ./mod1/a.o ./mod1/default.o -o "default.out" -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/home/zhujunhua/workspace/cangjie/B027/lib/linux_x86_64_llvm -L/home/zhujunhua/workspace/cangjie/B027/lib/linux_x86_64_llvm -L/home/zhujunhua/workspace/cangjie/B026/lib/linux_x86_64_llvm "./default-9cd02b81.o" --whole-archive /home/zhujunhua/workspace/cangjie/B027/lib/linux_x86_64_llvm/libcangjie-threadlocal.a --no-whole-archive -T /home/zhujunhua/workspace/cangjie/B027/lib/linux_x86_64_llvm/cjld.lds /home/zhujunhua/workspace/cangjie/B027/lib/linux_x86_64_llvm/cjstart.o -lcangjie-runtime -lcangjie-thread -lcangjie-aio -ldl -lrt -lcangjie-ffic --whole-archive -lcangjie-basert --no-whole-archive -lpthread -lsecurec -lm -lstdc++ -l gcc_s -ldl -lc -lcangjie-core /usr/lib/gcc/x86_64-linux-gnu/8/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o 
+
+2021-11-08 02:29:38 DEBUG stderr : 
+@	./default-9cd02b81.o: In function `cj_entry':
+@	default:(.text+0x2a4): multiple definition of `cj_entry'
+@	./mod1/default.o:default:(.text+0x2e4): first defined here
+@	./default-9cd02b81.o: In function `main':
+@	default:(.text+0x340): multiple definition of `main'
+@	./mod1/default.o:default:(.text+0x380): first defined here
+@	./default-9cd02b81.o: In function `user.main':
+@	default:(.text+0xf4): multiple definition of `user.main'
+@	./mod1/default.o:default:(.text+0x134): first defined here
+@	[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
+
+2021-11-08 02:29:38 DEBUG Run time: 0.58, remain time: 3e+02
+2021-11-08 02:29:38 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/shadow/mod_files_main_06_1/src/default.cj_cangjie2llvmgc_test_cfg.log

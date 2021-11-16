@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00223
+ * -@TestCaseName: interface00223.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004,issue888
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Interface extends same interface twice.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

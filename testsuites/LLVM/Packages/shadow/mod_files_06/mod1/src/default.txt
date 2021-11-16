@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 源文件根目录下包含多个仓颉源文件，一个包名为default，一个不声明
+ * -#step1: 源文件根目录下包含多个仓颉源文件，一个包名为default，一个不声明
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 源文件根目录下的包是模块的程序入口所在的包，它可以包含多个仓颉源文件，这些文件可以声明任何合法包名
+ */

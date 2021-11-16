@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Function_Variance_00105
+ * -@TestCaseName: function_variance_00105.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-01
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: If F1 has type S1->T1, F2 has type S2->T2, S2<:S1, T2<:T1, then their types are unconnected.
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

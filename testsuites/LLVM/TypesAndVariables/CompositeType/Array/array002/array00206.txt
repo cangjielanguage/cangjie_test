@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00206
+ * -@TestCaseName: array00206.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 定义多维数组时存在空格type[] []，合法值，符合bnf。
+ * -@Expect: 编译成功，return 0.
+ * -@Priority: level0
+ */

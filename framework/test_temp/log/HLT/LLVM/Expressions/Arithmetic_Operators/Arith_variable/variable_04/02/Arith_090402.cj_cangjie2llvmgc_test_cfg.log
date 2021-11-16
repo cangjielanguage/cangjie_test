@@ -1,0 +1,20 @@
+2021-11-08 01:52:06 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_variable/variable_04/02/Arith_090402.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:52:06 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_variable/variable_04/02/Arith_090402_cj_cangjie2llvmgc_test_cfg_1636335524
+2021-11-08 01:52:06 DEBUG execute cmd ===>>>: cjc -ulimit-error -c Arith_090402.cj 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// Arith_090402.cj
+2021-11-08 01:52:07 DEBUG return code: 1
+2021-11-08 01:52:07 DEBUG stdout : 
++	compare.py input:
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex-auto, pattern: the number '340000000000000000000000000000000000001e308' exceeds the value range , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: regex-not, pattern: core dumped , result: True, matched at output line: 0"
++	b"It's a assert, flag: regex-not, pattern: stack trace , result: True, matched at output line: 1"
+
+2021-11-08 01:52:07 DEBUG stderr : 
+
+2021-11-08 01:52:07 DEBUG Run time: 1.3, remain time: 3e+02
+2021-11-08 01:52:07 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_variable/variable_04/02/Arith_090402.cj_cangjie2llvmgc_test_cfg.log

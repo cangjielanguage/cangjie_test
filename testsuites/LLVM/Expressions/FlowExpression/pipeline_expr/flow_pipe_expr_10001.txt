@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_Expression_Flow_pipeline_expr_10001
+ * -@TestCaseName: flow_pipe_expr_10001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-20
+ * -@RequirementName: Flow expression
+ * -@Conditon: charc, clang, maple test framework and python3.
+ * -@Brief: Flow expr support (input:(Int64)->Int64):Int64=>{input(0)}.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */
+

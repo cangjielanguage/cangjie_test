@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: logger_setoutput_02.cj
+ * -@TestCaseName: logger_setoutput_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1099-02
+ * -@RequirementName: 提供 class SimpleLogger
+ * -@Condition: no
+ * -@Brief:  SetOutput缺少参数
+ * -#step1:  SetOutput缺少参数
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: io/日志
+ * -@SpecDetail: 这里写detail
+ */

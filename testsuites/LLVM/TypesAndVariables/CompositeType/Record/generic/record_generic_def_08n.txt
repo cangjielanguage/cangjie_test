@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_def_08n.cj
+ * -@TestCaseName: record_generic_def_08n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试完整正确的泛型record定义，类型变元为其他标识符 <_@1>,编译报错
+ * -#step1: 定义一个错误的泛型record <_@1>，内部定义一个label声明为类型变元
+ * -#step2: 实例化record，传入类型变元的值
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

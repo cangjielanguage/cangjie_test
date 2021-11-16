@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs037001.cj
+ * -@TestCaseName: pkgs037001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:Import multi-package use "from module import pkg1，pkg2"
+ * -#step1:Compile testfile
+ * -#step2:Run & check return value
+ * -@Expect:Return 0
+ * -@Priority: High
+ */

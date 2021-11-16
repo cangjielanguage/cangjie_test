@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_findAll_02.cj
+ * -@TestCaseName: matcher_api_findAll_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-存在多个子字符串满足正则,返回Option<MatchData[]>,解构之后是一个数组，数组包含匹配的字符串
+ * -#step1: Mathcher-存在多个子字符串满足正则,返回Option<MatchData[]>,解构之后是一个数组，数组包含匹配的字符串
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: func findAll(): Option<MatchData[]>对整个字符串进行匹配，如果存在返回所有匹配的字符串MatchData实例数组，否则返回none
+ */

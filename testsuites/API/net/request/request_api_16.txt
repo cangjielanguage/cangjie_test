@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: request_api_16.cj
+ * -@TestCaseName: request_api_16.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Request
+ * -@Condition: no
+ * -@Brief: func cookies():Array<Cookie>,添加两个不同的cookie值
+ * -#step1: func cookies():Array<Cookie>,添加两个不同的cookie值 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Request
+ * -@SpecDetail: func cookies():Array<Cookie>
+ */

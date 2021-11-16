@@ -1,0 +1,13 @@
+﻿/*
+ * -@TestCaseID: extend_define_01.cj
+ * -@TestCaseName: extend_define_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1010-02
+ * -@RequirementName: 支持给具名类型直接扩展成员函数
+ * -@Condition: no
+ * -@Brief: 扩展的访问和遮盖
+ * -#step1: 在同一个 package内对同一类型可以扩展任意多次，对同一类型的不同扩展范围内的函数进行互相调用
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

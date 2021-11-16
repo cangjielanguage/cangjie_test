@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: lambda_type_0105bug.cj
+ * -@TestCaseName: lambda_type_0105bug.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1016-04
+ * -@RequirementName: lambda 尾闭包
+ * -@Condition: no
+ * -@Brief: 变量明确类型为“(Int32)->Unit”，编译器在lambda 表达式的函数体中所有可能返回的地方插入 return ()
+ * -#step1: 变量明确类型为“(Int32)->Unit”，编译器在lambda 表达式的函数体中所有可能返回的地方插入 return ()
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/Lambda表达式/
+ * -@SpecDetail: 如果指定的返回类型是 Unit ，则仓颉编译器还会在 lambda 表达式的函数体中所有可能返回的地方插入 return () ，使其总是返回 Unit 类型
+ */

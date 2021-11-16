@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_10350
+ * -@TestCaseName: assign10350.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: AssignmentExpressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use array and tuple access as left value and comparison as right value for assignment. 
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

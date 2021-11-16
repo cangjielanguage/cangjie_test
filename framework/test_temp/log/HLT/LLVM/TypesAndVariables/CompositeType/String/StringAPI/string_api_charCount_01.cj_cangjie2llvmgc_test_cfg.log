@@ -1,0 +1,48 @@
+2021-11-08 02:44:07 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:44:07 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480
+2021-11-08 02:44:07 DEBUG execute cmd ===>>>: cjc -ulimit-error  string_api_charCount_01.cj  -o string_api_charCount_01.out
+2021-11-08 02:44:07 DEBUG return code: 1
+2021-11-08 02:44:07 DEBUG stdout : 
+
+2021-11-08 02:44:07 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:8:16: [31merror[0m: 'charCount' is not a member of record 'String'
+@	    8 |     var res1 = str1.charCount()
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:9:16: [31merror[0m: 'charCount' is not a member of record 'String'
+@	    9 |     var res2 = str2.charCount()
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:10:16: [31merror[0m: 'charCount' is not a member of record 'String'
+@	   10 |     var res3 = str3.charCount()
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:11:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Int'
+@	   11 |     if ( res1 != 3 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:11:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Int'
+@	   11 |     if ( res1 != 3 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:11:10: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
+@	   11 |     if ( res1 != 3 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:14:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Int'
+@	   14 |     if ( res2 != 0 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:14:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Int'
+@	   14 |     if ( res2 != 0 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:14:10: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
+@	   14 |     if ( res2 != 0 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:17:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Int'
+@	   17 |     if ( res3 != 2 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:17:10: [31merror[0m: invalid binary operator '!=' on type 'Invalid' and 'Int'
+@	   17 |     if ( res3 != 2 ){
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01_cj_cangjie2llvmgc_test_cfg_1636338480/string_api_charCount_01.cj:17:10: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
+@	   17 |     if ( res3 != 2 ){
+@	      |          [32m^[0m
+@	12 errors generated
+
+2021-11-08 02:44:07 DEBUG Run time: 0.67, remain time: 3e+02
+2021-11-08 02:44:07 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/String/StringAPI/string_api_charCount_01.cj_cangjie2llvmgc_test_cfg.log

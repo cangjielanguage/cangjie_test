@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: convertlib_00201.cj
+ * -@TestCaseName: convertlib_00201.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-01
+ * -@RequirementName: 提供String parse 函数
+ * -@Condition: no
+ * -@Brief: 入参字符串代表的数值是目标值范围内的极值
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ */

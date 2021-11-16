@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: increment_08.cj
+ * -@TestCaseName: increment_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: class内部重载操作符++
+ * -#step1: 定义一个class Coo内部重载操作符++
+ * -#step2: 实例化类Coo,使用重载后的操作符++
+ * -@Expect: 编译报错，++、--不支持重载 
+ * -@Priority: High
+ */

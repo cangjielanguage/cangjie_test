@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: regex_init_04.cj
+ * -@TestCaseName: regex_init_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Regex-flagType值超出Int64范围
+ * -#step1: Regex-flagType值超出Int64范围
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: init(regex: String, flagType: Int64)
+ */

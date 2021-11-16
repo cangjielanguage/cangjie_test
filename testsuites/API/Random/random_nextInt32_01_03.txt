@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: random_nextInt32_01_03.cj
+ * -@TestCaseName: random_nextInt32_01_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1097-02
+ * -@RequirementName: 提供 class Random
+ * -@Condition: no
+ * -@Brief: 调用nextInt32(upper: Int32)，入参是0(-2,147,483,648 到2,147,483,647)
+ * -#step1: 调用nextInt32(upper: Int32)，入参是0(-2,147,483,648 到2,147,483,647)
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Random
+ * -@SpecDetail:  open func nextInt32(upper: Int32): Int32
+ */

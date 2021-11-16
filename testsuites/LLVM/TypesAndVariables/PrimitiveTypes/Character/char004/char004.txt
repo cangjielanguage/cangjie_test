@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_TypesAndVariables_PrimitiveTypes_Character_004
+ * -@TestCaseName: char004.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: Character
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define empty char.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

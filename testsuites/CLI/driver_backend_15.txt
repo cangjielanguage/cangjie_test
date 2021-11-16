@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_backend_15.cj
+ * -@TestCaseName: driver_backend_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-backend-options "llvm的有效参数"有源文件
+ * -#step1: cjc -backend-options "llvm的有效参数" xxx源文件
+ * -@Expect: 选项和参数链接符号错误
+ * -@Priority: High
+ */

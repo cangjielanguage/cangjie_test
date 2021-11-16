@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: String_count_1.cj
+ * -@TestCaseName: String_count_1.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: 自增自减表达式
+ * -#step1: 定义变量，使用变量前依次调用自增、自减表达式
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_for_06.cj
+ * -@TestCaseName: template_for_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: 非法-#for..#endfor不完整,没有#endfor
+ * -#step1: 非法-#for..#endfor不完整,没有#endfor
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: 非法-#for..#endfor不完整
+ */

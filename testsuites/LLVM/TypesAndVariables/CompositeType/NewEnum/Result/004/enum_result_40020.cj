@@ -1,0 +1,15 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+open class C{var a = Ok(1)}
+
+class A <: C{
+    func test():Result<Int64>{
+        super.a!
+        return Ok(0)
+    }
+}
+
+func main(): Int64 {
+    return A().test() ?? 1
+}

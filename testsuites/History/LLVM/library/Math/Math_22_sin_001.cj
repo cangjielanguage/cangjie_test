@@ -1,0 +1,40 @@
+// EXEC: %compiler %stdx_cmp_opt %f -o %output
+// EXEC: %stdx_run %stdx_run_opt %output %stdx_run_args
+
+import math.*
+
+func main(): Int64{
+
+   if ((sin(-18.2) - 0.995322) > 0.000001) {
+       return 1
+   }
+
+   if ((sin(2.2) - 0.808496) > 0.000001) {
+       return 1
+   }
+
+
+   if (sin(0.0) != 0.000000) {
+       return 1
+   }
+
+
+   if (!isNaN(sin(Inf64))) {
+       return 1
+   }
+
+   if (!isNaN(sin(-Inf32))) {
+       return 1
+   }
+
+   if (!isNaN(sin(NaN32))) {
+       return 1
+   }
+
+   if (!isNaN(sin(NaN64))) {
+       return 1
+   }
+
+   return 0
+
+}

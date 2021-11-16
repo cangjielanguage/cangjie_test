@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_30007
+ * -@TestCaseName: assign30007.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: incrAndDecrExpression
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use class array member access for incrAndDecrExpression. 
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,18 @@
+2021-11-08 02:02:33 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/03_mod_object/var_type_01/var_type_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:02:33 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_01/var_type_01_cj_cangjie2llvmgc_test_cfg_1636335529
+2021-11-08 02:02:33 DEBUG execute cmd ===>>>: cjc -ulimit-error var_type_01.cj -o var_type_01..out
+2021-11-08 02:02:34 DEBUG return code: 1
+2021-11-08 02:02:34 DEBUG stdout : 
+
+2021-11-08 02:02:34 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_01/var_type_01_cj_cangjie2llvmgc_test_cfg_1636335529/var_type_01.cj:17:16: [31merror[0m: native function can only have CType args.
+@	   17 |   func fromNow(obj:Complex) : UInt32
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_01/var_type_01_cj_cangjie2llvmgc_test_cfg_1636335529/var_type_01.cj:21:26: [31merror[0m: native function can only have CType return.
+@	   21 | foreign func moment1() : Moment
+@	      |                          [32m^[0m
+@	2 errors generated
+
+2021-11-08 02:02:34 DEBUG Run time: 0.4, remain time: 3e+02
+2021-11-08 02:02:34 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/03_mod_object/var_type_01/var_type_01.cj_cangjie2llvmgc_test_cfg.log

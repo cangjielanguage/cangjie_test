@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: string_constructor_array_0203.cj
+ * -@TestCaseName: string_constructor_array_0203.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-9
+ * -@RequirementName: String 标准库新增API
+ * -@Condition: no
+ * -@Brief: 测试String的api：init(value: Array<Char>, start!: Int64 = 0, length!: Int64 = value.size()) start 当 length 小于 0 或者（start + length）的值大于 value 的长度会抛出异常
+ * -#step1: 测试String的api：init(value: Array<Char>, start!: Int64 = 0, length!: Int64 = value.size()) start 当 length 小于 0 或者（start + length）的值大于 value 的长度会抛出异常
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: core_lib.md
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

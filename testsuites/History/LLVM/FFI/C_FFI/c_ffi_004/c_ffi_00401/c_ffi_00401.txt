@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: FFI_C_00401
+ * -@TestCaseName: c_ffi_00401.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持一维数组类型作为native入参直接映射。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

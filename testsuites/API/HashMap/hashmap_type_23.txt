@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashmap_type_23.cj
+ * -@TestCaseName: hashmap_type_23.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-03
+ * -@RequirementName: 提供 class HashMap
+ * -@Condition: no
+ * -@Brief: 存放元素的类型：K为Result<T>
+ * -#step1: 存放元素的类型：K为Result<T>
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: collection/HashMap
+ * -@SpecDetail: HashMap
+ */

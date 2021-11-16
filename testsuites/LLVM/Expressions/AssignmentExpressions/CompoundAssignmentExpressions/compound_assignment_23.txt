@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: compound_assignment_23.cj
+ * -@TestCaseName: compound_assignment_23.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-09
+ * -@RequirementName: 复合赋值表达式
+ * -@Condition: no
+ * -@Brief: while中使用复合赋值表达式
+ * -#step1: while中使用复合赋值表达式
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 复合赋值表达式
+ * -@SpecDetail: 4.0 在仓颉编程语言中,表达式几乎无处不在
+ */

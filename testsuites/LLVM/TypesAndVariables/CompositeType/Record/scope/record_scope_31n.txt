@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_scope_31n.cj
+ * -@TestCaseName: record_scope_31n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试通过record名直接访问无修饰符的成员函数，编译报错
+ * -#step1: 定义一个record，成员函数func
+ * -#step2: 通过record名字直接访问record的成员函数func
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

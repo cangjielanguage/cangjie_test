@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: static_overload_01.cj
+ * -@TestCaseName: static_overload_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-14
+ * -@RequirementName: 实现接口时函数重载的规则检查 
+ * -@Condition: no
+ * -@Brief: 子接口中的非static和父接口中的static方法重名
+ * -#step1: 子接口中的非static和父接口中的static方法重名
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

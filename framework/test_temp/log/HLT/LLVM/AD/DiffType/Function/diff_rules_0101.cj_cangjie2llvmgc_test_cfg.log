@@ -1,0 +1,11 @@
+2021-11-08 02:37:23 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_rules_0101.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:37:23 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_0101_cj_cangjie2llvmgc_test_cfg_1636338477
+2021-11-08 02:37:23 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error diff_rules_0101.cj -o diff_rules_0101.out  2>&1 
+2021-11-08 02:37:23 DEBUG return code: 0
+2021-11-08 02:37:23 DEBUG stdout : 
+
+2021-11-08 02:37:23 DEBUG stderr : 
+
+2021-11-08 02:37:23 DEBUG Run time: 0.6, remain time: 3e+02
+2021-11-08 02:37:23 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_rules_0101.cj_cangjie2llvmgc_test_cfg.log

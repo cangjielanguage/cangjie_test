@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socket_init_01_02_06.cj
+ * -@TestCaseName: socket_init_01_02_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class Socket
+ * -@Condition: no
+ * -@Brief: socket-address是X.X.X.X格式,空字符串
+ * -#step1: socket-address是X.X.X.X格式,空字符串
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: socket-init(net: SocketNet, address: String, port: UInt16):根据指定的协议、地址和端口号，初始化Socket实例
+ */

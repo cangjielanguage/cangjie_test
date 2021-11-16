@@ -1,0 +1,16 @@
+/*
+* -@TestCaseID: list014_insertAll_07
+* -@TestCaseName: list014_insertAll_07
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-Lang-1011-04
+* -@RequirementName: lang.List库
+* -@Condition: no
+* -@Brief: InsertAll a String value at position 0 to List<Int64>([])
+* -#step1: 
+* -@Expect: Compile fail.
+* -@Priority: level0
+* -@SpecVersion: spec 0.22.3
+* -@SpecChapter: List
+* -@SpecDetail: 
+* -@catalog: 
+*/

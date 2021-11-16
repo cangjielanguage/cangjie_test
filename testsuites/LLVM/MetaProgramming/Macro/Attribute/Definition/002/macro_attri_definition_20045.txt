@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_Attribute_Definition_20045
+ * -@TestCaseName: macro_attribute_definition_20045.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-31
+ * -@RequirementName: Meta programming support Attribute Macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define normal attribute macro with paren Expression.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

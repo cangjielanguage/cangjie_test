@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: header_api_07.cj
+ * -@TestCaseName: header_api_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-07
+ * -@RequirementName: 提供 class Header
+ * -@Condition: no
+ * -@Brief: func write(w: WriteStream): Unit,
+ * -#step1: func write(w: WriteStream): Unit, 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Header
+ * -@SpecDetail: Header
+ */

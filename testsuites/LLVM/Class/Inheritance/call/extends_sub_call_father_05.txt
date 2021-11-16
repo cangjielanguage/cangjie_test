@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: extends_sub_call_father_05.cj
+ * -@TestCaseName: extends_sub_call_father_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 子类遮盖变量，直接访问变量
+ * -#step1: 定义一个Base基类，定义变量
+ * -#step2: 子类继承基类，在子类中遮盖变量，直接访问变量
+ * -@Expect: 编译报错，子父类成员不允许遮盖
+ * -@Priority: High
+ */

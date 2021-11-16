@@ -1,0 +1,19 @@
+
+/*
+ * -@TestCaseID: diff_two_annotation_04.cj
+ * -@TestCaseName: diff_two_annotation_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-08
+ * -@RequirementName: AD支持双注解
+ * -@Condition: no
+ * -@Brief: 使用ad双注解求二阶微分
+ * -#step1: 定义返回类型为Float64的不可微函数, 入参类型为Float64
+ * -#step2: 定义square的伴随函数，并使用双注解语法标注为可微函数
+ * -#step3: 定义可微函数squareGrad，并调用adjointOf求导
+ * -#step4: 求取square的二阶微分
+ * -@Expect: 编译失败
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 暂无
+ */

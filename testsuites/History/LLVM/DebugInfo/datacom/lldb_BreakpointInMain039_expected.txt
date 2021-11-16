@@ -1,0 +1,6 @@
+lldb,lldb 018_debug_parentheses,018_debug_parentheses
+b,b 4,018_debug_parentheses.cj:4
+b,b 5,018_debug_parentheses.cj:5
+r,r,-> 4
+n,n,-> 5
+cj_plocals,cj_plocals,kuonum = 5

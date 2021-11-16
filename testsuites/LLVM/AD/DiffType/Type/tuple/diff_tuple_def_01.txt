@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: diff_tuple_def_01.cj
+ * -@TestCaseName: diff_tuple_def_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-15
+ * -@RequirementName: Float16*Int16的tuple传入可微函数
+ * -@Condition: no
+ * -@Brief: Float16*Int16的tuple传入可微函数
+ * -#step1: 定义可微函数foo，和其入参x（类型为Float16*Int16的tuple）
+ * -#step2: 返回参数x
+ * -@Expect: 编译失败
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 当元组中所有元素均为可微类型时，则该元组是可微元组类型.Int不属于可微类型
+ */

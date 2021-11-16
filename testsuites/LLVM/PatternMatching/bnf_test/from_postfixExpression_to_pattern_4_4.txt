@@ -1,0 +1,27 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <postfixExpression> case (use postfixExpression):
+Origin BNF is 
+    :  atomicExpression
+    | postfixExpression NOT
+    | postfixExpression QUEST? NL* DOT NL* Identifier (NL* typeArguments)?
+    | postfixExpression QUEST? callSuffix
+    | postfixExpression QUEST? indexAccess
+    
+Test   BNF is 
+    :  atomicExpression
+    | postfixExpression NOT
+    | postfixExpression QUEST? NL* DOT NL* Identifier (NL* typeArguments)?
+    | postfixExpression QUEST? callSuffix
+    | <<TARGET=postfixExpression->pattern>> QUEST? indexAccess
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

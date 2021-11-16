@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_20032
+ * -@TestCaseName: assign20032.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: AssignmentExpressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: left value is right value`s grandfather interface for assignment.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_def_33.chr
+ * -@TestCaseName: enum_generic_def_33.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T1, T2, T3>，仅使用T2,T3
+ * -#step1: 定义有多个类型变元的enum<T1,T2,T3>，仅使用T2,T3分别用于内部构造函数
+ * -#step2: match匹配enum中的构造函数，类型变元为<Int32, float64, String>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

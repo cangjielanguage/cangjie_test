@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_invoke_0408.cj
+ * -@TestCaseName: enum_invoke_0408.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试通过.constructor名字访问构造器(含同名不同类型入参)
+ * -#step1: 声明2个enum，含同名constructor，不同类型入参
+ * -#step2: 用.constructor名字直接访问该构造器。enum不会进行择优
+ * -@Expect: 编译失败
+ * -@Priority: High
+ */

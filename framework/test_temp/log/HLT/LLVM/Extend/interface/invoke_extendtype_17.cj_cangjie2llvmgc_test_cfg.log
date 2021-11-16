@@ -1,0 +1,12 @@
+2021-11-08 02:54:19 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/interface/invoke_extendtype_17.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:54:19 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Extend/interface/invoke_extendtype_17_cj_cangjie2llvmgc_test_cfg_1636338485
+2021-11-08 02:54:19 DEBUG execute cmd ===>>>: cjc -ulimit-error invoke_extendtype_17.cj -o invoke_extendtype_17.out
+2021-11-08 02:54:20 DEBUG return code: 139
+2021-11-08 02:54:20 DEBUG stdout : 
+
+2021-11-08 02:54:20 DEBUG stderr : 
+@	Segmentation fault (core dumped)
+
+2021-11-08 02:54:20 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:54:20 ERROR Failed, return code 139 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/interface/invoke_extendtype_17.cj_cangjie2llvmgc_test_cfg.log

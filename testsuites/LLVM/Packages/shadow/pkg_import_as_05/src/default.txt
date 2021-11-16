@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: import x.*,覆盖import x.y1 as alias，访问x.y1 , x.y2 , y1 , y2 , alias都成功
+ * -#step1: import x.*,覆盖import x.y1 as alias，访问x.y1 , x.y2 , y1 , y2 , alias都成功
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 
+ */

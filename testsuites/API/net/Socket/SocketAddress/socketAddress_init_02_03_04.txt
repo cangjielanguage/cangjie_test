@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketAddress_init_02_03_04.cj
+ * -@TestCaseName: socketAddress_init_02_03_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketAddress
+ * -@Condition: no
+ * -@Brief:  SocketAddress-hostAddressaddress是X.X.X.X格式,存在特殊字符
+ * -#step1:  SocketAddress-hostAddressaddress是X.X.X.X格式,存在特殊字符
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail:  SocketAddress-init(hostAddress: String, port: UInt16)
+ */

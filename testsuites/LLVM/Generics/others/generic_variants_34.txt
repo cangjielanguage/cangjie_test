@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_variants_34.cj
+ * -@TestCaseName: generic_variants_34.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-17
+ * -@RequirementName: 泛型类使用限制检查
+ * -@Condition: no
+ * -@Brief: 定义类为class A<Int64> 编译报错
+ * -#step1: 定义类为class A<Int64> 编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ */

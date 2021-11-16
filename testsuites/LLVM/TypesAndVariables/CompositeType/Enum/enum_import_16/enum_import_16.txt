@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_import_16/pkg.cj
+ * -@TestCaseName: enum_import_16/pkg.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-08
+ * -@RequirementName: 模块化编译支持Enum
+ * -@Condition: no
+ * -@Brief: import之后enum中的constractor中调用
+ * -#step1: 准备package含enum
+ * -#step2: import 该enum，并在constractor中调用
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

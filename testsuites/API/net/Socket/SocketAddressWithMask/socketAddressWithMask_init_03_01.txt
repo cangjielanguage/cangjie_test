@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketAddressWithMask_init_03_01.cj
+ * -@TestCaseName: socketAddressWithMask_init_03_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketAddressWithMask
+ * -@Condition: no
+ * -@Brief:  SocketAddressWithMask-SocketAddress 为 init(hostAddress: String, port: UInt16)参数正常
+ * -#step1:  SocketAddressWithMask-SocketAddress 为 init(hostAddress: String, port: UInt16)参数正常
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail:  SocketAddressWithMask -init(socketAddr: SocketAddress, mask: IPMask)
+ */

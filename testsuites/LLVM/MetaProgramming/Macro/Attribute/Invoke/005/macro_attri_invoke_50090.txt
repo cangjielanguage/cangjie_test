@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_Attri_Invoke_50090
+ * -@TestCaseName: macro_attri_invoke_50090.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support Macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define and call macro block.
+ * -@Expect: Compile success.
+ * -@Priority: level0
+ */
+

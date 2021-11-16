@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_FunctionInvocation_00709
+ * -@TestCaseName: func00709.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2007
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define function in one line.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

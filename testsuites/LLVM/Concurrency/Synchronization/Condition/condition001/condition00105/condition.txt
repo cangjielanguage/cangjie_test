@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: condition00105
+ * -@TestCaseName: condition.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-09
+ * -@RequirementName: Condition
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Condition方法 notifyAll ：唤醒所有等待条件的线程
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: pkgs_dup_method_01/pkg/pkg.cj
+ * -@TestCaseName: pkgs_dup_method_01/pkg/pkg.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 用len计算中文字符串的长度
+ * -#step1: 用len计算中文字符串的长度
+ * -@Expect: 计算正确,1个中文字算一个字符
+ * -@Priority: High
+ */

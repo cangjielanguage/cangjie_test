@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_initblock_def_01.cj
+ * -@TestCaseName: class_initblock_def_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试class中正确的init block定义
+ * -#step1: class中自定义正确的init block
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

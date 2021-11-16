@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Test_Class_cover_001
+ * -@TestCaseName: Test_Class_cover_001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-02_R2
+ * -@RequirementName: Language implementation update
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 子作用域的非静态变量和父作用域的非静态变量同名
+ * -@Expect: 子作用域发生了遮盖，访问到是子类非静态变量的值;
+ * -@        通过super和创建对象访问父作用域的非静态变量
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: url_api_11.cj
+ * -@TestCaseName: url_api_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class URL
+ * -@Condition: no
+ * -@Brief: func query(): Form,存在query
+ * -#step1: func query(): Form,存在query 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/URL
+ * -@SpecDetail: func query(): Form
+ */

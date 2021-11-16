@@ -1,0 +1,39 @@
+2021-11-08 02:30:31 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:30:31 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472
+2021-11-08 02:30:31 DEBUG execute cmd ===>>>: cjc -ulimit-error matchcase_return_02.cj -o matchcase_return_02.out
+2021-11-08 02:30:31 DEBUG return code: 1
+2021-11-08 02:30:31 DEBUG stdout : 
+
+2021-11-08 02:30:31 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472/matchcase_return_02.cj:18:18: [31merror[0m: at least one expression or declaration after '=>' in case body
+@	   18 |         case _ =>
+@	      |                  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472/matchcase_return_02.cj:27:5: [31merror[0m: initialization expression of Nothing type is not supported currently
+@	   27 |     var result = match (score) {
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472/matchcase_return_02.cj:38:5: [31merror[0m: initialization expression of Nothing type is not supported currently
+@	   38 |     var result = match (score) {
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472/matchcase_return_02.cj:42:5: [31merror[0m: type incompatible in this return expression
+@	   42 |     return
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472/matchcase_return_02.cj:42:5: [31merror[0m: Traces:
+@	The smallest common supertype of Int64 and Unit is 'Any', please explicitly annotate the type.
+@	The smallest common supertype of Interface-SaturatingOp<Int64> and Unit is 'Any', please explicitly annotate the type.
+@	The smallest common supertype of Interface-ThrowingOp<Int64> and Unit is 'Any', please explicitly annotate the type.
+@	The smallest common supertype of Interface-WrappingOp<Int64> and Unit is 'Any', please explicitly annotate the type.
+@	The smallest common supertype of Interface-CheckedOp<Int64> and Unit is 'Any', please explicitly annotate the type.
+@	
+@	   42 |     return
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472/matchcase_return_02.cj:42:5: [31merror[0m: type of return expression is incompatible with return type
+@	   42 |     return
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02_cj_cangjie2llvmgc_test_cfg_1636338472/matchcase_return_02.cj:35:6: [31merror[0m: unable to infer function return type, please write it
+@	   35 | func case03(){
+@	      |      [32m^[0m
+@	7 errors generated
+
+2021-11-08 02:30:31 DEBUG Run time: 0.37, remain time: 3e+02
+2021-11-08 02:30:31 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Function/FunctionDefinition/return/matchcase_return_02.cj_cangjie2llvmgc_test_cfg.log

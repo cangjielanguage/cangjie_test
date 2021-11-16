@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_type_modify_10.cj
+ * -@TestCaseName: char_type_modify_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型变量的修饰符，访问类A中static修饰的char
+ * -#step1: 类A定义一个char类型变量c，并用private修饰符修饰
+ * -#step2: 访问A类中的c
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

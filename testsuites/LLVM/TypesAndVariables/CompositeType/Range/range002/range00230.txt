@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Range_00230
+ * -@TestCaseName: range00230.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: range字面值超出限制.
+ * -@Expect: 目前尚未支持溢出检查.
+ * -@Priority: level0
+ */

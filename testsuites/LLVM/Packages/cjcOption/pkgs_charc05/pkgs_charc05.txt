@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_cjc05.cj
+ * -@TestCaseName: pkgs_cjc05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:使用cjc将同一个package的不同.cj文件编译到一起
+ * -#step1:使用cjc将同一个package的不同.cj文件编译到一起
+ * -#step2:检查编译输出并执行
+ * -@Expect:执行成功
+ * -@Priority: High
+ */

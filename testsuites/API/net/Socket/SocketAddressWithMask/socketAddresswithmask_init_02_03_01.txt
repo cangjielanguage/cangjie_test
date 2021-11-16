@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketAddresswithmask_init_02_03_01.cj
+ * -@TestCaseName: socketAddresswithmask_init_02_03_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketAddressWithMask
+ * -@Condition: no
+ * -@Brief: SocketAddressWithMask-hostAddress是X.X.X.X格式且是数字，但不在UInt8范围内（存在大于上界255）
+ * -#step1: SocketAddressWithMask-hostAddress是X.X.X.X格式且是数字，但不在UInt8范围内（存在大于上界255）
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: SocketAddressWithMask-init(hostAddress: String, port: UInt16, mask: IPMask)
+ */

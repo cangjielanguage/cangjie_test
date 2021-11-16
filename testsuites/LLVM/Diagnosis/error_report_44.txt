@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: error_report_44.cj
+ * -@TestCaseName: error_report_44.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1039-01
+ * -@RequirementName: 编译告警
+ * -@Condition: no
+ * -@Brief: 编译告警补充
+ * -@step1: 根据源码补充编译报错场景
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

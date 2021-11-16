@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: external_internal_func_06.cj
+ * -@TestCaseName: external_internal_func_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 本包内，external声明函数foo，通过函数形参默认值foo(x!=goo)的形式使用函数goo，goo函数使用internal声明
+ * -#step1: 本包内，external声明函数foo，通过函数形参默认值foo(x!=goo)的形式使用函数goo，goo函数使用internal声明
+ * -@Expect: 执行成功、返回0
+ * -@Priority: level0
+ */

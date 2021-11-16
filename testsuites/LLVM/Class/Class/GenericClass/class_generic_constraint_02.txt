@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_constraint_02.cj
+ * -@TestCaseName: class_generic_constraint_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T1>的约束条件T1 <: V1(V1为普通类，T1为V1类型)，执行成功
+ * -#step1: 定义一个类Foo
+ * -#step2: 定义一个约束条件为T1<:Foo的泛型class <T1>，内部声明一个类型为变元T1的变量并在init函数中初始化
+ * -#step3: 创建Bar类型的实例，实例化class，传入类元为<Foo>
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

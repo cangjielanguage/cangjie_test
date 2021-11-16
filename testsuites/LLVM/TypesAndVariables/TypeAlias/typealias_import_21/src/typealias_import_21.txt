@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: typealias_import_21.cj
+ * -@TestCaseName: typealias_import_21.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: module1内包pkgs下定义external修饰的类型别名，且原类型external修饰
+ * -#step1: module1内包pkgs定义external修饰的类Data，声明Data的类型别名为D修饰符为external
+ * -#step2: from "module1" import pkgs 使用pkgs.D调用类型别名
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: for_in_pattern_08.cj
+ * -@TestCaseName: for_in_pattern_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-12
+ * -@RequirementName: for in表达式
+ * -@Condition: no
+ * -@Brief: for 之后的 pattern 中存在 variable pattern，相当于新声明了一个（或多个） let 变量，变量在for-in中被改变，编译报错
+ * -#step1: for 之后的 pattern 中存在 variable pattern，相当于新声明了一个（或多个） let 变量，变量在for-in中被改变
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 表达式/循环表达式/for-in表达式
+ * -@SpecDetail: 如果 for 之后的 pattern 中存在 variable pattern，相当于新声明了一个（或多个） let 变量，每个变量的作用域从它第一次出现的位置到循环体结束
+ * -@catalog:# 表达式## 循环表达式### for-in表达式--7
+ */

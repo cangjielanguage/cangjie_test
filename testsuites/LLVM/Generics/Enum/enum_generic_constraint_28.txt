@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_constraint_28.cj
+ * -@TestCaseName: enum_generic_constraint_28.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>的约束T <: V(V为普通record，T为V的实例)
+ * -#step1: 定义一个普通record Data
+ * -#step2: 定义一个约束条件为T<:Data的泛型enum Time<T>
+ * -#step3: 实例化record Data，调用Time中的构造函数，传入类元为<Data>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

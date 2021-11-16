@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: pkg_main_return_1101.cj
+ * -@TestCaseName: pkg_main_return_1101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-17
+ * -@RequirementName: main函数支持所有的整数类型或Unit作为返回类型
+ * -@Condition: no
+ * -@Brief: main文件不含返回类型：不写返回类型Unit
+ * -#step1: main文件不含返回类型：不写返回类型Unit
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 包/源文件根目录下的包
+ * -@SpecDetail: 作为程序入口的main 函数可以没有参数或参数类型为List<String>，返回值类型为Unit 或整数类型。
+ */

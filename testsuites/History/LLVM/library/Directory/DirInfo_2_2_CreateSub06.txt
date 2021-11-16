@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DirInfo_2_2_createSub06
+ * -@TestCaseName: DirInfo_2_2_createSub06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: DirectoryInfo 创建子目录,入参是空字符串
+ * -@Expect: 预期报错
+ * -@Priority: level 1
+ */
+    

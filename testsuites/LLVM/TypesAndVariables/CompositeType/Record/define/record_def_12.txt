@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_def_12.cj
+ * -@TestCaseName: record_def_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record定义时，有一个类型变元
+ * -#step1: 定义一个有类型变元的record，内部定义一个label声明为类型变元
+ * -#step2: 实例化record，传入类型变元的值
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

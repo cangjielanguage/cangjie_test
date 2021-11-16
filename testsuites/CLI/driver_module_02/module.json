@@ -1,0 +1,8 @@
+{
+    "charc_version": "0.14",
+    "name": "driver_module_01/aoo",
+    "description": "nothing here",
+    "version": "1.0.0",
+    "requires": {},
+    "library_type": "static"
+}

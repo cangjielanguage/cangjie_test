@@ -1,0 +1,24 @@
+2021-11-08 02:11:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/03_mod_object/var_type_10/var_type_10.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:11:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_10/var_type_10_cj_cangjie2llvmgc_test_cfg_1636335534
+2021-11-08 02:11:12 DEBUG execute cmd ===>>>: cjc -ulimit-error var_type_10.cj -o var_type_10..out
+2021-11-08 02:11:12 DEBUG return code: 1
+2021-11-08 02:11:12 DEBUG stdout : 
+
+2021-11-08 02:11:12 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_10/var_type_10_cj_cangjie2llvmgc_test_cfg_1636335534/var_type_10.cj:36:16: [31merror[0m: native function can only have CType args.
+@	   36 |   func fromNow(obj:Complex) : Float64*Int64
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_10/var_type_10_cj_cangjie2llvmgc_test_cfg_1636335534/var_type_10.cj:36:31: [31merror[0m: native function can only have CType return.
+@	   36 |   func fromNow(obj:Complex) : Float64*Int64
+@	      |                               [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_10/var_type_10_cj_cangjie2llvmgc_test_cfg_1636335534/var_type_10.cj:40:26: [31merror[0m: native function can only have CType return.
+@	   40 | foreign func moment1() : Moment
+@	      |                          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/03_mod_object/var_type_10/var_type_10_cj_cangjie2llvmgc_test_cfg_1636335534/var_type_10.cj:43:3: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   43 |   object_10().main1()
+@	      |   [32m^[0m
+@	4 errors generated
+
+2021-11-08 02:11:12 DEBUG Run time: 0.56, remain time: 3e+02
+2021-11-08 02:11:12 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/03_mod_object/var_type_10/var_type_10.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: rule2_0005.cj
+ * -@TestCaseName: rule2_0005.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-08
+ * -@RequirementName: 在类的init构造函数中错误使用this() super()
+ * -@Condition: no
+ * -@Brief: 在类的init构造函数中 作为非函数体内第一个表达式处使用this() super()
+ * -#step1: 类Test的init构造函数，函数体内先定义一个变量，再使用super表达式
+ * -#step2: 类Test2的init构造函数，函数体内先定义一个变量，再使用this表达式
+ * -@Expect: 编译错误，提示：对“this”、“super”的调用必须是类的构造函数中的第一个表达式
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.2.1 构造函数
+ * -@SpecDetail: init 构造函数可以调用父类构造函数或本类其它构造函数，但两者之间只能调用一个。如果调用，必须在构造函数体内的第一个表达式处，在此之前不能有任何表达式或声明；
+ * -@catalog: # 类和接口## 类### 类的成员#### 构造函数##### `init` 构造函数--18
+ */

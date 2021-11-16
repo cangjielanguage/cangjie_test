@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: driver_pkg_02.cj
+ * -@TestCaseName: driver_pkg_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-package后跟多个包目录
+ * -#step1: 执行命令：cjc -package/-p pkg1 pkg2
+ * -#step2: 检查执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: list_01213n.cj
+ * -@TestCaseName: list_01213n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: *listExpr展开自身List
+ * -#step1: *listExpr展开自身List
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

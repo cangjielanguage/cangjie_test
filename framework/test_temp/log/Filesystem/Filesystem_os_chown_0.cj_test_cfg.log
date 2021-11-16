@@ -1,0 +1,26 @@
+2021-10-28 07:02:31 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/Filesystem/Filesystem_os_chown_0.cj_test_cfg.log
+2021-10-28 07:02:31 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/run/Filesystem/Filesystem_os_chown_0_cj_test_cfg_1635404551
+2021-10-28 07:02:31 DEBUG execute cmd ===>>>: cjc -backend llvm caserunner.cj -o os_chown_0.out os_chown_0.cj
+2021-10-28 07:02:33 DEBUG return code: 0
+2021-10-28 07:02:33 DEBUG stdout : 
+
+2021-10-28 07:02:33 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/run/Filesystem/Filesystem_os_chown_0_cj_test_cfg_1635404551/caserunner.cj:33:5: [33mwarning[0m: unhandled items after throw expr
+@	   33 |     }
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/run/Filesystem/Filesystem_os_chown_0_cj_test_cfg_1635404551/caserunner.cj:186:19: [33mwarning[0m: 'x' has been defined in the outside of match expression, are you sure using 'x' as a variable pattern here?
+@	  186 |         case Some(x) => x
+@	      |                   [32m^[0m
+@	2 warnings generated
+
+2021-10-28 07:02:33 DEBUG Run time: 2.1, remain time: 6e+02
+2021-10-28 07:02:33 DEBUG execute cmd ===>>>: %stdx_run %stdx_run_opt os_chown_0.out %stdx_run_args
+2021-10-28 07:02:33 DEBUG return code: 127
+2021-10-28 07:02:33 DEBUG stdout : 
+
+2021-10-28 07:02:33 DEBUG stderr : 
+@	/bin/sh: 1: %stdx_run: not found
+
+2021-10-28 07:02:33 DEBUG Run time: 0.0068, remain time: 6e+02
+2021-10-28 07:02:33 ERROR Failed, return code 127 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/Filesystem/Filesystem_os_chown_0.cj_test_cfg.log

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Candidate_00401
+ * -@TestCaseName: function_overload_candidate_00401.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: When literal match both type, can not decide invoke which function.
+ * -@Expect: Compile failed, return 0.
+ * -@Priority: level0
+ */

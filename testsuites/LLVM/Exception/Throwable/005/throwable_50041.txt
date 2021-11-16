@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Cangjie_Exception_Throwable_50041
+ * -@TestCaseName: throwable_50041.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-23
+ * -@RequirementName: Cangjie support runtime exception.
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Exception in class.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

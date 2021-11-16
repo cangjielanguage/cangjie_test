@@ -1,0 +1,14 @@
+{
+  "package": {
+    "ffi/c": "cangjieCFFI_path"
+  },
+  "foreign_module": {
+    "libc_ffi_jni.so": {
+      "path": "./",
+      "export": [
+        "abcde",
+        "fghil"
+      ]
+    }
+  }
+}

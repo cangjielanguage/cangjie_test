@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_008.cj
+ * -@TestCaseName: FileStream_openFile_008.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: func read(b: Array<UInt8>): int64没有openFile时执行返回-1
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

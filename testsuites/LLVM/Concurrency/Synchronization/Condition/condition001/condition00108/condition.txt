@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: condition00108
+ * -@TestCaseName: condition.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-09
+ * -@RequirementName: Condition
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 调用wait()后，unlock次数与Mutex锁重入次数不一致
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

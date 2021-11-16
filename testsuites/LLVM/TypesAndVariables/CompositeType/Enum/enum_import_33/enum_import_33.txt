@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_import_33/pkg.cj
+ * -@TestCaseName: enum_import_33/pkg.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-08
+ * -@RequirementName: 模块化编译支持Enum
+ * -@Condition: no
+ * -@Brief: import的enum和另一个import中的enum重名，分别以import pkg和import pkg.type导入，分别以pkg.type和type使用
+ * -#step1: 准备两个package含同名enum
+ * -#step2: 分别以import pkg和import pkg.type导入，分别以pkg.type和type使用
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

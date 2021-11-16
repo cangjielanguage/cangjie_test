@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_type_var_15.cj
+ * -@TestCaseName: char_type_var_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型作为trait体中成员函数返回值使用
+ * -#step1: 定义一个trait，返回值为char类型的成员函数test；append char实现trait中的func test
+ * -#step2: 定义一个三个字符，分别组合传入函数test中。成员函数调用成功
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

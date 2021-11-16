@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: scope_case1
+* -@TestCaseName: scope_case1.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1006-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证作用域覆盖
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

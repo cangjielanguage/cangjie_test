@@ -1,0 +1,10 @@
+lldb,lldb 008_debug_func_no_arg,008_debug_func_no_arg
+b,b 4,008_debug_func_no_arg.cj:4
+b,b 5,008_debug_func_no_arg.cj:5
+b,b 11,008_debug_func_no_arg.cj:11
+b,b 12,008_debug_func_no_arg.cj:12
+r,r,-> 4
+n,n,-> 11
+finish,finish,-> 12
+finish,finish,-> 4
+finish,finish,-> 5

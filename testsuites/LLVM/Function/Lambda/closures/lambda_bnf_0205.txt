@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: lambda_bnf_0205.cj
+ * -@TestCaseName: lambda_bnf_0205.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1016-04
+ * -@RequirementName: lambda 尾闭包
+ * -@Condition: no
+ * -@Brief: 测试胖箭头之后是this/super：成员函数的参数默认值和init block中this/super做右值
+ * -#step1: 测试胖箭头之后是this/super：成员函数的参数默认值和init block中this/super做右值
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/闭包/
+ * -@SpecDetail: LCURL NL* (lambdaParameters? NL* DOUBLE_ARROW NL*)? expressionOrDeclarations? RCURL
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_def_0107n.cj
+ * -@TestCaseName: enum_def_0107n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试在enum体中的声明为空
+ * -#step1: 在enum体中的声明为空
+ * -#step2: 编译检查编译报错信息
+ * -@Expect: 在enum体中的声明为空错误，编译器报错
+ * -@Priority: High
+ */

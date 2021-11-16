@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: list_01216.cj
+ * -@TestCaseName: list_01216.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: list中使用*和条件表达式实现条件初始化
+ * -#step1: list中使用*和条件表达式实现条件初始化
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

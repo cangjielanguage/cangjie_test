@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_00101
+ * -@TestCaseName: constant00101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define match case with no pattern.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

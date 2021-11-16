@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_define_10.cj
+ * -@TestCaseName: Array_define_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  Array<Char>类型的数组定义在match表达式中，并在main中调用数组中的值
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

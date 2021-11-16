@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: trait_impl_0204.cj
+ * -@TestCaseName: trait_impl_0204.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Trait的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试不同package下的自定义特定可见类型，通过import导入
+ * -#step1: 定义正确的trait体，并实现
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

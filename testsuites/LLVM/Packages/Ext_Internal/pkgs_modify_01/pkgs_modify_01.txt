@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_modify_01.cj
+ * -@TestCaseName: pkgs_modify_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: external修饰全局变量被赋予小于其访问级别的函数的调用
+ * -#step1: external修饰全局变量被赋予小于其访问级别的函数的调用
+ * -#step2: 检查编译执行结果
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

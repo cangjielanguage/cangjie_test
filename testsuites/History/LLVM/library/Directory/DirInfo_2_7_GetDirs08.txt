@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DirInfo_2_7_GetDirs08
+ * -@TestCaseName: DirInfo_2_7_GetDirs08.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: di.getDirectories(path), path为存在的路径
+ * -@Expect: 预期报错
+ * -@Priority: level 1
+ */
+    

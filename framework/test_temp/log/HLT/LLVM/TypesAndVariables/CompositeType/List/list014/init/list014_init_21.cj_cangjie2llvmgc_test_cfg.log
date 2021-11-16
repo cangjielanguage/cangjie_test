@@ -1,0 +1,27 @@
+2021-11-08 02:58:04 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:58:04 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21_cj_cangjie2llvmgc_test_cfg_1636338488
+2021-11-08 02:58:04 DEBUG execute cmd ===>>>: cjc -ulimit-error list014_init_21.cj -o list014_init_21.out
+2021-11-08 02:58:05 DEBUG return code: 1
+2021-11-08 02:58:05 DEBUG stdout : 
+
+2021-11-08 02:58:05 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21_cj_cangjie2llvmgc_test_cfg_1636338488/list014_init_21.cj:7:9: [31merror[0m: parameters and arguments mismatch
+@	    7 |     if (a==b){
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21_cj_cangjie2llvmgc_test_cfg_1636338488/list014_init_21.cj:7:9: [31merror[0m: invalid binary operator '==' on type 'Class-List<Tuple<Int64, Int64>>' and 'Class-List<Tuple<Int64, Int64>>'
+@	    7 |     if (a==b){
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21_cj_cangjie2llvmgc_test_cfg_1636338488/list014_init_21.cj:7:9: [31merror[0m: parameters and arguments mismatch
+@	    7 |     if (a==b){
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21_cj_cangjie2llvmgc_test_cfg_1636338488/list014_init_21.cj:7:9: [31merror[0m: invalid binary operator '==' on type 'Class-List<Tuple<Int64, Int64>>' and 'Class-List<Tuple<Int64, Int64>>'
+@	    7 |     if (a==b){
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21_cj_cangjie2llvmgc_test_cfg_1636338488/list014_init_21.cj:7:9: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
+@	    7 |     if (a==b){
+@	      |         [32m^[0m
+@	5 errors generated
+
+2021-11-08 02:58:05 DEBUG Run time: 0.7, remain time: 3e+02
+2021-11-08 02:58:05 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/List/list014/init/list014_init_21.cj_cangjie2llvmgc_test_cfg.log

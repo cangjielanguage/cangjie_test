@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_10283
+ * -@TestCaseName: assign10283.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: AssignmentExpressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use record tuple member access as left value and class member access as right value for assignment. 
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

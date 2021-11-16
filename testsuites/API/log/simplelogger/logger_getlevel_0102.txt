@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: logger_getlevel_0102.cj
+ * -@TestCaseName: logger_getlevel_0102.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1099-02
+ * -@RequirementName: 提供 class SimpleLogger
+ * -@Condition: no
+ * -@Brief:  参数正确：有参构造，设置level，打印level正确
+ * -#step1:  参数正确：有参构造，设置level，打印level正确
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: io/日志
+ * -@SpecDetail:  public func getLevel(): LogLevel:获取日志打印级别
+ */

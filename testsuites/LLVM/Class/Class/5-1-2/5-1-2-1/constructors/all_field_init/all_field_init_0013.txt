@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/all_field_init/all_field_init_0013.cj
+*- @TestCaseName:构造函数和变量初始化正确
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:成员变量声明时全部初始化，没有构造函数，成员变量全部正确初始化
+* -#定义类Data，声明变量a、b，变量全部初始化，没有构造函数
+* -#创建Data的实例，获取成员变量的值
+*- @Expect: 初始化正确，成员变量的值正确
+*- @Priority:level1 
+*/

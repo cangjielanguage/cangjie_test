@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: import_plus_shadow_01.cj
+ * -@TestCaseName: import_plus_shadow_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Trait的定义和实现
+ * -@Condition: no
+ * -@Brief: 没有重命名(import as)，并导入了不同包中的同名的顶层声明，在import导入声明处不报错，在使用处用xxx访问报错
+ * -#step1:
+ * -#step2:
+ * -#step3: 检查编译执行结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

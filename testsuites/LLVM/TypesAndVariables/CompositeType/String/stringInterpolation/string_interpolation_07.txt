@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: string_interpolation_07.cj
+ * -@TestCaseName: string_interpolation_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-04
+ * -@RequirementName: 插值字符串
+ * -@Condition: no
+ * -@Brief: 插值字符串作为变量赋值、函数默认形参、函数实参、函数返回值
+ * -#step1: 插值字符串作为变量赋值、函数默认形参、函数实参、函数返回值
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 类型/值类型/String类型/插值字符串
+ * -@SpecDetail: 
+ */

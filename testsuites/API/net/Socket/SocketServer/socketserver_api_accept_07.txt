@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketserver_api_accept_07.cj
+ * -@TestCaseName: socketserver_api_accept_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketServer
+ * -@Condition: no
+ * -@Brief: Socketserver-客户端与服务器端ip一样，端口号不相同
+ * -#step1: Socketserver-客户端与服务器端ip一样，端口号不相同
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: Socketserver-public func accept(): Socket
+ */

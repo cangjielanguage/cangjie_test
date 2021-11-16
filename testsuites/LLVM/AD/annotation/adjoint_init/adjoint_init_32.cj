@@ -1,0 +1,58 @@
+// EXEC: %compiler %enableAD %cmp_opt %f -o %output
+// EXEC-PIPE-0: %run %run_opt %run_args %output 2>&1 | compare %f
+// ASSERT: scan adjoint init for record
+
+@differentiable
+record Point {
+    let x: Float64
+    let y: Float64
+    var z: Float64 = 0.3
+
+    @differentiable
+    init(x1: Float64) {
+        x = x1
+        y = x1
+    }
+    @differentiable
+    init(x1: Float64, y1:Float64) {
+        x = x1
+        y = y1
+    }
+    @differentiable
+    init(x1: Float64, y1: Float64, z1:Float64) {
+        x = x1
+        y = y1
+        z = z1
+    }
+}
+
+@adjoint [primal: Point]
+func adjoint_init(x1: Float64, y1: Float64, z1: Float64)
+{
+    print("adjoint init for record")
+    (Point(x1, y1, z1), {sens: Point =>
+        (sens.x, sens.y, sens.z)
+    })
+}
+
+@differentiable
+func foo(x: Float64, y:Float64, z:Float64): Float64 {
+    var pt = Point(x, y, z)
+    var ret = pt.x + pt.y + pt.z
+    return ret
+}
+
+func main() {
+    var v: Float64 = 2.0
+    var x = grad(foo, (v, 2.0,3.0))
+    if (x[0] >= 1.000001 || x[1] <= 0.999999) {
+        return 1
+    }
+    if (x[1] >= 1.000001 || x[1] <= 0.999999) {
+        return 2
+    }
+    if (x[2] >= 1.000001 || x[2] <= 0.999999) {
+        return 3
+    }
+    return 0
+}

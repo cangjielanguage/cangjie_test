@@ -1,0 +1,15 @@
+2021-11-08 02:53:50 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_binary_substract/binary_substract_02/08/Arith_040208.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:53:50 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_binary_substract/binary_substract_02/08/Arith_040208_cj_cangjie2llvmgc_test_cfg_1636338485
+2021-11-08 02:53:50 DEBUG execute cmd ===>>>: cjc -ulimit-error Arith_040208.cj -o Arith_040208.out
+2021-11-08 02:53:50 DEBUG return code: 1
+2021-11-08 02:53:50 DEBUG stdout : 
+
+2021-11-08 02:53:50 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_binary_substract/binary_substract_02/08/Arith_040208_cj_cangjie2llvmgc_test_cfg_1636338485/Arith_040208.cj:8:30: [31merror[0m: the number '0xc08ff99999999999' exceeds the value range of type 'Int64'
+@	    8 |     let c: Float64 = Float64(0xc08ff99999999999 - 0x40ef7c1999999999)
+@	      |                              [32m^[0m
+@	1 error generated
+
+2021-11-08 02:53:50 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:53:50 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_binary_substract/binary_substract_02/08/Arith_040208.cj_cangjie2llvmgc_test_cfg.log

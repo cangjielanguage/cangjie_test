@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 空文件不应该有编译输出
+ * -#step1: 空文件不应该有编译输出
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 空文件夹或文件夹中的文件没有任何有效代码，编译时直接忽略这个文件夹，也没有任何编译输出结果（.cjo，.o）。
+ */

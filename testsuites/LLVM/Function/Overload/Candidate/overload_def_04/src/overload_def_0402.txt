@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: overload_def_0402.cj
+ * -@TestCaseName: overload_def_0402.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 同包不同文件为同一个作用域，不同签名的同名函数发生重载并决议
+ * -#step1: 同一个包中不同文件定义相同的函数foo，但函数入参类型不同，构成函数重载
+ * -#step2: 调用函数foo时根据入参类型决议
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/函数重载/函数重载定义
+ * -@SpecDetail: 在仓颉编程语言中，如果一个作用域中，一个函数名对应多个函数定义，这种现象称为函数重载
+ */

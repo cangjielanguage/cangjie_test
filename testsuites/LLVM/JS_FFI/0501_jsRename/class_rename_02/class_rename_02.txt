@@ -1,0 +1,21 @@
+ /*
+ * -@TestCaseID: class_rename_02
+ * -@TestCaseName: class_rename_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsRename调用js侧中入参number，返回类型number的函数
+ * -#step1: js侧标准内置对象中Math的sqrt，函数入参number，返回类型number
+ * -#step2: 仓颉侧@JsRename修饰top-level的class,Math重命名为B,class B里面定义静态函数，入参为Int64,返回类型为Int64
+ * -#step3: step2中的函数在main中调用(函数定义在main方法之前)
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsRename
+ * -@SpecDetail:1、函数的参数和返回值类型仅支持部分类型 2、仓颉侧Int64映射Js侧number 
+ * -@SpecDetail:4、当声明的函数或变量名称与仓颉语法冲突时（仓颉不支持的字符或关键字冲突等等）或者其他需要重命名的情况（省略 NameSpace 定义等）可以通过 `@JsRename` 注解来修改名称                   
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--5
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsRename--1
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: adjoint_init_17.cj
+ * -@TestCaseName: adjoint_init_17.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-14
+ * -@RequirementName: AD支持自定义可微类型的可微init的adjoint函数
+ * -@Condition: no
+ * -@Brief: 伴随函数返回的第二个元素：返回类型为Unit
+ * -@step1: 伴随函数返回的第二个元素：返回类型为Unit
+ * -@Expect: 编译正确，执行成功
+ * -@catelog: # 自动微分## 可微函数### 自定义微分规则#### 伴随函数--11
+ * -@Priority: level0
+ */

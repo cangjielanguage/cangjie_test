@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: java_ffi_00709
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-16
+ * -@RequirementName: Java互操作字符串互操作
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Java String 覆盖java.lang.String api codePointAt(index: Int32): Int32
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

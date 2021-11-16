@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_func_14.cj
+ * -@TestCaseName: record_func_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record操作符函数体中，调用泛型元素
+ * -#step1: 在泛型record中声明两个泛型label，并在init函数中初始化
+ * -#step2: record中定义一个操作符函数'-'，通过入参调用两个泛型label
+ * -#step3: 实例化record类型变元为int32，调用操作符函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

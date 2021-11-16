@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: arithmetic_operator_01.cj
+ * -@TestCaseName: arithmetic_operator_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 算术操作符
+ * -@Condition: no
+ * -@Brief: 包含幂运算的复合运算表达式
+ * -#step1: 复合表达式中加入取幂操作
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

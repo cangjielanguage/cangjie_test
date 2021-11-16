@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: module_pkg_05n.cj
+ * -@TestCaseName: module_pkg_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-11
+ * -@RequirementName: 模块化构建工具
+ * -@Condition: no
+ * -@Brief: 模块不依赖外部模块，依赖内部模块，无main.cj文件，执行cjc –pkg 指定为mod的路径
+ * -#step1: 模块不依赖外部模块，依赖内部模块，无main.cj文件
+ * -#step2: 执行cjc –pkg 指定为mod的路径
+ * -@Expect: 编译报错，连接报错
+ * -@Priority: High
+ */

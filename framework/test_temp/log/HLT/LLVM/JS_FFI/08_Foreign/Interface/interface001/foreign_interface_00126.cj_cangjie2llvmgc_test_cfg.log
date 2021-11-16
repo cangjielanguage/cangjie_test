@@ -1,0 +1,11 @@
+2021-11-08 01:58:52 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Interface/interface001/foreign_interface_00126.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:58:52 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Interface/interface001/foreign_interface_00126_cj_cangjie2llvmgc_test_cfg_1636335527
+2021-11-08 01:58:52 DEBUG execute cmd ===>>>: cjc -frontend -c -typecheck -backend js -ulimit-error foreign_interface_00126.cj 2>&1 1>/dev/null 
+2021-11-08 01:58:53 DEBUG return code: 0
+2021-11-08 01:58:53 DEBUG stdout : 
+
+2021-11-08 01:58:53 DEBUG stderr : 
+
+2021-11-08 01:58:53 DEBUG Run time: 0.6, remain time: 3e+02
+2021-11-08 01:58:53 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Interface/interface001/foreign_interface_00126.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: FFI_C_00130
+ * -@TestCaseName: c_ffi_00130.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持record类型与struct指针类型通过unsafeptr互相映射。
+ * #1.field不一致的record与struct互转，会存在问题（但是目前在安全上没有限制，属于链接时C侧报错）。
+ * -@Expect: 尚不支持,结果无法确定。
+ * -@Priority: level0
+ */

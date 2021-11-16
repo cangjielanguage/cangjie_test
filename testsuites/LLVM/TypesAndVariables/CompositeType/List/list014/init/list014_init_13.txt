@@ -1,0 +1,16 @@
+/*
+* -@TestCaseID: list014_init_13
+* -@TestCaseName: list014_init_13
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-Lang-1011-04
+* -@RequirementName: lang.List库
+* -@Condition: no
+* -@Brief: Init List<List<Int64>> with (4,{i=>[i]})
+* -#step1: 
+* -@Expect: Compile success, return 0.
+* -@Priority: level0
+* -@SpecVersion: spec 0.22.3
+* -@SpecChapter: List
+* -@SpecDetail: 
+* -@catalog: 
+*/

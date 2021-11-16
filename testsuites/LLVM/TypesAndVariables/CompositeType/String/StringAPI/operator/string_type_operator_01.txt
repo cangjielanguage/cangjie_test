@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_operator_01.cj.
+ * -@TestCaseName: string_type_operator_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String支持的操作符 ==
+ * -#step1: 定义两个字符串str1、str2
+ * -#step2: 利用==操作符比较str1、str2是否相等
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

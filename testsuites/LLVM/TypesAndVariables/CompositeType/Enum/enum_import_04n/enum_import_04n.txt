@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_import_04n/pkg.cj
+ * -@TestCaseName: enum_import_04n/pkg.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-08
+ * -@RequirementName: 模块化编译支持Enum
+ * -@Condition: no
+ * -@Brief:无修饰符的enum被import，编译报错
+ * -#step1:装备一个pkga中含无修饰符的enum
+ * -#step2:import pkga.enumname
+ * -#step3:检查编译信息
+ * -@Expect:编译报错
+ * -@Priority: High
+ */

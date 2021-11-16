@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: lambda_closures_local_0302.cj
+ * -@TestCaseName: lambda_closures_local_0302.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1016-04
+ * -@RequirementName: lambda 尾闭包
+ * -@Condition: no
+ * -@Brief: 捕获具有传递性，如果一个函数 f 调用了捕获 var 变量的函数 g ，那么函数 f 同 样捕获了 var 变量，此时， f 也不能作为一等公民使用。
+ * -#step1: 捕获具有传递性，如果一个函数 f 调用了捕获 var 变量的函数 g ，那么函数 f 同 样捕获了 var 变量，此时， f 也不能作为一等公民使用。
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/闭包/
+ * -@SpecDetail: 捕获具有传递性，如果一个函数 f 调用了捕获 var 变量的函数 g ，那么函数 f 同 样捕获了 var 变量，此时， f 也不能作为一等公民使用。
+ */

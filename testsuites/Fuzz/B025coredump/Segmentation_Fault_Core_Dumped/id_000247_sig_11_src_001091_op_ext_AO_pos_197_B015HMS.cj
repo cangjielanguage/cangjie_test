@@ -1,0 +1,19 @@
+// EXEC-PIPE-1: %compiler %cmp_opt %f -o %output 2>&1 | compare %f
+// ASSERT: regex-not core dumped
+// ASSERT: regex-not stack trace
+class LA{
+  var a : Unit*Unit
+  init(a:Unit){
+    this.a = (a,a)
+  }
+}
+
+func main(): Int64 {
+    var l_a = LA(())
+ord 
+    l_a.a[0] = ()
+    if l_a.a[0] == () {
+        return 0
+    }
+    return 1
+}

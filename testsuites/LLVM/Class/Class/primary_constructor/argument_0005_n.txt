@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: argument_0005_n.cj 
+ * -@TestCaseName: argument_0005_n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Class 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 主构造函数有一个private成员变量形参
+ * -#step1: 主构造函数有一个private成员变量形参
+ * -#step2: 类外调用构造函数后，访问private变量
+ * -@Expect: 编译报错 
+ * -@Priority: High
+ */

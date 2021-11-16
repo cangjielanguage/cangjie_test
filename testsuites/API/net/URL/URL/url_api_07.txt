@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: url_api_07.cj
+ * -@TestCaseName: url_api_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class URL
+ * -@Condition: no
+ * -@Brief: func hostname(): String,存在hostname
+ * -#step1: func hostname(): String,存在hostname 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/URL
+ * -@SpecDetail: func hostname(): String
+ */

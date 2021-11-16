@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_03n.cj
+ * -@TestCaseName: record_generic_03n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record实例化时不带变元T，被赋值变量指定类型，编译成功
+ * -#step1: 定义一个类型变元为T的泛型record
+ * -#step2: 实例化record时不带类型变元，赋值类型为Data<Int32>
+ * -@Expect: 编译成功
+ * -@Priority: High
+ */

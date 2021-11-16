@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: float_case14
+* -@TestCaseName: float_case14.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-2027-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证format()；浮点数,c.format(".5")
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

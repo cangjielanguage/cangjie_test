@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_name_15.cj
+ * -@TestCaseName: string_type_name_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试英文字符命名的enum能否被正常引用
+ * -#step1: 定义一个英文字符命名的enum，函数入参为String类型的构造函数Day
+ * -#step2: 匹配enum的返回值
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

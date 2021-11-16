@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: import_internal2external_1001/src/main.chr
+ * -@TestCaseName: import_internal2external_1001/src/main.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: ，执行成功
+ * -#step1: 导入包1中泛型函数，该泛型函数调用了包1中internal的泛型函数
+ * -#step2: 通过import pkg.*的方式导入
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

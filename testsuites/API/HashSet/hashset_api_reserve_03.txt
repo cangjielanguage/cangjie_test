@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_api_reserve_03.cj
+ * -@TestCaseName: hashset_api_reserve_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: reserve(additional: Int64): Unit，容量足够大，即 capacity 加上负数,不抛异常，原capatity不作变化
+ * -#step1: reserve(additional: Int64): Unit，容量足够大，即 capacity 加上负数,不抛异常，原capatity不作变化 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: reserve(additional: Int64): Unit
+ */

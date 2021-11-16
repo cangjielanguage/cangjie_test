@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_member_access_0101.cj
+ * -@TestCaseName: class_member_access_0101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 类的访问控制检查
+ * -@Condition: no
+ * -@Brief: external修饰的class访问控制检查
+ * -#step1: 包中定义external修饰的class类型变量
+ * -#step2: 其他包中调用该class
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

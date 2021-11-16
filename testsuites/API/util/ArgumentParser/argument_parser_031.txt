@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: argument_parser_031.cj
+ * -@TestCaseName: argument_parser_031.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1096-01
+ * -@RequirementName: 提供命令行参数解析类
+ * -@Condition: no
+ * -@Brief: 组合测试：shortformat为空，longformat不为空，但args中含短参,不含长参
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ */

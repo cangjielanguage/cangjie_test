@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_def_09.chr
+ * -@TestCaseName: enum_generic_def_09.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试完整正确的泛型enum定义<T>，泛型约束为where T <: 类
+ * -#step1: 定义一个父类Foo，定义一个子类Bar
+ * -#step2: 定义一个约束条件为T<:Foo的泛型enum <T>，内部定义一个入参为类型变元的构造函数
+ * -#step3: match匹配enum中的构造函数，传入类型变元Bar
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

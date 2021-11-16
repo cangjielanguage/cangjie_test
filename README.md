@@ -1,3 +1,0 @@
-# Cangjie-test
-
-null

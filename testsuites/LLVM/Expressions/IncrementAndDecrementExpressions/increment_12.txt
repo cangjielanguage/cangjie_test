@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: increment_12.cj
+ * -@TestCaseName: increment_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: 自增减表达式返回unit类型
+ * -#step1: 定义变量a，a++与'()'判等
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

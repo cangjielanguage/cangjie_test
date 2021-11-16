@@ -1,0 +1,76 @@
+2021-11-08 02:55:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:55:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486
+2021-11-08 02:55:12 DEBUG execute cmd ===>>>: cjc -ulimit-error operator_overloading_00712.cj -o operator_overloading_00712.out
+2021-11-08 02:55:13 DEBUG return code: 1
+2021-11-08 02:55:13 DEBUG stdout : 
+
+2021-11-08 02:55:13 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:4:5: [31merror[0m: interface type must be toplevel
+@	    4 |     interface B{
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:7:5: [31merror[0m: class type must be toplevel
+@	    7 |     class C <: B{}
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:7:16: [31merror[0m: inner interface 'B' cannot be accessed without name 'A'
+@	    7 |     class C <: B{}
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:7:16: [33mnote[0m: you can access the java inner interface by 'A.B'
+@	    7 |     class C <: B{}
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:5:27: [31merror[0m: inner interface 'B' cannot be accessed without name 'A'
+@	    5 |         operator func +(b:B):Bool{return true}
+@	      |                           [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:5:27: [33mnote[0m: you can access the java inner interface by 'A.B'
+@	    5 |         operator func +(b:B):Bool{return true}
+@	      |                           [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:9:17: [31merror[0m: inner interface 'B' cannot be accessed without name 'A'
+@	    9 |         var b : B = this.C()
+@	      |                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:9:17: [33mnote[0m: you can access the java inner interface by 'A.B'
+@	    9 |         var b : B = this.C()
+@	      |                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:9:21: [31merror[0m: object cannot access static member 'C'
+@	    9 |         var b : B = this.C()
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:9:21: [31merror[0m: 'C' is not a member of class 'A'
+@	    9 |         var b : B = this.C()
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:9:21: [31merror[0m: object cannot access static member 'C'
+@	    9 |         var b : B = this.C()
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:9:21: [31merror[0m: 'C' is not a member of class 'A'
+@	    9 |         var b : B = this.C()
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:9:17: [31merror[0m: initializer's type is incompatible with variable declaration 'b' 
+@	    9 |         var b : B = this.C()
+@	      |                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:19:12: [31merror[0m: 'test' is non-static member, cannot access by type name
+@	   19 |     return A.test()
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:19:5: [31merror[0m: type of return expression is incompatible with return type
+@	   19 |     return A.test()
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:18:13: [31merror[0m: type of function body is incompatible with return type
+@	   18 | func main():Int64{
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:18:1: [31merror[0m: return type of entry function 'main' is not 'Integer' or 'Unit'
+@	   18 | func main():Int64{
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:19:12: [31merror[0m: 'test' is non-static member, cannot access by type name
+@	   19 |     return A.test()
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:19:5: [31merror[0m: type of return expression is incompatible with return type
+@	   19 |     return A.test()
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:18:13: [31merror[0m: type of function body is incompatible with return type
+@	   18 | func main():Int64{
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:18:1: [31merror[0m: return type of entry function 'main' is not 'Integer' or 'Unit'
+@	   18 | func main():Int64{
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712_cj_cangjie2llvmgc_test_cfg_1636338486/operator_overloading_00712.cj:90021:26: [31merror[0m: no matching function declaration for function call 'main'
+@	19 errors generated
+
+2021-11-08 02:55:13 DEBUG Run time: 0.97, remain time: 3e+02
+2021-11-08 02:55:13 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00712.cj_cangjie2llvmgc_test_cfg.log

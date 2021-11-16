@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Dir_1_7_move13
+ * -@TestCaseName: Dir_1_7_move13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: move(src, des) 受权限影响
+ * -@Expect: 正确执行
+ * -@Priority: level 1
+ */
+    

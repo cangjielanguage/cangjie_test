@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: extends_cast_26.cj
+ * -@TestCaseName: extends_cast_26.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief:声明为父类，赋值为子类实例,访问父类成员函数,执行成功
+ * -#step1:创建父类Base，父类有成员函数
+ * -#step2:创建子类Data继承Base。
+ * -#step3:声明一个父类对象，赋值为子类实例
+ * -#step4:通过实例访问成员函数，预期执行成功
+ * -@Expect:执行成功
+ * -@Priority: High
+ */

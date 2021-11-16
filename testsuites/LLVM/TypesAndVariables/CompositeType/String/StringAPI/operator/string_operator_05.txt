@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_operator_05.cj
+ * -@TestCaseName: string_operator_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的操作符[]方法，index大于字符串长度，运行时抛出异常
+ * -#step1: 定义不同形式的string，调用该变量的[]方法
+ * -#step2: index大于字符串长度，检查返回的字符
+ * -@Expect: 运行时抛出异常
+ * -@Priority: High
+ */

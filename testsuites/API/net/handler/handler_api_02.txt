@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: handler_api_02.cj
+ * -@TestCaseName: handler_api_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-08
+ * -@RequirementName: 提供 class Handler
+ * -@Condition: no
+ * -@Brief:  传入参数 w , r，判断 ResponseWriteStream 中内容是否预期
+ * -#step1:  传入参数 w , r，判断 ResponseWriteStream 中内容是否预期 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Handler
+ * -@SpecDetail:  func serveHTTP(w: ResponseWriteStream, r: Request): Unit
+ */

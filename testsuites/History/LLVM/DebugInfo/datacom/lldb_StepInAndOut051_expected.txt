@@ -1,0 +1,6 @@
+lldb,lldb 042_debuginfun_expressions,042_debuginfun_expressions
+b,b 30,042_debuginfun_expressions.cj:30
+b,b 31,042_debuginfun_expressions.cj:31
+r,r,-> 30
+s,s,-> 31
+finish,finish,stopped

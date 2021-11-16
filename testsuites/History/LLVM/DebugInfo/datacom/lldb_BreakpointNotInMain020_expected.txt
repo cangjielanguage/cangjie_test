@@ -1,0 +1,5 @@
+lldb,lldb 034_debuginfun_func_default_arg,034_debuginfun_func_default_arg
+b,b 8,034_debuginfun_func_default_arg.cj:8
+r,r,-> 8
+n,n,-> 9
+cj_plocals,cj_plocals,Functioncall006 = 4

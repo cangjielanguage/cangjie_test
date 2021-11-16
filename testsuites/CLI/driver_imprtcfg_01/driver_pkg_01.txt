@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_pkg_01.cj
+ * -@TestCaseName: driver_pkg_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-import-config xxx.cfg
+ * -#step1: 执行命令：cjc 源文件 -import-config importcfg
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_func_09.cj
+ * -@TestCaseName: class_generic_func_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>声明open的带泛型入参和返回值的函数，被子类重写(override)
+ * -#step1: 定义一个泛型父类class Base<T>声明protected修饰的成员函数func foo
+ * -#step2: 定义一个泛型类Data<T>继承Base<Int32>，通过override修饰符重写func foo
+ * -#step3: 实例化泛型class Data<Int32>，调用子类重写的成员函数foo()
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

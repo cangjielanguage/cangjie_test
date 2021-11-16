@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: arithmetic_operator_02.cj
+ * -@TestCaseName: arithmetic_operator_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 算术操作符
+ * -@Condition: no
+ * -@Brief: 对数值进行连续取幂操作
+ * -#step1: 对数值进行连续取幂操作
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

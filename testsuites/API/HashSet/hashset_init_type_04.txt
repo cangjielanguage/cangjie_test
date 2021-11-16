@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_init_type_04.cj
+ * -@TestCaseName: hashset_init_type_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: HashSet<T> (elements: Collection<T>)构造器入参的类型:为Set<T>及其字面值,Set<T>的定义实现了collection,Hashable和Equatable<T>
+ * -#step1: HashSet<T> (elements: Collection<T>)构造器入参的类型:为Set<T>及其字面值,Set<T>的定义实现了collection,Hashable和Equatable<T> 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: HashSet<T> (elements: Collection<T>)
+ */

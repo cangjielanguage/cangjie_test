@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expression_Flow_support_func_10020
+ * -@TestCaseName: flow_func_10020.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-20
+ * -@RequirementName: Flow expression
+ * -@Conditon: charc, clang, maple test framework and python3.
+ * -@Brief: Use class static member variable for flow expr.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

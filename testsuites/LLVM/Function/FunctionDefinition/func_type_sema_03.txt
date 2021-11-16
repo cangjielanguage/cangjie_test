@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_type_sema_03.cj
+ * -@TestCaseName: func_type_sema_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-05_R2
+ * -@RequirementName: 函数定义语法变更
+ * -@Condition: no
+ * -@Brief: 函数类型被append
+ * -#step1: 函数类型被append
+ * -#step2: 检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

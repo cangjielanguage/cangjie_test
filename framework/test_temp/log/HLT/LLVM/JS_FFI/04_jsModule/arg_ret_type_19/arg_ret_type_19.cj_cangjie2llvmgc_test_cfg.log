@@ -1,0 +1,21 @@
+2021-11-08 02:07:40 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_19/arg_ret_type_19.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:07:40 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_19/arg_ret_type_19_cj_cangjie2llvmgc_test_cfg_1636335532
+2021-11-08 02:07:40 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_19.cj -o arg_ret_type_19..out
+2021-11-08 02:07:41 DEBUG return code: 1
+2021-11-08 02:07:41 DEBUG stdout : 
+
+2021-11-08 02:07:41 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_19/arg_ret_type_19_cj_cangjie2llvmgc_test_cfg_1636335532/arg_ret_type_19.cj:10:23: [31merror[0m: native function can only have CType args.
+@	   10 | foreign func isMoment(arg: MyEnum) : MyEnum
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_19/arg_ret_type_19_cj_cangjie2llvmgc_test_cfg_1636335532/arg_ret_type_19.cj:10:38: [31merror[0m: native function can only have CType return.
+@	   10 | foreign func isMoment(arg: MyEnum) : MyEnum
+@	      |                                      [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_19/arg_ret_type_19_cj_cangjie2llvmgc_test_cfg_1636335532/arg_ret_type_19.cj:13:11: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   13 |   var a = isMoment(B)
+@	      |           [32m^[0m
+@	3 errors generated
+
+2021-11-08 02:07:41 DEBUG Run time: 0.34, remain time: 3e+02
+2021-11-08 02:07:41 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/arg_ret_type_19/arg_ret_type_19.cj_cangjie2llvmgc_test_cfg.log

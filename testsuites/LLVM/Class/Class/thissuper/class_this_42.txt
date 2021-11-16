@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_this_42.cj
+ * -@TestCaseName: class_this_42.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载
+ * -@Condition: no
+ * -@Brief: 测试在类构造函数中'this'作为调用静态函数的入参
+ * -#step1: 分别定义一个泛型类Data，普通类Test；类构造函数中已调用其他init，调用静态函数入参为关键字this
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

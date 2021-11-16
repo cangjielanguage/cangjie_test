@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: tuple_13.cj
+ * -@TestCaseName: tuple_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: match tuple模式
+ * -#step1: 测试pattern match tuple模式
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

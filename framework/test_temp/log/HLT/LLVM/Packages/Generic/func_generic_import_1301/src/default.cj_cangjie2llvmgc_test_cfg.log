@@ -1,0 +1,18 @@
+2021-11-08 02:50:43 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/func_generic_import_1301/src/default.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:50:43 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/Generic/func_generic_import_1301/src/default_cj_cangjie2llvmgc_test_cfg_1636338483
+2021-11-08 02:50:43 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./p1/*.cj -o a.o
+2021-11-08 02:50:43 DEBUG return code: 0
+2021-11-08 02:50:43 DEBUG stdout : 
+
+2021-11-08 02:50:43 DEBUG stderr : 
+
+2021-11-08 02:50:43 DEBUG Run time: 0.52, remain time: 3e+02
+2021-11-08 02:50:43 DEBUG execute cmd ===>>>: cjc -ulimit-error a.o default.cj -o default.out 2>&1 
+2021-11-08 02:50:44 DEBUG return code: 0
+2021-11-08 02:50:44 DEBUG stdout : 
+
+2021-11-08 02:50:44 DEBUG stderr : 
+
+2021-11-08 02:50:44 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 02:50:44 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/func_generic_import_1301/src/default.cj_cangjie2llvmgc_test_cfg.log

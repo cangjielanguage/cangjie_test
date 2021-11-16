@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_if_04.cj
+ * -@TestCaseName: template_if_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: if-stmt-内容有#，且#后内容不在枚举标识内，正常处理
+ * -#step1: if-stmt-内容有#，且#后内容不在枚举标识内，正常处理
+ * -@Expect: 执行成功
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: 非法-#if..#endif内容
+ */

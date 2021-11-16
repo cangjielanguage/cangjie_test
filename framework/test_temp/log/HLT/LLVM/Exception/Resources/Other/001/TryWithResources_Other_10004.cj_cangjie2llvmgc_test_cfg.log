@@ -1,0 +1,41 @@
+2021-11-08 02:53:28 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10004.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:53:28 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10004_cj_cangjie2llvmgc_test_cfg_1636338485
+2021-11-08 02:53:28 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_10004.cj -o TryWithResources_Other_10004.out 2>&1 1>/dev/null 
+2021-11-08 02:53:28 DEBUG return code: 1
+2021-11-08 02:53:28 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10004_cj_cangjie2llvmgc_test_cfg_1636338485/TryWithResources_Other_10004.cj:11:5: [31merror[0m: unsupported type for this the try block of try expression; the type must be Int64
++	   11 |     {
++	      |     [32m^[0m
++	 [31merror[0m: unsupported type for this the try block of try expression; the type must be Int64
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10004_cj_cangjie2llvmgc_test_cfg_1636338485/TryWithResources_Other_10004.cj:10:13: [31merror[0m: initializer's type is incompatible with variable declaration 'a' 
++	   10 |     var a : Int64 = try (a : A = A())
++	      |             [32m^[0m
++	3 errors generated
+
+2021-11-08 02:53:28 DEBUG stderr : 
+
+2021-11-08 02:53:28 DEBUG Run time: 0.35, remain time: 3e+02
+2021-11-08 02:53:28 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// TryWithResources_Other_10004.cj
+2021-11-08 02:53:28 DEBUG return code: 1
+2021-11-08 02:53:28 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10004_cj_cangjie2llvmgc_test_cfg_1636338485/TryWithResources_Other_10004.cj:11:5: [31merror[0m: unsupported type for this the try block of try expression; the type must be Int64
++		   11 |     {
++		      |     [32m^[0m
++		 [31merror[0m: unsupported type for this the try block of try expression; the type must be Int64
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10004_cj_cangjie2llvmgc_test_cfg_1636338485/TryWithResources_Other_10004.cj:10:13: [31merror[0m: initializer's type is incompatible with variable declaration 'a' 
++		   10 |     var a : Int64 = try (a : A = A())
++		      |             [32m^[0m
++		3 errors generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: xxx , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-11-08 02:53:28 DEBUG stderr : 
+
+2021-11-08 02:53:28 DEBUG Run time: 0.11, remain time: 3e+02
+2021-11-08 02:53:28 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10004.cj_cangjie2llvmgc_test_cfg.log

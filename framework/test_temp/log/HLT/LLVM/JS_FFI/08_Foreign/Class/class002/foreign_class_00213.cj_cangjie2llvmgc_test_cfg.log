@@ -1,0 +1,11 @@
+2021-11-08 01:40:37 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Class/class002/foreign_class_00213.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:40:37 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Class/class002/foreign_class_00213_cj_cangjie2llvmgc_test_cfg_1636335518
+2021-11-08 01:40:37 DEBUG execute cmd ===>>>: cjc -frontend -c -typecheck -backend js -ulimit-error foreign_class_00213.cj 2>&1 1>/dev/null 
+2021-11-08 01:40:37 DEBUG return code: 0
+2021-11-08 01:40:37 DEBUG stdout : 
+
+2021-11-08 01:40:37 DEBUG stderr : 
+
+2021-11-08 01:40:37 DEBUG Run time: 0.36, remain time: 3e+02
+2021-11-08 01:40:37 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Class/class002/foreign_class_00213.cj_cangjie2llvmgc_test_cfg.log

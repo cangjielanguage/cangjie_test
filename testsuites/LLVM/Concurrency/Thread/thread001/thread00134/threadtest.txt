@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: thread00134
+ * -@TestCaseName: threadtest.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-03
+ * -@RequirementName: thread的创建
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: thread代码块包含循环表达式 while
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

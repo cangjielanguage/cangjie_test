@@ -1,0 +1,13 @@
+﻿/*
+ * -@TestCaseID: extend_define_02.cj
+ * -@TestCaseName: extend_define_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1010-02
+ * -@RequirementName: 支持给具名类型直接扩展成员函数
+ * -@Condition: no
+ * -@Brief: extend一个不存在的类型
+ * -#step1: extend一个不存在的类型
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 编译错误
+ * -@Priority: High
+ */

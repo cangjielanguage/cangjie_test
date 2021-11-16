@@ -1,0 +1,20 @@
+2021-11-08 02:03:30 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread005/thread00501/threadtest.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:03:30 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Concurrency/Thread/thread005/thread00501/threadtest_cj_cangjie2llvmgc_test_cfg_1636335530
+2021-11-08 02:03:30 DEBUG execute cmd ===>>>: clang -shared -fPIC threadtest.cpp -o libthreadtest.so
+2021-11-08 02:03:30 DEBUG return code: 0
+2021-11-08 02:03:30 DEBUG stdout : 
+
+2021-11-08 02:03:30 DEBUG stderr : 
+
+2021-11-08 02:03:30 DEBUG Run time: 0.087, remain time: 3e+02
+2021-11-08 02:03:30 DEBUG execute cmd ===>>>: cjc -ulimit-error threadtest.cj -i cfg.json -o threadtest.out
+2021-11-08 02:03:30 DEBUG return code: 1
+2021-11-08 02:03:30 DEBUG stdout : 
+
+2021-11-08 02:03:30 DEBUG stderr : 
+@	./threadtest-4acfb7d9.o:(.data+0x0): undefined reference to `testfunc'
+@	[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
+
+2021-11-08 02:03:30 DEBUG Run time: 0.66, remain time: 3e+02
+2021-11-08 02:03:30 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread005/thread00501/threadtest.cj_cangjie2llvmgc_test_cfg.log

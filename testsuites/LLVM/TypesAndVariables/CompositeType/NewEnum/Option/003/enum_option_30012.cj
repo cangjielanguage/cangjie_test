@@ -1,0 +1,14 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+
+func main(): Int64 {
+    var b : ??????Int64 =  1
+    var c : ?????Int64 = b ?? 4
+    var d : ????Int64 = c ?? 5
+    var e : ???Int64 = d ?? 6
+    var f : ??Int64 = e ?? 7
+    var g : ?Int64 = f ?? 8
+    var h : Int64 = g ?? 9
+    return 0
+}

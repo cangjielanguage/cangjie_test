@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: string_type_modify_07n.cj
+ * -@TestCaseName: string_type_modify_07n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型变量的修饰符，同package（不同源码文件）中类B访问类A中protected修饰的String
+ * -#step1: 源文件中pkgs中，声明包pkgs，定义类A，A中定义String类型变量str并用public修饰符修饰
+ * -#step2: 源文件中string_type_modify_07中，导入pkgs.A，定义类B，str变量引用类A中的str
+ * -#step3: 访问B类中的str
+ * -@Expect: 编译报错，类B无法访问类A中的成员变量str
+ * -@Priority: High
+ */

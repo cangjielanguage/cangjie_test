@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: url_constant_08.cj
+ * -@TestCaseName: url_constant_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class URL
+ * -@Condition: no
+ * -@Brief: var rawQuery:String,parse(rawurl: String)产生的URL调用
+ * -#step1: var rawQuery:String,parse(rawurl: String)产生的URL调用 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/URL
+ * -@SpecDetail: var rawQuery:String
+ */

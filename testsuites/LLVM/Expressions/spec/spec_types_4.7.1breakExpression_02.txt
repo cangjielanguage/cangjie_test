@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: spec_types_4.7.1breakExpression_02.cj
+ * -@TestCaseName: spec_types_4.7.1breakExpression_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 例如下面的代码输出区间`[1,49]`内所有可以同时被`4`和`6`整除的数（`12`、`24`、`36`、`48`），对于其他不满足要求的数，同样会显式地输出。
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 控制转移表达式### continue表达式--2
+ */

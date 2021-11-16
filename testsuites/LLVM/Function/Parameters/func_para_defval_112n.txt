@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_112n.cj
+ * -@TestCaseName: func_para_defval_112n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试函数可选入参为未定义变量，编译报错
+ * -#step1: 定义func Foo，其中含两个可选参数依次为int64、String类型，可选参数的默认值为变量x(未定义)
+ * -#step2: 调用函数传入实参
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

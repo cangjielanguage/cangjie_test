@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: property_def_03.cj
+ * -@TestCaseName: property_def_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: 类中支持属性
+ * -@Condition: no
+ * -@Brief: record中set实例变量，编译报错（mut尚不支持）
+ * -#step1: record中set实例变量，编译报错（mut尚不支持）
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 属性/属性的修饰符
+ * -@SpecDetail: 属性可以在 interface, class，record，enum，extend 中定义
+ */

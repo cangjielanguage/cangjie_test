@@ -1,0 +1,35 @@
+2021-11-08 02:51:32 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:51:32 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112_cj_cangjie2llvmgc_test_cfg_1636338484
+2021-11-08 02:51:32 DEBUG execute cmd ===>>>: cjc -ulimit-error test.cj  -c -o define.o
+2021-11-08 02:51:33 DEBUG return code: 0
+2021-11-08 02:51:33 DEBUG stdout : 
+
+2021-11-08 02:51:33 DEBUG stderr : 
+
+2021-11-08 02:51:33 DEBUG Run time: 0.83, remain time: 3e+02
+2021-11-08 02:51:33 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH && cjc -ulimit-error -ld-options="-lcangjie-ast" ./define.o macro_invoke_50112.cj  -o macro_invoke_50112.out
+2021-11-08 02:51:34 DEBUG return code: 1
+2021-11-08 02:51:34 DEBUG stdout : 
+
+2021-11-08 02:51:34 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112_cj_cangjie2llvmgc_test_cfg_1636338484/macro_invoke_50112.cj:10:15: [31merror[0m: illegal macro expand input args
+@	   10 |         case \$x => 0
+@	      |               [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112_cj_cangjie2llvmgc_test_cfg_1636338484/macro_invoke_50112.cj:10:15: [31merror[0m: expected newline or ';' between expression or declaration
+@	   10 |         case \$x => 0
+@	      |               [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112_cj_cangjie2llvmgc_test_cfg_1636338484/macro_invoke_50112.cj:11:5: [31merror[0m: '}' is not allowed in block, expected expression or declaration here
+@	   11 |     })
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112_cj_cangjie2llvmgc_test_cfg_1636338484/macro_invoke_50112.cj:11:6: [31merror[0m: expected newline or ';' between toplevels
+@	   11 |     })
+@	      |      [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112_cj_cangjie2llvmgc_test_cfg_1636338484/macro_invoke_50112.cj:11:6: [31merror[0m: illegal object in toplevel, toplevel must consist of declaration or definition
+@	   11 |     })
+@	      |      [32m^[0m
+@	[31merror[0m: Unknown node type N7Cangjie3AST15MacroExpandExprE, support it
+@	5 errors generated
+
+2021-11-08 02:51:34 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 02:51:34 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50112.cj_cangjie2llvmgc_test_cfg.log

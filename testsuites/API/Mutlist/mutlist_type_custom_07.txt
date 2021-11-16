@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Buffer_type_custom_07.cj
+ * -@TestCaseName: Buffer_type_custom_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-01
+ * -@RequirementName: 提供 class Buffer
+ * -@Condition: no
+ * -@Brief:  Buffer<T> (elements: Iterable<T>),添加元素的类型：没有声明类型，存放子类和父类
+ * -#step1:  Buffer<T> (elements: Iterable<T>),添加元素的类型：没有声明类型，存放子类和父类
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/Buffer
+ * -@SpecDetail: Buffer<T>(elements: Iterable<T>)
+ */

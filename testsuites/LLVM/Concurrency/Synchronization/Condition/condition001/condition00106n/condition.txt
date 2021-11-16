@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: condition00106n
+ * -@TestCaseName: condition.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-09
+ * -@RequirementName: Condition
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 当前线程(main)未持有与该条件变量绑定的Mutex锁，调用wait()
+ * -@Expect: execute fail.
+ * -@Priority: level0
+ */

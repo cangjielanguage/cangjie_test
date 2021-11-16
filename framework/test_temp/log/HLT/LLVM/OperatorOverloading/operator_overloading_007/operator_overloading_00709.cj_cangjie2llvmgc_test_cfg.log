@@ -1,0 +1,58 @@
+2021-11-08 02:41:13 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:41:13 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479
+2021-11-08 02:41:13 DEBUG execute cmd ===>>>: cjc -ulimit-error operator_overloading_00709.cj -o operator_overloading_00709.out
+2021-11-08 02:41:13 DEBUG return code: 1
+2021-11-08 02:41:13 DEBUG stdout : 
+
+2021-11-08 02:41:13 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:4:5: [31merror[0m: class type must be toplevel
+@	    4 |     class B{
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:5:27: [31merror[0m: inner class 'B' cannot be accessed without name 'A'
+@	    5 |         operator func +(b:B):Bool{return true}
+@	      |                           [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:5:27: [33mnote[0m: you can access the java inner class by 'A.B'
+@	    5 |         operator func +(b:B):Bool{return true}
+@	      |                           [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:8:17: [31merror[0m: inner class 'B' cannot be accessed without name 'A'
+@	    8 |         var b = B()
+@	      |                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:8:17: [33mnote[0m: you can access the java inner class by 'A.B'
+@	    8 |         var b = B()
+@	      |                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:19:12: [31merror[0m: return type for 'test' is mismatched
+@	   19 |     return a.test()
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:19:12: [31merror[0m: no matching function declaration for function call 'test'
+@	   19 |     return a.test()
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:19:5: [31merror[0m: type of return expression is incompatible with return type
+@	   19 |     return a.test()
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:17:13: [31merror[0m: type of function body is incompatible with return type
+@	   17 | func main():Int64{
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:17:1: [31merror[0m: return type of entry function 'main' is not 'Integer' or 'Unit'
+@	   17 | func main():Int64{
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:19:12: [31merror[0m: return type for 'test' is mismatched
+@	   19 |     return a.test()
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:19:12: [31merror[0m: no matching function declaration for function call 'test'
+@	   19 |     return a.test()
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:19:5: [31merror[0m: type of return expression is incompatible with return type
+@	   19 |     return a.test()
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:17:13: [31merror[0m: type of function body is incompatible with return type
+@	   17 | func main():Int64{
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:17:1: [31merror[0m: return type of entry function 'main' is not 'Integer' or 'Unit'
+@	   17 | func main():Int64{
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709_cj_cangjie2llvmgc_test_cfg_1636338479/operator_overloading_00709.cj:90021:26: [31merror[0m: no matching function declaration for function call 'main'
+@	14 errors generated
+
+2021-11-08 02:41:13 DEBUG Run time: 0.34, remain time: 3e+02
+2021-11-08 02:41:13 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/OperatorOverloading/operator_overloading_007/operator_overloading_00709.cj_cangjie2llvmgc_test_cfg.log

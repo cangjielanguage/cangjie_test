@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: Char_Expressions_StatementExpressions_ConditionalExpressions_WhileExpression_00328
+ * -@TestCaseName: while00328.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: While expression support nest.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@catalog:# 表达式## 循环表达式### while表达式--1
+ * -@catalog:# 表达式## 循环表达式### while表达式--3
+ * -@catalog:# 表达式## 循环表达式### while表达式--2
+ */

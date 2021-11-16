@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: type_infer_numeric_0201n.cj
+ * -@TestCaseName: type_infer_numeric_0201n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 调用String API传入的实参字面值不符合API定义/API调用后返回值与类型声明不符，编译报错
+ * -#step1: 调用String的charAt方法传入int32类型的字面值
+ * -#step2: 调用String的indexOf方法，其结果赋值给int32类型
+ * -#step3: 编译检查编译结果
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

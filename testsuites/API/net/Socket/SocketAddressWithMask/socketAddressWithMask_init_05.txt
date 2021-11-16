@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketAddressWithMask_init_05.cj
+ * -@TestCaseName: socketAddressWithMask_init_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketAddressWithMask
+ * -@Condition: no
+ * -@Brief:  SocketAddressWithMask-socketAdd 非 SocketAddress 编译报错
+ * -#step1:  SocketAddressWithMask-socketAdd 非 SocketAddress 编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail:  SocketAddressWithMask -init(socketAddr: SocketAddress, mask: IPMask)
+ */

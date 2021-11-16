@@ -1,0 +1,15 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+
+
+func test<T>(i: T): Int64 {
+    var a : List<List<T>> = [[i]]
+    var b : List<List<T>> = List<List<T>>([[i]].toArray())
+    var c : List<List<T>> = List<List<T>>(Array<List<T>>(1,[i]))
+    return a.size() + b.size() + c.size() - 3
+}
+
+func main(): Int64 {
+    return test<Int64>(1)
+}

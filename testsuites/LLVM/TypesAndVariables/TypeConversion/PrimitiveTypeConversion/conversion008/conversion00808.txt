@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_TypeConversion_PrimitiveTypeConversion_00808
+ * -@TestCaseName: conversion00808.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-07
+ * -@RequirementName: 支持类型转换
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.支持ord与chr用于char与uint32类型转换。
+ * #2.cj入参字面值为浮点数。
+ * -@Expect: 编译失败，报错.
+ * -@Priority: level0
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_dup_package_12n.cj
+ * -@TestCaseName: pkgs_dup_package_12n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 测试在package名字与成员接口重名情况下,将包用于变量赋值
+ * -#step1: 在pkgs中定义一个external修饰的record命名为pkgs
+ * -#step2: 导入包名pkgs，将包名pkgs作为变量赋值
+ * -@Expect: 编译报错，包名不可赋值给其他变量
+ * -@Priority: High
+ */

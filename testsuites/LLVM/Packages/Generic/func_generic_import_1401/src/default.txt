@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 导入泛型函数，带泛型约束 T<: B(接口)，extend A(类) <: B，AB都external,仅导入A不导入B，泛型实参为A（导入A时默认导入super，但不能显式访问B）
+ * -#step1: 导入泛型函数，带泛型约束 T<: B(接口)，extend A(类) <: B，AB都external,仅导入A不导入B，泛型实参为A（导入A时默认导入super，但不能显式访问B）
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 泛型
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

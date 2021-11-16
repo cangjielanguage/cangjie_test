@@ -1,0 +1,31 @@
+2021-10-26 02:25:18 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/module_mod_02_cpm/src/module_mod_02_cpm.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:25:18 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Driver/module_mod_02_cpm/src/module_mod_02_cpm_cj_cangjie2llvmgc_test_cfg_1635213986
+2021-10-26 02:25:18 DEBUG execute cmd ===>>>: cd module_mod_02_cpm && cpm clean
+2021-10-26 02:25:18 DEBUG return code: 0
+2021-10-26 02:25:18 DEBUG stdout : 
++	clean called
++	clean success
+
+2021-10-26 02:25:18 DEBUG stderr : 
+
+2021-10-26 02:25:18 DEBUG Run time: 0.024, remain time: 3e+02
+2021-10-26 02:25:18 DEBUG execute cmd ===>>>: cd module_mod_02_cpm && cpm build
+2021-10-26 02:25:18 DEBUG return code: 1
+2021-10-26 02:25:18 DEBUG stdout : 
++	build called
+
+2021-10-26 02:25:18 DEBUG stderr : 
+@	Error: module build failed, because the organization can not be empty
+@	
+@	Usage:
+@	  cpm build [flags]
+@	
+@	Flags:
+@	  -h, --help     help for build
+@	  -s, --serial   serial compilation, no parallel compilation
+@	  -t, --test     test the compile command, do not compile
+@	
+
+2021-10-26 02:25:18 DEBUG Run time: 0.03, remain time: 3e+02
+2021-10-26 02:25:18 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/module_mod_02_cpm/src/module_mod_02_cpm.cj_cangjie2llvmgc_test_cfg.log

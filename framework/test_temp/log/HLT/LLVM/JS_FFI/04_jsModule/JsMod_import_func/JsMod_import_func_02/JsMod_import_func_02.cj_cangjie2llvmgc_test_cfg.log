@@ -1,0 +1,15 @@
+2021-11-08 02:07:09 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/JsMod_import_func/JsMod_import_func_02/JsMod_import_func_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:07:09 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/JsMod_import_func/JsMod_import_func_02/JsMod_import_func_02_cj_cangjie2llvmgc_test_cfg_1636335532
+2021-11-08 02:07:09 DEBUG execute cmd ===>>>: cjc -ulimit-error JsMod_import_func_02.cj -o JsMod_import_func_02..out
+2021-11-08 02:07:10 DEBUG return code: 1
+2021-11-08 02:07:10 DEBUG stdout : 
+
+2021-11-08 02:07:10 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/04_jsModule/JsMod_import_func/JsMod_import_func_02/JsMod_import_func_02_cj_cangjie2llvmgc_test_cfg_1636335532/JsMod_import_func_02.cj:19:10: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   19 |   return A.isMoment(2)
+@	      |          [32m^[0m
+@	1 error generated
+
+2021-11-08 02:07:10 DEBUG Run time: 0.35, remain time: 3e+02
+2021-11-08 02:07:10 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/JsMod_import_func/JsMod_import_func_02/JsMod_import_func_02.cj_cangjie2llvmgc_test_cfg.log

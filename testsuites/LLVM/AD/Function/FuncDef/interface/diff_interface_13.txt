@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: diff_interface_13.cj
+ * -@TestCaseName: diff_interface_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-17
+ * -@RequirementName: 可微函数的支持
+ * -@Condition: no
+ * -@Brief: 对interface中的成员函数进行可微标记
+ * -#step1: 定义interface A
+ * -#step2: 在A内，定义static函数a, 入参x(Int64)，返回值为Float64, 并对其进行可微标注@differentiable[except:[x]]
+ * -@Expect: 编译成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 在仓颉中由于interface类型本身不可微，故除了静态成员方法外，用户必须将this加入到可微成员方法的except列表中
+ */

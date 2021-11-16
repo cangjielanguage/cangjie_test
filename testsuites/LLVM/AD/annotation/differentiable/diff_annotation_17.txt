@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: diff_annotation_17.cj
+ * -@TestCaseName: diff_annotation_17.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-01
+ * -@RequirementName: 微标注@differentiable的语法，语义
+ * -@Condition: no
+ * -@Brief: 可微注解标注与函数间有空行
+ * -#step1: 定义函数，入参类型为Float32
+ * -#step2: 在函数前添加可微标注@differentiable
+ * -#step3: 返回参数为Float32的参数
+ * -@Expect: 编译成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 在函数定义上方添加@differentiable标注可将函数标注为可微函数
+ */

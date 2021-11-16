@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: java_ffi_00803
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-17
+ * -@RequirementName: Java互操作枚举类型互操作
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 类型映射Java Enum,继承导入的Enum
+ * -@Expect: Compile fail.
+ * -@Priority: level0
+ */

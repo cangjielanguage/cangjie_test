@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Static_00111
+ * -@TestCaseName: static00111.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2003-03
+ * -@RequirementName: Static
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define static member inside class and interface, use static member in static variable.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_interface002_00209
+ * -@TestCaseName: interface00209.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Internal interface cannot used outside of package.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

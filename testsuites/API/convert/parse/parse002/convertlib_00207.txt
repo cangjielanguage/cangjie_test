@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: convertlib_00207.cj
+ * -@TestCaseName: convertlib_00207.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-01
+ * -@RequirementName: 提供String parse 函数
+ * -@Condition: no
+ * -@Brief: pareInt时传入浮点数,pareFlaot时传入整数
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ */

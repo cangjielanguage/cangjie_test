@@ -1,0 +1,15 @@
+2021-11-08 02:30:52 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_func_location_08.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:30:52 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_08_cj_cangjie2llvmgc_test_cfg_1636338473
+2021-11-08 02:30:52 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error diff_func_location_08.cj -c -o diff_func_location_08.out 2>&1 
+2021-11-08 02:30:52 DEBUG return code: 0
+2021-11-08 02:30:52 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_08_cj_cangjie2llvmgc_test_cfg_1636338473/diff_func_location_08.cj:7:9: [33mwarning[0m: Inner function 'foo' does not need @differentiable.
++	    7 |         func foo(){}
++	      |         [32m^[0m
++	1 warning generated
+
+2021-11-08 02:30:52 DEBUG stderr : 
+
+2021-11-08 02:30:52 DEBUG Run time: 0.51, remain time: 3e+02
+2021-11-08 02:30:52 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_func_location_08.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: variable00211n.cj
+ * -@TestCaseName: variable00211n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: match-pattern变量模式中，表达式后更改变量的值
+ * -#step1: match-pattern变量模式中，表达式后更改变量的值
+ * -@Expect: 输出正确编译报错信息
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 变量模式--1
+ * -@Priority: High
+ */

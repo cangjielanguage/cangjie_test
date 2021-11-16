@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: trailing_closures_enum_01.cj
+ * -@TestCaseName: trailing_closures_enum_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1016-04
+ * -@RequirementName: lambda 尾闭包
+ * -@Condition: no
+ * -@Brief: 尾闭包调用enum函数
+ * -#step1: 尾闭包调用enum函数
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/函数调用/尾闭包
+ * -@SpecDetail:

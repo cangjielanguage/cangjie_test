@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_slicing_06
+ * -@TestCaseName: Array_slicing_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 使用slice函数获取数组切片，不传start 或stop，传了step
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

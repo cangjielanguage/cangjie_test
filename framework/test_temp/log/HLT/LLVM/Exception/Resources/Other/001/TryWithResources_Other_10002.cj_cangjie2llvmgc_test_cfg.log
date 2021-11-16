@@ -1,0 +1,19 @@
+2021-11-08 02:29:27 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10002.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:29:27 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10002_cj_cangjie2llvmgc_test_cfg_1636338472
+2021-11-08 02:29:27 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_10002.cj -o TryWithResources_Other_10002.out
+2021-11-08 02:29:27 DEBUG return code: 1
+2021-11-08 02:29:27 DEBUG stdout : 
+
+2021-11-08 02:29:27 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10002_cj_cangjie2llvmgc_test_cfg_1636338472/TryWithResources_Other_10002.cj:12:5: [31merror[0m: unsupported type for this the try block of try expression; the type must be Int64
+@	   12 |     {
+@	      |     [32m^[0m
+@	 [31merror[0m: unsupported type for this the try block of try expression; the type must be Int64
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10002_cj_cangjie2llvmgc_test_cfg_1636338472/TryWithResources_Other_10002.cj:11:13: [31merror[0m: initializer's type is incompatible with variable declaration 'a' 
+@	   11 |     var a : Int64 = try (a : A = A())
+@	      |             [32m^[0m
+@	3 errors generated
+
+2021-11-08 02:29:27 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:29:27 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/001/TryWithResources_Other_10002.cj_cangjie2llvmgc_test_cfg.log

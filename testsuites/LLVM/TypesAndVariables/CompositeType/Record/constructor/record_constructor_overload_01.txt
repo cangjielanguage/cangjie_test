@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_constructor_overload_01.cj
+ * -@TestCaseName: record_constructor_overload_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中多个构造函数的重载，调用自定义无参构造器
+ * -#step1: 在record体中定义一个label；定义多个init，具有不同参数个数和类型
+ * -#step2: 在无参构造器中改变label的值
+ * -#step3: 构造实例时调用自定义的无参构造器，传入参数
+ * -@Expect: let变量不能再赋值，编译报错
+ * -@Priority: High
+ */

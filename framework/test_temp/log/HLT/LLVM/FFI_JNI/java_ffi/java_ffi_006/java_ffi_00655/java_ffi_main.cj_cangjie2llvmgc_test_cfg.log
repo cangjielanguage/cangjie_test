@@ -1,0 +1,19 @@
+2021-11-08 01:47:13 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_006/java_ffi_00655/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:47:13 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_006/java_ffi_00655/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335522
+2021-11-08 01:47:13 DEBUG execute cmd ===>>>: cjc -ulimit-error java_ffi_main.cj
+2021-11-08 01:47:14 DEBUG return code: 1
+2021-11-08 01:47:14 DEBUG stdout : 
+
+2021-11-08 01:47:14 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_006/java_ffi_00655/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335522/java_ffi_main.cj:6:8: [31merror[0m: package 'java.lang' is a dependency of package 'default', and the parent path of the module which package 'java.lang' belongs to should be listed in environmental variable CANGJIE_PATH
+@	    6 | import java.lang.*
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_006/java_ffi_00655/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335522/java_ffi_main.cj:6:8: [31merror[0m: package 'java.lang' is not found
+@	    6 | import java.lang.*
+@	      |        [32m^[0m
+@	 [31merror[0m: `java.lang` package should be imported
+@	3 errors generated
+
+2021-11-08 01:47:14 DEBUG Run time: 0.37, remain time: 3e+02
+2021-11-08 01:47:14 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_006/java_ffi_00655/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log

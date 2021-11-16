@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: pkg_def_03.cj
+ * -@TestCaseName: pkg_def_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 指定的路径不存在
+ * -#step1: 指定的路径不存在
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 
+ */

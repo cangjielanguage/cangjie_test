@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_modify_10.cj
+ * -@TestCaseName: string_type_modify_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型变量的修饰符，访问类A中static修饰的String
+ * -#step1: 类A定义一个String类型变量str，并用private修饰符修饰
+ * -#step2: 访问A类中的str，打印结果，ASSERT对比打印信息
+ * -@Expect: 执行成功，打印期望结果
+ * -@Priority: High
+ */

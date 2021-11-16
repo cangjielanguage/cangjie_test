@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_016.cj
+ * -@TestCaseName: FileStream_openFile_016.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: func write(b: Array<UInt8>, int off, int cnt): int64把当前字节数组`b`从偏移量`off`开始的`cnt`字节写入流中，返回成功写入的位数
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_this_01.cj
+ * -@TestCaseName: record_this_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: record中使用this，编译时需报错
+ * -#step1: record中使用this
+ * -#step2: 检查编译报错信息
+ * -@Expect: 编译时需报错
+ * -@Priority: High
+ */

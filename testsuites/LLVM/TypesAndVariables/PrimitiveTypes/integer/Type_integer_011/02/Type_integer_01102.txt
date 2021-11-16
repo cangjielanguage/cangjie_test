@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Type_integer_01102.cj
+ * -@TestCaseName: v.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基础类型
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 整数类型 UInt8。
+ * #1.let声明变量，赋值为整数类型 UInt8
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

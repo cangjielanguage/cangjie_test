@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: error_report_02.cj
+ * -@TestCaseName: error_report_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1039-01
+ * -@RequirementName: 编译告警
+ * -@Condition: no
+ * -@Brief: 编译告警：外层语法错误, 引起内层的case关键字报错
+ * -@step1: 定义match表达式，外层match表达式错误，引起内层case连环报错
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

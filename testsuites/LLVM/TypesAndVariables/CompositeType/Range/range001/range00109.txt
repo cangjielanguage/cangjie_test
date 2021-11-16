@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Range_00109
+ * -@TestCaseName: range00109.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 定义Range,缺省start与stop,考虑1，-1，0的情况。
+ * -@Expect: 编译报错，取0报错.
+ * -@Priority: level0
+ */

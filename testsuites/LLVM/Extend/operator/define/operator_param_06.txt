@@ -1,0 +1,16 @@
+﻿/*
+ * -@TestCaseID: operator_param_06.cj
+ * -@TestCaseName: operator_param_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1010-07
+ * -@RequirementName: 使用extend来添加该类型的操作符函数
+ * -@Condition: no
+ * -@Brief: 扩展In32类型的==操作符,重载操作符，操作符函数2个形参均为自定义类型A,编译报错
+ * -#step1: 自定义类型A
+ * -#step2: extend类型Int32,重载操作符==,操作符函数2个形参均为自定义类型A
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 操作符重载
+ * -@SpecDetail: 对于二元操作符，操作符函数只有一个参数 right ，对返回值的类型没有要求。
+ */

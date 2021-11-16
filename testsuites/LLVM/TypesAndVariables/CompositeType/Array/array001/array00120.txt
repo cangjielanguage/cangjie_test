@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00120
+ * -@TestCaseName: array00120.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12, DTS2020041610390
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.定义并初始化float32类型数组。
+ * -@Expect: 编译成功，运行return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_40023
+ * -@TestCaseName: assign40023.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: incrAndDecrExpression
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: IncrAndDecrExpression not support type Class.
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

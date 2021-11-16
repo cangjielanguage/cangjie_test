@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_reverse_09
+ * -@TestCaseName: Array_reverse_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: UInt32类型数组reverse
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

@@ -1,0 +1,2 @@
+2021-11-08 02:03:47 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/package02/package02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:03:47 ERROR Run task exit unexpected : DEPENDENCE keyword error, file: ../../cangjieJS/cangjie.js NotFound, Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/04_jsModule/package02/package02.cj_cangjie2llvmgc_test_cfg.log

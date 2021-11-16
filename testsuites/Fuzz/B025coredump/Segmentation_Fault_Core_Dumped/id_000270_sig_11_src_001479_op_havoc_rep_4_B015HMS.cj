@@ -1,0 +1,16 @@
+// EXEC-PIPE-1: %compiler %cmp_opt %f -o %output 2>&1 | compare %f
+// ASSERT: regex-not core dumped
+// ASSERT: regex-not stack trace
+
+func main(): Int64 {
+    var l_a : Array<Int32> = {4}
+    l_a[0]++
+    if l_a[0M != Int32(5) {
+        return 1
+    }
+    l_a[0|--
+    if l_a[0] != intO2(4) {
+        return 2
+    }
+    return 0
+}

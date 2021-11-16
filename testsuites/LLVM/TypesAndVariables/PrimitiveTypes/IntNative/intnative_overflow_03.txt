@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: intnative_overflow_03.cj
+ * -@TestCaseName: intnative_overflow_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1002-05
+ * -@RequirementName: IntNative和UIntNative
+ * -@Condition: no
+ * -@Brief: 运行时溢出Exception策略
+ * -#step1: 运行时溢出Exception策略
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 值类型
+ * -@SpecDetail: 
+ */

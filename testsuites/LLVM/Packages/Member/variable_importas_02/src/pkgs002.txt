@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: variable_importas_02
+ * -@TestCaseName: variable_importas_02
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 变量导入及使用
+ * -@Condition: no
+ * -@Brief: 使用Import as导入,作为左值使用（var可以 let报错）
+ * -#step1: 使用Import as导入,作为左值使用（var可以 let报错）
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

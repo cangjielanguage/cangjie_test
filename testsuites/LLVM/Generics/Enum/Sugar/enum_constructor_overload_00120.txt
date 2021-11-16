@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Overload_Constructor_Enum_00120
+ * -@TestCaseName: enum_constructor_overload_00120.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-09
+ * -@RequirementName: Generics Function
+ * -@Conditon: charc, clang, maple test framework and python3.
+ * -@Brief: Define same name generic constructor inside two enum.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

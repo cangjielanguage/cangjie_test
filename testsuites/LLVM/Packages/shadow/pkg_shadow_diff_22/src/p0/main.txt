@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: main.cj
+ * -@TestCaseName: main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-04
+ * -@RequirementName: 包导入导出机制
+ * -@Condition: no
+ * -@Brief: 导入的p.foo有不同类型的声明（类型和函数），import和local发生遮盖，默认访问local
+ * -#step1: 导入的p.foo有不同类型的声明（类型和函数），import和local发生遮盖，默认访问local
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 类型/值类型/String类型
+ * -@SpecDetail: 导入的定义或声明如果和当前包中的顶层定义或声明重名且不构成函数重载，将会根据遮盖中提及的作用域规则做遮盖处理
+ * -@catalog: # 包和模块管理## 包### 包的导入#### 导入多个包--8
+ */

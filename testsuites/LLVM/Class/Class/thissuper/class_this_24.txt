@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_this_24.cj
+ * -@TestCaseName: class_this_24.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载
+ * -@Condition: no
+ * -@Brief: 测试在抽象类成员函数中使用this调用抽象函数
+ * -#step1: 分别定义一个抽象类FaTest，泛型抽象类FaData<T>；分别定义一个泛型类Data继承FaData，普通类Test继承FaTest
+ * -#step2: 泛型抽象类/普通抽象类，成员函数中使用this调用抽象函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matchdata_matchPosition_02.cj
+ * -@TestCaseName: matchdata_matchPosition_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: MatchData-Matchdata不为None(前开后闭)
+ * -#step1: MatchData-Matchdata不为None(前开后闭)
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: func matchPosition(): Position返回匹配到的子字符串在字符串中起始位置的索引和最后一个字符匹配后的偏移索引
+ */

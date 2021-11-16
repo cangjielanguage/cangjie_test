@@ -1,0 +1,619 @@
+LSP\ictu
+
+# DTS
+Regression\DTS\DTS2021092217909\DTS2021092217909.cj
+
+# linux has been passed, windows have not been
+Fuzz\fuzz_cases\DTS2021092714027.cj
+Fuzz\fuzz_cases\DTS2021080514306.cj
+
+#bug
+CLI\module_pkg_0303\src\module_pkg_0303.cj
+
+# library
+LLVM\library\
+Regression\External\I47LFE.cj
+Regression\External\I47LIH.cj
+Regression\External\I47V8T.cj
+Regression\External\I480DP.cj
+Regression\External\I480UO.cj
+Regression\External\I48JWF.cj
+Regression\External\I4AZMP-1.cj
+Regression\External\I4AZMP.cj
+Regression\External\I4AZZV_func_as_inputargs.cj
+Regression\External\I4B239_cpm_build\src\main.cj
+Regression\External\I4B3WS_com_tcl\test_com.cj
+Regression\External\I4B3WS_com_tcl\test_tcl.cj
+
+
+#B08x new package case
+LLVM\Packages\shadow\mod_files_03\mod1\src\default.cj
+LLVM\Packages\shadow\mod_files_08\mod1\src\default.cj
+LLVM\Packages\shadow\mod_files_09\src\default.cj
+LLVM\Packages\shadow\pkg_shadow_01as02\src\p0\main.cj
+LLVM\Packages\shadow\pkg_shadow_func_02as\src\p0\main.cj
+LLVM\Packages\shadow\pkg_shadow_same_01as\src\p0\main.cj
+LLVM\Packages\shadow\mod_files_main_06_1\src\default.cj
+
+# lang.Map new case
+LLVM\TypesAndVariables\CompositeType\Map\map_api_0202.cj
+
+#testframe Not support Chinese
+LLVM\TypesAndVariables\CompositeType\String\type_name\string_type_name_06\string_type_name_06.cj
+
+# add case 12.23,some fail
+CLI\driver_backend_18.cj
+LLVM\FFI\Foreign\Function\function003\foreign_func_00305.cj
+LLVM\Function\Parameters\func_para_defval_21.cj
+LLVM\TypesAndVariables\CompositeType\List\list006\list_00652.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_06.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_08.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_09.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_10.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_11.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_12.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_13.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_14.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_15.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_18.cj
+LLVM\TypesAndVariables\CompositeType\String\bigstring\string_bigstring_20.cj
+
+##DTS202105210446MWP1K00
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_29\refArray_new_09.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_23.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_24.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_17.cj
+
+# new fail 11.26 timeout
+LLVM\Class\Class\5-1-2\5-1-2-1\constructors\define\class_init_plus002n.cj
+
+# windows package
+LLVM\Packages\Declaration\pkgs031\pkgs031002.cj
+LLVM\TypesAndVariables\CompositeType\Option\option_def_07.cj
+LLVM\Function\Parameters\func_para_defval_92.cj
+LLVM\USG\Macro\usg_16metaprogramming_macro_01.cj
+LLVM\USG\Macro\usg_16metaprogramming_macro_02.cj
+LLVM\USG\Macro\usg_16metaprogramming_macro_03.cj
+LLVM\USG\Macro\usg_16metaprogramming_macro_04.cj
+LLVM\USG\Macro\usg_16metaprogramming_macro_05.cj
+
+# module case fail
+LLVM/Driver/module_mod_03n/src/module_mod_03n.cj
+LLVM/Driver/module_mod_06/src/module_mod_06.cj
+LLVM/Driver/module_pkg_04n/src/module_pkg_04n.cj
+LLVM/Driver/module_pkg_05n/src/module_pkg_05n.cj
+CLI\driver_backend_01.cj
+CLI\driver_backend_11.cj
+CLI\driver_backend_14.cj
+CLI\driver_c_01.cj
+CLI\driver_c_02.cj
+CLI\driver_comb_02.cj
+CLI\driver_dumpcodegen_01.cj
+CLI\driver_emit_ir_01.cj
+CLI\driver_output_01.cj
+CLI\driver_output_02.cj
+CLI\driver_output_0601.cj
+CLI\driver_output_06.cj
+CLI\driver_output_07.cj
+CLI\driver_typecheck_01.cj
+CLI\driver_typecheck_02.cj
+
+# windows crash
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_02.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_03.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_16.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_17.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00131.cj
+LLVM/TypesAndVariables/CompositeType/Range/range002/range00228.cj
+
+# not supported well
+LLVM/TypesAndVariables/CompositeType/Array/array005/array00545.cj
+LLVM/TypesAndVariables/CompositeType/String/format/float/float_case11.cj
+LLVM/TypesAndVariables/CompositeType/String/format/float/float_case13.cj
+LLVM/TypesAndVariables/CompositeType/String/format/float/float_case7.cj
+LLVM/TypesAndVariables/CompositeType/String/format/float/float_pairwise_case1.cj
+
+#return code error
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_01.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_04.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_05.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_07.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_19.cj
+LLVM/TypesAndVariables/CompositeType/String/bigstring/string_bigstring_21.cj
+LLVM/TypesAndVariables/CompositeType/String/define/string_value_17.cj
+
+# temporary block
+LLVM/Trait/generic/trait_generic_def_02n.cj
+LLVM/Trait/generic/trait_generic_def_05n.cj
+
+# fixme add window mingw error
+LLVM/Trait/generic/trait_generic_def_20n.cj
+
+# TODO: failed on b101 CI.
+LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01074.cj
+LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01075.cj
+LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01076.cj
+
+# TODO: to big size for windows.
+LLVM/TypesAndVariables/CompositeType/List/list006/list_00612.cj
+LLVM/TypesAndVariables/CompositeType/List/list006/list_00638.cj
+
+
+# error occurs when reading ast file, dir error.
+LLVM/library
+
+# API`s C layer may not support windows well.
+LLVM/TypesAndVariables/CompositeType/String/StringAPI/
+
+# FIXME: type infer window only
+LLVM\Class\Class\5-1-2\5-1-2-1\member-func\func\class_func_063.cj
+LLVM\PatternMatching\Patterns\type\type001\type00103.cj
+LLVM\TypesAndVariables\CompositeType\String\StringAPI\operator_concat\string_operator_concat_11.cj
+
+# FIXME: Temporarily shielded test cases by TypeInfer
+LLVM/TypesAndVariables/CompositeType/Array/array002/array00229.cj
+LLVM/TypesAndVariables/CompositeType/Array/array004/array00412.cj
+LLVM/TypesAndVariables/CompositeType/Array/array003/array00378.cj
+LLVM/TypesAndVariables/CompositeType/Array/array003/array00338.cj
+
+# empty array lit.
+LLVM/Expressions/ConditionalExpressions/DoWhileExpression/dowhile003/dowhile00319.cj
+LLVM/Expressions/ConditionalExpressions/IfExpression/if003/if00319.cj
+LLVM/Expressions/ConditionalExpressions/WhileExpression/while003/while00319.cj
+
+# match case.
+LLVM/Generics/Enum/enum_generic_import_16/src/enum_generic_import_16.cj
+LLVM/TypesAndVariables/CompositeType/Enum/enum_import_16/pkg/pkg.cj
+
+# range
+LLVM/TypesAndVariables/CompositeType/Range/range001/range00157.cj
+LLVM/TypesAndVariables/CompositeType/Range/range001/range00114.cj
+
+# local type infer dismiss temp.
+LLVM/TypesAndVariables/CompositeType/Range/range002/range00230.cj
+LLVM/TypesAndVariables/CompositeType/Range/range001/range00151.cj
+
+# type pattern
+LLVM/PatternMatching/Patterns/type/type002/type00216.cj
+LLVM/PatternMatching/Patterns/type/type002/type00222.cj
+
+# return in constructor is illeagal
+LLVM/TypesAndVariables/CompositeType/Record/constructor/record_constructor_def_08n.cj
+LLVM/TypesAndVariables/CompositeType/Record/constructor/record_constructor_def_07.cj
+
+# solve type args.
+LLVM/Generics/OperatorOverloading/Append/append003/append_00307.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00142.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00143.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00145.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00148.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00153.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00154.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00150.cj
+LLVM/TypesAndVariables/CompositeType/Array/array001/array00152.cj
+
+#listlit
+LLVM/TypesAndVariables/CompositeType/List/list001/list_00122.cj
+LLVM/TypesAndVariables/CompositeType/List/list003/list_00301.cj
+LLVM/TypesAndVariables/CompositeType/List/list005/list_00508.cj
+LLVM/TypesAndVariables/CompositeType/List/list005/list_00509.cj
+LLVM/TypesAndVariables/CompositeType/List/list005/list_00512.cj
+LLVM/TypesAndVariables/CompositeType/List/list006/list_00654.cj
+LLVM/TypesAndVariables/CompositeType/List/list008/list_00835.cj
+LLVM/TypesAndVariables/CompositeType/List/list008/list_00841.cj
+LLVM/TypesAndVariables/CompositeType/List/list010/list_01051.cj
+LLVM/TypesAndVariables/CompositeType/List/list011/list_01101.cj
+LLVM/TypesAndVariables/CompositeType/List/list011/list_01102.cj
+LLVM/TypesAndVariables/CompositeType/List/list011/list_01104.cj
+LLVM/TypesAndVariables/CompositeType/List/list011/list_01105.cj
+LLVM/TypesAndVariables/CompositeType/List/list008/list_00839.cj
+LLVM/Class/Class/thissuper/class_this_42.cj
+LLVM/Class/Class/thissuper/class_this_43.cj
+LLVM/Class/Class/thissuper/class_this_51.cj
+LLVM/Class/Class/thissuper/class_this_52.cj
+LLVM/TypesAndVariables/CompositeType/String/stringInterpolation/bracket_case4.cj
+LLVM/TypesAndVariables/CompositeType/String/stringInterpolation/tostring_case1.cj
+LLVM/Generics/Overload/Function/function001/generic_function_overload_00120.cj
+
+# redefinition of pkgs name
+LLVM/Packages/shadow/pkgs_dup_package_01/pkgs_dup_package_01.cj
+LLVM/Packages/shadow/pkgs_dup_package_02/src/pkgs_dup_package_02.cj
+LLVM/Packages/shadow/pkgs_dup_package_08n/src/pkgs_dup_package_08n.cj
+LLVM/Packages/shadow/pkgs_dup_package_09n/src/pkgs_dup_package_09n.cj
+LLVM/Packages/shadow/pkgs_dup_package_10n/src/pkgs_dup_package_10n.cj
+LLVM/Packages/shadow/pkgs_dup_package_11n/src/pkgs_dup_package_11n.cj
+LLVM/Packages/shadow/pkgs_dup_package_12n/src/pkgs_dup_package_12n.cj
+LLVM/Packages/shadow/pkgs_dup_package_14n/src/pkgs_dup_package_14n.cj
+LLVM/Function/Overload/Candidate/candidate002/function_overload_candidate_00201.cj
+
+# DTS202105210446MWP1K00
+LLVM\TypesAndVariables\CompositeType\NewEnum\Option\004\enum_option_40029.cj
+# macro not support windows
+LLVM/MetaProgramming
+LLVM\TypesAndVariables\CompositeType\NewEnum\Option\005\enum_option_50057.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Option\005\enum_option_50058.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Option\006\enum_option_60057.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Option\006\enum_option_60058.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Overload\001\enum_overload_10011.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Overload\002\enum_overload_20006.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Overload\002\enum_overload_20007.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Result\004\enum_result_40023.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Result\005\enum_result_50057.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Result\005\enum_result_50058.cj
+LLVM/Driver/driver_comb_07.cj
+LLVM/Driver/driver_comb_09.cj
+LLVM/Driver/driver_comb_10.cj
+
+# temporary block
+LLVM\Packages\Member\trait_import_plus_0502\src\trait_import_plus_0502.cj
+
+# timeout(core dumped) on dev windows, pass on b023, issue2861
+LLVM\Function\asFunc\other\asfunc_other_10008.cj
+
+# meta program not support windows
+LLVM\Expressions\FlowExpression\occasion\flow_occasion_10045.cj
+LLVM\Expressions\FlowExpression\occasion\flow_occasion_10046.cj
+LLVM\Function\asFunc\sugar\001\asfunc_sugar_10039.cj
+LLVM\Function\asFunc\sugar\001\asfunc_sugar_10040.cj
+LLVM\Expressions\FlowExpression\pipeline_expr\flow_pipe_expr_10056.cj
+LLVM\Expressions\FlowExpression\pipeline_expr\flow_pipe_expr_10057.cj
+
+# grep
+LLVM\Class\Class\5-1-2\5-1-2-1\constructors\execute_order\execute_order_01.cj
+LLVM\Class\Class\5-1-2\5-1-2-1\constructors\execute_order\execute_order_02.cj
+LLVM\Class\Class\5-1-2\5-1-2-1\constructors\execute_order\execute_order_03.cj
+LLVM\Class\Class\5-1-2\5-1-2-1\constructors\execute_order\execute_order_04.cj
+
+# macro
+LLVM\Expressions\FlowExpression\composition_expr\flow_composition_expr_10052.cj
+LLVM\Expressions\FlowExpression\composition_expr\flow_composition_expr_10053.cj
+
+# occasionally timeout
+LLVM\TypesAndVariables\CompositeType\ListFloat64\constructor\list022_listfloat64_int64xfloat64\list02204.cj
+
+# tmp shiled, sometimes it occurs.
+LLVM\MetaProgramming\QuoteInterpolate\interpolate006\quote_interpolate_60026.cj
+LLVM\TypesAndVariables\PrimitiveTypes\Character\literal\char_value_09_01.cj
+LLVM\TypesAndVariables\PrimitiveTypes\Character\literal\char_value_09_03.cj
+LLVM\TypesAndVariables\CompositeType\Record\primary_invoke\record_invoke_10.cj
+
+# Any, Object, Bottom; temporarily
+LLVM/MetaProgramming/Macro/Invoke/invoke005/macro_invoke_50134.cj
+
+# occasionally segmentation fault
+LLVM/PatternMatching/Patterns/matchpattern_01.cj
+LLVM/Expressions/Relational_Operators/Relate_bitwise/bitwise004/bitwise00408.cj
+LLVM/TypesAndVariables/CompositeType/RefArray/refArray_new_02.cj
+
+
+# known bug of const value operation: temporarily blocked because of the result of variable seems error, need to check.
+LLVM/Expressions/Arithmetic_Operators/OverFlow/arithmetic_operator_01.cj
+LLVM/Expressions/Arithmetic_Operators/Arith_binary_substract/binary_substract_02/08/Arith_040208.cj
+
+# RefArray tests randomly fail.
+LLVM/TypesAndVariables/CompositeType/RefArray/refArray_new_21.cj
+LLVM/TypesAndVariables/CompositeType/RefArray/refArray_new_27.cj
+
+# RefArray test case failed, similer to DTS202105210446MWP1K00
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_17.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_11.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_16.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_14.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_09\refArray_new_09.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_18.cj
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_12.cj
+
+# RefArray test case failed
+LLVM\TypesAndVariables\CompositeType\RefArray\refArray_new_22.cj
+
+# AD, not supported yet
+LLVM/AD
+
+#######
+LLVM\Class\Class\GenericClass\class_generic_invoke_14.cj
+LLVM\Expressions\Arithmetic_Operators\Arith_pow\pow_02\25\Arith_080225.cj
+LLVM\Expressions\Arithmetic_Operators\Arith_pow\pow_02\26\Arith_080226.cj
+LLVM\Function\Lambda\closures\lambda_closures_0705.cj
+LLVM\Generics\Enum\Sugar\enum_generic_invoke_16.cj
+LLVM\Generics\Enum\enum_generic_invoke_16.cj
+LLVM\Generics\OperatorOverloading\Append\append009\append_00909.cj
+LLVM\Generics\OperatorOverloading\Append\append009\append_00912.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_001\inside_type_01045.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02001.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02002.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02003.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02004.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02005.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02006.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02007.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02008.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02009.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02010.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02011.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02014.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02015.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02016.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02017.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02018.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02019.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02020.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02021.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02024.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02025.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02026.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02027.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02028.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02029.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02030.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02031.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02032.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02033.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02034.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02035.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02036.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02037.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02038.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02039.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02040.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02041.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02042.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02043.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02044.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02046.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02048.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02049.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02050.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02051.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02052.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02053.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02054.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02055.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02056.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02057.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02058.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02061.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02062.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02063.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02064.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02065.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02066.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02067.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02068.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02071.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02072.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02073.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02074.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02075.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02076.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02077.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02078.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02079.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02080.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02081.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02082.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02083.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02084.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02085.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02086.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02087.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02088.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02089.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02090.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02091.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02093.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02095.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02096.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02097.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02098.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02099.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02100.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02101.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02102.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02103.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02104.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02105.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02108.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02109.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02110.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02111.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02112.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02113.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02114.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02115.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02118.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02119.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02120.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02121.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02122.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02123.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02124.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02125.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02126.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02127.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02128.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02129.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02130.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02131.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02132.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02133.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02134.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02135.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02136.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02137.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02138.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_002\inside_type_02140.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_008\inside_type_08024.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_008\inside_type_08025.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_008\inside_type_08061.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_008\inside_type_08098.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_008\inside_type_08099.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_009\inside_type_09002.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_009\inside_type_09007.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_012\inside_type_12135.cj
+LLVM\Generics\OperatorOverloading\InsideType\insidetype_014\inside_type_14004.cj
+LLVM\Generics\Overload\Function\function007\generic_function_overload_00712.cj
+LLVM\OperatorOverloading\IndexOperatorOverload\index_operator_overload_18\src\index_operator_overload_18.cj
+LLVM\OperatorOverloading\operator_overloading_002\operator_overloading_00211.cj
+LLVM\OperatorOverloading\operator_overloading_003\operator_overloading_00310.cj
+LLVM\OperatorOverloading\operator_overloading_003\operator_overloading_00311.cj
+LLVM\OperatorOverloading\operator_overloading_003\operator_overloading_00312.cj
+LLVM\OperatorOverloading\operator_overloading_006\operator_overloading_00608.cj
+LLVM\OperatorOverloading\operator_overloading_006\operator_overloading_00615.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00704\b\operator_overloading_00704.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00707\b\operator_overloading_00707.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00709.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00710.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00711.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00712.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00720\b\operator_overloading_00720_1.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00722\b\operator_overloading_00722.cj
+LLVM\OperatorOverloading\operator_overloading_007\operator_overloading_00723\b\operator_overloading_00723.cj
+LLVM\OperatorOverloading\operator_overloading_008\operator_overloading_00802.cj
+LLVM\OperatorOverloading\operator_overloading_008\operator_overloading_00803.cj
+LLVM\OperatorOverloading\operator_overloading_009\operator_overloading_00904.cj
+LLVM\OperatorOverloading\operator_overloading_009\operator_overloading_00907.cj
+LLVM\OperatorOverloading\operator_overloading_009\operator_overloading_00908.cj
+LLVM\OperatorOverloading\operator_overloading_010\operator_overloading_01010\src\operator_overloading_01010.cj
+LLVM\TypesAndVariables\CompositeType\Array\array003\array00339.cj
+LLVM\TypesAndVariables\CompositeType\Array\array003\array00379.cj
+LLVM\TypesAndVariables\CompositeType\Array\array005\array00504.cj
+LLVM\TypesAndVariables\CompositeType\Array\array005\array00538.cj
+LLVM\TypesAndVariables\CompositeType\List\list001\list_00125.cj
+LLVM\TypesAndVariables\CompositeType\List\list010\list_01031.cj
+LLVM\TypesAndVariables\CompositeType\List\list010\list_01043.cj
+
+LLVM\TypesAndVariables\CompositeType\Array\array003\array00303.cj
+LLVM\TypesAndVariables\CompositeType\Array\array003\array00305.cj
+LLVM\TypesAndVariables\CompositeType\NewEnum\Member\Func\003\enum_func_30001.cj
+
+# temporarily blocked for inheritance of default-implemented func from interface
+# we can not debug these fail cases in windows environment
+LLVM\Extend\operator\type\operator_type_25.cj
+LLVM\Extend\operator\type\operator_type_26.cj
+LLVM\Extend\operator\type\operator_type_27.cj
+LLVM\Extend\operator\type\operator_type_28.cj
+LLVM\Extend\operator\type\operator_type_30.cj
+LLVM\OperatorOverloading\operator_overloading_005\operator_overloading_00519.cj
+LLVM\OperatorOverloading\operator_overloading_005\operator_overloading_00520.cj
+LLVM\OperatorOverloading\operator_overloading_005\operator_overloading_00522.cj
+
+# try-catch expression is not supported at this backend.
+LLVM/Expressions/Arithmetic_Operators/OverFlow/overflow_02.cj
+LLVM/Expressions/IncrementAndDecrementExpressions/Type_integer_00102.cj
+LLVM/Expressions/spec/spec_types_4.15ArithmeticExpressions_01.cj
+
+#DTS2021070806OT7ZP1H00
+LLVM/Packages/shadow/pkg_def_03.cj
+
+#LLVMGC pass, LLVM fail
+Regression\DTS/DTS2021072805ALAYP1300/option2.cj
+
+# macro
+LLVM\ConditionalCompile\When\001\when_10024.cj
+LLVM\ConditionalCompile\When\001\when_10025.cj
+LLVM\ConditionalCompile\When\002\when_20005.cj
+LLVM\ConditionalCompile\When\002\when_20011.cj
+LLVM\ConditionalCompile\When\003\when_30002.cj
+LLVM\ConditionalCompile\When\003\when_30003.cj
+
+# js backend supports to use external with foreign.
+LLVM/FFI/Foreign/Variable/variable001/foreign_variable_00109.cj
+# not print exception string
+LLVM\TypesAndVariables\CompositeType\Array_new\Array01\Array_define_08.cj
+LLVM\TypesAndVariables\CompositeType\Array_new\Array02\array_get_05.cj
+LLVM\TypesAndVariables\CompositeType\Array_new\Array02\array_new_33.cj
+LLVM\TypesAndVariables\CompositeType\Array_new\Array02\array_set_03.cj
+LLVM\TypesAndVariables\CompositeType\Array_new\Array02\array_set_05.cj
+
+LLVM\ConditionalCompile\When\001\when_10001.cj
+LLVM\ConditionalCompile\When\001\when_10026.cj
+
+# no need
+Benchmark/
+
+# AR-SR-Lang-1002-06: Float out of bounds check
+Fuzz\B025coredump\Aborted_Core_Dumped\id_000046_sig_06_src_000213_op_arith8_pos_152_val__19_B015HMS.cj
+
+# others exclude also
+LLVM\Packages\Ext_Internal\external_internal\external_internal_06.cj
+LLVM\Packages\Ext_Internal\external_internal\external_internal_1802.cj
+LLVM\Packages\Ext_Internal\external_internal\external_internal_26.cj
+LLVM\Packages\Ext_Internal\external_internal\external_internal_class_04.cj
+LLVM\Packages\Ext_Internal\external_internal\external_internal_class_24.cj
+LLVM\Packages\Ext_Internal\external_internal\external_internal_func_04.cj
+LLVM\Packages\Ext_Internal\external_internal\external_internal_func_06.cj
+LLVM\PatternMatching\Patterns\nest\match_nest2_tuple0102.cj
+
+# not for ast-llvm
+LLVM\FFI\Foreign\Function\function002\foreign_func_00217.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\appendAll\list014_appendAll_07.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\appendAll\list014_appendAll_08.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\appendAll\list014_appendAll_09.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\init\list014_init_07.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\init\list014_init_08.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\init\list014_init_10.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\init\list014_init_15.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\init\list014_init_20.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\init\list014_init_21.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\insertAll\list014_insertAll_06.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\insertAll\list014_insertAll_11.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\insertAll\list014_insertAll_12.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\insertAll\list014_insertAll_13.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\insert\list014_insert_04.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\remove\list014_remove_04.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\remove\list014_remove_08.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\remove\list014_remove_09.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\set\list014_set_04.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\slice\list014_slice_06.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\sliceoperator\list014_sliceoperator_06.cj
+LLVM\TypesAndVariables\CompositeType\List\list014\sortBy\list014_sortBy_14.cj
+
+#try expr not supported
+Fuzz\fuzz_cases\DTS2021081615757.cj
+Fuzz\fuzz_cases\DTS2021081616251.cj
+Fuzz\fuzz_cases\DTS2021082616081.cj
+Fuzz\fuzz_cases\DTS2021082616264.cj
+Fuzz\fuzz_cases\DTS2021082616334.cj
+Fuzz\fuzz_cases\DTS2021082616594.cj
+Fuzz\fuzz_cases\DTS2021092713984.cj
+Fuzz\fuzz_cases\DTS2021092718266.cj
+Fuzz\fuzz_cases\DTS2021092718330.cj
+Fuzz\fuzz_cases/20210922-234013480678082.cj
+
+# Unexpected token 'try'
+Fuzz\fuzz_cases\DTS2021092713730.cj
+
+# fuzz case block for panda and js
+Fuzz\fuzz_cases/DTS2021092718434.cj
+
+# not utf-8 exit-3
+Fuzz\B025coredump\Aborted_Core_Dumped\id_000036_sig_06_src_000039_op_havoc_rep_8_B015HMS.cj
+Fuzz\B025coredump\Aborted_Core_Dumped\id_000118_sig_06_src_000509_op_havoc_rep_32_B015HMS.cj
+Fuzz\B025coredump\Aborted_Core_Dumped\id_000119_sig_06_src_000509_op_havoc_rep_16_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000006_sig_11_src_000071_op_havoc_rep_8_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000008_sig_11_src_000010_op_havoc_rep_32_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000010_sig_11_src_000010_op_havoc_rep_16_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000011_sig_11_src_000010_op_havoc_rep_8_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000031_sig_11_src_000118_op_havoc_rep_32_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000034_sig_11_src_000118_op_havoc_rep_64_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000045_sig_11_src_000127_op_havoc_rep_32_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000097_sig_11_src_000464_op_havoc_rep_16_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000157_sig_11_src_000590_op_havoc_rep_8_B015HMS.cj
+Fuzz\B025coredump\Segmentation_Fault_Core_Dumped\id_000237_sig_11_src_000886_op_havoc_rep_16_B015HMS.cj
+Fuzz\B033\Segmentation_Fault_Core_Dumped\id_000087_sig_11_src_000118_op_havoc_rep_64_B033.cj
+
+# not able to run
+Fuzz\fuzz_cases\DTS2021082524900.cj
+Fuzz\fuzz_cases\DTS2021082525787.cj
+Fuzz\fuzz_cases\DTS2021082614502.cj
+Fuzz\fuzz_cases\DTS2021082614627.cj
+Fuzz\fuzz_cases\DTS2021082616223.cj
+
+# not able to throw exception
+Fuzz\fuzz_cases\DTS2021102815793.cj
+
+# old llvm not support var capture
+Regression\DTS\DTS2021093018574\range_lamdba_bug_001.cj
+
+# LLVMGC Runtime
+Runtime/llvmgc

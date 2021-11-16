@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_importas_05.cj
+ * -@TestCaseName: class_importas_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: import as导入类
+ * -@Condition: no
+ * -@Brief: 导入的类被继承
+ * -#step1: 导入的类被继承
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

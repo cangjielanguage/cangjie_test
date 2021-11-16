@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_replaceP_08.cj
+ * -@TestCaseName: matcher_api_replaceP_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-Index不在Int64范围内
+ * -#step1: Mathcher-Index不在Int64范围内
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: replace(replacement: String, index: int64): String从指定索引开始查找与该模式匹配的输入字符串的子字符串，如果存在返回MatchData的实例，否则返回none
+ */

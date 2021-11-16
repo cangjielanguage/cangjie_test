@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: regex_staticconstant_01.cj
+ * -@TestCaseName: regex_staticconstant_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Regex-静态常量
+ * -#step1: Regex-静态常量
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: 这里写detail
+ */

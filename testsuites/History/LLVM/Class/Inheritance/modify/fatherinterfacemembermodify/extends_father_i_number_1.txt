@@ -1,0 +1,14 @@
+/*
+* -@TestCaseID: extends_father_i_number_1.cj
+* -@TestCaseName: extends_father_i_number_1.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1003-01
+* -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载
+* -@Condition: no
+* -@Brief: 访问父接口中成员变量,编译报错
+* -#step1: 准备父接口含成员变量
+* -#step2: 用子类类名（static）访问该成员变量
+* -#step3: 编译运行检查输出信息
+* -@Expect: 编译报错
+* -@Priority: High
+*/

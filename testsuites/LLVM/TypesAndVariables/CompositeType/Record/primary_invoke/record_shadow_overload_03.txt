@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_shadow_overload_03.cj
+ * -@TestCaseName: record_shadow_overload_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record中同名变元被遮盖
+ * -#step1: 定义一个类型变元为T的泛型record Test<T>，内部定义一个类型变元为T的泛型成员函数func area<T>
+ * -#step2: 实例化record传入类型变元为int32，调用泛型成员函数area，传入类型变元为int64
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: c5.cj
+ * -@TestCaseName: c5.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc编译，不支持不同package的cj文件
+ * -#step1: cjc编译，不支持不同package的cj文件
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21.1
+ * -@SpecChapter:
+ * -@SpecDetail:
+ */

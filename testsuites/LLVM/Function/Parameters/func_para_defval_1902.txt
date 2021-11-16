@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_1902.cj
+ * -@TestCaseName: func_para_defval_1902.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试func函数含有2个非可选参数2个可选参数a,b,A,B，调用时A,B通过形参指定传入的实参且打乱传入顺序
+ * -#step1: 声明一个函数func Foo定义四个入参变量，函数入参依次为非可选参数a、非可选参数b、可选参数A、可选参数B
+ * -#step2: 调用函数Foo(1,"x",B:"ab",A:4)，通过形参传入A,B的实参
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

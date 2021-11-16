@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_interface_13.cj
+ * -@TestCaseName: generic_interface_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-15
+ * -@RequirementName: 泛型接口多继承的规则检查
+ * -@Condition: no
+ * -@Brief: 两个泛型接口J1<T>、J2<T>继承一个泛型接口I<T>
+ * -#step1: 两个泛型接口J1<T>、J2<T>继承一个泛型接口I<T>
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 泛型/类型形参与类型变元
+ * -@SpecDetail: 对于一个泛型接口，可以被一个接口继承多次，但是给出的类型参数不能完全相同
+ */

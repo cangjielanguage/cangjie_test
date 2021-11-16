@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: annotation_case1
+* -@TestCaseName: annotation_case1.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1006-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证注释，把变量注释掉，再用插值符号
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

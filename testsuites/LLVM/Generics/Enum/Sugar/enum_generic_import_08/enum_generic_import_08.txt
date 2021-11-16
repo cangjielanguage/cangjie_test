@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_import_08.chr
+ * -@TestCaseName: enum_generic_import_08.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 以包名方式导入，即import pkg(内含enum<T>)，执行成功
+ * -#step1: 准备package，含enum<T>
+ * -#step2: 以包名方式导入，即import pkg(内含enum<T>)
+ * -#step3: 检查编译和执行结果
+ * -@Expect: 编译成功，执行成功
+ * -@Priority: High
+ */

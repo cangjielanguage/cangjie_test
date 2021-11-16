@@ -1,0 +1,24 @@
+2021-11-08 02:02:50 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Function/function002/foreign_func_00221.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:02:50 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function002/foreign_func_00221_cj_cangjie2llvmgc_test_cfg_1636335530
+2021-11-08 02:02:50 DEBUG execute cmd ===>>>: cjc -frontend -c -typecheck -ulimit-error foreign_func_00221.cj
+2021-11-08 02:02:51 DEBUG return code: 1
+2021-11-08 02:02:51 DEBUG stdout : 
+
+2021-11-08 02:02:51 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function002/foreign_func_00221_cj_cangjie2llvmgc_test_cfg_1636335530/foreign_func_00221.cj:3:18: [31merror[0m: native function can only have CType args.
+@	    3 | foreign func foo(a:Int32*Int32):Int32*Int32
+@	      |                  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function002/foreign_func_00221_cj_cangjie2llvmgc_test_cfg_1636335530/foreign_func_00221.cj:3:33: [31merror[0m: native function can only have CType return.
+@	    3 | foreign func foo(a:Int32*Int32):Int32*Int32
+@	      |                                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function002/foreign_func_00221_cj_cangjie2llvmgc_test_cfg_1636335530/foreign_func_00221.cj:6:14: [31merror[0m: native function can only have CType args.
+@	    6 |     func bar(a:Int32*Int32):Int32*Int32
+@	      |              [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Function/function002/foreign_func_00221_cj_cangjie2llvmgc_test_cfg_1636335530/foreign_func_00221.cj:6:29: [31merror[0m: native function can only have CType return.
+@	    6 |     func bar(a:Int32*Int32):Int32*Int32
+@	      |                             [32m^[0m
+@	4 errors generated
+
+2021-11-08 02:02:51 DEBUG Run time: 0.38, remain time: 3e+02
+2021-11-08 02:02:51 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Function/function002/foreign_func_00221.cj_cangjie2llvmgc_test_cfg.log

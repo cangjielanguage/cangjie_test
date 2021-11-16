@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_import_03.cj
+ * -@TestCaseName: template_import_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: impor中存在#，正常处理
+ * -#step1: impor中存在#，正常处理
+ * -@Expect: 执行成功
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: import-stmt
+ */

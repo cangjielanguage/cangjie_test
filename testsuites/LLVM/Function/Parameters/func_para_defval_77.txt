@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_77.cj
+ * -@TestCaseName: func_para_defval_77.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试可选参数所在record成员函数被static修饰
+ * -#step1: 定义一个类record Base，其中声明两个函数分别被static public/static private修饰且内含可选参数
+ * -#step2: 通过record名调用static修饰的函数，省略可选参数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

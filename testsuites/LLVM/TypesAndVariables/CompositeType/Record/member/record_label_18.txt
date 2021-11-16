@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_label_18.cj
+ * -@TestCaseName: record_label_18.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中定义一个类型为int32的label, 将表达式赋值给该label
+ * -#step1: 在record体中声明一个常量label，
+ * -#step2: 将表达式结果赋值给常量label
+ * -@Expect: record语句体label定义成功，执行成功返回期望结果
+ * -@Priority: High
+ */

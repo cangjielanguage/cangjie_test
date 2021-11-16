@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: c6.cj
+ * -@TestCaseName: c6.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc分两次编译同包不同的cj文件，其中中间件testcase.b.cjo会被第二次替换，导致第一个cj文件中的内容找不到
+ * -#step1:  cjc分两次编译同包不同的cj文件
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21.1
+ * -@SpecChapter:
+ * -@SpecDetail:
+ */

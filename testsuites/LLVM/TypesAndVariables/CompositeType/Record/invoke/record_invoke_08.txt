@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_invoke_08.cj
+ * -@TestCaseName: record_invoke_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record实例化的位置，在append的func中被调用
+ * -#step1: 定义一个record Data，定义一个trait Add，追加特性到Data中
+ * -#step2: 实例化Data，调用特性函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

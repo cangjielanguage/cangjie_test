@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: matchpattern_guard_02.cj
+ * -@TestCaseName: matchpattern_guard_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: pattern为通配符模式、且搭配if，不匹配
+ * -#step1: pattern为通配符模式、且搭配if，不匹配
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 表达式/模式匹配表达式/Pattern Guards
+ * -@SpecDetail: 
+ * -@catalog:# 表达式## 模式匹配表达式### Pattern Guards--2
+ */

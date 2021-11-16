@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: adjoint_init_05.cj
+ * -@TestCaseName: adjoint_init_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-14
+ * -@RequirementName: AD支持自定义可微类型的可微init的adjoint函数
+ * -@Condition: no
+ * -@Brief: primal的值从外部导入
+ * -@step1: 包中定义定义可微的record init
+ * -@step2: 将record的调用放到可微函数foo中
+ * -@step3: grad取出微分结果
+ * -@Expect: 编译正确，执行成功
+ * -@catelog: 自动微分## 可微函数### 自定义微分规则#### 自定义伴随函数--2
+ * -@Priority: level0
+ */

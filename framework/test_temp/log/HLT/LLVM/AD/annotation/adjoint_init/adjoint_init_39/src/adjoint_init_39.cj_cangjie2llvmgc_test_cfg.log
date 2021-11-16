@@ -1,0 +1,21 @@
+2021-11-08 02:54:29 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_39/src/adjoint_init_39.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:54:29 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_39/src/adjoint_init_39_cj_cangjie2llvmgc_test_cfg_1636338485
+2021-11-08 02:54:29 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error -c src/pkg/pkg.cj -o pkg.o
+2021-11-08 02:54:30 DEBUG return code: 0
+2021-11-08 02:54:30 DEBUG stdout : 
+
+2021-11-08 02:54:30 DEBUG stderr : 
+
+2021-11-08 02:54:30 DEBUG Run time: 0.58, remain time: 3e+02
+2021-11-08 02:54:30 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error adjoint_init_39.cj pkg.o -o adjoint_init_39.out 2>&1 
+2021-11-08 02:54:30 DEBUG return code: 134
+2021-11-08 02:54:30 DEBUG stdout : 
++	terminate called after throwing an instance of 'std::bad_alloc'
++	  what():  std::bad_alloc
++	Aborted (core dumped)
+
+2021-11-08 02:54:30 DEBUG stderr : 
+
+2021-11-08 02:54:30 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:54:30 ERROR Failed, return code 134 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_39/src/adjoint_init_39.cj_cangjie2llvmgc_test_cfg.log

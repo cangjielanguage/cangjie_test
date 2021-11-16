@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: header_api_02.cj
+ * -@TestCaseName: header_api_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-07
+ * -@RequirementName: 提供 class Header
+ * -@Condition: no
+ * -@Brief: func add(key: String, value: String),调用MimeHeader的add
+ * -#step1: func add(key: String, value: String),调用MimeHeader的add 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Header
+ * -@SpecDetail: func add(key: String, value: String)
+ */

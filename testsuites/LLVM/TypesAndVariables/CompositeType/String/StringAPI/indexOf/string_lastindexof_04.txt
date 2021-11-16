@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_lastindexof_04.cj
+ * -@TestCaseName: string_lastindexof_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的lastIndexOf(c:char,fromIndex:UInt64):int64方法，fromIndex位置之前出现的字符
+ * -#step1: 定义不同形式的string，调用该变量的lastIndexOf方法
+ * -#step2: fromIndex位置之前出现的字符，检查运行结果
+ * -@Expect: 方法返回正确索引，执行成功
+ * -@Priority: High
+ */

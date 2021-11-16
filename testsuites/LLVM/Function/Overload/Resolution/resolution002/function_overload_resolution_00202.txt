@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Resolution_00202
+ * -@TestCaseName: function_overload_resolution_00202.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Interface`s static b.test has higher level than import b.test .
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_OperatorOverloading_00605
+ * -@TestCaseName: operator_overloading_00605.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2030
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: trait内二元操作符重载，左入参为被重载类型。
+ * -@Expect: 编译成功,return 0.
+ * -@Priority: level0
+ */

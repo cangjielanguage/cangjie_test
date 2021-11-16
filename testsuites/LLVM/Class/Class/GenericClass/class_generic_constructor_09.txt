@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_constructor_09.cj
+ * -@TestCaseName: class_generic_constructor_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T> init中使用this调用泛型func
+ * -#step1: 定义一个泛型父类class Base<T>，定义一个泛型类Data<T>继承Base<Int32>
+ * -#step2: Data<T>中声明一个变量f类型为T，定义一个泛型成员函数getNum<V>；自定义init(input)构造函数，使用this调用函数getNum<Int32>
+ * -#step3: 通过自定义构造器实例化泛型class Data<T>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

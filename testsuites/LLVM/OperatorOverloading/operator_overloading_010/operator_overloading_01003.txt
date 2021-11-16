@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: operator_overloading_01003.cj
+ * -@TestCaseName: operator_overloading_01003.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: append多个重载操作符TR到引用类型\基础类型int32
+ * -#step1: 定义重载操作符的TR，TR1、TR2、TR3
+ * -#step2: 定义class C，append C with TR1、TR2
+ * -#step3: append Int32 with TR2、TR3
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

@@ -1,0 +1,41 @@
+2021-11-08 02:32:29 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/c_ffi/c_ffi_011/c_ffi_01123/c_ffi_jni.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:32:29 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/c_ffi/c_ffi_011/c_ffi_01123/c_ffi_jni_cj_cangjie2llvmgc_test_cfg_1636338474
+2021-11-08 02:32:29 DEBUG execute cmd ===>>>: sed -i "s!cangjieCFFI_path!%cstring_cjo!g" cfg.json
+2021-11-08 02:32:29 DEBUG return code: 0
+2021-11-08 02:32:29 DEBUG stdout : 
+
+2021-11-08 02:32:29 DEBUG stderr : 
+
+2021-11-08 02:32:29 DEBUG Run time: 0.022, remain time: 3e+02
+2021-11-08 02:32:29 DEBUG execute cmd ===>>>: clang -shared -fPIC c_ffi_jni.c -o libc_ffi_jni.so
+2021-11-08 02:32:29 DEBUG return code: 0
+2021-11-08 02:32:29 DEBUG stdout : 
+
+2021-11-08 02:32:29 DEBUG stderr : 
+
+2021-11-08 02:32:29 DEBUG Run time: 0.092, remain time: 3e+02
+2021-11-08 02:32:29 DEBUG execute cmd ===>>>: cjc -ulimit-error -ld-options="-lcangjie-ffic  -L. -lc_ffi_jni" c_ffi_jni.cj -o c_ffi_jni.out
+2021-11-08 02:32:30 DEBUG return code: 0
+2021-11-08 02:32:30 DEBUG stdout : 
+
+2021-11-08 02:32:30 DEBUG stderr : 
+
+2021-11-08 02:32:30 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 02:32:30 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  c_ffi_jni.out  2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// c_ffi_jni.cj
+2021-11-08 02:32:30 DEBUG return code: 1
+2021-11-08 02:32:30 DEBUG stdout : 
++	compare.py input:
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: World , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan-not, pattern: Exception , result: True, matched at output line: 0"
+
+2021-11-08 02:32:30 DEBUG stderr : 
+@	Aborted (core dumped)
+
+2021-11-08 02:32:30 DEBUG Run time: 0.12, remain time: 3e+02
+2021-11-08 02:32:30 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/c_ffi/c_ffi_011/c_ffi_01123/c_ffi_jni.cj_cangjie2llvmgc_test_cfg.log

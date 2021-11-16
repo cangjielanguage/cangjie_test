@@ -1,0 +1,11 @@
+{
+  "package": {
+    "ffi/c": "cangjieCFFI_path"
+  },
+  "foreign_module": {
+    "libusg_ffi_23.5Fmt.so": {
+      "path": "./",
+      "export": ["printf"]
+    }
+  }
+}

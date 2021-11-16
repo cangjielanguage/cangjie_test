@@ -1,0 +1,15 @@
+ /*
+ * -@TestCaseID: FFI_C_00103
+ * -@TestCaseName: c_ffi_00103.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持record类型与struct类型的互相映射。
+ * #1.对同样storage size的类型进行映射。
+ * #2.可以编译成功，但是计算结果不一定符合程序员设计预期。
+ * #3.如此用例中char中值为0的uint8在映射到C中的unsigned char。
+ * #4.在C中0值的unsigned char减1应该等于-1，传回char后变成了255。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

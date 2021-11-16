@@ -1,0 +1,26 @@
+2021-10-26 02:10:21 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/module_mod_0402n/src/module_mod_0402n.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:10:21 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Driver/module_mod_0402n/src/module_mod_0402n_cj_cangjie2llvmgc_test_cfg_1635213979
+2021-10-26 02:10:22 DEBUG execute cmd ===>>>: cjc -ulimit-error -module module_mod_0402n -o ./ 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// module_mod_0402n.cj
+2021-10-26 02:10:22 DEBUG return code: 1
+2021-10-26 02:10:22 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Driver/module_mod_0402n/src/module_mod_0402n_cj_cangjie2llvmgc_test_cfg_1635213979/module_mod_0402n/src/module_mod_0402n.cj:1:1: [31merror[0m: package name supposed to be 'aoo'
++		    1 | // DEPENDENCE: ../../module_mod_0402n
++		      | [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Driver/module_mod_0402n/src/module_mod_0402n_cj_cangjie2llvmgc_test_cfg_1635213979/module_mod_0402n/src/boo.cj:1:1: [31merror[0m: package name supposed to be 'aoo'
++		    1 | package boo
++		      | [32m^[0m
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan-not, pattern: core dumped , result: True, matched at output line: 0"
++	b"It's a assert, flag: scan-not, pattern: stack trace , result: True, matched at output line: 1"
++	b"It's a assert, flag: regex, pattern: package name 'boo' not identical in one Package , result: False, matched at output line: 1"
++	Match End!, Compare Failed
+
+2021-10-26 02:10:22 DEBUG stderr : 
+
+2021-10-26 02:10:22 DEBUG Run time: 0.094, remain time: 3e+02
+2021-10-26 02:10:22 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/module_mod_0402n/src/module_mod_0402n.cj_cangjie2llvmgc_test_cfg.log

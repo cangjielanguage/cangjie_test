@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_type_14.cj
+ * -@TestCaseName: class_generic_type_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试class的成员变量为泛型class类型
+ * -#step1: 定义一个泛型class Data<T>，定义一个普通类Foo，类中成员变量为实例化泛型类Data<Int32>
+ * -#step2: 实例化class Foo，然后调用成员变量data
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

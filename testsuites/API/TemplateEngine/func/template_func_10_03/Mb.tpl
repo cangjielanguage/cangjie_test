@@ -1,0 +1,5 @@
+#func f中g(a: String): Int64 {
+ print(a)
+ return a.size()
+}
+#endfunc

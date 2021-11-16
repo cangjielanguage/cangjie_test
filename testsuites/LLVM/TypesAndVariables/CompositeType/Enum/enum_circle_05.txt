@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_circle_05.cj
+ * -@TestCaseName: enum_circle_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试enum与class的互递归
+ * -#step1: TimeUnit中声明一个constructor参数引入class类型
+ * -#step2: class中声明一个变量引入TimeUnit
+ * -#step3: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

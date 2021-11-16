@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: test_getgid_001
+ * -@TestCaseName: test_getgid_001
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-05
+ * -@RequirementName: 提供进程相关函数
+ * -@Conditon: no
+ * -@Brief: 验证getgid()的功能
+ * -#step1: 通过仓颉的getgid()获取gid
+ * -#step2: 通过系统的id类指令获取gid
+ * -#step3: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

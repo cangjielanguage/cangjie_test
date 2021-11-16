@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: variable00208.cj
+ * -@TestCaseName: variable00208.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: 变量模式的'=>'后表达式调用包导入的成员
+ * -#step1: 包中定义成员函数test()
+ * -#step2: match-case表达式'=>'后使用包导入的成员test()
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 类型模式--2
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

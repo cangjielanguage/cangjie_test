@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_member_access_04n.cj
+ * -@TestCaseName: class_member_access_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 类的访问控制检查
+ * -@Condition: no
+ * -@Brief: class的成员函数访问控制检查
+ * -#step1: class中定义private修饰的成员函数foo
+ * -#step2: 实例化class，调用成员函数foo
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

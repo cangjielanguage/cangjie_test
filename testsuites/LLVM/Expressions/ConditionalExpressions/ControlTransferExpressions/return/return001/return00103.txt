@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_StatementExpressions_ConditionalExpressions_ControlTransferExpressions_return_00103
+ * -@TestCaseName: return00103.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use 'RETURN' instead of 'return'.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socket_init_02_02_09.cj
+ * -@TestCaseName: socket_init_02_02_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class Socket
+ * -@Condition: no
+ * -@Brief: Regex-address是x.x.x.x.x格式，抛异常
+ * -#step1: Regex-address是x.x.x.x.x格式，抛异常
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: socket-init(net: SocketNet, address: String, port: UInt16, localAddress: String, localPort: UInt16)根据指定的远程主机和本地的协议、地址和端口号初始化Socket实例
+ */

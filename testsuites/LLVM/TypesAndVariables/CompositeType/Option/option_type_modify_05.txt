@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: option_type_modify_05.cj
+ * -@TestCaseName: option_type_modify_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试Option类型变量的修饰符，类中private修饰的Option变量
+ * -#step1: 类A定义一个Option类型变量opt并用private修饰符修饰,
+ * -#step2: 类A中定义一个func访问opt
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,18 @@
+2021-11-08 01:41:22 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_16/arg_ret_type_16.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:41:22 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_16/arg_ret_type_16_cj_cangjie2llvmgc_test_cfg_1636335518
+2021-11-08 01:41:22 DEBUG execute cmd ===>>>: cjc -ulimit-error arg_ret_type_16.cj -o arg_ret_type_16..out
+2021-11-08 01:41:22 DEBUG return code: 1
+2021-11-08 01:41:22 DEBUG stdout : 
+
+2021-11-08 01:41:22 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_16/arg_ret_type_16_cj_cangjie2llvmgc_test_cfg_1636335518/arg_ret_type_16.cj:7:27: [31merror[0m: native function can only have CType args.
+@	    7 | foreign func argRetType16(arg: Int32*Bool) : Int32*Bool
+@	      |                           [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_16/arg_ret_type_16_cj_cangjie2llvmgc_test_cfg_1636335518/arg_ret_type_16.cj:7:46: [31merror[0m: native function can only have CType return.
+@	    7 | foreign func argRetType16(arg: Int32*Bool) : Int32*Bool
+@	      |                                              [32m^[0m
+@	2 errors generated
+
+2021-11-08 01:41:22 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 01:41:22 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/arg_ret_type_16/arg_ret_type_16.cj_cangjie2llvmgc_test_cfg.log

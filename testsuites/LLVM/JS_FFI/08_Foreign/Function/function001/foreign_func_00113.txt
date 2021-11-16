@@ -1,0 +1,17 @@
+ /*
+ * -@TestCaseID: Foreign_function_00113
+ * -@TestCaseName: foreign_function_00113.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2031-01
+ * -@RequirementName: Foreign Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define same name foreign, normal function(same parameter).
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: foreign 函数
+ * -@SpecDetail: 1、`foreign` 修饰符支持修饰顶级类、接口、函数以及变量（ `var` 和 `let` ）
+ * -@SpecDetail: 2、foreign 函数-不允许有实现（函数体）、重载
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--4
+ */

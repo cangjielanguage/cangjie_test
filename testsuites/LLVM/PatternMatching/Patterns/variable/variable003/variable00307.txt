@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: variable00307.cj
+ * -@TestCaseName: variable00307.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: 值绑定变量赋值给外部变量
+ * -#step1: match-case表达式中，值绑定变量赋值给外部变量
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ * -@catalog:# 表达式## 模式匹配表达式### 模式--9
+ */

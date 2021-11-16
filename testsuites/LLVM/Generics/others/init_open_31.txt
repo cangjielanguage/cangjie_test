@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: init_open_31.cj
+ * -@TestCaseName: init_open_31.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-33
+ * -@RequirementName: 禁止构造函数中调用使用open 修饰的成员函数/属性
+ * -@Condition: no
+ * -@Brief: record的init中调用open修饰的成员函数，编译报错，record中不能用open修饰
+ * -#step1: record的init中调用open修饰的成员函数，编译报错，record中不能用open修饰
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter:
+ * -@SpecDetail: 禁止构造函数中调用使用open修饰的成员函数
+ */

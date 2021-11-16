@@ -1,0 +1,27 @@
+2021-10-25 04:16:55 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513.cj_cangjie2llvmgc_test_cfg.log
+2021-10-25 04:16:55 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513_cj_cangjie2llvmgc_test_cfg_1635134627
+2021-10-25 04:16:55 DEBUG execute cmd ===>>>: cjc -ulimit-error arraylist_00513.cj -o arraylist_00513.out
+2021-10-25 04:16:56 DEBUG return code: 1
+2021-10-25 04:16:56 DEBUG stdout : 
+
+2021-10-25 04:16:56 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513_cj_cangjie2llvmgc_test_cfg_1635134627/arraylist_00513.cj:7:36: [31merror[0m: expected expression here
+@	    7 |     var b : Set<ArrayList<Unit>> = #{a}
+@	      |                                    [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513_cj_cangjie2llvmgc_test_cfg_1635134627/arraylist_00513.cj:7:36: [31merror[0m: expected newline or ';' between expression or declaration
+@	    7 |     var b : Set<ArrayList<Unit>> = #{a}
+@	      |                                    [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513_cj_cangjie2llvmgc_test_cfg_1635134627/arraylist_00513.cj:7:13: [31merror[0m: undeclared type name 'Set'
+@	    7 |     var b : Set<ArrayList<Unit>> = #{a}
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513_cj_cangjie2llvmgc_test_cfg_1635134627/arraylist_00513.cj:7:13: [31merror[0m: initializer's type is incompatible with variable declaration 'b' 
+@	    7 |     var b : Set<ArrayList<Unit>> = #{a}
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513_cj_cangjie2llvmgc_test_cfg_1635134627/arraylist_00513.cj:7:36: [31merror[0m: invalid expression initialization
+@	    7 |     var b : Set<ArrayList<Unit>> = #{a}
+@	      |                                    [32m^[0m
+@	5 errors generated
+
+2021-10-25 04:16:56 DEBUG Run time: 0.38, remain time: 3e+02
+2021-10-25 04:16:56 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist005/arraylist_00513.cj_cangjie2llvmgc_test_cfg.log

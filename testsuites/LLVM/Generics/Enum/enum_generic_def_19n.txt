@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_def_19n.cj
+ * -@TestCaseName: enum_generic_def_19n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试完整正确的泛型enum定义<T,V>，泛型约束的分隔符为';'，编译报错
+ * -#step1: 分别定义两个类Foo1、Foo2，分别定义两个子类Bar1、Bar2
+ * -#step2: 定义一个约束条件为T<:Foo1;V<:Foo2的泛型enum <T,V>
+ * -#step3: 实例化子类Bar1、Bar2，match匹配enum中的构造函数，传入类元为<Bar1,Bar2>
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

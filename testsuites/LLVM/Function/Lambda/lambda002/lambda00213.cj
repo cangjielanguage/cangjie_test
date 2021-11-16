@@ -1,0 +1,13 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+func test(): Int64 {
+    let sum = {a: Int64, b: Int64 =>
+    a + 1
+    b + 1
+    a + b}
+    return 0
+}
+
+func main(): Int64 {
+    return test()
+}

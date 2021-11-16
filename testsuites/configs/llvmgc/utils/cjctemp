@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+collector_id=""
+result_file_id=""
+compilation_id=""
+SRC_FILE=""
+
+compilation_options()
+{
+    para_list=($@)
+    number=0
+    for i in $(seq 0 $[${#para_list[@]}-1])
+    do
+        if [[ ${para_list[$i]} == "-c" ]]
+        then
+            compilation_id=${para_list[$i]}
+        elif [[ ${para_list[$i]} == "-o" ]]
+        then
+            result_file_id=${para_list[$i]}" "${para_list[$i+1]}
+            break
+        elif [[ ${para_list[$i]##*.} == "cj" && $number == 0 ]]
+        then
+            SRC_FILE=${para_list[$i]}
+            let number++
+        else
+            collector_id=$collector_id" "${para_list[$i]}
+        fi
+    done
+}
+
+compilation_options "$@"
+SRC_FILE_PREFIX=${SRC_FILE%.*}
+
+#FE
+cjc -frontend $collector_id $SRC_FILE -o ${SRC_FILE_PREFIX}.bc
+#[ $? -ne 0 ] && echo "cjc error" && exit 1
+
+#BE
+opt -O0 -cangjie-pipeline <${SRC_FILE_PREFIX}.bc> ${SRC_FILE_PREFIX}.opt.bc
+#[ $? -ne 0 ] && echo "opt error" && exit 1
+
+llc ${SRC_FILE_PREFIX}.opt.bc
+#[ $? -ne 0 ] && echo "llc error" && exit 1
+
+#LINK
+if [[ -n ${result_file_id} ]]
+then
+    clang ${compilation_id} ${SRC_FILE_PREFIX}.opt.s /root/CangjieLang_Build/output/linux-x86_64-release/modules/linux_x86_64_llvm/core/core.o -lcangjie-runtime -lunwind-x86_64 -ldl -lpthread -lcangjie-basert --rtlib=compiler-rt -lsecurec -lm -lstdc++ -ldl -l gcc_s -lpthread ${result_file_id}
+else
+    clang ${compilation_id} ${SRC_FILE_PREFIX}.opt.s /root/CangjieLang_Build/output/linux-x86_64-release/modules/linux_x86_64_llvm/core/core.o -lcangjie-runtime -lunwind-x86_64 -ldl -lpthread -lcangjie-basert --rtlib=compiler-rt -lsecurec -lm -lstdc++ -ldl -l gcc_s -lpthread
+fi
+#[ $? -ne 0 ] && echo "clang error" && exit 1

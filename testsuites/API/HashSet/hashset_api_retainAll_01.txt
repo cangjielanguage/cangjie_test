@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_api_retainAll_01.cj
+ * -@TestCaseName: hashset_api_retainAll_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: retainAll(elements: Collection<T>): Unit,入参 Collection<T>子类型中存在与原hashset中相同的值
+ * -#step1: retainAll(elements: Collection<T>): Unit,入参 Collection<T>子类型中存在与原hashset中相同的值 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: retainAll(elements: Collection<T>): Unit
+ */

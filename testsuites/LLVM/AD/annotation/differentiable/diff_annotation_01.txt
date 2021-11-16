@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: diff_annotation_01.cj
+ * -@TestCaseName: diff_annotation_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-01
+ * -@RequirementName: 微标注@differentiable的语法，语义
+ * -@Condition: no
+ * -@Brief: 可微注解标注在string前
+ * -#step1: 定义类型为String的变量
+ * -#step2: 在变量前添加可微标注@differentiable
+ * -@Expect: 编译失败
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: String类型为不可微类型
+ */

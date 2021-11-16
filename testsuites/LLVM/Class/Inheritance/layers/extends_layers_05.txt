@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: extends_layers_05.cj
+ * -@TestCaseName: extends_layers_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 子类继承父类，父类继承爷爷类，重载类中函数
+ * -#step1: 定义Base3基类，定义无参函数foo
+ * -#step2: 定义Base2基类，继承Base3，添加一个参数重载函数foo
+ * -#step3: 定义Data子类，继承Base2，访问foo(x)，将函数结果返回值赋值给变量
+ * -#step4: 实例化子类，访问子类中的变量结果
+ * -@Expect: 变量值为父类中重载后函数的返回值
+ * -@Priority: High
+ */

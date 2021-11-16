@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_var_10.cj
+ * -@TestCaseName: string_type_var_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型作为record的label使用
+ * -#step1: 定义一个record，record中定义一个类型为String的label
+ * -#step2: 访问record中的label，打印结果，ASSERT对比打印信息
+ * -@Expect: 执行成功，打印期望结果
+ * -@Priority: High
+ */

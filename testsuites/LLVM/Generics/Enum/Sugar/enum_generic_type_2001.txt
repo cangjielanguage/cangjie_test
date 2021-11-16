@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_type_2001.chr
+ * -@TestCaseName: enum_generic_type_2001.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 泛型interface的成员变量为泛型enum<T>无参类型
+ * -#step1: 定义泛型enum<T>其中constructor有参，泛型interface函数入参及返回值声明为泛型enum<T>有参类型
+ * -#step2: 声明一个类实现泛型interface，重新interface中的成员函数
+ * -#step3: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

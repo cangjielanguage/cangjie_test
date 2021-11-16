@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: c_ffi_00811
+ * -@TestCaseName: c_ffi_jni.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1086-01 AR-SR-Lang-1026-31
+ * -@RequirementName: unsafe语法支持
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: unsafe关键字修饰表达式嵌套
+ * -@Expect: Compile fail.
+ * -@Priority: level0
+ */

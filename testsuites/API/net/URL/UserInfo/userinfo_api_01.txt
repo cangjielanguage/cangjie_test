@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: userinfo_api_01.cj
+ * -@TestCaseName: userinfo_api_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class UserInfo
+ * -@Condition: no
+ * -@Brief: x的构造器(username: String),为空字符串
+ * -#step1: x的构造器(username: String),为空字符串 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/UserInfo
+ * -@SpecDetail: UserInfo (username: String)
+ */

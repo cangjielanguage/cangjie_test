@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Relate_030211.cj
+ * -@TestCaseName: Relate_030211.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. <(小于操作符)左右操作数分别为变量且赋值为(float32)10.0和(布尔类型)true，且左操作数小于右操作数时返回0；
+ *  #2.
+ * -@Expect: Compile/execute pass, return 1, 报错提示：type check of binary expression fails.
+ * -@Priority: level0
+ */

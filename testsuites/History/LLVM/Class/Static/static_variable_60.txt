@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: static_variable_60.cj
+ * -@TestCaseName: static_variable_60.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: interface中定义静态常量，子类实现中直接调用该常量，编译报错
+ * -#step1: interface接口中定义静态常量a，子类实现中直接调用该常量
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

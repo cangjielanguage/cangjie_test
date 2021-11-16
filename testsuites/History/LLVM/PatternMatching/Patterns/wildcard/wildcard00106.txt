@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_00106
+ * -@TestCaseName: wildcard00106.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Try to match list.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

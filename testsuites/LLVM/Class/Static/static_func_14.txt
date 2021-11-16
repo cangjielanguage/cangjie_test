@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: static_func_14.cj
+ * -@TestCaseName: static_func_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: interface中定义无修饰符的抽象成员函数
+ * -#step1: 接口中定义抽象函数foo，子类实现中重写foo函数
+ * -@Expect: 执行成功,返回期望结果
+ * -@Priority: High
+ */

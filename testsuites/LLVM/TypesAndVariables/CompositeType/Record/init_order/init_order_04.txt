@@ -1,0 +1,14 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/init_order/init_order_04.cj
+*- @TestCaseName: 变量声明与构造函数的执行顺序
+*- @TestCaseType: 功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon: 无
+*- @Brief:先是构造函数进行初始化，后是成员变量声明且没有初始化，构造函数后执行
+* -#定义类Data，定义构造函数，且完成初始化
+* -#声明成员变量，且没有初始化
+* -#创建Data的实例，获取成员的变量的值
+*- @Expect: 构造函数后执行，成员变量的值正确
+*- @Priority: level1 
+*/

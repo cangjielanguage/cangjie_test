@@ -1,0 +1,16 @@
+/*
+* -@TestCaseID: list014_get_06
+* -@TestCaseName: list014_get_06
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-Lang-1011-04
+* -@RequirementName: lang.List库
+* -@Condition: no
+* -@Brief: get the 3 position member of a 3-size List
+* -#step1: 
+* -@Expect: Execute fail.
+* -@Priority: level0
+* -@SpecVersion: spec 0.22.3
+* -@SpecChapter: List
+* -@SpecDetail: 
+* -@catalog: 
+*/

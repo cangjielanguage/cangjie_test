@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: Char_Expressions_StatementExpressions_ConditionalExpressions_WhileExpression_00317
+ * -@TestCaseName: while00317.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define super expression inside while expression.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 循环表达式### while表达式--1
+ * -@catalog:# 表达式## 循环表达式### while表达式--3
+ * -@catalog:# 表达式## 循环表达式### while表达式--2
+ */

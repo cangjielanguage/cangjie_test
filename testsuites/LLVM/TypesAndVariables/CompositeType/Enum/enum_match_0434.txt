@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_def_0206.cj
+ * -@TestCaseName: enum_def_0206.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 匹配的enum的类型：积类型的和类型
+ * -#step1: 定义enum为积类型的和类型
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

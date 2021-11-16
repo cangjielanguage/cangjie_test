@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expression_Flow_support_func_10034
+ * -@TestCaseName: flow_func_10034.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-20
+ * -@RequirementName: Flow expression
+ * -@Conditon: charc, clang, maple test framework and python3.
+ * -@Brief: Use import top-level generic func for flow expr.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

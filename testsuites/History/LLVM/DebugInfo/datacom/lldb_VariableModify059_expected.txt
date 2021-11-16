@@ -1,0 +1,8 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 7,024_debug_variable.cj:7
+r,r,-> 7
+cj_set,cj_set var_int8 = 2,2
+rerun,r,-> 7
+n,n,-> 10
+cj_plocals,cj_plocals,var_int8 = 1
+cj_plocals,cj_plocals,f_int8 = 13

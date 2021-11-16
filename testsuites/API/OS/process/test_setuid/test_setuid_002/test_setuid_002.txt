@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: test_setuid_002
+ * -@TestCaseName: test_setuid_002
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-05
+ * -@RequirementName: 提供进程相关函数
+ * -@Conditon: no
+ * -@Brief: 验证setuid()的功能
+ * -#step1: 仓颉的setuid()参数非法，返回值为-1
+ * -#step2: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

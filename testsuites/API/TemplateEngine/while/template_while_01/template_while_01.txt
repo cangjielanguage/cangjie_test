@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_while_01.cj
+ * -@TestCaseName: template_while_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: 合法-普通while
+ * -#step1: 合法-普通while
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: 合法-普通while
+ */

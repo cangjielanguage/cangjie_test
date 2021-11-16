@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_type_append_02.cj
+ * -@TestCaseName: char_type_append_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char作为类型被append，重载char类型的append操作符 +
+ * -#step1: 定义一个trait 内部重载操作符函数 '+'，append char实现trait中的func +
+ * -#step2: 定义两个字符类型c1、c2，利用重载操作符 '+' 执行
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

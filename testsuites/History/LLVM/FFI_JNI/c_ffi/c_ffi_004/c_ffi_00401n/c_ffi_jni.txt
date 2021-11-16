@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: FFI_C_JNI_00401n
+ * -@TestCaseName: c_ffi_jni.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-28
+ * -@RequirementName: foreign关键字
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: foreign关键字 修饰函数 包外访问
+ * -@Expect: Compile fail
+ * -@Priority: level0
+ */

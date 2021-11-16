@@ -1,0 +1,21 @@
+// EXEC: %compiler %cmp_opt %n.cj -o %output
+// EXEC: %run %run_opt %output %run_args
+
+class Test {
+    static var opt: Option<String> = Some<String>("option")
+}
+
+func run(): Int64 {
+    var str: String = match (Test.opt) {
+        case Some(x) => x
+        case $None => ""
+    }
+    if(str == "option"){
+        return 0
+    }
+    return 1
+}
+
+func main(): Int64 {
+    return run()
+}

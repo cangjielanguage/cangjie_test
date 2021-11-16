@@ -1,0 +1,21 @@
+2021-11-08 02:40:51 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20043.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:40:51 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20043_cj_cangjie2llvmgc_test_cfg_1636338479
+2021-11-08 02:40:51 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_20043.cj -o TryWithResources_Other_20043.out
+2021-11-08 02:40:51 DEBUG return code: 1
+2021-11-08 02:40:51 DEBUG stdout : 
+
+2021-11-08 02:40:51 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20043_cj_cangjie2llvmgc_test_cfg_1636338479/TryWithResources_Other_20043.cj:12:28: [31merror[0m: unsupported type for this the try block of try expression; the type must be Bool
+@	   12 |     while (try(a : A = A()){true}){
+@	      |                            [32m^[0m
+@	 [31merror[0m: unsupported type for this the try block of try expression; the type must be Bool
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20043_cj_cangjie2llvmgc_test_cfg_1636338479/TryWithResources_Other_20043.cj:12:12: [31merror[0m: expected an expression of type 'Bool', but got 'Unit'
+@	   12 |     while (try(a : A = A()){true}){
+@	      |            [32m^[0m
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	3 errors and 2 warnings generated
+
+2021-11-08 02:40:51 DEBUG Run time: 0.37, remain time: 3e+02
+2021-11-08 02:40:51 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20043.cj_cangjie2llvmgc_test_cfg.log

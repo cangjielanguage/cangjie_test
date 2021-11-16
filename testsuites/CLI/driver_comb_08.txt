@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_comb_08.cj
+ * -@TestCaseName: driver_comb_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: 组合前端选项-emit-ir和全局选项-enable-timer
+ * -#step1: cjc -frontend xx源文件 -enable-timer
+ * -@Expect: 生成.bc文件，并显示编译时间
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_dup_method_13.cj
+ * -@TestCaseName: pkgs_dup_method_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 两个包以类型导入/通配符导入方式导入同名同参不同返回类型（父子类）,使用以不同名字作用域级别访问,执行成功
+ * -#step1: 两个包中含同名external泛型函数f<T>，源文件定义父类Base，子类Data
+ * -#step2: 以类型导入/通配符导入的方式导入,以不同名字作用域级别访问泛型函数
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

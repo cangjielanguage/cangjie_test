@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Member_00104
+ * -@TestCaseName: interface_member_00104.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define generics interface with option member variable with var(not supported yet).
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

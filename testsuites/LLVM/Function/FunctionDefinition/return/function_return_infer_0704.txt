@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: function_return_infer_0704.cj
+ * -@TestCaseName: function_return_infer_0704.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-16
+ * -@RequirementName: return表达式
+ * -@Condition: no
+ * -@Brief: 函数体最后序列是if表达式
+ * -#step1: 函数体最后序列是if表达式
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/函数定义/函数声明
+ * -@SpecDetail: 函数体是一个块，而块又是表达式和声明的序列，我们将序列的后一项的类型记为T0
+ */

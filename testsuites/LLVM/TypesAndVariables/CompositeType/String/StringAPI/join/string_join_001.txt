@@ -1,0 +1,13 @@
+  /*
+ * -@TestCaseID: string_join_001.cj
+ * -@TestCaseName: string_join_001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: @Brief: 测试string的 join(value: Array<String>, delimiter: String):String方法，执行正确
+ * -#step1: 字符串数组value为空，定义不同形式的delimiter，调用该变量的join方法
+ * -#step2: delimiter分别取空，字母，不可打印字符，unicode，汉字
+ * -@Expect: 返回都为空
+ * -@Priority: High
+ */

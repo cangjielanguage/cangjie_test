@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socket_api_connect_02.cj
+ * -@TestCaseName: socket_api_connect_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class Socket
+ * -@Condition: no
+ * -@Brief: socket-参数正常,不关闭重复connect()
+ * -#step1: socket-参数正常,不关闭重复connect()
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: socket-init(net: SocketNet, address: String, port: UInt16)
+ */

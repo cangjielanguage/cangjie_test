@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Function_Constraints_00107
+ * -@TestCaseName: constraints00107.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-01
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define generics constraints with '<'.
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

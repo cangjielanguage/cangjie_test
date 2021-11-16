@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_label_02n.cj
+ * -@TestCaseName: record_label_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中对let重新赋值
+ * -#step1: 在record体中声明一个常量label，并且赋值
+ * -#step2: 构造函数中，为label重新赋值
+ * -@Expect: 编译失败，不能为let常量重新赋值
+ * -@Priority: High
+ */

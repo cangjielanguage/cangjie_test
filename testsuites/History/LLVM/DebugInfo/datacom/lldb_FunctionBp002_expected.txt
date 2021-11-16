@@ -1,0 +1,6 @@
+lldb,lldb 014_debug_func_bp,014_debug_func_bp
+b,b funcbp011,Breakpoint 1
+r,r,-> 126
+c,c,-> 131
+bdelete,breakpoint delete 1,1 breakpoints deleted
+rerun,r,exited

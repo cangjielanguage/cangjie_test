@@ -1,0 +1,24 @@
+2021-10-23 06:22:44 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/DFX/fuzz_typechecker_02.cj_cangjie2llvmgc_test_cfg.log
+2021-10-23 06:22:44 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_typechecker_02_cj_cangjie2llvmgc_test_cfg_1634968661
+2021-10-23 06:22:44 DEBUG execute cmd ===>>>: cjc -ulimit-error fuzz_typechecker_02.cj -o fuzz_typechecker_02.out
+2021-10-23 06:22:44 DEBUG return code: 1
+2021-10-23 06:22:44 DEBUG stdout : 
+
+2021-10-23 06:22:44 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_typechecker_02_cj_cangjie2llvmgc_test_cfg_1634968661/fuzz_typechecker_02.cj:6:5: [31merror[0m: Types Int64 and Int32 of the two branches of this 'if' expression mismatch.
+@	    6 |     if (false) {
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_typechecker_02_cj_cangjie2llvmgc_test_cfg_1634968661/fuzz_typechecker_02.cj:6:5: [33mnote[0m: Traces:
+@	The smallest common supertype of Int64 and Int32 is 'Any', please explicitly annotate the type.
+@	The types Interface-Hashable and Interface-ToString do not have a subtype relation.
+@	The smallest common supertype of Interface-SaturatingOp<Int64> and Int32 is 'Any', please explicitly annotate the type.
+@	The smallest common supertype of Interface-ThrowingOp<Int64> and Int32 is 'Any', please explicitly annotate the type.
+@	The smallest common supertype of Interface-WrappingOp<Int64> and Int32 is 'Any', please explicitly annotate the type.
+@	
+@	    6 |     if (false) {
+@	      |     [32m^[0m
+@	1 error generated
+
+2021-10-23 06:22:44 DEBUG Run time: 0.36, remain time: 3e+02
+2021-10-23 06:22:44 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/DFX/fuzz_typechecker_02.cj_cangjie2llvmgc_test_cfg.log

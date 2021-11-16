@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: client_get_0403.cj
+ * -@TestCaseName: client_get_0403.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-01
+ * -@RequirementName: 提供 class Client
+ * -@Condition: no
+ * -@Brief: func get(url: String): Result<Response>,返回码为307
+ * -#step1: func get(url: String): Result<Response>,返回码为307 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Client
+ * -@SpecDetail: func get(url: String): Result<Response>
+ */

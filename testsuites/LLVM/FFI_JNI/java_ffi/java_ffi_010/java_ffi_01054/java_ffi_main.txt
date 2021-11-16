@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_01054
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-08
+ * -@RequirementName: Java数组映射
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Java Array java侧调用cangjie类包含 ffi.java.JArray<T> 
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+ 

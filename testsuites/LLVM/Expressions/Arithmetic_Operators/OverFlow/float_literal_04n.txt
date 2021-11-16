@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: float_literal_04n.cj
+ * -@TestCaseName: float_literal_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: 浮点型字面值溢出
+ * -#step1: 浮点型字面值溢出数值范围
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

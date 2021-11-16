@@ -1,0 +1,13 @@
+2021-11-08 02:43:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_rules_0501.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:43:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_0501_cj_cangjie2llvmgc_test_cfg_1636338480
+2021-11-08 02:43:12 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error diff_rules_0501.cj -o diff_rules_0501.out
+2021-11-08 02:43:13 DEBUG return code: 1
+2021-11-08 02:43:13 DEBUG stdout : 
+
+2021-11-08 02:43:13 DEBUG stderr : 
+@	[31merror[0m: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_0501_cj_cangjie2llvmgc_test_cfg_1636338480/diff_rules_0501.cj:6:13: error: match expression is not supported in differentiable function
+@	[31merror[0m: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_0501_cj_cangjie2llvmgc_test_cfg_1636338480/diff_rules_0501.cj:5:41: error: expect a non-empty body
+
+2021-11-08 02:43:13 DEBUG Run time: 0.38, remain time: 3e+02
+2021-11-08 02:43:13 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_rules_0501.cj_cangjie2llvmgc_test_cfg.log

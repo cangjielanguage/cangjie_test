@@ -1,0 +1,34 @@
+package pkgb
+import pkga.*
+
+
+external trait Color<T> {
+    func addcolor(a: This,b:T):T
+}
+
+append<V1,V2> Fruit<V1> with Color<V2> {
+    func addcolor(a: Fruit<V1>,b:V2): V2 {
+        return b
+    }
+}
+
+external func boo():Int64{
+    var b0: Int64 = 2
+    var b: Fruit<Int64> = Fruit<Int64>(b0)
+    var v1: Int64 = 2
+    var v2: Int64 = 2
+//    if (pkga.a.addcolor(v2) != 2){
+//        return 1
+//    }
+    if (addcolor(pkga.a,v2) != 2){
+        return 1
+    }
+    if (addcolor(b,v2) != 2){
+        return 1
+    }
+//    if (b.addcolor(v2) != 2){
+//        return 1
+//    }
+    return 0
+}
+

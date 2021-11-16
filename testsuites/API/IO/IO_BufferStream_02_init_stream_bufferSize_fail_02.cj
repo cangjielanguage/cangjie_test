@@ -1,0 +1,18 @@
+// DEPENDENCE: caserunner.cj
+// EXEC: %compiler %stdx_cmp_opt %f caserunner.cj -o %output
+// EXEC: %stdx_run %stdx_run_opt %output %stdx_run_args | compare %f
+// ASSERT: scan case pass
+from std import io.*
+
+func main(): Int64 {
+    try
+    {
+        BufferStream(FileStream("BS_123"),-1)
+        ()
+    }
+    catch(e:IllegalArgumentException)
+    {
+        print("case pass")
+    }
+    return 0
+}

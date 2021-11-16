@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: spec_types_4.4.1.3VariablePatterns_01.cj
+ * -@TestCaseName: spec_types_4.4.1.3VariablePatterns_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: 变量模式举例
+ * -#step1: 变量模式举例
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.6
+ * -@SpecChapter: 表达式/模式匹配表达式/模式/类型模式
+ * -@SpecDetail:
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 变量模式--6
+ */

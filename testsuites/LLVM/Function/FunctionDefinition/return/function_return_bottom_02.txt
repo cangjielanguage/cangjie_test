@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: function_return_02.cj
+ * -@TestCaseName: function_return_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-16
+ * -@RequirementName: return表达式
+ * -@Condition: no
+ * -@Brief: while中是break，类型为bottom，是bool子集，此处语法不报错；但是break需要在while体中，应语法报错
+ * -#step1: while中是break，类型为bottom，是bool子集
+ * -@Expect: 此处语法不报错；但是break需要在while体中，应语法报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/函数定义/函数的返回类型
+ * -@SpecDetail: 函数的返回类型有以下情况：任何类型
+ */

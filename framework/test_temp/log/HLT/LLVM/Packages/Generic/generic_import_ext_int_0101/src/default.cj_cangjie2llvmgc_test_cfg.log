@@ -1,0 +1,19 @@
+2021-11-08 02:02:31 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/generic_import_ext_int_0101/src/default.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:02:31 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/Generic/generic_import_ext_int_0101/src/default_cj_cangjie2llvmgc_test_cfg_1636335529
+2021-11-08 02:02:31 DEBUG execute cmd ===>>>: javac InteropTest.java
+2021-11-08 02:02:31 DEBUG return code: 0
+2021-11-08 02:02:31 DEBUG stdout : 
+
+2021-11-08 02:02:31 DEBUG stderr : 
+
+2021-11-08 02:02:31 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 02:02:31 DEBUG execute cmd ===>>>: %class2panda InteropTest.class InteropTest.panda
+2021-11-08 02:02:31 DEBUG return code: 127
+2021-11-08 02:02:31 DEBUG stdout : 
+
+2021-11-08 02:02:31 DEBUG stderr : 
+@	/bin/sh: 1: %class2panda: not found
+
+2021-11-08 02:02:31 DEBUG Run time: 0.022, remain time: 3e+02
+2021-11-08 02:02:31 ERROR Failed, return code 127 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/generic_import_ext_int_0101/src/default.cj_cangjie2llvmgc_test_cfg.log

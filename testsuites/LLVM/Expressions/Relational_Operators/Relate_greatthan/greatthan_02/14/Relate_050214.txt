@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Relate_050214.cj
+ * -@TestCaseName: Relate_050214.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. >(大于操作符)左右操作数分别为变量且赋值为特殊字符，且左操作数大于右操作数时返回1；
+ *  #2.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

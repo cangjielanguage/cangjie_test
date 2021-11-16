@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: adjoint_init_26.cj
+ * -@TestCaseName: adjoint_init_26.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-14
+ * -@RequirementName: AD支持自定义可微类型的可微init的adjoint函数
+ * -@Condition: no
+ * -@Brief: record不可微，init不可微，编译报错
+ * -@step1: 定义record不可微，init不可微
+ * -@Expect: 运行时抛出异常
+ * -@catelog: # 自动微分## 可微函数### 非顶层可微函数#### Record构造函数和成员方法--2
+ * -@Priority: level0
+ */

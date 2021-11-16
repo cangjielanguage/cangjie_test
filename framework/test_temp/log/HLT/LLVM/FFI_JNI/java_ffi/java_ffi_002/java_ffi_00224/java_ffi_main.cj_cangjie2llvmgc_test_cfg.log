@@ -1,0 +1,15 @@
+2021-11-08 02:08:04 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_002/java_ffi_00224/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:08:04 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_002/java_ffi_00224/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335533
+2021-11-08 02:08:04 DEBUG execute cmd ===>>>: clang -shared -fPIC hello.cpp -o libhello.so
+2021-11-08 02:08:04 DEBUG return code: 1
+2021-11-08 02:08:04 DEBUG stdout : 
+
+2021-11-08 02:08:04 DEBUG stderr : 
+@	hello.cpp:2:10: fatal error: 'jni.h' file not found
+@	#include <jni.h>
+@	         ^~~~~~~
+@	1 error generated.
+
+2021-11-08 02:08:04 DEBUG Run time: 0.057, remain time: 3e+02
+2021-11-08 02:08:04 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_002/java_ffi_00224/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log

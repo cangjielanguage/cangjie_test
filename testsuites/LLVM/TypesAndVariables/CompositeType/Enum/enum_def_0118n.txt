@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_def_0118n.cj
+ * -@TestCaseName: enum_def_0118n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试constructor参数声明中使用空格分割
+ * -#step1: 声明两个含有两个参数的constructor，且在参数中使用空格分割
+ * -#step2: 编译检查编译报错信息
+ * -@Expect: 在constructor参数声明中使用空格分割错误，编译器报错
+ * -@Priority: High
+ */

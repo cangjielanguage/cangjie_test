@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: increment_14n.cj
+ * -@TestCaseName: increment_14n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: 测试bool/char/String/unit/List/Set/Map/Range类型使用自增减表达式，编译报错
+ * -#step1: 分别定义bool/char/String/unit/List/Set/Map/Range类型的变量
+ * -#step2: 然后变量分别++
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

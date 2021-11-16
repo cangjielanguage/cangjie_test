@@ -1,0 +1,69 @@
+2021-11-08 02:07:32 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:07:32 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532
+2021-11-08 02:07:32 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./a/a.cj -o ./a/a..out
+2021-11-08 02:07:33 DEBUG return code: 0
+2021-11-08 02:07:33 DEBUG stdout : 
+
+2021-11-08 02:07:33 DEBUG stderr : 
+
+2021-11-08 02:07:33 DEBUG Run time: 0.51, remain time: 3e+02
+2021-11-08 02:07:33 DEBUG execute cmd ===>>>: ls ./a/
+2021-11-08 02:07:33 DEBUG return code: 0
+2021-11-08 02:07:33 DEBUG stdout : 
++	a.cj
++	a.cjo
++	a..out
+
+2021-11-08 02:07:33 DEBUG stderr : 
+
+2021-11-08 02:07:33 DEBUG Run time: 0.036, remain time: 3e+02
+2021-11-08 02:07:33 DEBUG execute cmd ===>>>: cjc -ulimit-error JsRen_import_var_12.cj -import-config importcfg -o JsRen_import_var_12..out
+2021-11-08 02:07:33 DEBUG return code: 1
+2021-11-08 02:07:33 DEBUG stdout : 
+
+2021-11-08 02:07:33 DEBUG stderr : 
+@	 [33mwarning[0m: import cfg will be deprecated, please use implictly import by environment variable CANGJIE_PATH.
+@	  e.g.: from module1 import package1.*
+@	        from module2 import package2.*
+@	        absolute path of package1.cjo is /path1/module/package1.cjo
+@	        absolute path of package2.cjo is /path2/module/package2.cjo
+@	        'export CANGJIE_PATH=/path1:/path2' on linux or
+@	        'CANGJIE_PATH=/path1;/path2' on windows
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: invalid binary operator '==' on type 'Invalid' and 'Char'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: undeclared identifier 'c'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: invalid binary operator '==' on type 'Invalid' and 'Char'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12_cj_cangjie2llvmgc_test_cfg_1636335532/JsRen_import_var_12.cj:11:7: [31merror[0m: expected an expression of type 'Bool', but got 'Invalid'
+@	   11 |   if( c =='w'){
+@	      |       [32m^[0m
+@	11 errors and 1 warning generated
+
+2021-11-08 02:07:33 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:07:33 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/06_variable_import/JsRen_import_variable/JsRen_import_var_12/JsRen_import_var_12.cj_cangjie2llvmgc_test_cfg.log

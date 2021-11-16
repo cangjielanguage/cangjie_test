@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: rrecord_constructor_def_02n.cj
+ * -@TestCaseName: record_constructor_def_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中使用默认的构造器
+ * -#step1: 在record体中定义两个label
+ * -#step2: 使用默认构造器实例化record，并调用label
+ * -@Expect: 在record体中使用默认的构造器，执行成功，返回期望结果
+ * -@Priority: High
+ */

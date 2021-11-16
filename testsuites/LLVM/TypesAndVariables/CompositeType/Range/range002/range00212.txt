@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Range_00212
+ * -@TestCaseName: range00212.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 1...2:-1作为数组下标时，会截取一个空数组。
+ * -@Expect: 运行时错误，暂不支持.
+ * -@Priority: level0
+ */

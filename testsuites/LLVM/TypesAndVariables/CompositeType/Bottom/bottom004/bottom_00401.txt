@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Bottom_00401
+ * -@TestCaseName: bottom_00401.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-04_R2
+ * -@RequirementName: Bottom Type
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Return expression is bottom type.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: property_modifier_var01.cj
+ * -@TestCaseName: property_modifier_var01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: 类中支持属性
+ * -@Condition: no
+ * -@Brief: override单独定义 getter（对应取值）的实现
+ * -#step1: override单独定义 getter（对应取值）的实现
+  * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 属性/属性的修饰符
+ * -@SpecDetail: 使用 var 声明的属性需要允许单独定义 getter（对应取值）或 setter（对应赋值） 的实现
+ */

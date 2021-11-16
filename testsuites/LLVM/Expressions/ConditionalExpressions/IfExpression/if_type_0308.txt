@@ -1,0 +1,18 @@
+/*
+ * -@TestCaseID: if_type_0308.cj
+ * -@TestCaseName: if_type_0308.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Condition: no
+ * -@Brief: 如果T 含有Any，其中T和T1是Char -> Unit，T2是((Any)->Unit):Unit,执行成功
+ * -#step1: 如果T 含有Any，其中T和T1是Char -> Unit，T2是((Any)->Unit):Unit,执行成功
+ * -@Expect: 编译执行成功，返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.5
+ * -@SpecChapter:
+ * -@SpecDetail:
+ * -@catalog:# 表达式## 条件表达式--10
+ * -@catalog:# 表达式## 条件表达式--11
+ * -@catalog:# 表达式## 条件表达式--13
+ */

@@ -1,0 +1,25 @@
+2021-11-08 02:06:02 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMem_JsMod_modify_001/JsMem_JsMod_modify_001.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:06:02 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMem_JsMod_modify_001/JsMem_JsMod_modify_001_cj_cangjie2llvmgc_test_cfg_1636335532
+2021-11-08 02:06:02 DEBUG execute cmd ===>>>: cjc -ulimit-error JsMem_JsMod_modify_001.cj -o JsMem_JsMod_modify_001..out 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// JsMem_JsMod_modify_001.cj
+2021-11-08 02:06:02 DEBUG return code: 1
+2021-11-08 02:06:02 DEBUG stdout : 
++	compare.py input:
++		/usr/lib/x86_64-linux-gnu/crt1.o: In function `_start':
++		(.text+0x20): undefined reference to `main'
++		[31merror[0m: /usr/bin/ld: command failed (use -v to see invocation)
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex-not, pattern: core dumped , result: True, matched at output line: 0"
++	b"It's a assert, flag: regex-not, pattern: stack trace , result: True, matched at output line: 1"
++	b'flag: regex, pattern: \\:6\\:.*\\:.*xxx , result: False, matched at output line: 1'
++	Match End!, Compare Failed
++	b'flag: regex, pattern: \\:10\\:.*\\:.*xxx , result: False, matched at output line: 0'
++	Match End!, Compare Failed
+
+2021-11-08 02:06:02 DEBUG stderr : 
+
+2021-11-08 02:06:02 DEBUG Run time: 0.57, remain time: 3e+02
+2021-11-08 02:06:02 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMem_JsMod_modify_001/JsMem_JsMod_modify_001.cj_cangjie2llvmgc_test_cfg.log

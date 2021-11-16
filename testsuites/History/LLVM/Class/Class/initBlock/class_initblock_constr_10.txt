@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_initblock_constr_10.cj
+ * -@TestCaseName: class_initblock_constr_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试init block中定义成员a、b、c仅初始化b、c，实例化时调用部分参数的构造器且不指定形参
+ * -#step1: 定义一个类Data，类中init block中定义成员a、b、c，仅赋予变量b、c初始值
+ * -#step2: 调用部分参数的构造器，传入两个参数，实例化类
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

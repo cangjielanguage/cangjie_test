@@ -1,0 +1,10 @@
+// EXEC: %compiler %cmp_opt %f 2>&1 | compare %f
+// ASSERT: regex no matching function declaration for function call 'test'
+func test(a:Int64,b:Int64,c:Int64){return 0}
+
+func main(): Int64 {
+    var c = 1
+    return test(0,0,c=0)
+}
+// ASSERT: regex-not core dumped
+// ASSERT: regex-not stack trace

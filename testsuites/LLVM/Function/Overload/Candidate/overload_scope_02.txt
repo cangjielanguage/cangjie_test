@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: overload_scope_02.cj
+ * -@TestCaseName: overload_scope_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 测试不同作用域级别的函数重载
+ * -#step1: 测试不同作用域之间的函数重载
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 10.1 函数重载
+ * -@SpecDetail: 除以上提到的类型作用域级别之外，其它的情况根据作用域级别章节中的规则，判断作用域级别
+ */

@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Test_Object_define_005
+ * -@TestCaseName: Test_Object_define_005.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-02_R2
+ * -@RequirementName: Language implementation update
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Object类定义错误
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ */

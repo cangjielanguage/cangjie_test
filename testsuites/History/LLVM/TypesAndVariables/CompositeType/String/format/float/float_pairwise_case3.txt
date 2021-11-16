@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: float_pairwise_case3
+* -@TestCaseName: float_pairwise_case3.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-2027-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证format()；浮点数,"start"+c.format("+18.10")
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

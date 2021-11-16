@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: request_api_0108.cj
+ * -@TestCaseName: request_api_0108.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Request
+ * -@Condition: no
+ * -@Brief: Request(method: RequestMethod, urlStr: String),测 CONNECT 请求
+ * -#step1: Request(method: RequestMethod, urlStr: String),测 CONNECT 请求 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Request
+ * -@SpecDetail: Request(method: RequestMethod, urlStr: String)
+ */

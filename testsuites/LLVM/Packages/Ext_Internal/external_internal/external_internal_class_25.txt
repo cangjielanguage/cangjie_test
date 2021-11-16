@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: external_internal_class_25.cj
+ * -@TestCaseName: external_internal_class_25.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 本包内，external声明类A，external声明自定义类Aoo，A的成员变量a类型是Aoo且用protected修饰修饰
+ * -#step1: 本包内，external声明类A，external声明自定义类Aoo，A的成员变量a类型是Aoo且用protected修饰修饰
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

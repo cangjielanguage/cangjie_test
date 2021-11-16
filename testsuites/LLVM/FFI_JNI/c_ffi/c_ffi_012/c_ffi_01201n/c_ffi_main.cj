@@ -1,0 +1,16 @@
+// DEPENDENCE: pkg cfg.json cfg-main.json c_ffi.c
+// EXEC: %clang %clang_opt c_ffi.c -o libc_ffi.so
+// EXEC: sed -i "s!cangjieCFFI_path!%cstring_cjo!g" cfg.json
+// EXEC: sed -i "s!cangjieCFFI_path!%cstring_cjo!g" cfg-main.json
+// EXEC: %compiler %cmp_opt %pkg_compile pkg/pkg.cj -o libpkg.so
+// EXEC: %compiler %cmp_opt %f %pkg_link -o %output 2>&1 | compare %f
+
+import pkg // EXPECTED: regex it doesn't support importing package by package name
+
+unsafe func main():Int64 {
+    var result: Int8 = newtestfunc(1,2)
+    if (result == 3){
+        print("pass\n")
+    }
+    return 0
+}

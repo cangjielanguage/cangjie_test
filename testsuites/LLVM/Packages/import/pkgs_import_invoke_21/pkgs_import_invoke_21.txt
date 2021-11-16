@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_import_invoke_21a.cj
+ * -@TestCaseName: pkgs_import_invoke_21a.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 在同一个package，不同源码文件中，调用其他源码文件的成员（无import）
+ * -#step1: 在同一个package，不同源码文件中，调用其他源码文件的成员（无import）
+ * -#step2: 检查是否能成功调用
+ * -@Expect: 成功调用
+ * -@Priority: High
+ */

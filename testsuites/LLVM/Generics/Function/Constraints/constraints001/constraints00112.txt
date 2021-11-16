@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Function_Constraints_00111
+ * -@TestCaseName: constraints00111.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-01
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define one generics constraints for multi type variables.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

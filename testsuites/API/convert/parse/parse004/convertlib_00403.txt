@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: convertlib_00403.cj
+ * -@TestCaseName: convertlib_00403.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-01
+ * -@RequirementName: 提供String parse 函数
+ * -@Condition: no
+ * -@Brief: 入参为空，编译报错
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

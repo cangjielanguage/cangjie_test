@@ -1,0 +1,18 @@
+2021-10-26 02:10:21 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/format/Float/float_format_003.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:10:21 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/format/Float/float_format_003_cj_cangjie2llvmgc_test_cfg_1635213979
+2021-10-26 02:10:21 DEBUG execute cmd ===>>>: cjc -backend llvm float_format_003.cj -o float_format_003.out
+2021-10-26 02:10:22 DEBUG return code: 0
+2021-10-26 02:10:22 DEBUG stdout : 
+
+2021-10-26 02:10:22 DEBUG stderr : 
+
+2021-10-26 02:10:22 DEBUG Run time: 0.58, remain time: 3e+02
+2021-10-26 02:10:22 DEBUG execute cmd ===>>>:   float_format_003.out 
+2021-10-26 02:10:22 DEBUG return code: 1
+2021-10-26 02:10:22 DEBUG stdout : 
++	case pass
+2021-10-26 02:10:22 DEBUG stderr : 
+
+2021-10-26 02:10:22 DEBUG Run time: 0.043, remain time: 3e+02
+2021-10-26 02:10:22 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/format/Float/float_format_003.cj_cangjie2llvmgc_test_cfg.log

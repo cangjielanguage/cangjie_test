@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: string_api_toUtf32Array_02.cj
+ * -@TestCaseName: string_api_toUtf32Array_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-9
+ * -@RequirementName: String 标准库新增API
+ * -@Condition: no
+ * -@Brief: 测试String的api：func toUtf32Array(): Array<UInt32>输入中文
+ * -#step1: 测试String的api：func toUtf32Array(): Array<UInt32>输入中文
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: core_lib.md
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

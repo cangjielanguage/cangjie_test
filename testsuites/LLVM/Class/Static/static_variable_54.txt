@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_variable_54.cj
+ * -@TestCaseName: static_variable_54.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: record构造函数中直接调用record中的静态变量
+ * -#step1: record中定义一个静态成员变量a
+ * -#step2: record构造函数中,直接调用静态变量a
+ * -@Expect: 执行成功,返回期望结果
+ * -@Priority: High
+ */

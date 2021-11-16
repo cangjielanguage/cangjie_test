@@ -1,0 +1,9 @@
+lldb,lldb pkgs001,pkgs001
+b,b 8,no locations
+b,b 9,no locations
+b,b 32,pkgs001.cj:32
+r,r,-> 32
+cj_pglobals,cj_pglobals,test = 127
+cj_pglobals,cj_pglobals,test1 = 1
+cj_plocals,cj_plocals,res11 = 127
+cj_plocals,cj_plocals,res33 = 10

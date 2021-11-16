@@ -1,0 +1,6 @@
+lldb,lldb 019_debug_expressions,019_debug_expressions
+b,b 26,019_debug_expressions.cj:26
+b,b 27,019_debug_expressions.cj:27
+r,r,-> 26
+s,s,-> 27
+finish,finish,stopped

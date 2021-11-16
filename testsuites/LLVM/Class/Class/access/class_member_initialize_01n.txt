@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_member_initialize_01n.cj
+ * -@TestCaseName: class_member_initialize_01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 成员变量初始化检查
+ * -@Condition: no
+ * -@Brief: class构造函数的if表达式中初始化成员变量，编译报错
+ * -#step1: 在class中定义成员变量a，在构造函数if表达式中初始化成员变量
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

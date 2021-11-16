@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Test_Class_cover_021
+* -@TestCaseName: Test_Class_cover_021.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-2003-09
+* -@RequirementName: 对访问修饰符的规则检查
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 子类(external/internal)继承父类(internal)
+* -@Expect: 执行成功
+* -@Priority: level0
+*/

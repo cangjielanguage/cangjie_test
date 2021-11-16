@@ -1,0 +1,5 @@
+#{
+  doSomething {
+    #print("hello")
+  }
+}

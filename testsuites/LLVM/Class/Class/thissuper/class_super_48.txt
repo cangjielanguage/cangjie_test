@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_super_48.cj
+ * -@TestCaseName: class_super_48.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载
+ * -@Condition: no
+ * -@Brief: 在多重继承中，子类重写函数中使用super调用父类函数
+ * -#step1: 定义父类A，类B继承自A，并重写A种的函数；类C继承自B再次重写父类的函数；
+ * -#step2: 实例化类C，调用重写函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

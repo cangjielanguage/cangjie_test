@@ -1,0 +1,21 @@
+2021-11-08 01:52:03 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/02_mem_object/var_type_08/var_type_08.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:52:03 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/var_type_08/var_type_08_cj_cangjie2llvmgc_test_cfg_1636335524
+2021-11-08 01:52:03 DEBUG execute cmd ===>>>: cjc -ulimit-error var_type_08.cj -o var_type_08..out
+2021-11-08 01:52:04 DEBUG return code: 1
+2021-11-08 01:52:04 DEBUG stdout : 
+
+2021-11-08 01:52:04 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/var_type_08/var_type_08_cj_cangjie2llvmgc_test_cfg_1636335524/var_type_08.cj:25:23: [31merror[0m: native function can only have CType args.
+@	   25 | foreign func isMoment(obj:Complex) : object8
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/var_type_08/var_type_08_cj_cangjie2llvmgc_test_cfg_1636335524/var_type_08.cj:25:38: [31merror[0m: native function can only have CType return.
+@	   25 | foreign func isMoment(obj:Complex) : object8
+@	      |                                      [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/var_type_08/var_type_08_cj_cangjie2llvmgc_test_cfg_1636335524/var_type_08.cj:33:15: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   33 |     let res = isMoment(Complex(
+@	      |               [32m^[0m
+@	3 errors generated
+
+2021-11-08 01:52:04 DEBUG Run time: 0.55, remain time: 3e+02
+2021-11-08 01:52:04 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/02_mem_object/var_type_08/var_type_08.cj_cangjie2llvmgc_test_cfg.log

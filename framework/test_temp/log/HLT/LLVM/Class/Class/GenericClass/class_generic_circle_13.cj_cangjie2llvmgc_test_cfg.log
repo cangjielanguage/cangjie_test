@@ -1,0 +1,45 @@
+2021-11-08 02:47:07 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:47:07 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482
+2021-11-08 02:47:07 DEBUG execute cmd ===>>>: cjc -ulimit-error class_generic_circle_13.cj -o class_generic_circle_13.out
+2021-11-08 02:47:07 DEBUG return code: 1
+2021-11-08 02:47:07 DEBUG stdout : 
+
+2021-11-08 02:47:07 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:21:16: [31merror[0m: missing argument for call with parameter list: (Generics-T)
+@	   21 |         return Roo<V>()
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:10:5: [33mnote[0m: found candidate
+@	   10 |     init(x: T){
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:21:16: [31merror[0m: no matching constructor for call 'Roo'
+@	   21 |         return Roo<V>()
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:21:9: [31merror[0m: type of return expression is incompatible with return type
+@	   21 |         return Roo<V>()
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:20:32: [31merror[0m: type of function body is incompatible with return type
+@	   20 |     func getFoo<V>(x: Roo<V>): Roo<V>{
+@	      |                                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:21:9: [31merror[0m: type of return expression is incompatible with return type
+@	   21 |         return Roo<V>()
+@	      |         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:20:32: [31merror[0m: type of function body is incompatible with return type
+@	   20 |     func getFoo<V>(x: Roo<V>): Roo<V>{
+@	      |                                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:29:32: [31merror[0m: no matching function declaration for function call 'getFoo'
+@	   29 |     var foo: Roo<Roo<Int32>> = data.getFoo<Roo<Int32>>(roo)
+@	      |                                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:29:14: [31merror[0m: initializer's type is incompatible with variable declaration 'foo' 
+@	   29 |     var foo: Roo<Roo<Int32>> = data.getFoo<Roo<Int32>>(roo)
+@	      |              [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:30:14: [31merror[0m: initializer's type is incompatible with variable declaration 'res' 
+@	   30 |     var res: Int32 = foo.r
+@	      |              [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13_cj_cangjie2llvmgc_test_cfg_1636338482/class_generic_circle_13.cj:20:5: [31merror[0m: non-static generic member function 'getFoo' is not supported
+@	   20 |     func getFoo<V>(x: Roo<V>): Roo<V>{
+@	      |     [32m^[0m
+@	10 errors generated
+
+2021-11-08 02:47:07 DEBUG Run time: 0.63, remain time: 3e+02
+2021-11-08 02:47:07 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_13.cj_cangjie2llvmgc_test_cfg.log

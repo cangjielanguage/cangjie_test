@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: extends_shadow_16.cj
+ * -@TestCaseName: extends_shadow_16.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-08
+ * -@RequirementName: 类继承中函数覆盖的规则检查 
+ * -@Condition: no
+ * -@Brief: static能继承
+ * -#step1: 
+ * -@Expect: 成功继承 
+ * -@Priority: High
+ */

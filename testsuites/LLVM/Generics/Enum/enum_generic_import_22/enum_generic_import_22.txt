@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_import_22.cj
+ * -@TestCaseName: enum_generic_import_22.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: import的enum<T>和源文件中record重名，以不同作用域级别访问，成功访问两个成员
+ * -#step1: import enum<T>和源文件中record重名
+ * -#step2: 以不同作用域级别访问
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

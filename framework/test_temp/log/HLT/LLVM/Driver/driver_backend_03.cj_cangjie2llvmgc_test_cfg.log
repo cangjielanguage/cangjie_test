@@ -1,0 +1,28 @@
+2021-10-26 02:12:58 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/driver_backend_03.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:12:58 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Driver/driver_backend_03_cj_cangjie2llvmgc_test_cfg_1635213980
+2021-10-26 02:12:58 DEBUG execute cmd ===>>>: cjc -backend js driver_backend_03.cj -o driver_backend_03.js
+2021-10-26 02:12:58 DEBUG return code: 0
+2021-10-26 02:12:58 DEBUG stdout : 
+
+2021-10-26 02:12:58 DEBUG stderr : 
+@	[31merror[0m: Not support yet!
+
+2021-10-26 02:12:58 DEBUG Run time: 0.39, remain time: 3e+02
+2021-10-26 02:12:58 DEBUG execute cmd ===>>>: cjc -backend js driver_backend_03.cj -o driver_backend_03.js
+2021-10-26 02:12:59 DEBUG return code: 0
+2021-10-26 02:12:59 DEBUG stdout : 
+
+2021-10-26 02:12:59 DEBUG stderr : 
+@	[31merror[0m: Not support yet!
+
+2021-10-26 02:12:59 DEBUG Run time: 0.42, remain time: 3e+02
+2021-10-26 02:12:59 DEBUG execute cmd ===>>>: sed -i '$s/main()/process.exit(main())/' driver_backend_03.js && node driver_backend_03.js
+2021-10-26 02:12:59 DEBUG return code: 2
+2021-10-26 02:12:59 DEBUG stdout : 
+
+2021-10-26 02:12:59 DEBUG stderr : 
+@	sed: can't read driver_backend_03.js: No such file or directory
+
+2021-10-26 02:12:59 DEBUG Run time: 0.025, remain time: 3e+02
+2021-10-26 02:12:59 ERROR Failed, return code 2 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/driver_backend_03.cj_cangjie2llvmgc_test_cfg.log

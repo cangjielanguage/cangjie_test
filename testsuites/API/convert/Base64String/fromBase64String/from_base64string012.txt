@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: from_base64string012.cj
+ * -@TestCaseName: from_base64string012.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-02
+ * -@RequirementName: 提供Base64和String互相转换的函数
+ * -@Condition: no
+ * -@Brief: 入参字符串为不包含在Base64编码表内的字符
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ */

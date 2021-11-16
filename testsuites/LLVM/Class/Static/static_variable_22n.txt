@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: static_variable_22n.cj
+ * -@TestCaseName: static_variable_22n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: static静态变量未初始化,然后为静态变量重新赋值,编译报错
+ * -#step1: 类中定义static静态变量a未初始化，之后为a重新赋值
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

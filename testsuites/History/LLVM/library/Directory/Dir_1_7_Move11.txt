@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Dir_1_7_move11
+ * -@TestCaseName: Dir_1_7_move11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: move(src, des)src为不存在的文件夹移动
+ * -@Expect: 预期报错
+ * -@Priority: level 1
+ */
+    

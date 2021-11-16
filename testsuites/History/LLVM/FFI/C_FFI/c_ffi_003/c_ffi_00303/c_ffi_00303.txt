@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: FFI_C_00303
+ * -@TestCaseName: c_ffi_00303.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持C char*与char字符串互操作。
+ * #1.借用UnsafePtr将String类型与char*互转。
+ * #2.使用错误的函数名称互转。
+ * -@Expect: 编译成功，运行return 0.
+ * -@Priority: level0
+ */

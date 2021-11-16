@@ -1,0 +1,18 @@
+/*
+ * -@TestCaseID: if_type_04.cj
+ * -@TestCaseName: if_type_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Condition: no
+ * -@Brief: 如果 `if` 的两个分支类型不相同，内置类型Char和库类型String
+ * -#step1: 如果 `if` 的两个分支类型不相同，内置类型Char和库类型String
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.5
+ * -@SpecChapter:
+ * -@SpecDetail:
+ * -@catalog:# 表达式## 条件表达式--10
+ * -@catalog:# 表达式## 条件表达式--11
+ * -@catalog:# 表达式## 条件表达式--14
+ */

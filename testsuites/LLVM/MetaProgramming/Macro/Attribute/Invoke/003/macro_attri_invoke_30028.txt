@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_Attribute_Invoke_30028
+ * -@TestCaseName: macro_attribute_invoke_30028.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-31
+ * -@RequirementName: Meta programming support Attribute Macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Call attribute macro with for i in 1...10{}.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

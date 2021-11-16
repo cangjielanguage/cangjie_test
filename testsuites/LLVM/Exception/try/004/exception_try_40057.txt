@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Cangjie_Exception_Try_40057.cj
+ * -@TestCaseName: exception_try_40057.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1029
+ * -@RequirementName: Cangjie support try expression and exception.
+ * -@Conditon: cjc, clang,panda, maple test framework and python3.
+ * -@Brief: Cangjie support try expression and exception.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

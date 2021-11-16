@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_021.cj
+ * -@TestCaseName: FileStream_openFile_021.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: ForceCreate:创建不存在的文件；ForceCreate:创建已存在的文件，覆盖
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

@@ -1,0 +1,19 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <classNamedInitParamList> case (use classNamedInitParam):
+Origin BNF is 
+    :  classNamedInitParam (NL* COMMA NL* classNamedInitParam)*
+    
+Test   BNF is 
+    :  <<TARGET=classNamedInitParam->pattern>> (NL* COMMA NL* classNamedInitParam)*
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

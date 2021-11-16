@@ -1,0 +1,15 @@
+2021-11-08 01:53:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/var_type_07/var_type_07.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:53:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/var_type_07/var_type_07_cj_cangjie2llvmgc_test_cfg_1636335525
+2021-11-08 01:53:12 DEBUG execute cmd ===>>>: cjc -ulimit-error var_type_07.cj -o var_type_07..out
+2021-11-08 01:53:13 DEBUG return code: 1
+2021-11-08 01:53:13 DEBUG stdout : 
+
+2021-11-08 01:53:13 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/var_type_07/var_type_07_cj_cangjie2llvmgc_test_cfg_1636335525/var_type_07.cj:17:24: [31merror[0m: native function can only have CType args.
+@	   17 | foreign func varType07(obj:Complex) : Unit
+@	      |                        [32m^[0m
+@	1 error generated
+
+2021-11-08 01:53:13 DEBUG Run time: 0.66, remain time: 3e+02
+2021-11-08 01:53:13 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/var_type_07/var_type_07.cj_cangjie2llvmgc_test_cfg.log

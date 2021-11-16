@@ -1,0 +1,5 @@
+lldb,lldb 012_debug_func_recursion,012_debug_func_recursion
+b,b 4,012_debug_func_recursion.cj:4
+r,r,-> 4
+n,n,-> 5
+cj_plocals,cj_plocals,Functioncall009 = 15

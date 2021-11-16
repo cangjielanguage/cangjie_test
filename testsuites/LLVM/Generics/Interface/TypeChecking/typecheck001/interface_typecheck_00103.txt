@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_TypeChecking_00103
+ * -@TestCaseName: interface_typechecking_00103.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define trait constraints for generics interface and same name, differ input type func.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,39 @@
+2021-11-08 01:42:26 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:42:26 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519
+2021-11-08 01:42:26 DEBUG execute cmd ===>>>: cjc -ulimit-error class_rename_08.cj -o class_rename_08..out
+2021-11-08 01:42:26 DEBUG return code: 1
+2021-11-08 01:42:26 DEBUG stdout : 
+
+2021-11-08 01:42:26 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:12:1: [31merror[0m: unexpected interface declaration
+@	   12 | foreign interface A{
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:17:1: [31merror[0m: unexpected class declaration
+@	   17 | foreign {
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:6:7: [31merror[0m: function 'getB' cannot be accessed by interface name 'A'
+@	    6 | 	  if(A.getB().equals(A.getB())) {
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:14:25: [31merror[0m: native function can only have CType return.
+@	   14 |     static func getB(): B
+@	      |                         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:6:7: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	    6 | 	  if(A.getB().equals(A.getB())) {
+@	      |       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:20:19: [31merror[0m: native function can only have CType args.
+@	   20 |       func equals(numA:B):Bool
+@	      |                   [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:6:23: [31merror[0m: function 'getB' cannot be accessed by interface name 'A'
+@	    6 | 	  if(A.getB().equals(A.getB())) {
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:6:23: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	    6 | 	  if(A.getB().equals(A.getB())) {
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08_cj_cangjie2llvmgc_test_cfg_1636335519/class_rename_08.cj:6:7: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	    6 | 	  if(A.getB().equals(A.getB())) {
+@	      |       [32m^[0m
+@	9 errors generated
+
+2021-11-08 01:42:26 DEBUG Run time: 0.42, remain time: 3e+02
+2021-11-08 01:42:26 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_08/class_rename_08.cj_cangjie2llvmgc_test_cfg.log

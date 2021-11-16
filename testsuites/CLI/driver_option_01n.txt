@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_option_01n.cj
+ * -@TestCaseName: driver_option_01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: 参数超出cjc所支持的范围时，编译报错且给出正确的选项指导
+ * -#step1: 编译选项为cjc -x
+ * -@Expect: 报错且给出正确的选项指导
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_OperatorOverloading_00904
+ * -@TestCaseName: operator_overloading_00904.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2030
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 对interface类型重载操作符不改变操作符和优先级与结合性。
+ * -@Expect: Compile success, return 0(还不支持class interface类型转换，故暂不运行).
+ * -@Priority: level0
+ */

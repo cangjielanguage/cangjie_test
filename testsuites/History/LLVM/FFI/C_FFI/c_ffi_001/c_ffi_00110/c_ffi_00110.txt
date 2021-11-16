@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: FFI_C_00110
+ * -@TestCaseName: c_ffi_00110.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持record类型与struct类型的互相映射。
+ * #1.record内嵌套record(目前cjc不支持)对应struct嵌套struct(不支持)。
+ * -@Expect: Compile error.
+ * -@Priority: level0
+ */

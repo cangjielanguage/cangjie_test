@@ -1,0 +1,21 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <functionParameters> case (use namedParameterList):
+Origin BNF is 
+    :  (LPAREN (NL* unnamedParameterList (NL* COMMA NL* namedParameterList)?)? NL* RPAREN) NL* (LPAREN NL* nondefaultParameterList? NL* RPAREN NL*)*
+    | (LPAREN NL* (namedParameterList NL*)? RPAREN NL*) (LPAREN NL* (nondefaultParameterList NL*)? RPAREN NL*)*
+    
+Test   BNF is 
+    :  (LPAREN (NL* unnamedParameterList (NL* COMMA NL* <<TARGET=namedParameterList->pattern>>)?)? NL* RPAREN) NL* (LPAREN NL* nondefaultParameterList? NL* RPAREN NL*)*
+    | (LPAREN NL* (namedParameterList NL*)? RPAREN NL*) (LPAREN NL* (nondefaultParameterList NL*)? RPAREN NL*)*
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

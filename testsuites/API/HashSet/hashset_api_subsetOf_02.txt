@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_api_subsetOf_02.cj
+ * -@TestCaseName: hashset_api_subsetOf_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: subsetOf(other: HashSet<T>): Bool，原HashSet<T>等价于other，返回true
+ * -#step1: subsetOf(other: HashSet<T>): Bool，原HashSet<T>等价于other，返回true 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: subsetOf(other: Set<T>): Bool
+ */

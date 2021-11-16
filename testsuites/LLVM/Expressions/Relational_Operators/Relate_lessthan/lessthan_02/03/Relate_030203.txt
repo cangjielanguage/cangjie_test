@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: Relate_030203.cj
+ * -@TestCaseName: Relate_030203.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. <(小于操作符)左操作数分别为某变量(比如：10)Int8、Int16、Int32、Int64、UInt8、UInt16、UInt32、uint64类型及二进制，
+八进制，十六进制表示
+ *  #2. <(小于操作符)右操作数为10，且左操作数小于右操作数时返回1；
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

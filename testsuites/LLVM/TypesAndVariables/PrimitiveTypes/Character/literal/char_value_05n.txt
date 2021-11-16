@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_value_05n.cj
+ * -@TestCaseName: char_value_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型字面量，变量名与类型名相同
+ * -#step1: 定义一个值为'a'的字符变量名为char
+ * -#step2: 编译检查编译信息
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

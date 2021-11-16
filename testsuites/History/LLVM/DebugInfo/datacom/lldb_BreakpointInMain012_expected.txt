@@ -1,0 +1,10 @@
+lldb,lldb 001_debug_cover,001_debug_cover
+b,b 5,001_debug_cover.cj:5
+b,b 7,001_debug_cover.cj:7
+r,r,-> 5
+cj_plocals,cj_plocals,var3 = 1
+c,c,-> 7
+cj_plocals,cj_plocals,var3 = 2
+n,n,-> 6
+n,n,-> 9
+cj_plocals,cj_plocals,var3 = 3

@@ -1,0 +1,5 @@
+lldb,lldb 015_debug_basetype,015_debug_basetype
+b,b 24,015_debug_basetype.cj:24
+r,r,-> 24
+n,n,-> 29
+cj_plocals,cj_plocals,var18 = 9

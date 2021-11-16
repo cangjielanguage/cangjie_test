@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: operator_overloading_01010.cj
+ * -@TestCaseName: operator_overloading_01010.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: append从多个包中导入的重载操作符泛型TR
+ * -#step1: 包pkga、pkgb中分别定义重载操作符的泛型TR
+ * -#step2: 导入多个泛型TR并append
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

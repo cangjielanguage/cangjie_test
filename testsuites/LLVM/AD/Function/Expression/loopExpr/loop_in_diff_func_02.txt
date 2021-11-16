@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: loop_in_diff_func_02.cj
+ * -@TestCaseName: loop_in_diff_func_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-13
+ * -@RequirementName: AD增强支持循环表达式可微
+ * -@Condition: no
+ * -@Brief: while循环体内部表达式可微
+ * -@step1: 定义while循环体内部表达式可微
+ * -@Expect: 执行成功,返回0
+ * -@catelog: # 自动微分## 可微函数--14
+ * -@Priority: level0
+ */

@@ -1,0 +1,12 @@
+  /*
+ * -@TestCaseID: Type_integer_01312.cj
+ * -@TestCaseName: Type_integer_01312.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基础类型
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 整数类型 UInt16，关键自定义错误。
+ * #1.var声明变量，赋值为整数类型 UInt16, 值为1a28
+ * -@Expect: Compile/execute failed with error print "undeclared type name 'a28 '".
+ * -@Priority: level1
+ */

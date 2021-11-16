@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: extends_00303.cj
+ * -@TestCaseName: extends_00303.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-27
+ * -@RequirementName: 被继承的类和接口的位置顺序
+ * -@Condition: no
+ * -@Brief: class类B3继承于类A和接口I，接口I出现类A的前面
+ * -#step1: class类B3继承于类A和接口I，接口I出现类A的前面
+ * -@Expect: 编译错误，提示：超类 'A' 必须放在超类型列表的开头
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.1.3 实现接口
+ * -@SpecDetail: 如果当前类也指定了父类，则接口需要出现在父类后面
+ * -@catalog: # 类和接口## 类### 类的定义#### 实现接口--1
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_value_0402n.cj
+ * -@TestCaseName: string_value_0402n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型字面量，单行字符串，含连续两对双引号"Hello"" Char Lang"，编译报错
+ * -#step1: 定义一个含连续两对双引号"Hello"" Char Lang"
+ * -#step2: 编译检查报错信息
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

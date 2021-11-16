@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_import_42n.chr
+ * -@TestCaseName: enum_generic_import_42n.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: import的enum<T>和另一个import中的record重名，以Import pkg.type的方式导入，编译报错
+ * -#step1: 准备两个package含同名的enum<T>和record
+ * -#step2: 以Import pkg.type的方式导入
+ * -#step3: 检查编译结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

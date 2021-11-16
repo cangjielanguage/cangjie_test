@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/func-modifier-combination/modifier_0007_n.cj
+*- @TestCaseName:函数修饰符的组合测试
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:public与override的组合测试，父类中的同名函数没有open修饰，编译器报错
+* -#定义类class Base，并定义public 函数get()
+* -#定义类Data extends Base，定义函数public override func get()
+*- @Expect:编译器报错
+*- @Priority:level1 
+*/

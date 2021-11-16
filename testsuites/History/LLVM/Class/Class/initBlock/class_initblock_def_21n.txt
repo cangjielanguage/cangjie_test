@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_initblock_def_21n.cj
+ * -@TestCaseName: class_initblock_def_21n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试init block定义在top-level，编译报错
+ * -#step1: init block定义在top-level
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

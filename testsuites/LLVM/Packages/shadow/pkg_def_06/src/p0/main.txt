@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: main.cj
+ * -@TestCaseName: main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 包声明与当前包内的顶层声明重名将会报错
+ * -#step1: 包声明与当前包内的顶层声明重名将会报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 包声明与当前包内的顶层声明重名将会报错
+ */

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_func_06.cj
+ * -@TestCaseName: template_func_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: func-decl-多组关键字-#func..#endfunc包含两组func内容,展示两组func内容,正常处理
+ * -#step1: func-decl-多组关键字-#func..#endfunc包含两组func内容,展示两组func内容,正常处理
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: func-decl
+ */

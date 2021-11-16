@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: pkgs001.cj
+ * -@TestCaseName: pkgs001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID:
+ * -@RequirementName: 支持import语法:
+    单文件、变量、函数、import pkgs.varpkg1_001   import pkgs.funpkg1001 as f1
+ * -@Condition: no
+ * -@Brief:import external变量并访问
+ * -#step1:import external变量并访问
+ * -#step2:检查编译执行结果
+ * -@Expect:执行正确
+ * -@Priority: High
+ */

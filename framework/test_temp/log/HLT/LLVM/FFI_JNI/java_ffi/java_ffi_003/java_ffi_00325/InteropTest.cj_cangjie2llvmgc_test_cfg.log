@@ -1,0 +1,21 @@
+2021-11-08 01:51:10 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_003/java_ffi_00325/InteropTest.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:51:10 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_003/java_ffi_00325/InteropTest_cj_cangjie2llvmgc_test_cfg_1636335524
+2021-11-08 01:51:10 DEBUG execute cmd ===>>>: javac InteropTest.java
+2021-11-08 01:51:13 DEBUG return code: 0
+2021-11-08 01:51:13 DEBUG stdout : 
+
+2021-11-08 01:51:13 DEBUG stderr : 
+@	Note: InteropTest.java uses unchecked or unsafe operations.
+@	Note: Recompile with -Xlint:unchecked for details.
+
+2021-11-08 01:51:13 DEBUG Run time: 2.5, remain time: 3e+02
+2021-11-08 01:51:13 DEBUG execute cmd ===>>>: %class2panda InteropTest.class InteropTest.panda
+2021-11-08 01:51:13 DEBUG return code: 127
+2021-11-08 01:51:13 DEBUG stdout : 
+
+2021-11-08 01:51:13 DEBUG stderr : 
+@	/bin/sh: 1: %class2panda: not found
+
+2021-11-08 01:51:13 DEBUG Run time: 0.036, remain time: 3e+02
+2021-11-08 01:51:13 ERROR Failed, return code 127 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_003/java_ffi_00325/InteropTest.cj_cangjie2llvmgc_test_cfg.log

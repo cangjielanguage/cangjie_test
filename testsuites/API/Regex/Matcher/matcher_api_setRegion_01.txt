@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_setRegion_01.cj
+ * -@TestCaseName: matcher_api_setRegion_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-0<=beginIndex<=endIndex<=字符串length,设置成功，返回新的matcher对象，该对象起始索引位置设置正确
+ * -#step1: Mathcher-0<=beginIndex<=endIndex<=字符串length,设置成功，返回新的matcher对象，该对象起始索引位置设置正确
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: setRegion(beginIndex: int64, endIndex: int 64): Matcher指定检索范围的开始位置和结束位置，返回新的匹配对象
+ */

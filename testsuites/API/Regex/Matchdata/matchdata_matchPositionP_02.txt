@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matchdata_matchPositionP_02.cj
+ * -@TestCaseName: matchdata_matchPositionP_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: MatchData-入参是存在的group,组重复的取最新一次迭代的值
+ * -#step1: MatchData-入参是存在的group,组重复的取最新一次迭代的值
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: matchPosition(group: int64): position返回匹配到指定组的子字符串在字符串中起始位置的索引和结束位置
+ */

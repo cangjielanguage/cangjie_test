@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: request_api_1501.cj
+ * -@TestCaseName: request_api_1501.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Request
+ * -@Condition: no
+ * -@Brief: func isClosed(): Bool,写入请求流之前
+ * -#step1: func isClosed(): Bool,写入请求流之前 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Request
+ * -@SpecDetail: func isClosed(): Bool
+ */

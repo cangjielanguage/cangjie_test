@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00536
+ * -@TestCaseName: interface00536.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Override a abstract function.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

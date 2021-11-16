@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_constructor_17.cj
+ * -@TestCaseName: record_constructor_17.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体有两个初始化label的情况下，调用record中的自定义单参构造器
+ * -#step1: 在record体中定义两个label并赋值
+ * -#step2: 在record体中定义一个单参的构造器，并更改label的值
+ * -#step3: 构造实例时调用自定义的单参构造器
+ * -@Expect: 执行成功，调用自定义构造器
+ * -@Priority: High
+ */

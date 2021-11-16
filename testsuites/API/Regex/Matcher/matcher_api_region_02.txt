@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_region_02.cj
+ * -@TestCaseName: matcher_api_region_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-调用重置mathcher对象字符串的api,start和end的值获取正确
+ * -#step1: Mathcher-调用重置mathcher对象字符串的api,start和end的值获取正确
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: func region(): Position返回当前检索范围的开始位置和结束位置（前闭后开）
+ */

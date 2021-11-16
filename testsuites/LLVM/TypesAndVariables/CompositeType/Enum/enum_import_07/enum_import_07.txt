@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_import_07/pkg.cj
+ * -@TestCaseName: enum_import_07/pkg.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-08
+ * -@RequirementName: 模块化编译支持Enum
+ * -@Condition: no
+ * -@Brief: import external enum，执行成功
+ * -#step1: 准备package，含external enum
+ * -#step2: import该external enum（import pkg.enumname）
+ * -#step3: 检查编译和执行结果
+ * -@Expect: 编译成功执行成功
+ * -@Priority: High
+ */

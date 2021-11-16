@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: integer_literal_0402.cj
+ * -@TestCaseName: integer_literal_0402.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: 整数字面量的边界值运算
+ * -#step1: int64的边界值运算，但不超过边界值
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_initblock_constr_31n.cj
+ * -@TestCaseName: record_initblock_constr_31n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: record中自定义无参构造函数init()且自定义init block，编译报错
+ * -#step1: 定义一个recordData，record中定义一个无参构造函数，定义一个init block；实例化record
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

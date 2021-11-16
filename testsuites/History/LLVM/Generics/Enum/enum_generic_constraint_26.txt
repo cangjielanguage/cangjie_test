@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_constraint_26.cj
+ * -@TestCaseName: enum_generic_constraint_26.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>的约束T <: V<T1>(V为泛型interface，T为V<T>的实现)
+ * -#step1: 定义一个泛型接口I<T>，定义一个类Coo实现接口I<Coo>
+ * -#step2: 定义一个约束条件为T<:I<T>的泛型enum Time<T>
+ * -#step3: 实例化类Coo，调用Time中的构造函数，传入类元为<I>,入参为coo
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

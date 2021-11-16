@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_List_00821
+ * -@TestCaseName: list_00821.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-02
+ * -@RequirementName: List
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use List as a normal type.
+ * -@Expect: Compile error. Map<K, V> <: Iterable<K*V> where K <: Hashable, K <: Equatable
+ * -@Priority: level0
+ */

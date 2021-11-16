@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: list_01212.cj
+ * -@TestCaseName: list_01212.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: 展开空的listExpr，编译报错
+ * -#step1: 展开空的listExpr
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

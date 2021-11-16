@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00533
+ * -@TestCaseName: interface00533.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Abstract class implement super interface but do not implementation super interface`s abstract function.
+ * -@Expect: Compile success.
+ * -@Priority: level1
+ */

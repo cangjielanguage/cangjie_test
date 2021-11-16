@@ -1,0 +1,7 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 103,024_debug_variable.cj:103
+r,r,-> 103
+cj_set,cj_set var_stepinto = 2,2
+s,s,-> 108
+cj_plocals,cj_plocals,var_stepinto = 2
+cj_plocals,cj_plocals,f_stepinto = 10

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashmap_api_22.cj
+ * -@TestCaseName: hashmap_api_22.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-03
+ * -@RequirementName: 提供 class HashMap
+ * -@Condition: no
+ * -@Brief: func isEmpty(): Bool,Hashmap非空
+ * -#step1: func isEmpty(): Bool,Hashmap非空
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: collection/HashMap
+ * -@SpecDetail: func isEmpty(): Bool
+ */

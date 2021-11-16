@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashmap_use_02.cj
+ * -@TestCaseName: hashmap_use_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-03
+ * -@RequirementName: 提供 class HashMap
+ * -@Condition: no
+ * -@Brief: HashMap类被继承
+ * -#step1: HashMap类被继承
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: collection/HashMap
+ * -@SpecDetail: HashMap
+ */

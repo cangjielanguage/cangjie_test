@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: increment_43.cj
+ * -@TestCaseName: increment_43.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: List类型的元素++
+ * -#step1: 定义二位List变量，取索引值++
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

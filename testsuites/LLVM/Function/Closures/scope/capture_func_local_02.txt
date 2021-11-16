@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: capture_func_local_02.cj
+ * -@TestCaseName: capture_func_local_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-07
+ * -@RequirementName: 变量捕获
+ * -@Condition: no
+ * -@Brief: 变量声明在local的形参，该函数的其他可选形参捕获该变量
+ * -#step1: 变量声明在local的形参，该函数的其他可选形参捕获该变量
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 函数/闭包
+ * -@SpecDetail: 
+ */

@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: overload_def_09.cj
+ * -@TestCaseName: overload_def_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 不同作用域，函数类型不同，不发生遮盖；将函数作为右值时将找到两个，将报错
+ * -#step1: 不同作用域，函数类型不同，不发生遮盖
+ * -#step2: 将函数作为右值时将找到两个，将报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 10.1 函数重载
+ * -@SpecDetail: 通过表达式计算得到的函数类型的值不会参与函数重载
+ */

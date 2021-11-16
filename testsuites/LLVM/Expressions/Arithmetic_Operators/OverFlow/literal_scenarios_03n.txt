@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: literal_scenarios_03n.cj
+ * -@TestCaseName: literal_scenarios_03n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: 函数的入参溢出检查
+ * -#step1: 定义一个入参为int8类型的函数
+ * -#step2: 调用函数，传入超出int8取值范围的字面值
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

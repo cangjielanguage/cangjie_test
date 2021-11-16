@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DirInfo_2_7_GetDirs02
+ * -@TestCaseName: DirInfo_2_7_GetDirs02.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: 构造函数为相对路径时，目录下仅有一个子目录验证di.GetDirectories(), di.GetFiles()
+ * -@Expect: 正确执行
+ * -@Priority: level 1
+ */
+    

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: external_internal_2601.cj
+ * -@TestCaseName: external_internal_2601.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 本包内，调用者a用external修饰，被调用者Aoo使用internal修饰，Aoo调用静态成员变量b(Range类型)并赋值给变量a
+ * -#step1: 本包内，调用者a用external修饰，被调用者Aoo使用internal修饰，Aoo调用静态成员变量b(Range类型)并赋值给变量a
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

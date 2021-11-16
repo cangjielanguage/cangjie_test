@@ -1,0 +1,17 @@
+2021-11-08 02:53:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20004.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:53:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20004_cj_cangjie2llvmgc_test_cfg_1636338485
+2021-11-08 02:53:12 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_20004.cj -o TryWithResources_Other_20004.out
+2021-11-08 02:53:13 DEBUG return code: 1
+2021-11-08 02:53:13 DEBUG stdout : 
+
+2021-11-08 02:53:13 DEBUG stderr : 
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20004_cj_cangjie2llvmgc_test_cfg_1636338485/TryWithResources_Other_20004.cj:13:5: [31merror[0m: type check of flow expression fails for operator |>
+@	   13 |     try(a : A = A()){0} |> x
+@	      |     [32m^[0m
+@	1 error and 2 warnings generated
+
+2021-11-08 02:53:13 DEBUG Run time: 0.41, remain time: 3e+02
+2021-11-08 02:53:13 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20004.cj_cangjie2llvmgc_test_cfg.log

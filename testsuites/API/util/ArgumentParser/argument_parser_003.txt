@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: argument_parser_003.cj
+ * -@TestCaseName: argument_parser_003.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1096-01
+ * -@RequirementName: 提供命令行参数解析类
+ * -@Condition: no
+ * -@Brief: 入参类型不匹配
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

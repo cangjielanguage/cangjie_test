@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_TypeConversion_PrimitiveTypeConversion_00705
+ * -@TestCaseName: conversion00705.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-07
+ * -@RequirementName: 支持类型转换
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.尝试在输出时进行类型转换（尚未支持格式化输出）。
+ * -@Expect: Compile fail
+ * -@Priority: level0
+ */

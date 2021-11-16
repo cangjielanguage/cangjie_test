@@ -1,0 +1,41 @@
+2021-11-08 02:42:53 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:42:53 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480
+2021-11-08 02:42:53 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_20057.cj -o TryWithResources_Other_20057.out
+2021-11-08 02:42:54 DEBUG return code: 1
+2021-11-08 02:42:54 DEBUG stdout : 
+
+2021-11-08 02:42:54 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:16: [31merror[0m: expected expression here
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:16: [31merror[0m: expected newline or ';' between expression or declaration
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:49: [31merror[0m: '}' is not allowed in block, expected expression or declaration here
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |                                                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:13: [31merror[0m: undeclared identifier 'a'
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:13: [31merror[0m: enum pattern is not matched
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:13: [31merror[0m: expression with suffix operator '!' should be enum 'Result' type
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:13: [31merror[0m: type of return expression is incompatible with expression type
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:13: [33mnote[0m: Traces:
+@	When calculating the least common supertype, the input types are broken.
+@	
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057_cj_cangjie2llvmgc_test_cfg_1636338480/TryWithResources_Other_20057.cj:10:13: [31merror[0m: unable to infer function return type, please write it
+@	   10 | var test = {a!:Int64 = try(a : A = A()){1} => a }
+@	      |             [32m^[0m
+@	8 errors generated
+
+2021-11-08 02:42:54 DEBUG Run time: 0.41, remain time: 3e+02
+2021-11-08 02:42:54 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20057.cj_cangjie2llvmgc_test_cfg.log

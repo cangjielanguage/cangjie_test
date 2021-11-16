@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: assign_0001.cj
+ * -@TestCaseName: assign_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-26
+ * -@RequirementName: 
+ * -@Condition: no
+ * -@Brief: assign static member function of record to a var variable in top-level and change value
+ * -#step1: assign static member function of record to a var variable in top-level and change value
+ * -#step2: invoke function in main
+ * -@Expect: complile success and run 
+ * -@Priority: High
+ */

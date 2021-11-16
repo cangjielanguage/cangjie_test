@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Test_Class_cover_050
+ * -@TestCaseName: Test_Class_cover_050.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2003-09
+ * -@RequirementName: 对访问修饰符的规则检查
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 子类继承从父类继承来的非静态函数，继承来的非静态成员函数(protected)被子类(protected)覆盖
+ * -@Expect: 执行成功
+ * -@Priority: level0
+ */

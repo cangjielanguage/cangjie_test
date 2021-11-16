@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_extends_03n.cj
+ * -@TestCaseName: class_extends_03n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 测试继承无修饰符的类，编译器报错
+ * -#step1: 定义一个无修饰符的基类Base，类中声明一个变量
+ * -#step2: 定义Data类使用extends关键字继承Base类，定义变量res值为Base类中变量值
+ * -@Expect: 类不能继承，编译器报错
+ * -@Priority: High
+ */

@@ -1,0 +1,18 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+func main(): Int64 {
+    let b = Array<Int8>([2, 3])
+    let c = Array<Int8>([2, 3,5,7])
+    let d = Array<Int8>([2, 3,5,7,9,11])
+
+    b.reverse()
+    c.reverse()
+    d.reverse()
+
+
+    if(b[0] == 3 && b[1] == 2 && c[0] == 7 && c[1] == 5 && c[2] == 3 && c[3] == 2 &&  d[0] == 11 && d[1] == 9 && d[2] == 7 && d[3] == 5 && d[4] == 3 && d[5] == 2 ){
+      return 0
+    }
+    return 2
+}

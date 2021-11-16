@@ -1,0 +1,39 @@
+2021-10-26 02:06:56 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/DTS/DTS2021092819350/DTS2021092819350.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:06:56 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/DTS/DTS2021092819350/DTS2021092819350_cj_cangjie2llvmgc_test_cfg_1635213977
+2021-10-26 02:06:56 DEBUG execute cmd ===>>>: cjc -ulimit-error DTS2021092819350.cj -o DTS2021092819350.out 2>&1 
+2021-10-26 02:06:56 DEBUG return code: 1
+2021-10-26 02:06:56 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/DTS/DTS2021092819350/DTS2021092819350_cj_cangjie2llvmgc_test_cfg_1635213977/DTS2021092819350.cj:10:18: [31merror[0m: variable 'e used by a' is used before initialization
++	   10 |         print("${e}") // EXPECTED: regex 'e' is used before initialization
++	      |                  [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/DTS/DTS2021092819350/DTS2021092819350_cj_cangjie2llvmgc_test_cfg_1635213977/DTS2021092819350.cj:3:1: [31merror[0m: variable 'a' is used before initialization
++	    3 | var a = b(c : true, d : "")
++	      | [32m^[0m
++	2 errors generated
+
+2021-10-26 02:06:56 DEBUG stderr : 
+
+2021-10-26 02:06:56 DEBUG Run time: 0.4, remain time: 3e+02
+2021-10-26 02:06:56 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// DTS2021092819350.cj
+2021-10-26 02:06:57 DEBUG return code: 1
+2021-10-26 02:06:57 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/DTS/DTS2021092819350/DTS2021092819350_cj_cangjie2llvmgc_test_cfg_1635213977/DTS2021092819350.cj:10:18: [31merror[0m: variable 'e used by a' is used before initialization
++		   10 |         print("${e}") // EXPECTED: regex 'e' is used before initialization
++		      |                  [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/DTS/DTS2021092819350/DTS2021092819350_cj_cangjie2llvmgc_test_cfg_1635213977/DTS2021092819350.cj:3:1: [31merror[0m: variable 'a' is used before initialization
++		    3 | var a = b(c : true, d : "")
++		      | [32m^[0m
++		2 errors generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"flag: regex, pattern: \\:10\\:.*\\:.*'e' is used before initialization , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-10-26 02:06:57 DEBUG stderr : 
+
+2021-10-26 02:06:57 DEBUG Run time: 0.094, remain time: 3e+02
+2021-10-26 02:06:57 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/DTS/DTS2021092819350/DTS2021092819350.cj_cangjie2llvmgc_test_cfg.log

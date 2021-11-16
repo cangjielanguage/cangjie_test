@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: String_string_replace_04.cj
+ * -@TestCaseName: String_string_replace_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: replace特殊字符与数字，汉字，字母的替换
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

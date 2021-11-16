@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Tokens_Add_10113
+ * -@TestCaseName: tokens_add_10113.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support libast.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test Tokens +.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

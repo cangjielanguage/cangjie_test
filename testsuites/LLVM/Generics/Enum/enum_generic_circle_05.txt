@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_circle_05.cj
+ * -@TestCaseName: enum_circle_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试enum<T>与class<T>的互递归
+ * -#step1: TimeUnit<T>中声明一个constructor参数引入class类型
+ * -#step2: class<T>中声明一个变量引入TimeUnit
+ * -#step3: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

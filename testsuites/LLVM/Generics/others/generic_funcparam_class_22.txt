@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_funcparam_class_22.cj
+ * -@TestCaseName: generic_funcparam_class_22.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-17
+ * -@RequirementName: 泛型类使用限制检查
+ * -@Condition: no
+ * -@Brief: 泛型类，在变量声明时触发类型变元实例化，操作符函数签名冲突
+ * -#step1: 泛型类，在变量声明时触发类型变元实例化，操作符函数签名冲突
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ */

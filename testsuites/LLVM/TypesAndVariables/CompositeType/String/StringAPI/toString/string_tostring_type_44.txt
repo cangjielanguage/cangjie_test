@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_tostring_type_44.cj
+ * -@TestCaseName: string_tostring_type_44.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试class中int32类型成员变量的toString方法
+ * -#step1: 定义一个class，在类中定义int32类型成员变量，实例化该类
+ * -#step2: 调用成员变量的toString方法并打印结果，ASSERT捕获打印信息
+ * -@Expect: 执行成功，成功调用class中成员变量的toString方法，打印期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: module_mod_0602.cj
+ * -@TestCaseName: module_mod_0602.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-11
+ * -@RequirementName: 模块化构建工具
+ * -@Condition: no
+ * -@Brief: module中含相同的package，执行成功
+ * -#step1: module中含相同的package
+ * -#step2: 检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

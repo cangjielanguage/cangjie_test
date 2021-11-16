@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Bitwise_Logical_Conditional_Operators_00504
+ * -@TestCaseName: bitwise00504.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: unknown
+ * -@RequirementName: unknown
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: | operator operation object: Int8 and Int64
+ * -@Expect: Compile fail, return 1
+ * -@Priority: level0
+ */

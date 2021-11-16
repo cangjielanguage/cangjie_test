@@ -1,0 +1,165 @@
+2021-10-26 02:06:44 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/Math/math_const_n_01.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:06:44 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977
+2021-10-26 02:06:44 DEBUG execute cmd ===>>>: cjc -backend llvm math_const_n_01.cj caserunner.cj -o math_const_n_01.out
+2021-10-26 02:06:44 DEBUG return code: 1
+2021-10-26 02:06:44 DEBUG stdout : 
+
+2021-10-26 02:06:44 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:33:5: [33mwarning[0m: unhandled items after throw expr
+@	   33 |     }
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:81:21: [31merror[0m: undeclared identifier 'exp_MinFloat64'
+@	   81 |         (MinFloat64,exp_MinFloat64,Float64(0.0001)),
+@	      |                     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:80:5: [31merror[0m: inconsistent element type for List literal
+@	   80 |     [
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:79:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	   79 |  CaseRunner<Float64>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:106:18: [31merror[0m: expected an expression of type 'Int8', but got 'Int64'
+@	  106 |         (MinInt8,exp_MinInt8),
+@	      |                  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:104:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	  104 |  CaseRunner<Int8>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:113:19: [31merror[0m: expected an expression of type 'Int16', but got 'Int64'
+@	  113 |         (MinInt16,exp_MinInt16),
+@	      |                   [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:111:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	  111 |  CaseRunner<Int16>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:120:19: [31merror[0m: expected an expression of type 'Int32', but got 'Int64'
+@	  120 |         (MinInt32,exp_MinInt32),
+@	      |                   [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:118:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	  118 |  CaseRunner<Int32>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:134:19: [31merror[0m: expected an expression of type 'UInt8', but got 'Int64'
+@	  134 |         (MinUInt8,exp_MinUInt8),
+@	      |                   [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:132:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	  132 |  CaseRunner<UInt8>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:141:20: [31merror[0m: expected an expression of type 'UInt16', but got 'Int64'
+@	  141 |         (MinUInt16,exp_MinUInt16),
+@	      |                    [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:139:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	  139 |  CaseRunner<UInt16>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:148:20: [31merror[0m: expected an expression of type 'UInt32', but got 'Int64'
+@	  148 |         (MinUInt32,exp_MinUInt32),
+@	      |                    [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:146:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	  146 |  CaseRunner<UInt32>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:155:20: [31merror[0m: expected an expression of type 'UInt64', but got 'Int64'
+@	  155 |         (MinUInt64,exp_MinUInt64),
+@	      |                    [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/math_const_n_01.cj:153:2: [31merror[0m: no matching function declaration for function call 'runCases'
+@	  153 |  CaseRunner<UInt64>().runCases(
+@	      |  [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:36:12: [33mnote[0m: found possible candidate
+@	   36 |     public func runCases(casesAndExpected: List<T*T>, description!: String = "", checktype!: String = "AssertEquals") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:63:12: [33mnote[0m: found possible candidate
+@	   63 |     public func runCases(casesAndExpected: List<Float32*Float32*Float32>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:75:12: [33mnote[0m: found possible candidate
+@	   75 |     public func runCases(casesAndExpected: List<Float16*Float16*Float16>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:87:12: [33mnote[0m: found possible candidate
+@	   87 |     public func runCases(casesAndExpected: List<Float64*Float64*Float64>, description!: String = "") {
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/Math/math_const_n_01_cj_cangjie2llvmgc_test_cfg_1635213977/caserunner.cj:186:19: [33mwarning[0m: 'x' has been defined in the outside of match expression, are you sure using 'x' as a variable pattern here?
+@	  186 |         case Some(x) => x
+@	      |                   [32m^[0m
+@	17 errors and 2 warnings generated
+
+2021-10-26 02:06:44 DEBUG Run time: 0.49, remain time: 3e+02
+2021-10-26 02:06:44 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/Math/math_const_n_01.cj_cangjie2llvmgc_test_cfg.log

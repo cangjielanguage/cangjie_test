@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Buffer_api_append_01.cj
+ * -@TestCaseName: Buffer_api_append_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-01
+ * -@RequirementName: 提供 class Buffer
+ * -@Condition: no
+ * -@Brief: append(element: T): Unit，追加元素，不超过容量范围
+ * -#step1: append(element: T): Unit，追加元素，不超过容量范围
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/Buffer
+ * -@SpecDetail: append(element: T): Unit
+ */

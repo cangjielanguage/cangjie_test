@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: define_0015_n.cj 
+ * -@TestCaseName: define_0015_n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Record 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 在枚举类型中有一个和枚举类名一样的方法，且方法的参数中有var let
+ * -#step1: 在枚举类型中有一个和枚举类名一样的方法，且方法的参数中有var let
+ * -@Expect: 编译报错 
+ * -@Priority: High
+ */

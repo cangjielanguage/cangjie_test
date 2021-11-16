@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_Attribute_Definition_10012
+ * -@TestCaseName: macro_attribute_definition_10012.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-31
+ * -@RequirementName: Meta programming support Attribute Macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define normal attribute macro but without return type.
+ * -@Expect: Compile failed.
+ * -@Priority: level0
+ */
+

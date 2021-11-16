@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: overload_scope_03.cj
+ * -@TestCaseName: overload_scope_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 父类和子类中定义的函数，在函数重载时处于同一级别的作用域
+ * -#step1: 父类和子类中定义的函数，在函数重载时处于同一级别的作用域
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 10.1 函数重载
+ * -@SpecDetail: 候选集中父类和子类中定义的函数，在函数重载时当成同一作用域优先级处理
+ */

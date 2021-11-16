@@ -1,0 +1,63 @@
+2021-11-08 01:49:54 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:49:54 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523
+2021-11-08 01:49:54 DEBUG execute cmd ===>>>: cjc -ulimit-error java_ffi_main.cj 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// java_ffi_main.cj
+2021-11-08 01:49:54 DEBUG return code: 1
+2021-11-08 01:49:54 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:6:8: [31merror[0m: package 'java.lang' is a dependency of package 'test', and the parent path of the module which package 'java.lang' belongs to should be listed in environmental variable CANGJIE_PATH
++		    6 | import java.lang.*
++		      |        [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:7:17: [31merror[0m: package 'ffi/java' is a dependency of package 'test', and the parent path of the module which package 'ffi/java' belongs to should be listed in environmental variable CANGJIE_PATH
++		    7 | from ffi import java.*
++		      |                 [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:6:8: [31merror[0m: package 'java.lang' is not found
++		    6 | import java.lang.*
++		      |        [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:7:17: [31merror[0m: package 'ffi/java' is not found
++		    7 | from ffi import java.*
++		      |                 [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:10:36: [31merror[0m: undeclared type name 'Enum'
++		   10 | external open class InteropTest <: Enum<InteropTest> { // EXPECTED: regex 'open' cannot be used here for subclasses of java.lang.Enum
++		      |                                    [32m^[0m
++		 [31merror[0m: undeclared type name 'JString'
++		 [31merror[0m: undeclared type name 'JString'
++		 [31merror[0m: undeclared type name 'JString'
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:14:13: [31merror[0m: undeclared type name 'JString'
++		   14 |     init(s: JString, i: Int32) { super(s, i) }
++		      |             [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:10:36: [31merror[0m: class 'InteropTest' can only inherit a class or implement interfaces
++		   10 | external open class InteropTest <: Enum<InteropTest> { // EXPECTED: regex 'open' cannot be used here for subclasses of java.lang.Enum
++		      |                                    [32m^[0m
++		 [31merror[0m: `java.lang` package should be imported
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:11:42: [31merror[0m: no matching constructor for call 'InteropTest'
++		   11 |     public static let RED: InteropTest = InteropTest(J"RED", 0)
++		      |                                          [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:11:28: [31merror[0m: initializer's type is incompatible with variable declaration 'RED' 
++		   11 |     public static let RED: InteropTest = InteropTest(J"RED", 0)
++		      |                            [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:12:44: [31merror[0m: no matching constructor for call 'InteropTest'
++		   12 |     public static let GREEN: InteropTest = InteropTest(J"GREEN", 1)
++		      |                                            [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:12:30: [31merror[0m: initializer's type is incompatible with variable declaration 'GREEN' 
++		   12 |     public static let GREEN: InteropTest = InteropTest(J"GREEN", 1)
++		      |                              [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:13:43: [31merror[0m: no matching constructor for call 'InteropTest'
++		   13 |     public static let BLUE: InteropTest = InteropTest(J"BLUE", 2)
++		      |                                           [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335523/java_ffi_main.cj:13:29: [31merror[0m: initializer's type is incompatible with variable declaration 'BLUE' 
++		   13 |     public static let BLUE: InteropTest = InteropTest(J"BLUE", 2)
++		      |                             [32m^[0m
++		17 errors generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan-not, pattern: Exception , result: True, matched at output line: 0"
++	b"flag: regex, pattern: \\:10\\:.*\\:.*'open' cannot be used here for subclasses of java.lang.Enum , result: False, matched at output line: 1"
++	Match End!, Compare Failed
+
+2021-11-08 01:49:54 DEBUG stderr : 
+
+2021-11-08 01:49:54 DEBUG Run time: 0.55, remain time: 3e+02
+2021-11-08 01:49:54 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_008/java_ffi_00803n/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log

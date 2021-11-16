@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_01303
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-18
+ * -@RequirementName: Java互操作枚异常处理
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: cangjie调用java，java中抛异常，cangjie中捕获，异常类型Error
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+ 

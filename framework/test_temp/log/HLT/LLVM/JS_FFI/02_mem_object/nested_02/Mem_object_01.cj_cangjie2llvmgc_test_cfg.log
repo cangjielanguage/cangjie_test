@@ -1,0 +1,21 @@
+2021-11-08 01:55:05 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/02_mem_object/nested_02/Mem_object_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:55:05 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/nested_02/Mem_object_01_cj_cangjie2llvmgc_test_cfg_1636335526
+2021-11-08 01:55:05 DEBUG execute cmd ===>>>: cjc -ulimit-error Mem_object_01.cj -o Mem_object_01..out
+2021-11-08 01:55:06 DEBUG return code: 1
+2021-11-08 01:55:06 DEBUG stdout : 
+
+2021-11-08 01:55:06 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/nested_02/Mem_object_01_cj_cangjie2llvmgc_test_cfg_1636335526/Mem_object_01.cj:18:23: [31merror[0m: native function can only have CType args.
+@	   18 | foreign func isMoment(obj:B) : String
+@	      |                       [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/nested_02/Mem_object_01_cj_cangjie2llvmgc_test_cfg_1636335526/Mem_object_01.cj:18:32: [31merror[0m: native function can only have CType return.
+@	   18 | foreign func isMoment(obj:B) : String
+@	      |                                [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/02_mem_object/nested_02/Mem_object_01_cj_cangjie2llvmgc_test_cfg_1636335526/Mem_object_01.cj:21:15: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   21 |     let res = isMoment(B( a1: "1", a2: A(a1: "2", a2: 3)))
+@	      |               [32m^[0m
+@	3 errors generated
+
+2021-11-08 01:55:06 DEBUG Run time: 0.35, remain time: 3e+02
+2021-11-08 01:55:06 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/02_mem_object/nested_02/Mem_object_01.cj_cangjie2llvmgc_test_cfg.log

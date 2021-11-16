@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_comb_14.cj
+ * -@TestCaseName: driver_comb_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: 组合全局选项-package、全局选项-v、其他选项-no-prelude，源文件不依赖系统库
+ * -#step1: cjc -package 包目录 -v -no-prelude -o ./
+ * -@Expect: 生成目标文件且输出执行命令
+ * -@Priority: High
+ */

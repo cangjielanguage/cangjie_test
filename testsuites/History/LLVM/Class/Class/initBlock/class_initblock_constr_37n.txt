@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_initblock_constr_37n.cj
+ * -@TestCaseName: class_initblock_constr_37n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 自定义构造函数中调用init block生成的默认构造器（部分参数）,实例化时无法确定构造器，编译报错
+ * -#step1: 定义一个类Data，类中定义一个init block；
+ * -#step2: 自定义构造函数，调用部分参数的init block生成的构造器
+ * -#step3: 实例化类，传入实参。自定义构造函数与默认init block生成器重载，但无法确定唯一调用的构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

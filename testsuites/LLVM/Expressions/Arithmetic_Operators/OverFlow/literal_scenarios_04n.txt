@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: literal_scenarios_04n.cj
+ * -@TestCaseName: literal_scenarios_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: 构造函数的入参溢出检查
+ * -#step1: 类中定义一个入参为float64类型的构造函数
+ * -#step2: 实例化类，调用构造函数，传入超出float64取值范围的字面值
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

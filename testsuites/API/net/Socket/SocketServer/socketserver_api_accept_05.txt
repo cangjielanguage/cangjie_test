@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketserver_api_accept_05.cj
+ * -@TestCaseName: socketserver_api_accept_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketServer
+ * -@Condition: no
+ * -@Brief: Socketserver-多个服务器。多个客户端在不同线程
+ * -#step1: Socketserver-多个服务器。多个客户端在不同线程
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: Socketserver-public func accept(): Socket
+ */

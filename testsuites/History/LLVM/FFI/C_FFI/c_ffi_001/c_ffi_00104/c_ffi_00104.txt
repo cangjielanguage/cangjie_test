@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: FFI_C_00104
+ * -@TestCaseName: c_ffi_00104.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持record类型与struct类型的互相映射。
+ * #1.使用let和var在record中定义变量。
+ * #2.根据spec设计，const应当于let一一对应（未实现）。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

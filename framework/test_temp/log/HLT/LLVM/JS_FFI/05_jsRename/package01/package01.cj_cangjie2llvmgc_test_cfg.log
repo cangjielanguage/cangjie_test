@@ -1,0 +1,15 @@
+2021-11-08 01:38:56 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/package01/package01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:38:56 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package01/package01_cj_cangjie2llvmgc_test_cfg_1636335517
+2021-11-08 01:38:56 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./a/a.cj -o ./a/a..out
+2021-11-08 01:38:56 DEBUG return code: 1
+2021-11-08 01:38:56 DEBUG stdout : 
+
+2021-11-08 01:38:56 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package01/package01_cj_cangjie2llvmgc_test_cfg_1636335517/a/a.cj:5:1: [31merror[0m: modifiers 'external' and 'foreign' are conflict in class declaration
+@	    5 | external foreign class Moment {
+@	      | [32m^[0m
+@	1 error generated
+
+2021-11-08 01:38:56 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 01:38:56 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/package01/package01.cj_cangjie2llvmgc_test_cfg.log

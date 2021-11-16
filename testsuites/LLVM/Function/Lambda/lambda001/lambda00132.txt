@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Lambda_00132
+ * -@TestCaseName: lambda00132.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2012
+ * -@RequirementName: Lambda
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Lambda support List as input and output type.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

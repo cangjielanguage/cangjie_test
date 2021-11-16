@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: TimeSpan_4_StaticFunc_002
+ * -@TestCaseName: TimeSpan_4_StaticFunc_002.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: TimeSpan
+ * -@Condition: charc, clang, maple test framework and python3.
+ * -@Brief: "Compare (ts1 TimeSpan, ts2 TimeSpan), TimeSpan四种构造函数赋值互相比较
+即：(1). 不同构造函数之间的比较
+"
+ * -@Expect: 正确执行
+ * -@Priority: level1
+ */
+    

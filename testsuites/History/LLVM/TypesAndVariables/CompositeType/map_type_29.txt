@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: map_type_29.cj
+ * -@TestCaseName: map_type_29.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1006-03
+ * -@RequirementName: lang.Map库
+ * -@Condition: no
+ * -@Brief: Map为声明Map<子类,V>，实例key存放子类和父类
+ * -#step1: Map为声明Map<子类,V>，实例key存放子类和父类
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter: 类型/值类型/Map类型
+ * -@SpecDetail: 
+ */

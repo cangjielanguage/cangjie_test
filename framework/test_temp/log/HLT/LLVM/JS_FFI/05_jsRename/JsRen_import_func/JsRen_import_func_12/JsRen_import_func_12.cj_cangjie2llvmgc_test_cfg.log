@@ -1,0 +1,17 @@
+2021-11-08 01:56:58 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_12/JsRen_import_func_12.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:56:58 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_12/JsRen_import_func_12_cj_cangjie2llvmgc_test_cfg_1636335527
+2021-11-08 01:56:58 DEBUG execute cmd ===>>>: cjc -ulimit-error JsRen_import_func_12.cj -o JsRen_import_func_12..out
+2021-11-08 01:56:59 DEBUG return code: 1
+2021-11-08 01:56:59 DEBUG stdout : 
++	Function return type does not match operand type of return inst!
++	  ret %Unit.Type* @Unit.Val, !dbg !61
++	 i32
+2021-11-08 01:56:59 DEBUG stderr : 
+@	Function return type does not match operand type of return inst!
+@	  ret %Unit.Type* @Unit.Val, !dbg !61
+@	 i32[31merror[0m: [CodeGen Error]: Generate module error.
+@	[31merror[0m: [CodeGen Error]: Generate module error.
+
+2021-11-08 01:56:59 DEBUG Run time: 0.77, remain time: 3e+02
+2021-11-08 01:56:59 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/JsRen_import_func/JsRen_import_func_12/JsRen_import_func_12.cj_cangjie2llvmgc_test_cfg.log

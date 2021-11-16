@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_substring_06.cj
+ * -@TestCaseName: string_substring_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的substring(beginIndex:UInt64, length:UInt64):String方法，length取边界值，执行正确
+ * -#step1: 定义不同形式的string，调用该变量的substring方法
+ * -#step2: length取边界值，length大于从beginIndex开始字符的剩余长度，检查运行结果
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

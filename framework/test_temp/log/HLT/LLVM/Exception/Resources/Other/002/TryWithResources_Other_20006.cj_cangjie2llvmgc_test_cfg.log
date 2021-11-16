@@ -1,0 +1,19 @@
+2021-11-08 02:33:02 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20006.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:33:02 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20006_cj_cangjie2llvmgc_test_cfg_1636338474
+2021-11-08 02:33:02 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_20006.cj -o TryWithResources_Other_20006.out
+2021-11-08 02:33:02 DEBUG return code: 1
+2021-11-08 02:33:02 DEBUG stdout : 
+
+2021-11-08 02:33:02 DEBUG stderr : 
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20006_cj_cangjie2llvmgc_test_cfg_1636338474/TryWithResources_Other_20006.cj:13:5: [31merror[0m: type check of flow expression fails for operator ~>
+@	   13 |     try(a : A = A()){x} ~> try(a : A = A()){x}
+@	      |     [32m^[0m
+@	1 error and 4 warnings generated
+
+2021-11-08 02:33:02 DEBUG Run time: 0.37, remain time: 3e+02
+2021-11-08 02:33:02 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20006.cj_cangjie2llvmgc_test_cfg.log

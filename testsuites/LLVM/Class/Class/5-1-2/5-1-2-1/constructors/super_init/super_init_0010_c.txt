@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/super_init/super_init_0010_c.cj
+*- @TestCaseName:构造函数中使用init()
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:构造函数中使用init() ，形成间接递归，变量全部初始化，编译器没有死循环
+* -#定义类open class Base，声明2个变量a,b。没有默认的构造函数
+* -#定义类Data extends Base，init()-> init(value1) -> init(value1,value2) -> init(value1)，声明成员变量c,d,e,并且初始化
+*- @Expect:编译器不会死循环
+*- @Priority:level1 
+*/

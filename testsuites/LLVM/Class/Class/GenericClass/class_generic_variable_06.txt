@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_variable_06.cj
+ * -@TestCaseName: class_generic_variable_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>中变量未声明类型，被赋予类型变元值
+ * -#step1: 定义一个泛型父类class Base<T>，定义一个泛型类Data<T>继承Base<Int32>
+ * -#step2: Data<T>中声明一个变量f不声明类型，init中被赋予类型变元值
+ * -#step3: 实例化泛型class Data<T>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

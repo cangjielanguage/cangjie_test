@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_OperatorOverloading_Inside_Type_13050
+ * -@TestCaseName: inside_type_13050.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define operator function inside interface and another input type is A<String,String>.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

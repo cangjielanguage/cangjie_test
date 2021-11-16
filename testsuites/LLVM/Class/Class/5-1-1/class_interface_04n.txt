@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_interface_04n.cj
+ * -@TestCaseName: class_interface_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 测试缺少关键字implements，编译器报错
+ * -#step1: 定义一个接口Base，接口中声明一个默认函数，返回数值1
+ * -#step2: 定义Data类实现Base，缺少implements关键字
+ * -@Expect: 接口无法实现，编译器报错
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: option_def_21n.cj
+ * -@TestCaseName: option_def_21n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试top-level定义内含Some构造函数的enum，为Option类型的变量通过.Some<T>()方式赋值，编译报错
+ * -#step1: top-level已定义enum，调用.Some<T>为Option类型变量赋值
+ * -#step2: match匹配Option<Int32>的构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

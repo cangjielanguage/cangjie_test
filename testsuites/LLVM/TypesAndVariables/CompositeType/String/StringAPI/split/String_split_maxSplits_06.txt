@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: String_split_maxSplits_06.cj
+ * -@TestCaseName: String_split_maxSplits_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试maxSplits中，separator非空且出现在字符串中,maxSplits小于等于应该分割的字符串个数
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

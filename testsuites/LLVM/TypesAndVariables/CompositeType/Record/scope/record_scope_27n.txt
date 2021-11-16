@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_scope_27n.cj
+ * -@TestCaseName: record_scope_27n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试通过record名实例访问static+public修饰的label，编译报错
+ * -#step1: 定义一个record，内部声明并初始化一个static+public修饰的label
+ * -#step2: 通过record实例访问record内部的label
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

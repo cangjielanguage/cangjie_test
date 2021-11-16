@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_MatchExpression_00218
+ * -@TestCaseName: match00218.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Match a undeclared identifier.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

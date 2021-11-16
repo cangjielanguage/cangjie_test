@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: random_setSeed_01_02.cj
+ * -@TestCaseName: random_setSeed_01_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1097-02
+ * -@RequirementName: 提供 class Random
+ * -@Condition: no
+ * -@Brief: 调用setSeed(seed: UInt64)，seed入参边界值测试
+ * -#step1: 调用setSeed(seed: UInt64)，seed入参边界值测试
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Random
+ * -@SpecDetail: open func setSeed(seed: UInt64): void
+ */

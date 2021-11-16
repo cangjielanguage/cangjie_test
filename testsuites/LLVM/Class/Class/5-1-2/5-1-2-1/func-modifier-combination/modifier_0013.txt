@@ -1,0 +1,14 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/func-modifier-combination/modifier_0013.cj
+*- @TestCaseName:函数修饰符的组合测试
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:protected与abstract的组合测试，可以正常运行
+* -#定义类abstract Base，并定义protected abstract函数f()
+* -#定义类Data extends Base，并实现抽象函数protected函数f()，定义函数get()，get()调用f()
+* -#创建Data的实例，调用get函数
+*- @Expect:get函数的值正确
+*- @Priority:level1 
+*/

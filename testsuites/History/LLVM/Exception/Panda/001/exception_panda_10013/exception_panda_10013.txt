@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Cangjie_Exception_Throwable_10013
+ * -@TestCaseName: exception_panda_10013.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-23
+ * -@RequirementName: Cangjie support runtime exception with java.
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Cangjie panda backend`s exception can work with java`s exception.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

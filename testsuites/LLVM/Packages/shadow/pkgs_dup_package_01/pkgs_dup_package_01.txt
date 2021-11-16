@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_dup_import_01.cj
+ * -@TestCaseName: pkgs_dup_import_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 测试package名字和class名字相同
+ * -#step1: package名字和class名字相同
+ * -#step2: 在class定义变量，能通过类实例访问
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

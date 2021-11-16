@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_003.cj
+ * -@TestCaseName: FileStream_openFile_003.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: FileStream(p: String, fa: FileAccess)文件存在，且fileAccess为读，调用读方法进行测试
+ * -@Expect: compile successfully and print failed
+ * -@Priority: level0
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_def_01.cj
+ * -@TestCaseName: record_def_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试正确的record的定义 reocrd RecordName {}
+ * -#step1: 测试reocrd RecordName {}定义
+ * -#step2: record体内定义一个lable
+ * -#step3: 编译后运行并检查返回值
+ * -@Expect: record语句定义正确，执行成功
+ * -@Priority: High
+ */

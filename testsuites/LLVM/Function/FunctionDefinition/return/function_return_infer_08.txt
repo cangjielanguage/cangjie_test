@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: function_return_infer_08.cj
+ * -@TestCaseName: function_return_infer_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-16
+ * -@RequirementName: return表达式
+ * -@Condition: no
+ * -@Brief: 函数的返回值具有 let 修饰的语义
+ * -#step1: 函数的返回值具有 let 修饰的语义
+ * -#step2: 修改函数的返回值
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/函数定义/函数声明
+ * -@SpecDetail: 函数的返回值具有 let 修饰的语义
+ */

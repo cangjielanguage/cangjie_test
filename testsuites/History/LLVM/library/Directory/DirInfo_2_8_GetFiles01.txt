@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DirInfo_2_8_getFiles01
+ * -@TestCaseName: DirInfo_2_8_getFiles01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: di.getFiles(path), path为存在的路径
+ * -@Expect: 预期正确
+ * -@Priority: level 1
+ */
+    

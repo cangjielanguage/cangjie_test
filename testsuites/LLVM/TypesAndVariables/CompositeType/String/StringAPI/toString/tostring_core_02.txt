@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: tostring_core_02.cj
+ * -@TestCaseName: tostring_core_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-06
+ * -@RequirementName: string 在llvm 后端实现
+ * -@Condition: no
+ * -@Brief: UInt8、UInt16、UInt32、UInt64支持toString
+ * -#step1: UInt8、UInt16、UInt32、UInt64支持toString
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 类型/值类型/String类型
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

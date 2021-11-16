@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generic_Function_Instantiation_Check_00215
+ * -@TestCaseName: check_00215.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-08_R2
+ * -@RequirementName: Generic
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Static function inside classlike/record with type Int64,X,X and Int64,X,X instantiation with same type.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

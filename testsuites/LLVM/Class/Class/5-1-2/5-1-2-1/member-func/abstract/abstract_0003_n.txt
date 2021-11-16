@@ -1,0 +1,12 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/member-func/abstract/abstract_0003_n.cj
+*- @TestCaseName:抽象函数的测试
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequiremntName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:抽象函数缺少func关键字，编译器报错
+* -#定义抽象基类Base，定义get函数，缺少func
+*- @Expect:编译器报错
+*- @Priority:level1 
+*/

@@ -1,0 +1,13 @@
+2021-10-26 02:32:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/driver_target_01.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:32:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Driver/driver_target_01_cj_cangjie2llvmgc_test_cfg_1635213989
+2021-10-26 02:32:12 DEBUG execute cmd ===>>>: cjc -ulimit-error -no-prelude driver_target_01.cj -o driver_target_01.out
+2021-10-26 02:32:12 DEBUG return code: 1
+2021-10-26 02:32:12 DEBUG stdout : 
+
+2021-10-26 02:32:12 DEBUG stderr : 
+@	 [31merror[0m: class 'Object' of package 'core/core' is not found, cannot use '-no-prelude' option
+@	1 error generated
+
+2021-10-26 02:32:12 DEBUG Run time: 0.17, remain time: 3e+02
+2021-10-26 02:32:12 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/driver_target_01.cj_cangjie2llvmgc_test_cfg.log

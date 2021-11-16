@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_match_0423n.cj
+ * -@TestCaseName: enum_match_0423n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试将一个非enum中的constructor赋值给变量
+ * -#step1: 声明一个enum，将一个非enum中的constructor赋值给变量，并初始化
+ * -#step2: 编译检查编译报错信息
+ * -@Expect: 将一个非enum中的constructor赋值给变量错误，编译器报错
+ * -@Priority: High
+ */

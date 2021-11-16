@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: c2.cj
+ * -@TestCaseName: c2.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: 多module使用cjc编译，cjo文件不放在modulename下，编译报错（.o文件可以放置在任意路径）
+ * -#step1: 准备多module
+ * -#step2: 编译指定生成的文件路径不在modulename下
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21.1
+ * -@SpecChapter:
+ * -@SpecDetail:
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Candidate_00302
+ * -@TestCaseName: function_overload_candidate_00302.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define same name different parameter function and invoke one.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

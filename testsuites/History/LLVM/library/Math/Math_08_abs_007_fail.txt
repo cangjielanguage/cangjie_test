@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Math_08_abs_001_01
+* -@TestCaseName: Math_08_abs_001_01.cj 
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: Math
+* -@Condition: cj, clang, maple test framework and python3.
+* -@Brief: 验证abs()功能，绝对值超过int范围
+* -@Expect: 正确执行
+* -@Priority: level 0
+*/

@@ -1,0 +1,8 @@
+// EXEC-PIPE-1: %compiler %cmp_opt %f -o %output 2>&1 | compare %f
+
+class A <: Exception{}
+
+func main(){
+    if (throw A()) {}  // EXPECTED: regex expression of Nothing type cannot appear here currently
+    return 0
+}

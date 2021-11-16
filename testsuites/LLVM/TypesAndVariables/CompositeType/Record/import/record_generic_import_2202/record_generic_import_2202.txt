@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_import_2202.cj
+ * -@TestCaseName: record_generic_import_2202.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: import的record和源文件中record(普通)重名,以包限定方式访问导入
+ * -#step1: 定义external修饰符修饰的record
+ * -#step2: import该record所在的package，以包限定方式调用该record
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

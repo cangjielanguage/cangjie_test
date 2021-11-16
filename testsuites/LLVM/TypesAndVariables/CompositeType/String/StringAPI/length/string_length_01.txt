@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_length_01.cj
+ * -@TestCaseName: string_length_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的length方法
+ * -#step1: 定义不同形式的string，调用该变量的length方法
+ * -#step2: 检查返回的字符串长度是否已正确
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

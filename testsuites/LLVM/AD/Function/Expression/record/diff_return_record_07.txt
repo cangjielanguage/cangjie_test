@@ -1,0 +1,19 @@
+/*
+ * -@TestCaseID: diff_return_record_07.cj
+ * -@TestCaseName: diff_return_record_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-16
+ * -@RequirementName: 可微函数中可微表达式的支持
+ * -@Condition: no
+ * -@Brief: record相关的默认微分规则
+ * -#step1: 定义一个可微record B, 其成员变量x(Float64), 和可微构造函数，令 x = 1.0
+ * -#step2: 定义一个record A, 不添加可微标注
+ * -#step3: A内定义可微函数foo，入参为x(类型为B)，添加可微标注@differentiable[except:[this]]
+ * -#step4: foo内return if表达式， 判断条件为stopGradient<Float64>(x.x) > 0.0
+ * -#step5: if, else内都返回B()
+ * -@Expect: 编译成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 当record类型为可微类型，且被调用的构造函数时可微函数时，对该record类型对象的初始化表达式微分规则已知
+ */

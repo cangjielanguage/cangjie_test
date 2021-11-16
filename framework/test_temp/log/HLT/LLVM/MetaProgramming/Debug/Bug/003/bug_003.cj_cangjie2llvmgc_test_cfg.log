@@ -1,0 +1,25 @@
+2021-11-08 02:57:46 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/MetaProgramming/Debug/Bug/003/bug_003.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:57:46 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/MetaProgramming/Debug/Bug/003/bug_003_cj_cangjie2llvmgc_test_cfg_1636338487
+2021-11-08 02:57:46 DEBUG execute cmd ===>>>: cjc -ulimit-error bug_003.cj  -c -o define.o
+2021-11-08 02:57:48 DEBUG return code: 0
+2021-11-08 02:57:48 DEBUG stdout : 
+
+2021-11-08 02:57:48 DEBUG stderr : 
+
+2021-11-08 02:57:48 DEBUG Run time: 1.7, remain time: 3e+02
+2021-11-08 02:57:48 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH && cjc -ulimit-error -ld-options="-lcangjie-ast" ./define.o -debug-macro test.cj -o bug_003.out
+2021-11-08 02:57:49 DEBUG return code: 0
+2021-11-08 02:57:49 DEBUG stdout : 
+
+2021-11-08 02:57:49 DEBUG stderr : 
+
+2021-11-08 02:57:49 DEBUG Run time: 1.4, remain time: 3e+02
+2021-11-08 02:57:49 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  bug_003.out  
+2021-11-08 02:57:49 DEBUG return code: 2
+2021-11-08 02:57:49 DEBUG stdout : 
+
+2021-11-08 02:57:49 DEBUG stderr : 
+
+2021-11-08 02:57:49 DEBUG Run time: 0.16, remain time: 3e+02
+2021-11-08 02:57:49 ERROR Failed, return code 2 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/MetaProgramming/Debug/Bug/003/bug_003.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: diff_record_def_09.cj
+ * -@TestCaseName: diff_record_def_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-15
+ * -@RequirementName: 含有不可微函数的record传入可微函数
+ * -@Condition: no
+ * -@Brief: 含有不可微函数的record传入可微函数
+ * -#step1: 定义record Point，其成员函数不可微
+ * -#step2: 定义可微函数foo，和其入参x（参数类型为Point）
+ * -#step3: 返回参数x
+ * -@Expect: 编译成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 不在except列表中的成员变量必须可微。
+ */

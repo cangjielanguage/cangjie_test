@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_label_35.cj
+ * -@TestCaseName: record_label_35.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试将一个record体中的label赋值给另一个record体中的label
+ * -#step1: 定义一个record体，声明一个let赋值的label
+ * -#step2: 定义另外一个record体，声明一个label
+ * -#step2: 将第一个record的label赋值给第二个record中的label
+ * -@Expect: 编译成功，执行返回期望结果
+ * -@Priority: High
+ */

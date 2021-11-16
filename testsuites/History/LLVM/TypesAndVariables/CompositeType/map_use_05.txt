@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: map_use_05.cj
+ * -@TestCaseName: map_use_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1006-03
+ * -@RequirementName: lang.Map库
+ * -@Condition: no
+ * -@Brief: Map的解构
+ * -#step1: Map的解构
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter: 类型/值类型/Map类型
+ * -@SpecDetail: 
+ */

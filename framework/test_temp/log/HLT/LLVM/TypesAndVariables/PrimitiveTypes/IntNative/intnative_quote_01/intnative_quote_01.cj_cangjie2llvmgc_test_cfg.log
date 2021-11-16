@@ -1,0 +1,52 @@
+2021-11-08 02:31:07 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:31:07 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473
+2021-11-08 02:31:07 DEBUG execute cmd ===>>>: cjc -ulimit-error intnative_quote_01.cj -c -o define.o
+2021-11-08 02:31:08 DEBUG return code: 1
+2021-11-08 02:31:08 DEBUG stdout : 
+
+2021-11-08 02:31:08 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:10:1: [31merror[0m: illegal object in toplevel, toplevel must consist of declaration or definition
+@	   10 | typealias mytype = IntNative
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:13:13: [31merror[0m: undeclared type name 'mytype'
+@	   13 |     var a : mytype = 0
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:13:13: [31merror[0m: initializer's type is incompatible with variable declaration 'a' 
+@	   13 |     var a : mytype = 0
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:14:12: [31merror[0m: undeclared identifier 'toTokens'
+@	   14 |     return quote($a)
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:14:12: [31merror[0m: undeclared identifier 'toTokens'
+@	   14 |     return quote($a)
+@	      |            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:14:12: [31merror[0m: undeclared identifier 'toTokens'
+@	   14 |     return quote($a)
+@	      |            [32m^[0m
+@	 [31merror[0m: argument is mismatched with parameter type 'Class-Tokens'
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:14:12: [31merror[0m: undeclared identifier 'toTokens'
+@	   14 |     return quote($a)
+@	      |            [32m^[0m
+@	 [31merror[0m: invalid binary operator '+' on type 'Class-Tokens' and 'Invalid'
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:14:5: [31merror[0m: type of return expression is incompatible with return type
+@	   14 |     return quote($a)
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:12:44: [31merror[0m: type of macro body is incompatible with return type
+@	   12 | external macro M(attr:Tokens,input:Tokens):Tokens{
+@	      |                                            [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:14:5: [31merror[0m: type of return expression is incompatible with return type
+@	   14 |     return quote($a)
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01_cj_cangjie2llvmgc_test_cfg_1636338473/intnative_quote_01.cj:12:44: [31merror[0m: type of macro body is incompatible with return type
+@	   12 | external macro M(attr:Tokens,input:Tokens):Tokens{
+@	      |                                            [32m^[0m
+@	 [31merror[0m: no matching function declaration for function call 'M'
+@	 [31merror[0m: undeclared identifier 'toBytes'
+@	 [31merror[0m: no matching function declaration for function call 'UnsafePointerCastFromUint8Array'
+@	 [31merror[0m: unsupported type for this the try block of try expression; the type must be Record-CPointer<UInt8>
+@	 [31merror[0m: type of function body is incompatible with return type
+@	18 errors generated
+
+2021-11-08 02:31:08 DEBUG Run time: 0.62, remain time: 3e+02
+2021-11-08 02:31:08 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/PrimitiveTypes/IntNative/intnative_quote_01/intnative_quote_01.cj_cangjie2llvmgc_test_cfg.log

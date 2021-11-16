@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: request_type_04.cj
+ * -@TestCaseName: request_type_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Request
+ * -@Condition: no
+ * -@Brief: HEAD 请求：url的内容,url为空
+ * -#step1: HEAD 请求：url的内容,url为空 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Request
+ * -@SpecDetail: Request
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: main.cj
+ * -@TestCaseName: main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 导入的p.foo有不同类型的声明（变量和变量），导入不报错，使用处报错
+ * -#step1: 导入的p.foo有不同类型的声明（变量和变量），导入不报错，使用处报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 导入的定义或声明如果和当前包中的顶层定义或声明重名且不构成函数重载，将会根据遮盖中提及的作用域规则做遮盖处理
+ */

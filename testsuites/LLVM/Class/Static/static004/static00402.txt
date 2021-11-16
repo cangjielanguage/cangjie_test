@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Static_00402
+ * -@TestCaseName: static00402.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2003-03
+ * -@RequirementName: Static
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define overload static function inside class and interface and use named parameter.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

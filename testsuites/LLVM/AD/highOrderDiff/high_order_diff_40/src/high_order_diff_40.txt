@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: high_order_diff_40.cj
+ * -@TestCaseName: high_order_diff_40.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-22
+ * -@RequirementName: 高阶微分测试需求
+ * -@Condition: no
+ * -@Brief: 从外部导入高阶函数以及双注解函数
+ * -@step1: 从外部导入高阶函数
+ * -@Expect: 执行成功,返回0
+ * -@catelog:
+ * -@Priority: level0
+ */

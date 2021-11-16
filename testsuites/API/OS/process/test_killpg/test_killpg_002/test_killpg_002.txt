@@ -1,0 +1,15 @@
+ /*
+ * -@TestCaseID: test_kill_002
+ * -@TestCaseName: test_kill_002
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-05
+ * -@RequirementName: 提供进程相关函数
+ * -@Conditon: no
+ * -@Brief: 验证kill()的功能
+ * -#step1: 创建进程
+ * -#step2: 获取进程的pid
+ * -#step3: 通过killpg()发送信号,sig为SIGSTOP
+ * -#step4: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

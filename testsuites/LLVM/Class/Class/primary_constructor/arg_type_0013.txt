@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: arg_type_0001.cj 
+ * -@TestCaseName: arg_type_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Class 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 主构造函数参数类型为tuple
+ * -#step1: 主构造函数参数类型为tuple
+ * -#step2: 调用主构造函数
+ * -@Expect: 构造实例时执行成功，调用主构造器，返回期望结果
+ * -@Priority: High
+ */

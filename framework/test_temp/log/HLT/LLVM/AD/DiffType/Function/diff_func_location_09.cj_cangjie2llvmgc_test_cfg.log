@@ -1,0 +1,15 @@
+2021-11-08 02:51:37 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_func_location_09.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:51:37 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_09_cj_cangjie2llvmgc_test_cfg_1636338484
+2021-11-08 02:51:37 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error diff_func_location_09.cj -c -o diff_func_location_09.out 2>&1 
+2021-11-08 02:51:38 DEBUG return code: 0
+2021-11-08 02:51:38 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_09_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_09.cj:6:9: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++	    6 |         func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |         [32m^[0m
++	1 warning generated
+
+2021-11-08 02:51:38 DEBUG stderr : 
+
+2021-11-08 02:51:38 DEBUG Run time: 0.54, remain time: 3e+02
+2021-11-08 02:51:38 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_func_location_09.cj_cangjie2llvmgc_test_cfg.log

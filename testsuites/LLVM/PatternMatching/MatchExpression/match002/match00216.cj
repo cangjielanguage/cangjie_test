@@ -1,0 +1,17 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+func test(): Int64 {
+    var a : Int32 = 1
+    match (match (a) {
+        case 1 => 0
+        case _ => -1
+    }) {
+        case 0 => 1
+        case _ => -1
+    }
+    return 0
+}
+
+func main(): Int64 {
+    return test()
+}

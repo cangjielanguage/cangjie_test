@@ -1,0 +1,11 @@
+2021-11-08 02:11:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_binary_plus/binary_plus_02/26/Arith_030226.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:11:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_binary_plus/binary_plus_02/26/Arith_030226_cj_cangjie2llvmgc_test_cfg_1636335534
+2021-11-08 02:11:12 DEBUG execute cmd ===>>>: cjc -ulimit-error Arith_030226.cj -o Arith_030226.out 2>&1 1>/dev/null 
+2021-11-08 02:11:13 DEBUG return code: 0
+2021-11-08 02:11:13 DEBUG stdout : 
+
+2021-11-08 02:11:13 DEBUG stderr : 
+
+2021-11-08 02:11:13 DEBUG Run time: 0.98, remain time: 3e+02
+2021-11-08 02:11:13 ERROR Failed, return code 0 should be 1!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Expressions/Arithmetic_Operators/Arith_binary_plus/binary_plus_02/26/Arith_030226.cj_cangjie2llvmgc_test_cfg.log

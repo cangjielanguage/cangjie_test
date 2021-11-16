@@ -1,0 +1,22 @@
+ /*
+ * -@TestCaseID: JsMem_import_func_02
+ * -@TestCaseName: JsMem_import_func_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsMember调用js中入参和返回值均为number的函数
+ * -#step1: js侧的类内的static函数,入参为number,返回值为number,函数体为普通表达式,作为成员导出
+ * -#step2: 仓颉侧@JsMember修饰类，内含static函数,入参为UInt8,返回值为UInt8
+ * -#step3: step2中的函数在toplevel 的其他函数a中调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsMember
+ * -@SpecDetail: 1、函数的参数和返回值类型仅支持部分类型 2、仓颉侧UInt8映射Js侧number 3、当 `JavaScript` 中的函数或变量作为包成员导出时可通过 `@JsMember` 注解来表示
+ * -@SpecDetail: 4、通过 `foreign` 修饰符以及一系列注解（`@JsModule`，`@JsMember`，`@JsRename`）来书写绑定。
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsMember--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--5
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript--5
+ */

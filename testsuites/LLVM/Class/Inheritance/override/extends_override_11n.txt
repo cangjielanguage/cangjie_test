@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: extends_override_11n.cj
+ * -@TestCaseName: extends_override_11n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief:子类用override重写父类"static(无open)"修饰的函数,编译报错
+ * -#step1:创建父类Base，有static函数foo
+ * -#step2:创建子类Data继承Base，用override重写函数foo
+ * -#step3:检查编译报错信息
+ * -@Expect:编译报错
+ * -@Priority: High
+ */

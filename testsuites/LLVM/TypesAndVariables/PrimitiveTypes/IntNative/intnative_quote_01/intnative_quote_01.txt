@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: intnative_quote_01.cj
+ * -@TestCaseName: intnative_quote_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1002-05
+ * -@RequirementName: IntNative和UIntNative
+ * -@Condition: no
+ * -@Brief: 
+ * -#step1: 
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 值类型
+ * -@SpecDetail: 
+ */

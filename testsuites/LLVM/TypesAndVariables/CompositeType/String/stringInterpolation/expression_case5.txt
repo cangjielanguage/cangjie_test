@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: expression_case5
+* -@TestCaseName: expression_case5.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1006-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证插值字符串模板嵌套，${"${s1+"d"}"}
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_type_append_01.cj
+ * -@TestCaseName: record_type_append_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record关键字作为类型被append,编译报错
+ * -#step1: 定义一个Trait，然后append record关键字
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

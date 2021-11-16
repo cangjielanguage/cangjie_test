@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_OperatorOverloading_Inside_Type_01108
+ * -@TestCaseName: inside_type_01108.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define operator function inside record and instantiation it with char.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

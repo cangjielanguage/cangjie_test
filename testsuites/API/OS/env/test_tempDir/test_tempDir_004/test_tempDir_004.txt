@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: test_tempDir_004
+ * -@TestCaseName: test_tempDir_004
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-08
+ * -@RequirementName: 添加获取环境变量和返回参数的API
+ * -@Conditon: no
+ * -@Brief: 验证tempDir()的功能
+ * -#step1: 通过tempDir()获取命令行参数
+ * -#step2: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

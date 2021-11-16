@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_value_19.cj
+ * -@TestCaseName: string_value_19.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的字面量，单行字符串含有垂直制表符\v
+ * -#step1: 定义一个含有垂直制表符\v的单行字符串
+ * -#step2: 打印该字符串，ASSERT捕获打印信息
+ * -@Expect: 执行成功，\v转义为垂直制表符成功，打印期望结果
+ * -@Priority: High
+ */

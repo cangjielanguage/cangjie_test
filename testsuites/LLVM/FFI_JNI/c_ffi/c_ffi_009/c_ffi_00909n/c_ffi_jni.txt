@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: c_ffi_00903
+ * -@TestCaseName: c_ffi_jni.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-05 AR-SR-Lang-1086-03
+ * -@RequirementName: surpport @c record
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉侧@c record是class的成员类型，预期报错
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

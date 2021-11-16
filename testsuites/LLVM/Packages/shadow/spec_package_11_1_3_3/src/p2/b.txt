@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: b.cj
+ * -@TestCaseName: b.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 为了将一个包中所有的顶级定义或声明全部导入，仓颉编程语言中支持import packageName.* 的语法。
+ * -#step1: 为了将一个包中所有的顶级定义或声明全部导入，仓颉编程语言中支持import packageName.* 的语法。
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 为了将一个包中所有的顶级定义或声明全部导入，仓颉编程语言中支持import packageName.* 的语法。
+ */

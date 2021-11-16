@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_type_34.cj
+ * -@TestCaseName: class_generic_type_34.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试tuple中含泛型class类型
+ * -#step1: 定义一个泛型class Foo<T>，实例化泛型Foo<Int32> foo
+ * -#step2: 定义一个元祖tup类型为int32*Foo<Int32>，将foo添加为tup中的元素
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

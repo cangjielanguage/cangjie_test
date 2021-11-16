@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: increment_47.cj
+ * -@TestCaseName: increment_47.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: lambda函数返回值使用自增减表达式
+ * -#step1: 定义lambda函数，调用lambda函数，将其返回值++
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

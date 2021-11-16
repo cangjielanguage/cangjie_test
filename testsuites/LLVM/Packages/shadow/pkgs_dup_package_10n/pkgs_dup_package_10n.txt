@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_dup_package_10n.cj
+ * -@TestCaseName: pkgs_dup_package_10n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 测试在package名字与成员类名重名情况下,将包用于append的类型
+ * -#step1: 在pkgs中定义一个external修饰的class命名为pkgs
+ * -#step2: 导入包名pkgs，将包名pkgs用于append的类型
+ * -@Expect: 编译报错，包名不可用于append的类型
+ * -@Priority: High
+ */

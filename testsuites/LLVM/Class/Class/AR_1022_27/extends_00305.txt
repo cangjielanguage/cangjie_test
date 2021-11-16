@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: extends_00305.cj
+ * -@TestCaseName: extends_00305.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-27
+ * -@RequirementName: 继承于一个变量
+ * -@Condition: no
+ * -@Brief: class类B1继承于变量I
+ * -#step1: class类B1继承于变量I
+ * -@Expect: 编译错误，提示：类“B1”只能继承一个类或实现接口
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.1.2 类继承
+ * -@SpecDetail: 只能继承一个类或实现接口
+ * -@catalog: # 类和接口## 类### 类的定义#### 类继承--1
+ */

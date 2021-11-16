@@ -1,0 +1,28 @@
+2021-11-08 02:01:35 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_014/java_ffi_01452/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:01:35 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_014/java_ffi_01452/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335528
+2021-11-08 02:01:35 DEBUG execute cmd ===>>>: javac test/InteropTest.java
+2021-11-08 02:01:36 DEBUG return code: 0
+2021-11-08 02:01:36 DEBUG stdout : 
+
+2021-11-08 02:01:36 DEBUG stderr : 
+
+2021-11-08 02:01:36 DEBUG Run time: 0.58, remain time: 3e+02
+2021-11-08 02:01:36 DEBUG execute cmd ===>>>: javac Main.java
+2021-11-08 02:01:36 DEBUG return code: 0
+2021-11-08 02:01:36 DEBUG stdout : 
+
+2021-11-08 02:01:36 DEBUG stderr : 
+@	Note: Main.java uses unchecked or unsafe operations.
+@	Note: Recompile with -Xlint:unchecked for details.
+
+2021-11-08 02:01:36 DEBUG Run time: 0.62, remain time: 3e+02
+2021-11-08 02:01:36 DEBUG execute cmd ===>>>: %class2panda test InteropTest.panda
+2021-11-08 02:01:36 DEBUG return code: 127
+2021-11-08 02:01:36 DEBUG stdout : 
+
+2021-11-08 02:01:36 DEBUG stderr : 
+@	/bin/sh: 1: %class2panda: not found
+
+2021-11-08 02:01:36 DEBUG Run time: 0.029, remain time: 3e+02
+2021-11-08 02:01:36 ERROR Failed, return code 127 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_014/java_ffi_01452/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,4 @@
+lldb,lldb 015_debug_basetype,015_debug_basetype
+b,b 29,015_debug_basetype.cj:29
+r,r,-> 29
+s,s,stopped

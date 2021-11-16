@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Instant_00116
+ * -@TestCaseName: interface_instant_00116.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Generic interface extends generic interface with different type variable.
+ * -@Expect: Compile failed, return1 .
+ * -@Priority: level0
+ */

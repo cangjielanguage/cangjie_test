@@ -1,0 +1,18 @@
+2021-11-08 02:45:18 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_12.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:45:18 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_12_cj_cangjie2llvmgc_test_cfg_1636338481
+2021-11-08 02:45:18 DEBUG execute cmd ===>>>: cjc -ulimit-error class_generic_circle_12.cj -o class_generic_circle_12.out
+2021-11-08 02:45:19 DEBUG return code: 1
+2021-11-08 02:45:19 DEBUG stdout : 
+
+2021-11-08 02:45:19 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_12_cj_cangjie2llvmgc_test_cfg_1636338481/class_generic_circle_12.cj:13:5: [31merror[0m: non-static generic member function 'getNum' is not supported
+@	   13 |     func getNum<U>(x: U):U{
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_12_cj_cangjie2llvmgc_test_cfg_1636338481/class_generic_circle_12.cj:23:5: [31merror[0m: non-static generic member function 'getFoo' is not supported
+@	   23 |     func getFoo<V>(x: Foo<Int64>): Foo<Int64>{
+@	      |     [32m^[0m
+@	2 errors generated
+
+2021-11-08 02:45:19 DEBUG Run time: 0.88, remain time: 3e+02
+2021-11-08 02:45:19 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_12.cj_cangjie2llvmgc_test_cfg.log

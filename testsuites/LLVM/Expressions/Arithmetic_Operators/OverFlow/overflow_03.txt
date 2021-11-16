@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: overflow_03.cj
+ * -@TestCaseName: overflow_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: 声明为极值的整数类型变量进行复合运算，运行时报错
+ * -#step1: 父类中声明一个int8类型的变量a，并且赋值为int8范围的极值127
+ * -#step2: 子类调用父类的变量，并且加2.实例化子类
+ * -@Expect: 运行时报错
+ * -@Priority: High
+ */

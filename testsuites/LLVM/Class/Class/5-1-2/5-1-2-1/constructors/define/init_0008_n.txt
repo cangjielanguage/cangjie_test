@@ -1,0 +1,12 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/define/init_0008_n.cj
+*- @TestCaseName:非法的构造函数定义
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:定义构造函数时，指定了int32返回值
+* -#定义构造函数时，指定了int32返回值
+*- @Expect:编译报错
+*- @Priority:level1 
+*/

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_type_00211
+ * -@TestCaseName: type00211.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use float16 type as selector.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@catalog:# 表达式## 模式匹配表达式--4
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_constraint_23.chr
+ * -@TestCaseName: enum_generic_constraint_23.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>的约束T <: V<T1>(V为泛型enum，T为V<T的实例>的实现)
+ * -#step1: 定义一个普通enum Date<T>，内部定义一个构造函数
+ * -#step2: 定义一个约束条件为T<:Date<String>的泛型enum Time<T>
+ * -#step3: 实现Date<T>中的构造函数，调用Time中的构造函数，传入类元为<Date<String>>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

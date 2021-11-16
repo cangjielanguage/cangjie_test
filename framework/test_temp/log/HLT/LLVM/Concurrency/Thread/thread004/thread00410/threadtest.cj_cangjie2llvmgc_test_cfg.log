@@ -1,0 +1,37 @@
+2021-11-08 01:47:29 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread004/thread00410/threadtest.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:47:29 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Concurrency/Thread/thread004/thread00410/threadtest_cj_cangjie2llvmgc_test_cfg_1636335522
+2021-11-08 01:47:29 DEBUG execute cmd ===>>>: cjc -ulimit-error threadtest.cj -o threadtest.out
+2021-11-08 01:47:30 DEBUG return code: 0
+2021-11-08 01:47:30 DEBUG stdout : 
+
+2021-11-08 01:47:30 DEBUG stderr : 
+
+2021-11-08 01:47:30 DEBUG Run time: 0.67, remain time: 3e+02
+2021-11-08 01:47:30 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  threadtest.out  |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// threadtest.cj
+2021-11-08 01:47:30 DEBUG return code: 1
+2021-11-08 01:47:30 DEBUG stdout : 
++	compare.py input:
++		Exception1 occured: Error VirtualMachineError StackOverflowError
++		result1 = 0
++		Exception2 occured: Error VirtualMachineError StackOverflowError
++		result2 = 0
++		Exception3 occured: Error VirtualMachineError StackOverflowError
++		result3 = 0
++		Exception4 occured: Error VirtualMachineError StackOverflowError
++		result4 = 0
++		Exception5 occured: Error VirtualMachineError StackOverflowError
++		result5 = 0
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: result1 = 18003000\\nresult2 = 18003000\\nresult3 = 18003000\\nresult4 = 18003000\\nresult5 = 18003000\\n , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan-not, pattern: Exception , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-11-08 01:47:30 DEBUG stderr : 
+
+2021-11-08 01:47:30 DEBUG Run time: 0.1, remain time: 3e+02
+2021-11-08 01:47:30 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread004/thread00410/threadtest.cj_cangjie2llvmgc_test_cfg.log

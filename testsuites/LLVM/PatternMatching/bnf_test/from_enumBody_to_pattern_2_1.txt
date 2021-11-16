@@ -1,0 +1,21 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <enumBody> case (use operatorFunctionDefinition):
+Origin BNF is 
+    :  (BITOR NL*)? caseBody (NL* BITOR NL* caseBody)*
+    (NL* (functionDefinition | operatorFunctionDefinition | associatedTypeDefinition | propertyDefinition ))*
+    
+Test   BNF is 
+    :  (BITOR NL*)? caseBody (NL* BITOR NL* caseBody)*
+    (NL* (functionDefinition | <<TARGET=operatorFunctionDefinition->pattern>> | associatedTypeDefinition | propertyDefinition ))*
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

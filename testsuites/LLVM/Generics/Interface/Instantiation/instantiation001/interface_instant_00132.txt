@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Instant_00132
+ * -@TestCaseName: interface_instant_00132.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Instantiation two type variable with one type.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

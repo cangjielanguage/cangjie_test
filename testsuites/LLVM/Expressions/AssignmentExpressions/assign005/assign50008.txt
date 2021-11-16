@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_50008
+ * -@TestCaseName: assign50008.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010,DTS2020062209AST3P1100
+ * -@RequirementName: AssignmentExpressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define assignment in top level of enum.
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

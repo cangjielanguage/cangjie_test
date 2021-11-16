@@ -1,0 +1,51 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <atomicExpression> case (use collectionLiteral):
+Origin BNF is 
+    :  literalConstant
+    | collectionLiteral
+    | tupleLiteral
+    | Identifier (NL* typeArguments)?
+    | unitLiteral
+    | ifExpression
+    | matchExpression
+    | loopExpression
+    | tryExpression
+    | jumpExpression
+    | typeConvExpr
+    | thisSuperExpression
+    | spawnExpression
+    | synchronizedExpression
+    | parenthesizedExpression
+    | quoteExpression
+    | lambdaExpression
+    
+Test   BNF is 
+    :  literalConstant
+    | <<TARGET=collectionLiteral->pattern>>
+    | tupleLiteral
+    | Identifier (NL* typeArguments)?
+    | unitLiteral
+    | ifExpression
+    | matchExpression
+    | loopExpression
+    | tryExpression
+    | jumpExpression
+    | typeConvExpr
+    | thisSuperExpression
+    | spawnExpression
+    | synchronizedExpression
+    | parenthesizedExpression
+    | quoteExpression
+    | lambdaExpression
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

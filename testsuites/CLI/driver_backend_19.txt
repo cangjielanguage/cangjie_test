@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_backend_19.cj
+ * -@TestCaseName: driver_backend_19.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-backend -backend-options 有源文件
+ * -#step1: cjc -backend -backend-options xxx源文件
+ * -@Expect: 报错提示backend-options缺少参数
+ * -@Priority: High
+ */

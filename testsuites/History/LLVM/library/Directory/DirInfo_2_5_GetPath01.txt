@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DirInfo_2_5_getPath01
+ * -@TestCaseName: DirInfo_2_5_getPath01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: getPath(path) 入参入参为字符类型
+ * -@Expect: 预期报错
+ * -@Priority: level 1
+ */
+    

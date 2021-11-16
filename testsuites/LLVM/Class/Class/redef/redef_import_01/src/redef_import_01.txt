@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: redef_import_01.cj
+ * -@TestCaseName: redef_import_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: redef修饰父类静态函数
+ * -@Condition: no
+ * -@Brief: 导入pkga的普通父类，在pkgb中redef，在src中使用，运行成功
+ * -#step1: 在pkga中定义父类Boo，并声明静态方法foo
+ * -#step2: 在pkgb中定义子类Coo,redef类foo
+ * -#step3: 在src中调用子类中静态函数
+ * -@Expect: 运行成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 类成员函数的修饰符
+ * -@SpecDetail: 当一个静态函数重定义继承自父类型的静态函数时，必须用 redef 进行修饰
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: logger_error_0104.cj
+ * -@TestCaseName: logger_error_0104.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1099-02
+ * -@RequirementName: 提供 class SimpleLogger
+ * -@Condition: no
+ * -@Brief:  Logger类的error()参数正确：无参构造，设置level同级该函数级别（该函数级别最低），调用该函数，输入流的原文件存在，不会打印日志
+ * -#step1:  Logger类的error()参数正确：无参构造，设置level同级该函数级别（该函数级别最低），调用该函数，输入流的原文件存在，不会打印日志
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: io/日志
+ * -@SpecDetail: public func error(msg: String): Unit  打印不同级别的日志
+ */

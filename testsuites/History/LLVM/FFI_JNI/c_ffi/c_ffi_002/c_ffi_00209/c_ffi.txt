@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: FFI_C_00209
+ * -@TestCaseName: c_ffi.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-03
+ * -@RequirementName: String类型映射
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: CString构造函数创建 字符串作为函数返回值 覆盖CString方法 func endsWith(CString): bool
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

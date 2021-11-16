@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_PatternGuards_Logic_00104
+ * -@TestCaseName: pattern_guards_logic_00104.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2012-04
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: True pattern guard but case not match will not match case.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 模式匹配表达式### Pattern Guards--2
+ */

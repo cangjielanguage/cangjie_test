@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_40024
+ * -@TestCaseName: assign40024.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: incrAndDecrExpression
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: IncrAndDecrExpression not support type Interface.
+ * -@Expect: Compile failed, show log.
+ * -@Priority: level0
+ */

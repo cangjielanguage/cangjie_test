@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00402
+ * -@TestCaseName: array00402.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.使用let直接用字面值初始化数组。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

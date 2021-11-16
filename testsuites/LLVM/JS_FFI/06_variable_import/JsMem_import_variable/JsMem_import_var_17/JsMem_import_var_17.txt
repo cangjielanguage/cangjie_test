@@ -1,0 +1,21 @@
+ /*
+ * -@TestCaseID: JsMem_import_var_17
+ * -@TestCaseName: JsMem_import_var_17.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsMember调用js中var定义的array类型的变量
+ * -#step1: js侧的全局变量，使用var是定义，类型为array,作为成员导出
+ * -#step2: 仓颉侧使用@JsMember修饰top-level的类,内含static var 变量,变量类型为List<Int32>
+ * -#step3: step2中的函数在类静态成员函数的函数体内调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsMember
+ * -@SpecDetail: 1、仓颉侧List映射Js侧array 2、当 `JavaScript` 中的函数或变量作为包成员导出时可通过 `@JsMember` 注解来表示
+ * -@SpecDetail: 3、通过 `foreign` 修饰符以及一系列注解（`@JsModule`，`@JsMember`，`@JsRename`）来书写绑定。
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsMember--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript--5
+ */

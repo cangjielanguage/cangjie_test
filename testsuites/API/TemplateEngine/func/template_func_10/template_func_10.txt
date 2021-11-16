@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_func_10.cj
+ * -@TestCaseName: template_func_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: func-decl-funcName以数字开头，正常处理
+ * -#step1: func-decl-funcName以数字开头，正常处理
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: func-decl
+ */

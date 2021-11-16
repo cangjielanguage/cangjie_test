@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: overload_class_06.cj
+ * -@TestCaseName: overload_class_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 子父类库存在同名同参的函数签名，返回类型呈现父(super)子类关系，需要override子类同名函数
+ * -#step1: 子类B中成功override重写父类A中的函数foo,子类中foo函数返回类型为子类实例
+ * -#step2: 根据调用的实例类型以及函数返回类型，调用foo函数
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 类和接口/覆盖、重载、遮盖、重定义/重载
+ * -@SpecDetail: 重载决议时，父类和子类中定义的函数当成同一作用域优先级处理
+ */

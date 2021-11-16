@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_type_1101.cj
+ * -@TestCaseName: enum_generic_type_1101.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 泛型function入参为泛型enum<T>无参类型
+ * -#step1: 定义泛型enum<T>中有无参constructor，在泛型func入参中使用enum无参类型
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

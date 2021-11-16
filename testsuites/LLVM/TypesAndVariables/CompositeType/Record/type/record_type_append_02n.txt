@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_type_append_02n.cj
+ * -@TestCaseName: record_type_append_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record的引用类型被append
+ * -#step1: 定义一个record，定义一个trait
+ * -#step2: 将trait append 到自定义的record后
+ * -#step3: 验证append是否成功
+ * -@Expect: 执行成功，record的引用类型被成功append，返回期望结果
+ * -@Priority: High
+ */

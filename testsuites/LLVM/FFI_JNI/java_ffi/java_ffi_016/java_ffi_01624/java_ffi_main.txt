@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_01624
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-45
+ * -@RequirementName: java类中静态嵌套类
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 导入java类，类中包含静态嵌套类 普通类 访问修饰符 public 外层类型名.类型名 使用场景 访问外层类成员
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+ 

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_Function_asFunc_type_10008
+ * -@TestCaseName: asfunc_type_10008.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-21
+ * -@RequirementName: asFunc
+ * -@Conditon: charc, clang, maple test framework and python3.
+ * -@Brief: define asFunc inside type.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */
+

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: trailing_closures_class_04.cj
+ * -@TestCaseName: trailing_closures_class_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1016-04
+ * -@RequirementName: lambda 尾闭包
+ * -@Condition: no
+ * -@Brief: super尾闭包调用(调用的函数两个参数，最后一个是lambda)
+ * -#step1: super尾闭包调用(调用的函数两个参数，最后一个是lambda)
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/函数调用/尾闭包
+ * -@SpecDetail:普通函数调用和构造函数调用都可以使用这个语法，包含 this() 和 super()

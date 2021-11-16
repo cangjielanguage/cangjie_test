@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: handler_api_10_01.cj
+ * -@TestCaseName: handler_api_10_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-08
+ * -@RequirementName: 提供 class Handler
+ * -@Condition: no
+ * -@Brief:  路由不匹配返回 404
+ * -#step1:  路由不匹配返回 404 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Handler
+ * -@SpecDetail:  Route func handle(pattern: String, funcHandler: (ResponseWriteStream, Request)->Unit): Unit
+ */

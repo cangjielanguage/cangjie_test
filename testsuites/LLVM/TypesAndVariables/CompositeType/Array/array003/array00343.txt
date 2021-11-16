@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00343
+ * -@TestCaseName: array00343.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12, DTS202004200JHMWCP0G00
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.使用type[](size,expr)形式定义初始化二维数组数组。
+ * #2.expr为和type一致的字面值常量。
+ * -@Expect: 编译成功，return 0.
+ * -@Priority: level0
+ */

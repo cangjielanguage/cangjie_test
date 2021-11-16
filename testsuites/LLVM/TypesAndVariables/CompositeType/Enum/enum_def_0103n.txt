@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_def_0103n.cj
+ * -@TestCaseName: enum_def_0103n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试重名enum
+ * -#step1: 定义一个变量名为testname,定义enum名为testname
+ * -#step2: 编译检查编译报错信息
+ * -@Expect: enum名与变量名重复错误，编译器报错
+ * -@Priority: High
+ */

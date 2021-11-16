@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: assign_0001.cj
+ * -@TestCaseName: assign_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-26
+ * -@RequirementName: 
+ * -@Condition: no
+ * -@Brief: assign member function to a variable with unmatching type
+ * -#step1: assign member function to a variable with unmatching type
+ * -@Expect: complile error
+ * -@Priority: High
+ */

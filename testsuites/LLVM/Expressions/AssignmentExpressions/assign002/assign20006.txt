@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Expressions_AssignmentExpressions_Assign_20006
+ * -@TestCaseName: assign20006.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: AssignmentExpressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Assignment support type UInt32.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

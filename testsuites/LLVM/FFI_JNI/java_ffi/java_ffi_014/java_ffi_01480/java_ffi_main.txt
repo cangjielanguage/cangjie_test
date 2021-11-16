@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_01480
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-35
+ * -@RequirementName: java注解映射修饰参数（PARAMETER）
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: java注解 有参数 @Retention(RetentionPolicy.RUNTIME) @Target多个ElementType @Inherited 修饰static method PARAMETER 多个参数
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+ 

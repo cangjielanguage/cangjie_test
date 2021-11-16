@@ -1,0 +1,8 @@
+// EXEC: %compiler %stdx_cmp_opt %f -o %output
+// EXEC: %stdx_run %stdx_run_opt %output %stdx_run_args
+
+from std import collection.*
+func main(): Int64 {
+	let mapZero: HashMap<Int32, Char> = HashMap<Int32, Char>()
+	return 0
+}

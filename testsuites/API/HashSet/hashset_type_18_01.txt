@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_type_18_01.cj
+ * -@TestCaseName: hashset_type_18_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: 存放元素:添加元素的类型：自定义泛型类型已经继承Hashable 这里写Brief Equatable<T>
+ * -#step1: 存放元素:添加元素的类型：自定义泛型类型已经继承Hashable 这里写step Equatable<T> 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: init()
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: set_elements_02.cj
+ * -@TestCaseName: set_elements_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1008-03
+ * -@RequirementName: lang.Set库
+ * -@Condition: no
+ * -@Brief: Set同样用于存放相同类型（或者拥有公共父类）的元素：存放Int32和Int64，编译报错
+ * -#step1: Set同样用于存放相同类型（或者拥有公共父类）的元素：存放Int32和Int64
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 类型/值类型/Set
+ * -@SpecDetail: Set api
+ */

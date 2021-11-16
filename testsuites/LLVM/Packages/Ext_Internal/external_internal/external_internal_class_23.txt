@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: external_internal_class_23.cj
+ * -@TestCaseName: external_internal_class_23.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 本包内，external声明类A，external声明函数goo，goo赋值给A的成员变量a(protected修饰)
+ * -#step1: 本包内，external声明类A，external声明函数goo，goo赋值给A的成员变量a(protected修饰)
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

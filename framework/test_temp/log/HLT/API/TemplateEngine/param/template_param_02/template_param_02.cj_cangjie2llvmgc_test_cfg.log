@@ -1,0 +1,21 @@
+2021-11-08 02:39:31 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/TemplateEngine/param/template_param_02/template_param_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:39:31 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/TemplateEngine/param/template_param_02/template_param_02_cj_cangjie2llvmgc_test_cfg_1636338478
+2021-11-08 02:39:31 DEBUG execute cmd ===>>>: $CANGJIE_HOME/tools/bin/engine template_param_02/Mb.tpl
+2021-11-08 02:39:31 DEBUG return code: 1
+2021-11-08 02:39:31 DEBUG stdout : 
++	An exception has already occurred:
++	Exception RuntimeException IllegalArgumentException error:The dire 'param' is invalid
++	.
++		 at engine/engine.Function_engine/engine::(TemplateLexter::)scanDire()(stdlib/engine/TemplateLexer.cj:95)
++		 at .Lambda_engine/engine::lambda.613(stdlib/engine/TemplateLexer.cj:78)
++		 at engine/engine.Function_engine/engine::(TemplateLexter::)scanner()(stdlib/engine/TemplateLexer.cj:1222)
++		 at engine/engine.Function_engine/engine::(TemplateParser::)init(Record_core/core::String)(stdlib/engine/TemplateParser.cj:22)
++		 at engine/engine.Function_engine/engine::handleTemplate(Array_char[], Record_core/core::String)(stdlib/engine/TemplateEngine.cj:7)
++		 at engine/engine.Function_engine/engine::readTemplate(Record_core/core::String)(stdlib/engine/TemplateEngine.cj:101)
++		 at engine/engine.Function_engine/engine::main()(stdlib/engine/TemplateEngine.cj:55)
+
+2021-11-08 02:39:31 DEBUG stderr : 
+
+2021-11-08 02:39:31 DEBUG Run time: 0.035, remain time: 3e+02
+2021-11-08 02:39:31 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/TemplateEngine/param/template_param_02/template_param_02.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00142
+ * -@TestCaseName: array00142.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.定义并初始化类成员类型数组，且不指定类型。
+ * #2.数组成员拥有多个同级的公共父接口。
+ * #3.此时编译器无法确定最小的公共父接口。
+ * -@Expect: 编译失败报错类型不匹配.
+ * -@Priority: level0
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_invoke_56.cj
+ * -@TestCaseName: class_generic_invoke_56.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>中类型变元T为泛型函数func<T>
+ * -#step1: 定义一个泛型class <T>，内部定义一个T类型的变量并在init中初始化变量
+ * -#step2: 定义一个泛型函数getHeight<T>
+ * -#step3: 实例化class<T>类型变元为函数类型，传入类型变元为int64的函数getHeight<Int64>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

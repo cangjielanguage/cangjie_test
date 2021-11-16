@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_TypeConversion_PrimitiveTypeConversion_00413
+ * -@TestCaseName: conversion00413.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2005-07
+ * -@RequirementName: 支持类型转换
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.uint64类型转换为int8类型。未超出范围转换
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

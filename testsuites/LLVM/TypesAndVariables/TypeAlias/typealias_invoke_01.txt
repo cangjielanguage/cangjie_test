@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: typealias_invoke_01.cj
+ * -@TestCaseName: typealias_invoke_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: 类型别名与原类型均为泛型，原类型有泛型约束
+ * -#step1: 类型别名与原类型均为泛型，原类型有泛型约束
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

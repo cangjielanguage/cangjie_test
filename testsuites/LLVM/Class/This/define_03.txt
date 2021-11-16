@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: define_03.cj
+ * -@TestCaseName: define_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-24
+ * -@RequirementName: This类型的错误使用
+ * -@Condition: no
+ * -@Brief: 在interface内定义的属性及函数的入参返回值类型均为This类型
+ * -#step1: 在interface内通过var定义的属性为This类型
+ * -#step2: 在interface内定义的两个函数，一个入参为This类型，一个返回值为This类型
+ * -@Expect: 编译报错，提示This类型不允许在这里
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.4 This类型 
+ * -@SpecDetail: 在类内部，我们支持 This 类型占位符，它只能被作为实例成员函数的返回类型来使用
+ * -@catalog: # 类和接口## 类### This 类型--1
+ */

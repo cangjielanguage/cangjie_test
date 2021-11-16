@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Extends_00308
+ * -@TestCaseName: interface_extends_00308.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Shadow static variable to other type variable.
+ * -@Expect: Compile/excute pass, return 0.
+ * -@Priority: level0
+ */

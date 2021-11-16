@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_func_08n.cj
+ * -@TestCaseName: static_func_08n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: 子类classblock中使用static + override修饰静态函数，编译报错
+ * -#step1: 父类Base中定义可被重写的函数open func foo
+ * -#step2: 子类Data中写改函数，并用static + override修饰
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

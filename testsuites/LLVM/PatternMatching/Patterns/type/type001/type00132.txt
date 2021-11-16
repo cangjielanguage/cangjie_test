@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_type_00132
+ * -@TestCaseName: type00132.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use Array as type is legal for type pattern.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 类型模式--1
+ */

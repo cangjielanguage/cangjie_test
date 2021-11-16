@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_match_0436n.cj
+ * -@TestCaseName: enum_match_0436n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: match与enum定义的构造器参数个数不匹配
+ * -#step1: 准备enum，正确对变量赋值
+ * -#step2: match中与变量定义中的构造器参数个数不匹配
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

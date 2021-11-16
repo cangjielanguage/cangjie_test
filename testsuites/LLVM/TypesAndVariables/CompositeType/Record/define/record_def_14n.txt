@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_def_14n.cj
+ * -@TestCaseName: record_def_14n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record定义时有多个类型变元，类型变元间的分隔符错误，编译报错
+ * -#step1: 定义有多个类型变元的record，类型变元间以空格分割
+ * -#step2: 编译检查编译报错信息
+ * -@Expect: 编译器报错
+ * -@Priority: High
+ */

@@ -1,0 +1,18 @@
+/*
+ * -@TestCaseID: invoke_11.cj
+ * -@TestCaseName: invoke_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-24
+ * -@RequirementName: This类型正确使用
+ * -@Condition: no
+ * -@Brief: 在main中调用class类C中赋值的静态成员变量（包含class类Data的实例成员函数）
+ * -#step1: 在class类Data中 定义的实例成员函数的返回类型为This类型，返回表达式为函数（返回This）
+ * -#step2: 在class类C中，通过赋值将lambda表达式赋值给静态成员变量b，lambda表达式为调用step1中的实例成员函数后再调用
+ * -#step3: 在main中通过C.b is Data判断step2的变量b是否为Data类型
+ * -@Expect: 编译成功，执行成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.4 This类型 
+ * -@SpecDetail: This 类型是当前类型的子类型，This 可以自动 cast 成当前类型，但反之不行
+ * -@catalog: # 类和接口## 类### This 类型--4
+ */

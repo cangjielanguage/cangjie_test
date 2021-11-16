@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: extends_override_rule_10.cj
+ * -@TestCaseName: extends_override_rule_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief:子类无override重写父类默认（public）函数,父类函数入参为YY，子类函数入参为YY的父类YY
+ * -#step1:创建父类Base，有默认（public）函数foo,有1个入参,入参是类YY,YY是XX的子类
+ * -#step2:创建子类Data继承Base，无override写函数foo,入参是XX,返回类型相同
+ * -#step3:构造Data对象obj1，调用函数foo，预期会执行Data的函数foo
+ * -#step4:构造Base对象obj2，调用函数foo，预期会执行Base的函数foo
+ * -@Expect:执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: error_report_03.cj
+ * -@TestCaseName: error_report_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1039-01
+ * -@RequirementName: 编译告警
+ * -@Condition: no
+ * -@Brief: 编译告警：语义错误引起的连环报错
+ * -@step1: 定义一个由语义错误引起的连环报错
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

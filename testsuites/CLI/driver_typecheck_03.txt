@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_typecheck_03.cj
+ * -@TestCaseName: driver_typecheck_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项–typecheck后跟源文件，源文件无语法错误
+ * -#step1: 执行cjc –typecheck xxx源文件（无语法错误）
+ * -@Expect: 报错，提示需要-frontend
+ * -@Priority: High
+ */

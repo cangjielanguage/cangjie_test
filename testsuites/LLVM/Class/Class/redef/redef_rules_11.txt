@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: redef_rules_11.cj
+ * -@TestCaseName: redef_rules_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: redef修饰父类静态函数
+ * -@Condition: no
+ * -@Brief: C2<:C1 & I, 其中C2和C1有同签名同返回类型的静态函数
+ * -#step1: 定义父类C1并声明静态函数foo
+ * -#step2: 定义接口I并声明静态函数foo，与C1中函数同签名同返回类型
+ * -#step3: 定义C2继承C1和I，redef静态函数foo，与C1中函数同签名同返回类型
+ * -@Expect: 运行成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 类成员函数的修饰符
+ * -@SpecDetail: 当一个静态函数重定义继承自父类型的静态函数时，必须用 redef 进行修饰
+ */

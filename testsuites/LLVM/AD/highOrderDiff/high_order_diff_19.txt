@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: high_order_diff_19.cj
+ * -@TestCaseName: high_order_diff_19.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-22
+ * -@RequirementName: 高阶微分测试需求
+ * -@Condition: no
+ * -@Brief: 高阶微分函数中引用全局变量
+ * -@step1: 高阶微分函数中引用全局变量
+ * -@Expect: 编译报错
+ * -@catelog:
+ * -@Priority: level0
+ */

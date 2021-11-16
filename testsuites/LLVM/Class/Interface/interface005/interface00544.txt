@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00544
+ * -@TestCaseName: interface00544.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define abstract class inside interface.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

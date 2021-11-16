@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: int_case12
+* -@TestCaseName: int_case12.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-2027-01
+
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证format()；整数,"start"+c.format("9.9")
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

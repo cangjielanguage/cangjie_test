@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Relate_030209.cj
+ * -@TestCaseName: Relate_030209.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. <(小于操作符)左右操作数分别为相同浮点数类型的变量(比如：float16,float32)，且左操作数小于右操作数时返回1；
+ *  #2.
+ * -@Expect: Compile/execute pass, return 1, 报错提示：type check of binary expression fails.
+ * -@Priority: level0
+ */

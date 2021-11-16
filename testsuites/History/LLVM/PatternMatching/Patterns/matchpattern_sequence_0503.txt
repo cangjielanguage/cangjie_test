@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: matchpattern_sequence_0503.cj
+ * -@TestCaseName: matchpattern_sequence_0503.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: sequence pattern和其他pattern嵌套
+ * -#step1: sequence pattern和其他pattern嵌套
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 表达式/模式匹配表达式/序列模式
+ * -@SpecDetail: [p] ，其中 p 可以是一系列 pattern 或 ...
+ */

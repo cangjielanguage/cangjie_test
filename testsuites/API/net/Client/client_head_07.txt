@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: client_head_07.cj
+ * -@TestCaseName: client_head_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-01
+ * -@RequirementName: 提供 class Client
+ * -@Condition: no
+ * -@Brief: func head(url: String): Result<Response>,url为上文列举的规定外的非法字符 如双引号
+ * -#step1: func head(url: String): Result<Response>,url为上文列举的规定外的非法字符 如双引号 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Client
+ * -@SpecDetail: func head(url: String): Result<Response>
+ */

@@ -1,0 +1,11 @@
+{
+  "package": {
+    "ffi/c": "cangjieCFFI_path"
+  },
+  "foreign_module": {
+    "libusg_ffi_23.6CType.so": {
+      "path": "./",
+      "export": ["PassStructToC"]
+    }
+  }
+}

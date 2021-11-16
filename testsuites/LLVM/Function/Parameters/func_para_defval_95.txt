@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: func_para_defval_95.cj
+ * -@TestCaseName: func_para_defval_95.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试class父类init中含可选参数，子类调用时super()省略可选参数
+ * -#step1: 定义基类class Base，init中含一个可选参数为int32类型
+ * -#step2: 定义子类class Data继承Base，init中含一个可选参数为int32类型，super()调用父类构造器
+ * -#step3: 实例化Data，传入int32类型的实参，省略可选参数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

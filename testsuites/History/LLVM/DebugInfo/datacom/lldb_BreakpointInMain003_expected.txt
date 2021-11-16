@@ -1,0 +1,8 @@
+lldb,lldb 015_debug_basetype,015_debug_basetype
+b,b 4,015_debug_basetype.cj:4
+b,b 5,015_debug_basetype.cj:5
+bdisable,breakpoint disable 1,breakpoints disabled
+r,r,-> 5
+benable,breakpoint enable 1,breakpoints enabled
+rerun,r,-> 4
+c,c,-> 5

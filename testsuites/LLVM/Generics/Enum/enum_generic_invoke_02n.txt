@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_02n.cj
+ * -@TestCaseName: enum_generic_invoke_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>在top-level被调用, EnumName之后和Constructor之后同时体现泛型变元，编译报错
+ * -#step1: 定义一个泛型enum TimeUnit<T>，
+ * -#step2: 在top-level调用泛型enum 传入变元int32，match匹配enum中的构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

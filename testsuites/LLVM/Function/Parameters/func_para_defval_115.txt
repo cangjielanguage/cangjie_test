@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_115.cj
+ * -@TestCaseName: func_para_defval_115.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试在函数体中声明与可选参数左值同名的变量
+ * -#step1: 定义func Foo，其中含两个可选参数A,B.函数体中定义同名变量A
+ * -#step2: 调用函数传入实参
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

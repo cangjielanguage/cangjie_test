@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_invoke_0411n.cj
+ * -@TestCaseName: enum_invoke_0411n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 定义无参constructor，访问的时候用func()带括号，编译报错
+ * -#step1: 定义无参constructor，访问的时候用func()带括号
+ * -#step2: 检查编译结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

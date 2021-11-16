@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_init_01.cj
+ * -@TestCaseName: matcher_init_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Matcher-参数正确（regex符合正则语法）
+ * -#step1: Matcher-参数正确（regex符合正则语法）
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: init(Regex: Regex, input: String)
+ */

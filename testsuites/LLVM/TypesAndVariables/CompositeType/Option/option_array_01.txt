@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: option_array_01.chr
+ * -@TestCaseName: option_array_01.txt.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试Option<T>的成员变量为Option<T>数组, 实例化两次
+ * -#step1: 测试Option<T>的成员变量为Option<T>数组, 实例化两次
+ * -#step2: match匹配Option<Option<Int32>>类型的变量
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

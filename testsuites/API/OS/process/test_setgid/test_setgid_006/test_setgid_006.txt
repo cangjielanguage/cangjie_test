@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: test_setgid_004
+ * -@TestCaseName: test_setgid_004
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-05
+ * -@RequirementName: 提供进程相关函数
+ * -@Conditon: no
+ * -@Brief: 验证setgid()的功能
+ * -#step1: 通过chmod修改权限
+ * -#step2: 通过仓颉的setgid()修改gid
+ * -#step2: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

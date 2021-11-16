@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_help_01.cj
+ * -@TestCaseName: driver_help_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的-h选项
+ * -#step1: cjc -h
+ * -@Expect: 执行成功，打印工具使用简介
+ * -@Priority: High
+ */

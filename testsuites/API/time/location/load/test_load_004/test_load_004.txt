@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: test_local_004
+ * -@TestCaseName: test_local_004
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1092-01
+ * -@RequirementName: 按照设计实现Location类的接口，支持时区的初始化、获取、调整等功能
+ * -@Conditon: no
+ * -@Brief: 验证Location的load方法的功能
+ * -#step1: 通过load方法获取Location实例
+ * -#step2: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

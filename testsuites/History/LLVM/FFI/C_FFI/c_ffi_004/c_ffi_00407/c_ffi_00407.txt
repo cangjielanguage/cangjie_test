@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: FFI_C_00407
+ * -@TestCaseName: c_ffi_00407.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 使用UnsafePtr强转数组类型。
+ * #1.定义两个不同名的unsafePointerCast函数，其功能一致。
+ * -@Expect: 编译成功，运行return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_OperatorOverloading_00706
+ * -@TestCaseName: operator_overloading_00706.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2030
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 在package a中声明定义external自定义类型的external trait操作符函数，在package b中导入a后使用操作符，重载生效。
+ * -@Expect: 编译成功.
+ * -@Priority: level0
+ */

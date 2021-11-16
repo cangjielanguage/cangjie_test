@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: property_bnf_0301.cj
+ * -@TestCaseName: property_bnf_0301.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: 类中支持属性
+ * -@Condition: no
+ * -@Brief: propertyModifier的合法取值：open/override,子类权限降级，报错
+ * -#step1: propertyModifier的合法取值：open/override,子类权限降级，报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 属性/属性的修饰符
+ * -@SpecDetail: propertyModifier* 'prop' ('let' | 'var') Identifier ':' type propertyBody?
+ */

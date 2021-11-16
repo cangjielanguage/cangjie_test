@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: DirInfo_2_6_GetParent03
+ * -@TestCaseName: DirInfo_2_6_GetParent03.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: di.getDirectories(path), path和构造函数入参一致
+ * -@Expect: 预期报错
+ * -@Priority: level 1
+ */
+    

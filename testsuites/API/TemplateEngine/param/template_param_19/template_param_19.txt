@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_param_19.cj
+ * -@TestCaseName: template_param_19.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: param-decl-模板中只含有param,直接默认为raw-String，不生成构造函数
+ * -#step1: param-decl-模板中只含有param,直接默认为raw-String，不生成构造函数
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: param-decl
+ */

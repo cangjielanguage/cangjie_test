@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: operator_overloading_01002.cj
+ * -@TestCaseName: operator_overloading_01002.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: append多个重载操作符的普通TR，包含空的TR
+ * -#step1: 定义多个TR，TR1、TR2、TR3，其中TR1为空
+ * -#step2: append多个普通TR
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

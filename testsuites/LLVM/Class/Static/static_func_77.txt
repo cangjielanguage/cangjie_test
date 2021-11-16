@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_func_77.cj
+ * -@TestCaseName: static_func_77.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: 通过接口名直接调用接口中静态成员函数
+ * -#step1: 接口中定义一个静态成员函数foo
+ * -#step2: 接口外通过接口名直接调用静态函数foo
+ * -@Expect: 执行成功,返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,21 @@
+2021-11-08 02:28:11 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_40/src/adjoint_init_40.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:28:11 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_40/src/adjoint_init_40_cj_cangjie2llvmgc_test_cfg_1636338471
+2021-11-08 02:28:11 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error -c src/pkg/pkg.cj -o pkg.o
+2021-11-08 02:28:12 DEBUG return code: 0
+2021-11-08 02:28:12 DEBUG stdout : 
+
+2021-11-08 02:28:12 DEBUG stderr : 
+
+2021-11-08 02:28:12 DEBUG Run time: 0.56, remain time: 3e+02
+2021-11-08 02:28:12 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error adjoint_init_40.cj pkg.o -o adjoint_init_40.out
+2021-11-08 02:28:12 DEBUG return code: 134
+2021-11-08 02:28:12 DEBUG stdout : 
+
+2021-11-08 02:28:12 DEBUG stderr : 
+@	terminate called after throwing an instance of 'std::bad_alloc'
+@	  what():  std::bad_alloc
+@	Aborted (core dumped)
+
+2021-11-08 02:28:12 DEBUG Run time: 0.38, remain time: 3e+02
+2021-11-08 02:28:12 ERROR Failed, return code 134 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_40/src/adjoint_init_40.cj_cangjie2llvmgc_test_cfg.log

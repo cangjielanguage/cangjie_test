@@ -1,0 +1,16 @@
+/*
+* -@TestCaseID: list014_com_05
+* -@TestCaseName: list014_com_05
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-Lang-1011-04
+* -@RequirementName: lang.List库
+* -@Condition: no
+* -@Brief: combine api remove and removeIf
+* -#step1: 
+* -@Expect: Compile success, return 0.
+* -@Priority: level0
+* -@SpecVersion: spec 0.22.3
+* -@SpecChapter: List
+* -@SpecDetail: 
+* -@catalog: 
+*/

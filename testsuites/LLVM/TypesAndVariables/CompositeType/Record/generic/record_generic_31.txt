@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_generic_31.cj
+ * -@TestCaseName: record_generic_31.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record<T1>的约束T1 <: V1(V1为普通类，T1为V1的子类)
+ * -#step1: 定义一个父类Foo，定义一个子类Bar
+ * -#step2: 定义一个约束条件为T1<:Foo的泛型record <T1>，内部定义一个类型变元label并在init函数中初始化label
+ * -#step3: 创建Bar类型的实例，实例化record，传入类元为<Bar>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

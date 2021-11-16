@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: where_def_tv_21.cj
+ * -@TestCaseName: where_def_tv_21.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-03
+ * -@RequirementName: 泛型where约束检查
+ * -@Condition: no
+ * -@Brief: 泛型定义中两个类型变元有where限定:where T<:V,T<:I1,V<:I2
+ * -#step1: 泛型定义中两个类型变元有where限定:where T<:V,T<:I1,V<:I2
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 泛型/泛型约束
+ * -@SpecDetail: 
+ */

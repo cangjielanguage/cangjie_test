@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: property_implement_06.cj
+ * -@TestCaseName: property_implement_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: 类中支持属性
+ * -@Condition: no
+ * -@Brief: setter函数的返回值类类型不是Unit，编译报错
+ * -#step1: setter函数的返回值类类型不是Unit，编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 属性
+ * -@SpecDetail:  setter 函数类型是 (T)->Unit ，T 是该属性的类型，形参名需要显式指定，当对该属性赋值时会 执行 setter 函数
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: extends_override_06.cj
+ * -@TestCaseName: extends_override_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief:子类无override重写父类private(无open)修饰的函数，执行成功
+ * -#step1:创建父类Base，有private函数foo
+ * -#step2:创建子类Data继承Base，无override写同名函数foo
+ * -#step3:构造Data对象obj1，调用函数foo，预期会执行Data的函数foo
+ * -@Expect:执行成功，private仅类中可见，同名同参同返回值也不是“覆盖”关系
+ * -@Priority: High
+ */

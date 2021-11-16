@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: pkgs_dup_import_01n.cj
+ * -@TestCaseName: pkgs_dup_import_01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 测试从两个不同的包中导入两个同名class
+ * -#step1: 在pkg中定义一个external修饰的class命名test
+ * -#step2: 在pkg1中定义一个external修饰的class命名test
+ * -#step3: 通过pkg.obj的方式导入pkg和pkg1中的test类
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Process_getId_001
+* -@TestCaseName: Process_getId_001.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: os - process functions
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证getID(): ProcessId
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

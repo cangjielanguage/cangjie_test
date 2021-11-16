@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matchdata_groupNumber_03.cj
+ * -@TestCaseName: matchdata_groupNumber_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: 这里写Brief
+ * -#step1: 这里写step
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: func groupNumber(): int64返回捕获组个数
+ */

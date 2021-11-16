@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Resolution_00206
+ * -@TestCaseName: function_overload_resolution_00206.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Class member function have higher level than trait.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

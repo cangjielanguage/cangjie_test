@@ -1,0 +1,15 @@
+2021-11-08 02:02:24 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/Array_new/Array01/Array_sort_04.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:02:24 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/Array_new/Array01/Array_sort_04_cj_cangjie2llvmgc_test_cfg_1636335529
+2021-11-08 02:02:24 DEBUG execute cmd ===>>>: cjc -ulimit-error Array_sort_04.cj -o Array_sort_04.out
+2021-11-08 02:02:25 DEBUG return code: 1
+2021-11-08 02:02:25 DEBUG stdout : 
+
+2021-11-08 02:02:25 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/Array_new/Array01/Array_sort_04_cj_cangjie2llvmgc_test_cfg_1636335529/Array_sort_04.cj:19:1: [31merror[0m: illegal object in toplevel, toplevel must consist of declaration or definition
+@	   19 | a1.sort()
+@	      | [32m^[0m
+@	1 error generated
+
+2021-11-08 02:02:25 DEBUG Run time: 0.36, remain time: 3e+02
+2021-11-08 02:02:25 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/Array_new/Array01/Array_sort_04.cj_cangjie2llvmgc_test_cfg.log

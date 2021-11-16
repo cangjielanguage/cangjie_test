@@ -1,0 +1,17 @@
+2021-11-08 02:29:38 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Function/FunctionDefinition/return/function_return_unit_bottom02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:29:38 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Function/FunctionDefinition/return/function_return_unit_bottom02_cj_cangjie2llvmgc_test_cfg_1636338472
+2021-11-08 02:29:38 DEBUG execute cmd ===>>>: cjc -ulimit-error function_return_unit_bottom02.cj -o function_return_unit_bottom02.out
+2021-11-08 02:29:39 DEBUG return code: 1
+2021-11-08 02:29:39 DEBUG stdout : 
++	Operand is null
++	  br <null operand!>, label %if.then5, label %if.else6
+
+2021-11-08 02:29:39 DEBUG stderr : 
+@	Operand is null
+@	  br <null operand!>, label %if.then5, label %if.else6
+@	[31merror[0m: [CodeGen Error]: Generate module error.
+@	[31merror[0m: [CodeGen Error]: Generate module error.
+
+2021-11-08 02:29:39 DEBUG Run time: 0.44, remain time: 3e+02
+2021-11-08 02:29:39 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Function/FunctionDefinition/return/function_return_unit_bottom02.cj_cangjie2llvmgc_test_cfg.log

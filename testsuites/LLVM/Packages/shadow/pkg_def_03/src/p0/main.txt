@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: main.cj
+ * -@TestCaseName: main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: package后缺少包名
+ * -#step1: package后缺少包名
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 包声明以关键字package 开头，后跟包名，且包声明必须在源文件的首行（注释和空白字符不计）
+ */

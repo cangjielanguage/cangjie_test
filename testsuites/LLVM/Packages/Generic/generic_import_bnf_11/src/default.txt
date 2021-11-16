@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: p1同包不同源文件中的成员不用导入就能访问
+ * -#step1: p1同包不同源文件中的成员不用导入就能访问
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 泛型
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

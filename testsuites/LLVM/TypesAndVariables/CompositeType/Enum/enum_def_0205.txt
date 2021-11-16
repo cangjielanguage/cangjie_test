@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_def_0205.cj
+ * -@TestCaseName: enum_def_0205.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试constructor参数手动加Box
+ * -#step1: 声明三个constructor，第三个constructor中参数使用enum类TimeUnit，手动添加Box，即Box<TimeUnit,TimeUnit>
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

@@ -1,0 +1,57 @@
+2021-11-08 01:42:59 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/Filesystem/os_chown_1.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:42:59 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/Filesystem/os_chown_1_cj_cangjie2llvmgc_test_cfg_1636335519
+2021-11-08 01:42:59 DEBUG execute cmd ===>>>: cjc -backend llvm caserunner.cj -o os_chown_1.out os_chown_1.cj
+2021-11-08 01:43:01 DEBUG return code: 0
+2021-11-08 01:43:01 DEBUG stdout : 
+
+2021-11-08 01:43:01 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/Filesystem/os_chown_1_cj_cangjie2llvmgc_test_cfg_1636335519/caserunner.cj:33:5: [33mwarning[0m: unhandled items after throw expr
+@	   33 |     }
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/Filesystem/os_chown_1_cj_cangjie2llvmgc_test_cfg_1636335519/caserunner.cj:186:19: [33mwarning[0m: 'x' has been defined in the outside of match expression, are you sure using 'x' as a variable pattern here?
+@	  186 |         case Some(x) => x
+@	      |                   [32m^[0m
+@	2 warnings generated
+
+2021-11-08 01:43:01 DEBUG Run time: 2.5, remain time: 3e+02
+2021-11-08 01:43:01 DEBUG execute cmd ===>>>:   os_chown_1.out 
+2021-11-08 01:43:01 DEBUG return code: 0
+2021-11-08 01:43:01 DEBUG stdout : 
++	==============Test Case chown()入参 Start==============
++	-------------Test Result------------------------------
++	PASS: 1
++	FAIL: 0
++	TOTAL: 1
++	==============Test End=================================
++	
+
+2021-11-08 01:43:01 DEBUG stderr : 
+
+2021-11-08 01:43:01 DEBUG Run time: 0.046, remain time: 3e+02
+2021-11-08 01:43:01 DEBUG execute cmd ===>>>: pwd
+2021-11-08 01:43:01 DEBUG return code: 0
+2021-11-08 01:43:01 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/Filesystem/os_chown_1_cj_cangjie2llvmgc_test_cfg_1636335519
+
+2021-11-08 01:43:01 DEBUG stderr : 
+
+2021-11-08 01:43:01 DEBUG Run time: 0.029, remain time: 3e+02
+2021-11-08 01:43:01 DEBUG execute cmd ===>>>: ls -l test_fj_0.txt |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// os_chown_1.cj
+2021-11-08 01:43:02 DEBUG return code: 1
+2021-11-08 01:43:02 DEBUG stdout : 
++	compare.py input:
++		-rw-rw-r-- 1 zhujunhua zhujunhua 0 Nov  8 01:38 test_fj_0.txt
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex-auto, pattern: -rw-rw-r-- , result: True, matched at output line: 0"
++	b"It's a assert, flag: scan, pattern: fj fj , result: False, matched at output line: 2"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan, pattern: test_fj_0.txt , result: True, matched at output line: 0"
+
+2021-11-08 01:43:02 DEBUG stderr : 
+
+2021-11-08 01:43:02 DEBUG Run time: 0.11, remain time: 3e+02
+2021-11-08 01:43:02 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/Filesystem/os_chown_1.cj_cangjie2llvmgc_test_cfg.log

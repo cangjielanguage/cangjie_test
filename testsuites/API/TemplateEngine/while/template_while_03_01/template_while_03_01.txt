@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_while_03_01.cj
+ * -@TestCaseName: template_while_03_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: 非法-缺少while,只有endwhile，抛异常
+ * -#step1: 非法-缺少while,只有endwhile，抛异常
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: 非法-#while.#endwhile不完整
+ */

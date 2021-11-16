@@ -1,0 +1,15 @@
+2021-11-08 02:38:14 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/extend/extend_define_extendBody_08.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:38:14 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Extend/extend/extend_define_extendBody_08_cj_cangjie2llvmgc_test_cfg_1636338477
+2021-11-08 02:38:14 DEBUG execute cmd ===>>>: cjc -ulimit-error extend_define_extendBody_08.cj -o extend_define_extendBody_08.out
+2021-11-08 02:38:14 DEBUG return code: 1
+2021-11-08 02:38:14 DEBUG stdout : 
+
+2021-11-08 02:38:14 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Extend/extend/extend_define_extendBody_08_cj_cangjie2llvmgc_test_cfg_1636338477/extend_define_extendBody_08.cj:9:3: [31merror[0m: non-static generic member function 'foo1' is not supported
+@	    9 |   func foo1<U>(){
+@	      |   [32m^[0m
+@	1 error generated
+
+2021-11-08 02:38:14 DEBUG Run time: 0.35, remain time: 3e+02
+2021-11-08 02:38:14 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/extend/extend_define_extendBody_08.cj_cangjie2llvmgc_test_cfg.log

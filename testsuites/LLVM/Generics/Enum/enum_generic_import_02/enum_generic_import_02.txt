@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_import_02.cj
+ * -@TestCaseName: enum_generic_import_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief:同package，一个chr文件中调用另一个文件中的enum<T>，执行成功
+ * -#step1:准备同package，不同文件
+ * -#step2:一个chr文件中调用另一个文件中的enum<T>
+ * -#step3:检查编译和执行结果
+ * -@Expect:执行成功
+ * -@Priority: High
+ */

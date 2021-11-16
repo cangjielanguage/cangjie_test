@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_invoke_49.cj
+ * -@TestCaseName: class_generic_invoke_49.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>中类型变元T为Map<T1,T2>
+ * -#step1: 定义一个泛型class <T>，内部定义一个T类型的变量并在init函数中初始化变量
+ * -#step2: 定义一个Map<Int32, String>类型的变量MapWidth，实例化class<T>传入类型变元为Map<Int32, String>，传入MapWidth
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_shadow_overload_01n.cj
+ * -@TestCaseName: record_shadow_overload_01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中的同名label的遮盖
+ * -#step1: 在record体中定义一个 label a；
+ * -#step2: 定义一个遮盖成员label a，编译检查编译结果
+ * -@Expect: 编译报错，a已定义
+ * -@Priority: High
+ */

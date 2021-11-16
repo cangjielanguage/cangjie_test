@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Instant_00150
+ * -@TestCaseName: interface_instant_00150.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Instantiation support Set<Int32>(not supported yet).
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

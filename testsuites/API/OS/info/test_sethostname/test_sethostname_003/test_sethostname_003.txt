@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: test_sethostname_001
+ * -@TestCaseName: test_sethostname_001
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-01
+ * -@RequirementName: 提供系统名称函数
+ * -@Conditon: no
+ * -@Brief: 验证sethostname()的功能
+ * -#step1: 通过仓颉的sethostname设置主机名称
+ * -#step2: 通过系统指令获取主机名称
+ * -#step3: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

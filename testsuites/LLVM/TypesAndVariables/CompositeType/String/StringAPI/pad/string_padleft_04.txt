@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_padleft_04.cj
+ * -@TestCaseName: string_padleft_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的padLeft(totalWidth: UInt64,paddingChar:char = ' '):String方法，totalWidth取极值，执行正确
+ * -#step1: 定义不同形式的string，调用该变量的padLeft方法
+ * -#step2: totalWidth宽度大于字符串长度，检查执行结果
+ * -@Expect: 左侧被定义的char填充，执行正确
+ * -@Priority: High
+ */

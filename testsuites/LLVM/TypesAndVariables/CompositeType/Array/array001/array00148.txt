@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00148
+ * -@TestCaseName: array00148.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.定义并初始化类成员类型数组，不指定数组类型。
+ * #2.数组成员同时拥有父接口和父类。
+ * #3.不指定类型时，无法自动推断？待明确 spec issue187
+ * -@Expect: 编译失败，报错类型不匹配.
+ * -@Priority: level0
+ */

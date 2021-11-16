@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_name_07.cj
+ * -@TestCaseName: string_type_name_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试英文字符命名的函数func能否被正常引用
+ * -#step1: 定义一个func用英文字符命名，返回一个String变量str
+ * -#step2: 调用函数，获取返回值
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

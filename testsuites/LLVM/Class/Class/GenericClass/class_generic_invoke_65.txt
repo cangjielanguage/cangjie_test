@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_invoke_65.cj
+ * -@TestCaseName: class_generic_invoke_65.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>中类型变元T为interface
+ * -#step1: 定义一个类interface I
+ * -#step2: 定义一个泛型class<T> Data，内部定义一个T类型的变量并在init中初始化变量
+ * -#step3: 实例化泛型class<T> Data2，类型变元为I，传入I
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

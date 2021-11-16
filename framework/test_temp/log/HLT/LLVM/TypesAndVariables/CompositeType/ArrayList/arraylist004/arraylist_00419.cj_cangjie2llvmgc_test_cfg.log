@@ -1,0 +1,41 @@
+2021-10-25 04:10:08 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist004/arraylist_00419.cj_cangjie2llvmgc_test_cfg.log
+2021-10-25 04:10:08 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist004/arraylist_00419_cj_cangjie2llvmgc_test_cfg_1635134624
+2021-10-25 04:10:08 DEBUG execute cmd ===>>>: cjc -ulimit-error arraylist_00419.cj -o arraylist_00419.out 2>&1 1>/dev/null 
+2021-10-25 04:10:08 DEBUG return code: 1
+2021-10-25 04:10:08 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist004/arraylist_00419_cj_cangjie2llvmgc_test_cfg_1635134624/arraylist_00419.cj:7:5: [31merror[0m: 'subList' is not a member of class 'ArrayList'
++	    7 | a = a.subList(-2,-1) // EXPECTED: regex xxx
++	      |     [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist004/arraylist_00419_cj_cangjie2llvmgc_test_cfg_1635134624/arraylist_00419.cj:7:1: [31merror[0m: type incompatible in this assignment
++	    7 | a = a.subList(-2,-1) // EXPECTED: regex xxx
++	      | [32m^[0m
++	2 errors generated
+
+2021-10-25 04:10:08 DEBUG stderr : 
+
+2021-10-25 04:10:08 DEBUG Run time: 0.81, remain time: 3e+02
+2021-10-25 04:10:09 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// arraylist_00419.cj
+2021-10-25 04:10:09 DEBUG return code: 1
+2021-10-25 04:10:09 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist004/arraylist_00419_cj_cangjie2llvmgc_test_cfg_1635134624/arraylist_00419.cj:7:5: [31merror[0m: 'subList' is not a member of class 'ArrayList'
++		    7 | a = a.subList(-2,-1) // EXPECTED: regex xxx
++		      |     [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist004/arraylist_00419_cj_cangjie2llvmgc_test_cfg_1635134624/arraylist_00419.cj:7:1: [31merror[0m: type incompatible in this assignment
++		    7 | a = a.subList(-2,-1) // EXPECTED: regex xxx
++		      | [32m^[0m
++		2 errors generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan-not, pattern: core dumped , result: True, matched at output line: 0"
++	b"It's a assert, flag: scan-not, pattern: stack trace , result: True, matched at output line: 1"
++	b'flag: regex, pattern: \\:7\\:.*\\:.*xxx , result: False, matched at output line: 1'
++	Match End!, Compare Failed
+
+2021-10-25 04:10:09 DEBUG stderr : 
+
+2021-10-25 04:10:09 DEBUG Run time: 0.19, remain time: 3e+02
+2021-10-25 04:10:09 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist004/arraylist_00419.cj_cangjie2llvmgc_test_cfg.log

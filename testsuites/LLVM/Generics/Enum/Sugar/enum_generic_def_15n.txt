@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_def_15n.chr
+ * -@TestCaseName: enum_generic_def_15n.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试完整正确的泛型enum定义<T>，泛型约束为where T <:Int32，编译报错
+ * -#step1: 定义一个父类Foo，定义一个子类Bar
+ * -#step2: 定义一个约束条件为where T <: int32的泛型enum <T>
+ * -#step3: 实例化子类Bar，match匹配enum中的构造函数，传入类元为int32
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

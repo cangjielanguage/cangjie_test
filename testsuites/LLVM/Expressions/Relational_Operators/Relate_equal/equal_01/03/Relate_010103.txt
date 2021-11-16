@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Relate_010103.cj
+ * -@TestCaseName: Relate_010103.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. ==(相等操作符)紧接着左操作数，与右操作数之间有空格，且两个操作数相等返回0；
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

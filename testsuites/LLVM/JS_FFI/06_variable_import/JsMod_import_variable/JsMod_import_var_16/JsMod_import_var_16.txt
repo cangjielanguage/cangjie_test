@@ -1,0 +1,22 @@
+ /*
+ * -@TestCaseID: JsMod_import_var_16
+ * -@TestCaseName: JsMod_import_var_16.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsModule调用js侧let定义的array类型的函数
+ * -#step1: js侧的let定义的变量，变量类型为array,作为成员导出
+ * -#step2: 仓颉侧使用@JsModule修饰top-level的let变量,变量类型为Int16*Int32 
+ * -#step3: step2中的变量在类实例成员函数的函数体内调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsModule
+ * -@SpecDetail: 1、仓颉侧Tuple映射Js侧array 2、当 `JavaScript` 包直接导出函数或变量时，可以通过 `@JsModule` 注解来表示
+ * -@SpecDetail: 3、通过 `foreign` 修饰符以及一系列注解（`@JsModule`，`@JsMember`，`@JsRename`）来书写绑定。4、`foreign let` 不要求必须初始化之后使用。
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsModule--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript--5
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 变量--4
+ */

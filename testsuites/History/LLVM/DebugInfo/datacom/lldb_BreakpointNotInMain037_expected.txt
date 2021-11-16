@@ -1,0 +1,4 @@
+lldb,lldb 043_debuginfun_notsetbp,043_debuginfun_notsetbp
+b,b 10,043_debuginfun_notsetbp.cj:11
+b,b 12,043_debuginfun_notsetbp.cj:14
+r,r,-> 11

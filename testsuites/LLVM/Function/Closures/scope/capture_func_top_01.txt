@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: capture_func_top_01.cj
+ * -@TestCaseName: capture_func_top_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-07
+ * -@RequirementName: 变量捕获
+ * -@Condition: no
+ * -@Brief: 变量声明在top，top函数的形参默认值捕获该变量
+ * -#step1: 变量声明在top，top函数的形参默认值捕获该变量
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 函数/闭包
+ * -@SpecDetail: 
+ */

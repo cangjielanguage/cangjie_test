@@ -1,0 +1,15 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/member-func/func/class_func_017.cj
+*- @TestCaseName:类修饰符与函数修饰符的组合
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon: 无
+*- @Brief:abstract类中的override修饰函数，可以生效
+* -#定义类abstract BaseA，定义函数open func get()
+* -#定义类BaseB extends BaseA，并定义一个与BaseA相同的get函数，使用override修饰
+* -#定义类Data extends BaseB
+* -#创建Data类的实例，调用get函数
+*- @Expect:override 修饰符生效，get函数返回值正确
+*- @Priority:level1 
+*/

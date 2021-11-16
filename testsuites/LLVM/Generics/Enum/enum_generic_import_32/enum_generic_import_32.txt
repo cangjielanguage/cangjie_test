@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_import_32.cj
+ * -@TestCaseName: enum_generic_import_32.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: import的enum<T>和另一个import中的enum<T>重名，以import pkg的方式导入，以pkg.type分别访问两个enum
+ * -#step1: 准备两个package含同名enum<T>
+ * -#step2: 以import pkg的方式导入，以pkg.type分别访问两个enum
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

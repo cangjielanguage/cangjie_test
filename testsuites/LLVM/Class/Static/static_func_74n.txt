@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_func_74n.cj
+ * -@TestCaseName: static_func_74n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: 通过实例调用record的静态成员函数，编译报错
+ * -#step1: record Data定义静态成员函数foo
+ * -#step2: record外通过实例调用静态成员函数foo
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

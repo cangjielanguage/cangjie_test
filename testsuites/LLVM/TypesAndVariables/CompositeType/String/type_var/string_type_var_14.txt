@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_var_14.cj
+ * -@TestCaseName: string_type_var_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型作为trait体中成员函数入参使用
+ * -#step1: 定义一个trait，入参为String类型的成员函数int；append String实现trait中的func int
+ * -#step2: 定义一个字符串，传入函数int中。成员函数调用成功
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_initblock_def_08.cj
+ * -@TestCaseName: class_initblock_def_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试class中init block定义，使用public修饰符
+ * -#step1: class中自定义正确的的init block，使用public修饰符
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

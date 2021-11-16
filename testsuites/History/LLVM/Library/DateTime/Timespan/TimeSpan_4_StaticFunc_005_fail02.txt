@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: TimeSpan_4_StaticFunc_005_fail02
+ * -@TestCaseName: TimeSpan_4_StaticFunc_005_fail02.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: TimeSpan
+ * -@Condition: charc, clang, maple test framework and python3.
+ * -@Brief: "//小时+分钟+毫秒 TimeSpan.Parse(""10:27.12"")"
+ * -@Expect: 预期报错
+ * -@Priority: level1
+ */
+    

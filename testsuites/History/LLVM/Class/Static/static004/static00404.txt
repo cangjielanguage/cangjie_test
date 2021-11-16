@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Static_00404
+ * -@TestCaseName: static00404.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2003-03
+ * -@RequirementName: Static
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define overload static function with default value inside class and interface.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

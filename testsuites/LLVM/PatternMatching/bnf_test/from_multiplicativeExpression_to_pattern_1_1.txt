@@ -1,0 +1,19 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <multiplicativeExpression> case (use exponentExpression):
+Origin BNF is 
+    :  exponentExpression (NL* multiplicativeOperator NL* exponentExpression)*
+    
+Test   BNF is 
+    :  <<TARGET=exponentExpression->pattern>> (NL* multiplicativeOperator NL* exponentExpression)*
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: index_operator_overload_18.cj
+ * -@TestCaseName: index_operator_overload_18.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXXX
+ * -@RequirementName: 三元操作符重载定义
+ * -@Condition: no
+ * -@Brief: 导入的索引操作符set重载冲突，编译报错
+ * -#step1: 包中定义类A且索引操作符set重载函数
+ * -#step2: 包中定义类B且索引操作符set重载函数
+ * -#step3: 导入包pkgs实例化类A\B，调用a[b]
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 10.2 操作符重载
+ * -@SpecDetail: 索引操作符（ [] ）分为 get  let a = arr[i] 和 set  arr[i] = a 两种场景，它们通过参数及返回值的不同来区分不同的重载，两者可以分别独立重载，互不影响。
+ */

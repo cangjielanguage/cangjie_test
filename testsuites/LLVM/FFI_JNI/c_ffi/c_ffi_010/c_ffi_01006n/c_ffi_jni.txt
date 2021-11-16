@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: c_ffi_00606
+ * -@TestCaseName: c_ffi_00606.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1086-02
+ * -@RequirementName: @Rename
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 参数类型不一致，仓颉侧不做检查
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Function_Type_Checking_00104
+ * -@TestCaseName: type_checking_00104.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-01
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Choose a trait generics constraints, and define same name, same type function this trait`s function.
+ * -@Expect: Compile/execute pass, return 0(will shadow).
+ * -@Priority: level0
+ */

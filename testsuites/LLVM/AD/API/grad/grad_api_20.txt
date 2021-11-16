@@ -1,0 +1,18 @@
+/*
+ * -@TestCaseID: grad_api_20.cj
+ * -@TestCaseName: grad_api_20.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-19
+ * -@RequirementName: 微分api，grad的语法语义
+ * -@Condition: no
+ * -@Brief: 使用grad并传入相关参数
+ * -#step1: 定义返回类型为Float64的可微函数foo,入参为x(Float64), y(Float64)
+ * -#step2: 定义可微record A
+ * -#step3: 在record A中，定义返回类型为Float64的不可微函数goo,入参为x(Float64), y(Float64)
+ * -#step4: 在goo中调用grad，并传入参数foo和tuple(Float64,Float64)
+ * -@Expect: 编译成功，结果正确
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: grad关键字不能在可微函数中被使用
+ */

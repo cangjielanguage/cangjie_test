@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_extends_02.cj
+ * -@TestCaseName: class_generic_extends_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型父类实例化后被继承
+ * -#step1: 定义一个泛型父类class Base<T> 内部定义一个变量base
+ * -#step2: 定义一个泛型类Data<T>继承Base<Int32>，内部定义一个变量a
+ * -#step3: 实例化泛型class Data<Int32>，调用变量a和base
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

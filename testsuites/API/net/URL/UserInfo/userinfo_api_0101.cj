@@ -1,0 +1,12 @@
+// EXEC: %compiler %stdx_run_opt %f -o %output
+// EXEC: %stdx_run %stdx_run_opt %output %stdx_run_args
+
+from std import net.*
+func main(): Int64 {
+    var userinfo1 = UserInfo ("Abc12!")
+    var username1 = userinfo1.username()
+    if( username1 != "Abc12!" ){
+        return 1
+    }
+    return 0
+}

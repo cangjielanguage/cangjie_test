@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_import_07.cj
+ * -@TestCaseName: template_import_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: import-stmt-#之后fromm开头，抛异常
+ * -#step1: import-stmt-#之后fromm开头，抛异常
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: import-stmt
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Constraints_00219
+ * -@TestCaseName: interface_constraints_00219.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2095-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define multi type constraints with same name as trait.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

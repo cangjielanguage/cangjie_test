@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: loop_in_diff_func_23.cj
+ * -@TestCaseName: loop_in_diff_func_23.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-13
+ * -@RequirementName: AD增强支持循环表达式可微
+ * -@Condition: no
+ * -@Brief: while表达式应用于lambda表达式中
+ * -@step1: while表达式应用于lambda表达式中
+ * -@Expect: 执行成功,返回0
+ * -@catelog: # 自动微分## 可微函数--18
+ * -@Priority: level0
+ */

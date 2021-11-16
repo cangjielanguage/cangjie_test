@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_scope_0401.cj
+ * -@TestCaseName: enum_scope_0401.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试enum定义在全局，在全局变量中调用enum中的构造器
+ * -#step1: 声明一个全局enum，在全局变量中调用enum构造器
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

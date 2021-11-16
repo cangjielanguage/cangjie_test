@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: increment_07.cj
+ * -@TestCaseName: increment_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: class成员函数中使用父类成员变量++
+ * -#step1: 定义父类Base、子类Coo
+ * -#step2: 子类中调用父类成员变量++
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

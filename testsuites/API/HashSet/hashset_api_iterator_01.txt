@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_api_iterator_01.cj
+ * -@TestCaseName: hashset_api_iterator_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief:  func iterator(): HashSetIterator<T>，调用该函数，生成新的迭代器，可正常调用迭代器函数
+ * -#step1:  func iterator(): HashSetIterator<T>，调用该函数，生成新的迭代器，可正常调用迭代器函数 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail:  func iterator(): HashSetIterator<T>
+ */

@@ -1,0 +1,19 @@
+2021-11-08 01:57:10 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_015/java_ffi_01552/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:57:10 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_015/java_ffi_01552/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335527
+2021-11-08 01:57:10 DEBUG execute cmd ===>>>: javac InteropTest.java
+2021-11-08 01:57:12 DEBUG return code: 0
+2021-11-08 01:57:12 DEBUG stdout : 
+
+2021-11-08 01:57:12 DEBUG stderr : 
+
+2021-11-08 01:57:12 DEBUG Run time: 1.7, remain time: 3e+02
+2021-11-08 01:57:12 DEBUG execute cmd ===>>>: %class2panda InteropTest.class InteropTest.panda
+2021-11-08 01:57:12 DEBUG return code: 127
+2021-11-08 01:57:12 DEBUG stdout : 
+
+2021-11-08 01:57:12 DEBUG stderr : 
+@	/bin/sh: 1: %class2panda: not found
+
+2021-11-08 01:57:12 DEBUG Run time: 0.015, remain time: 3e+02
+2021-11-08 01:57:12 ERROR Failed, return code 127 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_015/java_ffi_01552/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log

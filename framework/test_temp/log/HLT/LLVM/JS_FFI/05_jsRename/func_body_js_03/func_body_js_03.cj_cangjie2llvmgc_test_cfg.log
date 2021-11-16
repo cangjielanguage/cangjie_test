@@ -1,0 +1,24 @@
+2021-11-08 02:11:03 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_03/func_body_js_03.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:11:03 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_03/func_body_js_03_cj_cangjie2llvmgc_test_cfg_1636335534
+2021-11-08 02:11:03 DEBUG execute cmd ===>>>: cjc -ulimit-error func_body_js_03.cj -o func_body_js_03..out
+2021-11-08 02:11:04 DEBUG return code: 1
+2021-11-08 02:11:04 DEBUG stdout : 
+
+2021-11-08 02:11:04 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_03/func_body_js_03_cj_cangjie2llvmgc_test_cfg_1636335534/func_body_js_03.cj:7:25: [31merror[0m: native function can only have CType args.
+@	    7 | foreign func funcBody03(a:String, b:String, c: String) : String
+@	      |                         [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_03/func_body_js_03_cj_cangjie2llvmgc_test_cfg_1636335534/func_body_js_03.cj:7:35: [31merror[0m: native function can only have CType args.
+@	    7 | foreign func funcBody03(a:String, b:String, c: String) : String
+@	      |                                   [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_03/func_body_js_03_cj_cangjie2llvmgc_test_cfg_1636335534/func_body_js_03.cj:7:45: [31merror[0m: native function can only have CType args.
+@	    7 | foreign func funcBody03(a:String, b:String, c: String) : String
+@	      |                                             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_03/func_body_js_03_cj_cangjie2llvmgc_test_cfg_1636335534/func_body_js_03.cj:7:58: [31merror[0m: native function can only have CType return.
+@	    7 | foreign func funcBody03(a:String, b:String, c: String) : String
+@	      |                                                          [32m^[0m
+@	4 errors generated
+
+2021-11-08 02:11:04 DEBUG Run time: 0.92, remain time: 3e+02
+2021-11-08 02:11:04 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/func_body_js_03/func_body_js_03.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,42 @@
+// EXEC: %compiler %cmp_opt %n.cj -o %output
+// EXEC: %run %run_opt %output %run_args
+
+open class Day{}
+class Monday <: Day{
+    let m: Int32
+    init(x: Int32){
+        m = x
+    }
+}
+class Tuesday <: Day{
+    let m: Int32
+    init(x: Int32){
+        m = x+1
+    }
+}
+
+trait Num<V1,V2,V3> where V1<:Day,V2<:Monday,V3<:Tuesday {
+    func chooseOne(a: This, b: V1,c:V2,d:V3): V1
+}
+
+append<U1,U2,U3> Int32 with Num<U1,U2,U3> where U1<:Day,U2<:Monday,U3<:Tuesday  {
+    func chooseOne(a: Int32, b: U1,c: U2,d:U3): U1 { return b}
+}
+
+func run(): Int64 {
+    var a: Int32 = 1
+    var b: Monday = Monday(2)
+    var c: Monday = Monday(3)
+    var d: Tuesday = Tuesday(4)
+    let x: Monday  = chooseOne(a,b,c,d)
+    if (x.m == 2) {
+        return 0
+    }
+    return 1
+}
+
+func main(): Int64 {
+    return run()
+}
+
+

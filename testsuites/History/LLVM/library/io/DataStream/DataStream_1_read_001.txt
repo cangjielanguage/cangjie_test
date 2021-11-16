@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: DataStream_1_read_001.cj
+ * -@TestCaseName: DataStream_1_read_001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: 当FileStream流AccessMode.WriteOnly, OpenMode.Append创建打开时，DataStream使用writeLine追加字符串写入文件；
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

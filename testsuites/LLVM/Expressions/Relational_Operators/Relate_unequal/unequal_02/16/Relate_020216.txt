@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Relate_020216.cj
+ * -@TestCaseName: Relate_020216.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: 关系操作符
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ *  #1. !=(不等操作符)左右操作数分别为布尔类型变量
+ *  #2.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

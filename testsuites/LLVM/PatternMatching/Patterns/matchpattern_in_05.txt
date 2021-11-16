@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: matchpattern_in_05.cj
+ * -@TestCaseName: matchpattern_in_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: pattern包含模式可以检查元素是否属于（不属于）某个值：in arraylist
+ * -#step1: pattern包含模式可以检查元素是否属于（不属于）某个值：in arraylist
+ * -@Expect: 编译执行成功，返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 表达式/模式匹配表达式/包含模式
+ * -@SpecDetail: 包含模式可以检查元素是否属于（不属于）某个值
+ */

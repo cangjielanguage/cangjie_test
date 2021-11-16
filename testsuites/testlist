@@ -1,0 +1,15 @@
+[ALL-TEST-CASE]
+
+API/
+Benchmark/
+CLI/
+Fuzz/
+LLVM/
+Regression/
+Runtime/
+LSP/
+
+
+[EXCLUDE-TEST-CASE]
+
+

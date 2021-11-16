@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Constraints_Definition_00115
+ * -@TestCaseName: constraints_definition_00115.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-09
+ * -@RequirementName: Generics Constraints
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define class generics constraints and call class`s stataic member init inside block.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

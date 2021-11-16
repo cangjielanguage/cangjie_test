@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Tuple_00211
+ * -@TestCaseName: tuple00211.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-14
+ * -@RequirementName: Tuple
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉语言支持匿名Tuple与Tuple的解构。
+ * #1.匿名tuple解构后的各个值需要与原tuple相同。
+ * -@Expect: 编译成功，运行return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: pkgs_dup_method_01/pkg/pkg.cj
+ * -@TestCaseName: pkgs_dup_method_01/pkg/pkg.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 打印中文字符
+ * -#step1: 打印中文字符
+ * -@Expect: 打印显示正确
+ * -@Priority: High
+ */

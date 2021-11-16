@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Math_03_PI_E_01
+* -@TestCaseName: Math_03_PI_E_01.cj 
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: Math
+* -@Condition: cj, clang, maple test framework and python3.
+* -@Brief: 检查Pi和E的值
+* -@Expect: 正确执行
+* -@Priority: level 0
+*/

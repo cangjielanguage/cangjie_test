@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: stop_gradient_31.cj
+ * -@TestCaseName: stop_gradient_31.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-23
+ * -@RequirementName: 支持stopGradient接口
+ * -@Condition: no
+ * -@Brief: lambda表达式中使用stopGradient
+ * -@step1: lambda表达式中前使用stopGradient
+ * -@Expect: 执行成功,返回0
+ * -@catelog:
+ * -@Priority: level0
+ */

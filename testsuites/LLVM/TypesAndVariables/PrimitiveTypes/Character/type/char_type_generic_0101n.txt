@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_type_generic_0101n.cj
+ * -@TestCaseName: char_type_generic_0101n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试array的元素类型为char
+ * -#step1: 定义一个char数组array1，并通过下标将第一个元素赋值为2
+ * -#step2: 编译检查
+ * -@Expect: 编译报错，char类型的数组元素无法赋值为int32
+ * -@Priority: High
+ */

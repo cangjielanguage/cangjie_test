@@ -1,0 +1,19 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <bitwiseConjunctionExpression> case (use equalityComparisonExpression):
+Origin BNF is 
+    :  equalityComparisonExpression (NL* BITAND NL* equalityComparisonExpression)*
+    
+Test   BNF is 
+    :  <<TARGET=equalityComparisonExpression->pattern>> (NL* BITAND NL* equalityComparisonExpression)*
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

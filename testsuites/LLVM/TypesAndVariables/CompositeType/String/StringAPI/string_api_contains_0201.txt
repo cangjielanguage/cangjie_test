@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: string_api_contains_0201.cj
+ * -@TestCaseName: string_api_contains_0201.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-9
+ * -@RequirementName: String 标准库新增API
+ * -@Condition: no
+ * -@Brief: 测试String的api：func contains(c: Char) : Bool其中Char为空则编译报错
+ * -#step1: 测试String的api：func contains(c: Char) : Bool其中Char为空则编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: core_lib.md
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ * -@catalog: 
+ */

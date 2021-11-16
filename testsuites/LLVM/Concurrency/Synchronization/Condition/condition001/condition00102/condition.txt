@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: condition00102
+ * -@TestCaseName: condition.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-09
+ * -@RequirementName: Condition
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Condition方法 wait(timeout: Int64) > 0
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

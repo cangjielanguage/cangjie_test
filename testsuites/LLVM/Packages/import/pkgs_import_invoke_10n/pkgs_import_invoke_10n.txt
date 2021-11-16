@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_import_invoke_10n.cj
+ * -@TestCaseName: pkgs_import_invoke_10n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 测试以import pkg.*的形式导入包，以pkg.xxx形式访问非external修饰的变量
+ * -#step1: 定义一个非external修饰的变量test
+ * -#step2: 通过import pkg.*的方式导入，并pkg.test形式访问
+ * -@Expect: 无法访问，编译器报错
+ * -@Priority: High
+ */

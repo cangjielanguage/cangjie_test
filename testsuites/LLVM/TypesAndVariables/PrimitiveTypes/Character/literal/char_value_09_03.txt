@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_value_09_03.cj
+ * -@TestCaseName: char_value_09_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型字面量为单个unicode字符(\u9FA5)
+ * -#step1: 定义一个值为'\u9FA5'的字符变量c
+ * -#step2: 打印结果，ASSERT对比打印信息
+ * -@Expect: 执行成功，打印期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_scope_04n.cj
+ * -@TestCaseName: record_scope_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record中定义record
+ * -#step1: 在record中定义record
+ * -#step2: 编译检查编译结果
+ * -@Expect: 编译报错，record体中无法定义record
+ * -@Priority: High
+ */

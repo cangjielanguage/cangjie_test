@@ -1,0 +1,13 @@
+/* 
+* -@TestCaseID:class_var_abstract_static.cj
+* -@TestCaseName:class_var_abstract_static.cj
+* -@TestCaseType:功能测试
+* -@RequirementID:AR-SR-ARKLANG-1003-01
+* -@RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+* -@Conditon:无
+* -@Brief:访问abstract类中static变量
+* -#step1: 定义一个抽象基类Base，类中声明一个static变量
+* -#step2: 测试类中访问Base类中static变量值
+* -@Expect:变量值正确
+* -@Priority:level1 
+*/

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_importas_03.cj
+ * -@TestCaseName: class_importas_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: import as导入类
+ * -@Condition: no
+ * -@Brief: 调用导入的类的静态成员变量
+ * -#step1: 调用导入的类的静态成员变量
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

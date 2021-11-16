@@ -1,0 +1,12 @@
+  /*
+ * -@TestCaseID: Type_integer_01714.cj
+ * -@TestCaseName: Type_integer_01714.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基础类型
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 整数类型 UInt64，关键自定义错误。
+ * #1.var声明变量，赋值为整数类型 UInt64, 值为short
+ * -@Expect: Compile/execute failed with error print "undeclared identifier 'short'".
+ * -@Priority: level1
+ */

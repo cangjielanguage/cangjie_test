@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: type_infer_generic_typealias02n.cj
+ * -@TestCaseName: type_infer_generic_typealias02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-03
+ * -@RequirementName: 提供对泛型参数的类型推导
+ * -@Condition: no
+ * -@Brief: typealias为泛型，声明和初值类型不匹配，编译报错
+ * -#step1: typealias为泛型，声明和初值类型不匹配
+ * -#step2: 检查编译执行结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketAddress_api_mask_01.cj
+ * -@TestCaseName: socketAddress_api_mask_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketAddress
+ * -@Condition: no
+ * -@Brief:  SocketAddress-入参是子网掩码
+ * -#step1:  SocketAddress-入参是子网掩码
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail:  SocketAddress-func mask(mask: IPMask): SocketAddressWithMask
+ */

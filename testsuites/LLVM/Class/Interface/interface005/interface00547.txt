@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00547
+ * -@TestCaseName: interface00547.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Try to extend interface`s open class.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-04
+ * -@RequirementName: 包导入导出机制
+ * -@Condition: no
+ * -@Brief: import p1.a,import p1.a as aoo （有先后关系）重复导入两次，不能访问a和p1.a
+ * -#step1: import p1.a,import p1.a as aoo （有先后关系）重复导入两次，不能访问a和p1.a
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 包
+ * -@SpecDetail: 
+ */

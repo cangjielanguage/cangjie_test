@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_define_17.cj
+ * -@TestCaseName: Array_define_17.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  Array<Int64> Array<Bool>类型的数组分别定义在enum的成员和静态成员函数中，并在main中通过enum调用数组中的值
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

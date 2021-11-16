@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: extends_layers_11.cj
+ * -@TestCaseName: extends_layers_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 父接口继承爷爷接口，接口继承父接口，访问接口中的变量
+ * -#step1: 定义接口I1，定义变量a
+ * -#step2: 定义接口I2，继承I1，访问a赋值给b
+ * -#step3: 定义接口I3，继承I2，访问b赋值给c
+ * -#step4: 访问I3中的c
+ * -@Expect: c值正确
+ * -@Priority: High
+ */

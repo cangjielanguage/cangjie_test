@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_FunctionDefinition_00627
+ * -@TestCaseName: func00627.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2007,DTS202005110HLORLP0D00
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define class inside function.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

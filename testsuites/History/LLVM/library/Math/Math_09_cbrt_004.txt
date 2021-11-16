@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Math_09_cbrt_004
+* -@TestCaseName: Math_09_cbrt_004.cj 
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: Math
+* -@Condition: cj, clang, maple test framework and python3.
+* -@Brief: cbrt入参为NaN16(float16类型)
+* -@Expect: 预期报错
+* -@Priority: level 0
+*/

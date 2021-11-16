@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_initblock_constr_05.cj
+ * -@TestCaseName: record_initblock_constr_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试record的init block中定义成员a、b、c且全部初始化，实例化时调用全参构造器
+ * -#step1: init block中定义成员a、b、c，并且全部赋予初始值
+ * -#step2: 调用全参构造器实例化record
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

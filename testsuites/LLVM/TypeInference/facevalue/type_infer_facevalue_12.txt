@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_12.cj
+ * -@TestCaseName: type_infer_facevalue_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 遍历所有数值类型的字面值并用于二元表达式中
+ * -#step1: 两个无类型整型表达式进行类型一致性运算
+ * -#step2: 无类型整型表达式和无类型浮点型表达式进行类型一致性运算
+ * -#step3: 两个无类型浮点型类型的表达式
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

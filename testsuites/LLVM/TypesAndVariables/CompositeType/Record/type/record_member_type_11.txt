@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_member_type_11.cj
+ * -@TestCaseName: record_member_type_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record体中，label的数据类型为Range
+ * -#step1: 在record体中定义一个数据类型为Range的label
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: spec_types_4.1Literals_01.cj
+ * -@TestCaseName: spec_types_4.1Literals_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 字面量举例
+ * -#step1: 字面量举例
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.6
+ * -@SpecChapter:
+ * -@SpecDetail:
+ * -@catalog:# 表达式##  字面量--3
+ */

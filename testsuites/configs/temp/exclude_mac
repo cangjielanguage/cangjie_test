@@ -1,0 +1,69 @@
+# mac not support grep -z
+LLVM/Class/Class/5-1-2/5-1-2-1/constructors/execute_order/execute_order_01.cj
+LLVM/Class/Class/5-1-2/5-1-2-1/constructors/execute_order/execute_order_02.cj
+LLVM/Class/Class/5-1-2/5-1-2-1/constructors/execute_order/execute_order_03.cj
+LLVM/Class/Class/5-1-2/5-1-2-1/constructors/execute_order/execute_order_04.cj
+
+# mac linker error report is different from linux
+CLI/module_mod_03n/src/module_mod_03n.cj
+CLI/module_pkg_04n/src/module_pkg_04n.cj
+LLVM/FFI/C_FFI/c_ffi_001/c_ffi_00113/c_ffi_00113.cj
+LLVM/FFI/C_FFI/c_ffi_001/c_ffi_00122/c_ffi_00122.cj
+LLVM/FFI/C_FFI/c_ffi_002/c_ffi_00205/c_ffi_00205.cj
+LLVM/FFI/C_FFI/c_ffi_004/c_ffi_00406/c_ffi_00406.cj
+
+#unknow error
+LLVM/Class/Object/Test_Object_scene_001.cj
+LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist002/arraylist_00232.cj
+LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist002/arraylist_00237.cj
+LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist002/arraylist_00240.cj
+LLVM/TypesAndVariables/CompositeType/String/StringAPI/split/String_split_01.cj
+LLVM/TypesAndVariables/CompositeType/String/StringAPI/split/String_split_maxSplits_01.cj
+LLVM/TypesAndVariables/CompositeType/String/StringAPI/split/String_split_maxSplits_04.cj
+
+# mac c function is different between mac and linux.
+LLVM/library/DateTime/Datetime/DateTime_1_constructor_006.cj
+LLVM/library/DateTime/Datetime/DateTime_1_constructor_009.cj
+LLVM/library/DateTime/Datetime/DateTime_1_constructor_010.cj
+LLVM/library/DateTime/Datetime/DateTime_1_constructor_011.cj
+LLVM/library/DateTime/Datetime/DateTime_1_constructor_013.cj
+LLVM/library/DateTime/Datetime/DateTime_1_constructor_014.cj
+LLVM/library/DateTime/Datetime/DateTime_1_constructor_015.cj
+LLVM/library/DateTime/Datetime/DateTime_6_operator_006.cj
+LLVM/library/Environment/Environment_GetOSVersion_001.cj
+LLVM/library/IO/BufferStream/bufferStream_case2.cj
+LLVM/library/IO/BufferStream/bufferStream_case3.cj
+LLVM/library/IO/BufferStream/bufferStream_case5.cj
+LLVM/library/IO/BufferStream/bufferStream_case6.cj
+LLVM/library/IO/DataStream/DataStream_1_read_001.cj
+LLVM/library/IO/DataStream/DataStream_1_read_002.cj
+
+# open function is different between mac and linux.
+LLVM/library/IO/FileStream/FileStream_openFile_001.cj
+LLVM/library/IO/FileStream/FileStream_openFile_005.cj
+LLVM/library/IO/FileStream/FileStream_openFile_006.cj
+LLVM/library/IO/FileStream/FileStream_openFile_009.cj
+LLVM/library/IO/FileStream/FileStream_openFile_010.cj
+LLVM/library/IO/FileStream/FileStream_openFile_011.cj
+LLVM/library/IO/FileStream/FileStream_openFile_012.cj
+LLVM/library/IO/FileStream/FileStream_openFile_013.cj
+LLVM/library/IO/FileStream/FileStream_openFile_014.cj
+LLVM/library/IO/FileStream/FileStream_openFile_015.cj
+LLVM/library/IO/FileStream/FileStream_openFile_016.cj
+LLVM/library/IO/FileStream/FileStream_openFile_017.cj
+LLVM/library/IO/FileStream/FileStream_openFile_019.cj
+LLVM/library/IO/FileStream/FileStream_openFile_020.cj
+LLVM/library/IO/FileStream/FileStream_openFile_021.cj
+LLVM/library/IO/FileStream/FileStream_openFile_024.cj
+LLVM/library/IO/FileStream/FileStream_openFile_025.cj
+LLVM/library/Process/Process_GetCurrentProcess_001.cj
+LLVM/library/Process/Process_GetProcessById_001.cj
+LLVM/library/Process/Process_getId_001.cj
+LLVM/library/Process/Process_getProcessName_001.cj
+LLVM/library/Process/Process_hasExited_001.cj
+
+# no need
+Benchmark/
+
+# LLVMGC Runtime
+Runtime/llvmgc

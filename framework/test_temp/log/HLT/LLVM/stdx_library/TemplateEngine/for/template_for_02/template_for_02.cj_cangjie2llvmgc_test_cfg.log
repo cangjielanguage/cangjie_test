@@ -1,0 +1,22 @@
+2021-10-26 02:17:56 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/TemplateEngine/for/template_for_02/template_for_02.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:17:56 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/TemplateEngine/for/template_for_02/template_for_02_cj_cangjie2llvmgc_test_cfg_1635213983
+2021-10-26 02:17:56 DEBUG execute cmd ===>>>: $CANGJIE_HOME/tools/bin/engine template_for_02/Mb.tpl
+2021-10-26 02:17:56 DEBUG return code: 0
+2021-10-26 02:17:56 DEBUG stdout : 
+
+2021-10-26 02:17:56 DEBUG stderr : 
+
+2021-10-26 02:17:56 DEBUG Run time: 0.037, remain time: 3e+02
+2021-10-26 02:17:56 DEBUG execute cmd ===>>>: diff -Bb template_for_02/RT.cj template_for_02/MbTemplate.cj
+2021-10-26 02:17:56 DEBUG return code: 1
+2021-10-26 02:17:56 DEBUG stdout : 
++	12c12
++	< appendAll(i.toString())
++	---
++	> appendAll(##"i"##)
+
+2021-10-26 02:17:56 DEBUG stderr : 
+
+2021-10-26 02:17:56 DEBUG Run time: 0.019, remain time: 3e+02
+2021-10-26 02:17:56 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/TemplateEngine/for/template_for_02/template_for_02.cj_cangjie2llvmgc_test_cfg.log

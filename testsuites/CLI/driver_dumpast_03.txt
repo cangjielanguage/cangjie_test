@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: driver_dumpast_03.cj
+ * -@TestCaseName: driver_dumpast_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-frontend -dump-ast后跟源文件，源文件含语法错误
+ * -#step1: 执行cjc -frontend -dump-ast xxx源文件（含语法错误）
+ * -#step2: 检查执行结果
+ * -@Expect: 部分输出内容是无效信息
+ * -@Priority: High
+ */

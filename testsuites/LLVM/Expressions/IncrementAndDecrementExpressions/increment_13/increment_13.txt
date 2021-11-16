@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: increment_13.chr
+ * -@TestCaseName: increment_13.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: 访问不同包下的变量++
+ * -#step1: 包pkga中定义external修饰的变量，并且定义类Data
+ * -#step2: 主文件中导入pkga，调用包中变量++；
+ * -#step3: 实例化pkga.Data，调用类成员变量++
+ * -@Expect: 编译报错，xxx.xx成员变量不能作为左值 
+ * -@Priority: High
+ */

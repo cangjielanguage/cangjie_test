@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_constructor_def_22.cj
+ * -@TestCaseName: record_constructor_def_22.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record中constructor体中发生遮盖
+ * -#step1: 在record体中定义两个let label width2和length2，定义一个全参构造函数init
+ * -#step2: init中重新定义变量var width2并赋予形参，定义一个func area 其中调用两个label
+ * -#step3: 利用全参构造器实例化label，init中发生遮盖无法访问外部label
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

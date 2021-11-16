@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: list03301.cj
+ * -@TestCaseName: list03301.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-13
+ * -@RequirementName: List实现--codegen
+ * -@Condition: no
+ * -@Brief:Remove the second element of list and get a new list
+ * -#step1:Compile testfile
+ * -#step2:Run & check return value
+ * -@Expect:Return 0
+ * -@Priority: High
+ */

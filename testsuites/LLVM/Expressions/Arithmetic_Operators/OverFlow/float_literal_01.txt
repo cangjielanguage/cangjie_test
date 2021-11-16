@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: float_literal_01.cj
+ * -@TestCaseName: float_literal_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: 正确的浮点型字面表示
+ * -#step1: 二进制、十进制、八进制、十六进制的浮点型字面值表示
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

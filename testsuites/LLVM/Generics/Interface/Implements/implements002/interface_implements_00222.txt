@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Implements_00222
+ * -@TestCaseName: interface_implements_00222.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2225-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Implements two abstract function,one`s return type is another`s child, only need to implement child function.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

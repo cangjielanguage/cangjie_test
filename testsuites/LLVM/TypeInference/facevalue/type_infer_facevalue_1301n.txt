@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_1301n.cj
+ * -@TestCaseName: type_infer_facevalue_1301n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 条件操作表达式的浮点型结果与整型字面值判等，编译报错
+ * -#step1: 条件操作表达式的前后分别后整型字面值与浮点型字面值
+ * -#step2: 将条件操作符的结果与整型字面值判等
+ * -#step3: 编译检查报错信息
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

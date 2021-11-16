@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/overloading/overloading_02.cj
+*- @TestCaseName:编译器可以生成默认的构造函数
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:没有构造函数时，可以生成默认的构造函数
+* -#定义类Data，2个成员变量a和b，并且初始化，没有构造函数
+* -#使用默认的构造函数创建Data的实例，通过实例获取a和b的值
+*- @Expect:编译器生成默认的构造函数
+*- @Priority:level1 
+*/

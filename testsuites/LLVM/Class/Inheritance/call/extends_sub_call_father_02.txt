@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: extends_sub_call_father_02.cj
+ * -@TestCaseName: extends_sub_call_father_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 子类未遮盖，通过super访问变量
+ * -#step1: 定义一个Base基类，定义变量
+ * -#step2: 子类继承基类，在子类中通过super访问变量
+ * -@Expect: 正确访问父类中的变量
+ * -@Priority: High
+ */

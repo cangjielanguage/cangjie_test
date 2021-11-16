@@ -1,0 +1,14 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/func-modifier-combination/modifier_0018.cj
+*- @TestCaseName:函数修饰符的组合测试
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:protected与static的组合，子类通过类名使用这个函数
+* -#定义类class Base，定义函数protected  static func f()
+* -#定义类Data extends Base ，定义函数get()，函数get()调用Base.f()
+* -#创建Data的实例，调用函数get()
+*- @Expect:get函数的值正确
+*- @Priority:level1 
+*/

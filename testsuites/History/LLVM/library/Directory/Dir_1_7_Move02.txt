@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Dir_1_7_move02
+ * -@TestCaseName: Dir_1_7_move02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: 当前路径文件夹move到相对路径文件夹
+ * -@Expect: 正确执行
+ * -@Priority: level 1
+ */
+    

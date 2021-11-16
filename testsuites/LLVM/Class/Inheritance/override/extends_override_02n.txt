@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: extends_override_02n.cj
+ * -@TestCaseName: extends_override_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief:子类无override重写父类“默认（public） open”修饰的函数，编译报错
+ * -#step1:创建父类Base，有public函数foo
+ * -#step2:创建子类Data继承Base，无override写public函数foo
+ * -#step3:编译检查报错信息
+ * -@Expect:编译报错，满足覆盖条件却没有用override关键字
+ * -@Priority: High
+ */

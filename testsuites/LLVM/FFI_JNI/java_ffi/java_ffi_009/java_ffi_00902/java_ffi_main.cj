@@ -1,0 +1,17 @@
+// DEPENDENCE: InteropTest.cj InteropTest.java
+// EXEC:%javac InteropTest.java
+// EXEC:%class2panda InteropTest.class InteropTest.bin
+// EXEC: %compiler %cmp_opt -c InteropTest.cj -o InteropTest.panda
+// EXEC: %compiler %cmp_opt %f
+// EXEC:%run %run_opt %panda_args %output %run_args 2>&1 | compare %f
+// ASSERT: scan 1\nException in thread "main" java.lang.NullPointerException
+
+import test.*
+from ffi import java.*
+
+func main() {
+    let cls1: InteropTest = InteropTest(1)
+    cls1.test()
+    cls1.field.test()
+    return 0
+}

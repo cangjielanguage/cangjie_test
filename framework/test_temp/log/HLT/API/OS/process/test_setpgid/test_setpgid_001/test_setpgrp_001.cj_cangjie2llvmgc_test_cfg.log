@@ -1,0 +1,20 @@
+2021-11-08 02:04:00 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/OS/process/test_setpgid/test_setpgid_001/test_setpgrp_001.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:04:00 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/API/OS/process/test_setpgid/test_setpgid_001/test_setpgrp_001_cj_cangjie2llvmgc_test_cfg_1636335530
+2021-11-08 02:04:00 DEBUG execute cmd ===>>>: cjc -backend llvm -backend-options="-L $CANGJIE_HOME/lib/linux_x86_64_llvm -lcangjie-ffic -lcangjie-os" test_setpgrp_001.cj -o test_setpgrp_001.out
+2021-11-08 02:04:01 DEBUG return code: 0
+2021-11-08 02:04:01 DEBUG stdout : 
+
+2021-11-08 02:04:01 DEBUG stderr : 
+@	[33mwarning[0m: '-backend-options' will be deprecated in the future, use 'cjc -h' to see alternative options.
+
+2021-11-08 02:04:01 DEBUG Run time: 0.96, remain time: 3e+02
+2021-11-08 02:04:01 DEBUG execute cmd ===>>>: a=`LD_LIBRARY_PATH=$LD_LIBRARY_PATH:-L $CANGJIE_HOME/lib/linux_x86_64_llvm &&   test_setpgrp_001.out ` && b=`pid=$$ && ps -p $pid -o pgid=` && c=$((b+1)) && test $a = $c && echo $? |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// test_setpgrp_001.cj
+2021-11-08 02:04:01 DEBUG return code: 126
+2021-11-08 02:04:01 DEBUG stdout : 
+
+2021-11-08 02:04:01 DEBUG stderr : 
+@	/bin/sh: 1: /home/zhujunhua/workspace/cangjie/B027/lib/linux_x86_64_llvm: Permission denied
+
+2021-11-08 02:04:01 DEBUG Run time: 0.015, remain time: 3e+02
+2021-11-08 02:04:01 ERROR Failed, return code 126 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/OS/process/test_setpgid/test_setpgid_001/test_setpgrp_001.cj_cangjie2llvmgc_test_cfg.log

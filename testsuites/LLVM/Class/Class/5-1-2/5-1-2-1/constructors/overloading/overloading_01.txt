@@ -1,0 +1,15 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/overloading/overloading_01.cj
+*- @TestCaseName:构造函数的重载
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon: 无
+*- @Brief:根据构造函数重载的不同形式，调用正确的构造函数
+* -#定义没有参数的构造函数
+* -#定义一个参数的构造函数
+* -#定义二个参数的构造函数
+* -#定义不同形式的类对象，验证构造函数调用正确
+*- @Expect:调用正确的构造函数
+*- @Priority:level1 
+*/

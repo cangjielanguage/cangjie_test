@@ -1,0 +1,12 @@
+2021-11-08 02:47:48 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Generics/Interface/Multi-Implements/generic_interface_5202.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:47:48 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Generics/Interface/Multi-Implements/generic_interface_5202_cj_cangjie2llvmgc_test_cfg_1636338482
+2021-11-08 02:47:48 DEBUG execute cmd ===>>>: cjc -ulimit-error  generic_interface_5202.cj  -o generic_interface_5202.out
+2021-11-08 02:47:49 DEBUG return code: 139
+2021-11-08 02:47:49 DEBUG stdout : 
+
+2021-11-08 02:47:49 DEBUG stderr : 
+@	Segmentation fault (core dumped)
+
+2021-11-08 02:47:49 DEBUG Run time: 0.67, remain time: 3e+02
+2021-11-08 02:47:49 ERROR Failed, return code 139 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Generics/Interface/Multi-Implements/generic_interface_5202.cj_cangjie2llvmgc_test_cfg.log

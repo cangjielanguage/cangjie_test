@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_replaceAll_01.cj
+ * -@TestCaseName: matcher_api_replaceAll_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-存在单个子字符串满足正则,返回替换后完整的字符串
+ * -#step1: Mathcher-存在单个子字符串满足正则,返回替换后完整的字符串
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: replaceAll(replacement: String) : String将当前匹配到的所有子字符串进行替换，并返回替换后的字符串
+ */

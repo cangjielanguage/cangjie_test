@@ -1,0 +1,55 @@
+2021-10-25 04:32:28 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015.cj_cangjie2llvmgc_test_cfg.log
+2021-10-25 04:32:28 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634
+2021-10-25 04:32:28 DEBUG execute cmd ===>>>: cjc -ulimit-error arraylist_01015.cj -o arraylist_01015.out
+2021-10-25 04:32:29 DEBUG return code: 1
+2021-10-25 04:32:29 DEBUG stdout : 
+
+2021-10-25 04:32:29 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: 'capacity' is not a member of class 'ArrayList'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: 'capacity' is not a member of class 'ArrayList'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: 'capacity' is not a member of class 'ArrayList'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: invalid binary operator '-' on type 'Invalid' and 'Int64'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:1: [31merror[0m: type of return expression is incompatible with return type
+@	   14 | return a.capacity() - l/2*3
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:6:14: [31merror[0m: type of function body is incompatible with return type
+@	    6 | func main(): Int64 {
+@	      |              [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:6:1: [31merror[0m: return type of entry function 'main' is not 'Integer' or 'Unit'
+@	    6 | func main(): Int64 {
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: 'capacity' is not a member of class 'ArrayList'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: 'capacity' is not a member of class 'ArrayList'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: 'capacity' is not a member of class 'ArrayList'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:8: [31merror[0m: invalid binary operator '-' on type 'Invalid' and 'Int64'
+@	   14 | return a.capacity() - l/2*3
+@	      |        [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:14:1: [31merror[0m: type of return expression is incompatible with return type
+@	   14 | return a.capacity() - l/2*3
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:6:14: [31merror[0m: type of function body is incompatible with return type
+@	    6 | func main(): Int64 {
+@	      |              [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:6:1: [31merror[0m: return type of entry function 'main' is not 'Integer' or 'Unit'
+@	    6 | func main(): Int64 {
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015_cj_cangjie2llvmgc_test_cfg_1635134634/arraylist_01015.cj:90016:26: [31merror[0m: no matching function declaration for function call 'main'
+@	15 errors generated
+
+2021-10-25 04:32:29 DEBUG Run time: 0.89, remain time: 3e+02
+2021-10-25 04:32:29 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/ArrayList/arraylist010/arraylist_01015.cj_cangjie2llvmgc_test_cfg.log

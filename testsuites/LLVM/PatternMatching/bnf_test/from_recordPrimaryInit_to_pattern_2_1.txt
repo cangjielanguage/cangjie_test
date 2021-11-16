@@ -1,0 +1,25 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <recordPrimaryInit> case (use recordPrimaryInitParamLists):
+Origin BNF is 
+    :  (recordNonStaticMemberModifier NL*)? recordName NL* LPAREN (NL* recordPrimaryInitParamLists)? NL* RPAREN NL*
+ 	  LCURL NL*
+ 	       expressionOrDeclarations?
+ 	  NL* RCURL
+	
+Test   BNF is 
+    :  (recordNonStaticMemberModifier NL*)? recordName NL* LPAREN (NL* <<TARGET=recordPrimaryInitParamLists->pattern>>)? NL* RPAREN NL*
+ 	  LCURL NL*
+ 	       expressionOrDeclarations?
+ 	  NL* RCURL
+	 
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

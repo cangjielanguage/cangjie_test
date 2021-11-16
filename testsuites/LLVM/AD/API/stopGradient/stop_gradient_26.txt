@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: stop_gradient_26.cj
+ * -@TestCaseName: stop_gradient_26.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-23
+ * -@RequirementName: 支持stopGradient接口
+ * -@Condition: no
+ * -@Brief: do-while表达式中使用stopGradient方法
+ * -@step1: do-while表达式中使用stopGradient方法
+ * -@Expect: 执行成功,返回0
+ * -@catelog:
+ * -@Priority: level0
+ */

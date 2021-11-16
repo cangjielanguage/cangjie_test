@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: typealias_scope_02n.cj
+ * -@TestCaseName: typealias_scope_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: 类型别名定义在原类型内部
+ * -#step1: class Data中定义类型别名，别名的原类型为Data
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

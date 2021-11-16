@@ -1,0 +1,21 @@
+2021-11-08 01:59:44 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/package02/package02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:59:44 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package02/package02_cj_cangjie2llvmgc_test_cfg_1636335528
+2021-11-08 01:59:44 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./a/a.cj -o ./a/a..out
+2021-11-08 01:59:45 DEBUG return code: 1
+2021-11-08 01:59:45 DEBUG stdout : 
+
+2021-11-08 01:59:45 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package02/package02_cj_cangjie2llvmgc_test_cfg_1636335528/a/a.cj:4:1: [31merror[0m: modifiers 'external' and 'foreign' are conflict in class declaration
+@	    4 | external foreign class Moment {
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package02/package02_cj_cangjie2llvmgc_test_cfg_1636335528/a/a.cj:10:1: [31merror[0m: modifiers 'external' and 'foreign' are conflict in function declaration
+@	   10 | external foreign func package02() : Moment
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package02/package02_cj_cangjie2llvmgc_test_cfg_1636335528/a/a.cj:10:37: [31merror[0m: native function can only have CType return.
+@	   10 | external foreign func package02() : Moment
+@	      |                                     [32m^[0m
+@	3 errors generated
+
+2021-11-08 01:59:45 DEBUG Run time: 0.58, remain time: 3e+02
+2021-11-08 01:59:45 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/package02/package02.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: FFI_Python_00218
+ * -@TestCaseName: python_ffi_00218.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARK:LANG-2028-02
+ * -@RequirementName: Python的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: PythonString与仓颉String互通。
+ * -@Expect: compile/execure pass, return 0.
+ * -@Priority: level0
+ */

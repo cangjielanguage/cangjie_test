@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_use_09.cj
+ * -@TestCaseName: hashset_use_09.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: HashSet使用场景：HashSet的api的返回结果链式调用[]访问成员
+ * -#step1: HashSet使用场景：HashSet的api的返回结果链式调用[]访问成员 
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: class HashSet<T> <: Collection<T>  where T <: Hashable, T <: Equatable<T>
+ */

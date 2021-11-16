@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: java_ffi_00210n
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-19
+ * -@RequirementName: Java互操作顶层类（非泛型）互操作
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: cangjie调用java java类成员访问修饰符protected 在类外访问
+ * -@Expect: Compile fail
+ * -@Priority: level0
+ */

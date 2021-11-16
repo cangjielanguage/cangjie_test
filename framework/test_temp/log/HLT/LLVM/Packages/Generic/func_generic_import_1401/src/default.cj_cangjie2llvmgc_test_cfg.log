@@ -1,0 +1,19 @@
+2021-11-08 02:35:16 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/func_generic_import_1401/src/default.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:35:16 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Packages/Generic/func_generic_import_1401/src/default_cj_cangjie2llvmgc_test_cfg_1636338475
+2021-11-08 02:35:16 DEBUG execute cmd ===>>>: cjc -ulimit-error -c ./p1/*.cj -o a.o
+2021-11-08 02:35:17 DEBUG return code: 0
+2021-11-08 02:35:17 DEBUG stdout : 
+
+2021-11-08 02:35:17 DEBUG stderr : 
+
+2021-11-08 02:35:17 DEBUG Run time: 0.47, remain time: 3e+02
+2021-11-08 02:35:17 DEBUG execute cmd ===>>>: cjc -ulimit-error a.o default.cj -o default.out
+2021-11-08 02:35:17 DEBUG return code: 139
+2021-11-08 02:35:17 DEBUG stdout : 
+
+2021-11-08 02:35:17 DEBUG stderr : 
+@	Segmentation fault (core dumped)
+
+2021-11-08 02:35:17 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:35:17 ERROR Failed, return code 139 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Packages/Generic/func_generic_import_1401/src/default.cj_cangjie2llvmgc_test_cfg.log

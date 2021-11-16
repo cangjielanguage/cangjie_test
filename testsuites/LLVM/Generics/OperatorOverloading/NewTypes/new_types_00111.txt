@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_OperatorOverloading_New_Types_00111
+ * -@TestCaseName: new_types_00111.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use normal append/trait overload operator for Map<T>.
+ * -@Expect: Not supported yet.
+ * -@Priority: level0
+ */

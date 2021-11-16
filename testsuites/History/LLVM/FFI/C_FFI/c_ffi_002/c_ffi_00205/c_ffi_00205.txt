@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: FFI_C_00205
+ * -@TestCaseName: c_ffi_00205.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持C函数指针与char函数互操作。
+ * #1.使用的转换函数名称并非unsafePointerCastxxx。
+ * #2.链接时无法识别。
+ * -@Expect: 编译失败，报错.
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: c.cj
+ * -@TestCaseName: c.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 若import as 没有被external 修饰，则新的名字是包内私有的，且不会被导出；若import as 被external 修饰，它会被重导出。
+ * -#step1: 若import as 没有被external 修饰，则新的名字是包内私有的，且不会被导出；若import as 被external 修饰，它会被重导出。
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 若import as 没有被external 修饰，则新的名字是包内私有的，且不会被导出；若import as 被external 修饰，它会被重导出。
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_Definition_20010
+ * -@TestCaseName: macro_definition_20010.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support Macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Macro without name.
+ * -@Expect: Compile failed.
+ * -@Priority: level0
+ */
+

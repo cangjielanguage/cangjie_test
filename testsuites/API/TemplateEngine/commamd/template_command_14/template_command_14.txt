@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_command_14.cj
+ * -@TestCaseName: template_command_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: command-命令检测：文件名中间存在特殊符号，正常
+ * -#step1: command-命令检测：文件名中间存在特殊符号，正常
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: command校验
+ */

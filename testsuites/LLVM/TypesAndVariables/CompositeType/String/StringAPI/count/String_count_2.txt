@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: String_count_2.cj
+ * -@TestCaseName: String_count_2.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: count重复字符串
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

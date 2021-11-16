@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: static_variable_02.cj
+ * -@TestCaseName: static_variable_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: classblock中声明static修饰的let变量，随后在构造函数中更改let变量的值
+ * -#step1: 类中声明一个static修饰的let变量a，类中定义一个构造函数，构造函数中更改a的值
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

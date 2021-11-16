@@ -1,0 +1,20 @@
+2021-11-08 02:51:09 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20003.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:51:09 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20003_cj_cangjie2llvmgc_test_cfg_1636338483
+2021-11-08 02:51:09 DEBUG execute cmd ===>>>: cjc -ulimit-error TryWithResources_Other_20003.cj -o TryWithResources_Other_20003.out
+2021-11-08 02:51:10 DEBUG return code: 1
+2021-11-08 02:51:10 DEBUG stdout : 
+
+2021-11-08 02:51:10 DEBUG stderr : 
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	 [33mwarning[0m: 'freshExc' has been defined in the outside of match expression, are you sure using 'freshExc' as a variable pattern here?
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20003_cj_cangjie2llvmgc_test_cfg_1636338483/TryWithResources_Other_20003.cj:13:5: [31merror[0m: invalid subscript operator [] on type 'Class-ArrayList<Int64>' and 'Unit'
+@	   13 |     x[try(a : A = A()){0}] = 1
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20003_cj_cangjie2llvmgc_test_cfg_1636338483/TryWithResources_Other_20003.cj:13:5: [31merror[0m: type Class-ArrayList<Int64> does not have operator func [](index, value)
+@	   13 |     x[try(a : A = A()){0}] = 1
+@	      |     [32m^[0m
+@	2 errors and 2 warnings generated
+
+2021-11-08 02:51:10 DEBUG Run time: 0.4, remain time: 3e+02
+2021-11-08 02:51:10 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Exception/Resources/Other/002/TryWithResources_Other_20003.cj_cangjie2llvmgc_test_cfg.log

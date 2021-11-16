@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: string_value_00212n
+ * -@TestCaseName: string_value_00212n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1043-01
+ * -@RequirementName: String字面量
+ * -@Condition: no
+ * -@Brief: 测试String类型的字面量，多行原始字符串，前面#数量多于后面
+ * -@Expect: 编译失败，捕获打印期望结果
+ * -@Priority: level 0
+ */

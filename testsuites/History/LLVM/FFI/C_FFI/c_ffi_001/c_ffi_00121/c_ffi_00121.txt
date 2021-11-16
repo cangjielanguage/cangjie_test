@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: FFI_C_00121
+ * -@TestCaseName: c_ffi_00121.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持record类型通过UnsafePtr与struct指针类型的互相映射。
+ * #1.record类型的名称与struct的名称不一致不影响结果。
+ * -@Expect: 编译成功，运行return 0。
+ * -@Priority: level0
+ */

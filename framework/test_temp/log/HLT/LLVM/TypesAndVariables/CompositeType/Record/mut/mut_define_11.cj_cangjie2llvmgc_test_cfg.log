@@ -1,0 +1,15 @@
+2021-11-08 02:49:06 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/Record/mut/mut_define_11.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:49:06 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/Record/mut/mut_define_11_cj_cangjie2llvmgc_test_cfg_1636338482
+2021-11-08 02:49:06 DEBUG execute cmd ===>>>: cjc -ulimit-error mut_define_11.cj -o mut_define_11.out
+2021-11-08 02:49:07 DEBUG return code: 1
+2021-11-08 02:49:07 DEBUG stdout : 
+
+2021-11-08 02:49:07 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/TypesAndVariables/CompositeType/Record/mut/mut_define_11_cj_cangjie2llvmgc_test_cfg_1636338482/mut_define_11.cj:14:1: [31merror[0m: implementation of function 'cc' is needed in 'R'
+@	   14 | record R <: A {
+@	      | [32m^[0m
+@	1 error generated
+
+2021-11-08 02:49:07 DEBUG Run time: 0.6, remain time: 3e+02
+2021-11-08 02:49:07 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/TypesAndVariables/CompositeType/Record/mut/mut_define_11.cj_cangjie2llvmgc_test_cfg.log

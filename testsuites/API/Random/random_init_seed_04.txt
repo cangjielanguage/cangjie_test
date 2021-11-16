@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: random_init_seed_04.cj
+ * -@TestCaseName: random_init_seed_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1097-02
+ * -@RequirementName: 提供 class Random
+ * -@Condition: no
+ * -@Brief: 两个有参构造生成器且参数不同，调用次数相同，每次生成的值不同
+ * -#step1: 两个有参构造生成器且参数不同，调用次数相同，每次生成的值不同
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Random
+ * -@SpecDetail: init(seed: UInt64)
+ */

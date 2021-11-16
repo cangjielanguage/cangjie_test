@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_match_0421.cj
+ * -@TestCaseName: enum_match_0421.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试赋值变量使用var类型
+ * -#step1: 声明一个enum，将constructor赋值给var类型变量，并初始化
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: convertlib_00208.cj
+ * -@TestCaseName: convertlib_00208.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-01
+ * -@RequirementName: 提供String parse 函数
+ * -@Condition: no
+ * -@Brief: 入参字符串中的转义字符“\u{1244}”
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ */

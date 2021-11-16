@@ -1,0 +1,24 @@
+2021-11-08 01:53:28 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Variable/variable002/foreign_variable_00220.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:53:28 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Variable/variable002/foreign_variable_00220_cj_cangjie2llvmgc_test_cfg_1636335525
+2021-11-08 01:53:28 DEBUG execute cmd ===>>>: cjc -frontend -c -typecheck -ulimit-error foreign_variable_00220.cj
+2021-11-08 01:53:28 DEBUG return code: 1
+2021-11-08 01:53:28 DEBUG stdout : 
+
+2021-11-08 01:53:28 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Variable/variable002/foreign_variable_00220_cj_cangjie2llvmgc_test_cfg_1636335525/foreign_variable_00220.cj:3:17: [31merror[0m: undeclared type name 'HashMap'
+@	    3 | foreign let a : HashMap<Int64, Int64>
+@	      |                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Variable/variable002/foreign_variable_00220_cj_cangjie2llvmgc_test_cfg_1636335525/foreign_variable_00220.cj:7:13: [31merror[0m: undeclared type name 'HashMap'
+@	    7 |     var c : HashMap<Int64, Int64>
+@	      |             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Variable/variable002/foreign_variable_00220_cj_cangjie2llvmgc_test_cfg_1636335525/foreign_variable_00220.cj:4:17: [31merror[0m: undeclared identifier 'HashMap'
+@	    4 | foreign var b = HashMap<Int64, Int64>(3, { i => (i, i) })
+@	      |                 [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/08_Foreign/Variable/variable002/foreign_variable_00220_cj_cangjie2llvmgc_test_cfg_1636335525/foreign_variable_00220.cj:8:13: [31merror[0m: undeclared identifier 'HashMap'
+@	    8 |     let d = HashMap<Int64, Int64>(3, { i => (i, i) })
+@	      |             [32m^[0m
+@	4 errors generated
+
+2021-11-08 01:53:28 DEBUG Run time: 0.38, remain time: 3e+02
+2021-11-08 01:53:28 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/08_Foreign/Variable/variable002/foreign_variable_00220.cj_cangjie2llvmgc_test_cfg.log

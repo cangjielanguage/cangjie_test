@@ -1,0 +1,27 @@
+2021-10-26 02:31:57 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/OS/tty/test_ttyname/test_ttyname_001/test_ttyname_001.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:31:57 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/stdx_library/OS/tty/test_ttyname/test_ttyname_001/test_ttyname_001_cj_cangjie2llvmgc_test_cfg_1635213989
+2021-10-26 02:31:57 DEBUG execute cmd ===>>>: cjc -backend llvm -backend-options="-L $CANGJIE_HOME/lib/linux_x86_64_llvm -lcangjie-ffic -lcangjie-os" test_ttyname_001.cj -o test_ttyname_001.out
+2021-10-26 02:31:59 DEBUG return code: 0
+2021-10-26 02:31:59 DEBUG stdout : 
+
+2021-10-26 02:31:59 DEBUG stderr : 
+@	[33mwarning[0m: '-backend-options' will be deprecated in the future, use 'cjc -h' to see alternative options.
+
+2021-10-26 02:31:59 DEBUG Run time: 1.5, remain time: 3e+02
+2021-10-26 02:31:59 DEBUG execute cmd ===>>>: bash getpath.sh &&   test_ttyname_001.out  |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// test_ttyname_001.cj
+2021-10-26 02:31:59 DEBUG return code: 1
+2021-10-26 02:31:59 DEBUG stdout : 
++	/dev/pts/0
++	compare.py input:
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: pass , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-10-26 02:31:59 DEBUG stderr : 
+
+2021-10-26 02:31:59 DEBUG Run time: 0.14, remain time: 3e+02
+2021-10-26 02:31:59 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/stdx_library/OS/tty/test_ttyname/test_ttyname_001/test_ttyname_001.cj_cangjie2llvmgc_test_cfg.log

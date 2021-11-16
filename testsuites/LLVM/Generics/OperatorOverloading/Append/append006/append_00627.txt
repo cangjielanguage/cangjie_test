@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_OperatorOverloading_Append_00627
+ * -@TestCaseName: append_00627.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use generic append overload operator for generic record(right type and instant type is C<Int32>).
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

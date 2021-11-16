@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_define_12.cj
+ * -@TestCaseName: Array_define_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  Array<Float32>类型的数组作为成员变量定义在top-level的class A中，并在main中通过A().数组名调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

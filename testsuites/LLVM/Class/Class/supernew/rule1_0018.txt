@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: rule1_0018.cj
+ * -@TestCaseName: rule1_0018.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-08
+ * -@RequirementName: 在抽象类的构造函数中使用实例成员变量variableName
+ * -@Condition: no
+ * -@Brief: 在抽象类Test的init构造函数通过赋值给默认参数来使用成员变量a
+ * -#step1: 在抽象类Test的init构造函数通过赋值给默认参数来使用成员变量a
+ * -@Expect: 编译错误，提示：不允许在构造函数的默认参数值中使用“a”
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.2.1 构造函数
+ * -@SpecDetail: 禁止使用实例成员变量 this.variableName 及其语法糖 variableName 和 super.variableName 作为构造函数参数的默认值
+ * -@catalog: # 类和接口## 类### 类的成员#### 构造函数##### `init` 构造函数--17
+ */

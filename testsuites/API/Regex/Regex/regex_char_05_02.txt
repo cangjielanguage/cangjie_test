@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: regex_char_05_02.cj
+ * -@TestCaseName: regex_char_05_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Regex-语法-量词（?，??）
+ * -#step1: Regex-语法-量词（?，??）
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: Regex-语法-量词
+ */

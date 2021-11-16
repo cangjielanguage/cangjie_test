@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: func_default_parameters_01.cj
+ * -@TestCaseName: func_default_parameters_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 使用命名实参时，不按形参定义顺序传入
+ * -#step1: 类Coo中定义主构造函数，指定两个普通形参，三个成员变量形参
+ * -#step2: 实例化类传入成员变量形参时，打乱顺序传入
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 函数/函数调用/命名实参
+ * -@SpecDetail: 使用命名实参指定实参值时，可以不需要和形参列表的顺序保持一致
+ */

@@ -1,0 +1,18 @@
+/*
+ * -@TestCaseID: invoke_nothis_12.cj
+ * -@TestCaseName: invoke_nothis_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-24
+ * -@RequirementName: class类的实例成员函数返回类型无This类型声明
+ * -@Condition: no
+ * -@Brief: 在main中通过成员变量调用class类的实例成员函数（返回类型This，返回函数（返回this））
+ * -#step1: 在class类中 定义的两个实例成员函数，实例成员函数1（返回类型未声明，返回this），实例成员函数2（返回类型This，返回实例成员函数1的调用）
+ * -#step2: 在另一个class类中通过var 将调用step1实例成员函数2的lambda表达式调用后赋值给成员变量
+ * -#step3: 在main函数中调用step2的成员变量
+ * -@Expect: 编译成功，执行成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.4 This类型 
+ * -@SpecDetail: 如果实例成员函数没有声明返回类型，并且只存在返回 This 类型表达式时，当前函数的返回类型会推断为 This。
+ * -@catalog: # 类和接口## 类### This 类型--6
+ */

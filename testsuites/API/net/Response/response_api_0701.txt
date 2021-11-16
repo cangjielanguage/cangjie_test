@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: response_api_0701.cj
+ * -@TestCaseName: response_api_0701.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-03
+ * -@RequirementName: 提供 class Response
+ * -@Condition: no
+ * -@Brief: func protoAtLeast(major: Int64, minor: Int64): Bool,调用是true的
+ * -#step1: func protoAtLeast(major: Int64, minor: Int64): Bool,调用是true的 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Response
+ * -@SpecDetail: func protoAtLeast(major: Int64, minor: Int64): Bool
+ */

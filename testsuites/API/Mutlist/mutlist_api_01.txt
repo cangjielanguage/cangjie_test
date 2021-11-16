@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Buffer_api_01.cj
+ * -@TestCaseName: Buffer_api_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-01
+ * -@RequirementName: 提供 class Buffer
+ * -@Condition: no
+ * -@Brief:  Buffer的构造器Buffer<T>() where T <: Equatable<T> {}
+ * -#step1:  Buffer的构造器Buffer<T>() where T <: Equatable<T> {}
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/Buffer
+ * -@SpecDetail: Buffer<T>()
+ */

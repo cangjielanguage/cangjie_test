@@ -1,0 +1,20 @@
+// EXEC: %compiler %cmp_opt %use_ast %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+from ast import ast.*
+
+func main(): Int64 {
+    var input : Tokens = quote(while (return a){return b})
+    let expr = ParseExpr(input)
+    if (expr.isWhileExpr()) {
+        var b = expr.asWhileExpr()
+        if (b.getCondExpr().asReturnExpr().getExpr().asRefExpr().getIdentifier().value != "a") {
+            return 1
+        }
+        if (b.getBody()[0].asExpr().asReturnExpr().getExpr().asRefExpr().getIdentifier().value != "b") {
+            return 3
+        }
+        return 0
+    }
+    return 10
+}

@@ -1,0 +1,30 @@
+lldb,lldb 026_debuginfun_if,026_debuginfun_if
+b,b 8,026_debuginfun_if.cj:8
+b,b 9,026_debuginfun_if.cj:10
+b,b 10,026_debuginfun_if.cj:10
+b,b 11,026_debuginfun_if.cj:11
+b,b 12,026_debuginfun_if.cj:13
+b,b 13,026_debuginfun_if.cj:13
+b,b 14,026_debuginfun_if.cj:15
+b,b 15,026_debuginfun_if.cj:15
+b,b 16,026_debuginfun_if.cj:16
+b,b 17,026_debuginfun_if.cj:18
+b,b 18,026_debuginfun_if.cj:18
+b,b 19,026_debuginfun_if.cj:20
+r,r,-> 8
+n,n,-> 10
+n,n,-> 11
+n,n,-> 15
+cj_plocals,cj_plocals,if_a = 1
+n,n,-> 18
+n,n,-> 20
+cj_plocals,cj_plocals,if_a = 2
+rerun,r,-> 8
+c,c,-> 10
+cj_set,cj_set if001 = false,false
+n,n,-> 13
+n,n,-> 15
+cj_plocals,cj_plocals,if_a = 2
+n,n,-> 16
+n,n,-> 20
+cj_plocals,cj_plocals,if_a = 1

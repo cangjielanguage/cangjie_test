@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: override_12
+ * -@TestCaseName: override_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: DTS202104140FIZO3P1H00
+ * -@RequirementName: 父类变量，调用子类实例中重写的方法
+ * -@Condition: no
+ * -@Brief: 父类变量，调用子类实例中重写的方法
+ * -@Expect:run success
+ * -@Priority: High
+ */

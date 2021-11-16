@@ -1,0 +1,18 @@
+2021-10-23 06:24:34 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/DFX/fuzz_record_02.cj_cangjie2llvmgc_test_cfg.log
+2021-10-23 06:24:34 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_record_02_cj_cangjie2llvmgc_test_cfg_1634968662
+2021-10-23 06:24:34 DEBUG execute cmd ===>>>: cjc -ulimit-error fuzz_record_02.cj -o fuzz_record_02.out
+2021-10-23 06:24:34 DEBUG return code: 1
+2021-10-23 06:24:34 DEBUG stdout : 
+
+2021-10-23 06:24:34 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_record_02_cj_cangjie2llvmgc_test_cfg_1634968662/fuzz_record_02.cj:10:5: [31merror[0m: undeclared identifier 'var274'
+@	   10 |     {
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/DFX/fuzz_record_02_cj_cangjie2llvmgc_test_cfg_1634968662/fuzz_record_02.cj:8:62: [31merror[0m: type of function body is incompatible with return type
+@	    8 | internal func function38(param39 : Int32, param40 : Int32) : Bool {
+@	      |                                                              [32m^[0m
+@	2 errors generated
+
+2021-10-23 06:24:34 DEBUG Run time: 0.4, remain time: 3e+02
+2021-10-23 06:24:34 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/DFX/fuzz_record_02.cj_cangjie2llvmgc_test_cfg.log

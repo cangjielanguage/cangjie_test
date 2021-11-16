@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00208
+ * -@TestCaseName: interface00208.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Global interface extends internal interface.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

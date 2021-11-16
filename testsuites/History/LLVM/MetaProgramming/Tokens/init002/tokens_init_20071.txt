@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Tokens_Init_20071
+ * -@TestCaseName: tokens_init_20071.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support libast.
+ * -@Conditon: charc, clang, maple test framework and python3.
+ * -@Brief: Init Tokens with Token UInt8.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

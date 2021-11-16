@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Macro_Invoke_70004
+ * -@TestCaseName: macro_invoke_70004.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support Macro.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define and call macro,use Seeing.
+ * -@Expect: Compile success.
+ * -@Priority: level0
+ */
+

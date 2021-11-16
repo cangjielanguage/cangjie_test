@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_60.chr
+ * -@TestCaseName: enum_generic_invoke_60.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>中类型变元T为泛型enum<T>
+ * -#step1: 定义一个泛型enum<T> Date
+ * -#step2: 定义一个泛型enum<T> Time，内部定义一个入参为T的构造函数
+ * -#step3: 调用enum <T>中的构造函数，类型变元为TimeUnit<Int32>，传入Date<T>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

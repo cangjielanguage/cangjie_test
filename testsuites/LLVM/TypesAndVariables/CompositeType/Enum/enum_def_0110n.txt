@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_def_0110n.cj
+ * -@TestCaseName: enum_def_0110n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试contructor重名但是参数不同
+ * -#step1: 声明一个contructor含有一个int32参数，声明一个重名constructor含有两个int32参数
+ * -#step2: 编译检查编译报错信息
+ * -@Expect: contructor后含有返回值错误，编译器报错
+ * -@Priority: High
+ */

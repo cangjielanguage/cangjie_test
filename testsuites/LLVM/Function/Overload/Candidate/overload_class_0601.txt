@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: overload_class_0601.cj
+ * -@TestCaseName: overload_class_0601.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-14
+ * -@RequirementName: 函数重载决议
+ * -@Condition: no
+ * -@Brief: 子父类存在同名、同参、返回类型呈现父(super)子类关系。签名相同不用open/override修饰，编译报错
+ * -#step1: 子类B中定义函数与父类A中的函数同名、同参数类型，不同返回类型，不用open/override修饰，编译报错
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 10.1 函数重载
+ * -@SpecDetail: 重载决议时，父类和子类中定义的函数当成同一作用域优先级处理
+ */

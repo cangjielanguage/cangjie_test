@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: default.cj
+ * -@TestCaseName: default.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: 包导入导出规则改动
+ * -@Condition: no
+ * -@Brief: 在源文件中通过package 声明的包名必须与其所在的文件夹名不一致，编译报错
+ * -#step1: 在源文件中通过package 声明的包名必须与其所在的文件夹名不一致，编译报错
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.2
+ * -@SpecChapter: 包和模块管理/包
+ * -@SpecDetail: 在源文件中通过package 声明的包名必须与其所在的文件夹名保持一致。
+ */

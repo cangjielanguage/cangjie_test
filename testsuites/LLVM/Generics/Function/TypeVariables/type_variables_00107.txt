@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Function_Type_Variables_00107
+ * -@TestCaseName: type_variables_00107.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-01
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define multi type variables generics function with \n.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

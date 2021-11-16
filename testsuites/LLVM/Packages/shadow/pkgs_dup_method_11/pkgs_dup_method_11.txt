@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs_dup_method_11.cj
+ * -@TestCaseName: pkgs_dup_method_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 两个包以类型导入/通配符导入方式导入同名同参同返回类型的函数,使用以不同名字作用域级别访问,执行成功
+ * -#step1: 两个包中含同名external成员函数
+ * -#step2: 以类型导入/通配符导入的方式导入,以不同名字作用域级别访问
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

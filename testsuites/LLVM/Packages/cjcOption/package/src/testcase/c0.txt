@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: c0.cj
+ * -@TestCaseName: c0.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: testcase.a的包，导入testcase.a.*才可见
+ * -#step1: testcase.a的包，导入testcase.a.*才可见
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21.1
+ * -@SpecChapter:
+ * -@SpecDetail:
+ */

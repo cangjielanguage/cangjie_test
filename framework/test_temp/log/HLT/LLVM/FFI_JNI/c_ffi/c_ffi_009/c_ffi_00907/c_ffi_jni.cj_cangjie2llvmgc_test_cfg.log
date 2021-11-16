@@ -1,0 +1,50 @@
+2021-11-08 02:57:17 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/c_ffi/c_ffi_009/c_ffi_00907/c_ffi_jni.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:57:17 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/c_ffi/c_ffi_009/c_ffi_00907/c_ffi_jni_cj_cangjie2llvmgc_test_cfg_1636338487
+2021-11-08 02:57:17 DEBUG execute cmd ===>>>: sed -i "s!cangjieCFFI_path!%cstring_cjo!g" cfg.json
+2021-11-08 02:57:17 DEBUG return code: 0
+2021-11-08 02:57:17 DEBUG stdout : 
+
+2021-11-08 02:57:17 DEBUG stderr : 
+
+2021-11-08 02:57:17 DEBUG Run time: 0.027, remain time: 3e+02
+2021-11-08 02:57:17 DEBUG execute cmd ===>>>: clang -shared -fPIC c_ffi_jni.c -o libc_ffi_jni.so
+2021-11-08 02:57:17 DEBUG return code: 0
+2021-11-08 02:57:17 DEBUG stdout : 
+
+2021-11-08 02:57:17 DEBUG stderr : 
+@	c_ffi_jni.c:18:5: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+@	    memset(cjstruct.ptr, 0, 4);
+@	    ^
+@	c_ffi_jni.c:18:5: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+@	1 warning generated.
+
+2021-11-08 02:57:17 DEBUG Run time: 0.078, remain time: 3e+02
+2021-11-08 02:57:17 DEBUG execute cmd ===>>>: cjc -chir-vic off -ulimit-error -ld-options="-lcangjie-ffic  -L. -lc_ffi_jni" c_ffi_jni.cj -o c_ffi_jni.out
+2021-11-08 02:57:18 DEBUG return code: 0
+2021-11-08 02:57:18 DEBUG stdout : 
+
+2021-11-08 02:57:18 DEBUG stderr : 
+
+2021-11-08 02:57:18 DEBUG Run time: 0.88, remain time: 3e+02
+2021-11-08 02:57:18 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  c_ffi_jni.out  2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// c_ffi_jni.cj
+2021-11-08 02:57:18 DEBUG return code: 1
+2021-11-08 02:57:18 DEBUG stdout : 
++	compare.py input:
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: pass1\\n , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan, pattern: int8_t: -128\\nuint8_t: 255\\nchar*: efg\\n , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan, pattern: pass2\\n , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan-not, pattern: Exception , result: True, matched at output line: 0"
+
+2021-11-08 02:57:18 DEBUG stderr : 
+@	Aborted (core dumped)
+
+2021-11-08 02:57:18 DEBUG Run time: 0.13, remain time: 3e+02
+2021-11-08 02:57:18 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/c_ffi/c_ffi_009/c_ffi_00907/c_ffi_jni.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: url_type_0816.cj
+ * -@TestCaseName: url_type_0816.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class URL
+ * -@Condition: no
+ * -@Brief: 存放元素的内容符号测试,符合fragment的符号测试,含有unreserved的符号/ "-" / "." / "_" / "~"
+ * -#step1: URL
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/URL
+ * -@SpecDetail: URL
+ */

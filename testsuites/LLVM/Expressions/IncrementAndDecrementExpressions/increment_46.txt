@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: increment_46.cj
+ * -@TestCaseName: increment_46.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: 类型别名声明的变量使用自增自减表达式
+ * -#step1: 定义类型别名，声明变量未类型别名
+ * -#step2: 变量使用自增自减操作符
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

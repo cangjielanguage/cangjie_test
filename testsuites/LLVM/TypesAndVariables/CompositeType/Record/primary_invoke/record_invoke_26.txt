@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_invoke_26.cj
+ * -@TestCaseName: record_invoke_26.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record<T>中类型变元T为uint16
+ * -#step1: 定义一个泛型record <T>，内部定义一个类型变元label并在init函数中初始化label
+ * -#step2: 实例化record<T>传入类型变元为uint16，并传入值
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

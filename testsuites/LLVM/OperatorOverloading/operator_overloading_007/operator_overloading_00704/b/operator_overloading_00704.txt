@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_OperatorOverloading_00704
+ * -@TestCaseName: operator_overloading_00704.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2030
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 在package a中声明定义内置类型的internel trait操作符函数，在package b中导入a.*后使用操作符。
+ * -@Expect: 编译报错.
+ * -@Priority: level0
+ */

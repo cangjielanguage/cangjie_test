@@ -1,0 +1,34 @@
+2021-11-08 01:43:28 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_005/java_ffi_00505n/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:43:28 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_005/java_ffi_00505n/java_ffi_main_cj_cangjie2llvmgc_test_cfg_1636335520
+2021-11-08 01:43:28 DEBUG execute cmd ===>>>: echo "java.lang=$CANGJIE_HOME/modules/linux_x86_64_llvm//java.lang/java.lang.cjo" > ast-cfg
+2021-11-08 01:43:28 DEBUG return code: 0
+2021-11-08 01:43:28 DEBUG stdout : 
+
+2021-11-08 01:43:28 DEBUG stderr : 
+
+2021-11-08 01:43:28 DEBUG Run time: 0.026, remain time: 3e+02
+2021-11-08 01:43:28 DEBUG execute cmd ===>>>: cjc -ulimit-error -i ast-cfg java_ffi_main.cj -o java_ffi_main.out 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// java_ffi_main.cj
+2021-11-08 01:43:28 DEBUG return code: 1
+2021-11-08 01:43:28 DEBUG stdout : 
++	compare.py input:
++		 [33mwarning[0m: import cfg will be deprecated, please use implictly import by environment variable CANGJIE_PATH.
++		  e.g.: from module1 import package1.*
++		        from module2 import package2.*
++		        absolute path of package1.cjo is /path1/module/package1.cjo
++		        absolute path of package2.cjo is /path2/module/package2.cjo
++		        'export CANGJIE_PATH=/path1:/path2' on linux or
++		        'CANGJIE_PATH=/path1;/path2' on windows
++		 [31merror[0m: error occurs when reading ast file: '/home/zhujunhua/workspace/cangjie/B027/modules/linux_x86_64_llvm//java.lang/java.lang.cjo', reason: 'open file failed'
++		 [31merror[0m: validation of ast file 'java.lang' failed, you should use ast file created by compiler which version is '0.23.1'.
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"flag: regex, pattern: \\:6\\:.*\\:.*'Unit' cannot be used as a member variable type in java interoperation , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-11-08 01:43:28 DEBUG stderr : 
+
+2021-11-08 01:43:28 DEBUG Run time: 0.099, remain time: 3e+02
+2021-11-08 01:43:28 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/FFI_JNI/java_ffi/java_ffi_005/java_ffi_00505n/java_ffi_main.cj_cangjie2llvmgc_test_cfg.log

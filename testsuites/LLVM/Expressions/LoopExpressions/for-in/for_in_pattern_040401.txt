@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: for_in_pattern_040401.cj
+ * -@TestCaseName: for_in_pattern_040401.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1014-12
+ * -@RequirementName: for in表达式
+ * -@Condition: no
+ * -@Brief: 关键字 for 之后为 irrefutable 的 pattern：tuple,(x,x),x重复定义
+ * -#step1: 关键字 for 之后为 irrefutable 的 pattern：tuple,(x,x)
+ * -@Expect: 编译
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 表达式/循环表达式/for-in表达式
+ * -@SpecDetail: 关键字 for 之后只能是那些一定或可能为 irrefutable 的 pattern
+ * -@catalog:# 表达式## 循环表达式### for-in表达式--6
+ * -@catalog:# 表达式## 循环表达式### for-in表达式--7
+ */

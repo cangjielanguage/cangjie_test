@@ -1,0 +1,6 @@
+lldb,lldb 041_debuginfun_parentheses,041_debuginfun_parentheses
+b,b 8,041_debuginfun_parentheses.cj:8
+b,b 9,041_debuginfun_parentheses.cj:9
+r,r,-> 8
+n,n,-> 9
+cj_plocals,cj_plocals,kuonum = 5

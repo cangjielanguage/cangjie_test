@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_member_initialize_05n.cj
+ * -@TestCaseName: class_member_initialize_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 成员变量初始化检查
+ * -@Condition: no
+ * -@Brief: 在class构造函数中的for-in表达式初始化成员变量，编译报错
+ * -#step1: 定义class Data，在构造函数中使用for-in表达式初始化成员变量
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

@@ -1,0 +1,30 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC-PIPE: %run %run_opt %output %run_args| compare %f
+// ASSERT: scan success
+
+class A <: Throwable{}
+
+class B <: Throwable{}
+
+open class C{
+    protected C(){
+        var a : Int64 = if(true){throw A();1}else{0}
+    }
+}
+
+class D<:C{
+    init(){
+        super()
+    }
+}
+
+func main() {
+    try{
+        D();
+        ()
+    } catch (a:A) {
+        a.printStackTrace()
+        print("success")
+    }
+    return 0
+}

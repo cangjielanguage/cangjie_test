@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: c_ffi_01307
+ * -@TestCaseName: c_ffi.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-29
+ * -@RequirementName: Region类型
+ * -@Conditon: no
+ * -@Brief: 验证Region类型
+ * -#step1: 调用Region的方法
+ * -#step2: 验证结果
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

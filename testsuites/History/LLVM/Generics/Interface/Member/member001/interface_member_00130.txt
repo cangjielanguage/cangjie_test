@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Member_00130
+ * -@TestCaseName: interface_member_00130.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use type parameter as type pattern inside generic interface.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

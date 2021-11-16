@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: error_report_16.cj
+ * -@TestCaseName: error_report_16.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1039-01
+ * -@RequirementName: 编译告警
+ * -@Condition: no
+ * -@Brief: 编译告警：实例化record调用参数缺少，note提示可能的候选构造函数
+ * -@step1: 编译告警：实例化record调用缺失参数，note提示可能的候选构造函数
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

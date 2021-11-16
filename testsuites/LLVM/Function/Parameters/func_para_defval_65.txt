@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: func_para_defval_65.cj
+ * -@TestCaseName: func_para_defval_65.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试可选参数所在类成员函数被static修饰符修饰
+ * -#step1: 定义一个类class Base，其中声明三个函数分别被static public/static protect/static private修饰且内含可选参数
+ * -#step2: 定义子类class Data继承Base，定义static修饰的函数Foo，函数内部调用父类被static protected修饰的函数
+ * -#step3: 实例化Data，分别验证调用static修饰的函数，省略可选参数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

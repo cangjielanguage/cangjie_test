@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_PatternGuards_Sema_00251
+ * -@TestCaseName: pattern_guards_sema_00251.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2012-04
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use variable declaration for pattern guard`s expression.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 模式匹配表达式--3
+ */

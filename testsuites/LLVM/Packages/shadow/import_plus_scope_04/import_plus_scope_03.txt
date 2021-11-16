@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: import_plus_scope_02.cj
+ * -@TestCaseName: import_plus_scope_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Trait的定义和实现
+ * -@Condition: no
+ * -@Brief: module和package名相同，定义时报错
+ * -#step1: module和package名相同
+ * -#step2: 检查编译执行结果
+ * -@Expect: 定义时报错
+ * -@Priority: High
+ */

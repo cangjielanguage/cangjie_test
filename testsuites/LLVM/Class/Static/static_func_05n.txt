@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_func_05n.cj
+ * -@TestCaseName: static_func_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: 子类通过父类类名访问父类中static + private修饰的静态成员函数，编译报错
+ * -#step1: 父类Base中定义static + private的静态成员函数foo，定义子类Data继承Base
+ * -#step2: 通过父类类名访问成员函数foo()
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

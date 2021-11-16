@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_value_23.cj
+ * -@TestCaseName: string_value_23.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的字面量，单行字符串含有unicode字符\u0031
+ * -#step1: 定义一个含有unicode字符\u0031的单行字符串
+ * -#step2: 打印该字符串，ASSERT捕获打印信息
+ * -@Expect: 执行成功，\u0031转义为unicode的字符1成功，打印期望结果
+ * -@Priority: High
+ */

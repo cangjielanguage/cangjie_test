@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: matchpattern_sequence_04.cj
+ * -@TestCaseName: matchpattern_sequence_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: 序列模式bnf语法错误，编译报错
+ * -#step1: 序列模式bnf语法错误
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 表达式/模式匹配表达式/序列模式
+ * -@SpecDetail:
+ */

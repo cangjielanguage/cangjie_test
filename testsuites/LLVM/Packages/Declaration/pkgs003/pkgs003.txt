@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: pkgs003.cj
+ * -@TestCaseName: pkgs003.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:Lack keyword of package,compile error
+ * -#step1:Compile testfile and check result
+ * -@Expect:Compile fail and report an error
+ * -@Priority: High
+ */

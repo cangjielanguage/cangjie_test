@@ -1,0 +1,20 @@
+ /*
+ * -@TestCaseID: arg_ret_type_16
+ * -@TestCaseName: arg_ret_type_16.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsMember调用js中入参和返回值均为array的函数
+ * -#step1: js侧的全局函数,入参为array,返回值为array,函数体为普通表达式,作为成员导出
+ * -#step2: 仓颉侧@JsMember修饰top-level的函数,入参为Tuple,返回值为Tuple
+ * -#step3: step2中的函数在main中调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsMember
+ * -@SpecDetail: 1、函数的参数和返回值类型仅支持部分类型 2、仓颉侧Tuple映射Js侧array 3、当 `JavaScript` 中的函数或变量作为包成员导出时可通过 `@JsMember` 注解来表示
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsMember--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--5
+ */

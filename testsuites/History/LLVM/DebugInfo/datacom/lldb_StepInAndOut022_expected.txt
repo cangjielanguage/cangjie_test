@@ -1,0 +1,7 @@
+lldb,lldb 019_debug_expressions,019_debug_expressions
+b,b 10,019_debug_expressions.cj:10
+r,r,-> 10
+s,s,-> 21
+cj_plocals,cj_plocals,count = 11
+rerun,r,-> 10
+finish,finish,stopped

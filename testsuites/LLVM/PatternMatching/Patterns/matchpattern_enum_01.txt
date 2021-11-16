@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: matchpattern_enum_01.cj
+ * -@TestCaseName: matchpattern_enum_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: enum模式，以及enum嵌套tuple
+ * -#step1: enum模式，以及enum嵌套tuple
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 表达式/模式匹配表达式/enum模式
+ * -@SpecDetail:
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### enum模式--4
+ * -@catalog:# 表达式## 模式匹配表达式### 模式--7
+ */

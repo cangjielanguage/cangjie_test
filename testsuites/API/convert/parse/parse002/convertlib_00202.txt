@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: convertlib_00202.cj
+ * -@TestCaseName: convertlib_00202.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-01
+ * -@RequirementName: 提供String parse 函数
+ * -@Condition: no
+ * -@Brief: 入参字符串数值超过转换类型的表示范围
+ * -@Expect: 编译正确,执行成功
+ * -@Priority: level0
+ */

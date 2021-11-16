@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_OperatorOverloading_00710
+ * -@TestCaseName: operator_overloading_00710.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2030
+ * -@RequirementName: OperatorOverloading
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 静态嵌套类中定义操作符函数，在外部类外使用（未实现）。
+ * -@Expect: 编译报错.
+ * -@Priority: level0
+ */

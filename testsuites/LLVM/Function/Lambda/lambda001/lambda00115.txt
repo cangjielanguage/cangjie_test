@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Lambda_00115
+ * -@TestCaseName: lambda00115.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2012, issue819
+ * -@RequirementName: Lambda
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define lambda without set input type.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

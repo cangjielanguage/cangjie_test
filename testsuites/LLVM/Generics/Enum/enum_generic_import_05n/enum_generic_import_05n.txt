@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_import_05n.cj
+ * -@TestCaseName: enum_generic_import_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: import internal enum<T>所在package，调用该enum<T>
+ * -#step1: 准备package，含internal enum<T>
+ * -#step2: import该package,并调用该enum<T>
+ * -#step3: 检查编译结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

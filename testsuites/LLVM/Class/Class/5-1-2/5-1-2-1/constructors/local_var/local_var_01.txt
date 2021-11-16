@@ -1,0 +1,14 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/local_var/local_var_01.cj
+*- @TestCaseName:this在构造函数中可以生效
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:this在构造函数中可以生效
+* -#在构造函数中通过this使用类变量,并且完成初始化
+* -#类变量声明，且未初始化
+* -#创建Data的实例，获取成员的变量的值
+*- @Expect:构造函数执行正确，获取成员变量的值正确
+*- @Priority:level1 
+*/

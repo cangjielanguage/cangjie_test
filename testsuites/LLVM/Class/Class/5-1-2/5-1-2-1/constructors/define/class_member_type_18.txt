@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_member_type_18.cj
+ * -@TestCaseName: class_member_type_18.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 测试class中field/init入参/成员函数的入参/成员函数的返回类型均为enum
+ * -#step1: 在class中定义两个enum类型的变量time1、time2，time1在定义时初始化，time2在init中初始化
+ * -#step2: 在class中定义定义一个func f，入参以及返回类型均为enum类型
+ * -@Expect: 变量值正确，返回0
+ * -@Priority: High
+ */

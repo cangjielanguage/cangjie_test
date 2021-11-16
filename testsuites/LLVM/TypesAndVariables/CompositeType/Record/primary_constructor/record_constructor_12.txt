@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_constructor_12.cj
+ * -@TestCaseName: record_constructor_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体有两个未初始化label，自定义无参init中为label赋值的情况下，调用record中的默认全参构造器
+ * -#step1: 在record体中定义两个label
+ * -#step2: 在record体中定义一个无参构造器，为label赋值
+ * -#step3: 构造实例时调用默认全参构造器
+ * -@Expect: 执行成功，调用默认构造器，并初始化为入参值
+ * -@Priority: High
+ */

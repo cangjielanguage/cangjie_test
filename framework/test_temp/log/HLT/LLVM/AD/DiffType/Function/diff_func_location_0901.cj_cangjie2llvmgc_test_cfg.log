@@ -1,0 +1,85 @@
+2021-11-08 02:52:10 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:52:10 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484
+2021-11-08 02:52:10 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error diff_func_location_0901.cj -c -o diff_func_location_0901.out 2>&1 
+2021-11-08 02:52:10 DEBUG return code: 1
+2021-11-08 02:52:10 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:7:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++	    7 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |             [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:11:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++	   11 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |             [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:15:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++	   15 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |             [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:19:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++	   19 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |             [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:21: [33mwarning[0m: ad annotation 'differentiable' is ignored, please use option '-enable-ad'
++	   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |                     [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:19: [31merror[0m: undeclared identifier 'toString'
++	   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |                   [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:19: [31merror[0m: undeclared identifier 'toString'
++	   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |                   [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:19: [31merror[0m: invalid binary operator '+' on type 'Invalid' and 'Record-String'
++	   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++	      |                   [32m^[0m
++	3 errors and 5 warnings generated
+
+2021-11-08 02:52:10 DEBUG stderr : 
+
+2021-11-08 02:52:10 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:52:10 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// diff_func_location_0901.cj
+2021-11-08 02:52:10 DEBUG return code: 1
+2021-11-08 02:52:10 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:7:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++		    7 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |             [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:11:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++		   11 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |             [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:15:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++		   15 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |             [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:19:13: [33mwarning[0m: Inner function 'goo' does not need @differentiable.
++		   19 |             func goo(){} // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |             [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:21: [33mwarning[0m: ad annotation 'differentiable' is ignored, please use option '-enable-ad'
++		   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |                     [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:19: [31merror[0m: undeclared identifier 'toString'
++		   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |                   [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:19: [31merror[0m: undeclared identifier 'toString'
++		   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |                   [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901_cj_cangjie2llvmgc_test_cfg_1636338484/diff_func_location_0901.cj:25:19: [31merror[0m: invalid binary operator '+' on type 'Invalid' and 'Record-String'
++		   25 |         var b = "${@differentiable [except:[this]]func goo(){}}" // EXPECTED: regex error.*Inner function 'goo' does not need @differentiable
++		      |                   [32m^[0m
++		3 errors and 5 warnings generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"flag: regex, pattern: \\:7\\:.*\\:.*error.*Inner function 'goo' does not need @differentiable , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"flag: regex, pattern: \\:11\\:.*\\:.*error.*Inner function 'goo' does not need @differentiable , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"flag: regex, pattern: \\:15\\:.*\\:.*error.*Inner function 'goo' does not need @differentiable , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"flag: regex, pattern: \\:19\\:.*\\:.*error.*Inner function 'goo' does not need @differentiable , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"flag: regex, pattern: \\:23\\:.*\\:.*error.*Inner function 'goo' does not need @differentiable , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"flag: regex, pattern: \\:25\\:.*\\:.*error.*Inner function 'goo' does not need @differentiable , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-11-08 02:52:10 DEBUG stderr : 
+
+2021-11-08 02:52:10 DEBUG Run time: 0.096, remain time: 3e+02
+2021-11-08 02:52:10 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_func_location_0901.cj_cangjie2llvmgc_test_cfg.log

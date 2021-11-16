@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_import_01n.chr
+ * -@TestCaseName: enum_generic_import_01n.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief:同package，不同文件中含同名enum<T>，编译报错
+ * -#step1:准备同package，不同文件中含同名enum<T>
+ * -#step2:检查编译结果
+ * -@Expect:编译报错
+ * -@Priority: High
+ */

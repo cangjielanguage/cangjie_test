@@ -1,0 +1,7 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 19,024_debug_variable.cj:19
+r,r,-> 19
+cj_set,cj_set var_int64 = 9223372036854775808,-9223372036854775808
+n,n,-> 22
+cj_plocals,cj_plocals,var_int64 = -9223372036854775808
+cj_plocals,cj_plocals,f_int64 = 0

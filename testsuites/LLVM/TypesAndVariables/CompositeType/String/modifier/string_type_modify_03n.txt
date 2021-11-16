@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_modify_03n.cj
+ * -@TestCaseName: string_type_modify_03n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型变量的修饰符，open修饰的String变量
+ * -#step1: 定义一个String类型变量并用open修饰符修饰
+ * -#step2: 编译检查
+ * -@Expect: 编译报错，不合法的变量声明
+ * -@Priority: High
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_constructor_overload_05.cj
+ * -@TestCaseName: record_constructor_overload_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中多个构造函数的重载,调用默认全参构造器
+ * -#step1: 在record体中定义两个label；
+ * -#step2: 定义一个与全参构造器相同参数个数但是类型不同的构造器
+ * -#step3: 定义变量a和b的类型为int32并赋值，构造实例时调用默认全参构造器，传入变量a，b
+ * -@Expect: 执行成功，调用自定义默认全参构造器
+ * -@Priority: High
+ */

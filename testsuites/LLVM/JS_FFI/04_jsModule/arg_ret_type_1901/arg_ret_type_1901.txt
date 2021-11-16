@@ -1,0 +1,22 @@
+ /*
+ * -@TestCaseID: arg_ret_type_1901
+ * -@TestCaseName: arg_ret_type_1901.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: JS互操作
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 仓颉通过jsModule调用js中入参类型不确定和返回值为String的函数
+ * -#step1: js侧的全局函数,入参为Number或者String,返回值为String,函数体为普通表达式（if_else）,直接作为函数导出。
+ * -#step2: 仓颉侧@JsModule修饰top-level的函数,入参为Enum,返回值为String
+ * -#step3: step2中的函数在main中调用
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.6
+ * -@SpecChapter: @JsModule
+ * -@SpecDetail: 1、仓颉侧Enum映射Js侧Object  2、`enum` 类型仅当所有的 `constructor` 都只有一个类型参数时支持直接作为具体的类型参数进行映射 
+ * -@SpecDetail: 3、函数的参数和返回值类型仅支持部分类型 4、当 `JavaScript` 包直接导出函数或变量时，可以通过 `@JsModule` 注解来表示
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 类型映射#### 值类型映射--3
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### @JsModule--1
+ * -@catalog: # 语言互操作## JavaScript 互操作### 仓颉调用 JavaScript#### foreign 修饰符##### foreign 函数--5
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_member_type_22.cj
+ * -@TestCaseName: class_member_type_22.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 测试class中field/init入参/成员函数的入参/成员函数的返回类型均为interface
+ * -#step1: 在class中定义两个interface类型的变量a、b，a在定义时初始化，b在init中初始化
+ * -#step2: 在class中定义定义一个func f，入参以及返回类型均为interface类型
+ * -@Expect: 变量值正确，返回0
+ * -@Priority: High
+ */

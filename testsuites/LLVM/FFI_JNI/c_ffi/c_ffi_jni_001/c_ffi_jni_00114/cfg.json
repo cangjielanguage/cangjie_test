@@ -1,0 +1,8 @@
+{
+  "foreign_module": {
+    "libc_ffi_jni.so": {
+      "path": "./",
+      "export": ["Java_GlobalJNI_testfunc1", "Java_GlobalJNI_testfunc2"]
+    }
+  }
+}

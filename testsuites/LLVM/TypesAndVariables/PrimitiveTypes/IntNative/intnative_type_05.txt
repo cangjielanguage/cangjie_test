@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: intnative_type_05.cj
+ * -@TestCaseName: intnative_type_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1002-05
+ * -@RequirementName: IntNative和UIntNative
+ * -@Condition: no
+ * -@Brief: IntNative/UIntNative类型作为泛型变元实例化类型 
+ * -#step1: IntNative/UIntNative类型作为泛型变元实例化类型
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 值类型
+ * -@SpecDetail: 
+ */

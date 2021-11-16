@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_00103
+ * -@TestCaseName: wildcard00103.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define two wildcard in one pattern.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 通配符模式--3
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 通配符模式--1
+ */

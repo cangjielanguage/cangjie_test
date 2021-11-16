@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_import_01.cj
+ * -@TestCaseName: class_import_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 类导入
+ * -@Condition: no
+ * -@Brief: 导入的类作为类型声明使用
+ * -#step1: 导入的类作为类型声明使用
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

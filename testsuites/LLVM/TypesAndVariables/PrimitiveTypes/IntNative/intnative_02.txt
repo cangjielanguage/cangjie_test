@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: intnative_02.cj
+ * -@TestCaseName: intnative_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1002-05
+ * -@RequirementName: IntNative和UIntNative
+ * -@Condition: no
+ * -@Brief: IntNative取超过Int64的范围 (-9223372036854775808 to 9223372036854775807)，报溢出
+ * -#step1: IntNative取超过Int64的范围 (-9223372036854775808 to 9223372036854775807)，报溢出
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 值类型
+ * -@SpecDetail: 
+ */

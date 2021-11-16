@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: class_finalizer_spec_20026.cj
+ * -@TestCaseName: class_finalizer_spec_20026.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-21
+ * -@RequirementName: support class finalizer
+ * -@Condition: no
+ * -@Brief: define class finalizer.
+ * -@Expect: see case.
+ * -@Priority: High
+ */

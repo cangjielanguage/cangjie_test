@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: string_matcher_02.cj
+ * -@TestCaseName: string_matcher_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Matcher-Stringascii中的可显示字符
+ * -#step1: Matcher-Stringascii中的可显示字符
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: Matcher-Stringascii中的可显示字符,匹配到数据
+ */

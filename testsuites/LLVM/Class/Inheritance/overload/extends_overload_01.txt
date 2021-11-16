@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: extends_overload_01.cj
+ * -@TestCaseName: extends_overload_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 父类和子类中的函数发生重载
+ * -#step1: 定义一个Base基类，定义无参函数foo
+ * -#step2: 子类继承基类，在子类中定义带参函数foo
+ * -#step3: 实例化父类和子类，分别调用foo函数
+ * -@Expect: 父类和子类均能正确调用对应函数
+ * -@Priority: High
+ */

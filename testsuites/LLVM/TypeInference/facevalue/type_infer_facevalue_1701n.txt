@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_1701n.cj
+ * -@TestCaseName: type_infer_facevalue_1701n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: lambda表达式的返回字面值推导类型与预期不符
+ * -#step1: 定义lambda表达式的返回字面值类型为int32
+ * -#step2: 调用lambda函数，并赋值给int64类型变量
+ * -#step3: 编译检查报错信息
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

@@ -1,0 +1,15 @@
+2021-11-08 02:51:16 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_05.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:51:16 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_05_cj_cangjie2llvmgc_test_cfg_1636338483
+2021-11-08 02:51:16 DEBUG execute cmd ===>>>: cjc -ulimit-error class_generic_circle_05.cj -o class_generic_circle_05.out
+2021-11-08 02:51:16 DEBUG return code: 1
+2021-11-08 02:51:16 DEBUG stdout : 
+
+2021-11-08 02:51:16 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_05_cj_cangjie2llvmgc_test_cfg_1636338483/class_generic_circle_05.cj:13:5: [31merror[0m: non-static generic member function 'foo' is not supported
+@	   13 |     func foo<V>(x: V): Data<V>{
+@	      |     [32m^[0m
+@	1 error generated
+
+2021-11-08 02:51:16 DEBUG Run time: 0.35, remain time: 3e+02
+2021-11-08 02:51:16 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_circle_05.cj_cangjie2llvmgc_test_cfg.log

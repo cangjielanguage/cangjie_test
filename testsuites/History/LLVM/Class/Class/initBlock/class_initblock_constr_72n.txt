@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_initblock_constr_72n.cj
+ * -@TestCaseName: class_initblock_constr_71n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 子类自定义构造函数显式调用父类构造器, 编译报错
+ * -#step1: 定义一个基类Base，定义init block；
+ * -#step2: 定义类Data继承自Base，Data中自定义构造函数显式的调用父类构造器super()，实例化类Data
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Quote_10021
+ * -@TestCaseName: quote_10021.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support quote.
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test quote`s input !.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

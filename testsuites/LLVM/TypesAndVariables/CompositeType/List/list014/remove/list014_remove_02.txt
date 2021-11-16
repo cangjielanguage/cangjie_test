@@ -1,0 +1,16 @@
+/*
+* -@TestCaseID: list014_remove_02
+* -@TestCaseName: list014_remove_02
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-Lang-1011-04
+* -@RequirementName: lang.List库
+* -@Condition: no
+* -@Brief: wrong argument format '0' for remove
+* -#step1: 
+* -@Expect: Compile fail.
+* -@Priority: level0
+* -@SpecVersion: spec 0.22.3
+* -@SpecChapter: List
+* -@SpecDetail: 
+* -@catalog: 
+*/

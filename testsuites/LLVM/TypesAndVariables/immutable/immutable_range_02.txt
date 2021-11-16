@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: immutable_range_02.cj
+ * -@TestCaseName: immutable_range_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-20
+ * -@RequirementName: 表达式计算得到的值需要做immutable检查
+ * -@Condition: no
+ * -@Brief: Range<T>的T为自定义类型，Range成员start 、end 、 step不能被修改
+ * -#step1: Range<T>的T为自定义类型，Range成员start 、end 、 step不能被修改
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 
+ * -@SpecDetail: 
+ * -@catalog:# 名字、作用域、变量## 变量### 变量的初始化#### 不可变变量和可变变量--3 
+ */

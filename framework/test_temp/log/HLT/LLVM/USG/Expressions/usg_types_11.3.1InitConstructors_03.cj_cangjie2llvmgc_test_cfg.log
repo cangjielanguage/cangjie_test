@@ -1,0 +1,26 @@
+2021-11-08 02:42:33 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/USG/Expressions/usg_types_11.3.1InitConstructors_03.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:42:33 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/USG/Expressions/usg_types_11_3_1InitConstructors_03_cj_cangjie2llvmgc_test_cfg_1636338480
+2021-11-08 02:42:33 DEBUG execute cmd ===>>>: cjc -ulimit-error usg_types_11.3.1InitConstructors_03.cj -o usg_types_11.3.1InitConstructors_03.out 2>&1 
+2021-11-08 02:42:33 DEBUG return code: 0
+2021-11-08 02:42:33 DEBUG stdout : 
+
+2021-11-08 02:42:33 DEBUG stderr : 
+
+2021-11-08 02:42:33 DEBUG Run time: 0.56, remain time: 3e+02
+2021-11-08 02:42:33 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// usg_types_11.3.1InitConstructors_03.cj
+2021-11-08 02:42:34 DEBUG return code: 1
+2021-11-08 02:42:34 DEBUG stdout : 
++	compare.py input:
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: regex-not, pattern: core dump , result: True, matched at output line: 0"
++	b"flag: regex, pattern: \\:11\\:.*\\:.*error.*?non static member function 'getPerimeter' cannot be accessed before finishing initialization of the record , result: False, matched at output line: 1"
++	Match End!, Compare Failed
+
+2021-11-08 02:42:34 DEBUG stderr : 
+
+2021-11-08 02:42:34 DEBUG Run time: 0.089, remain time: 3e+02
+2021-11-08 02:42:34 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/USG/Expressions/usg_types_11.3.1InitConstructors_03.cj_cangjie2llvmgc_test_cfg.log

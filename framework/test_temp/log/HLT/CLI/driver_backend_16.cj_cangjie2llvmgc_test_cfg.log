@@ -1,0 +1,21 @@
+2021-11-08 02:54:40 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/CLI/driver_backend_16.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:54:40 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/CLI/driver_backend_16_cj_cangjie2llvmgc_test_cfg_1636338486
+2021-11-08 02:54:40 DEBUG execute cmd ===>>>: cjc -backend js -backend-options="--print" driver_backend_16.cj -o driver_backend_16.js 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// driver_backend_16.cj
+2021-11-08 02:54:40 DEBUG return code: 1
+2021-11-08 02:54:40 DEBUG stdout : 
++	compare.py input:
++		[31merror[0m: Not support yet!
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan-not, pattern: core dumped , result: True, matched at output line: 0"
++	b"It's a assert, flag: scan-not, pattern: stack trace , result: True, matched at output line: 2"
++	b"It's a assert, flag: regex, pattern: xxx \xe5\x90\x8e\xe7\xab\xaf\xe9\x80\x89\xe9\xa1\xb9\xe5\xaf\xb9js\xe5\x90\x8e\xe7\xab\xaf\xe6\x97\xa0\xe6\x84\x8f\xe4\xb9\x89 , result: False, matched at output line: 2"
++	Match End!, Compare Failed
+
+2021-11-08 02:54:40 DEBUG stderr : 
+
+2021-11-08 02:54:40 DEBUG Run time: 0.43, remain time: 3e+02
+2021-11-08 02:54:40 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/CLI/driver_backend_16.cj_cangjie2llvmgc_test_cfg.log

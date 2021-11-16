@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: TimeSpan_4_StaticFunc_004
+ * -@TestCaseName: TimeSpan_4_StaticFunc_004.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: TimeSpan
+ * -@Condition: charc, clang, maple test framework and python3.
+ * -@Brief: 静态方法FromDays，FromHours，FromMilliseconds，FromMinutes，FromSeconds，FromTicks
+ * -@Expect: 正确执行
+ * -@Priority: level1
+ */
+    

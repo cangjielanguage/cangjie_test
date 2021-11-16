@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_padright_01.cj
+ * -@TestCaseName: string_padright_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试string的padRight(totalWidth: UInt64,paddingChar:char = ' '):String方法，totalWidth小于或等于字符串长度，返回字符串本身
+ * -#step1: 定义不同形式的string，调用该变量的padRight方法
+ * -#step2: totalWidth小于或等于字符串长度，检查执行结果
+ * -@Expect: 返回原字符串，执行正确
+ * -@Priority: High
+ */

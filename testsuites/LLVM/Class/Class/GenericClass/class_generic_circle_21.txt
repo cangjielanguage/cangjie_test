@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: class_generic_circle_21.cj
+ * -@TestCaseName: class_generic_circle_21.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型类的层级：A <: B <: C <: D <: E
+ * -#step1: 定义一个泛型类E<T>、D<T>、C<T>、B<T>、A<T>，依次继承，E<T>为最高层父类，A<T>为最底层的子类
+ * -@Expect: 执行成功，返回期望结果
+ */

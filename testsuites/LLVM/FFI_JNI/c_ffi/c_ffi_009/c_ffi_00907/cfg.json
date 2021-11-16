@@ -1,0 +1,11 @@
+{
+  "package": {
+    "ffi/c": "cangjieCFFI_path"
+  },
+  "foreign_module": {
+    "libc_ffi_jni.so": {
+      "path": "./",
+      "export":  ["testfunc0", "testfunc1", "testfunc2"]
+    }
+  }
+}

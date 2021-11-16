@@ -1,0 +1,98 @@
+2021-10-29 09:08:58 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/test_killpg_001/test_killpg_001_test_killpg_001.cj_cangjie2llvmgc_test_cfg.log
+2021-10-29 09:08:58 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/test_killpg_001/test_killpg_001_test_killpg_001_cj_cangjie2llvmgc_test_cfg_1635498538
+2021-10-29 09:08:58 DEBUG execute cmd ===>>>: bash run.sh 
+2021-10-29 09:08:58 DEBUG return code: 0
+2021-10-29 09:08:58 DEBUG stdout : 
++	Usage: 
++	      cjc [option] file... 
++	
++	Options: 
++	  -backend <value>            Specify backend toolchain. Candidates: llvm, jet, js, panda
++	  -c, -compile                Compile only to emit object file(s)
++	  -when-config-names=<value>  User defined conditional compilation
++	  -when-config-values=<value> User defined conditional compilation
++	  -config=<value>             User defined contion to compile
++	  -debug-macro                Enable debug macro
++	  -g                          Enable compile debug version target
++	  -no-stacktrace-info         Do not display the line number and file name information
++	  -o, -output <value>         Specify product name or output directory when compiling a package
++	  -enable-ad                  Enables automatic differentiation
++	  -debug-ad                   Enable debug differentiation
++	  -dump-chil                  Dump CHIL to file (package name used as file name).
++	  -panda-opt                  Enable panda backend optimisation
++	  -overflow <value>           Specify default integer overflow strategy: no, throwing, wrapping, saturating
++	  -strict-number              Switch to strict number mode for JS backend
++	  -jc-options=<value>         Options directly passed to jet backend, put the value into "" when there is space in it
++	  -backend-options=<value>    Options directly passed to backend toolchain, put the value into "" when there is space in it
++	  -opt-options=<value>        Options directly passed to opt, put the value into "" when there is space in it
++	  -llc-options=<value>        Options directly passed to llc, put the value into "" when there is space in it
++	  -ld-options=<value>         Options directly passed to ld, put the value into "" when there is space in it
++	  -shared                     Dynamically link obj files
++	  -module <value>             Specify one module directory to be compiled
++	  -module-name <value>        Tell compiler name of the module
++	  -p, -package                Specify package directory/directories to be compiled
++	  -i, -import-config <value>  Specify import configuration file
++	  -ulimit-error               Compilier will emit all errors at once
++	  -v, -verbose                Enable verbose
++	  -V, -version                Print compiler version information 
++	  -h, -help                   Show usage
++	cjc %stdx_cmp_opt -backend-options=-L%%stdx-package -lcangjie-ffic -lcangjie-os -L. -lcstr2int ./test_kill_001.cj -o test_kill_001.out
+
+2021-10-29 09:08:58 DEBUG stderr : 
+@	 [31merror[0m: invalid file or directory '%stdx_cmp_opt'
+@	 [31merror[0m: source file './test_kill_001.cj' doesn't exist
+@	run.sh: line 17: ./test_kill_001.out: No such file or directory
+
+2021-10-29 09:08:58 DEBUG Run time: 0.24, remain time: 3e+02
+2021-10-29 09:08:58 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// test_killpg_001.cj
+2021-10-29 09:08:58 DEBUG return code: 1
+2021-10-29 09:08:58 DEBUG stdout : 
++	compare.py input:
++		Usage: 
++		      cjc [option] file... 
++		
++		Options: 
++		  -backend <value>            Specify backend toolchain. Candidates: llvm, jet, js, panda
++		  -c, -compile                Compile only to emit object file(s)
++		  -when-config-names=<value>  User defined conditional compilation
++		  -when-config-values=<value> User defined conditional compilation
++		  -config=<value>             User defined contion to compile
++		  -debug-macro                Enable debug macro
++		  -g                          Enable compile debug version target
++		  -no-stacktrace-info         Do not display the line number and file name information
++		  -o, -output <value>         Specify product name or output directory when compiling a package
++		  -enable-ad                  Enables automatic differentiation
++		  -debug-ad                   Enable debug differentiation
++		  -dump-chil                  Dump CHIL to file (package name used as file name).
++		  -panda-opt                  Enable panda backend optimisation
++		  -overflow <value>           Specify default integer overflow strategy: no, throwing, wrapping, saturating
++		  -strict-number              Switch to strict number mode for JS backend
++		  -jc-options=<value>         Options directly passed to jet backend, put the value into "" when there is space in it
++		  -backend-options=<value>    Options directly passed to backend toolchain, put the value into "" when there is space in it
++		  -opt-options=<value>        Options directly passed to opt, put the value into "" when there is space in it
++		  -llc-options=<value>        Options directly passed to llc, put the value into "" when there is space in it
++		  -ld-options=<value>         Options directly passed to ld, put the value into "" when there is space in it
++		  -shared                     Dynamically link obj files
++		  -module <value>             Specify one module directory to be compiled
++		  -module-name <value>        Tell compiler name of the module
++		  -p, -package                Specify package directory/directories to be compiled
++		  -i, -import-config <value>  Specify import configuration file
++		  -ulimit-error               Compilier will emit all errors at once
++		  -v, -verbose                Enable verbose
++		  -V, -version                Print compiler version information 
++		  -h, -help                   Show usage
++		cjc %stdx_cmp_opt -backend-options=-L%%stdx-package -lcangjie-ffic -lcangjie-os -L. -lcstr2int ./test_kill_001.cj -o test_kill_001.out
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: pass1 , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan, pattern: pass2 , result: False, matched at output line: 0"
++	Match End!, Compare Failed
+
+2021-10-29 09:08:58 DEBUG stderr : 
+
+2021-10-29 09:08:58 DEBUG Run time: 0.085, remain time: 3e+02
+2021-10-29 09:08:58 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/test_killpg_001/test_killpg_001_test_killpg_001.cj_cangjie2llvmgc_test_cfg.log

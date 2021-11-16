@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matchdata_matchStrP_01_01.cj
+ * -@TestCaseName: matchdata_matchStrP_01_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: MatchData-正则中组重复时，取最新一次迭代的子字符串
+ * -#step1: MatchData-正则中组重复时，取最新一次迭代的子字符串
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: func matchStr(group: int64): String返回匹配到的指定组的子字符串
+ */

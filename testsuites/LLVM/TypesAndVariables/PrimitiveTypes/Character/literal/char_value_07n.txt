@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_value_07n.cj
+ * -@TestCaseName: char_value_07n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型字面量为两个英文字符
+ * -#step1: 定义由两个英文字符组成的char类型变量
+ * -#step2: 编译检查编译信息
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: String_constructor_1_2_4_err.cj
+ * -@TestCaseName: String_constructor_1_2_4_err.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String()构造器length为负数
+ * -@Expect: 预期报错
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: argument_parser_021.cj
+ * -@TestCaseName: argument_parser_021.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1096-01
+ * -@RequirementName: 提供命令行参数解析类
+ * -@Condition: no
+ * -@Brief: 短参format后不跟':',返回值均为空
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ */

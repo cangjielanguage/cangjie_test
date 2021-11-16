@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: overflow_08n.cj
+ * -@TestCaseName: overflow_08n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: uint类型取负数，编译报错
+ * -#step1: 定义uint类型变量赋值为负数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

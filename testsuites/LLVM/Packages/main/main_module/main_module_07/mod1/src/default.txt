@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: main_module_07.cj
+ * -@TestCaseName: main_module_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: main的文件映射检查
+ * -@Condition: no
+ * -@Brief: 程序入口的main被导出（external修饰）	cjc/cjc –m
+ * -#step1: 程序入口的main被导出（external修饰）	cjc/cjc –m
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ */

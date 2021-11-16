@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_invoke_72n.cj
+ * -@TestCaseName: class_generic_invoke_72n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class实例化时不带变元T，编译成功
+ * -#step1: 定义一个类型变元为T的泛型class
+ * -#step2: 实例化class时不带类型变元 Data(3,4)，赋值类型为Data<Int32>
+ * -@Expect: 编译成功
+ * -@Priority: High
+ */

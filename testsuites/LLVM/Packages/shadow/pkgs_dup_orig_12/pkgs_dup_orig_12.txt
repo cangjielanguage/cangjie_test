@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: pkgs_dup_orig_12n.cj
+ * -@TestCaseName: pkgs_dup_orig_12n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief: 原文件含一个enum,导入一个同名的class，以不同名字作用域级别访问
+ * -#step1: 定义一个external修饰的class命名test
+ * -#step2: 通过pkg.obj的方式导入test class，并定义enum命名test
+ * -#step3: 以不同名字作用域级别访问，检查编译和执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

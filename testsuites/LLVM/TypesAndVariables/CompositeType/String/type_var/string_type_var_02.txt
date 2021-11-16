@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_type_var_02.cj
+ * -@TestCaseName: string_type_var_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型作为func返回值使用
+ * -#step1: 定义一个func，返回String类型的变量
+ * -#step2: 打印结果，ASSERT对比打印信息
+ * -@Expect: 执行成功，打印期望结果
+ * -@Priority: High
+ */

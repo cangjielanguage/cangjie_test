@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: request_api_05.cj
+ * -@TestCaseName: request_api_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Request
+ * -@Condition: no
+ * -@Brief: func cookie(name: String): Result<Cookie>,添加两次完全相同的cookie值，查看能否匹配到正确的结果
+ * -#step1: func cookie(name: String): Result<Cookie>,添加两次完全相同的cookie值，查看能否匹配到正确的结果 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Request
+ * -@SpecDetail: func cookie(name: String): Result<Cookie>
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: static_variable_05.cj
+ * -@TestCaseName: static_variable_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: 父类class中声明static+protected修饰的let变量,子类通过父类类名调用父类的静态变量
+ * -#step1: 父类中声明一个static+protected修饰的let变量
+ * -#step2: 子类中通过父类类名调用父类的静态变量
+ * -@Expect: 执行成功,返回期望结果
+ * -@Priority: High
+ */

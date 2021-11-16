@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: FFI_C_00130
+ * -@TestCaseName: c_ffi_00130.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持record类型与struct指针类型通过unsafeptr互相映射。
+ * #1.通过bit field使大小一致的record与struct互转，可以成功，但是非常不建议这么做。
+ * -@Expect: 编译成功，运行return 0。
+ * -@Priority: level0
+ */

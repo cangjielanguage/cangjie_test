@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_variants_13.cj
+ * -@TestCaseName: generic_variants_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-17
+ * -@RequirementName: 泛型类使用限制检查
+ * -@Condition: no
+ * -@Brief:  A<T> ，继承类或者被继承的类缺少泛型变元，编译报错
+ * -#step1:  A<T> ，继承类或者被继承的类缺少泛型变元，编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 泛型/类型形参与类型变元
+ * -@SpecDetail: 
+ */

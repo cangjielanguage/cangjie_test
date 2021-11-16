@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: intnative_type_02.cj
+ * -@TestCaseName: intnative_type_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1002-05
+ * -@RequirementName: IntNative和UIntNative
+ * -@Condition: no
+ * -@Brief: IntNative作为函数入参和返回的类型
+ * -#step1: IntNative作为函数入参和返回的类型
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 值类型
+ * -@SpecDetail: 
+ */

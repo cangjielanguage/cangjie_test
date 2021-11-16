@@ -1,0 +1,48 @@
+lldb,lldb 038_debuginfun_basetype,038_debuginfun_basetype
+b,b 8,038_debuginfun_basetype.cj:8
+b,b 9,038_debuginfun_basetype.cj:9
+b,b 10,038_debuginfun_basetype.cj:10
+b,b 11,038_debuginfun_basetype.cj:11
+b,b 12,038_debuginfun_basetype.cj:12
+b,b 13,038_debuginfun_basetype.cj:13
+b,b 14,038_debuginfun_basetype.cj:14
+b,b 15,038_debuginfun_basetype.cj:15
+b,b 16,038_debuginfun_basetype.cj:16
+b,b 17,038_debuginfun_basetype.cj:17
+b,b 19,038_debuginfun_basetype.cj:19
+b,b 20,038_debuginfun_basetype.cj:20
+b,b 21,038_debuginfun_basetype.cj:21
+b,b 22,038_debuginfun_basetype.cj:22
+b,b 23,038_debuginfun_basetype.cj:23
+b,b 25,038_debuginfun_basetype.cj:25
+b,b 26,038_debuginfun_basetype.cj:26
+r,r,-> 8
+s,s,-> 9
+s,s,-> 10
+s,s,-> 11
+s,s,-> 12
+s,s,-> 13
+s,s,-> 14
+s,s,-> 15
+s,s,-> 16
+s,s,-> 17
+s,s,-> 19
+s,s,-> 20
+s,s,-> 21
+s,s,-> 22
+s,s,-> 23
+c,c,-> 25
+s,s,-> 26
+n,n,-> 28
+cj_plocals,cj_plocals,var1 = -128
+cj_plocals,cj_plocals,var3 = 1
+cj_plocals,cj_plocals,var10 = 1
+cj_plocals,cj_plocals,varf11 = 0.001000
+cj_plocals,cj_plocals,varf12 = 65504
+cj_plocals,cj_plocals,varf13 = 0.0010000000
+cj_plocals,cj_plocals,varf14 = 1
+cj_plocals,cj_plocals,varBool16 = true
+cj_plocals,cj_plocals,varchar17 = 5
+rerun,r,-> 8
+finish,finish,-> 9
+cj_plocals,cj_plocals,var1 = -128

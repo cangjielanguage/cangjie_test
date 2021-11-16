@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: c_ffi_00708n
+ * -@TestCaseName: c_ffi_jni.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1086-05 AR-SR-Lang-1086-06
+ * -@RequirementName: 互操作C Pointer功能
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: unsafe块内 CPointer<T> T类型 CType UInt8
+ * -@Expect: Compile fail.
+ * -@Priority: level0
+ */

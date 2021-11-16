@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: import_plus_scope_02.cj
+ * -@TestCaseName: import_plus_scope_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Trait的定义和实现
+ * -@Condition: no
+ * -@Brief: 文件的顶层定义和同一个包内的其它文件中顶层定义的名字，其作用域级别比1中的名字高
+ * -#step1: 文件的顶层定义和同一个包内的其它文件中顶层定义的名字
+ * -#step2: 在文件2使用,文件2中名字作用域级别比1中的名字高
+ * -#step3: 检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

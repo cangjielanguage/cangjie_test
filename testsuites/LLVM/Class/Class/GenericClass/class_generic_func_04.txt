@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_func_04.cj
+ * -@TestCaseName: class_generic_func_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>声明static修饰的带泛型入参和返回值的函数变量，以访问类型静态函数(T)->T来初始化
+ * -#step1: 定义一个泛型父类class Base<T>，定义一个泛型类Data<T>继承Base<T>
+ * -#step2: Data<T>中声明一个static变量f，变量为带泛型入参和返回值的函数类型；类中声明一个静态函数foo，init中将foo赋值给f
+ * -#step3: 实例化泛型class Data<Int32>，调用函数f入参为int32类型
+ * -@Expect: 编译报错，静态成员需要在定义是初始化 
+ * -@Priority: High
+ */

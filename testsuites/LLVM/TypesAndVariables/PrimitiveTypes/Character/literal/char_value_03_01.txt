@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_value_03_01.cj
+ * -@TestCaseName: char_value_03_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型字面量为空字符(字符间无空格)
+ * -#step1: 定义一个空字符，字符间无空格
+ * -#step2: 打印结果，ASSERT捕获打印信息
+ * -@Expect: 执行成功，打印期望结果
+ * -@Priority: High
+ */

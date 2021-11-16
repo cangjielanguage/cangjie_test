@@ -1,0 +1,6 @@
+lldb,lldb 021_debug_file,021_debug_file
+b,b 8,021_debug_file.cj:8
+b,b 14,021_debug_file.cj:14
+r,r,-> 8
+c,c,-> 14
+cj_plocals,cj_plocals,a

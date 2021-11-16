@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_015.cj
+ * -@TestCaseName: FileStream_openFile_015.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: func write(b: Array<UInt8>): int64把当前字节数组`b`中的字节写入流中，返回成功写入的位数
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

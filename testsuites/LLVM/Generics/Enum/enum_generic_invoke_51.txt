@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_51.cj
+ * -@TestCaseName: enum_generic_invoke_51.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>中类型变元T为Tuple
+ * -#step1: 定义一个泛型enum <T>，内部定义一个入参为T的构造函数
+ * -#step2: 定义一个Tuple类型的变量pie，调用enum <T>中的构造函数,传入类型变元为Tuple，传入pie
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

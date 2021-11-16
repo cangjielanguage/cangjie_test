@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: string_value_22n.cj
+ * -@TestCaseName: string_value_22n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的字面量，将单行字符串结尾的双引号转义
+ * -#step1: 定义一个字符串，将字符串结尾的双引号转义
+ * -@Expect: 编译报错，缺少"字符结尾
+ * -@Priority: High
+ */

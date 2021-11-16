@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_member_access_0102n.cj
+ * -@TestCaseName: record_member_access_0102n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: Record访问控制检查
+ * -@Condition: no
+ * -@Brief: internal修饰的record访问控制检查
+ * -#step1: 包中定义internal修饰的record类型变量
+ * -#step2: 其他包中调用该record
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

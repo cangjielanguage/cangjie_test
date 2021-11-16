@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_45.chr
+ * -@TestCaseName: enum_generic_invoke_45.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>中类型变元T为布尔类型
+ * -#step1: 定义一个泛型enum <T>，内部定义一个入参为T的构造函数
+ * -#step2: 调用enum <T>中的构造函数传入类型变元为布尔类型，并传入值
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

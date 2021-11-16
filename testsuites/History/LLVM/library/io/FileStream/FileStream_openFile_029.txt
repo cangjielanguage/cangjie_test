@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_029.cj
+ * -@TestCaseName: FileStream_openFile_029.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: 超大文件的清空
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

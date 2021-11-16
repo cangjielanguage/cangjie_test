@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: matchpattern_spawn_01.cj
+ * -@TestCaseName: matchpattern_spawn_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: for或matchcase中的pattern加括号，编译报错
+ * -#step1: for或matchcase中的pattern加括号
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.19
+ * -@SpecChapter: 表达式/模式匹配表达式/
+ * -@SpecDetail: selector为各种表达式
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_constraint_10.cj
+ * -@TestCaseName: enum_generic_constraint_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>的约束T <: V1<T>(V1为泛型trait，T是被append特性V1<T>后的类型)
+ * -#step1: 定义一个泛型trait Add<T>，然后追加Add<Int64>到int64类型
+ * -#step2: 定义一个约束条件为T<:Add<T>的泛型enum <T>，内部定义一个构造函数
+ * -#step3: 调用enum中的构造函数传入类元为<Int64>，match中使用Add中的特性函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: pkg_def100_01.cj
+ * -@TestCaseName: pkg_def100_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 包内含100个import
+ * -@Condition: no
+ * -@Brief: 一个包中放置100条import语句
+ * -#step1: 一个包中放置100条import语句
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

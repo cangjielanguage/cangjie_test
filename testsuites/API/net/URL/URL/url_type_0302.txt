@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: url_type_0302.cj
+ * -@TestCaseName: url_type_0302.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class URL
+ * -@Condition: no
+ * -@Brief: 存放元素的内容,host是合法IPV6
+ * -#step1: 存放元素的内容,host是合法IPV6 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/URL
+ * -@SpecDetail: URL
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: module_mod_02.cj
+ * -@TestCaseName: module_mod_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-mod后跟module文件夹
+ * -#step1: 执行命令：cjc -mod module文件夹
+ * -#step2: 检查执行结果
+ * -@Expect: 报错，无效的选项
+ * -@Priority: High
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_initblock_constr_54n.cj
+ * -@TestCaseName: class_initblock_constr_54n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: init block的末尾调用两次super()，编译报错
+ * -#step1: 定义一个基类Base，定义类Data继承自Base
+ * -#step2: Data中自定义init block，末尾调用两次super()，实例化类Data
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

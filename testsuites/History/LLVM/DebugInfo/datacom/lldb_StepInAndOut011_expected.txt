@@ -1,0 +1,10 @@
+lldb,lldb 017_debug_typechange,017_debug_typechange
+b,b 5,017_debug_typechange.cj:5
+b,b 6,017_debug_typechange.cj:6
+b,b 7,017_debug_typechange.cj:7
+r,r,-> 5
+s,s,-> 6
+finish,finish,-> 7
+n,n,-> 9
+cj_plocals,cj_plocals,i16Number = 127
+cj_plocals,cj_plocals,i8Number = 127

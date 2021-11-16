@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_def_36n.cj
+ * -@TestCaseName: enum_generic_def_36n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>，构造器函数本身为泛型，编译报错
+ * -#step1: 定义泛型enum <T>，内部定义一个泛型构造器Year<T>(T)
+ * -#step2: match匹配enum中的构造函数，类型变元为<Int32, float64, String>
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

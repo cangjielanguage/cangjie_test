@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_0401n.cj
+ * -@TestCaseName: enum_generic_invoke_0401n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>在top-level被调用，类型变元为子类传入参数为父类实例，编译报错
+ * -#step1: 定义一个泛型enum TimeUnit<T>；定一个父类Foo定义一个子类Bar
+ * -#step2: 在top-level调用泛型enum,EnumName之后传入类型变元Bar；入参为Foo的实例
+ * -#step3: match匹配enum中的构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

@@ -1,0 +1,7 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 31,024_debug_variable.cj:31
+r,r,-> 31
+cj_set,cj_set var_uint32 = ,error
+n,n,-> 34
+cj_plocals,cj_plocals,var_uint32 = 1
+cj_plocals,cj_plocals,f_uint32 = 9

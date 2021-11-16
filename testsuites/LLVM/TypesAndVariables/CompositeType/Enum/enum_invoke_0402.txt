@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_invoke_0402.cj
+ * -@TestCaseName: enum_invoke_0402.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 测试通过enum.constructor访问enum中有参数的constructor并赋值给变量
+ * -#step1: 声明一个enum，通过enum.constructor访问enum中constructor赋值给变量，并初始化
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

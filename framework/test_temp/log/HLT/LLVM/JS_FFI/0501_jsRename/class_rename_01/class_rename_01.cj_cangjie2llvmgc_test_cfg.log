@@ -1,0 +1,18 @@
+2021-11-08 02:07:37 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_01/class_rename_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:07:37 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_01/class_rename_01_cj_cangjie2llvmgc_test_cfg_1636335532
+2021-11-08 02:07:38 DEBUG execute cmd ===>>>: cjc -ulimit-error class_rename_01.cj -o class_rename_01..out
+2021-11-08 02:07:38 DEBUG return code: 1
+2021-11-08 02:07:38 DEBUG stdout : 
+
+2021-11-08 02:07:38 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_01/class_rename_01_cj_cangjie2llvmgc_test_cfg_1636335532/class_rename_01.cj:7:1: [31merror[0m: unexpected class declaration
+@	    7 | foreign class B{
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_01/class_rename_01_cj_cangjie2llvmgc_test_cfg_1636335532/class_rename_01.cj:8:18: [31merror[0m: native function can only have CType return.
+@	    8 | 	static func a():String
+@	      |                  [32m^[0m
+@	2 errors generated
+
+2021-11-08 02:07:38 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:07:38 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_01/class_rename_01.cj_cangjie2llvmgc_test_cfg.log

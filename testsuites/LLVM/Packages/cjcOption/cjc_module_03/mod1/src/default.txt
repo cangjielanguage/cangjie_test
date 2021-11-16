@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: cjc_module_03.cj
+ * -@TestCaseName: cjc_module_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1033-10
+ * -@RequirementName: cjc –m/-module 一个目录
+ * -@Condition: no
+ * -@Brief: 使用cjc编译多个module
+ * -#step1: 使用cjc编译多个module
+ * -@Expect: 编译报错
+ */

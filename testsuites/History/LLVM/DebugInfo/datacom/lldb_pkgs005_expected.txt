@@ -1,0 +1,16 @@
+lldb,lldb pkgs001,pkgs001
+b,b 19,pkgs001.cj:19
+r,r,-> 19
+s,s,-> 8
+b,b 9,pkg1.cj:9
+finish,finish,-> 9
+cj_plocals,cj_plocals,a = 10
+cj_pglobals,cj_pglobals,varpkg1_001 = 127
+bt,bt,frame #1:
+frame,frame select 1,-> 19
+cj_plocals,cj_plocals,res1 = 127
+cj_pglobals,cj_pglobals,test = 127
+n,n,-> 10
+finish,finish,-> 19
+n,n,-> 20
+cj_plocals,cj_plocals,res2 = 30

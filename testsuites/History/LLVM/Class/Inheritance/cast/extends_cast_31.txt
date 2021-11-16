@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: extends_cast_08.cj
+ * -@TestCaseName: extends_cast_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 声明为接口，创建类实例，静态类型为接口，不能通过实例访问接口静态变量
+ * -#step1: 定义接口Inday
+ * -#step2: 定义Data子类，实现Inday
+ * -#step4: 声明为接口，创建类实例，访问类成员
+ * -@Expect: 编译报错，静态类型为接口，不能通过实例访问接口静态变量
+ * -@Priority: High
+ */
+

@@ -1,0 +1,21 @@
+// EXEC: %compiler %cmp_opt %f -o %output 
+// EXEC: %run %run_opt %output  %run_args
+
+record Test {
+    var a: Int32 = 1
+    var b: Int32 = a
+}
+
+func run(): Int64 {
+    let res = Test().b
+    if (res == 1) {
+        return 0
+    }
+    return Int64(res)
+}
+
+func main(): Int64 {
+    return run()
+}
+
+

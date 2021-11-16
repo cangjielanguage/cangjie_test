@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_initblock_def_32n.cj
+ * -@TestCaseName: record_initblock_def_32n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试while中定义init block，编译报错
+ * -#step1: while中定义正确的init block
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

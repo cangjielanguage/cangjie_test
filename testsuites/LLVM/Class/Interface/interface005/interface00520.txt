@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00520
+ * -@TestCaseName: interface00520.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define I1 extends I0 and I1`s static F0 cover I0`s static F0.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: generic_variants_35.cj
+ * -@TestCaseName: generic_variants_35.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-17
+ * -@RequirementName: 泛型类使用限制检查
+ * -@Condition: no
+ * -@Brief: class A<T>，内部成员使用泛型变元
+ * -#step1: class A<T>，内部成员使用泛型变元
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter:
+ * -@SpecDetail: 
+ */

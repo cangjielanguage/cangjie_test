@@ -1,0 +1,11 @@
+/*
+* -@TestCaseID: Environment_GetEnvironmentVariable_003
+* -@TestCaseName: Environment_GetEnvironmentVariable_003.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR.SR.IREQ02468831.002.009
+* -@RequirementName: os - environment functions
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证func GetEnvironmentVariable(variable String): String；value存在特殊字符、汉字、全角字符、换行符等
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

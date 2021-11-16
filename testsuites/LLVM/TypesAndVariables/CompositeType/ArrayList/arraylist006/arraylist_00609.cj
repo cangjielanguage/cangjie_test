@@ -1,0 +1,8 @@
+// EXEC: %compiler %cmp_opt %f -o %output
+// EXEC: %run %run_opt %output %run_args
+
+class C<T> where T <: ArrayList<T>{}
+
+func main(): Int64 {
+    return 0
+}

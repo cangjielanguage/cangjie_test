@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00144
+ * -@TestCaseName: array00144.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.定义并初始化类成员类型数组，指定数组类型。
+ * #2.数组成员同时拥有多个父类。
+ * -@Expect: 编译成功，return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_sortby_11.cj
+ * -@TestCaseName: Array_sortby_11.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1005
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:  在Array<A>类型的乱序数组上调用sortby函数,sortby函数的入参函数(if-else分支) 入参类型record A 返回值为Bool
+ * -@Expect: 编译通过.
+ * -@Priority: level0
+ */

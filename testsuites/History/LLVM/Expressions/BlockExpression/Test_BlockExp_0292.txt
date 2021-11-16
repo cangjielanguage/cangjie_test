@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Test_BlockExp_0292.cj
+ * -@TestCaseName: Test_BlockExp_0292.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-09_R2
+ * -@RequirementName: block变更为块表达式
+ * -@Condition: no
+ * -@Brief: if表达式每个分支(if-else)的block返回值类型不同：UInt, Int32
+ * -@Expect: 编译报错(每个block的类型有要求保持一致)
+ * -@Priority: High
+ */

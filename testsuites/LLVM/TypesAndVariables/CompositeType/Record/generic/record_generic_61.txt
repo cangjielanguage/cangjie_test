@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_61.cj
+ * -@TestCaseName: record_generic_61.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record<T1>实例化，实例化后赋值给非泛型的变量，编译报错
+ * -#step1: 定义一个泛型record Data<T1>，内部定义一个类型变元label并在init函数中初始化label
+ * -#step2: 实例化Data<T1>赋值给Data类型变量
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

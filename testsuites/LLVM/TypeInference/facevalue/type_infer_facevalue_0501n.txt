@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: type_infer_facevalue_0501n.cj
+ * -@TestCaseName: type_infer_facevalue_0501n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: 函数形参默认值的字面值类型与形参类型不符，编译报错
+ * -#step1: 函数形参默认值的字面值类型与形参类型不符
+ * -#step2: 编译检查编译结果
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

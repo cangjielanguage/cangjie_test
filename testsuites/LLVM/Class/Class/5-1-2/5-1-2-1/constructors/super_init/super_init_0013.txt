@@ -1,0 +1,14 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/constructors/super_init/super_init_0013.cj
+*- @TestCaseName:构造函数中使用init()
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:init -> init(value) -> init(value1,value2) -> super()
+* -#定义类open class Base，有默认的构造函数、1个参数、2个参数的构造函数，声明2个成员变量a，b
+* -#定义类Data extends Base，3个成员变量，init() -> init(value1)  -> init(value1,value2) -> super()
+* -#创建Data实例，获取的各个成员变量的值
+*- @Expect:各个成员变量的值正确，类初始化成功
+*- @Priority:level1 
+*/

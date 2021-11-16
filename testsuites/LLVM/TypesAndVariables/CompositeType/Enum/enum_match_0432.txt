@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_match_0426n.cj
+ * -@TestCaseName: enum_match_0426n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: 嵌套含自递归的enum时，含同名构造器
+ * -#step1: 准备2两个enum含嵌套，嵌套中含自递归，并含同名构造器
+ * -#step2: 编译后运行检查结果
+ * -@Expect: 执行成功，返回0
+ * -@Priority: High
+ */

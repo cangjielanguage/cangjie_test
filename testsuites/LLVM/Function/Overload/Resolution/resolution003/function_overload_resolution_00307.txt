@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Overload_Resolution_00307
+ * -@TestCaseName: function_overload_resolution_00307.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2007-02
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: In same scope, call resolution for function`s parammeter with relation.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

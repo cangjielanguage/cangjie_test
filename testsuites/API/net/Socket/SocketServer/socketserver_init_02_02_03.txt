@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketserver_init_02_02_03.cj
+ * -@TestCaseName: socketserver_init_02_02_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketServer
+ * -@Condition: no
+ * -@Brief: Socketserver-address是X.X.X.X格式,存在字母
+ * -#step1: Socketserver-address是X.X.X.X格式,存在字母
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: Socketserver-init(net: SocketNet, address: String, port: UInt16)
+ */

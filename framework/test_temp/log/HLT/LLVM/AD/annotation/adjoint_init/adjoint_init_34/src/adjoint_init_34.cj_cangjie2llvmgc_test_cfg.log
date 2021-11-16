@@ -1,0 +1,12 @@
+2021-11-08 02:53:50 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_34/src/adjoint_init_34.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:53:50 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_34/src/adjoint_init_34_cj_cangjie2llvmgc_test_cfg_1636338485
+2021-11-08 02:53:50 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error -c src/pkg/pkg.cj -o pkg.o
+2021-11-08 02:53:51 DEBUG return code: 1
+2021-11-08 02:53:51 DEBUG stdout : 
+
+2021-11-08 02:53:51 DEBUG stderr : 
+@	[31merror[0m: adjoint function adjoint_init should be the same EXTERNAL or INTERNAL property as the decl Point
+
+2021-11-08 02:53:51 DEBUG Run time: 0.42, remain time: 3e+02
+2021-11-08 02:53:51 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/annotation/adjoint_init/adjoint_init_34/src/adjoint_init_34.cj_cangjie2llvmgc_test_cfg.log

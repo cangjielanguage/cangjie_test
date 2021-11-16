@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: java_ffi_00113
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-15
+ * -@RequirementName: 仓颉根类设计及映射实现
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: java.lang.Object派生类调用成员方法 func clone(input: Object): Object
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

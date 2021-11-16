@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_initblock_expression_21.cj
+ * -@TestCaseName: class_initblock_expression_21.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-01_R2
+ * -@RequirementName: init block实现
+ * -@Condition: no
+ * -@Brief: 测试class的init block中变量右值为之前的initblock成员变量
+ * -#step1: class中定义正确的init block
+ * -#step2: init block体中按序定义成员变量i1、i2，i1未初始化，i2的赋值引用i1
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

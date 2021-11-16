@@ -1,0 +1,20 @@
+2021-11-08 02:38:00 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/import/extend_import_05/pkg/pkg.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:38:00 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Extend/import/extend_import_05/pkg/pkg_cj_cangjie2llvmgc_test_cfg_1636338477
+2021-11-08 02:38:00 DEBUG execute cmd ===>>>: cjc -ulimit-error -c pkga/pkga.cj -o pkga.o && ls pkga
+2021-11-08 02:38:01 DEBUG return code: 0
+2021-11-08 02:38:01 DEBUG stdout : 
++	pkga.cj
+
+2021-11-08 02:38:01 DEBUG stderr : 
+
+2021-11-08 02:38:01 DEBUG Run time: 0.49, remain time: 3e+02
+2021-11-08 02:38:01 DEBUG execute cmd ===>>>: cjc -ulimit-error -c pkgb/pkgb.cj  -o pkgb.o && ls pkgb
+2021-11-08 02:38:01 DEBUG return code: 139
+2021-11-08 02:38:01 DEBUG stdout : 
+
+2021-11-08 02:38:01 DEBUG stderr : 
+@	Segmentation fault (core dumped)
+
+2021-11-08 02:38:01 DEBUG Run time: 0.37, remain time: 3e+02
+2021-11-08 02:38:01 ERROR Failed, return code 139 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Extend/import/extend_import_05/pkg/pkg.cj_cangjie2llvmgc_test_cfg.log

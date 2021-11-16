@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: typealias_define_11n.cj
+ * -@TestCaseName: typealias_define_11n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: 测试类型别名语句定义
+ * -#step1: 定义时赋值符号改为'=='
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

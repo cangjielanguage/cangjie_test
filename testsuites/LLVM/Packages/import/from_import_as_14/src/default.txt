@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: from_import_as_14.cj
+ * -@TestCaseName: from_import_as_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: form、as 与import组合导入
+ * -@Condition: no
+ * -@Brief: 使用from module_name import 包名，包名的形式导入
+ * -#step1: 使用from module_name import 包名，包名的形式导入
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ */

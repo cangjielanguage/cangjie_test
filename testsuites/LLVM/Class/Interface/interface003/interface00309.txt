@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00309
+ * -@TestCaseName: interface00309.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define normal interface inside generic interface.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

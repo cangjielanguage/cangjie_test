@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_replaceAllLi_03.cj
+ * -@TestCaseName: matcher_api_replaceAllLi_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-存在n个字符串可与正则匹配，limit<0,limit=n,limit>n 全部替换
+ * -#step1: Mathcher-存在n个字符串可与正则匹配，limit<0,limit=n,limit>n 全部替换
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: replaceAll(replacement: String, limit :int64): String将当前匹配到的所有子字符串进行替换(指定最大替换次数)，并返回替换后的字符串
+ */

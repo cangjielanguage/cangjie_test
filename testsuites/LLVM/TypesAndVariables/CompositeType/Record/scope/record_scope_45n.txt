@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: record_scope_07n.cj
+ * -@TestCaseName: record_scope_07n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record实现接口
+ * -#step1: 定义record 实现接口，编译检查编译结果
+ * -@Expect: 编译报错，record实现接口
+ * -@Priority: High
+ */

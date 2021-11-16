@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_9401n.cj
+ * -@TestCaseName: func_para_defval_9401n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试class中调用含可选参数的构造器，实例化时不传入任何实参与默认无参构造器冲突，编译报错
+ * -#step1: 定义类class Data，init中含一个可选参数为int32类型
+ * -#step2: 实例化Data，不传入任何实参
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

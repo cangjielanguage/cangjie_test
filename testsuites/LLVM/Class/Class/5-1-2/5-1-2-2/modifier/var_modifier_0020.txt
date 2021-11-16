@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-2/modifier/var_modifier_0020.cj
+*- @TestCaseName:测试成员变量的修饰符
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:默认修饰符相当于public，public变量可以在当前类中使用
+* -#定义类Data，定义var a : Int32，定义get函数，get()使用a
+* -#创建Data的实例，调用get()
+*- @Expect:函数get()的值正确
+*- @Priority:level1 
+*/

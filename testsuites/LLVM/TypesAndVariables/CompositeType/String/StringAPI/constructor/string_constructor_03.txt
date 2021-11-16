@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_constructor_03.cj
+ * -@TestCaseName: string_constructor_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String(value: String)构造器
+ * -#step1: 测试String(value: String)构造器
+ * -#step2: 检查构造的字符串
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

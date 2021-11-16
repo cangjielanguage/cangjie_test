@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_define_11
+ * -@TestCaseName: Array_define_11
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Range
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 在包内定义Array<Bool>和Array<Int64>类型的数组，并将两数组的第一个值赋值给变量，跨包在main函数中调用变量
+ * -@Expect: 编译成功，return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: class_finalizer_bnf_10015.cj
+ * -@TestCaseName: class_finalizer_bnf_10015.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1031-21
+ * -@RequirementName: support class finalizer
+ * -@Condition: no
+ * -@Brief: define class finalizer.
+ * -@Expect: compile success, return 0
+ * -@Priority: High
+ */

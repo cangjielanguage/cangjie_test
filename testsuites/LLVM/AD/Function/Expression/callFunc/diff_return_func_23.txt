@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: diff_return_func_23.cj
+ * -@TestCaseName: diff_return_func_23.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-16
+ * -@RequirementName: 可微函数中可微表达式的支持
+ * -@Condition: no
+ * -@Brief: 返回一个可微表达式
+ * -#step1: 定义一个class A
+ * -#step2: A内定义可微函数add, 入参为x(Float32), y(Float32), 加上可微标注@differentiable[except:[this]]
+ * -#step3: A内定义可微函数add, 入参为x(Float64), y(Float64), 加上可微标注@differentiable[except:[this]]
+ * -@Expect: 编译成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 表达式可微，及其微分规则已知
+ */

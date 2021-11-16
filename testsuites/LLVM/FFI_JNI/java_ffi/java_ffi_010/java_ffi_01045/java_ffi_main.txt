@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_01045
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-08
+ * -@RequirementName: Java数组映射
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Java Array 导入的java类包含Java Array ffi.java.JArray<T>数据的读取
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+ 

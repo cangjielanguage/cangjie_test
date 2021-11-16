@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: url_api_0801.cj
+ * -@TestCaseName: url_api_0801.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-10
+ * -@RequirementName: 提供 class URL
+ * -@Condition: no
+ * -@Brief: func isAbs(): Bool,是绝对路径
+ * -#step1: func isAbs(): Bool,是绝对路径 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/URL
+ * -@SpecDetail: func isAbs(): Bool
+ */

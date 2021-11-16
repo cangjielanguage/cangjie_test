@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_04n.cj
+ * -@TestCaseName: record_generic_04n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record实例化时，入参类型与变元T不一致，编译报错
+ * -#step1: 定义一个类型变元为T的泛型record
+ * -#step2: 实例化record，类型变元为int32，入参类型为int64
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

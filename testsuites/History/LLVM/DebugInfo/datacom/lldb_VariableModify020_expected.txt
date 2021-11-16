@@ -1,0 +1,7 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 23,024_debug_variable.cj:23
+r,r,-> 23
+cj_set,cj_set var_uint8 = 256,0
+n,n,-> 26
+cj_plocals,cj_plocals,var_uint8 = 0
+cj_plocals,cj_plocals,f_uint8 = 8

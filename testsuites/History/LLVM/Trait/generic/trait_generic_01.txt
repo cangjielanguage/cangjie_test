@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: trait_generic_01.cj
+ * -@TestCaseName: trait_generic_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-06
+ * -@RequirementName: 提供泛型trait
+ * -@Condition: no
+ * -@Brief:
+ * -#step1:
+ * -#step2:
+ * -@Expect: 执行成功，返回0
+ * -@Priority: High
+ */

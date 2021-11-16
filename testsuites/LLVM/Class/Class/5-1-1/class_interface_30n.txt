@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_interface_30n.cj
+ * -@TestCaseName: class_interface_30n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 测试使用错误的声明形式同时继承两个类，实现一个接口，编译器报错
+ * -#step1: 定义两个open修饰的基类Basec 和Basec1，类中均声明一个变量
+ * -#step2: 定义一个接口Basei，接口中声明一个默认函数，返回数值
+ * -#step3: 定义Data类使用class Data extends Basec implements Basei extends Basec1形式实现接口和继承类
+ * -@Expect: 使用错误的声明形式同时继承两个类，实现一个接口，编译器报错
+ * -@Priority: High
+ */

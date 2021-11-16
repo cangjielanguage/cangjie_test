@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Extends_00110
+ * -@TestCaseName: interface_extends_00110.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Generic interface extends generic static function use own type variable(not supported yet).
+ * -@Expect: Compile error,cannot get static member of superclass, return 0.
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: cookiejar_api_02.cj
+ * -@TestCaseName: cookiejar_api_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-05
+ * -@RequirementName: 提供 class Cookie
+ * -@Condition: no
+ * -@Brief: func cookies(u: URL): Array<Cookie>,CookieJar中不存在的URL
+ * -#step1: func cookies(u: URL): Array<Cookie>,CookieJar中不存在的URL 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Cookie
+ * -@SpecDetail: func cookies(u: URL): Array<Cookie>
+ */

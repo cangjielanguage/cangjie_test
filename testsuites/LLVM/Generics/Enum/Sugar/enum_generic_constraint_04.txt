@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_constraint_04.chr
+ * -@TestCaseName: enum_generic_constraint_04.chr
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>的约束T <: V(V为泛型类，T为V<T>的子类)
+ * -#step1: 定义一个父类Foo<T>，定义一个子类Bar继承Foo<Int32>
+ * -#step2: 定义一个约束条件为T<:Foo的泛型enum <T>，内部定义一个构造函数
+ * -#step3: 实例化子类Bar，调用enum中的构造函数，传入类元为<Bar>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

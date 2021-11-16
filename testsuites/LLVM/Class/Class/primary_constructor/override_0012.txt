@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: override_0012.cj 
+ * -@TestCaseName: override_0012.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Record 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 一个主构造函数，一个构造函数，只有泛型参数，且一样，构成重载冲突。
+ * -#step1: 一个主构造函数，一个构造函数，只有泛型参数，且一样，构成重载冲突。
+ * -@Expect: 构造实例时执行成功，调用主构造器，返回期望结果
+ * -@Priority: High
+ */

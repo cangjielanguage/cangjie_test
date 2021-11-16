@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_isAsciiWhiteSpace_01.cj
+ * -@TestCaseName: char_isAsciiWhiteSpace_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试空白字符的isAsciiWhiteSpace，返回true
+ * -#step1: 定义一个空白字符的变量，调用该变量的isAsciiWhiteSpace方法
+ * -#step2: 接口返回true
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

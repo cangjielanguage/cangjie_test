@@ -1,0 +1,6 @@
+lldb,lldb pkgs001,pkgs001
+b,b 21,pkgs001.cj:21
+r,r,-> 21
+cj_plocals,cj_plocals,res2 = 30
+cj_plocals,cj_plocals,res3 = 40
+n,n,-> 22

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: argument_0008.cj 
+ * -@TestCaseName: argument_0008.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Record 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 主构造函数有一个命名成员变量形参
+ * -#step1: 主构造函数有一个命名成员变量形参
+ * -@Expect: 构造实例时执行成功，调用主构造器，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,21 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <leftValueExpression> case (use leftAuxExpression):
+Origin BNF is 
+    :  Identifier
+    | leftAuxExpression QUEST? assignableSuffix
+    
+Test   BNF is 
+    :  Identifier
+    | <<TARGET=leftAuxExpression->pattern>> QUEST? assignableSuffix
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

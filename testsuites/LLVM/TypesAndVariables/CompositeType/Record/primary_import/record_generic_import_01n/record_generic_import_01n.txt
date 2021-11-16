@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_import_01n.cj
+ * -@TestCaseName: record_generic_import_01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 同package，不同文件中含同名record,编译报错
+ * -#step1: 定义两个同名external修饰符修饰的泛型record，分别在不同的chr文件中
+ * -#step2: import该泛型record并实例化
+ * -@Expect: 含同名record,编译报错
+ * -@Priority: High
+ */

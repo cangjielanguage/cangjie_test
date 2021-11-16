@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_generic_import_33.cj
+ * -@TestCaseName: record_generic_import_33.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: import的泛型record和另一个import中的泛型record重名：分别以import pkgs和import pkga.type导入，以pkgs.type和type使用
+ * -#step1: 定义external修饰符修饰的泛型record
+ * -#step2: import的泛型record和另一个import中的record重名:分别以import pkgs和import pkga.type导入，以pkgs.type和type使用
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

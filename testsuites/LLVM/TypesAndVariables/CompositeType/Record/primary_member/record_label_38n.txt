@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_label_38n.cj
+ * -@TestCaseName: record_label_38n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record中label为lambda表达式，lambda中使用var定义的label，编译报错
+ * -#step1: 定义一个record体，初始化两个var label width3和length3
+ * -#step2: 定义一个lambda表达式的label，表达式中引用width3和length3
+ * -#step3: 实例化record，外部调用lambda表达式
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

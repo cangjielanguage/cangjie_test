@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: matchpattern_spawn_02.cj
+ * -@TestCaseName: matchpattern_spawn_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: selector和=>的表达式套一层括号，执行成功
+ * -#step1: selector和=>的表达式套一层括号
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.19
+ * -@SpecChapter: 表达式/模式匹配表达式/
+ * -@SpecDetail: selector为各种表达式
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_constructor_01n.cj
+ * -@TestCaseName: class_generic_constructor_01n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>中调用默认构造函数，未对内部泛型字段初始化，编译报错
+ * -#step1: 定义一个泛型泛型类Data<T>
+ * -#step2: Data<T>中声明一个变量f类型为T,未初始化
+ * -#step3: 调用默认的无参构造器，实例化泛型class Data<T>
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

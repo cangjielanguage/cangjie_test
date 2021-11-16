@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: .cj
+ * -@TestCaseName: .cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体中label定义且部分初始化条件下，自定义多参（小于label数）构造器中初始化部分label，调用默认的全参构造器
+ * -#step1: 在record体中定义两个label a和b， 并给a赋值
+ * -#step2: 自定义无参构造器，将形参赋值给a
+ * -#step3: 构造实例时调用默认的全参构造器，传入参数
+ * -@Expect: 执行成功，调用默认的全参构造器
+ * -@Priority: High
+ */

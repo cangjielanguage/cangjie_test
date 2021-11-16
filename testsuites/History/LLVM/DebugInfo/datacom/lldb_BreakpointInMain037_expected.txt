@@ -1,0 +1,7 @@
+lldb,lldb 019_debug_expressions,019_debug_expressions
+b,b 26,019_debug_expressions.cj:26
+b,b 27,019_debug_expressions.cj:27
+r,r,-> 26
+c,c,-> 27
+n,n,-> 29
+cj_plocals,cj_plocals,expr1 = true

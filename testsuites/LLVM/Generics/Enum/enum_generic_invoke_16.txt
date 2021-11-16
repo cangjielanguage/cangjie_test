@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_generic_invoke_16.cj
+ * -@TestCaseName: enum_generic_invoke_16.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试泛型enum<T>在在异常表达式中被调用
+ * -#step1: 定义一个enum Time<T>
+ * -#step2: try{...}catch{...}语句块中调用泛型enum传入变元int32，match匹配enum中的构造函数
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

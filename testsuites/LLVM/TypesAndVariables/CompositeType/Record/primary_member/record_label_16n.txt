@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_label_16n.cj
+ * -@TestCaseName: record_label_16n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试record中label的数据类型为类型变元且赋予默认值，编译报错
+ * -#step1: 定义一个有类型变元的record，内部定义一个label声明为类型变元
+ * -#step2: 编译检查，编译信息
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

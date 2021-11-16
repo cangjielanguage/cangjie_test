@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00383
+ * -@TestCaseName: array00383.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12, DTS202004200JHMWCP0G00
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.使用: type[] = type[](size,expr)的形式初始化数组。
+ * -@Expect: 编译成功，return 0.
+ * -@Priority: level0
+ */

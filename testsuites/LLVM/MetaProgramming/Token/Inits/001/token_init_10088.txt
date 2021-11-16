@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_MetaProgramming_Token_Init_10088
+ * -@TestCaseName: token_init_10088.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-27
+ * -@RequirementName: Meta programming support libast.
+ * -@Conditon: cjc, test framework.
+ * -@Brief: Test Token init.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

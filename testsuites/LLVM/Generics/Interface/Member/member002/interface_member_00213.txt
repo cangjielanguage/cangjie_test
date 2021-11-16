@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Member_00213
+ * -@TestCaseName: interface_member_00213.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2135-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define generic class inside generic interface with same type variable(not supported yet).
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

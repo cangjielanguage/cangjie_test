@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: socketAddress_init_02_03_07.cj
+ * -@TestCaseName: socketAddress_init_02_03_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class SocketAddress
+ * -@Condition: no
+ * -@Brief:  SocketAddress-hostAddressaddress是x.x格式,但x在UInt8范围内，自动用0补全中间位
+ * -#step1:  SocketAddress-hostAddressaddress是x.x格式,但x在UInt8范围内，自动用0补全中间位
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail:  SocketAddress-init(hostAddress: String, port: UInt16)
+ */

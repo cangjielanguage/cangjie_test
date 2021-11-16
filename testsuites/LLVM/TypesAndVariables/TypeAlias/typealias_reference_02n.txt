@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: typealias_reference_02n.cj
+ * -@TestCaseName: typealias_reference_02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Condition: no
+ * -@Brief: 多个typeAlias定义间接循环引用
+ * -#step1: 定义类型别名Type1、Type2，Type1与Type2相互引用
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: to_hexstring004.cj
+ * -@TestCaseName: to_hexstring004.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1093-03
+ * -@RequirementName: 提供Hex和String互相转换的函数
+ * -@Condition: no
+ * -@Brief: Array<UInt8>的元素和类型不匹配，编译报错
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

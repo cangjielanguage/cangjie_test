@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: enum_generic_import_12.cj
+ * -@TestCaseName: enum_generic_import_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: import pkg1.xxx as A （xxx为enum<T>）
+ * -#step1: 准备package内含enum<T>
+ * -#step2: 导入package.enumname 并as为A
+ * -#step3: 以A的方式调用enum<T>，检查编译执行结果
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

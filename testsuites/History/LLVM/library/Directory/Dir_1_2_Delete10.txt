@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Dir_1_2_delete10
+ * -@TestCaseName: Dir_1_2_delete10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: delete(true) 不能删除不存在的文件夹
+ * -@Expect: 正确执行
+ * -@Priority: level 1
+ */
+    

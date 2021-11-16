@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_Lambda_00145
+ * -@TestCaseName: lambda00145.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2012
+ * -@RequirementName: Lambda
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Lambda does not support curried.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

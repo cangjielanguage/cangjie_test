@@ -1,0 +1,18 @@
+2021-11-08 02:09:42 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_02/class_rename_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:09:42 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_02/class_rename_02_cj_cangjie2llvmgc_test_cfg_1636335533
+2021-11-08 02:09:42 DEBUG execute cmd ===>>>: cjc -ulimit-error class_rename_02.cj -o class_rename_02..out
+2021-11-08 02:09:42 DEBUG return code: 1
+2021-11-08 02:09:42 DEBUG stdout : 
+
+2021-11-08 02:09:42 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_02/class_rename_02_cj_cangjie2llvmgc_test_cfg_1636335533/class_rename_02.cj:5:1: [31merror[0m: unexpected class declaration
+@	    5 | foreign class B {
+@	      | [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_02/class_rename_02_cj_cangjie2llvmgc_test_cfg_1636335533/class_rename_02.cj:10:8: [31merror[0m: unsafe function or native function should be invoked in unsafe context.
+@	   10 |     if(B.sqrt(4) != 2) {
+@	      |        [32m^[0m
+@	2 errors generated
+
+2021-11-08 02:09:42 DEBUG Run time: 0.58, remain time: 3e+02
+2021-11-08 02:09:42 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/0501_jsRename/class_rename_02/class_rename_02.cj_cangjie2llvmgc_test_cfg.log

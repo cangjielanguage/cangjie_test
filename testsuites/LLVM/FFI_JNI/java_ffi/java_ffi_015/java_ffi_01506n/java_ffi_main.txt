@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: java_ffi_01506n
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-42
+ * -@RequirementName: java接口中静态成员变量
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: 导入java接口中静态成员变量 内部直接变量名访问 cangjie中继承单个接口并使用
+ * -@Expect: Compile fail.
+ * -@Priority: level0
+ */
+ 

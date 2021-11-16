@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_def_05n.cj
+ * -@TestCaseName: string_def_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的定义形式，赋值表达式右侧是一个char字面量
+ * -#step1: 定义一个String变量str，将‘a’赋值给该变量
+ * -#step2: 编译检查报错信息
+ * -@Expect: 编译报错，char字面量无法赋值给String类型
+ * -@Priority: High
+ */

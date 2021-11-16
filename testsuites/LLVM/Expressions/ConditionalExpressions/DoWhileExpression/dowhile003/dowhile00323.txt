@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: Char_Expressions_StatementExpressions_ConditionalExpressions_DoWhileExpression_00323
+ * -@TestCaseName: dowhile00323.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2010
+ * -@RequirementName: Expressions
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define tuple inside do while expression.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--1
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--1
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--2
+ * -@catalog:# 表达式## 循环表达式### do-while表达式--2
+ */

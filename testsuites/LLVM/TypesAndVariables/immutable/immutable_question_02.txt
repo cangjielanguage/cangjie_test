@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: immutable_question_02.cj
+ * -@TestCaseName: immutable_question_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1015-20
+ * -@RequirementName: 表达式计算得到的值需要做immutable检查
+ * -@Condition: no
+ * -@Brief: ?.解语法糖返回的对象是let语义，不可修改record中的var变量
+ * -#step1: ?.解语法糖返回的对象是let语义，不可修改record中的var变量
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 
+ * -@SpecDetail: 
+ * -@catalog:# 名字、作用域、变量## 变量### 变量的初始化#### 不可变变量和可变变量--3 
+ */

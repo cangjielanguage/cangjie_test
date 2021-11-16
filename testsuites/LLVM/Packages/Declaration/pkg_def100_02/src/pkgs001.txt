@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: pkg_def100_02.cj
+ * -@TestCaseName: pkg_def100_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: import嵌套
+ * -@Condition: no
+ * -@Brief: import的内容中调用其他package的内容，嵌套100层
+ * -#step1: import的内容中调用其他package的内容，嵌套100层
+ * -@Expect: 编译通过
+ * -@Priority: level0
+ */

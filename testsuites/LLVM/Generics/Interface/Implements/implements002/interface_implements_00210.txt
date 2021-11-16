@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Implements_00210
+ * -@TestCaseName: interface_implements_00210.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2105-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Generic class implements multi generic interface and different return type abstract function.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

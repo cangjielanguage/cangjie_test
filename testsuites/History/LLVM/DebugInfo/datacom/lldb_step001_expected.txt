@@ -1,0 +1,8 @@
+lldb,lldb 044_debug_func_nobody,044_debug_func_nobody
+b,b 4,044_debug_func_nobody.cj:4
+b,b 5,044_debug_func_nobody.cj:5
+b,b 13,044_debug_func_nobody.cj:13
+r,r,-> 4
+n,n,-> 5
+n,n,-> 13
+finish,finish,-> 6

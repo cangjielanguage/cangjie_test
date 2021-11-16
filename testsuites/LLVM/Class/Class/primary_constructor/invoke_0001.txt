@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: invoke_0001.cj 
+ * -@TestCaseName: invoke_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1024-05
+ * -@RequirementName: Class 主构造函数的语法支持
+ * -@Condition: no
+ * -@Brief: 在record内调用主构造函数
+ * -#step1: 在record内调用主构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

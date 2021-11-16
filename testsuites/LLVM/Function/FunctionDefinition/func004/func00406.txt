@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Function_FunctionDefinition_00406
+ * -@TestCaseName: func00406.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2007
+ * -@RequirementName: Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use function type as function input parameter.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

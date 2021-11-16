@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_replaceP_02.cj
+ * -@TestCaseName: matcher_api_replaceP_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: Mathcher-字符串length>=index，索引大于等于index的字符串存在n个子字符串能匹配正则，调用n次,做1次替换，返回被替换后的完整字符串
+ * -#step1: Mathcher-字符串length>=index，索引大于等于index的字符串存在n个子字符串能匹配正则，调用n次,做1次替换，返回被替换后的完整字符串
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: replace(replacement: String, index: int64) : String 从指定索引处开始替换与该模式匹配的输入字符串的子字符串
+ */

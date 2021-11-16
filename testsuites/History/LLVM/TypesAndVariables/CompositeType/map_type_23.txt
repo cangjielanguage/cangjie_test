@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: map_type_23.cj
+ * -@TestCaseName: map_type_23.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1006-03
+ * -@RequirementName: lang.Map库
+ * -@Condition: no
+ * -@Brief: Map的key为不支持判等的类型：Result<T>
+ * -#step1: Map的key为不支持判等的类型：Result<T>
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.1
+ * -@SpecChapter: 类型/值类型/Map类型
+ * -@SpecDetail: 
+ */

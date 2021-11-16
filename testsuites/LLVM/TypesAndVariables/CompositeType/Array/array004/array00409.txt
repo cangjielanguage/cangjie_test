@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_Array_00409
+ * -@TestCaseName: array00409.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-12
+ * -@RequirementName: Array
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:
+ * #1.定义数组的同时用字面值初始化多维数组。
+ * -@Expect: 编译成功，运行return 0.
+ * -@Priority: level0
+ */

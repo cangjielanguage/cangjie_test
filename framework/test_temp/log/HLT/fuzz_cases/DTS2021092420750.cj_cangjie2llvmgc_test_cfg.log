@@ -1,0 +1,18 @@
+2021-10-26 02:13:26 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/fuzz_cases/DTS2021092420750.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:13:26 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/fuzz_cases/DTS2021092420750_cj_cangjie2llvmgc_test_cfg_1635213981
+2021-10-26 02:13:26 DEBUG execute cmd ===>>>: cjc -ulimit-error DTS2021092420750.cj -o DTS2021092420750.out
+2021-10-26 02:13:27 DEBUG return code: 0
+2021-10-26 02:13:27 DEBUG stdout : 
+
+2021-10-26 02:13:27 DEBUG stderr : 
+
+2021-10-26 02:13:27 DEBUG Run time: 0.59, remain time: 3e+02
+2021-10-26 02:13:27 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  DTS2021092420750.out 
+2021-10-26 02:18:27 DEBUG return code: 3
+2021-10-26 02:18:27 DEBUG stdout : 
+
+2021-10-26 02:18:27 DEBUG stderr : 
+@	TimeOut
+2021-10-26 02:18:27 DEBUG Run time: 3e+02, remain time: -0.12
+2021-10-26 02:18:27 ERROR Failed, return code 3 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/fuzz_cases/DTS2021092420750.cj_cangjie2llvmgc_test_cfg.log

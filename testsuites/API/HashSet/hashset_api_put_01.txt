@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: hashset_api_put_01.cj
+ * -@TestCaseName: hashset_api_put_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1094-02
+ * -@RequirementName: 提供 class HashSet
+ * -@Condition: no
+ * -@Brief: put(element:T): Unit，入参为空，编译报错
+ * -#step1: put(element:T): Unit，入参为空，编译报错 
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Collection/HashSet
+ * -@SpecDetail: put(element:T): Unit
+ */

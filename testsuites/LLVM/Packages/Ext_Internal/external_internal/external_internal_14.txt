@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: external_internal_14.cj
+ * -@TestCaseName: external_internal_14.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-01
+ * -@RequirementName: 泛型导入导出
+ * -@Condition: no
+ * -@Brief: 本包内，调用者用external修饰，被调用者使用internal修饰，类型通过函数调用传递
+ * -#step1: 本包内，调用者用external修饰，被调用者使用internal修饰，类型通过函数调用传递
+ * -@Expect: 编译成功
+ * -@Priority: level0
+ */

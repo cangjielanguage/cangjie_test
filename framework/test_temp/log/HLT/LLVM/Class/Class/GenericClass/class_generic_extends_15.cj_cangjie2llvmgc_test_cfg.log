@@ -1,0 +1,48 @@
+2021-11-08 02:35:59 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:35:59 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476
+2021-11-08 02:35:59 DEBUG execute cmd ===>>>: cjc -ulimit-error class_generic_extends_15.cj -o class_generic_extends_15.out
+2021-11-08 02:35:59 DEBUG return code: 1
+2021-11-08 02:35:59 DEBUG stdout : 
+
+2021-11-08 02:35:59 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:6:10: [31merror[0m: open generic function is not allowed in class
+@	    6 |     open func foo<V>(x: V, y: V): V{
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:12:5: [31merror[0m: there is no non-parameter constructor in super class, please invoke super call explicitly
+@	   12 |     init(input:T){}
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:6:10: [31merror[0m: non-static generic member function 'foo' is not supported
+@	    6 |     open func foo<V>(x: V, y: V): V{
+@	      |          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:13:14: [31merror[0m: non-static generic member function 'foo' is not supported
+@	   13 |     override func foo<U>(x: U, y: U): U{
+@	      |              [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:19:29: [31merror[0m: missing argument for call with parameter list: (Generics-T)
+@	   19 |     var data: Data<Int32> = Data<Int32>()
+@	      |                             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:12:5: [33mnote[0m: found candidate
+@	   12 |     init(input:T){}
+@	      |     [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:19:29: [31merror[0m: no matching constructor for call 'Data'
+@	   19 |     var data: Data<Int32> = Data<Int32>()
+@	      |                             [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:19:15: [31merror[0m: initializer's type is incompatible with variable declaration 'data' 
+@	   19 |     var data: Data<Int32> = Data<Int32>()
+@	      |               [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:20:22: [31merror[0m: ambiguous match for function call 'foo'
+@	   20 |     var res: Int32 = data.foo<Int32>(3, 4)
+@	      |                      [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:13:19: [33mnote[0m: found candidate
+@	   13 |     override func foo<U>(x: U, y: U): U{
+@	      |                   [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:6:15: [33mnote[0m: found candidate
+@	    6 |     open func foo<V>(x: V, y: V): V{
+@	      |               [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15_cj_cangjie2llvmgc_test_cfg_1636338476/class_generic_extends_15.cj:20:14: [31merror[0m: initializer's type is incompatible with variable declaration 'res' 
+@	   20 |     var res: Int32 = data.foo<Int32>(3, 4)
+@	      |              [32m^[0m
+@	9 errors generated
+
+2021-11-08 02:35:59 DEBUG Run time: 0.35, remain time: 3e+02
+2021-11-08 02:35:59 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Class/Class/GenericClass/class_generic_extends_15.cj_cangjie2llvmgc_test_cfg.log

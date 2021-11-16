@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_type_var_08.cj
+ * -@TestCaseName: enum_type_var_08.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: class的成员变量为enum有参类型
+ * -#step1: 定义enum其中constructor有参，类中成员变量的声明为enum有参类型
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

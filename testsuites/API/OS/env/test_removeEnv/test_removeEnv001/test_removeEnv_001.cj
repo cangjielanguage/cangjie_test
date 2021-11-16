@@ -1,0 +1,11 @@
+// EXEC: %compiler %stdx_cmp_opt -backend-options="%ffiC-link %link-os" %f -o %output
+// EXEC: export TEST_ENV= && %stdx_run %stdx_run_opt %output %stdx_run_args | compare %f
+// ASSERT: scan-not Exception
+
+from std import os.*
+from ffi import c.*
+
+func main(){
+    removeEnv("TEST_GET_ENV")
+    return 0
+}

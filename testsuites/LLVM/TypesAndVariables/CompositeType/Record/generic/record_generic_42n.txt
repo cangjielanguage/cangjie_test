@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_generic_42n.cj
+ * -@TestCaseName: record_generic_42n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试泛型record<T1>的约束T1 <: V1<T>(V1为泛型trait，T1未被append with V1<T的实例>)，编译报错
+ * -#step1: 定义一个泛型trait Add<T>，不追加Add<Int32>到任何类型
+ * -#step2: 定义一个约束条件为T1<:Add<T>的泛型record <T1>，内部定义一个类型变元label并在init函数中初始化label
+ * -#step3: 实例化record传入类元为<Int64>，使用Add中的特性函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

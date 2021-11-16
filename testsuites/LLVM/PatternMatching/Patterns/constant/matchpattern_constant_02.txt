@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: matchpattern_constant_02.cj
+ * -@TestCaseName: matchpattern_constant_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: 常量模式中用浮点数字面量
+ * -#step1: 常量模式中用浮点数字面量
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.6
+ * -@SpecChapter: 表达式/模式匹配表达式/常量模式
+ * -@SpecDetail: 常量模式可以是整数字面量、浮点数字面量、字符字面量、布尔字面量、字符串字面量（不支持字符串插值）
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 常量模式--1
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 常量模式--8
+ */

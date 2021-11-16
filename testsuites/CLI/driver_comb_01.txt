@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_comb_01.cj
+ * -@TestCaseName: driver_comb_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: 组合多个前端选项-dump-tokens、-emit-ir
+ * -#step1: cjc -frontend -dump-tokens
+ * -@Expect: 执行成功,输出tokens,并生成.bc文件
+ * -@Priority: High
+ */

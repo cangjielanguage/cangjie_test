@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Type_integer_00402.cj
+ * -@TestCaseName: Type_integer_00402.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基础类型
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 整数类型 Int16，二进制。
+ * #1.let声明变量，赋值为整数类型 Int16，二进制以0B开头。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

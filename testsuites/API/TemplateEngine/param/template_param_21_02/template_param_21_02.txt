@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_param_21_02.cj
+ * -@TestCaseName: template_param_21_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: param-decl-变量名包含除数字，字母，下划线以外的字符-正常处理中文
+ * -#step1: param-decl-变量名包含除数字，字母，下划线以外的字符-正常处理中文
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: param-decl
+ */

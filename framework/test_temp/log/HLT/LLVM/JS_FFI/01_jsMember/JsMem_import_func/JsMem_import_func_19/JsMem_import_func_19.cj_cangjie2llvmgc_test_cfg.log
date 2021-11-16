@@ -1,0 +1,15 @@
+2021-11-08 02:01:11 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/JsMem_import_func/JsMem_import_func_19/JsMem_import_func_19.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:01:11 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/JsMem_import_func/JsMem_import_func_19/JsMem_import_func_19_cj_cangjie2llvmgc_test_cfg_1636335528
+2021-11-08 02:01:11 DEBUG execute cmd ===>>>: cjc -ulimit-error JsMem_import_func_19.cj -o JsMem_import_func_19..out
+2021-11-08 02:01:11 DEBUG return code: 1
+2021-11-08 02:01:11 DEBUG stdout : 
+
+2021-11-08 02:01:11 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/01_jsMember/JsMem_import_func/JsMem_import_func_19/JsMem_import_func_19_cj_cangjie2llvmgc_test_cfg_1636335528/JsMem_import_func_19.cj:12:23: [31merror[0m: native function can only have CType args.
+@	   12 | 	static func isMoment(arg: MyEnum) : Int64
+@	      |                       [32m^[0m
+@	1 error generated
+
+2021-11-08 02:01:11 DEBUG Run time: 0.4, remain time: 3e+02
+2021-11-08 02:01:11 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/01_jsMember/JsMem_import_func/JsMem_import_func_19/JsMem_import_func_19.cj_cangjie2llvmgc_test_cfg.log

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_type_18.cj
+ * -@TestCaseName: class_generic_type_18.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试record中init函数入参为泛型class类型
+ * -#step1: 定义一个泛型class Data<T>，定义一个record Test，record中init函数入参为泛型class类型
+ * -#step2: 实例化泛型类 Data<Int32>，实例化record Test传入实例化后的泛型类
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: type_infer_numeric_0501n.cj
+ * -@TestCaseName: type_infer_numeric_0501n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-05
+ * -@RequirementName: 提供常量字面值类型推导
+ * -@Condition: no
+ * -@Brief: traitFunc函数调用的实参字面值与函数定义的类型不符，编译报错
+ * -#step1: traitFunc函数定义时为int64类型，调用时传入浮点型字面值实参
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: High
+ */

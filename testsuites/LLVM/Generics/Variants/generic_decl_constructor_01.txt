@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: generic_decl_constructor_01.cj
+ * -@TestCaseName: generic_decl_constructor_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-02
+ * -@RequirementName: 泛型实例化
+ * -@Condition: no
+ * -@Brief: 类型构造器含零个类型形参，声明foo<>()，编译报错
+ * -#step1: 类型构造器含零个类型形参，声明foo<>()，编译报错
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.4
+ * -@SpecChapter: 泛型/泛型实例化
+ * -@SpecDetail: 类型构造器：一个需要零个、一个或者多个类型作为实参的类型称为类型构造器
+ * -@catalog: # 泛型## 类型型变### 定义--1
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: MetaProgramming_Macro_Debug_20011
+ * -@TestCaseName: macro_debug_20011.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-46
+ * -@RequirementName: Meta programming support debug mode.
+ * -@Conditon: cjc.
+ * -@Brief: Debug macro support macro without parens.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

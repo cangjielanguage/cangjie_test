@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_match_0431n.cj
+ * -@TestCaseName: enum_match_0431n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: match{}中使用enum名字.constructor名字的访问方式
+ * -#step1: match{}中使用enum名字.constructor名字的访问方式
+ * -#step2: 检查编译结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

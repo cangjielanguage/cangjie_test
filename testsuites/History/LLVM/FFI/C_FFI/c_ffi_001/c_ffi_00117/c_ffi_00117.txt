@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: FFI_C_00117
+ * -@TestCaseName: c_ffi_00117.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2028-01
+ * -@RequirementName: C的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持record类型与struct类型的互相映射。
+ * #1.映射函数名称一致，但是入参出参类型均不一致。
+ * #2.尚不支持校验。
+ * -@Expect: b041版本尚未支持校验。
+ * -@Priority: level0
+ */

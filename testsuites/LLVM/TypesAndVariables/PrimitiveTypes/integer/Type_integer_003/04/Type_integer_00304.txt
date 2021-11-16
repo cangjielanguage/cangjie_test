@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: Type_integer_00304.cj
+ * -@TestCaseName: Type_integer_00304.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基础类型
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 整数类型 Int16，十进制，取值范围上限溢出。
+ * #1.var声明变量，赋值为整数类型 Int16，值为32768，溢出。
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ */

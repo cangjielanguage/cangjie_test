@@ -1,0 +1,14 @@
+ /*
+ * -@TestCaseID: test_nice_001
+ * -@TestCaseName: test_nice_001
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1098-05
+ * -@RequirementName: 提供进程相关函数
+ * -@Conditon: no
+ * -@Brief: 验证nice()的功能
+ * -#step1: 通过仓颉的nice()修改进程的优先级
+ * -#step2: 通过系统的nice指令获取进程的优先级
+ * -#step3: 对比结果，一致则通过测试
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

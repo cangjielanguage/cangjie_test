@@ -1,0 +1,25 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <extendMemberDeclaration> case (use propertyDefinition):
+Origin BNF is 
+    :  functionDefinition
+    | operatorFunctionDefinition
+    | typeAlias
+    | propertyDefinition
+    
+Test   BNF is 
+    :  functionDefinition
+    | operatorFunctionDefinition
+    | typeAlias
+    | <<TARGET=propertyDefinition->pattern>>
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

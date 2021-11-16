@@ -1,0 +1,12 @@
+ /*
+ * -@TestCaseID: FFI_Python_00113
+ * -@TestCaseName: python_ffi_00113.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARK:LANG-2028-02
+ * -@RequirementName: Python的跨语言调用能力
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: 支持python内建函数的获取与使用。
+ * #1.获取python内建函数compile()并使用，查看功能是否正常。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

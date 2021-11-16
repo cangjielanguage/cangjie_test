@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: static_func_10n.cj
+ * -@TestCaseName: static_func_10n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-CHARLANG-2023-10_R2
+ * -@RequirementName: 静态泛型成员函数
+ * -@Condition: no
+ * -@Brief: record中定义static + protected修饰的静态成员函数，编译报错
+ * -#step1: record中声明static + protected修饰的静态成员函数foo()
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

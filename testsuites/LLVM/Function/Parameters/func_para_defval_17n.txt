@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: func_para_defval_17n.cj
+ * -@TestCaseName: func_para_defval_17n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数 
+ * -@Condition: no
+ * -@Brief: 测试func函数的2个可选参数定义在2个非可选参数之后，调用函数时省略首位可选函数，编译报错
+ * -#step1: 声明一个函数func Foo定义四个入参变量，函数入参依次为非可选参数a、非可选参数b、可选参数A、可选参数B
+ * -#step2: 调用函数Foo()，传入a,b,B的实参
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

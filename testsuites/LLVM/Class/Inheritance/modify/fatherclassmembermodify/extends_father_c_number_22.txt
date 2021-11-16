@@ -1,0 +1,14 @@
+/*
+* -@TestCaseID: extends_father_c_number_22.cj
+* -@TestCaseName: extends_father_c_number_22.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1003-01
+* -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载
+* -@Condition: no
+* -@Brief: 访问父类中static protected成员函数
+* -#step1: 准备父类含static protected成员函数
+* -#step2: 用子类实例或者子类类名（static）访问该成员函数
+* -#step3: 编译运行检查输出信息和返回码
+* -@Expect: 执行成功，返回0
+* -@Priority: High
+*/

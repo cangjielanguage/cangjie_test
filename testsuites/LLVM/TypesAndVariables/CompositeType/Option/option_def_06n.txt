@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: option_def_06n.cj
+ * -@TestCaseName: option_def_06n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型enum
+ * -@Condition: no
+ * -@Brief: 测试Option<T>调用Option<T>.None<T>赋值,编译报错
+ * -#step1: 声明一个Option<Int32>类型的变量，并调用Option<Int32>.None<Int32>赋值
+ * -#step2: match匹配Option<Int32>的构造函数
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

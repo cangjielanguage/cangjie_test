@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: ipmask_init_03_03.cj
+ * -@TestCaseName: ipmask_init_03_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-15
+ * -@RequirementName: 提供 class IPMask
+ * -@Condition: no
+ * -@Brief: IPMask-参数正常（入参是c类地址默认子网掩码255.255.255.0),构造成功
+ * -#step1: IPMask-参数正常（入参是c类地址默认子网掩码255.255.255.0),构造成功
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Socket
+ * -@SpecDetail: IPMask-init(a: UInt8, b: UInt8, c: UInt8, d: UInt8)
+ */

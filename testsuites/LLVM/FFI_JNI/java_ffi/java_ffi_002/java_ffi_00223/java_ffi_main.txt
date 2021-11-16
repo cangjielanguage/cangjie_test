@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: java_ffi_00223
+ * -@TestCaseName: java_ffi_main.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1026-26
+ * -@RequirementName: 修饰符映射
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: cangjie调用java java类成员修饰符transient
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

@@ -1,0 +1,18 @@
+/*
+ * -@TestCaseID: capture_func_varlet_04.cj
+ * -@TestCaseName: capture_func_varlet_04.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-30
+ * -@RequirementName: 变量的var/let属性和捕获变量的函数是否作为一级公民使用
+ * -@Condition: no
+ * -@Brief: 其他函数调用的实参为该函数名(捕获var变量),编译报错
+ * -#step1: 定义var变量a,类型为Int32
+ * -#step2: 定义函数foo,参数默认值为a，返回默认参数
+ * -#step3: 定义函数test,参数类型为函数类型,返回值为函数调用
+ * -#step4: 调用test,传入foo
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.1
+ * -@SpecChapter: 闭包
+ * -@SpecDetail: 捕获了可变变量的函数或lambda只能被调用,不能作为一等公民使用,包括不能赋值给变量，不能作为实参或返回值使用。
+ */

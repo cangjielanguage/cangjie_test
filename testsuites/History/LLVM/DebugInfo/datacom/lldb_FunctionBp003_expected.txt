@@ -1,0 +1,3 @@
+lldb,lldb 014_debug_func_bp,014_debug_func_bp
+b,b *,no locations
+r,r,exited

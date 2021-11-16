@@ -1,0 +1,21 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <assignmentExpression> case (use flowExpression):
+Origin BNF is 
+    :  leftValueExpression NL* assignmentOperator NL* flowExpression 
+    | flowExpression
+    
+Test   BNF is 
+    :  leftValueExpression NL* assignmentOperator NL* <<TARGET=flowExpression->pattern>> 
+    | flowExpression
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

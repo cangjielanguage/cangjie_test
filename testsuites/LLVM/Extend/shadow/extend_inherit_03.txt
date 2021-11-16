@@ -1,0 +1,13 @@
+﻿/*
+ * -@TestCaseID: extend_define_01.cj
+ * -@TestCaseName: extend_define_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1010-02
+ * -@RequirementName: 支持给具名类型直接扩展成员函数
+ * -@Condition: no
+ * -@Brief: 扩展的基础
+ * -#step1: 子类中使用super、this调用父类的扩展中增加的实例变量或函数
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确
+ * -@Priority: High
+ */

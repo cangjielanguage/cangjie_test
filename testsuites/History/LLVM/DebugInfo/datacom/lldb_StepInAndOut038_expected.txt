@@ -1,0 +1,7 @@
+lldb,lldb 032_debuginfun_func_no_arg,032_debuginfun_func_no_arg
+b,b 8,032_debuginfun_func_no_arg.cj:8
+r,r,-> 8
+s,s,-> 15
+finish,finish,-> 8
+n,n,-> 9
+cj_plocals,cj_plocals,Functioncall001 = 30

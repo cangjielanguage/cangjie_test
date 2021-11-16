@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: diff_class_func_12.cj
+ * -@TestCaseName: diff_class_func_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-17
+ * -@RequirementName: 可微函数的支持
+ * -@Condition: no
+ * -@Brief: 对class中的成员函数进行可微标记
+ * -#step1: 定义class A
+ * -#step2: 扩展class A, 定义可微函数f，无入参，返回Unit,并对其进行可微标注@differentiable[except:[this]]
+ * -@Expect: 编译成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ * -@SpecDetail: 在仓颉中由于class类型本身不可微，故除了静态成员方法外，用户必须将this加入到可微成员方法的except列表中
+ */

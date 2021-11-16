@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: assign_0001.cj
+ * -@TestCaseName: assign_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-26
+ * -@RequirementName: 
+ * -@Condition: no
+ * -@Brief: assign member function of interface to a var variable in interface and change value
+ * -#step1: assign member function of interface to a var variable in interface
+ * -#step2: re-assign another member function of same interface in main
+ * -#step2: invoke function in main
+ * -@Expect: complile success and run 
+ * -@Priority: High
+ */

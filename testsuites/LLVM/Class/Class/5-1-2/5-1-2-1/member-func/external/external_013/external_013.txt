@@ -1,0 +1,14 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/member-func/external/external_013/external_013.cj
+*- @TestCaseName:类修饰符external与函数修饰符的组合
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:不同包的同名函数，父类函数使用open，子类函数使用override，功能正确
+* -#pkg1.cj:package pkg1，pkg1中包含external class Base，函数open func get
+* -#external_013.cj:package pkg2，创建类Data extends pkg1.Base ， override get
+* -#external_013.cj:创建Data的实例，调用get函数
+*- @Expect: get函数功能正确
+*- @Priority:level1 
+*/

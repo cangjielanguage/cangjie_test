@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: class_member_type_73n.cj
+ * -@TestCaseName: class_member_type_73n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1003-01
+ * -@RequirementName: 支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+ * -@Condition: no
+ * -@Brief: 测试class中成员函数的返回值为类本身
+ * -#step1: 在class Test中定义定义一个func f，返回值类型为类Test本身
+ * -@Expect: 执行成功，返回0
+ * -@Priority: High
+ */

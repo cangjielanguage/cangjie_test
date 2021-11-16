@@ -1,0 +1,10 @@
+/*
+* -@TestCaseID: concat_case2
+* -@TestCaseName: concat_case2.cj
+* -@TestCaseType: Function Test
+* -@RequirementID: AR-SR-ARKLANG-1006-01
+* -@Conditon: cjc, clang, maple test framework and python3.
+* -@Brief: 验证含插值字符串${s1+s3}
+* -@Expect: compile and print successfully.
+* -@Priority: level0
+*/

@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: matcher_api_fullMatch_01.cj
+ * -@TestCaseName: matcher_api_fullMatch_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1091-03
+ * -@RequirementName: 提供 class Regex
+ * -@Condition: no
+ * -@Brief: 这里写Brief
+ * -#step1: 这里写step
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Regex
+ * -@SpecDetail: 这里写detail
+ */

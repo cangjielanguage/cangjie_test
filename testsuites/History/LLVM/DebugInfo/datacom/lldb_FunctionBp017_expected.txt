@@ -1,0 +1,5 @@
+lldb,lldb 014_debug_func_bp,014_debug_func_bp
+b,b funcbp014,014_debug_func_bp.cj:158
+r,r,-> 158
+s,s,-> 162
+finish,finish,-> 158

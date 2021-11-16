@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_func_05n.cj
+ * -@TestCaseName: record_func_05n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在泛型record func中，入参类型与label类型不匹配，编译报错
+ * -#step1: 定义一个泛型record，其中定义两个let label类型为类型变元，
+ * -#step2: 定义一个init为泛型label赋值
+ * -#step3: 定义一个func area，调用函数area入参类型为int64,将入参赋值给泛型label
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

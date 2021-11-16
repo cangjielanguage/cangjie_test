@@ -1,0 +1,45 @@
+2021-11-08 02:44:31 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:44:31 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02_cj_cangjie2llvmgc_test_cfg_1636338481
+2021-11-08 02:44:31 DEBUG execute cmd ===>>>: cjc -enable-ad -ulimit-error diff_rules_return_02.cj -c -o diff_rules_return_02.out 2>&1 
+2021-11-08 02:44:32 DEBUG return code: 1
+2021-11-08 02:44:32 DEBUG stdout : 
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02_cj_cangjie2llvmgc_test_cfg_1636338481/diff_rules_return_02.cj:5:6: [31merror[0m: unable to infer function return type, please write it
++	    5 | func foo() {
++	      |      [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02_cj_cangjie2llvmgc_test_cfg_1636338481/diff_rules_return_02.cj:5:6: [31merror[0m: unable to infer function return type, please write it
++	    5 | func foo() {
++	      |      [32m^[0m
++	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02_cj_cangjie2llvmgc_test_cfg_1636338481/diff_rules_return_02.cj:8:9: [31merror[0m: no matching function declaration for function call 'foo'
++	    8 | var a = foo()
++	      |         [32m^[0m
++	3 errors generated
+
+2021-11-08 02:44:32 DEBUG stderr : 
+
+2021-11-08 02:44:32 DEBUG Run time: 0.71, remain time: 3e+02
+2021-11-08 02:44:32 DEBUG execute cmd ===>>>:   /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// diff_rules_return_02.cj
+2021-11-08 02:44:32 DEBUG return code: 1
+2021-11-08 02:44:32 DEBUG stdout : 
++	compare.py input:
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02_cj_cangjie2llvmgc_test_cfg_1636338481/diff_rules_return_02.cj:5:6: [31merror[0m: unable to infer function return type, please write it
++		    5 | func foo() {
++		      |      [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02_cj_cangjie2llvmgc_test_cfg_1636338481/diff_rules_return_02.cj:5:6: [31merror[0m: unable to infer function return type, please write it
++		    5 | func foo() {
++		      |      [32m^[0m
++		/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02_cj_cangjie2llvmgc_test_cfg_1636338481/diff_rules_return_02.cj:8:9: [31merror[0m: no matching function declaration for function call 'foo'
++		    8 | var a = foo()
++		      |         [32m^[0m
++		3 errors generated
++	
++	compare.py input end
++	
++	Starting Compare:
++	b'flag: regex, pattern: \\:2\\:.*\\:.*xxx , result: False, matched at output line: 0'
++	Match End!, Compare Failed
+
+2021-11-08 02:44:32 DEBUG stderr : 
+
+2021-11-08 02:44:32 DEBUG Run time: 0.11, remain time: 3e+02
+2021-11-08 02:44:32 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/AD/DiffType/Function/diff_rules_return_02.cj_cangjie2llvmgc_test_cfg.log

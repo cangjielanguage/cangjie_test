@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: enum_def_0207.cj
+ * -@TestCaseName: enum_def_0207.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2006-01
+ * -@RequirementName: Enum的词法、语法解析
+ * -@Condition: no
+ * -@Brief: enum类型中的constructor的互递归1次（无参）
+ * -#step1: 定义enum中有两个enum，里面的构造器互相递归1次
+ * -#step2: 编译后运行并检查返回值
+ * -@Expect: 执行正确，返回0
+ * -@Priority: High
+ */

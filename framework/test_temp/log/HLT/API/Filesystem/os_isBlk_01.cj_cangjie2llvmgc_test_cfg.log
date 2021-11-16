@@ -1,0 +1,2 @@
+2021-11-08 02:03:50 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/Filesystem/os_isBlk_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:03:50 ERROR Run task exit unexpected : DEPENDENCE keyword error, file: test_dir NotFound, Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/API/Filesystem/os_isBlk_01.cj_cangjie2llvmgc_test_cfg.log

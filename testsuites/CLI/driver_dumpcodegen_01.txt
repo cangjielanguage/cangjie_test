@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: driver_dumpcodegen_01.cj
+ * -@TestCaseName: driver_dumpcodegen_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: cjc的选项-frontend -dump-ir后跟源文件，源文件无语法错误
+ * -#step1: 执行cjc -frontend -dump-ir xxx源文件（无语法错误）
+ * -#step2: 检查执行结果
+ * -@Expect: 执行成功，生成.bc文件
+ * -@Priority: High
+ */

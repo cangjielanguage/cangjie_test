@@ -1,0 +1,13 @@
+/* 
+*- @TestCaseID:class/5-1/5-1-2/5-1-2-1/member-func/static/static_func_0010_n.cj
+*- @TestCaseName:测试类的静态成员函数
+*- @TestCaseType:功能测试
+*- @ RequirementID:AR-SR-ARKLANG-1003-01
+*- @ RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+*- @Conditon:无
+*- @Brief:类中的静态函数使用父类的实例变量，编译器报错
+* -#定义类open class Base，定义变量var a : Int32
+* -#定义类class Data extends Base，定义函数static func getB，getB访问变量a
+*- @Expect:编译器报错
+*- @Priority:level1 
+*/

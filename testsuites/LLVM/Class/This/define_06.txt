@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: define_06.cj
+ * -@TestCaseName: define_06.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-24
+ * -@RequirementName: This类型的错误使用
+ * -@Condition: no
+ * -@Brief: 在enum中，enum的值的参数及定义在其中的属性，函数入参返回值为This类型
+ * -#step1: enum中的constructor的类型是This类型，定义在enum的属性为This类型
+ * -#step2: 定义在enum中的两个函数，一个函数的入参为This类型，一个函数的返回值为This类型
+ * -@Expect: 编译报错，提示This类型不允许在这里
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.4 This类型 
+ * -@SpecDetail: 在类内部，我们支持 This 类型占位符，它只能被作为实例成员函数的返回类型来使用
+ * -@catalog: # 类和接口## 类### This 类型--1
+ */

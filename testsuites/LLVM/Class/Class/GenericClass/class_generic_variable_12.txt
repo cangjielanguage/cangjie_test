@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_variable_12.cj
+ * -@TestCaseName: class_generic_variable_12.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>声明public的泛型变量，能被子类访问
+ * -#step1: 定义一个泛型父类class Base<T>声明public修饰的泛型变量base，定义一个泛型类Data<T>继承Base<Int32>，
+ * -#step2: 实例化泛型class Data<T>调用父类变量base
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: integer_literal_01.cj
+ * -@TestCaseName: integer_literal_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 基础类型的类型检查
+ * -@Condition: no
+ * -@Brief: 正确的整型数值字面量表示
+ * -#step1: 二进制、十进制、八进制、十六进制的浮点型字面值表示
+ * -@Expect: 执行成功
+ * -@Priority: High
+ */

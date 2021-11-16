@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: rule2_0006.cj
+ * -@TestCaseName: rule2_0006.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1022-08
+ * -@RequirementName: 在类的构造函数中错误使用this() super()
+ * -@Condition: no
+ * -@Brief: 在类的主构造函数中 使用this()表达式和在作为非函数体内第一个表达式处使用super()
+ * -#step1: 先定义一个泛型类Base，泛型类Test继承于Base，在Test的主构造函数体中先给this.variableName赋值，再使用super表达式
+ * -#step2: 泛型类Test2的主构造函数，在函数体中先给this.variableName赋值，再使用this表达式
+ * -@Expect: 编译错误，提示：在主构造函数中调用“this”无效 对“super”的调用必须是类的构造函数中的第一个表达式
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.2.1 构造函数
+ * -@SpecDetail: init 构造函数可以调用父类构造函数或本类其它构造函数，但两者之间只能调用一个。如果调用，必须在构造函数体内的第一个表达式处，在此之前不能有任何表达式或声明；
+ * -@catalog: # 类和接口## 类### 类的成员#### 构造函数##### `init` 构造函数--18
+ */

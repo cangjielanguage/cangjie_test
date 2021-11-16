@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_func_13.cj
+ * -@TestCaseName: record_func_13.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record操作符函数体中，通过实例访问另一个record的label
+ * -#step1: 定义一个record Step，内部定义一个label step
+ * -#step2: 定义一个record Data，内部声明两个label，并在init函数中初始化
+ * -#step3: record中定义一个操作函数'-'，通过实例访问Step的label step
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

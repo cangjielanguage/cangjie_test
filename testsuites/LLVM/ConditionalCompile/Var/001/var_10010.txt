@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Cangjie_ConditionalCompile_Var_10010.txt
+ * -@TestCaseName: var_10010.txt
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1028-42
+ * -@RequirementName: Cangjie support ConditionalCompile.
+ * -@Conditon: cjc, panda, maple test framework and python3.
+ * -@Brief: Cangjie ConditionalCompile support variables.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */
+

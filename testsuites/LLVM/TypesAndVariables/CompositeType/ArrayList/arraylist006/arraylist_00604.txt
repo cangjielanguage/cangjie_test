@@ -1,0 +1,11 @@
+ /*
+ * -@TestCaseID: Char_TypesAndVariables_CompositeType_ArrayList_00604
+ * -@TestCaseName: arraylist_00604.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-01
+ * -@RequirementName: ArrayList
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Use ArrayList as Generic Class.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ */

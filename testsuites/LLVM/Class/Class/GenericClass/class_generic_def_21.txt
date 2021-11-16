@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_def_21.cj
+ * -@TestCaseName: class_generic_def_21.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试完整正确的泛型class定义<T,V,K>，泛型约束为where T<:类,V<:类,K<:类
+ * -#step1: 分别定义两个类Foo1、Foo2、Foo3，分别定义两个子类Bar1、Bar2、Bar
+ * -#step2: 定义一个约束条件为T<:Foo1,V<:Foo2,K<:Foo3的泛型class <T,V,K>，内部定义两个类型变元label并在init函数中初始化label
+ * -#step3: 实例化子类Bar1、Bar2、Bar3，实例化class，传入类元为<Bar1,Bar2,Bar2>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

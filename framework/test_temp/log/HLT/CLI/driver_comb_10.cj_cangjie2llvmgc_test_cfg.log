@@ -1,0 +1,13 @@
+2021-11-08 02:40:04 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/CLI/driver_comb_10.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:40:04 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/CLI/driver_comb_10_cj_cangjie2llvmgc_test_cfg_1636338478
+2021-11-08 02:40:04 DEBUG execute cmd ===>>>: cjc -frontend -no-prelude driver_comb_10.cj
+2021-11-08 02:40:04 DEBUG return code: 1
+2021-11-08 02:40:04 DEBUG stdout : 
+
+2021-11-08 02:40:04 DEBUG stderr : 
+@	 [31merror[0m: class 'Object' of package 'core/core' is not found, cannot use '-no-prelude' option
+@	1 error generated
+
+2021-11-08 02:40:04 DEBUG Run time: 0.053, remain time: 3e+02
+2021-11-08 02:40:04 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/CLI/driver_comb_10.cj_cangjie2llvmgc_test_cfg.log

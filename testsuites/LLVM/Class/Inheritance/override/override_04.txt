@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: extends_override_rule_17n.cj
+ * -@TestCaseName: extends_override_rule_17n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-09
+ * -@RequirementName: 类继承中函数重载的规则检查 
+ * -@Condition: no
+ * -@Brief: override two function from super class and interface
+ * -#step1: 
+ * -@Expect:run success
+ * -@Priority: High
+ */

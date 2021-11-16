@@ -1,0 +1,7 @@
+lldb,lldb 024_debug_variable,024_debug_variable
+b,b 48,024_debug_variable.cj:48
+r,r,-> 48
+cj_set,cj_set var_float64 = ,error
+n,n,-> 51
+cj_plocals,cj_plocals,var_float64 = 1
+cj_plocals,cj_plocals,f_float64 = 9

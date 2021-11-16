@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: client_putForm_02.cj
+ * -@TestCaseName: client_putForm_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1101-01
+ * -@RequirementName: 提供 class Client
+ * -@Condition: no
+ * -@Brief: func putForm(url: String, data: Form): Result<Response>,url不存在对应的handler
+ * -#step1: func putForm(url: String, data: Form): Result<Response>,url不存在对应的handler 
+ * -@Expect: 编译执行成功返回0
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: Net/Client
+ * -@SpecDetail: func putForm(url: String, data: Form): Result<Response>
+ */

@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: error_report_20.cj
+ * -@TestCaseName: error_report_20.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1039-01
+ * -@RequirementName: 编译告警
+ * -@Condition: no
+ * -@Brief: 编译告警：api方法参数多余，note提示可能的候选函数
+ * -@step1: api方法参数多余，note提示可能的候选函数
+ * -@Expect: 输出正确编译报错信息
+ * -@Priority: level0
+ */

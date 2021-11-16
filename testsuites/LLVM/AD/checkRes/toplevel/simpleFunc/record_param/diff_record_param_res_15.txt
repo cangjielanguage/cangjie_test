@@ -1,0 +1,21 @@
+/*
+ * -@TestCaseID: diff_record_param_res_15.cj
+ * -@TestCaseName: diff_record_param_res_15.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1044-07
+ * -@RequirementName: 自动微分与数值微分的正确性交叉验证
+ * -@Condition: no
+ * -@Brief: 入参为record类型的数值校验
+ * -#step1: 定义可微record A, 成员参数为temp1(Float32), temp2(Int32), 配置[except:[temp2]]
+ * -#step2: 定义可微函数foo, 入参为x(A)
+ * -#step3: 在foo内定义可微变量count, res, 令count = 1.0, res = 1.0
+ * -#step4: 在foo内使用while循环, 判断条件为count < 5.0
+ * -#step5: 在while内使用if表达式, 判断条件为 count < 3.0, true则res = res * x.temp1, count = count + 1.0
+ * -#step6: false则res = 2.0 * res * x.temp1, count = count + 1.0
+ * -#step7: 返回res
+ * -#step8: 使用grad等API后, 访问A中的不可微变量
+ * -@Expect: 编译失败
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22
+ * -@SpecChapter: 自动微分
+ */

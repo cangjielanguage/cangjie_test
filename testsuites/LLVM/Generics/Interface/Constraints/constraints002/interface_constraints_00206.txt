@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Constraints_00206
+ * -@TestCaseName: interface_constraints_00206.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2065-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define trait for interface constraints, instantiation it with child trait,but use child`s function.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

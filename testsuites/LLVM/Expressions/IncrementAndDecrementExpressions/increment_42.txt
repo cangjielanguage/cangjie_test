@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: increment_42.cj
+ * -@TestCaseName: increment_42.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: 自增自减表达式
+ * -@Condition: no
+ * -@Brief: ArrayList的元素++
+ * -#step1: 定义ArrayList的变量，根据索引取值++
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

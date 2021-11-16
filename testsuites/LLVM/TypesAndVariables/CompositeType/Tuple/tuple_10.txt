@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: tuple_10.cj
+ * -@TestCaseName: tuple_10.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXX
+ * -@RequirementName: XXXX
+ * -@Condition: no
+ * -@Brief: tuple元组作为lambda函数返回值
+ * -#step1: 定义一个lambda函数的返回值为tuple类型
+ * -#step2: 调用lambda函数，解构元组
+ * -@Expect: 执行成功,返回0
+ * -@Priority: High
+ */

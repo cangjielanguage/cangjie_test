@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: assign_0001.cj
+ * -@TestCaseName: assign_0001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-1022-26
+ * -@RequirementName: 
+ * -@Condition: no
+ * -@Brief: assign member function of super class to a let variable in current class
+ * -#step1: assign member function of super class to a let variable in current class
+ * -#step2: invoke method 
+ * -@Expect: 编译报错 
+ * -@Priority: High
+ */

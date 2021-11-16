@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: Char_PatternMatching_Patterns_00104
+ * -@TestCaseName: variable00104.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-1004
+ * -@RequirementName: PatternMatching
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Match case support multi line.
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: level0
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 变量模式--4
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 常量模式--1
+ */

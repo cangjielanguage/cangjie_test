@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: matchpattern_type_0102.cj
+ * -@TestCaseName: matchpattern_type_0102.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-Lang-1019
+ * -@RequirementName: 模式匹配
+ * -@Condition: no
+ * -@Brief: 类型模式中，selector是子类，匹配type是子类，不进行type cast
+ * -#step1: 类型模式中，selector是子类，匹配type是子类，不进行type cast
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.6
+ * -@SpecChapter: 表达式/模式匹配表达式/模式/类型模式
+ * -@SpecDetail: `Identifier : type`（或 `\_ : type`）可以同时实现`type test`和`type cast`。
+ * -@catalog:# 表达式## 模式匹配表达式### 模式#### 类型模式--3
+ */

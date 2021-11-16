@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Static_00302
+ * -@TestCaseName: static00302.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2003-03
+ * -@RequirementName: Static
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Static function can not be implemented.
+ * -@Expect: Compile failed, return 1.
+ * -@Priority: level0
+ */

@@ -1,0 +1,15 @@
+/*
+ * -@TestCaseID: where_type_func_05.cj
+ * -@TestCaseName: where_type_func_05.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1021-03
+ * -@RequirementName: 泛型where约束检查
+ * -@Condition: no
+ * -@Brief: 上界类型为函数类型:()->A,实例化为()->B,A是父类
+ * -#step1: 上界类型为函数类型:()->A,实例化为()->B,A是父类
+ * -@Expect: 编译执行成功、返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec 0.22.3
+ * -@SpecChapter: 泛型/泛型约束
+ * -@SpecDetail: 当上界中既有类无关类型，又有类相关类型时,类无关类型中不能同时存在两个或两个以上类无关具体类型
+ */

@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: TimeSpan_6_operator_002
+ * -@TestCaseName: TimeSpan_6_operator_002.cj 
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: TimeSpan
+ * -@Condition: charc, clang, maple test framework and python3.
+ * -@Brief: "“+”加号 TimeSpan类型+TimeSpan类型
+TimeSpan类型四种构造函数都涉及，不同构造函数相加"
+ * -@Expect: 正确执行
+ * -@Priority: level1
+ */
+    

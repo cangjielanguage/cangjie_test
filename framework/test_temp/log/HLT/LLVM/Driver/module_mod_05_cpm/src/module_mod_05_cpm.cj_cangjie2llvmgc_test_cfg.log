@@ -1,0 +1,31 @@
+2021-10-26 02:41:26 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/module_mod_05_cpm/src/module_mod_05_cpm.cj_cangjie2llvmgc_test_cfg.log
+2021-10-26 02:41:26 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Driver/module_mod_05_cpm/src/module_mod_05_cpm_cj_cangjie2llvmgc_test_cfg_1635213993
+2021-10-26 02:41:26 DEBUG execute cmd ===>>>: cd module_mod_05_cpm &&  cpm clean
+2021-10-26 02:41:26 DEBUG return code: 0
+2021-10-26 02:41:26 DEBUG stdout : 
++	clean called
++	clean success
+
+2021-10-26 02:41:26 DEBUG stderr : 
+
+2021-10-26 02:41:26 DEBUG Run time: 0.024, remain time: 3e+02
+2021-10-26 02:41:26 DEBUG execute cmd ===>>>: cd module_mod_05_cpm && cpm  build
+2021-10-26 02:41:26 DEBUG return code: 1
+2021-10-26 02:41:26 DEBUG stdout : 
++	build called
+
+2021-10-26 02:41:26 DEBUG stderr : 
+@	Error: module build failed, because the organization can not be empty in module.json
+@	
+@	Usage:
+@	  cpm build [flags]
+@	
+@	Flags:
+@	  -h, --help     help for build
+@	  -s, --serial   serial compilation, no parallel compilation
+@	  -t, --test     test the compile command, do not compile
+@	
+
+2021-10-26 02:41:26 DEBUG Run time: 0.028, remain time: 3e+02
+2021-10-26 02:41:26 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Driver/module_mod_05_cpm/src/module_mod_05_cpm.cj_cangjie2llvmgc_test_cfg.log

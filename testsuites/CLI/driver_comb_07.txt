@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: driver_comb_07.cj
+ * -@TestCaseName: driver_comb_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2014-01
+ * -@RequirementName: 编译器Driver实现
+ * -@Condition: no
+ * -@Brief: 组合前端选项-emit-ir和全局选项-output abc
+ * -#step1: cjc -frontend xx源文件 -output abc
+ * -@Expect: 生成abc.bc文件
+ * -@Priority: High
+ */

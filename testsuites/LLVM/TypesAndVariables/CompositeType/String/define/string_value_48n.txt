@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: string_value_48n.cj
+ * -@TestCaseName: string_value_48n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-11
+ * -@RequirementName: String实现
+ * -@Condition: no
+ * -@Brief: 测试String类型的字面量，超出字符串索引范围访问字符，编译报错
+ * -#step1: 定义一个单行字符串，取超出索引范围内的字符
+ * -#step2: 编译报错
+ * -@Expect: 编译报错，超出索引范围
+ * -@Priority: High
+ */

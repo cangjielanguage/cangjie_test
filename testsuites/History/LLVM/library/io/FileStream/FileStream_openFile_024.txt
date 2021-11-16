@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: FileStream_openFile_024.cj
+ * -@TestCaseName: FileStream_openFile_024.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.002.009
+ * -@RequirementName: io
+ * -@Condition: cjc, clang, maple test framework and python3.
+ * -@Brief: OpenOrCreate:打开已存在的文件，并读取，正常；OpenOrCreate:打开不存在的文件，并读取，会先创建文件并读取
+ * -@Expect: compile and print successfully
+ * -@Priority: level0
+ */

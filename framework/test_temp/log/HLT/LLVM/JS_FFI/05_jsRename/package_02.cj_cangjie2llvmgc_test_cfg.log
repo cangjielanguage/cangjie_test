@@ -1,0 +1,15 @@
+2021-11-08 02:05:29 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/package_02.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:05:29 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package_02_cj_cangjie2llvmgc_test_cfg_1636335531
+2021-11-08 02:05:29 DEBUG execute cmd ===>>>: cjc -ulimit-error -module package_02
+2021-11-08 02:05:30 DEBUG return code: 1
+2021-11-08 02:05:30 DEBUG stdout : 
+
+2021-11-08 02:05:30 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/package_02_cj_cangjie2llvmgc_test_cfg_1636335531/package_02/src/Mem_Group_01.cj:5:24: [31merror[0m: native function can only have CType args.
+@	    5 | foreign func package02(obj:Complex) : UInt32
+@	      |                        [32m^[0m
+@	1 error generated
+
+2021-11-08 02:05:30 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 02:05:30 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/package_02.cj_cangjie2llvmgc_test_cfg.log

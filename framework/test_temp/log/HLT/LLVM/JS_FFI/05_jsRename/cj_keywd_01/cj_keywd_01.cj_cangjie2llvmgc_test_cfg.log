@@ -1,0 +1,18 @@
+2021-11-08 01:54:19 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/cj_keywd_01/cj_keywd_01.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 01:54:19 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/cj_keywd_01/cj_keywd_01_cj_cangjie2llvmgc_test_cfg_1636335525
+2021-11-08 01:54:19 DEBUG execute cmd ===>>>: cjc -ulimit-error cj_keywd_01.cj -o cj_keywd_01..out
+2021-11-08 01:54:19 DEBUG return code: 1
+2021-11-08 01:54:19 DEBUG stdout : 
+
+2021-11-08 01:54:19 DEBUG stderr : 
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/cj_keywd_01/cj_keywd_01_cj_cangjie2llvmgc_test_cfg_1636335525/cj_keywd_01.cj:7:26: [31merror[0m: native function can only have CType args.
+@	    7 | foreign func cjKeyword01(arg: String) : String
+@	      |                          [32m^[0m
+@	/home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/JS_FFI/05_jsRename/cj_keywd_01/cj_keywd_01_cj_cangjie2llvmgc_test_cfg_1636335525/cj_keywd_01.cj:7:41: [31merror[0m: native function can only have CType return.
+@	    7 | foreign func cjKeyword01(arg: String) : String
+@	      |                                         [32m^[0m
+@	2 errors generated
+
+2021-11-08 01:54:19 DEBUG Run time: 0.39, remain time: 3e+02
+2021-11-08 01:54:19 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/05_jsRename/cj_keywd_01/cj_keywd_01.cj_cangjie2llvmgc_test_cfg.log

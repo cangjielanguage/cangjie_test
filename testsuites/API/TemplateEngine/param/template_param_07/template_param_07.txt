@@ -1,0 +1,15 @@
+﻿/*
+ * -@TestCaseID: template_param_07.cj
+ * -@TestCaseName: template_param_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1105-03
+ * -@RequirementName: 提供 TemplateEngine
+ * -@Condition: no
+ * -@Brief: param-decl-变量名首字母存在特殊字符#
+ * -#step1: param-decl-变量名首字母存在特殊字符#
+ * -@Expect: 编译报错
+ * -@Priority: level0
+ * -@SpecVersion: api doc
+ * -@SpecChapter: TemplateEngine
+ * -@SpecDetail: param-decl
+ */

@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: func_para_defval_200n.cj
+ * -@TestCaseName: func_para_defval_200n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2011-03
+ * -@RequirementName: 支持使用表达式作为函数默认参数
+ * -@Condition: no
+ * -@Brief: 函数调用时，通过函数声明处的名字调用可以使用默认值，通过变量名调用函数不支持参数可选
+ * -#step1: 变量被赋值为含可选参数的函数
+ * -#step2: 用该变量进行函数调用
+ * -#step3: 检查编译和执行结果
+ * -@Expect: 编译报错
+ * -@Priority: High
+ */

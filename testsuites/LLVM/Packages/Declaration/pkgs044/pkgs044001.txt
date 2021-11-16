@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: pkgs044001.cj
+ * -@TestCaseName: pkgs044001.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2019-01
+ * -@RequirementName: 支持import语法
+ * -@Condition: no
+ * -@Brief:Import object in package from another package(5 layer)
+ * -#step1:Compile testfile
+ * -#step2:Run & check return value
+ * -@Expect:Return 0
+ * -@Priority: High
+ */

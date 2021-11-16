@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: class_generic_func_02.cj
+ * -@TestCaseName: class_generic_func_02.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试泛型class<T>函数入参声明为泛型，调用时被赋予T的值
+ * -#step1: 定义一个泛型父类class Base<T>，定义一个泛型类Data<T>继承Base<T>
+ * -#step2: Data<T>中声明一个入参为泛型的成员函数func foo
+ * -#step3: 实例化泛型class Data<Int32>，调用函数foo入参为int32类型
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

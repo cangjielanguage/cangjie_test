@@ -1,0 +1,27 @@
+// DEPENDENCE: ../src ../cfg-ast
+// EXEC: %compiler %cmp_opt -c src/pkgs/pkgs.cj -o pkgs.%middle && %copycharjs src/pkgs/
+// EXEC: %compiler %cmp_opt %f   pkgs.%middle -o %output
+// EXEC: %run %run_opt %output %run_args
+
+import pkgs.TimeUnit
+
+func run(): Int64 {
+    let time = TimeUnit.Year(4)
+    let month = Month(4)
+    var res1 = match (time) {
+        case Year(x) => 2020
+        case Month(x) => 9
+    }
+    var res2 = match (month) {
+        case Year(x) => 2020
+        case Month(x) => 9
+    }
+    if (res1 == 2020 && res2 == 9) {
+        return 0
+    }
+    return 1
+}
+
+func main(): Int64 {
+    return run()
+}

@@ -1,0 +1,17 @@
+/*
+ * -@TestCaseID: invoke_nothis_03.cj
+ * -@TestCaseName: invoke_nothis_03.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-Lang-1023-24
+ * -@RequirementName: 泛型class类的实例成员函数返回类型无This类型声明
+ * -@Condition: no
+ * -@Brief: 在main中调用泛型class类中返回类型未声明，返回this的实例成员函数
+ * -#step1: 在泛型class类中 定义的泛型实例成员函数的返回类型未声明，返回this
+ * -#step2: 在main函数中调用step1的实例成员函数
+ * -@Expect: 编译成功，执行成功
+ * -@Priority: level0
+ * -@SpecVersion: spec0.22.4
+ * -@SpecChapter: 6.1.4 This类型 
+ * -@SpecDetail: 如果实例成员函数没有声明返回类型，并且只存在返回 This 类型表达式时，当前函数的返回类型会推断为 This。
+ * -@catalog: # 类和接口## 类### This 类型--6
+ */

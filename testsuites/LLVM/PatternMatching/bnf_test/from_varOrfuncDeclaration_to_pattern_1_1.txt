@@ -1,0 +1,21 @@
+
+ /*
+ * -@TestCaseID: xxx
+ * -@TestCaseName: xxx
+ * -@TestCaseType: Function Test
+ * -@RequirementID: RequirementID
+ * -@RequirementName: pattern
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Test <pattern> in <varOrfuncDeclaration> case (use functionDefinition):
+Origin BNF is 
+    :  functionDefinition
+    | variableDeclaration
+    
+Test   BNF is 
+    :  <<TARGET=functionDefinition->pattern>>
+    | variableDeclaration
+     
+。
+ * -@Expect: see case.
+ * -@Priority: level0
+ */

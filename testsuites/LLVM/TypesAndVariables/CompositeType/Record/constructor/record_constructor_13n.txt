@@ -1,0 +1,14 @@
+/*
+ * -@TestCaseID: record_constructor_13n.cj
+ * -@TestCaseName: record_constructor_13n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-24
+ * -@RequirementName: Record支持初始化函数
+ * -@Condition: no
+ * -@Brief: 测试在record体有两个未初始化label，自定义无参init中为label赋值的情况下，调用小于label数的构造器
+ * -#step1: 在record体中定义两个label
+ * -#step2: 在record体中定义一个无参构造器，为label赋值
+ * -#step3: 构造实例时调用单个参数的构造器
+ * -@Expect: 编译报错，没有该构造器
+ * -@Priority: High
+ */

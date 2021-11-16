@@ -1,0 +1,12 @@
+/*
+ * -@TestCaseID: Dir_1_3_exist01
+ * -@TestCaseName: Dir_1_3_exist01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR.SR.IREQ02468831.003.001
+ * -@RequirementName: Directory
+ * -@Condition: cj, clang, maple test framework and python3.
+ * -@Brief: exist(path),path为不存在的路径
+ * -@Expect: 正确执行
+ * -@Priority: level 1
+ */
+    

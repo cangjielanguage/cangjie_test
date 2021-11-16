@@ -1,0 +1,4 @@
+lldb,lldb 023_debug_stop,023_debug_stop
+b,b 6,023_debug_stop.cj:6
+r,r,-> 6
+n,n,-> 7

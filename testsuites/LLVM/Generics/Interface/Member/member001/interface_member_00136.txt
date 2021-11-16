@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Generics_Interface_Member_00136
+ * -@TestCaseName: interface_member_00136.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-03
+ * -@RequirementName: Generics Function
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define generic static function inside generic interface use same type variable.
+ * -@Expect: Compile success, return 0.
+ * -@Priority: level0
+ */

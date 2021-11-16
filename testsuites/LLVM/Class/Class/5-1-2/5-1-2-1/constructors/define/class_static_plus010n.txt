@@ -1,0 +1,13 @@
+/*
+* -@TestCaseID: class_this_plus010n.cj
+* -@TestCaseName: class_this_plus010n.cj
+* -@TestCaseType:功能测试
+* -@RequirementID:AR-SR-ARKLANG-1003-01
+* -@RequirementName:支持类和对象，支持构造和析构、函数、属性、嵌套类、接口、继承、覆盖、重载。
+* -@Conditon:无
+* -@Brief: static变量定义时未初始化，在init中初始化
+* -#step1: static变量定义时未初始化，在init中初始化
+* -#step2: 检查编译报错信息
+* -@Expect: 编译报错
+* -@Priority:level1
+*/

@@ -1,0 +1,16 @@
+/*
+ * -@TestCaseID: index_operator_overload_01.cj
+ * -@TestCaseName: index_operator_overload_01.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: XXXXX
+ * -@RequirementName: 三元操作符重载定义
+ * -@Condition: no
+ * -@Brief: 正确的索引操作符重载
+ * -#step1: 类内部定义数组元素的set和get重载
+ * -#step2: 实例化类，使用重载后的操作符
+ * -@Expect: 执行成功,返回0
+ * -@Priority: level0
+ * -@SpecVersion: spec0.21
+ * -@SpecChapter: 10.2 操作符重载
+ * -@SpecDetail: 索引操作符（ [] ）分为 get  let a = arr[i] 和 set  arr[i] = a 两种场景，它们通过参数及返回值的不同来区分不同的重载，两者可以分别独立重载，互不影响
+ */

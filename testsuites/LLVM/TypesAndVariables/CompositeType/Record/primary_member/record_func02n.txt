@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: record_func02n.cj
+ * -@TestCaseName: record_func02n.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-18
+ * -@RequirementName: Record实现--codegen
+ * -@Condition: no
+ * -@Brief: func中record中定义func
+ * -#step1: func中record中定义func
+ * -#step2: 检查编译执行结果
+ * -@Expect: record只能在toplevel，编译器报错
+ * -@Priority: High
+ */

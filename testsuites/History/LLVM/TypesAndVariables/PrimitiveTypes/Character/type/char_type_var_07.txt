@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: char_type_var_07.cj
+ * -@TestCaseName: char_type_var_07.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2001
+ * -@RequirementName: 支持基本类型
+ * -@Condition: no
+ * -@Brief: 测试char类型作为interface的成员变量使用
+ * -#step1: 定义一个接口，接口中定义一个char类型的成员变量
+ * -#step2: 访问接口中的成员变量
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

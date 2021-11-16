@@ -1,0 +1,11 @@
+/*
+ * -@TestCaseID: Char_Class_Interface_00421
+ * -@TestCaseName: interface00421.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: SR-ARKLANG-2004
+ * -@RequirementName: Interface
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief: Define if expression in toplevel of interface.
+ * -@Expect: Compile failed and show correct error log.
+ * -@Priority: level1
+ */

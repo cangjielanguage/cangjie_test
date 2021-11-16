@@ -1,0 +1,27 @@
+2021-11-08 02:02:52 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread004/thread00409/threadtest.cj_cangjie2llvmgc_test_cfg.log
+2021-11-08 02:02:52 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/tests/HLT/temp_dir/HLT/LLVM/Concurrency/Thread/thread004/thread00409/threadtest_cj_cangjie2llvmgc_test_cfg_1636335530
+2021-11-08 02:02:52 DEBUG execute cmd ===>>>: cjc -ulimit-error threadtest.cj -o threadtest.out
+2021-11-08 02:02:53 DEBUG return code: 0
+2021-11-08 02:02:53 DEBUG stdout : 
+
+2021-11-08 02:02:53 DEBUG stderr : 
+
+2021-11-08 02:02:53 DEBUG Run time: 0.71, remain time: 3e+02
+2021-11-08 02:02:53 DEBUG execute cmd ===>>>: export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH &&  threadtest.out  |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// threadtest.cj
+2021-11-08 02:02:53 DEBUG return code: 1
+2021-11-08 02:02:53 DEBUG stdout : 
++	compare.py input:
++	
++	compare.py input end
++	
++	Starting Compare:
++	b"It's a assert, flag: scan, pattern: result = 50005000\\n , result: False, matched at output line: 0"
++	Match End!, Compare Failed
++	b"It's a assert, flag: scan-not, pattern: Exception , result: True, matched at output line: 0"
+
+2021-11-08 02:02:53 DEBUG stderr : 
+@	Segmentation fault (core dumped)
+
+2021-11-08 02:02:53 DEBUG Run time: 0.36, remain time: 3e+02
+2021-11-08 02:02:53 ERROR Failed, return code 1 should be 0!
+ Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/Concurrency/Thread/thread004/thread00409/threadtest.cj_cangjie2llvmgc_test_cfg.log

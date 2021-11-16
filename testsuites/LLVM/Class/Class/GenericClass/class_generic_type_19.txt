@@ -1,0 +1,13 @@
+/*
+ * -@TestCaseID: class_generic_type_19.cj
+ * -@TestCaseName: class_generic_type_19.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2025-02
+ * -@RequirementName: 提供泛型class
+ * -@Condition: no
+ * -@Brief: 测试typealias的成员变量为泛型class类型
+ * -#step1: 定义一个泛型class Foo<T>，定义一个泛型class Data<T>，为Foo<T>定义一个别名Fo<T>
+ * -#step2: 实例化泛型class Data<Int32>，实例化Fo<Data<Int32>>传入类型变元为Data<Int32>
+ * -@Expect: 执行成功，返回期望结果
+ * -@Priority: High
+ */

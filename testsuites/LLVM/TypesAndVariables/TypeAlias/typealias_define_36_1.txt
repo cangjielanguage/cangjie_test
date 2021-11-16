@@ -1,0 +1,13 @@
+ /*
+ * -@TestCaseID: Char_TypesAlias_Define_36_1
+ * -@TestCaseName: typealias_define_36_1.cj
+ * -@TestCaseType: Function Test
+ * -@RequirementID: AR-SR-ARKLANG-2002-10
+ * -@RequirementName: 类型别名实现
+ * -@Conditon: cjc, clang, maple test framework and python3.
+ * -@Brief:类型别名为泛型，原类型为char
+ * #1.类型别名为泛型，原类型为char。
+ * #2.定义类型别名时原类型为T，使用类型别名时指定T为char。
+ * -@Expect: Compile/execute pass, return 0.
+ * -@Priority: High
+ */
