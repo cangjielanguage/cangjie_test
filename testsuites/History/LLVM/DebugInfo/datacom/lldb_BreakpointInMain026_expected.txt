@@ -1,5 +1,0 @@
-lldb,lldb 008_debug_func_no_arg,008_debug_func_no_arg
-b,b 6,008_debug_func_no_arg.cj:6
-r,r,-> 6
-n,n,-> 7
-cj_plocals,cj_plocals,Functioncall003 = 30

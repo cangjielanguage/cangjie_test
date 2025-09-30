@@ -1,2 +1,0 @@
-lldb,lldb 015_debug_basetype,015_debug_basetype
-target,target create 022_debug_launch,022_debug_launch

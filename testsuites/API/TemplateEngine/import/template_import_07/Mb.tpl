@@ -1,1 +1,0 @@
-#fromm stdx import math

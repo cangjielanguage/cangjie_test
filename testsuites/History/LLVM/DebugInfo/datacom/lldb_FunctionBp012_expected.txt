@@ -1,7 +1,0 @@
-lldb,lldb 014_debug_func_bp,014_debug_func_bp
-b,b funcbp001,014_debug_func_bp.cj:58
-r,r,-> 58
-b,b funcbp002,014_debug_func_bp.cj:64
-delete,breakpoint delete 2,1 breakpoints deleted
-b,b funcbp002,014_debug_func_bp.cj:64
-c,c,-> 64

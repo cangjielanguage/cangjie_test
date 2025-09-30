@@ -1,4 +1,0 @@
-lldb,lldb 014_debug_func_bp,014_debug_func_bp
-b,b funcbp011,2 locations
-r,r,-> 126
-c,c,-> 131

@@ -1,8 +1,0 @@
-lldb,lldb 009_debug_func_with_arg,009_debug_func_with_arg
-b,b 5,009_debug_func_with_arg.cj:5
-r,r,-> 5
-s,s,-> 10
-s,s,-> 11
-finish,finish,-> 5
-n,n,-> 6
-cj_plocals,cj_plocals,Functioncall005 = 2

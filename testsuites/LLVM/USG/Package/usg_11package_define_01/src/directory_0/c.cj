@@ -1,2 +1,0 @@
-package directory_0
-

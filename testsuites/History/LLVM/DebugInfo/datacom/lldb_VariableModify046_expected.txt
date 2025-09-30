@@ -1,8 +1,0 @@
-lldb,lldb 024_debug_variable,024_debug_variable
-b,b 53,024_debug_variable.cj:53
-r,r,-> 53
-cj_set,cj_set var_bool = false,false
-n,n,-> 56
-n,n,-> 61
-cj_plocals,cj_plocals,var_bool = false
-cj_plocals,cj_plocals,f_bool = 2

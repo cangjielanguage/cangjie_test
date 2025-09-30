@@ -1,7 +1,0 @@
-// EXEC: %compiler %cmp_opt %f -o %output
-// EXEC: %run %run_opt %output %run_args
-
-func main(): Int64 {
-    var i : ?Int64 = if (true){1}else {Some(2)}
-    return 0
-}

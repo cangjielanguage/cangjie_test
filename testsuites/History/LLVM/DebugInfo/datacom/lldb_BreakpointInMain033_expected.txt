@@ -1,8 +1,0 @@
-lldb,lldb 019_debug_expressions,019_debug_expressions
-b,b 6,019_debug_expressions.cj:6
-b,b 7,019_debug_expressions.cj:7
-r,r,-> 6
-c,c,-> 7
-cj_plocals,cj_plocals,owni = 6
-n,n,-> 10
-cj_plocals,cj_plocals,owni = 5

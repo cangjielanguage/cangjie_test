@@ -1,3 +1,0 @@
-lldb,lldb 014_debug_func_bp,014_debug_func_bp
-b,b funcbp003,014_debug_func_bp.cj:70
-r,r,-> 70

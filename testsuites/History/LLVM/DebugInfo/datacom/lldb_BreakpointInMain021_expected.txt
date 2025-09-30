@@ -1,9 +1,0 @@
-lldb,lldb 016_debug_return,016_debug_return
-b,b 5,016_debug_return.cj:5
-b,b 14,016_debug_return.cj:14
-b,b 16,016_debug_return.cj:16
-r,r,-> 5
-c,c,-> 16
-n,n,-> 5
-n,n,-> 7
-cj_plocals,cj_plocals,varreturnexpr = 20

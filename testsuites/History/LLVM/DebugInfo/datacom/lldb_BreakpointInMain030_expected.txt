@@ -1,5 +1,0 @@
-lldb,lldb 010_debug_func_default_arg,010_debug_func_default_arg
-b,b 5,010_debug_func_default_arg.cj:5
-r,r,-> 5
-n,n,-> 6
-cj_plocals,cj_plocals,Functioncall007 = 3

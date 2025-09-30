@@ -1,9 +1,0 @@
-{
-    "charc_version": "0.14",
-    "name": "cangjie/test",
-    "description": "nothing here",
-    "version": "1.0.0",
-    "requires": {},
-    "library_type": "static",
-    "command_option": "-c"
-}

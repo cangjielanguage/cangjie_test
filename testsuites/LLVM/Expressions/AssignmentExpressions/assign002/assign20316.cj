@@ -1,9 +1,0 @@
-// EXEC: %compiler %cmp_opt %f -o %output 2>&1 | compare %f
-// ASSERT: regex-not core dumped
-// ASSERT: regex-not stack trace
-
-func main(): Int64 {
-    var r : Array<Int32> = {2}
-    {1} = r // EXPECTED: regex illegal left value
-    return 0
-}

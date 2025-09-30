@@ -1,1 +1,0 @@
-#var age:Int8=9 #// this a var

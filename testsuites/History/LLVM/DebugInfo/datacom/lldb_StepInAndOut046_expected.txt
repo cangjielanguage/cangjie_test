@@ -1,8 +1,0 @@
-lldb,lldb 036_debuginfun_func_recursion,036_debuginfun_func_recursion
-b,b 8,036_debuginfun_func_recursion.cj:8
-r,r,-> 8
-s,s,-> 13
-n,n,-> 16
-finish,finish,-> 8
-n,n,-> 9
-cj_plocals,cj_plocals,Functioncall009 = 15

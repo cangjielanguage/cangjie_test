@@ -1,9 +1,0 @@
-{
-  "foreign_module": {
-    "libusg_ffi_23.1CallCTest.so": {
-      "path": "./",
-      "export": ["CallByCangjie"]
-    }
-  }
-}
-

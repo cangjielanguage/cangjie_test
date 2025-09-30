@@ -1,7 +1,0 @@
-lldb,lldb 024_debug_variable,024_debug_variable
-b,b 67,024_debug_variable.cj:67
-r,r,-> 67
-cj_set,cj_set var_let = 2,2
-n,n,-> 70
-cj_plocals,cj_plocals,var_let = 2
-cj_plocals,cj_plocals,f_let = 10

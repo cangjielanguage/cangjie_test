@@ -1,2 +1,0 @@
-2021-11-08 02:03:04 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMod_para_check_001/JsMod_para_check_001.cj_cangjie2llvmgc_test_cfg.log
-2021-11-08 02:03:04 ERROR Run task exit unexpected : DEPENDENCE keyword error, file: momentModule.js NotFound, Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/HLT/LLVM/JS_FFI/07_jsMod_jsMem/JsMod_para_check_001/JsMod_para_check_001.cj_cangjie2llvmgc_test_cfg.log

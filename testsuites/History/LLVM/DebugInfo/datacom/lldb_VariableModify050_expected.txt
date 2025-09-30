@@ -1,7 +1,0 @@
-lldb,lldb 024_debug_variable,024_debug_variable
-b,b 62,024_debug_variable.cj:62
-r,r,-> 62
-cj_set,cj_set var_char = a,error
-n,n,-> 66
-cj_plocals,cj_plocals,var_char = 5
-cj_plocals,cj_plocals,var_charbool = true

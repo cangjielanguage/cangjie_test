@@ -1,5 +1,0 @@
-# DTS2021102718971
-# The following test cases work on X86_64 platform but fail on AArch64 platform currently
-
-# If your test cases don't work on x86_64 either, don't add your test cases here,
-# you just need to place your test cases in the corresponding testlist file.

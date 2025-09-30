@@ -1,5 +1,0 @@
-lldb,lldb 042_debuginfun_expressions,042_debuginfun_expressions
-b,b 14,042_debuginfun_expressions.cj:14
-r,r,-> 14
-n,n,-> 25
-cj_plocals,cj_plocals,count = 11

@@ -1,2 +1,0 @@
-extend     func     (=  this
-}

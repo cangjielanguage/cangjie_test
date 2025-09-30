@@ -1,3 +1,0 @@
-lldb,lldb 038_debuginfun_basetype,038_debuginfun_basetype
-b,b 32,038_debuginfun_basetype.cj:33
-r,r,-> 33

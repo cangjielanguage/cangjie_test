@@ -1,9 +1,0 @@
-{
-  "foreign_module": {
-    "libthreadtest.so": {
-      "path": "./",
-      "export": ["testfunc"]
-    }
-  }
-}
-

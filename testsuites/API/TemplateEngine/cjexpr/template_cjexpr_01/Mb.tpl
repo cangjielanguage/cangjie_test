@@ -1,5 +1,0 @@
-#{
-  doSomething {
-    print("hello")
-  }
-}

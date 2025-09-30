@@ -1,7 +1,0 @@
-lldb,lldb 024_debug_variable,024_debug_variable
-b,b 35,024_debug_variable.cj:35
-r,r,-> 35
-cj_set,cj_set var_uint64 = 18446744073709551616,error
-n,n,-> 39
-cj_plocals,cj_plocals,var_uint64 = 1
-cj_plocals,cj_plocals,f_uint64 = 9

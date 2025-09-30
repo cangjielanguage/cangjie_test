@@ -1,7 +1,0 @@
-lldb,lldb pkgs006,pkgs006
-b,b 27,pkgs006.cj:27
-r,r,-> 27
-s,s,-> 7
-finish,finish,-> 27
-n,n,-> 28
-cj_plocals,cj_plocals,Functioncall102 = 2

@@ -1,7 +1,0 @@
-lldb,lldb 020_debug_notsetbp,020_debug_notsetbp
-b,b 19,020_debug_notsetbp.cj:19
-b,b 20,020_debug_notsetbp.cj:24
-b,b 21,020_debug_notsetbp.cj:24
-b,b 22,020_debug_notsetbp.cj:24
-r,r,-> 19
-c,c,-> 24

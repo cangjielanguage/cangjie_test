@@ -1,7 +1,0 @@
-lldb,lldb 042_debuginfun_expressions,042_debuginfun_expressions
-b,b 25,042_debuginfun_expressions.cj:25
-b,b 26,042_debuginfun_expressions.cj:26
-r,r,-> 25
-c,c,-> 26
-n,n,-> 29
-cj_plocals,cj_plocals,weiq = -120

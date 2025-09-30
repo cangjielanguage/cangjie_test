@@ -1,5 +1,0 @@
-lldb,lldb 032_debuginfun_func_no_arg,032_debuginfun_func_no_arg
-b,b 10,032_debuginfun_func_no_arg.cj:10
-r,r,-> 10
-n,n,-> 11
-cj_plocals,cj_plocals,Functioncall003 = 30

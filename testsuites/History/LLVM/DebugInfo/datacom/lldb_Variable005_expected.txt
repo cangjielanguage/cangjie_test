@@ -1,6 +1,0 @@
-lldb,lldb 015_debug_basetype,015_debug_basetype
-b,b 5,015_debug_basetype.cj:5
-r,r,-> 5
-s,s,-> 6
-cj_plocals,cj_plocals,var1 = -128
-cj_plocals,cj_plocals,var2 = 127

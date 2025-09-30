@@ -1,6 +1,0 @@
-lldb,lldb 042_debuginfun_expressions,042_debuginfun_expressions
-b,b 14,042_debuginfun_expressions.cj:14
-r,r,-> 14
-s,s,-> 25
-rerun,r,-> 14
-finish,finish,stopped

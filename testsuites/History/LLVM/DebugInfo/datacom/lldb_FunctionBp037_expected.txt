@@ -1,7 +1,0 @@
-lldb,lldb pkgs001,pkgs001
-b,b funpkg1001,2 locations.
-list,breakpoint list,pkgs001.cj:12
-list,breakpoint list,pkg1.cj:8
-r,r,-> 8
-c,c,-> 8
-c,c,-> 12

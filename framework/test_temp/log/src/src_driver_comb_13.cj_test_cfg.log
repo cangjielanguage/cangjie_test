@@ -1,3 +1,0 @@
-2021-10-28 07:02:12 DEBUG Log file at: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/log/src/src_driver_comb_13.cj_test_cfg.log
-2021-10-28 07:02:12 DEBUG Work directory: /home/zhujunhua/workspace/cangjie/utils/test-framework/test_temp/run/src/src_driver_comb_13_cj_test_cfg_1635404532
-2021-10-28 07:02:12 DEBUG execute cmd ===>>>: cjc -module driver_module_01/ -v -o ./ 2>&1 |  /usr/bin/python3 /home/zhujunhua/workspace/cangjie/utils/test-framework/maple_test/compare.py --comment=// driver_comb_13.cj

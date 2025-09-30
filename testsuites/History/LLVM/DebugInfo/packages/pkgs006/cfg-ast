@@ -1,8 +1,0 @@
-pkgs1=pkgs1.cjo
-pkgs2=pkgs2.cjo
-pkgs101=pkgs1.pkgs101.cjo
-pkgs102=pkgs1.pkgs101.pkgs102.cjo
-pkgs103=pkgs1.pkgs101.pkgs102.pkgs103.cjo
-pkgs104=pkgs1.pkgs101.pkgs102.pkgs103.pkgs104.cjo
-pkgs105=pkgs1.pkgs101.pkgs102.pkgs103.pkgs104.pkgs105.cjo
-

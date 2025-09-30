@@ -1,7 +1,0 @@
-package test;
-
-public class InteropTest2 {
-    public void test(int num) {
-        System.out.println(num);
-    }
-}

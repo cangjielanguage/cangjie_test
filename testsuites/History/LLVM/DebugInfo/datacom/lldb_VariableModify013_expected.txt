@@ -1,7 +1,0 @@
-lldb,lldb 024_debug_variable,024_debug_variable
-b,b 15,024_debug_variable.cj:15
-r,r,-> 15
-cj_set,cj_set var_int32 = ,error
-n,n,-> 18
-cj_plocals,cj_plocals,var_int32 = 1
-cj_plocals,cj_plocals,f_int32 = 5

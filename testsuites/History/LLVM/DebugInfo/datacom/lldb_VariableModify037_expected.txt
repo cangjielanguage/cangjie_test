@@ -1,7 +1,0 @@
-lldb,lldb 024_debug_variable,024_debug_variable
-b,b 40,024_debug_variable.cj:40
-r,r,-> 40
-cj_set,cj_set var_float16 = ,error
-n,n,-> 43
-cj_plocals,cj_plocals,var_float16 = 1
-cj_plocals,cj_plocals,f_float16 = 9

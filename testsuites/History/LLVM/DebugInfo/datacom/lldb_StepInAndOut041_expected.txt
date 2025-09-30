@@ -1,7 +1,0 @@
-lldb,lldb 033_debuginfun_func_with_arg,033_debuginfun_func_with_arg
-b,b 8,033_debuginfun_func_with_arg.cj:8
-r,r,-> 8
-s,s,-> 21
-finish,finish,-> 8
-n,n,-> 9
-cj_plocals,cj_plocals,Functioncall004 = 2

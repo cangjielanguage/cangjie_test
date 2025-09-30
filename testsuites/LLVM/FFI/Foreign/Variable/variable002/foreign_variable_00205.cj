@@ -1,9 +1,0 @@
-// EXEC:%compiler %frontend -c %typecheck %cmp_opt %f
-
-foreign let a : Int32
-foreign var b : Int32 = 1
-
-foreign{
-    var c : Int32
-    let d : Int32 = 1
-}

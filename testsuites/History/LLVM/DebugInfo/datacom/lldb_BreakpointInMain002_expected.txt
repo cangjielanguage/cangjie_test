@@ -1,4 +1,0 @@
-lldb,lldb 022_debug_launch,022_debug_launch
-b,b 4,022_debug_launch.cj:4
-bdelete,breakpoint delete 1,breakpoints deleted
-r,r,exited with status

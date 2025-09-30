@@ -1,7 +1,0 @@
-lldb,lldb 038_debuginfun_basetype,038_debuginfun_basetype
-b,b 28,038_debuginfun_basetype.cj:28
-r,r,-> 28
-s,s,-> 33
-cj_plocals,cj_plocals,var18 = 9
-rerun,r,-> 28
-finish,finish,stopped

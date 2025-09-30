@@ -1,8 +1,0 @@
-// EXEC: %compiler %stdx_cmp_opt %f -o %output 2>&1 | compare %f
-
-from std import convert.*
-
-func main():Int64 {
-    fromBase64String("W\")  // EXPECTED: regex string literal is missing '\"' in the end
-    return 0
-}

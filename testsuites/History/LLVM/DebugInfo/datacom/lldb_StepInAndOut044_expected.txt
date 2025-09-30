@@ -1,7 +1,0 @@
-lldb,lldb 034_debuginfun_func_default_arg,034_debuginfun_func_default_arg
-b,b 9,034_debuginfun_func_default_arg.cj:9
-r,r,-> 9
-s,s,-> 15
-finish,finish,-> 9
-n,n,-> 10
-cj_plocals,cj_plocals,Functioncall007 = 3

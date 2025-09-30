@@ -1,7 +1,0 @@
-lldb,lldb 024_debug_variable,024_debug_variable
-b,b 23,024_debug_variable.cj:23
-r,r,-> 23
-cj_set,cj_set var_uint8 = "aaa",error
-n,n,-> 26
-cj_plocals,cj_plocals,var_uint8 = 1
-cj_plocals,cj_plocals,f_uint8 = 9
