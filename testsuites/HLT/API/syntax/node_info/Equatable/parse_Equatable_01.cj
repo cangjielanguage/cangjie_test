@@ -8,12 +8,12 @@
 
 // LEVEL: 0
 // DEPENDENCE: Equatable_01.cj
-// (CJNATIVE and not OHOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args 
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args 
 
 import stdx.syntax.*
 
-// 节点的内�&源文�&解析方式完全相同
+// 节点的内�&源文�&解析方式完全相同
 @Test
 class test_01{
     @TestCase

@@ -8,14 +8,14 @@
 
 // LEVEL: 1
 // DEPENDENCE: dir001
-// (CJNATIVE and not OHOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS) RUN-EXEC-PIPE: %run_stdx %output %run_utest_opt %run_args | compare %f
-// (CJNATIVE and not OHOS) ASSERT: scan possibly confusing line terminator
-// (CJNATIVE and not OHOS) ASSERT: scan let a1 = 1
-// (CJNATIVE and not OHOS) ASSERT: scan let a2 =  + a1
-// (CJNATIVE and not OHOS) ASSERT: scan [11, 12, 11, 13]
-// (CJNATIVE and not OHOS) ASSERT: scan [14, 6, 14, 7]
-// (CJNATIVE and not OHOS) ASSERT: scan [11, 11, 11, 12]
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC-PIPE: %run_stdx %output %run_utest_opt %run_args | compare %f
+// ASSERT: scan possibly confusing line terminator
+// ASSERT: scan let a1 = 1
+// ASSERT: scan let a2 =  + a1
+// ASSERT: scan [11, 12, 11, 13]
+// ASSERT: scan [14, 6, 14, 7]
+// ASSERT: scan [11, 11, 11, 12]
 
 import stdx.syntax.*
 

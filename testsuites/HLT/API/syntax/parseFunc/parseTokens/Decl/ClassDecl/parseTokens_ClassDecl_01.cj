@@ -7,12 +7,12 @@
  */
 
 // LEVEL: 0
-// (CJNATIVE and not OHOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
-let _quote = quote(@Deprecated["仓�"]
+let _quote = quote(@Deprecated["仓�"]
 public class S1<T> <: I1<T> where T <: ToString{
     public let s1: Int64 = 0
     prop p1: Int64 {
@@ -32,7 +32,7 @@ func test_ClassDecl_01() {
     let sourceNode: SyntaxTreeNode = res.node.getOrThrow()
     var classDecl: ClassDecl = (sourceNode as ClassDecl).getOrThrow()
     
-    @Assert(classDecl.toString(), ##"@Deprecated["仓�"]
+    @Assert(classDecl.toString(), ##"@Deprecated["仓�"]
 public class S1 < T > <: I1 < T > where T <: ToString {
     public let s1: Int64 = 0
     prop p1: Int64 {
@@ -65,7 +65,7 @@ public class S1 < T > <: I1 < T > where T <: ToString {
     @Assert(classDecl.superTyAnnotations.size, 1)
     @Assert(classDecl.superTyAnnotations[0].toString(), "I1 < T >")
     @Assert(classDecl.annotations.size, 1)
-    @Assert(classDecl.annotations[0].toString(), ##"@Deprecated["仓�"]"##)
+    @Assert(classDecl.annotations[0].toString(), ##"@Deprecated["仓�"]"##)
 
     @Assert(classDecl.nodePos.beginLine, 1)
     @Assert(classDecl.nodePos.beginColumn, 1)

@@ -8,12 +8,12 @@
 
 // LEVEL: 0
 // DEPENDENCE: Lambda_01.cj
-// (not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
-// ; 暂不��
+// ; 暂不��
 @Test
 class test_01{
     @TestCase

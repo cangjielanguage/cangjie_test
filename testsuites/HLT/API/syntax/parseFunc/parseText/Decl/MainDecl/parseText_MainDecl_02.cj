@@ -7,10 +7,10 @@
  */
 
 // LEVEL: 1
-// (CJNATIVE and not OHOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
-// 根据spec不应当支持unsafe maindecl，当前支�
+// 根据spec不应当支持unsafe maindecl，当前支�
 import stdx.syntax.*
 
 @Test

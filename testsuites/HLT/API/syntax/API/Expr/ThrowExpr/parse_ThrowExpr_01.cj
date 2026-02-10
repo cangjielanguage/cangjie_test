@@ -8,8 +8,8 @@
 
 // LEVEL: 1
 // DEPENDENCE: ThrowExpr_01.cj
-// (CJNATIVE and not OHOS and not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS and not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
@@ -25,7 +25,7 @@ func test_ThrowExpr_01() {
     @Assert(sourcefile.toString().contains(##"main() {
     throw Exception()
     throw IOException("")
-    throw IOException("hello, 仓�")
+    throw IOException("hello, 仓�")
 }"##))
 
     var mainDecl: MainDecl = (sourcefile.topLevelDecls[0] as MainDecl).getOrThrow()
@@ -38,8 +38,8 @@ func test_ThrowExpr_01() {
     @Assert(expr_2.throwVal.toString(), ##"IOException("")"##)
 
     var expr_3: ThrowExpr = (mainDecl.body.nodes[2] as ThrowExpr).getOrThrow()
-    @Assert(expr_3.toString(), ##"throw IOException("hello, 仓�")"##)
-    @Assert(expr_3.throwVal.toString(), ##"IOException("hello, 仓�")"##)
+    @Assert(expr_3.toString(), ##"throw IOException("hello, 仓�")"##)
+    @Assert(expr_3.throwVal.toString(), ##"IOException("hello, 仓�")"##)
 
     var pos = expr_1.getThrowKeyWordPos()
     @Assert([pos.beginLine, pos.beginColumn, pos.endLine, pos.endColumn], [10i32, 5i32, 10i32, 10i32])

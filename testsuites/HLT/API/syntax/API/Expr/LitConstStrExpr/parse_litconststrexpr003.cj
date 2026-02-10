@@ -8,8 +8,8 @@
 
 // LEVEL: 2
 // DEPENDENCE: litconststrexpr003.cj
-// (not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
@@ -38,7 +38,7 @@ func test_litconststrexpr_003() {
         case LitConstKind.StringLiteral => ()
         case _ => @Assert(false)
     }
-    //delimiterNum 前后成�出现的 # 分隔符数此时应�是0
+    //delimiterNum 前后成�出现的 # 分隔符数此时应�是0
     @Assert(litconststrexpr.delimiterNum, 0)
     //isSingleQuote
     @Assert(litconststrexpr.isSingleQuote,false)

@@ -8,8 +8,8 @@
 
 // LEVEL: 1
 // DEPENDENCE: dir001
-// (CJNATIVE and not OHOS and not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS and not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import std.fs.*
 import stdx.syntax.*
@@ -18,7 +18,7 @@ import stdx.syntax.*
 class test_01{
     @TestCase
 func test_dirpath_004() {
-    let path_str = "./aaaaa/bbbbb/cccccc/dddddd/eeee/ffffff/ddddddd/ffffff/dddddd/ffffff/ddddd/仓�/aaaa/dddd/"
+    let path_str = "./aaaaa/bbbbb/cccccc/dddddd/eeee/ffffff/ddddddd/ffffff/dddddd/ffffff/ddddd/仓�/aaaa/dddd/"
     Directory.create(path_str, recursive: true)
     rename("./dir001", to: path_str, overwrite: true)
     let res = parsePackage(path_str)
