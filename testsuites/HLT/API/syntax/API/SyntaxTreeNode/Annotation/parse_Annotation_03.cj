@@ -11,7 +11,6 @@
 // EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
 // RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
-// 当前前�缺少信息
 import stdx.syntax.*
 
 @Test

@@ -38,7 +38,7 @@ func test_litconststrexpr_003() {
         case LitConstKind.StringLiteral => ()
         case _ => @Assert(false)
     }
-    //delimiterNum 前后成�出现的 # 分隔符数此时应�是0
+    //delimiterNum
     @Assert(litconststrexpr.delimiterNum, 0)
     //isSingleQuote
     @Assert(litconststrexpr.isSingleQuote,false)
