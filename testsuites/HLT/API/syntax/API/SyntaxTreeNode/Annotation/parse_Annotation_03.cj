@@ -21,7 +21,7 @@ func test_Annotation_03() {
 
     let sourcefile: SourceFile = res.node.getOrThrow()
     sourcefile.toString() |> println
-    @Expect(sourcefile.toString().contains(##"@Attribute[State] var cnt = 0
+    @Expect(sourcefile.toString().replace("\r","").contains(##"@Attribute[State] var cnt = 0
 @Attribute["Binding"] var bcnt = 0"##))
 
     var decl_1: VarDecl = (sourcefile.topLevelDecls[0] as VarDecl).getOrThrow()

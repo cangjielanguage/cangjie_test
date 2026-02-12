@@ -19,13 +19,13 @@ class test_01{
 func test_Body_01() {
     let res = parseFile("./body_01.cj")
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Assert(sourcefile.toString().contains(##"class C1 {
+    @Assert(sourcefile.toString().replace("\r","").contains(##"class C1 {
     let a: Int64 = 1
 }"##))
 
     var classdecl = (sourcefile.topLevelDecls[0] as ClassDecl).getOrThrow()
     @Assert(classdecl.body.memberDecls.size, 1)
-    @Assert(classdecl.body.toString(), ##"{
+    @Assert(classdecl.body.toString().replace("\r",""), ##"{
     let a: Int64 = 1
 }"##)
 

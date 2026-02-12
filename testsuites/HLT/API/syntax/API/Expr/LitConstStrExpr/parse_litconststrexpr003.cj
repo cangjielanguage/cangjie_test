@@ -22,7 +22,7 @@ func test_litconststrexpr_003() {
     @Assert(diags.size, 0)
 
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Assert(sourcefile.toString().contains("\"\"\"\nhello\"\"\""))
+    @Assert(sourcefile.toString().replace("\r","").contains("\"\"\"\nhello\"\"\""))
     @Assert(sourcefile.name, "litconststrexpr003.cj")
     @Assert(sourcefile.path.contains("litconststrexpr003.cj"))
     @Assert(sourcefile.pkgHeader.isNone())
@@ -30,7 +30,7 @@ func test_litconststrexpr_003() {
     var maindecl = (sourcefile.topLevelDecls[0] as MainDecl).getOrThrow()
     var litconststrexpr = (maindecl.body.nodes[0] as LitConstStrExpr).getOrThrow()
     //toString()
-    @Assert(litconststrexpr.toString(), "\"\"\"\nhello\"\"\"")
+    @Assert(litconststrexpr.toString().replace("\r",""), "\"\"\"\nhello\"\"\"")
     //rawValue
     @Assert(litconststrexpr.rawValue,"hello")
     //kind

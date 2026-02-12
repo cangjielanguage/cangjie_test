@@ -22,7 +22,7 @@ func test_ThrowExpr_01() {
     @Assert(diags.size, 0)
 
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Assert(sourcefile.toString().contains(##"main() {
+    @Assert(sourcefile.toString().replace("\r","").contains(##"main() {
     throw Exception()
     throw IOException("")
     throw IOException("hello, cangjie")

@@ -20,7 +20,7 @@ func test_Annotation_01() {
     let res = parseFile("./Annotation_01.cj")
 
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Expect(sourcefile.toString().contains(##"@Deprecated ["abc"] var a = 1
+    @Expect(sourcefile.toString().replace("\r","").contains(##"@Deprecated ["abc"] var a = 1
 @Deprecated ["abccangjie", strict : false] var a = 2"##))
 
     var decl_1: VarDecl = (sourcefile.topLevelDecls[0] as VarDecl).getOrThrow()

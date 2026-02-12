@@ -22,7 +22,7 @@ func test_ClassDecl_01() {
     @Assert(diags.size, 0)
 
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Assert(sourcefile.toString().contains(##"@Deprecated["cangjie"]
+    @Assert(sourcefile.toString().replace("\r","").contains(##"@Deprecated["cangjie"]
 public class S1<T> <: I1<T> where T <: ToString{
     public let s1: Int64 = 0
     prop p1: Int64 {
@@ -41,7 +41,7 @@ public class S1<T> <: I1<T> where T <: ToString{
     @Assert(sourcefile.nodePos.filePath.contains("ClassDecl_01.cj"))
 
     var classDecl: ClassDecl = (sourcefile.topLevelDecls[0] as ClassDecl).getOrThrow()
-    @Assert(classDecl.toString(), ##"@Deprecated["cangjie"]
+    @Assert(classDecl.toString().replace("\r",""), ##"@Deprecated["cangjie"]
 public class S1<T> <: I1<T> where T <: ToString{
     public let s1: Int64 = 0
     prop p1: Int64 {
@@ -53,7 +53,7 @@ public class S1<T> <: I1<T> where T <: ToString{
     }
 }"##)
 
-    @Assert(classDecl.toTokens().toString(), ##"@Deprecated["cangjie"]
+    @Assert(classDecl.toTokens().toString().replace("\r",""), ##"@Deprecated["cangjie"]
 public class S1 < T > <: I1 < T > where T <: ToString {
     public let s1: Int64 = 0
     prop p1: Int64 {
@@ -68,13 +68,13 @@ public class S1 < T > <: I1 < T > where T <: ToString {
     @Assert(classDecl.body.memberDecls[0] is VarDecl)
     @Assert(classDecl.body.memberDecls[0].toString(), ##"public let s1: Int64 = 0"##)
     @Assert(classDecl.body.memberDecls[1] is PropDecl)
-    @Assert(classDecl.body.memberDecls[1].toString(), ##"prop p1: Int64 {
+    @Assert(classDecl.body.memberDecls[1].toString().replace("\r",""), ##"prop p1: Int64 {
         get() { 0 }
     }"##)
     @Assert(classDecl.body.memberDecls[2] is FuncDecl)
     @Assert(classDecl.body.memberDecls[2].toString(), ##"public init() {}"##)
     @Assert(classDecl.body.memberDecls[3] is FuncDecl)
-    @Assert(classDecl.body.memberDecls[3].toString(), ##"func foo(a: T): T {
+    @Assert(classDecl.body.memberDecls[3].toString().replace("\r",""), ##"func foo(a: T): T {
         return a
     }"##)
 
