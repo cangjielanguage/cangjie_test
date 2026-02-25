@@ -8,12 +8,11 @@
 
 // LEVEL: 0
 // DEPENDENCE: Lambda_01.cj
-// (not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
-// ; æš‚ä¸æ”æŒ
 @Test
 class test_01{
     @TestCase
@@ -23,7 +22,7 @@ func test_Lambda_01() {
     @Assert(diags.size, 0)
 
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Expect(sourcefile.toString().contains(##"main() {
+    @Expect(sourcefile.toString().replace("\r","").contains(##"main() {
     { => }
     { a: Int64 => a}
     { a: Int64, b: Int64 => a + b + 1}
@@ -82,7 +81,7 @@ func test_Lambda_01() {
     @Assert(expr_6.params.params[0].toString(), "_")
 
     var expr_7 = (maindecl.body.nodes[6] as Lambda).getOrThrow()
-    @Assert(expr_7.toString(), ##"{ =>
+    @Assert(expr_7.toString().replace("\r",""), ##"{ =>
         100
         1+1
         a + b1

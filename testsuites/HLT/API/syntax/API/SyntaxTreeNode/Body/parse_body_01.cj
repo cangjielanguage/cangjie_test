@@ -8,10 +8,9 @@
 
 // LEVEL: 0
 // DEPENDENCE: body_01.cj
-// (CJNATIVE and not OHOS and not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS and not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
-// 其他在Class 类型� Struct 类型� Interface 类型以及扩展�验证
 import stdx.syntax.*
 
 @Test
@@ -20,13 +19,13 @@ class test_01{
 func test_Body_01() {
     let res = parseFile("./body_01.cj")
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Assert(sourcefile.toString().contains(##"class C1 {
+    @Assert(sourcefile.toString().replace("\r","").contains(##"class C1 {
     let a: Int64 = 1
 }"##))
 
     var classdecl = (sourcefile.topLevelDecls[0] as ClassDecl).getOrThrow()
     @Assert(classdecl.body.memberDecls.size, 1)
-    @Assert(classdecl.body.toString(), ##"{
+    @Assert(classdecl.body.toString().replace("\r",""), ##"{
     let a: Int64 = 1
 }"##)
 

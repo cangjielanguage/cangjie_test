@@ -8,8 +8,8 @@
 
 // LEVEL: 2
 // DEPENDENCE: Illegal_Comment_01.cj, Illegal_Comment_02.cj, Illegal_Comment_03.cj, Illegal_Comment_04.cj, Illegal_Comment_05.cj
-// (CJNATIVE and not OHOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 

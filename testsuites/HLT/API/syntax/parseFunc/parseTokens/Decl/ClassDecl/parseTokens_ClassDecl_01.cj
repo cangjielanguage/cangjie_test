@@ -7,12 +7,12 @@
  */
 
 // LEVEL: 0
-// (CJNATIVE and not OHOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
-let _quote = quote(@Deprecated["ไป“้"]
+let _quote = quote(@Deprecated["cangjie"]
 public class S1<T> <: I1<T> where T <: ToString{
     public let s1: Int64 = 0
     prop p1: Int64 {
@@ -32,7 +32,7 @@ func test_ClassDecl_01() {
     let sourceNode: SyntaxTreeNode = res.node.getOrThrow()
     var classDecl: ClassDecl = (sourceNode as ClassDecl).getOrThrow()
     
-    @Assert(classDecl.toString(), ##"@Deprecated["ไป“้"]
+    @Assert(classDecl.toString().replace("\r",""), ##"@Deprecated["cangjie"]
 public class S1 < T > <: I1 < T > where T <: ToString {
     public let s1: Int64 = 0
     prop p1: Int64 {
@@ -47,13 +47,13 @@ public class S1 < T > <: I1 < T > where T <: ToString {
     @Assert(classDecl.body.memberDecls[0] is VarDecl)
     @Assert(classDecl.body.memberDecls[0].toString(), ##"public let s1: Int64 = 0"##)
     @Assert(classDecl.body.memberDecls[1] is PropDecl)
-    @Assert(classDecl.body.memberDecls[1].toString(), ##"prop p1: Int64 {
+    @Assert(classDecl.body.memberDecls[1].toString().replace("\r",""), ##"prop p1: Int64 {
         get() { 0 }
     }"##)
     @Assert(classDecl.body.memberDecls[2] is FuncDecl)
     @Assert(classDecl.body.memberDecls[2].toString(), ##"public init() { }"##)
     @Assert(classDecl.body.memberDecls[3] is FuncDecl)
-    @Assert(classDecl.body.memberDecls[3].toString(), ##"func foo(a: T): T {
+    @Assert(classDecl.body.memberDecls[3].toString().replace("\r",""), ##"func foo(a: T): T {
         return a
     }"##)
 
@@ -65,7 +65,7 @@ public class S1 < T > <: I1 < T > where T <: ToString {
     @Assert(classDecl.superTyAnnotations.size, 1)
     @Assert(classDecl.superTyAnnotations[0].toString(), "I1 < T >")
     @Assert(classDecl.annotations.size, 1)
-    @Assert(classDecl.annotations[0].toString(), ##"@Deprecated["ไป“้"]"##)
+    @Assert(classDecl.annotations[0].toString(), ##"@Deprecated["cangjie"]"##)
 
     @Assert(classDecl.nodePos.beginLine, 1)
     @Assert(classDecl.nodePos.beginColumn, 1)

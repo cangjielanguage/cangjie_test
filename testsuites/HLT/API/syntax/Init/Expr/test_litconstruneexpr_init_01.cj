@@ -7,8 +7,8 @@
  */
 
 // LEVEL: 1
-// (CJNATIVE and not OHOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
@@ -17,7 +17,7 @@ class test_01{
     @TestCase[
     pairs in [
         (LitConstKind.RuneLiteral, "a"),
-        (LitConstKind.RuneLiteral, "è¿")
+        (LitConstKind.RuneLiteral, "ï¿½")
     ],
     isSingleQuote in [
         true,

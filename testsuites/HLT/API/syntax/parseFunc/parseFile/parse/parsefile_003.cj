@@ -7,9 +7,9 @@
  */
 
 // LEVEL: 1
-// DEPENDENCE: file仓�.cj
-// (CJNATIVE and not OHOS and not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS and not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// DEPENDENCE: file仓�.cj
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
@@ -17,16 +17,16 @@ import stdx.syntax.*
 class test_01{
     @TestCase
 func test_file_003() {
-    let res = parseFile("./file仓�.cj")
+    let res = parseFile("./file仓�.cj")
     var diags = res.diags
     @Assert(diags.size, 0)
 
     let sourcefile: SourceFile = res.node.getOrThrow()
     let str = ##"macro package define"##
     @Assert(sourcefile.toString().contains(str))
-    @Assert(sourcefile.name, "file仓�.cj")
+    @Assert(sourcefile.name, "file仓�.cj")
     println(sourcefile.path)
-    @Assert(sourcefile.path.contains("file仓�.cj"))
+    @Assert(sourcefile.path.contains("file仓�.cj"))
     @Assert(sourcefile.pkgHeader.isSome())
     let pkgHeader = sourcefile.pkgHeader.getOrThrow()
     @Assert(pkgHeader.accessModifier.isNone())

@@ -8,8 +8,8 @@
 
 // LEVEL: 2
 // DEPENDENCE: litconststrexpr003.cj
-// (not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 import stdx.syntax.*
 
@@ -22,7 +22,7 @@ func test_litconststrexpr_003() {
     @Assert(diags.size, 0)
 
     let sourcefile: SourceFile = res.node.getOrThrow()
-    @Assert(sourcefile.toString().contains("\"\"\"\nhello\"\"\""))
+    @Assert(sourcefile.toString().replace("\r","").contains("\"\"\"\nhello\"\"\""))
     @Assert(sourcefile.name, "litconststrexpr003.cj")
     @Assert(sourcefile.path.contains("litconststrexpr003.cj"))
     @Assert(sourcefile.pkgHeader.isNone())
@@ -30,7 +30,7 @@ func test_litconststrexpr_003() {
     var maindecl = (sourcefile.topLevelDecls[0] as MainDecl).getOrThrow()
     var litconststrexpr = (maindecl.body.nodes[0] as LitConstStrExpr).getOrThrow()
     //toString()
-    @Assert(litconststrexpr.toString(), "\"\"\"\nhello\"\"\"")
+    @Assert(litconststrexpr.toString().replace("\r",""), "\"\"\"\nhello\"\"\"")
     //rawValue
     @Assert(litconststrexpr.rawValue,"hello")
     //kind
@@ -38,7 +38,7 @@ func test_litconststrexpr_003() {
         case LitConstKind.StringLiteral => ()
         case _ => @Assert(false)
     }
-    //delimiterNum 前后成�出现的 # 分隔符数此时应�是0
+    //delimiterNum
     @Assert(litconststrexpr.delimiterNum, 0)
     //isSingleQuote
     @Assert(litconststrexpr.isSingleQuote,false)

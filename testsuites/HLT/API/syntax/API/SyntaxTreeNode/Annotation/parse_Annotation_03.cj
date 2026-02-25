@@ -8,10 +8,9 @@
 
 // LEVEL: 1 EXCLUDE
 // DEPENDENCE: Annotation_03.cj
-// (CJNATIVE and not OHOS and not iOS) EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
-// (CJNATIVE and not OHOS and not iOS) RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
+// EXEC: %compiler %import-cangjie-stdx %cmp_opt %f -o %output %cmp_utest_opt
+// RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
-// 当前前�缺少信息
 import stdx.syntax.*
 
 @Test
@@ -22,7 +21,7 @@ func test_Annotation_03() {
 
     let sourcefile: SourceFile = res.node.getOrThrow()
     sourcefile.toString() |> println
-    @Expect(sourcefile.toString().contains(##"@Attribute[State] var cnt = 0
+    @Expect(sourcefile.toString().replace("\r","").contains(##"@Attribute[State] var cnt = 0
 @Attribute["Binding"] var bcnt = 0"##))
 
     var decl_1: VarDecl = (sourcefile.topLevelDecls[0] as VarDecl).getOrThrow()
