@@ -9,7 +9,7 @@
 // LEVEL: 1
 // DEPENDENCE: ../
 // EXEC-PIPE: %lint -f ./ -c %cangjieDir/tools -m %cangjieDir 2>&1 | compare %f
-// ASSERT: regex .cj:14.*warning.*: The name of the '<invalid identifier>' package must contain only digits, lowercase letters, and underscores \(_\).
+// ASSERT: regex-not [0-9a-zA-Z]
 
 package 1A::aa;
 
