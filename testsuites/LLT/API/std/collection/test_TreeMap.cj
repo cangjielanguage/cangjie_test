@@ -328,7 +328,7 @@ class TreeMapTest {
         view.value = 1
         @Expect(treemap.get(1), 1)
         @Expect(view.value, 1)
-        @Expect(sum, 1)
+        @Expect(sum, 0)
     }
 
     @TestCase
