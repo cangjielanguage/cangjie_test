@@ -11,6 +11,7 @@ import signal
 import subprocess
 from subprocess import check_output
 from optparse import OptionParser
+import shlex
 
 def sampling_exit(samplingfreq, subprocess):
     # Execute error-cases: with samplingfreq
@@ -23,20 +24,15 @@ def recording_launch(samplingfreq, inputfile, outputfile, run_env):
     """
     print("\n -------- cjprof record {0} {1} {2} -------- \n".format(inputfile, '-f ' + str(samplingfreq),
                                                                      '-o ' + outputfile))
+    cmd = "cjprof record {0} {1} {2}".format(inputfile, '-f ' + str(samplingfreq), '-o ' + outputfile)
+    cmd_list = shlex.split(cmd)
     if "cjnative" in run_env:
         p = subprocess.Popen(
-            "cjprof record {0} {1} {2}".format(inputfile, '-f ' + str(samplingfreq), '-o ' + outputfile),
+            cmd_list,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
-            preexec_fn=os.setsid,
-            shell=True)
-    else:
-        p = subprocess.Popen(
-            "cjprof record cj {0} {1} {2}".format(inputfile, '-f ' + str(samplingfreq), '-o ' + outputfile),
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            preexec_fn=os.setsid,
-            shell=True)
+            preexec_fn=os.setsid)
+
     # Execute error-cases: with samplingfreq
     if samplingfreq != "max": sampling_exit(samplingfreq, p)
     # clean subprocess
