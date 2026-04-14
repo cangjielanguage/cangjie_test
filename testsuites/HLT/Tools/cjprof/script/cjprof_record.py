@@ -11,6 +11,7 @@ import signal
 import subprocess
 from subprocess import check_output
 from optparse import OptionParser
+import shlex
 
 def sampling_exit(samplingfreq, subprocess):
     # Execute error-cases: with samplingfreq
@@ -28,20 +29,15 @@ def recording_launch(samplingfreq, inputfile, outputfile, run_env):
     """
     print("\n -------- cjprof record {0} {1} {2} -------- \n".format(inputfile, '-f ' + str(samplingfreq),
                                                                      '-o ' + outputfile))
+    cmd = "cjprof record {0} {1} {2}".format(inputfile, '-f ' + str(samplingfreq), '-o ' + outputfile)
+    cmd_list = shlex.split(cmd)
     if "cjnative" in run_env:
         p = subprocess.Popen(
-            "cjprof record {0} {1} {2}".format(inputfile, '-f ' + str(samplingfreq), '-o ' + outputfile),
+            cmd_list,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
-            preexec_fn=os.setsid,
-            shell=True)
-    else:
-        p = subprocess.Popen(
-            "cjprof record cj {0} {1} {2}".format(inputfile, '-f ' + str(samplingfreq), '-o ' + outputfile),
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            preexec_fn=os.setsid,
-            shell=True)
+            preexec_fn=os.setsid)
+
     # Execute error-cases: with samplingfreq
     if samplingfreq != "max": sampling_exit(samplingfreq, p)
     # clean subprocess
@@ -55,26 +51,22 @@ def recording_attach(samplingfreq, inputfile, outputfile, run_env):
     """
     if "cjnative" in run_env:
         print("\n -------- Run {} -------- \n".format(inputfile))
-        p = subprocess.Popen("./{}".format(inputfile), stdout=subprocess.PIPE,
-                             stderr=subprocess.STDOUT,
-                             shell=True)
+        cmd = "./{}".format(inputfile)
+        cmd_list = shlex.split(cmd)
+        p = subprocess.Popen(cmd_list, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         time.sleep(1)
         real_pid = subprocess.check_output(["pidof", inputfile]).split()[0].decode('utf-8')
-    else:
-        p = subprocess.Popen("cj " + inputfile, stdout=subprocess.PIPE,
-                             stderr=subprocess.STDOUT,
-                             shell=True)
-        time.sleep(1)
-        real_pid = subprocess.check_output(["pidof", "cj"]).split()[0].decode('utf-8')
+
     print("\n -------- cjprof {0} real_pid: {1} -------- \n".format(inputfile, real_pid))
     print("\n -------- cjprof record {0} {1} {2}-------- \n".format('-f ' + str(samplingfreq), '-o ' + outputfile,
                                                                     '-p ' + real_pid))
+    cmd = "cjprof record {0} {1} {2}".format('-f ' + str(samplingfreq), '-o ' + outputfile, '-p ' + real_pid)
+    cmd_list = shlex.split(cmd)
     p_record = subprocess.Popen(
-        "cjprof record {0} {1} {2}".format('-f ' + str(samplingfreq), '-o ' + outputfile, '-p ' + real_pid),
+        cmd_list,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
-        preexec_fn=os.setsid,
-        shell=True)
+        preexec_fn=os.setsid)
     # Execute error-cases: with samplingfreq
     # Execute error-cases: with samplingfreq
     if samplingfreq != "max": sampling_exit(samplingfreq, p_record)

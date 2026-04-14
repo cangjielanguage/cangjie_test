@@ -9,6 +9,7 @@ import sys
 import signal
 import subprocess
 from optparse import OptionParser
+import shlex
 
 def inputdata_exist(inputfile):
     # Execute error-cases: with inputdata_exist
@@ -27,12 +28,8 @@ def gen_report(inputfile):
     gen_report: get cjprof report
     """
     print("\n  -------- cjprof report {0} > {1} -------- ".format('-i '+inputfile, 'cjprof_report.data'))
-    p = subprocess.Popen("cjprof report {0} > {1}".format('-i '+inputfile, 'cjprof_report.data'), 
-                                                                                executable=None, 
-                                                                                shell=True, 
-                                                                                stdout = subprocess.PIPE,
-                                                                                preexec_fn=os.setsid
-                                                                                )
+    with open('cjprof_report.data', 'w') as f:
+        p = subprocess.Popen(['cjprof', 'report', '-i', inputfile], stdout=f)
     p.wait()
     # Execute error-cases: with inputdata
     inputdata_exist(inputfile)
@@ -45,10 +42,9 @@ def gen_flamegraph(inputfile, outputfile):
     gen_flamegraph: get cjprof report flamegraph
     """
     print("\n  -------- cjprof report -F {0} {1} -------- ".format('-i '+inputfile, '-o '+outputfile))
-    p = subprocess.Popen("cjprof report -F {0} {1}".format('-i '+inputfile, '-o '+outputfile), executable=None, 
-                                                                                                shell=True, 
-                                                                                                preexec_fn=os.setsid
-                                                                                                )
+    cmd = "cjprof report -F {0} {1}".format('-i '+inputfile, '-o '+outputfile)
+    cmd_list = shlex.split(cmd)
+    p = subprocess.Popen(cmd_list, executable=None, preexec_fn=os.setsid)
 
     p.wait()
     p.kill()

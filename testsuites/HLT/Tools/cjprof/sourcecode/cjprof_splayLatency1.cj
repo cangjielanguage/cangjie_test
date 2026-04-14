@@ -33,7 +33,6 @@ class Timer {
     public func getTime(): Float64 {
         let time = DateTime.now()
         return Float64((time - bigen_time).toNanoseconds()) / 1000000.0
-        // return Float64(time.second) * 1000.0 + Float64(time.nanosecond)/ 1000000.0
     }
 }
 
@@ -490,11 +489,6 @@ class SplayTree {
             return None
         }
         var current: ?Node = opt_startNode ?? this.root_
-        // if (opt_startNode.isSome()) {
-        //     current = opt_startNode
-        // } else {
-        //     current = this.root_
-        // }
 
         while (current.getOrThrow().right.isSome()) {
             current = current.getOrThrow().right
@@ -752,12 +746,4 @@ main() {
         tearDown: splayLatency.SplayTearDown, latencyResult: splayLatency.SplayLatency, minIterations: 32)
     let benchmarkSuite = BenchmarkSuite("Splay", [81491, 2739514], [benchmark])
     start()
-    // println("insertNode is ${insertNode}")
-    // println("insertTime is ${insertTime}")
-    // println("remove1 is ${remove1}")
-    // println("remove2 is ${remove2}")
-    // println("findTime is ${findTime}")
-    // println("findGreatestLessThanTime is ${findGreatestLessThanTime}")
-    // println("runTime is ${runTime}")
-    //sleep(Duration.second * 10)
 }
