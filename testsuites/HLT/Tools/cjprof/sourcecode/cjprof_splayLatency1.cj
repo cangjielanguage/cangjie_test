@@ -71,14 +71,6 @@ class SuiteData {
         this.elapsed = elapsed
     }
 }
-// Simple framework for running the benchmark suites and
-// computing a score based on the timing measurements.
-
-// A benchmark has a name (string) and a function that will be run to
-// do the performance measurement. The optional setup and tearDown  
-// arguments are functions that will be invoked before and after
-// running the benchmark, but the running time of these functions will
-// not be accounted for in the benchmark score.
 
 /*
  * @State
