@@ -29,14 +29,12 @@ var findGreatestLessThanTime = 0
 var bigen_time = DateTime.now()
 
 class Timer {
-    // ms
     public func getTime(): Float64 {
         let time = DateTime.now()
         return Float64((time - bigen_time).toNanoseconds()) / 1000000.0
     }
 }
 
-// Performance.now is used in latency benchmarks, the fallback is Date.now.
 func performanceNow(): Float64 {
     return Timer().getTime()
 }
@@ -45,7 +43,6 @@ func deBugLog(str: String) {
     println(str)
 }
 
-// Configuration.
 let kSplayTreeSize = 8000
 let kSplayTreeModifications = 80
 let kSplayTreePayloadDepth = 5
@@ -72,10 +69,6 @@ class SuiteData {
     }
 }
 
-/*
- * @State
- * @Tags Jetstream2
- */
 class SplayLatency1 {
     var name: String
     var doWarmup: Bool
@@ -107,11 +100,6 @@ class SplayLatency1 {
     }
 }
 
-// SplayLatency1 results hold the benchmark and the measured time used to
-// run the benchmark. The benchmark score is computed later once a
-// full benchmark suite has run to completion. If latency is set to 0
-// then there is no latency score for this benchmark.
-
 class BenchmarkResult {
     var benchmark: SplayLatency1
     var time: Float64
@@ -123,17 +111,10 @@ class BenchmarkResult {
         this.latency = latency
     }
 
-    // Automatically convert results to numbers. Used by the geometric
-    // mean computation.
     func valueOf(): Float64 {
         return this.time
     }
 }
-
-// Suites of benchmarks consist of a name and the set of benchmarks in
-// addition to the reference timing that the final score will be based
-// on. This way, all scores are relative to a reference run and higher
-// scores implies better performance.
 
 class BenchmarkSuite {
     let name: String
@@ -141,7 +122,6 @@ class BenchmarkSuite {
     var benchmarks: Array<SplayLatency1>
     var results: ArrayList<BenchmarkResult> = ArrayList<BenchmarkResult>()
     var runner: ?Runner = Option<Runner>.None
-    // Keep track of all declared benchmark suites.
     static var suites = ArrayList<BenchmarkSuite>()
     static let version = "9"
     static var scores: Array<Float64> = []
@@ -153,13 +133,10 @@ class BenchmarkSuite {
         BenchmarkSuite.suites.add(this)
     }
 
-    // To make the benchmark results predictable, we replace Math.random
-    // with a 100% deterministic alternative.
     static func ResetRNG() {
         seed = 49734321
     }
     static func random(): Float64 {
-        // Robert Jenkins' 32 bit integer hash function.
         seed = ((seed + 0x7ed55d16) + (seed << 12)) & 0xffffffff
         seed = ((seed ^ 0xc761c23c) ^ (seed >> 19)) & 0xffffffff
         seed = ((seed + 0x165667b1) + (seed << 5)) & 0xffffffff
@@ -178,10 +155,8 @@ class BenchmarkSuite {
         let suite = this
         var data: ?SuiteData = Option<SuiteData>.None
 
-        // @SplayLatency1
         func runNextBenchmark(): Option<Any> {
             data = suite.RunSingleBenchmark(suite.benchmarks[index], DATA: data)
-            // If data is nil, we're done with this benchmark.
             if (data.isNone()) {
                 suite.benchmarks[index].tearDown.getOrThrow()()
                 index += 1
@@ -195,10 +170,6 @@ class BenchmarkSuite {
             }
         }
 
-        //@Setup
-        // Run the setup, the actual benchmark, and the tear down in three
-        // separate steps to allow the framework to yield between any of the
-        // steps.
         func runNextSetup(): Option<Any> {
             if (index < length) {
                 suite.benchmarks[index].setup.getOrThrow()()
@@ -207,7 +178,6 @@ class BenchmarkSuite {
             return Option<Any>.None
         }
 
-        // @Teardown
         func runNextTearDown(): Option<Any> {
             suite.benchmarks[index].tearDown.getOrThrow()()
             index += 1
@@ -217,10 +187,6 @@ class BenchmarkSuite {
         return runNextSetup()
     }
 
-    // Runs all registered benchmark suites and optionally yields between
-    // each individual benchmark to avoid running for too long in the
-    // context of browsers. Once done, the final score is reported to the
-    // runner.
     static func RunSuites(runner: Runner) {
         var continuation: ?Any = Option<Any>.None
         let SUITES = BenchmarkSuite.suites
@@ -247,16 +213,12 @@ class BenchmarkSuite {
         runStep()
     }
 
-    // Runs a single benchmark for at least a second and computes the
-    // average time it takes to run a single iteration.
     func RunSingleBenchmark(benchmark: SplayLatency1, DATA!: ?SuiteData = Option<SuiteData>.None): ?SuiteData {
         var data = DATA
         func Measure(data!: ?SuiteData = Option<SuiteData>.None) {
             var elapsed: Float64 = 0.0
             let start: Float64 = performanceNow()
             var i = 0
-            // Run either for 1 second or for the number of iterations specified
-            // by minIterations, depending on the config flag doDeterministic.
             if (benchmark.doDeterministic) {
                 while (i < benchmark.minIterations) {
                     benchmark.run()
@@ -276,7 +238,6 @@ class BenchmarkSuite {
                 data.getOrThrow().elapsed += elapsed
             }
         }
-        // Sets up data in order to skip or not the warmup phase.
         if (!benchmark.doWarmup && data.isNone()) {
             data = SuiteData(0, 0.0)
         }
@@ -286,12 +247,10 @@ class BenchmarkSuite {
             return SuiteData(0, 0.0)
         } else {
             Measure(data: data)
-            // If we've run too few iterations, we continue for another second.
             if (data.getOrThrow().runs < benchmark.minIterations) {
                 return data
             }
             let usec = Float64(data.getOrThrow().elapsed * 1_000.0) / Float64(data.getOrThrow().runs)
-            // let latencySamples = (benchmark.latencyResult.isSome()) ? benchmark.latencyResult.getOrThrow()() : [0]
             let latencySamples: ArrayList<Float64>
             if (benchmark.latencyResult.isSome()) {
                 latencySamples = benchmark.latencyResult.getOrThrow()()
@@ -308,21 +267,10 @@ class BenchmarkSuite {
         }
     }
 
-    // Computes the average of the worst samples. For example, if percentile is 99, this will report the
-    // average of the worst 1% of the samples.
     func averageAbovePercentile(numbers: ArrayList<Float64>, percentile: Float64): Float64 {
         var numbersCopy = numbers
         numbersCopy.sort()
 
-        // Now the elements we want are at the end. Keep removing them until the array size shrinks too much.
-        // Examples assuming percentile = 99:
-        //
-        // - numbers.length starts at 100: we will remove just the worst entry and then not remove anymore,
-        //   since then numbers.length / originalLength = 0.99.
-        //
-        // - numbers.length starts at 1000: we will remove the ten worst.
-        //
-        // - numbers.length starts at 10: we will remove just the worst.
         var numbersWeWant: ArrayList<Float64> = ArrayList<Float64>([])
         let originalLength = Float64(numbersCopy.size)
         while (Float64(numbersCopy.size) / originalLength > percentile / 100.0) {
@@ -333,15 +281,12 @@ class BenchmarkSuite {
             sum += number
         }
         let result = sum / Float64(numbersWeWant.size)
-        // Do a sanity check.
         if (!numbersCopy.isEmpty() && result < numbersCopy[numbersCopy.size - 1]) {
             return result
         }
         return result
     }
 
-    // Converts a score value to a string with at least three significant
-    // digits.
     static func formatScore(value: Float64): String {
         if (value > 100.0) {
             return value.toString()
@@ -350,8 +295,6 @@ class BenchmarkSuite {
         }
     }
 
-    // Notifies the runner that we're done running a single benchmark in
-    // the benchmark suite. This can be useful to report progress.
     func notifyStep(result: BenchmarkResult) {
         this.results.add(result)
         if (this.runner.getOrThrow().notifyStep is ((String) -> Unit)) {
@@ -359,7 +302,6 @@ class BenchmarkSuite {
         }
     }
 
-    // Notifies the runner that running a benchmark resulted in an error.
     func notifyError(error: String) {
         if (this.runner.isSome()) {
             runner.getOrThrow().notifyError(this.name, error)
@@ -370,14 +312,7 @@ class BenchmarkSuite {
     }
 }
 
-/**
- * Constructs a Splay tree.  A splay tree is a self-balancing binary
- * search tree with the additional property that recently accessed
- * elements are quick to access again. It performs basic operations
- * such as insertion, look-up and removal in O(log(n)) amortized time.
- *
- * @constructor
- */
+
 class SplayTree {
     var root_: ?Node = None
 
@@ -385,14 +320,6 @@ class SplayTree {
         return this.root_.isNone()
     }
 
-    /**
-     * Inserts a node into the tree with the specified key and value if
-     * the tree does not already contain a node with the specified key. If
-     * the value is inserted, it becomes the root of the tree.
-     *
-     * @param {number} key Key to insert into the tree.
-     * @param {*} value Value to insert into the tree.
-     */
     func insert(key: Float64, value: Object): Unit {
         if (this.isEmpty()) {
             this.root_ = Node(key, value)
@@ -419,14 +346,6 @@ class SplayTree {
         this.root_ = node
     }
 
-    /**
-     * Removes a node with the specified key from the tree if the tree
-     * contains a node with this key. The removed node is returned. If the
-     * key is not found, an exception is thrown.
-     *
-     * @param {number} key Key to find and remove from the tree.
-     * @return {SplayTree.Node} The removed node.
-     */
     func remove(key: Float64): ?Node {
         if (this.isEmpty()) {
             return Option<Node>.None
@@ -442,24 +361,14 @@ class SplayTree {
         } else {
             let right: Option<Node> = (this.root_?.right).getOrThrow()
             this.root_ = (this.root_?.left).getOrThrow()
-            // Splay to make sure that the new root has an empty right child.
             this.splay_(key)
             remove2++
-            // Insert the original right child as the right child of the new
-            // root.
             this.root_?.right = right
         }
 
         return removed
     }
 
-    /**
-     * Returns the node having the specified key or null if the tree doesn't contain
-     * a node with the specified key.
-     *
-     * @param {number} key Key to find in the tree.
-     * @return {SplayTree.Node} Node having the specified key.
-     */
     func find(key: Float64): ?Node {
         if (this.isEmpty()) {
             return None
@@ -473,9 +382,6 @@ class SplayTree {
         }
     }
 
-    /**
-     * @return {SplayTree.Node} Node having the maximum key value.
-     */
     func findMax(opt_startNode!: ?Node = Option<Node>.None): ?Node {
         if (this.isEmpty()) {
             return None
@@ -488,20 +394,13 @@ class SplayTree {
         return current
     }
 
-    /**
-     * @return {SplayTree.Node} Node having the maximum key value that
-     *     is less than the specified key value.
-     */
     func findGreatestLessThan(key: Float64): ?Node {
         if (this.isEmpty()) {
             return None
         }
-        // Splay on the key to move the node with the given key or the last
-        // node on the search path to the top of the tree.
+
         this.splay_(key)
         findGreatestLessThanTime++
-        // Now the result is either the root node or the greatest node in
-        // the left subtree.
         if (this.root_.getOrThrow().key.getOrThrow() < key) {
             return this.root_
         } else if (this.root_.getOrThrow().left.isSome()) {
@@ -511,9 +410,6 @@ class SplayTree {
         }
     }
 
-    /**
-     * @return {Array<*>} An array containing all the keys of tree's nodes.
-     */
     func exportKeys(): ArrayList<Float64> {
         let result = ArrayList<Float64>([])
         if (!this.isEmpty()) {
@@ -522,26 +418,12 @@ class SplayTree {
         return result
     }
 
-    /**
-     * Perform the splay operation for the given key. Moves the node with
-     * the given key to the top of the tree.  If no node has the given
-     * key, the last node on the search path is moved to the top of the
-     * tree. This is the simplified top-down splaying algorithm from:
-     * "Self-adjusting Binary Search Trees" by Sleator and Tarjan
-     *
-     * @param {number} key Key to splay the tree on.
-     * @private
-     */
     func splay_(key: Float64) {
         insertNode++
         if (this.isEmpty()) {
             return
         }
-        // Create a dummy node.  The use of the dummy node is a bit
-        // counter-intuitive: The right child of the dummy node will hold
-        // the L tree of the algorithm.  The left child of the dummy node
-        // will hold the R tree of the algorithm.  Using a dummy node, left
-        // and right will always be nodes and we avoid special cases.
+
         let dummy: ?Node = Node(0.0, Object())
 
         var left: ?Node = dummy
@@ -553,7 +435,6 @@ class SplayTree {
                     break
                 }
                 if (key < (current.left.getOrThrow().key ?? 0.0)) {
-                    // Rotate right.
                     let tmp: Node = (current.left).getOrThrow()
                     current.left = tmp.right
                     tmp.right = current
@@ -562,7 +443,6 @@ class SplayTree {
                         break
                     }
                 }
-                // Link right.
                 right.getOrThrow().left = current
                 right = current
                 current = current.left.getOrThrow()
@@ -571,7 +451,6 @@ class SplayTree {
                     break
                 }
                 if (key > (current.right.getOrThrow().key ?? 0.0)) {
-                    // Rotate left.
                     let tmp: Node = current.right.getOrThrow()
                     current.right = tmp.left
                     tmp.left = current
@@ -580,7 +459,6 @@ class SplayTree {
                         break
                     }
                 }
-                // Link left.
                 left.getOrThrow().right = current
                 left = current
                 current = current.right.getOrThrow()
@@ -588,7 +466,6 @@ class SplayTree {
                 break
             }
         }
-        // Assemble.
         left?.right = current.left
         right?.left = current.right
         current.left = dummy.getOrThrow().right
@@ -601,7 +478,7 @@ var splayTree: ?SplayTree = Option<SplayTree>.None
 
 class Node {
     var key: ?Float64
-    var value: Object // Todo TS value | two types
+    var value: Object
     var left: ?Node = None
     var right: ?Node = None
 
@@ -643,8 +520,6 @@ class PayloadTreeNode {
 
 class SplayLatency <: Runner {
     func generateKey(): Float64 {
-        // The benchmark framework guarantees that Math.random is
-        // deterministic; see base.js.
         return BenchmarkSuite.random();
     }
     func SplayLatency(): ArrayList<Float64> {
@@ -665,7 +540,6 @@ class SplayLatency <: Runner {
     }
 
     func insertNewNode(): Float64 {
-        // Insert new node with a unique key.
         var key: Float64
         do {
             key = generateKey()
@@ -678,7 +552,6 @@ class SplayLatency <: Runner {
 
     func SplayRun() {
         runTime++
-        // Replace a few nodes in the splay tree.
         for (_ in 0..kSplayTreeModifications) {
             let key = insertNewNode()
             let greatest = splayTree.getOrThrow().findGreatestLessThan(key)
@@ -701,19 +574,14 @@ class SplayLatency <: Runner {
         }
     }
     func SplayTearDown() {
-        // Allow the garbage collector to reclaim the memory
-        // used by the splay tree no matter how we exit the
-        // tear down function.
         let keys: ArrayList<Float64> = splayTree.getOrThrow().exportKeys()
         splayTree = Option<SplayTree>.None
         splaySamples = ArrayList<Float64>([])
-        // Verify that the splay tree has the right size.
         let length = keys.size
         if (length != kSplayTreeSize) {
             return
         }
 
-        // Verify that the splay tree has sorted, unique keys.
         for (i in 0..length - 1) {
             if (keys[i] >= keys[i + 1]) {
                 return
