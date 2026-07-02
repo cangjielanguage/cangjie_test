@@ -5,14 +5,18 @@
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
 package tmp_test
-import lib2.*
+import lib1.*
 
-// DEPENDENCE: lib2.cj
+
+// DEPENDENCE: lib1.cj lib2.cj
 // EXEC: %compiler %cmp_opt %compile_lib_opt --lto=full lib2.cj -o lib2.bc
-// EXEC-PIPE-0: %compiler --lto-keep-pkg-visibility="lib2"  %cmp_opt --lto=full %f lib2.bc 2>&1 | compare %f
+// EXEC: %compiler --lto-keep-pkg-visibility="lib1,lib3" %cmp_opt %compile_shared_lib_opt --lto=thin lib1.cj lib2.bc -o lib.so 
+// EXEC-1: nm lib.so | grep -E "T.*(foo|fxx)" 
+// EXEC: nm lib.so | grep -E "T.*(hw)" 
+// EXEC: %compiler %cmp_opt %f  -L . -l:lib.so -o %output
+// RUN-EXEC: %run %run_opt %output %run_args
 
 main(): Int64 {
+    hw()
     return 0
 }
-
-// ASSERT: scan --lto-keep-pkg-visibility does not take effect under the current configuration
