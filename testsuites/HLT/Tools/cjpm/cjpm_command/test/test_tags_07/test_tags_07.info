@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+ * This source file is part of the Cangjie project, licensed under Apache-2.0
+ * with Runtime Library Exception.
+ *
+ * See https://cangjie-lang.cn/pages/LICENSE for license information.
+ */
+
+// LEVEL: 1
+// DEPENDENCE: ../%n
+// EXEC: cd %n && %cjpm test src --exclude-tags=Unittest+Smoke
+// ASSERT: scan cjpm test success
+// ASSERT: scan [ PASSED ] CASE: case_unittest_only_002
+// ASSERT: scan [ PASSED ] CASE: case_smoke_only_003
+// ASSERT: scan [ PASSED ] CASE: case_notag_004
+// ASSERT: scan-not TAG_FILTER_ERROR
+// ASSERT: scan PASSED: 3
