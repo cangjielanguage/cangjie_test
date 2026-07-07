@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2026. All rights reserved.
+ * This source file is part of the Cangjie project, licensed under Apache-2.0
+ * with Runtime Library Exception.
+ *
+ * See https://cangjie-lang.cn/pages/LICENSE for license information.
+ */
+
+// LEVEL: 1
+// DEPENDENCE: ../%n
+// EXEC: cd %n && %cjpm test src --dry-run --include-tags=Unittest --exclude-tags=Slow
+// ASSERT: scan cjpm test success
+// ASSERT: scan case_unittest_001
+// ASSERT: scan-not case_slow_002
+// ASSERT: scan-not case_integration_003
+// ASSERT: scan-not PASSED
+// ASSERT: scan-not FAILED
