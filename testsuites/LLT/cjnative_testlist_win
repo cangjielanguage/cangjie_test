@@ -25,6 +25,7 @@ API/stdx/logger
 compiler/Diagnose/PlatformRelated
 Tools/cjdb/datacom/expr
 Tools/cjdb/datacom/generic
+Tools/cjdb/datacom/debuginfo
 compiler/Driver/LTO/lto_test10_1.cj
 
 [EXCLUDE-TEST-CASE]
@@ -140,6 +141,15 @@ Tools/cjdb/datacom/expr/debuginfo_uint8.info
 Tools/cjdb/datacom/expr/debuginfo_uintnative.info
 Tools/cjdb/datacom/expr/debuginfo_unit.info
 Tools/cjdb/datacom/generic/generic_any.info
+Tools/cjdb/datacom/debuginfo/debuginfo_captured_var_01.info
+Tools/cjdb/datacom/debuginfo/debuginfo_captured_var_02.info
+Tools/cjdb/datacom/debuginfo/debuginfo_enum01.info
+Tools/cjdb/datacom/debuginfo/debuginfo_enum03.info
+Tools/cjdb/datacom/debuginfo/debuginfo_env_display_02.info
+Tools/cjdb/datacom/debuginfo/debuginfo_env_display_03.info
+Tools/cjdb/datacom/debuginfo/debuginfo_env_display_04.info
+Tools/cjdb/datacom/debuginfo/debuginfo_inlined_function.info
+Tools/cjdb/datacom/debuginfo/debuginfo_option_06.info
 
 # cjpm tree failed, should be checked
 Tools/cjpm/stdx/stdx_/tree_01/tree_01.info
