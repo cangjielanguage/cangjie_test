@@ -4,4 +4,8 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-This file must not be present in the generated artifact.
+package output_type_chir
+
+main(): Int64 {
+    return 0
+}
