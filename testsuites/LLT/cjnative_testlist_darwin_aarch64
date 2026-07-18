@@ -5,14 +5,9 @@
 # See https://cangjie-lang.cn/pages/LICENSE for license information.
 
 [ALL-TEST-CASE]
-compiler/FFI/CFFI
-API/std/env/unix
-API/std/net/
-API/std/socket/
-API/std/posix/
-API/std/process/darwin
-API/std/process/unix
-API/std/time/
+API/stdx/aspect_cj
+API/stdx/chir
+API/stdx/plugin
 compiler/CJMP/objc/
 compiler/CJMP/refgluecode/
 compiler/Diagnose/PlatformRelated
@@ -20,16 +15,6 @@ compiler/Driver/PlatformRelated
 compiler/Driver/LTO/lto_test11_1.cj
 
 [EXCLUDE-TEST-CASE]
-
-# exclude first.
-compiler/FFI/CFFI
-API/std/env/unix
-API/std/net/
-API/std/socket/
-API/std/posix/
-API/std/process/darwin
-API/std/process/unix
-API/std/time/
 
 ## objc (Assertion failed)
 compiler/CJMP/objc/integration/cstruct
