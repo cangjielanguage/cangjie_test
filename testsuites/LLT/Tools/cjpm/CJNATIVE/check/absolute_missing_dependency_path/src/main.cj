@@ -4,4 +4,8 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-This file must not be present in the generated artifact.
+package absolute_missing_dependency_path
+
+main(): Int64 {
+    return 0
+}

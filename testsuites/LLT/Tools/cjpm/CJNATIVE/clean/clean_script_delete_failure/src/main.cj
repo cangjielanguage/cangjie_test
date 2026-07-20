@@ -4,4 +4,8 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-This file must not be present in the generated artifact.
+package clean_script_delete_failure
+
+main(): Int64 {
+    return 0
+}
