@@ -31,5 +31,5 @@ error: property must implement both getter/setter of interface property 'x'
    | |_____^
    | 
 
-1 error generated, 1 error printed.
+1 errors generated, 1 errors printed.
 */
