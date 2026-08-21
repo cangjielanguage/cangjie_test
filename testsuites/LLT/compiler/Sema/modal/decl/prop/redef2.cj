@@ -18,5 +18,6 @@ class D <: C {
 }
 main() {}
 
-// ASSERT: scan "DiagKind": "sema_prop_redefinition",
-// ASSERT: scan "Errors": 1,
+// ASSERT: scan-1 "DiagKind": "sema_inherit_member_type_inconsistent",
+// ASSERT: scan-1 "DiagKind": "sema_prop_redefinition",
+// ASSERT: scan "Errors": 2,

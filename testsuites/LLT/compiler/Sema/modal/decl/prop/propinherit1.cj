@@ -4,21 +4,25 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-// ERRCHECK: %compiler %f -Woff all %diag_json 2>&1
+// ERRCHECK: %compiler %diag_json %f 2>&1
+interface I1 {
+    prop foo: Int64 {
+        get() {
+            1
+        }
+    }
+}
+interface I2 {
+    prop foo: Int32 {
+        get() {
+            2
+        }
+    }
+}
+class C1 {}
+extend C1 <: I1 & I2 {
+}
 
-interface C {
-    prop p: Int64 {
-        get() { 1 }
-    }
-}
-class D {}
-extend D <: C {
-    prop p: String {
-        get() { "x" }
-    }
-}
 main() {}
-
 // ASSERT: scan-1 "DiagKind": "sema_inherit_member_type_inconsistent",
-// ASSERT: scan-1 "DiagKind": "sema_prop_redefinition",
-// ASSERT: scan "Errors": 2,
+// ASSERT: scan "Errors": 1,
