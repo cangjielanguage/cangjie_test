@@ -123,21 +123,6 @@ compiler/Sema/generics/generic_subst_perf.cj
 
 
 # modal
-# CHIR修好之后，运行时崩溃
-compiler/Sema/modal/decl/prop/interface2.cj
-compiler/Sema/modal/decl/prop/interface3.cj
-compiler/Sema/modal/decl/prop/interface4.cj
-compiler/Sema/modal/expr/lambda/lambda_good.cj
-compiler/Sema/modal/expr/lambda/local_func_capture_good.cj
-compiler/Sema/modal/expr/lambda/syn_capture_implicit_member_var_good.cj
-compiler/Sema/modal/expr/lambda/syn_capture_local_half_good.cj
-compiler/Sema/modal/expr/lambda/syn_capture_member_fun_good.cj
-compiler/Sema/modal/expr/lambda/syn_capture_member_prop_good.cj
-compiler/CHIR/ModalType/closure_conversion4.cj
-# CHIR region creation
-compiler/Sema/modal/expr/catch.cj
-# CHIR adapt to for in
-compiler/Sema/modal/expr/forin/
 # Sema lambda type infer
 compiler/Sema/modal/infer/p.cj
 compiler/Sema/modal/infer/some_local.cj
