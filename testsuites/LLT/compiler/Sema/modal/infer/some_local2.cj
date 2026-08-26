@@ -3,23 +3,11 @@
 // with Runtime Library Exception.
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
-
 // EXEC: %frontendCompiler %f
-class C {
-    init() {}
-    exclave init(this @local!) {}
+exclave func bar<K,V>(k: K@local!, v: V@local!): ?(K,V)@local! {
+    (k,v)
 }
-
-func foo(c: C@local!) {
-
+exclave func char<K,V>(k: K@local!, v: V@local!) {
+    Some((k,v))
 }
-
-func bar() {
-    let _ = { x => exclave {foo(x)} } // { x: C@local! => ... }
-    { x => exclave {foo(x)} } // same as above
-}
-
-main() {
-    bar()
-    0
-}
+main() {}
