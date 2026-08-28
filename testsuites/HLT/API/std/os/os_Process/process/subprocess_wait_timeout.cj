@@ -11,7 +11,6 @@
 // (not OHOS and not Windows)RUN-EXEC-PIPE: %run %run_opt %output %run_utest_opt %run_args | compare %f
 // (not Windows) ASSERT: scan subprocess_wait_timeout.cj
 import std.process.*
-import std.time.*
 import std.sync.*
 
 // Regression tests for SubProcess.wait(timeout:):
