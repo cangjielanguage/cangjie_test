@@ -9,7 +9,8 @@
 // LEVEL: 1
 // (not Windows) EXEC: %compiler %cmp_opt %f -o %output %cmp_utest_opt
 // (not OHOS and not Windows)RUN-EXEC-PIPE: %run %run_opt %output %run_utest_opt %run_args | compare %f
-// (not Windows) ASSERT: scan subprocess_wait_timeout.cj
+// (not Windows) ASSERT: scan Summary: TOTAL: 3
+// (not Windows) ASSERT: scan ERROR: 0
 import std.process.*
 import std.sync.*
 
