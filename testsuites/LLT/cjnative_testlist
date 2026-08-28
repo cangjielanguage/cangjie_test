@@ -123,6 +123,8 @@ compiler/Sema/generics/generic_subst_perf.cj
 
 
 # modal
+# CHIR checker
+compiler/Sema/modal/parse/local_func_in_exclave.cj
 # Sema lambda type infer
 compiler/Sema/modal/infer/p.cj
 compiler/Sema/modal/infer/some_local.cj
