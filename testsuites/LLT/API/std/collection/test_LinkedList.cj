@@ -171,6 +171,30 @@ class LinkedListTest {
     }
 
     @TestCase
+    func clearInvalidatesNodes(): Unit {
+        let list = LinkedList<Int64>([1, 2, 3])
+        let node = list.nodeAt(1).getOrThrow()
+        list.clear()
+
+        try {
+            node.value
+            @Expect("Should throw exception", "node.value")
+        } catch (e: IllegalStateException) {
+            @Expect(e.message, "")
+        }
+
+        try {
+            list.addAfter(node, 4)
+            @Expect("Should throw exception", "list.addAfter(node, 4)")
+        } catch (e: IllegalArgumentException) {
+            @Expect(e.message, "The node is not a member of this LinkedList.")
+        }
+
+        list.addLast(4)
+        @Expect(list.toArray(), [4])
+    }
+
+    @TestCase
     func firstLastGetAndPop(): Unit {
         var list1: LinkedList<String> = LinkedList<String>()
         @Expect(list1.first, Option<String>.None)
