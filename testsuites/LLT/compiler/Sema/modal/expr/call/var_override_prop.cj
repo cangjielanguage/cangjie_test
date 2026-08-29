@@ -4,22 +4,20 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-// EXEC: %compiler %cmp_opt %f -o %output 2>&1
+// EXEC: %compiler %f -o %output
 // RUN-EXEC: %run %run_opt %output %run_args
-
-
-func foo(): String @local! {
-    exclave { "x" }
+open class A {
+    private prop a: Int64 {
+        get() {1}
+    }
 }
-exclave func bar(): String @local? {
-    "x"
-}
-
-func baz(): Unit @local? {
-    ()
-}
-func but(): Unit @local! {
-    ()
+class B <: A {
+    public var a: Int64 = 0
+    public init() {
+    }
 }
 
-main() {}
+main() {
+    let b = B()
+    b.a
+}
