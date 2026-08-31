@@ -42,7 +42,7 @@ class LocalLeaf {
         this.second = second
     }
 
-    func checksum(this @local!): Int64 {
+    func checksum(this @local?): Int64 {
         first.checksum() + second.checksum()
     }
 }
@@ -59,7 +59,9 @@ class LocalBranch {
     }
 
     func checksum(this @local!): Int64 {
-        left.checksum() + right.checksum() + direct.checksum()
+        let leftLocal: LocalLeaf @local! = left
+        let rightLocal: LocalLeaf @local! = right
+        leftLocal.checksum() + rightLocal.checksum() + direct.checksum()
     }
 }
 
@@ -75,7 +77,9 @@ class LocalRoot {
     }
 
     func checksum(this @local!): Int64 {
-        first.checksum() + second.checksum() + direct.checksum()
+        let firstLocal: LocalBranch @local! = first
+        let secondLocal: LocalBranch @local! = second
+        firstLocal.checksum() + secondLocal.checksum() + direct.checksum()
     }
 }
 
