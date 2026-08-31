@@ -194,11 +194,7 @@ compiler/IncrementalCompilation/DeclLevel/Extend_CrossPackage/AddExtends/Interfa
 # CJMP did not adapt to modal type
 compiler/CJMP/
 # invalid runtime testcases
-Runtime/CJNative/local_mode/gc_root/demode_stack_struct_heap_ref_gc.cj
-Runtime/CJNative/local_mode/gc_root/maybe_local_generic_struct_gc.cj
 # runtime error
-Runtime/CJNative/local_mode/allocation/local_array_and_generic.cj
-Runtime/CJNative/local_mode/gc_root/local_heap_graph_gc_stress.cj
 
 
 # daignose is changed
