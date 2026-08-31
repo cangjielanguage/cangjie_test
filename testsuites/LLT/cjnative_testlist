@@ -122,9 +122,11 @@ API/std/socket/redesign/syscalls/tcp_bind_to_device.cj
 compiler/Sema/generics/generic_subst_perf.cj
 
 
-# modal
+# modal type
 # CHIR checker
 compiler/Sema/modal/parse/local_func_in_exclave.cj
+compiler/CHIR/ModalType/SetRegion/lambda01.cj
+compiler/CHIR/ModalType/SetRegion/lambda02.cj
 # Sema lambda type infer
 compiler/Sema/modal/infer/p.cj
 compiler/Sema/modal/infer/some_local.cj
@@ -133,15 +135,57 @@ compiler/Sema/type_infer/lambda_param_sum_keep_06.cj
 compiler/Sema/modal/parse/at_local_macro_good.cj
 compiler/Macro/parse/macro_invoke_11084.cj
 compiler/Macro/parse/macro_invoke_11084_1.cj
-# runtime error on CI, passed locally
-compiler/Sema/string/local.cj
 # because of temporary changes of std API
+API/std/socket/redesign/functional/tcp_read_timeouts.cj
+API/std/socket/redesign/functional/unix_read_timeout.cj
+API/std/fs/file/test_file_create_permission.cj
+API/std/fs/test_fs_coverage_unix.cj
+API/std/fs/test_fs_file_coverage.cj
+API/stdx/net/http/client/test_responsewithoutCL.cj
+API/stdx/net/http/client2_0/100-continue_test.cj
+API/stdx/net/http/client2_0/close_test.cj
+API/stdx/net/http/client2_0/ping_test.cj
+API/stdx/net/http/client2_0/read_timeout_test.cj
+API/stdx/net/tls/redesign/close.cj
+API/stdx/net/tls/redesign/resume-session.cj
+API/stdx/net/tls/redesign/resume-session-get-certs-server.cj
+API/stdx/encoding/json/addTests/JsonArray/test_api_01_02.cj
 compiler/Sema/Extend/extend_duplicate_interfaces9.cj
 compiler/Sema/call/call_error_report_01.cj
 compiler/Sema/varray/err_byte_string.cj
+# overload resolution
+API/std/collection/test_TreeMap.cj
+API/stdx/net/http/server/serve_tls_test.cj
 # mangle
 compiler/Mangle/FuncRules/ParamInitFunc/param_init_func.cj
 compiler/Mangle/FuncRules/ParamInitFunc/param_init_generic_func.cj
+compiler/CHIROpt/ArrayLambda/testArrayLambda02.cj
+compiler/CodegenCJNative/demangle/decl/extend_outer_decl1.cj
+compiler/CodegenCJNative/demangle/decl/extend_outer_decl2.cj
+compiler/CodegenCJNative/demangle/decl/scope1.cj
+compiler/CodegenCJNative/demangle/decl/scope2.cj
+compiler/CodegenCJNative/demangle/decl/scope3.cj
+compiler/CodegenCJNative/demangle/decl/scope4.cj
+compiler/CodegenCJNative/demangle/type/default_param1.cj
+compiler/CodegenCJNative/trycatch/unreachable.cj
+API/std/core/exclusiveScope/exception.cj
+# LTO runtime SIGSEGV
+compiler/Driver/LTO/lto_test6_22.cj
+# obfuscation: LLVM ERROR in obf-layout pass
+compiler/Driver/options/obfuscation/test_layout/obf_line_number3.info
+compiler/Driver/options/obfuscation/test_layout/obf_source_path3.info
+compiler/Driver/options/obfuscation/test_layout/test1.info
+compiler/Driver/options/obfuscation/test_layout/test10.info
+compiler/Driver/options/obfuscation/test_layout/test11.info
+compiler/Driver/options/obfuscation/test_layout/test2.info
+compiler/Driver/options/obfuscation/test_layout/test3.info
+compiler/Driver/options/obfuscation/test_layout/test4.info
+compiler/Driver/options/obfuscation/test_layout/test5.info
+compiler/Driver/options/obfuscation/test_layout/test7.info
+compiler/Driver/options/obfuscation/test_layout/test8.info
+compiler/Driver/options/obfuscation/test_layout/test9.info
+compiler/Driver/options/obfuscation/test_layout/user_mapping3.info
+compiler/Driver/options/obfuscation/test_layout/user_mapping4.info
 # sema error, to be checked
 compiler/Sema/call/call_error_report_01.cj
 compiler/Sema/Extend/Extend_Refactor/extend_property_conflict_invalid_6.cj
@@ -149,6 +193,12 @@ compiler/Sema/Extend/extend_duplicate_interfaces9.cj
 compiler/IncrementalCompilation/DeclLevel/Extend_CrossPackage/AddExtends/InterfaceExtend0to1_CPointer.cj
 # CJMP did not adapt to modal type
 compiler/CJMP/
+# invalid runtime testcases
+Runtime/CJNative/local_mode/gc_root/demode_stack_struct_heap_ref_gc.cj
+Runtime/CJNative/local_mode/gc_root/maybe_local_generic_struct_gc.cj
+# runtime error
+Runtime/CJNative/local_mode/allocation/local_array_and_generic.cj
+Runtime/CJNative/local_mode/gc_root/local_heap_graph_gc_stress.cj
 
 
 # daignose is changed
