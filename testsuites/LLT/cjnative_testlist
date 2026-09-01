@@ -142,36 +142,10 @@ compiler/Sema/Extend/extend_duplicate_interfaces9.cj
 compiler/Sema/call/call_error_report_01.cj
 # incremental
 compiler/IncrementalCompilation/DeclLevel/Extend_CrossPackage/AddExtends/InterfaceExtend0to1_CPointer.cj
-# mangle
-compiler/Mangle/FuncRules/ParamInitFunc/param_init_func.cj
-compiler/Mangle/FuncRules/ParamInitFunc/param_init_generic_func.cj
+# chir mismatch
 compiler/CHIROpt/ArrayLambda/testArrayLambda02.cj
-compiler/CodegenCJNative/demangle/decl/extend_outer_decl1.cj
-compiler/CodegenCJNative/demangle/decl/extend_outer_decl2.cj
-compiler/CodegenCJNative/demangle/decl/scope1.cj
-compiler/CodegenCJNative/demangle/decl/scope2.cj
-compiler/CodegenCJNative/demangle/decl/scope3.cj
-compiler/CodegenCJNative/demangle/decl/scope4.cj
-compiler/CodegenCJNative/demangle/type/default_param1.cj
-compiler/CodegenCJNative/trycatch/unreachable.cj
-API/std/core/exclusiveScope/exception.cj
 # LTO runtime SIGSEGV
 compiler/Driver/LTO/lto_test6_22.cj
-# obfuscation: LLVM ERROR in obf-layout pass
-compiler/Driver/options/obfuscation/test_layout/obf_line_number3.info
-compiler/Driver/options/obfuscation/test_layout/obf_source_path3.info
-compiler/Driver/options/obfuscation/test_layout/test1.info
-compiler/Driver/options/obfuscation/test_layout/test10.info
-compiler/Driver/options/obfuscation/test_layout/test11.info
-compiler/Driver/options/obfuscation/test_layout/test2.info
-compiler/Driver/options/obfuscation/test_layout/test3.info
-compiler/Driver/options/obfuscation/test_layout/test4.info
-compiler/Driver/options/obfuscation/test_layout/test5.info
-compiler/Driver/options/obfuscation/test_layout/test7.info
-compiler/Driver/options/obfuscation/test_layout/test8.info
-compiler/Driver/options/obfuscation/test_layout/test9.info
-compiler/Driver/options/obfuscation/test_layout/user_mapping3.info
-compiler/Driver/options/obfuscation/test_layout/user_mapping4.info
 # runtime crash
 compiler/Sema/modal/perf/json.cj
 # CJMP did not adapt to modal type
