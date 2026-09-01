@@ -7,7 +7,7 @@
 // LEVEL: 0
 // DEPENDENCE: ../../pick_defination.py
 // EXEC: %compiler %n.cj %dumpCHIRDebug
-// EXEC: %python pick_defination.py default_CHIR/[0-9]*_Canonicalization.chirtxt "Func @_CN7default3fooHCNY_1CE?" | compare %f
+// EXEC: %python pick_defination.py default_CHIR/[0-9]*_Canonicalization.chirtxt "Func @_CN7default3fooHCNY_1CEQlE" | compare %f
 // ASSERT: scan-4 StartRegion()
 // ASSERT: scan-4 EndRegion()
 
