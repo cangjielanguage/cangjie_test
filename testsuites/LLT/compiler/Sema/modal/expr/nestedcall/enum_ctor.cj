@@ -4,24 +4,25 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-// EXEC: %compiler %f -o %output
-// RUN-EXEC: %run %run_opt %output %run_args
+// EXEC: %compiler %f -o %output -Woff all
+// EXEC: %run %run_opt %output %run_args | compare %f
 
-class NC {
+class A {
     init() {}
-    init(this @local!) { exclave { } }
+    exclave init(this @local!) {}
 }
 
-class Worker {
-    static func consume(a: NC@local!) {}
-    init() {}
+func take(x: ?A): Int64 {
+    1
+}
+func take(x: ?A @local!): Int64 {
+    2
 }
 
-func run() {
-    Worker.consume(NC() @local!)
+main() {
+    println(take(Option<A>.Some(A())))
 }
 
-main(): Int64 {
-    run()
-    0
-}
+/* SCAN
+1
+*/
