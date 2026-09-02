@@ -123,11 +123,34 @@ error: setter must contain 1 parameter
    |            ^^ expected 1 parameter inside
    | 
 
+error: duplicated 'set' in prop
+  ==> class1.cj:39:9:
+   | 
+37 |     public   mut  prop d:Int64{
+   |                   ~~~~ 
+38 |         set() {} 
+   |         ~~~~~~~~ previous one
+39 |         set() {} 
+   |         ^^^ duplicated 'set'
+   | 
+
 error: setter must contain 1 parameter
   ==> class1.cj:39:12:
    | 
 39 |         set() {} 
    |            ^^ expected 1 parameter inside
+   | 
+
+error: duplicated 'set' in prop
+  ==> class1.cj:40:9:
+   | 
+37 |     public   mut  prop d:Int64{
+   |                   ~~~~ 
+38 |         set() {} 
+39 |         set() {} 
+   |         ~~~~~~~~ previous one
+40 |         set() {} 
+   |         ^^^ duplicated 'set'
    | 
 
 error: setter must contain 1 parameter
@@ -142,6 +165,17 @@ error: setter must contain 1 parameter
    | 
 46 |         set() {}
    |            ^^ expected 1 parameter inside
+   | 
+
+error: duplicated 'set' in prop
+  ==> class1.cj:47:9:
+   | 
+45 |     public   mut  prop d:Int64{
+   |                   ~~~~ 
+46 |         set() {}
+   |         ~~~~~~~~ previous one
+47 |         set() {} 
+   |         ^^^ duplicated 'set'
    | 
 
 error: setter must contain 1 parameter
@@ -198,5 +232,5 @@ error: unclosed delimiter: '{'
    |   ^ expected '}' here
    | 
 
-14 errors generated, 14 errors printed.
+17 errors generated, 17 errors printed.
 */
