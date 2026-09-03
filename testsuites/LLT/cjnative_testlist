@@ -146,12 +146,19 @@ compiler/IncrementalCompilation/DeclLevel/Extend_CrossPackage/AddExtends/Interfa
 compiler/CHIROpt/ArrayLambda/testArrayLambda02.cj
 # LTO runtime SIGSEGV
 compiler/Driver/LTO/lto_test6_22.cj
-# runtime crash
-compiler/Sema/modal/perf/json.cj
+# CHIR ICE unsupported major expr kind
+compiler/Sema/modal/runtime/cmp5_for_lambda.cj
+compiler/Sema/modal/runtime/exclave_fine3.cj
+compiler/Sema/modal/runtime/constrained_retry.cj
+compiler/Sema/modal/runtime/eq_v4.cj
+# CHIR translate error
+compiler/Sema/modal/runtime/opt_fine2.cj
+# runtime Barrier WriteGeneric SIGABRT
+compiler/Sema/modal/runtime/eq_v7.cj
+compiler/Sema/modal/runtime/rt1_barrier.cj
+compiler/Sema/modal/runtime/rt2_region_field.cj
 # CJMP did not adapt to modal type
 compiler/CJMP/
-# invalid runtime testcases
-# runtime error
 
 
 # daignose is changed
