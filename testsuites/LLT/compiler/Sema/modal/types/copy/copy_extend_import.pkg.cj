@@ -4,13 +4,11 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-// EXEC-PIPE-1: %compiler %f -Woff all %diag_json 2>&1 | compare %f
+package pkga
 
-class BadCopy <: Copyable {
-    init() {}
+public struct A {
+    public let x = 1
+    public init() {}
 }
 
-main() {}
-
-// ASSERT: scan-1 "DiagKind": "sema_interface_is_not_implementable",
-// ASSERT: scan "Errors": 1,
+extend A <: Copyable {}

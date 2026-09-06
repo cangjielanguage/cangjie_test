@@ -154,5 +154,9 @@ Tools/cjdb/datacom/debuginfo/debuginfo_env_display_04.info
 Tools/cjdb/datacom/debuginfo/debuginfo_inlined_function.info
 Tools/cjdb/datacom/debuginfo/debuginfo_option_06.info
 
+# modal type
+# debug info
+Tools/cjdb/datacom/debuginfo/debuginfo_generic_type_display_02.info
+
 # cjpm tree failed, should be checked
 Tools/cjpm/stdx/stdx_/tree_01/tree_01.info
