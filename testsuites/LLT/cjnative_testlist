@@ -142,16 +142,12 @@ compiler/Sema/Extend/extend_duplicate_interfaces9.cj
 compiler/Sema/call/call_error_report_01.cj
 # incremental
 compiler/IncrementalCompilation/DeclLevel/Extend_CrossPackage/AddExtends/InterfaceExtend0to1_CPointer.cj
-# chir mismatch
-compiler/CHIROpt/ArrayLambda/testArrayLambda02.cj
 # LTO runtime SIGSEGV
 compiler/Driver/LTO/lto_test6_22.cj
-# CHIR ICE unsupported major expr kind
+# runtime, core dump or result error
 compiler/Sema/modal/runtime/cmp5_for_lambda.cj
-compiler/Sema/modal/runtime/exclave_fine3.cj
 compiler/Sema/modal/runtime/constrained_retry.cj
 compiler/Sema/modal/runtime/eq_v4.cj
-# CHIR translate error
 compiler/Sema/modal/runtime/opt_fine2.cj
 # runtime Barrier WriteGeneric SIGABRT
 compiler/Sema/modal/runtime/eq_v7.cj
