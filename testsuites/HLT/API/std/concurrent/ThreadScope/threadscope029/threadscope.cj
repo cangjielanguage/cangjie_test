@@ -10,24 +10,27 @@
 // EXEC: %compiler %cmp_opt %f -o %output
 // RUN-EXEC: %run %run_opt %output %run_args
 //
-// TEST INTENT: multiple tasks consumed via for-in sum to 60
-// DOC REF: ThreadGroup Iterable<T> - iteration waits and yields results
-// EXPECT: sum == 60, exit 0
+// TEST INTENT: result integrity under load: 200 tasks, no loss or duplication
+// DOC REF: ThreadGroup - "records one result for every thread launched"
+// EXPECT: sum == 200*199/2, exit 0
 
 import std.concurrent.*
+import std.sync.*
 
+// Scale: 200 tasks launch and every result is consumed exactly once; the sum
+// verifies no result is lost or duplicated under load.
 main(): Int64 {
+    let taskCount = 200
     let sum = threadScope<Int64, Int64> {
         group =>
-            group.launch { 10 }
-            group.launch { 20 }
-            group.launch { 30 }
-
+            for (i in 0..taskCount) {
+                group.launch { i }
+            }
             var total = 0
             for (value in group) {
                 total += value
             }
             total
     }
-    return if (sum == 60) { 0 } else { 1 }
+    return if (sum == taskCount * (taskCount - 1) / 2) { 0 } else { 1 }
 }
