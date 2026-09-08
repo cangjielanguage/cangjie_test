@@ -21,6 +21,12 @@ class C {
 exclave func foo(): C @local! {
     C()
 }
+enum E {
+    | A
+    exclave func foo(this @local!) {
+        
+    }
+}
 
 main() {
     let c = foo()

@@ -21,9 +21,17 @@ class C {
 func externalBaseReceivesInternal(pc: C@local!) {
     var d: D@local! = D()
     pc.d = d
+    d = pc.d
+}
+
+func externalLocalHalf(pc: C@local?) {
+    var d: D@local? = D() @local!
+    pc.d = d
+    d = pc.d
 }
 
 main() {}
 
-// ASSERT: scan-1 "DiagKind": "sema_bad_local_assignment",
-// ASSERT: scan "Errors": 1,
+// ASSERT: scan-2 "DiagKind": "sema_bad_local_assignment",
+// ASSERT: scan-1 "DiagKind": "sema_bad_local_half_ma",
+// ASSERT: scan "Errors": 3,

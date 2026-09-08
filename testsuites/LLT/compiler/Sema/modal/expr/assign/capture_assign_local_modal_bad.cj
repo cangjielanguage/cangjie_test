@@ -14,11 +14,29 @@ class NC {
 func outer() {
     var x: NC@local! = NC()
     func inner() {
-        x
+        x = NC()
+    }
+}
+
+class NCC {
+    var x: NC
+    init() {
+        x = NC()
+    }
+    exclave init(this @local!) {
+        x = NC()
+    }
+
+    func bam(this @local?) {
+        @local? func jam() {
+            x = NC() @local!
+            x = NC() @~local
+        }
     }
 }
 
 main() {}
 
 // ASSERT: scan-1 "DiagKind": "sema_bad_capture_local",
-// ASSERT: scan "Errors": 1,
+// ASSERT: scan-2 "DiagKind": "sema_bad_local_half_ma",
+// ASSERT: scan "Errors": 3,
