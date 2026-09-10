@@ -6,10 +6,9 @@
  * See https://cangjie-lang.cn/pages/LICENSE for license information.
  */
 
-// Cross-package weave without importing the aspect package.
-// callUpstreamPkgInitFunc must addFunction + createApply for aspect_pkg's init;
-// that runs state_pkg's non-literal boot and sets ready=7. If createApply is
-// omitted, ready stays 0 and this assertion fails.
+// Cross-package weave when aspect_pkg is already imported: callUpstreamPkgInitFunc
+// reuses the existing init declaration but still createApply. ready=7 confirms
+// upstream init (via import and/or the inserted apply) has run.
 
 // DEPENDENCE: state_pkg aspect_pkg
 // EXEC-PIPE-0: export LD_LIBRARY_PATH=$CANGJIE_HOME/tools/lib:$LD_LIBRARY_PATH && %compiler %import-cangjie-stdx %cmp_opt %compile_shared_lib_opt %pkg_opt state_pkg -o libstate_pkg.%dylib_suffix
@@ -20,6 +19,8 @@
 // ASSERT: scan-not ready=0
 // ASSERT: scan-not core dumped
 // ASSERT: scan-not stack trace
+
+import aspect_pkg.*
 
 public func woven(): Unit {
     println("#----- woven -----#")
