@@ -6,7 +6,7 @@
 
 // EXEC: %compiler %cmp_opt %n.cj -o %n.%suffix
 // EXEC-PIPE-1: %run %run_opt %n.%suffix 2>&1 | compare %f
-// ASSERT: scan default::String::extendFunc::extendFuncInnerFoo(Int64)
+// ASSERT: scan default::String::extendFunc(Int64)::extendFuncInnerFoo(Int64)
 // ASSERT: scan default::String::extendFunc(Int64)
 extend String {
     func extendFunc(b: Int64): Int64 {
