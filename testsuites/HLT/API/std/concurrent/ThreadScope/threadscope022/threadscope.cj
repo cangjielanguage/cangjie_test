@@ -10,31 +10,31 @@
 // EXEC: %compiler %cmp_opt %f -o %output
 // RUN-EXEC: %run %run_opt %output %run_args
 //
-// TEST INTENT: scope waits for every unconsumed task before returning
-// DOC REF: threadScope - "waits for every unconsumed task result"
-// EXPECT: finishedCount == 3 after scope returns, exit 0
+// TEST INTENT: String results flow through launch and consumption
+// DOC REF: ThreadGroup<T> with T = String
+// EXPECT: joined "world,hello" in completion order (10ms before 30ms), exit 0
 
+import std.collection.*
 import std.concurrent.*
 import std.sync.*
 
 main(): Int64 {
-    let finishedCount = AtomicInt64(0)
-
-    threadScope<Unit, Unit> {
+    let joined = threadScope<String, String> {
         group =>
             group.launch {
                 sleep(Duration.millisecond * 30)
-                finishedCount.fetchAdd(1)
+                "hello"
             }
             group.launch {
-                sleep(Duration.millisecond * 60)
-                finishedCount.fetchAdd(1)
+                sleep(Duration.millisecond * 10)
+                "world"
             }
-            group.launch {
-                sleep(Duration.millisecond * 90)
-                finishedCount.fetchAdd(1)
-            }
-    }
 
-    return if (finishedCount.load() == 3) { 0 } else { 1 }
+            let parts = ArrayList<String>()
+            for (value in group) {
+                parts.add(value)
+            }
+            String.join(parts.toArray(), delimiter: ",")
+    }
+    return if (joined == "world,hello") { 0 } else { 1 }
 }

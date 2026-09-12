@@ -2,7 +2,7 @@
  * Copyright (c) Huawei Technologies Co., Ltd. 2025. All rights reserved.
  * This source file is part of the Cangjie project, licensed under Apache-2.0
  * with Runtime Library Exception.
- * 
+ *
  * See https://cangjie-lang.cn/pages/LICENSE for license information.
  */
 
@@ -10,9 +10,9 @@
 // EXEC: %compiler %cmp_opt %f -o %output
 // RUN-EXEC: %run %run_opt %output %run_args
 //
-// TEST INTENT: task exception is rethrown to the scope caller
-// DOC REF: threadScope - Exceptions: "an unhandled launched task result is an exception"
-// EXPECT: caught message == "subtask failed", exit 0
+// TEST INTENT: iterator-level rethrow of a consumed failure (for-in reading)
+// DOC REF: ThreadGroup.iterator - Exceptions section
+// EXPECT: caught IllegalArgumentException "iter error", exit 0
 
 import std.concurrent.*
 
@@ -21,14 +21,16 @@ main(): Int64 {
     try {
         threadScope<Int64, Unit> {
             group =>
-                group.launch { 1 }
                 group.launch {
-                    throw Exception("subtask failed")
+                    throw IllegalArgumentException("iter error")
                 }
-                group.launch { 3 }
+
+                for (_ in group) {
+                    ()
+                }
         }
-    } catch (e: Exception) {
+    } catch (e: IllegalArgumentException) {
         caughtMessage = e.message
     }
-    return if (caughtMessage == "subtask failed") { 0 } else { 1 }
+    return if (caughtMessage == "iter error") { 0 } else { 1 }
 }

@@ -10,16 +10,19 @@
 // EXEC: %compiler %cmp_opt %f -o %output
 // RUN-EXEC: %run %run_opt %output %run_args
 //
-// TEST INTENT: fn return value is passed through when no tasks are launched
-// DOC REF: threadScope - Returns: "R - The return value of fn"
-// EXPECT: threadScope returns 42, exit 0
+// TEST INTENT: next() on a group with no launched tasks returns None
+// DOC REF: ThreadGroup.iterator - "If no unconsumed task results remain, next returns None"
+// EXPECT: None -> exit 0
 
 import std.concurrent.*
 
 main(): Int64 {
-    let result = threadScope<Unit, Int64> {
-        _ =>
-            42
+    threadScope<Int64, Int64> {
+        group =>
+            let iter = group.iterator()
+            match (iter.next()) {
+                case Some(_) => return 1
+                case None => return 0
+            }
     }
-    return if (result == 42) { 0 } else { 1 }
 }
