@@ -9,17 +9,20 @@
 // LEVEL: 1
 // (not Windows) EXEC: %compiler %cmp_opt %f -o %output %cmp_utest_opt
 // (not OHOS and not Windows)RUN-EXEC-PIPE: %run %run_opt %output %run_utest_opt %run_args | compare %f
-// (not Windows) ASSERT: scan Summary: TOTAL: 3
+// (not Windows) ASSERT: scan Summary: TOTAL: 7
 // (not Windows) ASSERT: scan ERROR: 0
+import std.posix.*
 import std.process.*
-import std.sync.*
 
 // Regression tests for SubProcess.wait(timeout:):
 //  - a timed-out wait must not leave a background reaper thread behind,
 //    otherwise the child is reaped by that stray thread and every later
 //    wait() fails with ECHILD and returns -1;
 //  - wait() must be idempotent: the exit status is cached on the instance so
-//    repeated calls return the same result instead of -1.
+//    repeated calls return the same result instead of -1;
+//  - the polling (WNOHANG) wait path must return the real exit status for a
+//    normal exit and the terminating signal number for a signal exit, and must
+//    still work for waitOutput() after an earlier timeout expired.
 @Test
 class Test_subprocess_wait_timeout {
     @TestCase
@@ -75,5 +78,50 @@ class Test_subprocess_wait_timeout {
         @Expect(timeoutCnt, 3)
         sleep(Duration.second * 3)
         @Expect(sub.wait(), 0)
+    }
+
+    @TestCase
+    func test_exit_within_timeout_returns_exit_code(): Unit {
+        // A child that exits before the deadline must be reaped by the polling
+        // wait and return its real exit code instead of throwing.
+        let sub = Process.start("/bin/sh", "-c", "exit 7")
+        @Expect(sub.wait(timeout: Duration.second * 5), 7)
+    }
+
+    @TestCase
+    func test_timeout_then_second_timed_wait(): Unit {
+        // A second *timed* wait (not only a blocking one) must recover the real
+        // exit status after an earlier timeout expired.
+        let sub = Process.start("sleep", "1")
+        try {
+            sub.wait(timeout: Duration.millisecond * 200)
+            @Expect(false)
+        } catch (_: TimeoutException) {
+        }
+        @Expect(sub.wait(timeout: Duration.second * 5), 0)
+    }
+
+    @TestCase
+    func test_signal_exit_code_via_timed_wait(): Unit {
+        // A child killed by a signal must surface the terminating signal number
+        // (9 for SIGKILL) through the polling (WNOHANG) wait path.
+        let sub = Process.start("sleep", "5")
+        kill(Int32(sub.pid), SIGKILL)
+        @Expect(sub.wait(timeout: Duration.second * 5), 9)
+    }
+
+    @TestCase
+    func test_wait_output_after_timeout(): Unit {
+        // waitOutput() on an instance whose earlier timed wait expired must
+        // still reap the child and report its exit status.
+        let sub = Process.start("sleep", "1")
+        try {
+            sub.wait(timeout: Duration.millisecond * 200)
+            @Expect(false)
+        } catch (_: TimeoutException) {
+        }
+        sleep(Duration.second * 2)
+        let (exitCode, _, _) = sub.waitOutput()
+        @Expect(exitCode, 0)
     }
 }
