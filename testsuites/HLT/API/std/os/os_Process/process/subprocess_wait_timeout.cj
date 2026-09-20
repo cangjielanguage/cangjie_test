@@ -9,7 +9,7 @@
 // LEVEL: 1
 // (not Windows) EXEC: %compiler %cmp_opt %f -o %output %cmp_utest_opt
 // (not OHOS and not Windows)RUN-EXEC-PIPE: %run %run_opt %output %run_utest_opt %run_args | compare %f
-// (not Windows) ASSERT: scan Summary: TOTAL: 7
+// (not Windows) ASSERT: scan Summary: TOTAL: 10
 // (not Windows) ASSERT: scan ERROR: 0
 import std.posix.*
 import std.process.*
@@ -123,5 +123,35 @@ class Test_subprocess_wait_timeout {
         sleep(Duration.second * 2)
         let (exitCode, _, _) = sub.waitOutput()
         @Expect(exitCode, 0)
+    }
+
+    @TestCase
+    func test_negative_timeout_blocks_until_exit(): Unit {
+        // A non-positive timeout keeps the documented blocking semantics: the
+        // wait stays in the calling thread until the child exits and returns its
+        // real exit code (no timeout is armed, no background reaper is spawned).
+        let sub = Process.start("/bin/sh", "-c", "exit 4")
+        @Expect(sub.wait(timeout: Duration.millisecond * -1), 4)
+    }
+
+    @TestCase
+    func test_rewait_after_blocking_wait_with_timeout(): Unit {
+        // Once a blocking wait has reaped the child, a later *timed* wait must
+        // hit the cached fast path and return the same exit code instead of
+        // polling waitpid again (which would fail with ECHILD and return -1).
+        let sub = Process.start("/bin/sh", "-c", "exit 7")
+        @Expect(sub.wait(), 7)
+        @Expect(sub.wait(timeout: Duration.second * 5), 7)
+    }
+
+    @TestCase
+    func test_rewait_after_signal_exit_is_idempotent(): Unit {
+        // A signal exit must be cached too: after the terminating signal number
+        // is observed once, both a blocking and a timed re-wait return it.
+        let sub = Process.start("sleep", "5")
+        kill(Int32(sub.pid), SIGKILL)
+        @Expect(sub.wait(timeout: Duration.second * 5), 9)
+        @Expect(sub.wait(), 9)
+        @Expect(sub.wait(timeout: Duration.second * 5), 9)
     }
 }
