@@ -8,7 +8,6 @@
 
 func withInlineComments(a: Int64): Int64 {
     let r = a /* mid */ + /* pre */ 1 // tail
-
     /* if (a) { } else { } */
     // let fake=fakeCall(1, 2)
     let s = 2 /**/ + 3
