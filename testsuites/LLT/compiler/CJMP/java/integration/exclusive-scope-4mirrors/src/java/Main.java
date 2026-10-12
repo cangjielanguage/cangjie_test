@@ -8,9 +8,22 @@ import test.EchoImpl;
 
 public class Main {
     public static void main(String[] args) {
-        EchoImpl impl2 = new EchoImpl();
-        long res = impl2.callJavaWithSpawn();
-        System.out.println("ret from JavaImpl with spawn = " + res);
+        EchoImpl impl = new EchoImpl();
+
+        impl.testJObjectConstructor();
+        impl.testJStringConstructorWithValue();
+        impl.testJStringConstructorEmpty();
+        impl.testJStringDefaultConstructor();
+        impl.testJavaMirrorConstructor();
+        impl.testFieldGetter();
+        impl.testFieldSetter();
+        impl.testNullableFieldSetter();
+        impl.testJavaMethodCall();
+        impl.testJavaMethodReturningObject();
+        impl.testJArrayConstructor();
+        impl.testJArrayMethod();
+        impl.testJArrayGetSet();
+        impl.testInheritedJavaMethod();
+        impl.testJavaExceptionPropagation();
     }
 }
-

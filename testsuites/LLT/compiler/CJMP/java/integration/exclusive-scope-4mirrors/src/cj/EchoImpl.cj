@@ -9,54 +9,165 @@ package test
 import java.lang.*
 
 @JavaImpl["test.EchoImpl"]
-public class EchoImpl  {
-    public init(){}
+public class EchoImpl {
+    public init() {}
 
-
-    // This test intentionally exercises different JNI interaction paths
-    // inside spawn: mirror constructor, JObject constructor, getters,
-    // setters, nullable handling, method calls and object arguments.
-    // Missing exclusiveScope wrapping in any of these paths may cause
-    // runtime failures when lightweight threads migrate between carriers.
-    public func callJavaWithSpawn(): Int {
-        print("Runnning  callJavaWithSpawn()\n", flush: true)
-        let res: Future<Int64> = spawn {
-            print("inside spawn\n", flush: true)
-            runMirrorOps()
+    public func testJObjectConstructor(): Unit {
+        let future = spawn {
+            print("[JObject constructor] ")
+            let obj = JObject()
+            println("OK")
         }
-        print("Exit callJavaWithSpawn()\n", flush: true)
-        return res.get()
+        future.get()
     }
 
-    public func runMirrorOps(): Int {
-        print("Runnning runMirrorOps()\n", flush: true)
-        let o = JObject()
-        o.toString()
-        let s1 = JString("JString")
-        print(s1.toString() + "\n", flush: true)
-        let s2 = JString("")
-        print(s2.toString() + "\n", flush: true)
-        let s3 = JString()
-        print(s3.toString() + "\n", flush: true)
-        let echoMirror = EchoMirror()
-        print(echoMirror.objField?.toString(), flush: true)
-        print("\n", flush: true)
-        let j = JString("String1")
-        print(j.toString() + "\n", flush: true)
-        echoMirror.objField = j
-        print(echoMirror.objField?.toString(), flush: true)
-        print("\n", flush: true)
-        print(j.toString() + "\n", flush: true)
-        print(echoMirror.objField?.toString(), flush: true)
-        print("\n", flush: true)
-        echoMirror.objField = None
-        print(echoMirror.objField?.toString(), flush: true)
-        print("\n", flush: true)
-        let res1 = echoMirror.foo(23)
-        let res2 = echoMirror.foo(2)
-        echoMirror.goo(echoMirror)
-        print("${res1 + res2}\n", flush: true)
-        print("Exit runMirrorOps()\n", flush: true)
-        return res1 + res2
+    public func testJStringConstructorWithValue(): Unit {
+        let future = spawn {
+            print("[JString constructor with value] ")
+            let str = JString("JString")
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJStringConstructorEmpty(): Unit {
+        let future = spawn {
+            print("[JString empty constructor] ")
+            let str = JString("")
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJStringDefaultConstructor(): Unit {
+        let future = spawn {
+            print("[JString default constructor] ")
+            let str = JString()
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJavaMirrorConstructor(): Unit {
+        let future = spawn {
+            print("[JavaMirror constructor] ")
+            let mirror = EchoMirror()
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testFieldGetter(): Unit {
+        let mirror = EchoMirror()
+        let future = spawn {
+            print("[field getter] ")
+            let value = mirror.objField
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testFieldSetter(): Unit {
+        let mirror = EchoMirror()
+        let future = spawn {
+            print("[field setter] ")
+            let value = JString("String1")
+            mirror.objField = value
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testNullableFieldSetter(): Unit {
+        let mirror = EchoMirror()
+        let future = spawn {
+            print("[nullable field setter] ")
+            mirror.objField = None
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJavaMethodCall(): Unit {
+        let mirror = EchoMirror()
+        let future = spawn {
+            print("[Java method call] ")
+            mirror.foo(23)
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJavaMethodReturningObject(): Unit {
+        let mirror = EchoMirror()
+        let future = spawn {
+            print("[Java method with object argument and object result] ")
+            let result = mirror.goo(mirror)
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJArrayConstructor(): Unit {
+        let future = spawn {
+            print("[JArray constructor] ")
+            let array = JArray<Int64>(3)
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJArrayGetSet(): Unit {
+        let array = JArray<Int64>(3)
+        let future = spawn {
+            print("[JArray get/set] ")
+            array[0] = 10
+            array[1] = 20
+            array[2] = 30
+            let first = array[0]
+            let second = array[1]
+            let third = array[2]
+            let length = array.length
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testJArrayMethod(): Unit {
+        let array = JArray<Int64>(3)
+        let future = spawn {
+            print("[JArray method] ")
+            let hash = array.hashCode32()
+            println("OK")
+        }
+        future.get()
+    }
+
+    public func testInheritedJavaMethod(): Unit {
+        let mirror = EchoMirror()
+        let future = spawn {
+            print("[inherited Java method] ")
+            let result = mirror.inheritedFoo(23)
+            if (result == 33) {
+                println("OK")
+             } else {
+                println("FAILED: unexpected result")
+            }
+        }
+        future.get()
+    }
+
+    public func testJavaExceptionPropagation(): Unit {
+        let mirror = EchoMirror()
+        let future = spawn {
+            print("[Java exception propagation] ")
+            try {
+                mirror.throwJavaException()
+                println("UNEXPECTED_SUCCESS")
+            } catch (e: Exception) {
+                println("Caught Java exception: ${e.toString()}")
+            }
+        }
+        future.get()
     }
 }

@@ -6,16 +6,18 @@
 
 package test;
 
-public class EchoMirror {
+public class EchoMirror extends EchoBase {
+    public String objField = "String";
 
-  public String objField = "String";
+    public long foo(long arg) {
+        return arg + 1;
+    }
 
-  public long foo(long arg) {
-     return arg+1;
-  }
+    public String goo(EchoMirror arg) {
+        return "str";
+    }
 
-  public String goo(EchoMirror arg) {
-    return "str";
-  }
+    public long throwJavaException() {
+        throw new IllegalStateException("expected Java exception");
+    }
 }
-
