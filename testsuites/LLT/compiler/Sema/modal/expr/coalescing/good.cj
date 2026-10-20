@@ -13,7 +13,7 @@ class A {
     exclave init(this @local!, n: Int64) { this.n = n }
 }
 
-exclave func use(o: Option<A> @local!): A {
+exclave func use(o: Option<A> @local!): A @local! {
     o ?? A(0)
 }
 
@@ -21,11 +21,16 @@ exclave func orZero(n: Option<Int64> @local!): Int64 {
     n ?? 0
 }
 
+func toAny(o: Option<Int64> @local!): Any {
+    o ?? 0
+}
+
 main() {
     let o: Option<A> @local! = A(1) @local!
     let n: Option<Int64> @local! = None<Int64>
     let x = use(o)
     let y = orZero(n)
+    let _: Any = toAny(Some(2))
     println("${x.n} ${y}")
 }
 
