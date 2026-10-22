@@ -12,8 +12,8 @@
 /* SCAN-IN
 foreign func foo(): CFunc<(Int32) -> Unit>
 
-@ObjC
-public foreign func bar(): ObjCBlock<(Int32) -> Unit>
+@ObjCMirror
+public func bar(): ObjCBlock<(Int32) -> Unit>
 
 @ObjC
 public open foreign class M {
