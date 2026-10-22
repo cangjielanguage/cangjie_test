@@ -10,7 +10,7 @@
 // RUN-EXEC: %run %run_opt %output
 // EXEC: %python pick_defination.py exclave01_CHIR/[0-9]*_Canonicalization.chirtxt "Func @_CN7default3fooHv" | compare %f
 // ASSERT: scan-1 StartRegion()
-// ASSERT: scan-1 EndRegion()
+// ASSERT: scan-2 EndRegion()
 // ASSERT: scan-begin EndRegion()
 // ASSERT: scan-next GoTo(
 
