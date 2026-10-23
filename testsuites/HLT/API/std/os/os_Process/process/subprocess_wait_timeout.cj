@@ -9,7 +9,7 @@
 // LEVEL: 1
 // (not Windows) EXEC: %compiler %cmp_opt %f -o %output %cmp_utest_opt
 // (not OHOS and not Windows)RUN-EXEC-PIPE: %run %run_opt %output %run_utest_opt %run_args | compare %f
-// (not Windows) ASSERT: scan Summary: TOTAL: 10
+// (not Windows) ASSERT: scan Summary: TOTAL: 12
 // (not Windows) ASSERT: scan ERROR: 0
 import std.posix.*
 import std.process.*
@@ -112,17 +112,37 @@ class Test_subprocess_wait_timeout {
 
     @TestCase
     func test_wait_output_after_timeout(): Unit {
-        // waitOutput() on an instance whose earlier timed wait expired must
-        // still reap the child and report its exit status.
-        let sub = Process.start("sleep", "1")
+        // waitOutput() must still read the pipes and reap the child.
+        let sub = Process.start("/bin/sh", "-c", "sleep 1; printf timeout-output", stdOut: Pipe, stdErr: Pipe)
         try {
             sub.wait(timeout: Duration.millisecond * 200)
             @Expect(false)
         } catch (_: TimeoutException) {
         }
         sleep(Duration.second * 2)
-        let (exitCode, _, _) = sub.waitOutput()
+        let (exitCode, out, err) = sub.waitOutput()
         @Expect(exitCode, 0)
+        @Expect(String.fromUtf8(out), "timeout-output")
+        @Expect(String.fromUtf8(err), "")
+    }
+
+    @TestCase
+    func test_already_exited_child_with_tiny_timeout(): Unit {
+        let sub = Process.start("/bin/sh", "-c", "exit 7")
+        sleep(Duration.second)
+        @Expect(sub.wait(timeout: Duration.nanosecond), 7)
+        @Expect(sub.wait(), 7)
+    }
+
+    @TestCase
+    func test_deadline_expires_before_late_exit(): Unit {
+        let sub = Process.start("sleep", "1")
+        try {
+            sub.wait(timeout: Duration.nanosecond * 500000)
+            @Expect(false)
+        } catch (_: TimeoutException) {
+        }
+        @Expect(sub.wait(), 0)
     }
 
     @TestCase
