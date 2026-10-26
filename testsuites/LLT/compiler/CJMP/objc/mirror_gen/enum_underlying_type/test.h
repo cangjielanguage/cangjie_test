@@ -10,3 +10,23 @@ typedef unsigned UInteger;
 
 enum M : UInteger { a };
 
+typedef int uint32_t;
+typedef long int_fast32_t;
+typedef int size_t;
+
+typedef int UserDefinedImportantTypeDef;
+
+enum E : uint32_t;
+enum EE : int;
+enum EEE {
+    A, B, C
+};
+typedef enum EEE EEE;
+
+@interface M
+-(void)foo: (uint32_t)x with:(enum E)y;
+-(void)bar: (int_fast32_t)x with:(enum EE)y;
+-(void)baz: (size_t)x with:(EEE)y;
+-(void)foobarbaz: (UserDefinedImportantTypeDef)x;
+@end
+
