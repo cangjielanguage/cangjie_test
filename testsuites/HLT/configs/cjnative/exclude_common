@@ -61,3 +61,6 @@ compiler/cjnative/Chir/DeadCodeWarnning/enhancement/X4_body_no_recursion.cj
 
 # https://gitcode.com/Cangjie/cangjie_test/issues/527
 compiler/cjnative/stable_abi/07_extend/02_modify/01_define_content/05_instance_function/01_extend_nonclass/02_modify/return_type/41_extend_modify_func_returntype/41_extend_modify_func_returntype_0202.cj
+
+# https://gitcode.com/Cangjie/cangjie_test/issues/529
+API/std/os/file/test_lseek/test_lseek.cj
