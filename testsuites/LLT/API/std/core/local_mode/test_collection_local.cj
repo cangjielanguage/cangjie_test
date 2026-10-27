@@ -11,7 +11,7 @@
 //   运行时写屏障 "field must reference heap object, current local object or null"）
 //   已在当前 SDK/runtime 解决，T406-T409 全部按文档期望通过（T409 的
 //   Collection<T> @local! toArray 声明仍未落地，保留 SKIPPED 注释），本用例恢复活跃。
-// EXEC: %compiler %cmp_opt ./local_mode_utils.cj %f -o %output
+// EXEC: %compiler %local %cmp_opt ./local_mode_utils.cj %f -o %output
 // EXEC: %run %run_opt %output %run_args
 
 import std.core.*
