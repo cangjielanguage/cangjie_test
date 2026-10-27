@@ -25,8 +25,6 @@
 // (not Windows and CJNATIVE) ASSERT: regex @"default:E:0\.ti" = linkonce_odr global %TypeInfo
 // (not Windows and CJNATIVE) ASSERT: regex @"default:E:1\.ti" = linkonce_odr global %TypeInfo
 
-import std.reflect.*
-
 public class C {
     public var x: Int64 = 0
 }
@@ -40,18 +38,8 @@ public enum E {
     | B(Int64)
 }
 
+public let arr: Array<Int64> = [1, 2, 3]
+public let tup: (Int64, Int64) = (1, 2)
+public let fn1: (Int64) -> Int64 = { x: Int64 => x }
+public let cp: CPointer<Int64> = unsafe { CPointer<Int64>() }
 public let va: VArray<Int64, $4> = [1, 2, 3, 4]
-
-main() {
-    let tis = [
-        TypeInfo.of<Array<Int64>>(),
-        TypeInfo.of<(Int64, Int64)>(),
-        TypeInfo.of<(Int64) -> Int64>(),
-        TypeInfo.of<CPointer<Int64>>(),
-        TypeInfo.of<VArray<Int64, $4>>(),
-        TypeInfo.of<C>(),
-        TypeInfo.of<S>(),
-        TypeInfo.of<E>()
-    ]
-    println(tis.size + va[0])
-}
