@@ -21,7 +21,7 @@ public type E = Int32
 
 public type EE = Int32
 
-public type EEE = UInt32
+public type EEE = Int32
 public const A: EEE = 0
 public const B: EEE = 1
 public const C: EEE = 2
@@ -32,5 +32,9 @@ public open foreign class M {
     @ForeignName["bar:with:"] public open func barWith(x: Int64, y: EE): Unit
     @ForeignName["baz:with:"] public open func bazWith(x: Int32, y: EEE): Unit
     @ForeignName["foobarbaz:"] public open func foobarbaz(x: UserDefinedImportantTypeDef): Unit
+    @ForeignName["beginActivityWithOptionsReason:"] public open func beginActivityWithOptionsReason(x: NSActivityOptions): Unit
 }
+
+public type NSActivityOptions = Int32
+public const O: NSActivityOptions = 0
 */
