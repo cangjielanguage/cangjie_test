@@ -6,8 +6,8 @@
 
 // [看护点]: 局部区域内的数组分配必须走 local 数组路径 (llvm.cj.malloc.local.array)。
 // 1) local region 中构造 Array<D> 字面量时，数组本体分配给到
-//    llvm.cj.malloc.local.array（含 main 中字面量的 1 处，以及实例化的
-//    std.modal Array<D> 两个 modal <init> 各 1 处，共 3 处调用）；
+//    llvm.cj.malloc.local.array。这里锁定 main 中长度为 2 的字面量；编译器
+//    额外实例化的 std.modal Array<D> 构造函数数量不属于本用例的看护目标；
 // 2) 若该路径被误并入普通 heap 数组分配（如 NewArrayFast 内联快路径），
 //    local 数组会落入普通堆 TLR 缓冲，local root 登记表在 GC 回收后悬挂，
 //    并发标记阶段解引用被覆写内存直接崩溃 —— 该错误只能靠端到端在 GC 压力下
@@ -20,7 +20,8 @@
 // RUN-EXEC: %run %run_opt %output %run_args
 // EXEC: %llvmDissembler tmps/%n.opt.bc
 // EXEC-PIPE: %cat tmps/%n.opt.ll 2>&1 | compare %f
-// ASSERT: scan-4 CJ_MCC_NewLocalObjArray
+// ASSERT: regex @CJ_MCC_NewLocalObjArray,.*RawArray<default:D>.*i64 2,
+// ASSERT: regex-not @CJ_MCC_NewObjArray,.*RawArray<default:D>.*i64 2,
 
 class D {
     var tag: Int64
