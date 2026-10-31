@@ -7,7 +7,7 @@
  */
 // LEVEL: 0
 // DEPENDENCE: ./local_mode_utils.cj
-// EXEC: %compiler %cmp_opt ./local_mode_utils.cj %f -o %output
+// EXEC: %compiler %local %cmp_opt ./local_mode_utils.cj %f -o %output
 // EXEC: %run %run_opt %output %run_args
 //
 // 覆盖 `comparable.cj` 为每个原始类型新增的 local 比较面。

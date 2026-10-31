@@ -8,7 +8,7 @@
 // regions, reports allocated native chunk bytes while a scope is active,
 // excludes the current chunk's unused tail, ignores heap objects, and falls
 // back once the owning scope returns.
-// EXEC: %compiler %cmp_opt %disableFuncInlining %f -o %output
+// EXEC: %compiler %local %cmp_opt %disableFuncInlining %f -o %output
 // RUN-EXEC-PIPE: %run %run_opt %output %run_args | compare %f
 // ASSERT: scan local object size pass
 
