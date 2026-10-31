@@ -8,5 +8,5 @@
  
 // LEVEL: 1
 // DEPENDENCE: test.toml test.h
-// (iOSNative) ERRCHECK: %mirror_gen test.toml
+// (target_ios or target_ios_simulator) ERRCHECK: %mirror_gen test.toml
 // ASSERT: scan `output-roots` entry `default` should define a `path` property

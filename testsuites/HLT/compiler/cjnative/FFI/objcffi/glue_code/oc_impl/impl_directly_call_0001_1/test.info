@@ -8,11 +8,11 @@
  
 // LEVEL: 3 
 // DEPENDENCE: src test.toml
-// (iOSNative) EXEC: %mirror_gen test.toml
-// (iOSNative) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc --link-options="-install_name @rpath/libobjc.foundation.dylib" src/objc/foundation/*.cj
-// (iOSNative) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc -L . -lobjc.foundation --link-options="-install_name @rpath/libcjworld.dylib" src/cjworld/*.cj
-// (iOSNative) EXEC: cd objc-gen && %clang %clang_opt -framework Foundation *.m -I. -I../src/objc -c
-// (iOSNative and not iOS) EXEC: %clang %cangjie_runtime_link %clang_link_core %clang_link_objc_interop -fobjc-arc src/objc/*.m objc-gen/*.o -Isrc/objc -Iobjc-gen -L. -lcjworld -o %output
-// (iOSNative) RUN-EXEC-PIPE: %run %run_opt %output %run_args 2>&1 | compare %f
+// (target_ios or target_ios_simulator) EXEC: %mirror_gen test.toml
+// (target_ios or target_ios_simulator) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc --link-options="-install_name @rpath/libobjc.foundation.dylib" src/objc/foundation/*.cj
+// (target_ios or target_ios_simulator) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc -L . -lobjc.foundation --link-options="-install_name @rpath/libcjworld.dylib" src/cjworld/*.cj
+// (target_ios or target_ios_simulator) EXEC: cd objc-gen && %clang %clang_opt -framework Foundation *.m -I. -I../src/objc -c
+// (target_ios or target_ios_simulator) EXEC: %clang %cangjie_runtime_link %clang_link_core %clang_link_objc_interop -fobjc-arc src/objc/*.m objc-gen/*.o -Isrc/objc -Iobjc-gen -L. -lcjworld -o %output
+// (target_ios or target_ios_simulator) RUN-EXEC-PIPE: %run %run_opt %output %run_args 2>&1 | compare %f
 // ASSERT: scan in cj B, 1
 // ASSERT: scan-2 in oc, f

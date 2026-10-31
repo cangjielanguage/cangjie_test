@@ -8,5 +8,5 @@
  
 // LEVEL: 1
 // DEPENDENCE: test.toml
-// (iOSNative) EXEC-PIPE-1: %mirror_gen -aaa test.toml 2>&1 | compare %f
+// (target_ios or target_ios_simulator) EXEC-PIPE-1: %mirror_gen -aaa test.toml 2>&1 | compare %f
 // ASSERT: scan Usage: ObjCInteropGen [-v] [-D<macro>=<value>] [--cd] config-file.toml

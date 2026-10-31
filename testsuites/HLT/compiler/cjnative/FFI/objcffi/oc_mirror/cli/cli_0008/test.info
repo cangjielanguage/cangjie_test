@@ -7,5 +7,5 @@
  */
  
 // LEVEL: 1
-// (iOSNative) EXEC-PIPE-1: %mirror_gen 2>&1 | compare %f
+// (target_ios or target_ios_simulator) EXEC-PIPE-1: %mirror_gen 2>&1 | compare %f
 // ASSERT: scan Usage: ObjCInteropGen [-v] [-D<macro>=<value>] [--cd] config-file.toml

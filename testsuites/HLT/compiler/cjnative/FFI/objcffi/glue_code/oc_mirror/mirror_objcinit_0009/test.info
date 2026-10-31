@@ -8,5 +8,5 @@
  
 // LEVEL: 3 
 // DEPENDENCE: src test.toml
-// (iOSNative) ERRCHECK: %mirror_gen test.toml
+// (target_ios or target_ios_simulator) ERRCHECK: %mirror_gen test.toml
 // ASSERT: scan-2 init methods must return a type related to the receiver type

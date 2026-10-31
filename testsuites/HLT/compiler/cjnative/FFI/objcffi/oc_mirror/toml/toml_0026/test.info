@@ -8,5 +8,5 @@
  
 // LEVEL: 1
 // DEPENDENCE: test.toml test.h
-// (iOSNative) EXEC: %mirror_gen test.toml
-// (iOSNative) EXEC-1: %ls mirrors/objc/foundation/
+// (target_ios or target_ios_simulator) EXEC: %mirror_gen test.toml
+// (target_ios or target_ios_simulator) EXEC-1: %ls mirrors/objc/foundation/

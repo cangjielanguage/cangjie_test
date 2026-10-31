@@ -8,6 +8,6 @@
  
 // LEVEL: 1
 // DEPENDENCE: test.toml test.h
-// (iOSNative) EXEC: %mirror_gen test.toml
-// (iOSNative) EXEC-PIPE: cat mirrors/cjworld/test.cj | compare %f
+// (target_ios or target_ios_simulator) EXEC: %mirror_gen test.toml
+// (target_ios or target_ios_simulator) EXEC-PIPE: cat mirrors/cjworld/test.cj | compare %f
 // ASSERT: scan public open func goo(): Unit

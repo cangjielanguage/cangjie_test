@@ -6,6 +6,12 @@
 # 
 # See https://cangjie-lang.cn/pages/LICENSE for license information.
 
+# Unified packaging/execution driver for objcffi and non-_exe iOS cfgs
+# (invoked by run_ios_*_{objcffi,executable}.sh): xcodebuild packaging ->
+# signing (real device: full chain against the profile entitlements;
+# simulator: ad-hoc) -> simctl / devicectl install and launch -> stdout and
+# exit code handed back to the framework. The device branch is the devicectl
+# stack (the legacy idevice toolchain is deprecated).
 import argparse
 import subprocess
 import sys
@@ -98,7 +104,7 @@ def uninstall_app(device_type, udid, bundle_id):
     if device_type == "simulator":
         run_cmd(['xcrun', 'simctl', 'uninstall', udid, bundle_id])
     else:
-        run_cmd(['ideviceinstaller', '-u', udid, '-U', bundle_id])
+        run_cmd(['xcrun', 'devicectl', 'device', 'uninstall', 'app', '--device', udid, bundle_id])
     print_log(f"Successfully uninstalled {bundle_id}")
 
 def print_log(str):
@@ -183,6 +189,7 @@ def main():
     parser.add_argument("--simulator-name", help="Simulator name (required if not using --udid for simulator)")
     parser.add_argument("--os-version", help="iOS version for simulator (required if not using --udid)")
     parser.add_argument("--udid", help="Device/simulator UDID")
+    parser.add_argument("--dest-arch", default="", help="Explicit destination arch (e.g. x86_64) for dual-arch simulator UDIDs")
     parser.add_argument("--bundle-id", required=True, help="App bundle identifier")
     parser.add_argument("--configuration", default="Debug", help="Build configuration")
     parser.add_argument("--workspace", default="./", help="Specify working directory")
@@ -205,7 +212,8 @@ def main():
     check_tool_exists("xcodebuild")
     check_tool_exists("xcrun")
     if args.device_type == "device":
-        check_tool_exists("ideviceinstaller")
+        # devicectl (Xcode 26 stack) replaces legacy ideviceinstaller/idevicedebug
+        check_tool_exists("xcrun")
 
     # Handle simulator
     udid = args.udid
@@ -236,15 +244,89 @@ def main():
             build_cmd += ["-workspace", args.project_path]
         else:
             build_cmd += ["-project", args.project_path]
-        build_cmd += ["-destination", f"id={udid}"] if args.device_type == "simulator" else ["-destination", f"platform=iOS,id={args.udid}"]
+        if args.device_type == "simulator":
+            # One simulator UDID exposes arm64/x86_64 destination variants;
+            # an x86_64 product needs an explicit arch or xcodebuild picks the
+            # arm64 variant and fails validation
+            dest = f"id={udid},arch={args.dest_arch}" if args.dest_arch else f"id={udid}"
+            build_cmd += ["-destination", dest]
+        else:
+            # xcodebuild's device discovery for real devices walks the classic
+            # UDID: a coredevice UUID goes unrecognized by xcodebuild when the
+            # Xcode cache is stale (devicectl still shows connected) and the
+            # destination reports no available devices — convert to classic
+            # form before passing it in
+            dest_id = args.udid
+            if dest_id.count("-") == 4:
+                det = subprocess.run(["xcrun", "devicectl", "device", "info",
+                                      "details", "--device", dest_id],
+                                     capture_output=True, text=True).stdout
+                for line in det.splitlines():
+                    if "• udid:" in line:
+                        dest_id = line.split(":", 1)[1].strip()
+                        break
+            build_cmd += ["-destination", f"platform=iOS,id={dest_id}"]
+            # Device-package signing is applied after build by this script
+            # with the keychain development identity (without a project team
+            # the xcodebuild signing phase fails outright); signing is disabled
+            # during build
+            build_cmd += ["CODE_SIGNING_ALLOWED=NO",
+                          # A real device's iOS version may be lower than the
+                          # simulator-era deployment target (iOS 26); squash to
+                          # 12.0 at build time for older devices — the effective
+                          # floor is decided by clang's -miphoneos-version-min
+                          "IPHONEOS_DEPLOYMENT_TARGET=12.0"]
         build_cmd += ["LD_RUNPATH_SEARCH_PATHS='@executable_path/Frameworks'"]
         run_cmd(build_cmd)
 
     # Install and run
     is_simulator = args.device_type == "simulator"
     app_path = find_app_path(derived_data, args.configuration, is_simulator)
-    
+
+    # objcffi: backfill missing runtime dylibs in app/Frameworks + uninstall
+    # the stale package before install. The project Copy Files phase is a
+    # static list; when the SDK runtime library set evolves (new dylibs) the
+    # list lags behind -> the app misses @rpath dependencies -> dyld crashes
+    # at startup. Backfill from the project tree objc_ffi_test/ios_aarch64_cjnative/
+    # (the runner sh has already copied the full runtime set there), immune to
+    # list drift; then re-sign ad-hoc. A stale package makes dyld keep loading
+    # the old bundle after an incremental install ("no such file" illusion),
+    # so uninstall before install.
+    if args.objcffi:
+        fw_dir = os.path.join(app_path, "Frameworks")
+        bridge_rt = os.path.join(os.path.dirname(os.path.abspath(args.project_path)),
+                                 "objc_ffi_test", "ios_aarch64_cjnative")
+        if os.path.isdir(bridge_rt) and os.path.isdir(fw_dir):
+            patched = 0
+            for f in os.listdir(bridge_rt):
+                if f.endswith(".dylib") and not os.path.exists(os.path.join(fw_dir, f)):
+                    src = os.path.join(bridge_rt, f)
+                    # Skip self-instrumented libraries (e.g. libstdx.fuzz's
+                    # sancov stubs): the runtime has no sanitizer-coverage stub
+                    # symbols, and the plugin manager crashes when it dlopens one
+                    try:
+                        undef = subprocess.run(["nm", "-u", src],
+                                               capture_output=True, text=True).stdout
+                        if "_sanitizer_cov" in undef:
+                            continue
+                    except OSError:
+                        pass
+                    dst = os.path.join(fw_dir, f)
+                    shutil.copy2(src, dst)
+                    subprocess.run(["codesign", "--force", "--sign", "-", dst],
+                                   capture_output=True)
+                    patched += 1
+            if patched:
+                subprocess.run(["codesign", "--force", "--sign", "-", app_path],
+                               capture_output=True)
+                print(f"objcffi runtime patch: copied {patched} missing dylib(s), re-signed")
+
     if is_simulator:
+        if args.objcffi:
+            subprocess.run(["xcrun", "simctl", "uninstall", udid, args.bundle_id],
+                           capture_output=True)
+        # Install to simulator
+        run_cmd(["xcrun", "simctl", "install", udid, app_path])
         # Install to simulator
         run_cmd(["xcrun", "simctl", "install", udid, app_path])
         
@@ -259,25 +341,93 @@ def main():
                 print("Error: Failed to get app PID after launch")
                 sys.exit(1)
         
-        # The cmd with console output
-        # old version:
-        # run_app_cmd = [
-        #     "xcrun", "simctl", "launch", "--console-pty", "--terminate-running-process",
-        #     udid, args.bundle_id, "--workspace", workspace
-        # ]
-        # new version with syslog:
+        # The cmd with console output: start the syslog stream in the
+        # background (ios_sim.log feeds the [CANGJIE:RUNTIME] line extraction)
+        # and launch with console-pty in the foreground to capture case stdout
+        # and the exit code
         run_app_cmd = [
             'bash', '-c',
             f'xcrun simctl spawn {udid} log stream --style syslog --level info &> ios_sim.log & '
             f'SIMCTL_CHILD_MRT_LOG_LEVEL=i xcrun simctl launch --console-pty --terminate-running-process {udid} {args.bundle_id} --workspace {workspace}'
         ]
     else:
-        # Install to device
-        run_cmd(["ideviceinstaller", "-u", args.udid, "-i", app_path])
-        
-        # Run with syslog output
+        # Device route via devicectl (Xcode 26 stack). Legacy
+        # ideviceinstaller/idevicedebug are not part of Xcode and may be
+        # absent; codesign with the keychain "Apple Development" identity
+        # after build (xcodebuild device builds without a project team would
+        # fail signing), then install/launch/uninstall via devicectl.
+        sign_id = os.environ.get("IOS_DEVICE_SIGN_IDENTITY", "")
+        if not sign_id:
+            idl = subprocess.run(["security", "find-identity", "-v", "-p", "codesigning"],
+                                 capture_output=True, text=True).stdout
+            for line in idl.splitlines():
+                if "Apple Development" in line:
+                    sign_id = line.strip().split()[1]
+                    break
+        if sign_id:
+            # Canonical signing chain (same as ios_device_common.sh sign_bundle):
+            # extract Entitlements from the provisioning profile (a freeprofile
+            # signature's entitlements must match the profile; default
+            # entitlements yield 0xe8008016 invalid entitlements) -> sign each
+            # nested dylib -> sign the main bundle
+            import tempfile, plistlib
+            prof = os.environ.get("IOS_DEVICE_PROVISION_PROFILE", "")
+            ent = None
+            if prof and os.path.isfile(prof):
+                dec = subprocess.run(["security", "cms", "-D", "-i", prof],
+                                     capture_output=True, text=True)
+                if dec.returncode == 0 and "<plist" in dec.stdout:
+                    try:
+                        d = plistlib.loads(dec.stdout.encode())
+                        ent = d.get("Entitlements")
+                    except Exception:
+                        ent = None
+            tmpd = tempfile.mkdtemp()
+            ent_path = None
+            if ent:
+                ent_path = os.path.join(tmpd, "entitlements.plist")
+                plistlib.dump(ent, open(ent_path, "wb"))
+                # A freeprofile's application-identifier is not a wildcard
+                # (team.cangjie.wbt-proj): the app's bundle id must fall inside
+                # the profile's coverage or installd reports 0xe8008016 invalid
+                # entitlements — rewrite Info.plist before signing and align the
+                # bundle id of the subsequent launch/uninstall
+                appid = ent.get("application-identifier", "")
+                if appid and "." in appid:
+                    prof_bid = appid.split(".", 1)[1]
+                    info_pl = os.path.join(app_path, "Info.plist")
+                    if os.path.isfile(info_pl):
+                        d = plistlib.load(open(info_pl, "rb"))
+                        if d.get("CFBundleIdentifier") != prof_bid:
+                            d["CFBundleIdentifier"] = prof_bid
+                            plistlib.dump(d, open(info_pl, "wb"))
+                        args.bundle_id = prof_bid
+                # Embed the profile into the app (a CODE_SIGNING_ALLOWED=NO
+                # build product lacks it; installd with no profile to verify
+                # reports the same 0xe8008016)
+                prof_file = prof
+                if prof_file and os.path.isfile(prof_file):
+                    shutil.copy2(prof_file, os.path.join(app_path, "embedded.mobileprovision"))
+            sign_args = (["--entitlements", ent_path] if ent_path else
+                         ["--generate-entitlement-der"])
+            for root, _, files in os.walk(app_path):
+                for f in files:
+                    if f.endswith(".dylib"):
+                        subprocess.run(["codesign", "-f", "-s", sign_id,
+                                        "--timestamp=none"] + sign_args +
+                                       [os.path.join(root, f)], capture_output=True)
+            subprocess.run(["codesign", "-f", "-s", sign_id, "--timestamp=none"]
+                           + sign_args + [app_path], capture_output=True)
+        else:
+            print("Warning: no Apple Development identity found; trying unsigned install")
+
+        run_cmd(["xcrun", "devicectl", "device", "uninstall", "app", "--device", args.udid, args.bundle_id])
+        run_cmd(["xcrun", "devicectl", "device", "install", "app", "--device", args.udid, app_path])
+
+        # Run with console output
         run_app_cmd = [
-            "idevicedebug", "-u", args.udid, "run", args.bundle_id
+            "xcrun", "devicectl", "device", "process", "launch", "--console",
+            "--terminate-existing", "--device", args.udid, args.bundle_id
         ]
     # Run App
     com_out = ""
@@ -290,8 +440,13 @@ def main():
         com_out = com_out.replace('\r\n', '\n').replace('\r', '\n')
         com_err = com_err.replace('\r\n', '\n').replace('\r', '\n')
         
-        # 读取日志内容
-        with open('ios_sim.log', 'r', encoding='utf-8') as f:
+        # Read the log contents (ios_sim.log is a simulator log-stream product;
+        # the device route has no such file)
+        if not is_simulator:
+            sys_log_content = ""
+            spring_board_line = []
+        else:
+          with open('ios_sim.log', 'r', encoding='utf-8') as f:
             cangjie_runtime_log_lines = []
             for line in f.readlines():
                 line = line.rstrip('\n')
@@ -305,7 +460,7 @@ def main():
             else:
                 exit_message = ''
             
-            # 过滤无关stdout/stderr
+            # Filter out unrelated stdout/stderr lines
             cangjie_runtime_log_lines = [line for line in cangjie_runtime_log_lines if 'signpost functions all loaded successfully' not in line and '(SpringBoard)' not in line]
             sys_log_content = '\n'.join(cangjie_runtime_log_lines)
 
@@ -315,9 +470,11 @@ def main():
                 return_code = int(com_out.split("cj_main_return_start")[1].split("cj_main_return_end")[0])
                 com_out = com_out.split("cj_main_return_start")[0] + com_out.split("cj_main_return_end")[1]
             else:
-                # 如果没有找到cj_main_return_start/cj_main_return_end可能是因为全局抛出异常导致的
+                # Missing cj_main_return_start/end markers usually mean a global
+                # exception was thrown
                 if 'An exception has occurred' in sys_log_content:
-                    # 全局静态初始化过程中抛出异常，退出码改为1，并将日志内容输出到标准输出流
+                    # An exception was thrown during global static init: rewrite
+                    # the exit code to 1 and surface the log content on stdout
                     return_code = 1
                 elif 'CJNative Handle signal: 11.' in sys_log_content or 'SIGSEGV(11)' in exit_message:
                     # SIGSEGV(11) -> 139
@@ -326,7 +483,7 @@ def main():
                     # SIGABRT(6) -> 134
                     return_code = 134
                 else:
-                    # 其他未知原因
+                    # Other unknown causes
                     raise Exception(f"unknown condition occurred.")
         sys.exit(return_code)
     finally:

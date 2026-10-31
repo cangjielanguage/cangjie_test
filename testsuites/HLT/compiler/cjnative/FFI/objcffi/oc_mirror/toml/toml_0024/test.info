@@ -8,5 +8,5 @@
  
 // LEVEL: 1
 // DEPENDENCE: test.toml test.h
-// (iOSNative) ERRCHECK: %mirror_gen test.toml
+// (target_ios or target_ios_simulator) ERRCHECK: %mirror_gen test.toml
 // ASSERT: scan `packages` entry #0 string `package-name` is empty

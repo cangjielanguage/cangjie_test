@@ -7,8 +7,8 @@
 # See https://cangjie-lang.cn/pages/LICENSE for license information.
 
 # TODO:
-# - 暂不支持main有入参
-# - 暂不支持@Test
+# - main with parameters is not supported yet
+# - @Test is not supported yet
 
 import argparse
 import re
@@ -50,6 +50,18 @@ cangjie_main_end = """
     }
 }"""
 
+# The executable route (cjc --output-type=exe) requires a Cangjie main entry
+# inside the package; that entry calls @C cangjie_main in an unsafe context
+# (native functions are not callable from a safe context). A real device has
+# no way to obtain the process's true exit code, so the result is reported
+# back via the cj_main_return marker printed by cangjie_main.
+cangjie_exe_main = """
+
+main(): Int64 {
+    unsafe { cangjie_main() }
+    return 0
+}"""
+
 
 def print_log(str):
     if IS_DEBUG:
@@ -57,18 +69,19 @@ def print_log(str):
 
 
 def has_return_statement(func_body: str) -> bool:
-    """检测函数体内是否包含非Unit的return语句"""
-    # 排除 return Unit 和 return@label 的情况
+    """Detect whether the function body contains a non-Unit return statement"""
+    # Exclude `return Unit` and labeled `return@label` forms
     clean_body = re.sub(r'//.*?$|/\*.*?\*/|".*?"', '', func_body, flags=re.DOTALL)
     return bool(re.search(r'\breturn\b(?!\s*Unit\b)(?!\s*@)', clean_body))
 
 
-def modify(data):
+def modify(data, emit_main=False):
     pattern_cangjie_main = r'(^\s*.*\s*func\s*cangjie_main\s*\(\)\s*:?\s*.*\s*\{)'
-    # 如果将被modify的文件中已经存在cangjie_main入口则不再进行任何处理，直接返回，也不报错
+    # If the file about to be modified already contains a cangjie_main entry,
+    # return as-is without any processing and without raising
     if re.search(pattern_cangjie_main, data, re.M):
         return data
-        # raise Exception("[错误] 已存在 cangjie_main 函数")
+        # raise Exception("[ERROR] a cangjie_main function already exists")
 
     modified = data + cangjie_main_start
     pattern_main = r'(^\s*main\s*\(\)\s*(?::\s*([^\s\{]+)\s*)?\{)'
@@ -77,18 +90,18 @@ def modify(data):
     matches_unsafe_main = re.findall(pattern_unsafe_main, data, re.M)
 
     if len(matches_main) + len(matches_unsafe_main) > 1:
-        raise Exception(f"[错误] 匹配到 {len(matches_main)} 个 main 函数")
+        raise Exception(f"[ERROR] matched {len(matches_main)} main functions")
     elif len(matches_main) == 1:
         replaced, return_type = matches_main[0]
-        print_log(f"匹配的 main 函数: {repr(replaced)}")
-        print_log(f"返回类型: {repr(return_type)}")
+        print_log(f"matched main function: {repr(replaced)}")
+        print_log(f"return type: {repr(return_type)}")
 
-        # 获取函数体内容
+        # Extract the function body
         func_start = data.find(replaced) + len(replaced)
         func_end = data.find("\n}", func_start)
         func_body = data[func_start:func_end]
 
-        # 判断返回值处理方式
+        # Decide how to handle the return value
         need_return = (
                 (return_type and "Int" in return_type) or
                 (not return_type and has_return_statement(func_body))
@@ -98,15 +111,15 @@ def modify(data):
         modified += call_cj_main_Int if need_return else call_cj_main_Unit
     elif len(matches_unsafe_main) == 1:
         replaced, return_type = matches_unsafe_main[0]
-        print_log(f"匹配的 main 函数: {repr(replaced)}")
-        print_log(f"返回类型: {repr(return_type)}")
+        print_log(f"matched main function: {repr(replaced)}")
+        print_log(f"return type: {repr(return_type)}")
 
-        # 获取函数体内容
+        # Extract the function body
         func_start = data.find(replaced) + len(replaced)
         func_end = data.find("\n}", func_start)
         func_body = data[func_start:func_end]
 
-        # 判断返回值处理方式
+        # Decide how to handle the return value
         need_return = (
                 (return_type and "Int" in return_type) or
                 (not return_type and has_return_statement(func_body))
@@ -118,23 +131,27 @@ def modify(data):
         pattern_unittest = r"^\s*@Test\s*(?:public)?\s*class\s*(.*?)\s*{$"
         matches = re.findall(pattern_unittest, data, re.M)
         if len(matches) < 1:
-            # 不进行处理
-            # raise Exception(f"[错误] 未找到 main 或 @Test, 无法处理")
+            # No-op
+            # raise Exception(f"[ERROR] neither main nor @Test found; cannot process")
             return data
         modified += call_cj_ut_start
         for idx, ut_class_name in enumerate(matches, 1):
             modified += call_cj_ut_pref + ut_class_name + call_cj_ut_suff
         modified += call_cj_ut_end
 
-    return modified + cangjie_main_end
+    result = modified + cangjie_main_end
+    if emit_main:
+        result += cangjie_exe_main
+    return result
 
 
-# 根据info文件找到真正的入口main所在的那个文件的路径
+# Locate the file that actually holds the entry main, via the info file
 def process_info_file(test_info_file_path: Path) -> list[Path]:
     dependency_list: List[Path] = list()
     cj_files = list(test_info_file_path.parent.glob('*.cj'))
     dependency_list.extend(cj_files)
-    # 测试头所在文件也需要一起被检查是否含有main，且优先被检查所以放第一个
+    # The test-header file itself is also checked for a main and is examined
+    # first, hence first in the list
     dependency_list.append(test_info_file_path)
     with open(test_info_file_path, 'r', encoding='utf-8') as f:
         for line in f.readlines():
@@ -142,32 +159,33 @@ def process_info_file(test_info_file_path: Path) -> list[Path]:
             matches_dependence = re.search(pattern=pattern_dependence, string=line, flags=re.IGNORECASE)
             if matches_dependence:
                 content = matches_dependence.group(1).strip()
-                # %n为测试头所在文件的不带后缀名的文件名
+                # %n is the test-header file name without its extension
                 content = content.replace('%n', test_info_file_path.stem)
                 l = re.split(r'[,\s]+', content)
                 print_log('l = {}'.format(l))
                 for i in l:
                     dependency_list.append(Path(Path(i).name))
-                # 一般一个info文件中只会有一个DEPENDENCE声明，找到第一个处理完后就可以不往下看了
+                # An info file normally declares only one DEPENDENCE; after the
+                # first hit there is no need to keep scanning
                 break
             else:
-                # 该行没有DEPENDENCE，继续看下一行
+                # No DEPENDENCE on this line; continue with the next
                 pass
 
 
     print_log('dependency_list = {}'.format(dependency_list))
-    # 逐个文件打开确认是否包含main
+    # Open each candidate file and check whether it contains main
     main_file_list: List[Path] = list()
     main_file_list.append(test_info_file_path)
     # pattern_main = r'(^\s*main\s*\(\s*(.*?)\s*\)\s*:?\s*(.*?)\s*\{)(?!\})'
     pattern_main = r'(^\s*main\s*\(\)\s*(?::\s*([^\s\{]+)\s*)?\{)'
     for dependency_path in dependency_list:
-        # 不存在就跳过
+        # Skip if it does not exist
         if not dependency_path.exists():
             continue
         elif dependency_path.is_file():
             print_log('reading {}'.format(dependency_path))
-            # 这个依赖是个文件，直接读取
+            # The dependency is a file: read it directly
             try:
                 with open(dependency_path, 'r', encoding='utf-8') as f:
                     content = f.read()
@@ -176,10 +194,10 @@ def process_info_file(test_info_file_path: Path) -> list[Path]:
                         # main_file_list.append(dependency_path)
                     main_file_list.append(dependency_path)
             except Exception as e:
-                # 如果读取失败就不对这个文件进行确认了
+                # On a read failure, skip the check for this file
                 pass
         elif dependency_path.is_dir():
-            # 这个依赖是个目录，需要遍历目录下所有文件分别读取
+            # The dependency is a directory: walk all files and read each one
             for file_path in dependency_path.rglob('*'):
                 if file_path.is_file():
                     try:
@@ -189,46 +207,50 @@ def process_info_file(test_info_file_path: Path) -> list[Path]:
                             #     main_file_list.append(file_path)
                             main_file_list.append(file_path)
                     except Exception as e:
-                        # 如果读取失败就不对这个文件进行确认了
+                        # On a read failure, skip the check for this file
                         pass
 
     return main_file_list
-    # raise Exception(f"[ERROR] 没找到拥有main的源文件")
+    # raise Exception(f"[ERROR] no source file owning a main was found")
 
 
-def process_file(input_path: Path, output_path: Path) -> None:
-    # 需要判断输入文件是否是info文件，如果是info文件的话，需要读取DEPENDENCE信息来找到真正的用例入口
+def process_file(input_path: Path, output_path: Path, emit_main: bool = False) -> None:
+    # Decide whether the input is an info file; if so, read its DEPENDENCE
+    # entries to locate the real case entry
     entry_source_file_path_list = process_info_file(input_path)
     for entry_source_file_path in entry_source_file_path_list:
         try:
-            # 读取原始文件内容
+            # Read the original content
             with open(entry_source_file_path, 'r', encoding='utf-8') as f:
                 original_data = f.read()
-            # 修改数据
-            modified_data = modify(original_data)
-            # 写入输出文件
+            # Rewrite it
+            modified_data = modify(original_data, emit_main)
+            # Write the output file
             with open(entry_source_file_path, 'w', encoding='utf-8') as f:
                 f.write(modified_data)
-            print_log(f"文件处理成功，输出路径：{entry_source_file_path}")
+            print_log(f"file processed successfully; output: {entry_source_file_path}")
         except FileNotFoundError:
-            raise Exception(f"[错误] 输入文件不存在：{entry_source_file_path}")
+            raise Exception(f"[ERROR] input file does not exist: {entry_source_file_path}")
         except Exception as e:
-            raise Exception(f"[错误] 处理失败：{str(e)}")
+            raise Exception(f"[ERROR] processing failed: {str(e)}")
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="处理 cj 文件以满足 cangjie ios 测试",
+        description="Rewrite a cj file to satisfy the Cangjie iOS test route",
         formatter_class=argparse.RawTextHelpFormatter
     )
-    parser.add_argument('input', help='输入文件路径')
-    parser.add_argument('-o', '--output', required=True, help='输出文件路径')
-    parser.add_argument("--ignore-exception", action="store_true", help="忽略异常继续执行")
+    parser.add_argument('input', help='input file path')
+    parser.add_argument('-o', '--output', required=True, help='output file path')
+    parser.add_argument("--ignore-exception", action="store_true", help="ignore exceptions and continue")
+    parser.add_argument("--exe", action="store_true",
+                        help="also generate a Cangjie main entry calling cangjie_main "
+                            "(for the real-device executable route, cjc --output-type=exe)")
     args = parser.parse_args()
     global IS_DEBUG
     IS_DEBUG = False if args.ignore_exception else True
 
-    process_file(Path(args.input), Path(args.output))
+    process_file(Path(args.input), Path(args.output), args.exe)
 
 
 if __name__ == '__main__':
