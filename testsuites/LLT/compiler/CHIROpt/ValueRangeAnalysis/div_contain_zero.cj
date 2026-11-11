@@ -5,7 +5,7 @@
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
 // EXEC-PIPE-0: %compiler %enableO2 -Woff all %f -o %n.%suffix
-// EXEC-PIPE: %run %run_opt %output %run_args 2>&1 | compare %f
+// EXEC-PIPE-1: %run %run_opt %output %run_args 2>&1 | compare %f
 // ASSERT: scan ArithmeticException: Divided by zero!
 
 main() {

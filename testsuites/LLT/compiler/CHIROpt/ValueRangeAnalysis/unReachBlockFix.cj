@@ -4,10 +4,13 @@
 //
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
-// (Linux) EXEC:%compiler %dumpCHIRDebug %enableO2 %n.cj -o %output 2>&1
-// (Linux) EXEC-PIPE-0: %cat %n\_CHIR/*RangePropagation.chirtxt | %grep "Lambda" | compare %f
-// (Linux) ASSERT: scan-not goo
-// (Linux) EXEC-0: %run %output
+// DEPENDENCE: ../pick_defination.py
+// EXEC: %compiler %dumpCHIRDebug %enableO2 %f -o %output
+// EXEC: %python pick_defination.py %n\_CHIR/[0-9]*_RangePropagation.chirtxt "." | compare %f
+// EXEC: %run %run_opt %output %run_args
+
+// ASSERT: scan Func
+// ASSERT: regex-not Lambda.*goo
 
 func hoo() { 1 << 1 }
 
