@@ -13,6 +13,8 @@
 /*
  * Test description:
  *      Test Client1_1#The number of connections exceeds the limit.
+ *      Since issue #1090, requests exceeding the limit queue for a free
+ *      connection instead of throwing "Too many connections".
  * Test API:
  *      public func request(request: HttpRequest): HttpResponse
  */
@@ -43,13 +45,12 @@ class TestClient1_1maxConn {
         let port = (serverSocket.localAddress as IPSocketAddress)?.port ?? 0
         let u = URL.parse("http://127.0.0.1:${port}/a")
         let r = HttpRequestBuilder().url(u).header("Host", "huawei.com").build()
-        for (_ in 0..10) {
-            client.send(r)
-        }
-        try {
-            client.send(r)
-        } catch (e: Exception) {
-            @Expect(e.message, "Too many connections to the same server.")
+        // each connection is released once the body is fully consumed,
+        // so requests never exceed the limit and all must succeed
+        for (_ in 0..11) {
+            let resp = client.send(r)
+            let buf = Array<UInt8>(1024, repeat: 0)
+            while (resp.body.read(buf) > 0) {}
         }
         serverSocket.close()
         client.close()
@@ -60,20 +61,16 @@ class TestClient1_1maxConn {
 
     func serverPacketCapture1() {
         serverSocket.bind()
-        let serverList = ArrayList<TcpSocket>()
         while (true) {
             try {
                 var server = serverSocket.accept()
                 var buf = Array<UInt8>(500, repeat: 0)
                 var _ = server.read(buf)
-                server.write("HTTP/1.1 200 ok\r\n\r\n".toArray())
-                serverList.add(server)
+                server.write("HTTP/1.1 200 ok\r\nconnection: close\r\n\r\n".toArray())
+                server.close()
             } catch (e: SocketException) {
                 break
             }
-        }
-        for (server in serverList) {
-            server.close()
         }
     }
 }

@@ -15,6 +15,10 @@
  *      Test poolSize
  * Test API:
  *      func sendRequest(request: HttpRequest): HttpResponse
+ *
+ * Note: since issue #1090, requests exceeding the per-server connection
+ * limit queue for a free connection instead of throwing
+ * "Too many connections to the same server."
  */
 package tests.client1_1
 
@@ -56,25 +60,35 @@ class TestClientPoolSize {
         let port = (serverSocket.localAddress as IPSocketAddress)?.port ?? 0
         let u = URL.parse("http://127.0.0.1:${port}/a")
         let r = HttpRequestBuilder().url(u).build()
-        client.send(r)
-        try {
-            client.send(r)
-            @Expect(1, 2)
-        } catch (e: HttpException) {
-            @Expect(e.message, "Too many connections to the same server.")
-        }
+        // the only connection slot is released once the body is fully
+        // consumed, so the next request must succeed instead of being
+        // rejected with "Too many connections"
+        let resp1 = client.send(r)
+        consumeBody(resp1)
+        let resp2 = client.send(r)
+        consumeBody(resp2)
         client.close()
         fut.get()
         println("client_pool_size_test")
         asanGC()
     }
+    func consumeBody(resp: HttpResponse): Unit {
+        let buf = Array<UInt8>(1024, repeat: 0)
+        while (resp.body.read(buf) > 0) {}
+    }
     func serverPacketCapture() {
         serverSocket.bind()
-        // server1
-        let server = serverSocket.accept()
-        sleep(Duration.millisecond * 100)
-        server.write("HTTP/1.1 200 ok\r\nconnection: close\r\n\r\n".toArray())
-        server.close()
+        // server1 and server2, one connection per request
+        for (_ in 0..2) {
+            let server = serverSocket.accept()
+            // read the request before closing, otherwise the client would
+            // receive an RST instead of a graceful EOF while reading the body
+            var buf = Array<UInt8>(500, repeat: 0)
+            var _ = server.read(buf)
+            sleep(Duration.millisecond * 100)
+            server.write("HTTP/1.1 200 ok\r\nconnection: close\r\n\r\n".toArray())
+            server.close()
+        }
         serverSocket.close()
     }
 }
