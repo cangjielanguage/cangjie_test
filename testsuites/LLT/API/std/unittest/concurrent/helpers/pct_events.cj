@@ -229,8 +229,69 @@ public func pctSchedulePollCount(s: PCTSchedule): UInt64 {
     s.pollCount
 }
 
+/** The high-water mark of the virtual clock's armed-timer list (mirror of
+ *  `PCTSchedule.timersHighWater`): bounded by the waiter count — each
+ *  armed wait purges the arming actor's stale entry — and unbounded only
+ *  if that purge regressed. */
+public func pctTimersHighWater(s: PCTSchedule): Int64 {
+    s.timersHighWater
+}
+
 /** The number of data-race pairs reported by a DPOR exploration (mirror
  *  of `DporReport.racePairs`; always 0 without an mtrace runtime). */
 public func dporRacePairCount(r: DporReport): Int64 {
     Int64(r.racePairs.size)
+}
+
+// --- Test-support crafting/injection (same module, so the protected
+// --- constructors are reachable) ---
+
+/** Mirror conversion for crafting (see pctCraftedSchedule). */
+func mapTestPctEventKind(k: TestPctEventKind): PctEventKind {
+    match (k) {
+        case TestPctEventKind.Switch => PctEventKind.Switch
+        case TestPctEventKind.Block => PctEventKind.Block
+        case TestPctEventKind.Wait => PctEventKind.Wait
+        case TestPctEventKind.Done => PctEventKind.Done
+        case TestPctEventKind.Complete => PctEventKind.Complete
+        case TestPctEventKind.Unlock => PctEventKind.Unlock
+        case TestPctEventKind.Release => PctEventKind.Release
+        case TestPctEventKind.Notify => PctEventKind.Notify
+        case TestPctEventKind.NotifyAll => PctEventKind.NotifyAll
+        case TestPctEventKind.Spawn => PctEventKind.Spawn
+        case TestPctEventKind.Pcp => PctEventKind.Pcp
+        case TestPctEventKind.Deadlock => PctEventKind.Deadlock
+        case TestPctEventKind.Resume => PctEventKind.Resume
+        case TestPctEventKind.FairYield => PctEventKind.FairYield
+        case TestPctEventKind.Timer => PctEventKind.Timer
+    }
+}
+
+/**
+ * Test support: craft a schedule from test-shaped events (the protected
+ * PctEvent/PCTSchedule constructors are module-visible from this bridge
+ * package). The report-only counters default to zero and the flags to
+ * clean; making the crafted schedule one that loadReplay ACCEPTS is the
+ * caller's business — bogus slots and mismatched actor counts are
+ * exactly what the rejection tests want to feed.
+ */
+public func pctCraftedSchedule(seed!: UInt64, actorCount!: Int64, pcpBudget!: Int64,
+    events!: Array<TestPctEvent>): PCTSchedule {
+    let out = ArrayList<PctEvent>()
+    for (ev in events) {
+        out.add(PctEvent(kind: mapTestPctEventKind(ev.kind), from: Int32(ev.from), to: Int32(ev.to), step: ev.step))
+    }
+    return PCTSchedule(seed: seed, actorCount: actorCount, pcpBudget: pcpBudget, events: out.toArray())
+}
+
+/**
+ * Test support: inject a framework-internal failure into the active PCT
+ * iteration through one coordinator locked region — the region wrapper
+ * must record it, release the lock, and the iteration must fail loudly
+ * at buildSchedule instead of hanging (the lock-leak regression anchor;
+ * see pctInjectProtocolFailureForTest). Returns false when no iteration
+ * is active.
+ */
+public func pctInjectProtocolFailure(message: String): Bool {
+    return pctInjectProtocolFailureForTest(message)
 }
