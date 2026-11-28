@@ -11,7 +11,7 @@
 // RUN-EXEC: %run_stdx %output %run_utest_opt %run_args
 
 /*
- * Test description: Test illegal trailer function
+ * Test description: Test trailer delivery without transfer-encoding or Trailer declaration
  * Test API: public func trailer(key: String, value: String): HttpRequestBuilder
  */
 
@@ -36,9 +36,13 @@ class Test_HttpRequestBuilder_Trailer_03 {
                 {
                     httpContext =>
                     var bodyBuf = Array<UInt8>(100, repeat: 0)
-                    //需要读取body
-                    httpContext.request.body.read(bodyBuf)
-                    @Expect(ArrayList<String>(httpContext.request.trailers.get("123")), ArrayList<String>([]))
+                    //需要读取body到EOF：trailer段位于消息末尾，未读到EOF时trailers可能尚未到达服务端
+                    var readLen = httpContext.request.body.read(bodyBuf)
+                    while (readLen > 0) {
+                        readLen = httpContext.request.body.read(bodyBuf)
+                    }
+                    //trailers随chunked送达，未声明(非禁用)的trailers也会被服务端接收(RFC 9110 6.5.1声明可选)
+                    @Expect(ArrayList<String>(httpContext.request.trailers.get("123")), ArrayList<String>(["123"]))
                 }
             )
         server.serve()
@@ -54,7 +58,7 @@ class Test_HttpRequestBuilder_Trailer_03 {
             sleep(Duration.millisecond)
         }
         port = server.port
-        // http1.1未设置transfer-encoding
+        // http1.1未设置transfer-encoding：带trailers时客户端自动切换为chunked，trailers仍送达
         var req1 = HttpRequestBuilder()
             .version(HTTP1_1)
             .header("Trailer", "123")
@@ -62,7 +66,7 @@ class Test_HttpRequestBuilder_Trailer_03 {
             .body("456")
             .url("http://127.0.0.1:${port}/ok")
             .build()
-        // http1.1未设置Trailer
+        // http1.1未设置Trailer声明：声明为可选提示(RFC 9110 6.5.1)，trailers仍送达
         var req2 = HttpRequestBuilder()
             .version(HTTP1_1)
             .header("transfer-encoding", "chunked")
