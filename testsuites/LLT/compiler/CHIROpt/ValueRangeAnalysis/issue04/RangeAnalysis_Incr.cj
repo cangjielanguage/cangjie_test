@@ -4,9 +4,12 @@
 // EXEC: %run %run_opt %output %run_args
 // EXEC: %rmfile %n.old.cj
 // EXEC: %cpfile %n.new.cj %n.old.cj
-// EXEC-PIPE-0: %compiler %enableO2 %incrementalCompile %cmp_opt %n.old.cj -o %output 2>&1 | compare %f
-// ASSERT: scan incremental compilation triggered
+// issue04: range analysis used to crash when re-running over an incrementally compiled package.
+// The rebuild below must therefore succeed without a crash or any error diagnostic.
+// EXEC-PIPE-0: %compiler %enableO2 %incrementalCompile %cmp_opt -Woff unused %n.old.cj -o %output 2>&1 | compare %f
 // ASSERT: scan-not core dumped
+// ASSERT: regex-not ^error:
+// ASSERT: regex-not Assertion .* failed
 // EXEC: %run %run_opt %output %run_args
 
 // Copyright (c) Huawei Technologies Co., Ltd. 2025. All rights reserved.

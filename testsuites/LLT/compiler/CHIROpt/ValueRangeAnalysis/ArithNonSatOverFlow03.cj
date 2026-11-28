@@ -5,7 +5,6 @@
 // See https://cangjie-lang.cn/pages/LICENSE for license information.
 
 // EXEC:%compiler %cmp_opt  -Woff unused %enableO2 %disableConstPropagation %f -o %output 2>&1 | compare %f
-// No run, check error
 
 func a(): Int8 {
     return 20
