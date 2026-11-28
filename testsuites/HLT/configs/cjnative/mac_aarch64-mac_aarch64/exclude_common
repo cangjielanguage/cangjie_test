@@ -39,3 +39,21 @@ API/std/os/process/test_kill
 
 # https://gitcode.com/Cangjie/cangjie_stdx/issues/396
 API/stdx/aspect_cj
+
+# https://gitcode.com/Cangjie/cangjie_test/issues/553
+Runtime/cjnative/runtime/exclusiveScope/objcffi_0/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_field_0006/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_field_0008_1/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_func_0012/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_func_0013/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_func_0014/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_func_0015/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_init_0008_2/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_init_0008_3/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_prop_0005_1/test.info
+compiler/cjnative/FFI/objcffi/glue_code/oc_impl/impl_prop_0006/test.info
+compiler/cjnative/FFI/objcffi/oc_mirror/toml/toml_0001/test.info
+compiler/cjnative/FFI/objcffi/oc_mirror/toml/toml_0004/test.info
+compiler/cjnative/FFI/objcffi/oc_mirror/toml/toml_0005/test.info
+compiler/cjnative/FFI/objcffi/oc_mirror/toml/toml_0015/test.info
+compiler/cjnative/FFI/objcffi/oc_mirror/toml/toml_0023/test.info

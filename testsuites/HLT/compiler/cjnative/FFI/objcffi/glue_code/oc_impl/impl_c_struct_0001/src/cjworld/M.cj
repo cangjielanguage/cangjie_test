@@ -7,7 +7,8 @@
  */
 
 package cjworld
- 
+
+import objc.foundation.NSObject
 import objc.lang.*
 
 @C
@@ -17,6 +18,7 @@ public struct S {
 }
 
 @ObjC
-public open foreign class M {
+public open foreign class M <: NSObject {
     public init()
 }
+

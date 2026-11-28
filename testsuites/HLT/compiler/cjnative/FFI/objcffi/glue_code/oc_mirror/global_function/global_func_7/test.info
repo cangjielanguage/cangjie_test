@@ -11,16 +11,17 @@
 // 测试@ObjCMirror修饰仓颉全局函数定义的场景
 // 命名参数, 缺省拥有默认值的形参
 // DEPENDENCE: src test.toml
-// (iOSNative) EXEC: %mirror_gen test.toml
-// (iOSNative and not iOS) EXEC: %clang --shared  -fobjc-arc -framework Foundation -lobjc -Isrc/objc src/objc/G.m -o libdep.dylib
-// (iOSNative and iOS) EXEC: xcrun --sdk iphonesimulator %clang -fobjc-arc -framework Foundation -lobjc -Wl,-install_name,@rpath/libdep.dylib --target=%clang_target --sysroot=$(xcrun --show-sdk-path --sdk iphonesimulator) --shared -Isrc/objc src/objc/G.m -o libdep.dylib
-// (iOSNative) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc --link-options="-install_name @rpath/libobjc.foundation.dylib" src/objc/foundation/*.cj
-// (iOSNative) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc -L . -ldep -lobjc.foundation --link-options="-install_name @rpath/libcjworld.dylib" src/cjworld/*.cj
-// (iOSNative) EXEC: cd objc-gen && %clang %clang_opt -framework Foundation *.m -I. -I../src/objc -c
-// (iOSNative and not iOS) EXEC: %clang %cangjie_runtime_link %clang_link_core %clang_link_objc_interop -fobjc-arc src/objc/*.m objc-gen/*.o -Isrc/objc -Iobjc-gen -L. -lcjworld -o %output
-// (iOSNative) RUN-EXEC-PIPE: %run %run_opt %output %run_args 2>&1 | compare %f
-// (iOSNative) ASSERT: scan in cangjie foo
-// (iOSNative) ASSERT: scan-2 global_func
-// (iOSNative) ASSERT: scan-2 in oc f, 2333
-// (iOSNative) ASSERT: scan-4 pFoo
-// (iOSNative) ASSERT: scan global_func
+// (target_ios or target_ios_simulator) EXEC: %mirror_gen test.toml
+// (target_mac) EXEC: %clang --shared  -fobjc-arc -framework Foundation -lobjc -Isrc/objc src/objc/G.m -o libdep.dylib
+// (target_ios_simulator) EXEC: xcrun --sdk iphonesimulator %clang -fobjc-arc -framework Foundation -lobjc -Wl,-install_name,@rpath/libdep.dylib --target=%clang_target --sysroot=$(xcrun --show-sdk-path --sdk iphonesimulator) --shared -Isrc/objc src/objc/G.m -o libdep.dylib
+// (target_ios) EXEC: xcrun --sdk iphoneos %clang -fobjc-arc -framework Foundation -lobjc -Wl,-install_name,@rpath/libdep.dylib --target=%clang_target --sysroot=$(xcrun --show-sdk-path --sdk iphoneos) --shared -Isrc/objc src/objc/G.m -o libdep.dylib
+// (target_ios or target_ios_simulator) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc --link-options="-install_name @rpath/libobjc.foundation.dylib" src/objc/foundation/*.cj
+// (target_ios or target_ios_simulator) EXEC: %compiler %compile_dylib_opt %cmp_ocffi_opt %link_oc -L . -ldep -lobjc.foundation --link-options="-install_name @rpath/libcjworld.dylib" src/cjworld/*.cj
+// (target_ios or target_ios_simulator) EXEC: cd objc-gen && %clang %clang_opt -framework Foundation *.m -I. -I../src/objc -c
+// (target_ios or target_ios_simulator) EXEC: %clang %cangjie_runtime_link %clang_link_core %clang_link_objc_interop -fobjc-arc src/objc/*.m objc-gen/*.o -Isrc/objc -Iobjc-gen -L. -lcjworld -o %output
+// (target_ios or target_ios_simulator) RUN-EXEC-PIPE: %run %run_opt %output %run_args 2>&1 | compare %f
+// (target_ios or target_ios_simulator) ASSERT: scan in cangjie foo
+// (target_ios or target_ios_simulator) ASSERT: scan-2 global_func
+// (target_ios or target_ios_simulator) ASSERT: scan-2 in oc f, 2333
+// (target_ios or target_ios_simulator) ASSERT: scan-4 pFoo
+// (target_ios or target_ios_simulator) ASSERT: scan global_func

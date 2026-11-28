@@ -78,3 +78,15 @@ libs/std/ast/decode.cj
 
 # macOS build cache
 .DS_Store
+
+# iOS 跑批模板工程与产物（不入库；跑批前按需手工布设）
+testsuites/HLT/configs/cjnative/ios/objc_ffi_test/
+testsuites/HLT/configs/cjnative/ios/xcode_project_of_cangjie_ios_test/
+testsuites/HLT/compiler/cjnative/FFI/objcffi/**/objc-gen/
+testsuites/HLT/**/src/objc/foundation/
+
+# objcffi 跑批编译产物
+testsuites/HLT/compiler/cjnative/FFI/objcffi/**/*.a
+testsuites/HLT/compiler/cjnative/FFI/objcffi/**/*.dylib
+testsuites/HLT/compiler/cjnative/FFI/objcffi/**/*.cjo
+testsuites/HLT/compiler/cjnative/FFI/objcffi/**/*.o
