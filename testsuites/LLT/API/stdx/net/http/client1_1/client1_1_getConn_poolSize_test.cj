@@ -15,6 +15,10 @@
  *      Test HttpEngine1_1#getConn
  * Test API:
  *      private func getConn(index: Int64, isToProxy: Bool, forceNew!: Bool = false): ConnNode
+ *
+ * Note: since issue #1090, requests exceeding the per-server connection
+ * limit queue for a free connection instead of throwing
+ * "Too many connections to the same server."
  */
 package tests.client1_1
 
@@ -42,13 +46,12 @@ class TestHttpEngine1_1GetConn {
         let u = URL.parse("http://127.0.0.1:${port}/a")
         let r = HttpRequestBuilder().url(u).build()
 
-        client.send(r)
-        client.send(r)
-        try {
-            client.send(r)
-            @Expect(1, 2)
-        } catch (e: HttpException) {
-            @Expect(e.message, "Too many connections to the same server.")
+        // each connection is released once the body is fully consumed, so
+        // all requests succeed instead of the third being rejected
+        for (_ in 0..3) {
+            let resp = client.send(r)
+            let buf = Array<UInt8>(1024, repeat: 0)
+            while (resp.body.read(buf) > 0) {}
         }
 
         client.close()
@@ -58,14 +61,15 @@ class TestHttpEngine1_1GetConn {
     }
     func serverPacketCapture() {
         serverSocket.bind()
-
-        let server1 = serverSocket.accept()
-        server1.write("HTTP/1.1 200 ok\r\n\r\n".toArray())
-        let server2 = serverSocket.accept()
-        server2.write("HTTP/1.1 200 ok\r\n\r\n".toArray())
-
-        server1.close()
-        server2.close()
+        for (_ in 0..3) {
+            let server = serverSocket.accept()
+            // read the request before closing, otherwise the client would
+            // receive an RST instead of a graceful EOF while reading the body
+            var buf = Array<UInt8>(500, repeat: 0)
+            var _ = server.read(buf)
+            server.write("HTTP/1.1 200 ok\r\nconnection: close\r\n\r\n".toArray())
+            server.close()
+        }
         serverSocket.close()
     }
 }

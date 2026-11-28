@@ -44,7 +44,6 @@ public class Test_poolSize {
 
     @TestCase
     func over_poolsize(): Unit {
-        var flag = false
         let server1 = ServerBuilder().addr("127.0.0.1").port(0).build()
         server1.distributor.register("/dd", {ctx => ctx.responseBuilder.body("a")})
         spawn {
@@ -56,18 +55,28 @@ public class Test_poolSize {
 
         let client = ClientBuilder().poolSize(2).build()
 
-        let r1 = HttpRequestBuilder().url("http://127.0.0.1:${server1.port}/dd").build()
-
-        client.send(r1)
-        client.send(r1)
-        try {
-            client.send(r1)
-        } catch (e: HttpException) {
-            flag = true
-            @Expect(e.message, "Too many connections to the same server.")
+        // requests beyond poolSize queue for a free connection instead of
+        // being rejected with "Too many connections"; all of them succeed
+        // once the bodies are consumed. Each coroutine builds its own
+        // request to avoid sharing a mutable HttpRequest concurrently.
+        let okCount = AtomicInt64(0)
+        let n = 3
+        for (_ in 0..n) {
+            spawn {
+                let r = HttpRequestBuilder().url("http://127.0.0.1:${server1.port}/dd").build()
+                let resp = client.send(r)
+                let buf = Array<UInt8>(1024, repeat: 0)
+                while (resp.body.read(buf) > 0) {}
+                okCount.fetchAdd(1)
+                ()
+            }
         }
-
-        @Expect(flag, true)
+        var waited = 0
+        while (okCount.load() < n && waited < 100) {
+            sleep(Duration.millisecond * 100)
+            waited++
+        }
+        @Expect(okCount.load(), n)
     }
 
     @TestCase

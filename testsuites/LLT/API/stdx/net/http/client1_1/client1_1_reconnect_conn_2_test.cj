@@ -15,6 +15,10 @@
  *      Test Client1_1#reconnect connection when server close it, try again
  * Test API:
  *      public func request(request: HttpRequest): HttpResponse
+ *
+ * Note: since issue #1090, a request beyond the connection limit queues for
+ * a free connection; when the pooled connection turns out to be closed by
+ * the server, the client reconnects transparently and the request succeeds.
  */
 package tests.client1_1
 
@@ -51,18 +55,16 @@ class TestClient1_1reconnect2 {
         }
 
         sleep(Duration.millisecond * 200)
-        try {
-            let r = HttpRequestBuilder().url(u).build()
-            client.send(r)
-            @Expect("right", "wrong")
-        } catch (e: Exception) {
-            @Expect(e.message, "Too many connections to the same server.")
-        }
+        // the 11th request queues for a free connection; the pooled
+        // connection was closed by the server, so the client transparently
+        // reconnects and the request succeeds (issue #1090)
+        let r = HttpRequestBuilder().url(u).build()
+        @Expect(client.send(r).toString().contains("HTTP/1.1 204 No Content\r\n"))
 
         // waiting for all connections in the connection pool to be closed by the server
         sleep(Duration.second * 2)
-        let r = HttpRequestBuilder().url(u).build()
-        @Expect(client.send(r).toString().contains("HTTP/1.1 204 No Content\r\n"))
+        let r2 = HttpRequestBuilder().url(u).build()
+        @Expect(client.send(r2).toString().contains("HTTP/1.1 204 No Content\r\n"))
 
         serverSocket.close()
         client.close()
@@ -85,7 +87,7 @@ class TestClient1_1reconnect2 {
                 break
             }
         }
-        @Expect(serverList.size, 11)
+        @Expect(serverList.size, 12)
     }
 
     func serve(server: TcpSocket, serverList: ArrayList<TcpSocket>) {
